@@ -1,3 +1,4 @@
+// Force rebuild 2
 import { useState } from 'react';
 import LanguageSelector from './components/LanguageSelector';
 import LessonList from './components/LessonList';
