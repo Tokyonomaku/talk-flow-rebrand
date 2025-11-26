@@ -1,0 +1,140 @@
+import { useState } from 'react';
+import { ArrowLeft, Volume2 } from 'lucide-react';
+
+export default function LessonView({ lesson, language, onBack }) {
+  const [playingIndex, setPlayingIndex] = useState(null);
+
+  const speakText = (text, langCode, index) => {
+    // Stop any currently playing audio
+    if (window.speechSynthesis) {
+      window.speechSynthesis.cancel();
+    }
+
+    // Check if speech synthesis is available
+    if (!('speechSynthesis' in window)) {
+      alert('Speech synthesis is not supported in your browser. Please try a modern browser like Chrome, Firefox, or Edge.');
+      return;
+    }
+
+    setPlayingIndex(index);
+
+    // Wait a bit to ensure cancellation is complete
+    setTimeout(() => {
+      const utterance = new SpeechSynthesisUtterance(text);
+      
+      // Set language based on language code
+      const langMap = {
+        'es': 'es-ES',
+        'fr': 'fr-FR',
+        'de': 'de-DE',
+        'ko': 'ko-KR',
+        'pt': 'pt-BR',
+        'ja': 'ja-JP',
+        'zh': 'zh-CN'
+      };
+      
+      utterance.lang = langMap[langCode] || 'en-US';
+      utterance.rate = 0.9;
+      utterance.pitch = 1;
+      utterance.volume = 1;
+
+      utterance.onstart = () => {
+        // Ensure the button shows as playing
+        setPlayingIndex(index);
+      };
+
+      utterance.onend = () => {
+        setPlayingIndex(null);
+      };
+
+      utterance.onerror = (error) => {
+        console.error('Speech synthesis error:', error);
+        setPlayingIndex(null);
+        
+        // Try fallback with English if original language fails
+        if (utterance.lang !== 'en-US') {
+          setTimeout(() => {
+            const fallbackUtterance = new SpeechSynthesisUtterance(text);
+            fallbackUtterance.lang = 'en-US';
+            fallbackUtterance.rate = 0.9;
+            fallbackUtterance.volume = 1;
+            fallbackUtterance.onend = () => setPlayingIndex(null);
+            fallbackUtterance.onerror = () => setPlayingIndex(null);
+            window.speechSynthesis.speak(fallbackUtterance);
+          }, 100);
+        } else {
+          alert('Unable to play audio. Please check your browser settings or try a different browser.');
+        }
+      };
+
+      // Speak the text
+      try {
+        window.speechSynthesis.speak(utterance);
+      } catch (error) {
+        console.error('Error speaking:', error);
+        setPlayingIndex(null);
+        alert('Error playing audio. Please try again.');
+      }
+    }, 50);
+  };
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-4">
+      <div className="max-w-4xl mx-auto">
+        {/* Header */}
+        <div className="mb-6">
+          <button
+            onClick={onBack}
+            className="flex items-center gap-2 text-gray-600 hover:text-gray-900 mb-4 transition-colors"
+          >
+            <ArrowLeft className="w-5 h-5" />
+            <span>Back to Lessons</span>
+          </button>
+          <h1 className="text-3xl font-bold text-gray-900">{lesson.title}</h1>
+          <p className="text-gray-600 mt-2">Learn {language.name} vocabulary</p>
+        </div>
+
+        {/* Words Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {lesson.words.map((wordItem, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow"
+            >
+              <div className="flex items-start justify-between mb-4">
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                    {wordItem.word}
+                  </h3>
+                  {wordItem.romanji && (
+                    <p className="text-sm text-gray-500 mb-1">{wordItem.romanji}</p>
+                  )}
+                  <p className="text-lg text-gray-700 font-semibold">
+                    {wordItem.translation}
+                  </p>
+                  {wordItem.pronunciation && (
+                    <p className="text-sm text-gray-500 mt-1">
+                      {wordItem.pronunciation}
+                    </p>
+                  )}
+                </div>
+                <button
+                  onClick={() => speakText(wordItem.word, language.code, index)}
+                  className={`ml-4 p-3 rounded-full transition-all ${
+                    playingIndex === index
+                      ? 'bg-blue-500 text-white animate-pulse'
+                      : 'bg-gray-100 text-gray-700 hover:bg-blue-100 hover:text-blue-600'
+                  }`}
+                  aria-label={`Pronounce ${wordItem.word}`}
+                >
+                  <Volume2 className="w-5 h-5" />
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
