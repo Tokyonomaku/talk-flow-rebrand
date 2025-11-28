@@ -156,6 +156,17 @@ export const languages = {
       },
       {
         id: 3,
+        title: 'Colors',
+        words: [
+          { word: '빨간색', translation: 'Red', pronunciation: 'ppal-gan-saek', romanji: 'Ppalgan-saek' },
+          { word: '파란색', translation: 'Blue', pronunciation: 'pa-ran-saek', romanji: 'Paran-saek' },
+          { word: '초록색', translation: 'Green', pronunciation: 'cho-rok-saek', romanji: 'Chorok-saek' },
+          { word: '노란색', translation: 'Yellow', pronunciation: 'no-ran-saek', romanji: 'Noran-saek' },
+          { word: '검은색', translation: 'Black', pronunciation: 'geo-meun-saek', romanji: 'Geomeun-saek' },
+        ]
+      },
+      {
+        id: 4,
         title: 'Common Phrases',
         words: [
           { word: '어떻게 지내세요?', translation: 'How are you?', pronunciation: 'uh-ttuh-keh jee-neh-seh-yo', romanji: 'Eotteoke jinaeseyo?' },
