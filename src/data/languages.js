@@ -167,6 +167,17 @@ export const languages = {
       },
       {
         id: 4,
+        title: 'Greetings',
+        words: [
+          { word: '안녕하세요', translation: 'Hello', pronunciation: 'an-nyeong-ha-se-yo', romanji: 'Annyeonghaseyo' },
+          { word: '감사합니다', translation: 'Thank you', pronunciation: 'gam-sa-ham-ni-da', romanji: 'Gamsahamnida' },
+          { word: '미안해요', translation: 'Sorry', pronunciation: 'mi-an-hae-yo', romanji: 'Mianhaeyo' },
+          { word: '괜찮아요', translation: 'It\'s okay', pronunciation: 'gwaen-chan-a-yo', romanji: 'Gwaenchanayo' },
+          { word: '안녕히 가세요', translation: 'Goodbye', pronunciation: 'an-nyeong-hi ga-se-yo', romanji: 'Annyeonghi gaseyo' },
+        ]
+      },
+      {
+        id: 5,
         title: 'Common Phrases',
         words: [
           { word: '어떻게 지내세요?', translation: 'How are you?', pronunciation: 'uh-ttuh-keh jee-neh-seh-yo', romanji: 'Eotteoke jinaeseyo?' },
