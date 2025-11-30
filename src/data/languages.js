@@ -186,6 +186,17 @@ export const languages = {
           { word: '죄송합니다', translation: 'I\'m sorry', pronunciation: 'jweh-song-hap-nee-da', romanji: 'Jwesonghamnida' },
           { word: '천만에요', translation: 'You\'re welcome', pronunciation: 'chun-man-eh-yo', romanji: 'Cheonmaneyo' },
         ]
+      },
+      {
+        id: 6,
+        title: 'Food & Drink',
+        words: [
+          { word: '밥', translation: 'Rice', pronunciation: 'bap', romanji: 'Bap' },
+          { word: '물', translation: 'Water', pronunciation: 'mul', romanji: 'Mul' },
+          { word: '김치', translation: 'Kimchi', pronunciation: 'kim-chi', romanji: 'Kimchi' },
+          { word: '고기', translation: 'Meat', pronunciation: 'go-gi', romanji: 'Gogi' },
+          { word: '과일', translation: 'Fruit', pronunciation: 'gwa-il', romanji: 'Gwail' },
+        ]
       }
     ]
   },
