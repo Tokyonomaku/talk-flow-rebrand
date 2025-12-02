@@ -71,6 +71,17 @@ export const languages = {
           { word: 'Hermana', translation: 'Sister', pronunciation: 'er-mah-nah' },
           { word: 'Amigo', translation: 'Friend', pronunciation: 'ah-mee-go' },
         ]
+      },
+      {
+        id: 7,
+        title: 'Body Parts',
+        words: [
+          { word: 'Cabeza', translation: 'Head', pronunciation: 'kah-beh-sah' },
+          { word: 'Ojo', translation: 'Eye', pronunciation: 'oh-ho' },
+          { word: 'Mano', translation: 'Hand', pronunciation: 'mah-no' },
+          { word: 'Pie', translation: 'Foot', pronunciation: 'pee-eh' },
+          { word: 'Boca', translation: 'Mouth', pronunciation: 'boh-kah' },
+        ]
       }
     ]
   },
@@ -146,6 +157,17 @@ export const languages = {
           { word: 'Sœur', translation: 'Sister', pronunciation: 'sur' },
           { word: 'Ami', translation: 'Friend', pronunciation: 'ah-mee' },
         ]
+      },
+      {
+        id: 7,
+        title: 'Body Parts',
+        words: [
+          { word: 'Tête', translation: 'Head', pronunciation: 'tet' },
+          { word: 'Œil', translation: 'Eye', pronunciation: 'uh-y' },
+          { word: 'Main', translation: 'Hand', pronunciation: 'man' },
+          { word: 'Pied', translation: 'Foot', pronunciation: 'pee-ay' },
+          { word: 'Bouche', translation: 'Mouth', pronunciation: 'boosh' },
+        ]
       }
     ]
   },
@@ -220,6 +242,17 @@ export const languages = {
           { word: 'Bruder', translation: 'Brother', pronunciation: 'broo-der' },
           { word: 'Schwester', translation: 'Sister', pronunciation: 'shves-ter' },
           { word: 'Freund', translation: 'Friend', pronunciation: 'froynt' },
+        ]
+      },
+      {
+        id: 7,
+        title: 'Body Parts',
+        words: [
+          { word: 'Kopf', translation: 'Head', pronunciation: 'kohpf' },
+          { word: 'Auge', translation: 'Eye', pronunciation: 'ow-guh' },
+          { word: 'Hand', translation: 'Hand', pronunciation: 'hahnt' },
+          { word: 'Fuß', translation: 'Foot', pronunciation: 'foos' },
+          { word: 'Mund', translation: 'Mouth', pronunciation: 'moont' },
         ]
       }
     ]
@@ -299,6 +332,17 @@ export const languages = {
       },
       {
         id: 7,
+        title: 'Body Parts',
+        words: [
+          { word: '머리', translation: 'Head', pronunciation: 'meo-ri', romanji: 'Meori' },
+          { word: '눈', translation: 'Eye', pronunciation: 'nun', romanji: 'Nun' },
+          { word: '손', translation: 'Hand', pronunciation: 'son', romanji: 'Son' },
+          { word: '발', translation: 'Foot', pronunciation: 'bal', romanji: 'Bal' },
+          { word: '입', translation: 'Mouth', pronunciation: 'ip', romanji: 'Ip' },
+        ]
+      },
+      {
+        id: 8,
         title: 'Common Phrases',
         words: [
           { word: '어떻게 지내세요?', translation: 'How are you?', pronunciation: 'uh-ttuh-keh jee-neh-seh-yo', romanji: 'Eotteoke jinaeseyo?' },
@@ -382,6 +426,17 @@ export const languages = {
           { word: 'Irmã', translation: 'Sister', pronunciation: 'eer-mah' },
           { word: 'Amigo', translation: 'Friend', pronunciation: 'ah-mee-go' },
         ]
+      },
+      {
+        id: 7,
+        title: 'Body Parts',
+        words: [
+          { word: 'Cabeça', translation: 'Head', pronunciation: 'kah-beh-sah' },
+          { word: 'Olho', translation: 'Eye', pronunciation: 'oh-lyo' },
+          { word: 'Mão', translation: 'Hand', pronunciation: 'mow' },
+          { word: 'Pé', translation: 'Foot', pronunciation: 'peh' },
+          { word: 'Boca', translation: 'Mouth', pronunciation: 'boh-kah' },
+        ]
       }
     ]
   },
@@ -446,6 +501,17 @@ export const languages = {
           { word: '姉妹', translation: 'Sister', pronunciation: 'shimai', romanji: 'Shimai' },
           { word: '友達', translation: 'Friend', pronunciation: 'tomodachi', romanji: 'Tomodachi' },
         ]
+      },
+      {
+        id: 7,
+        title: 'Body Parts',
+        words: [
+          { word: '頭', translation: 'Head', pronunciation: 'atama', romanji: 'Atama' },
+          { word: '目', translation: 'Eye', pronunciation: 'me', romanji: 'Me' },
+          { word: '手', translation: 'Hand', pronunciation: 'te', romanji: 'Te' },
+          { word: '足', translation: 'Foot', pronunciation: 'ashi', romanji: 'Ashi' },
+          { word: '口', translation: 'Mouth', pronunciation: 'kuchi', romanji: 'Kuchi' },
+        ]
       }
     ]
   },
@@ -509,6 +575,17 @@ export const languages = {
           { word: '兄弟', translation: 'Brother', pronunciation: 'xiōngdì', romanji: 'Xiōngdì' },
           { word: '姐妹', translation: 'Sister', pronunciation: 'jiěmèi', romanji: 'Jiěmèi' },
           { word: '朋友', translation: 'Friend', pronunciation: 'péngyou', romanji: 'Péngyou' },
+        ]
+      },
+      {
+        id: 7,
+        title: 'Body Parts',
+        words: [
+          { word: '头', translation: 'Head', pronunciation: 'tóu', romanji: 'Tóu' },
+          { word: '眼睛', translation: 'Eye', pronunciation: 'yǎnjīng', romanji: 'Yǎnjīng' },
+          { word: '手', translation: 'Hand', pronunciation: 'shǒu', romanji: 'Shǒu' },
+          { word: '脚', translation: 'Foot', pronunciation: 'jiǎo', romanji: 'Jiǎo' },
+          { word: '嘴', translation: 'Mouth', pronunciation: 'zuǐ', romanji: 'Zuǐ' },
         ]
       }
     ]
