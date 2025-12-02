@@ -30,13 +30,46 @@ export const languages = {
       },
       {
         id: 3,
+        title: 'Colors',
+        words: [
+          { word: 'Rojo', translation: 'Red', pronunciation: 'ROH-hoh' },
+          { word: 'Azul', translation: 'Blue', pronunciation: 'ah-SOOL' },
+          { word: 'Verde', translation: 'Green', pronunciation: 'VEHR-deh' },
+          { word: 'Amarillo', translation: 'Yellow', pronunciation: 'ah-mah-REE-yoh' },
+          { word: 'Negro', translation: 'Black', pronunciation: 'NEH-groh' },
+        ]
+      },
+      {
+        id: 4,
         title: 'Common Phrases',
         words: [
-          { word: '¿Cómo estás?', translation: 'How are you?', pronunciation: 'KOH-moh ehs-TAHS' },
-          { word: 'Bien', translation: 'Good', pronunciation: 'byehn' },
-          { word: '¿Dónde está?', translation: 'Where is?', pronunciation: 'DOHN-deh ehs-TAH' },
-          { word: 'Lo siento', translation: 'I\'m sorry', pronunciation: 'loh see-EHN-toh' },
-          { word: 'De nada', translation: 'You\'re welcome', pronunciation: 'deh NAH-dah' },
+          { word: 'Por favor', translation: 'Please', pronunciation: 'por fa-vor' },
+          { word: 'Gracias', translation: 'Thank you', pronunciation: 'gra-sias' },
+          { word: 'De nada', translation: 'You\'re welcome', pronunciation: 'de na-da' },
+          { word: 'Lo siento', translation: 'I\'m sorry', pronunciation: 'lo sien-to' },
+          { word: 'Sí', translation: 'Yes', pronunciation: 'si' },
+        ]
+      },
+      {
+        id: 5,
+        title: 'Food & Drink',
+        words: [
+          { word: 'Agua', translation: 'Water', pronunciation: 'ah-gwa' },
+          { word: 'Pan', translation: 'Bread', pronunciation: 'pahn' },
+          { word: 'Carne', translation: 'Meat', pronunciation: 'kar-neh' },
+          { word: 'Fruta', translation: 'Fruit', pronunciation: 'froo-tah' },
+          { word: 'Leche', translation: 'Milk', pronunciation: 'leh-cheh' },
+        ]
+      },
+      {
+        id: 6,
+        title: 'Family & People',
+        words: [
+          { word: 'Madre', translation: 'Mother', pronunciation: 'mah-dreh' },
+          { word: 'Padre', translation: 'Father', pronunciation: 'pah-dreh' },
+          { word: 'Hermano', translation: 'Brother', pronunciation: 'er-mah-no' },
+          { word: 'Hermana', translation: 'Sister', pronunciation: 'er-mah-nah' },
+          { word: 'Amigo', translation: 'Friend', pronunciation: 'ah-mee-go' },
         ]
       }
     ]
@@ -72,13 +105,46 @@ export const languages = {
       },
       {
         id: 3,
+        title: 'Colors',
+        words: [
+          { word: 'Rouge', translation: 'Red', pronunciation: 'roozh' },
+          { word: 'Bleu', translation: 'Blue', pronunciation: 'bluh' },
+          { word: 'Vert', translation: 'Green', pronunciation: 'vehr' },
+          { word: 'Jaune', translation: 'Yellow', pronunciation: 'zhohn' },
+          { word: 'Noir', translation: 'Black', pronunciation: 'nwahr' },
+        ]
+      },
+      {
+        id: 4,
         title: 'Common Phrases',
         words: [
-          { word: 'Comment allez-vous?', translation: 'How are you?', pronunciation: 'koh-MAHN tah-lay-VOO' },
-          { word: 'Bien', translation: 'Good', pronunciation: 'byan' },
-          { word: 'Où est?', translation: 'Where is?', pronunciation: 'oo eh' },
-          { word: 'Désolé', translation: 'I\'m sorry', pronunciation: 'day-zoh-LAY' },
-          { word: 'De rien', translation: 'You\'re welcome', pronunciation: 'duh RYAN' },
+          { word: 'S\'il vous plaît', translation: 'Please', pronunciation: 'seel voo pleh' },
+          { word: 'Merci', translation: 'Thank you', pronunciation: 'mer-see' },
+          { word: 'De rien', translation: 'You\'re welcome', pronunciation: 'duh ree-en' },
+          { word: 'Désolé', translation: 'I\'m sorry', pronunciation: 'day-zo-lay' },
+          { word: 'Oui', translation: 'Yes', pronunciation: 'wee' },
+        ]
+      },
+      {
+        id: 5,
+        title: 'Food & Drink',
+        words: [
+          { word: 'Eau', translation: 'Water', pronunciation: 'oh' },
+          { word: 'Pain', translation: 'Bread', pronunciation: 'pan' },
+          { word: 'Viande', translation: 'Meat', pronunciation: 'vee-ahnd' },
+          { word: 'Fruit', translation: 'Fruit', pronunciation: 'frwee' },
+          { word: 'Lait', translation: 'Milk', pronunciation: 'leh' },
+        ]
+      },
+      {
+        id: 6,
+        title: 'Family & People',
+        words: [
+          { word: 'Mère', translation: 'Mother', pronunciation: 'mehr' },
+          { word: 'Père', translation: 'Father', pronunciation: 'pehr' },
+          { word: 'Frère', translation: 'Brother', pronunciation: 'frehr' },
+          { word: 'Sœur', translation: 'Sister', pronunciation: 'sur' },
+          { word: 'Ami', translation: 'Friend', pronunciation: 'ah-mee' },
         ]
       }
     ]
@@ -114,13 +180,46 @@ export const languages = {
       },
       {
         id: 3,
+        title: 'Colors',
+        words: [
+          { word: 'Rot', translation: 'Red', pronunciation: 'roht' },
+          { word: 'Blau', translation: 'Blue', pronunciation: 'blow' },
+          { word: 'Grün', translation: 'Green', pronunciation: 'gruun' },
+          { word: 'Gelb', translation: 'Yellow', pronunciation: 'gelp' },
+          { word: 'Schwarz', translation: 'Black', pronunciation: 'shvahrts' },
+        ]
+      },
+      {
+        id: 4,
         title: 'Common Phrases',
         words: [
-          { word: 'Wie geht es dir?', translation: 'How are you?', pronunciation: 'vee gayt es deer' },
-          { word: 'Gut', translation: 'Good', pronunciation: 'goot' },
-          { word: 'Wo ist?', translation: 'Where is?', pronunciation: 'voh ist' },
-          { word: 'Entschuldigung', translation: 'I\'m sorry', pronunciation: 'ent-SHOOL-dee-goong' },
-          { word: 'Bitte schön', translation: 'You\'re welcome', pronunciation: 'BIT-tuh shurn' },
+          { word: 'Bitte', translation: 'Please', pronunciation: 'bit-tuh' },
+          { word: 'Danke', translation: 'Thank you', pronunciation: 'dahn-kuh' },
+          { word: 'Gern geschehen', translation: 'You\'re welcome', pronunciation: 'gehrn guh-sheh-hen' },
+          { word: 'Es tut mir leid', translation: 'I\'m sorry', pronunciation: 'es toot meer lite' },
+          { word: 'Ja', translation: 'Yes', pronunciation: 'yah' },
+        ]
+      },
+      {
+        id: 5,
+        title: 'Food & Drink',
+        words: [
+          { word: 'Wasser', translation: 'Water', pronunciation: 'vah-ser' },
+          { word: 'Brot', translation: 'Bread', pronunciation: 'broht' },
+          { word: 'Fleisch', translation: 'Meat', pronunciation: 'flysh' },
+          { word: 'Obst', translation: 'Fruit', pronunciation: 'ohpst' },
+          { word: 'Milch', translation: 'Milk', pronunciation: 'milkh' },
+        ]
+      },
+      {
+        id: 6,
+        title: 'Family & People',
+        words: [
+          { word: 'Mutter', translation: 'Mother', pronunciation: 'moo-ter' },
+          { word: 'Vater', translation: 'Father', pronunciation: 'fah-ter' },
+          { word: 'Bruder', translation: 'Brother', pronunciation: 'broo-der' },
+          { word: 'Schwester', translation: 'Sister', pronunciation: 'shves-ter' },
+          { word: 'Freund', translation: 'Friend', pronunciation: 'froynt' },
         ]
       }
     ]
@@ -178,6 +277,28 @@ export const languages = {
       },
       {
         id: 5,
+        title: 'Food & Drink',
+        words: [
+          { word: '물', translation: 'Water', pronunciation: 'mul', romanji: 'Mul' },
+          { word: '빵', translation: 'Bread', pronunciation: 'ppang', romanji: 'Ppang' },
+          { word: '고기', translation: 'Meat', pronunciation: 'go-gi', romanji: 'Gogi' },
+          { word: '과일', translation: 'Fruit', pronunciation: 'gwa-il', romanji: 'Gwail' },
+          { word: '우유', translation: 'Milk', pronunciation: 'u-yu', romanji: 'Uyu' },
+        ]
+      },
+      {
+        id: 6,
+        title: 'Family & People',
+        words: [
+          { word: '어머니', translation: 'Mother', pronunciation: 'eo-meo-ni', romanji: 'Eomeoni' },
+          { word: '아버지', translation: 'Father', pronunciation: 'a-beo-ji', romanji: 'Abeoji' },
+          { word: '형제', translation: 'Brother', pronunciation: 'hyeong-je', romanji: 'Hyeongje' },
+          { word: '자매', translation: 'Sister', pronunciation: 'ja-mae', romanji: 'Jamae' },
+          { word: '친구', translation: 'Friend', pronunciation: 'chin-gu', romanji: 'Chingu' },
+        ]
+      },
+      {
+        id: 7,
         title: 'Common Phrases',
         words: [
           { word: '어떻게 지내세요?', translation: 'How are you?', pronunciation: 'uh-ttuh-keh jee-neh-seh-yo', romanji: 'Eotteoke jinaeseyo?' },
@@ -188,7 +309,7 @@ export const languages = {
         ]
       },
       {
-        id: 6,
+        id: 8,
         title: 'Food & Drink',
         words: [
           { word: '밥', translation: 'Rice', pronunciation: 'bap', romanji: 'Bap' },
@@ -239,6 +360,28 @@ export const languages = {
           { word: 'Desculpe', translation: 'I\'m sorry', pronunciation: 'dehs-KOOL-peh' },
           { word: 'De nada', translation: 'You\'re welcome', pronunciation: 'deh NAH-dah' },
         ]
+      },
+      {
+        id: 5,
+        title: 'Food & Drink',
+        words: [
+          { word: 'Água', translation: 'Water', pronunciation: 'ah-gwa' },
+          { word: 'Pão', translation: 'Bread', pronunciation: 'pow' },
+          { word: 'Carne', translation: 'Meat', pronunciation: 'kar-neh' },
+          { word: 'Fruta', translation: 'Fruit', pronunciation: 'froo-tah' },
+          { word: 'Leite', translation: 'Milk', pronunciation: 'lay-teh' },
+        ]
+      },
+      {
+        id: 6,
+        title: 'Family & People',
+        words: [
+          { word: 'Mãe', translation: 'Mother', pronunciation: 'mah-eh' },
+          { word: 'Pai', translation: 'Father', pronunciation: 'pie' },
+          { word: 'Irmão', translation: 'Brother', pronunciation: 'eer-mow' },
+          { word: 'Irmã', translation: 'Sister', pronunciation: 'eer-mah' },
+          { word: 'Amigo', translation: 'Friend', pronunciation: 'ah-mee-go' },
+        ]
       }
     ]
   },
@@ -281,6 +424,28 @@ export const languages = {
           { word: 'すみません', translation: 'I\'m sorry', pronunciation: 'soo-mee-mah-sen', romanji: 'Sumimasen' },
           { word: 'どういたしまして', translation: 'You\'re welcome', pronunciation: 'doh-ee-tah-shee-mah-sheh-teh', romanji: 'Douitashimashite' },
         ]
+      },
+      {
+        id: 5,
+        title: 'Food & Drink',
+        words: [
+          { word: '水', translation: 'Water', pronunciation: 'mizu', romanji: 'Mizu' },
+          { word: 'パン', translation: 'Bread', pronunciation: 'pan', romanji: 'Pan' },
+          { word: '肉', translation: 'Meat', pronunciation: 'niku', romanji: 'Niku' },
+          { word: '果物', translation: 'Fruit', pronunciation: 'kudamono', romanji: 'Kudamono' },
+          { word: '牛乳', translation: 'Milk', pronunciation: 'gyuunyuu', romanji: 'Gyuunyuu' },
+        ]
+      },
+      {
+        id: 6,
+        title: 'Family & People',
+        words: [
+          { word: '母', translation: 'Mother', pronunciation: 'haha', romanji: 'Haha' },
+          { word: '父', translation: 'Father', pronunciation: 'chichi', romanji: 'Chichi' },
+          { word: '兄弟', translation: 'Brother', pronunciation: 'kyoudai', romanji: 'Kyoudai' },
+          { word: '姉妹', translation: 'Sister', pronunciation: 'shimai', romanji: 'Shimai' },
+          { word: '友達', translation: 'Friend', pronunciation: 'tomodachi', romanji: 'Tomodachi' },
+        ]
       }
     ]
   },
@@ -322,6 +487,28 @@ export const languages = {
           { word: '在哪里?', translation: 'Where is?', pronunciation: 'zai-nah-lee', romanji: 'Zài nǎlǐ?' },
           { word: '对不起', translation: 'I\'m sorry', pronunciation: 'dway-boo-chee', romanji: 'Duìbùqǐ' },
           { word: '不客气', translation: 'You\'re welcome', pronunciation: 'boo-keh-chee', romanji: 'Bù kèqì' },
+        ]
+      },
+      {
+        id: 5,
+        title: 'Food & Drink',
+        words: [
+          { word: '水', translation: 'Water', pronunciation: 'shuǐ', romanji: 'Shuǐ' },
+          { word: '面包', translation: 'Bread', pronunciation: 'miànbāo', romanji: 'Miànbāo' },
+          { word: '肉', translation: 'Meat', pronunciation: 'ròu', romanji: 'Ròu' },
+          { word: '水果', translation: 'Fruit', pronunciation: 'shuǐguǒ', romanji: 'Shuǐguǒ' },
+          { word: '牛奶', translation: 'Milk', pronunciation: 'niúnǎi', romanji: 'Niúnǎi' },
+        ]
+      },
+      {
+        id: 6,
+        title: 'Family & People',
+        words: [
+          { word: '母亲', translation: 'Mother', pronunciation: 'mǔqīn', romanji: 'Mǔqīn' },
+          { word: '父亲', translation: 'Father', pronunciation: 'fùqīn', romanji: 'Fùqīn' },
+          { word: '兄弟', translation: 'Brother', pronunciation: 'xiōngdì', romanji: 'Xiōngdì' },
+          { word: '姐妹', translation: 'Sister', pronunciation: 'jiěmèi', romanji: 'Jiěmèi' },
+          { word: '朋友', translation: 'Friend', pronunciation: 'péngyou', romanji: 'Péngyou' },
         ]
       }
     ]
