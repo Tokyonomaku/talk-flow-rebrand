@@ -93,6 +93,28 @@ export const languages = {
           { word: 'Pez', translation: 'Fish', pronunciation: 'pess' },
           { word: 'Caballo', translation: 'Horse', pronunciation: 'kah-bah-yoh' },
         ]
+      },
+      {
+        id: 9,
+        title: 'Time & Days',
+        words: [
+          { word: 'Hoy', translation: 'Today', pronunciation: 'oy' },
+          { word: 'Mañana', translation: 'Tomorrow', pronunciation: 'mah-nyah-nah' },
+          { word: 'Lunes', translation: 'Monday', pronunciation: 'loo-ness' },
+          { word: 'Hora', translation: 'Hour', pronunciation: 'oh-rah' },
+          { word: 'Día', translation: 'Day', pronunciation: 'dee-ah' },
+        ]
+      },
+      {
+        id: 10,
+        title: 'Weather',
+        words: [
+          { word: 'Sol', translation: 'Sun', pronunciation: 'sohl' },
+          { word: 'Lluvia', translation: 'Rain', pronunciation: 'yoo-vee-ah' },
+          { word: 'Nieve', translation: 'Snow', pronunciation: 'nee-eh-veh' },
+          { word: 'Viento', translation: 'Wind', pronunciation: 'vee-en-toh' },
+          { word: 'Nube', translation: 'Cloud', pronunciation: 'noo-beh' },
+        ]
       }
     ]
   },
@@ -189,6 +211,28 @@ export const languages = {
           { word: 'Oiseau', translation: 'Bird', pronunciation: 'wah-zoh' },
           { word: 'Poisson', translation: 'Fish', pronunciation: 'pwah-son' },
           { word: 'Cheval', translation: 'Horse', pronunciation: 'shuh-vahl' },
+        ]
+      },
+      {
+        id: 9,
+        title: 'Time & Days',
+        words: [
+          { word: 'Aujourd\'hui', translation: 'Today', pronunciation: 'oh-zhoor-dwee' },
+          { word: 'Demain', translation: 'Tomorrow', pronunciation: 'duh-man' },
+          { word: 'Lundi', translation: 'Monday', pronunciation: 'lun-dee' },
+          { word: 'Heure', translation: 'Hour', pronunciation: 'ur' },
+          { word: 'Jour', translation: 'Day', pronunciation: 'zhoor' },
+        ]
+      },
+      {
+        id: 10,
+        title: 'Weather',
+        words: [
+          { word: 'Soleil', translation: 'Sun', pronunciation: 'so-lay' },
+          { word: 'Pluie', translation: 'Rain', pronunciation: 'plwee' },
+          { word: 'Neige', translation: 'Snow', pronunciation: 'nezh' },
+          { word: 'Vent', translation: 'Wind', pronunciation: 'von' },
+          { word: 'Nuage', translation: 'Cloud', pronunciation: 'noo-ahzh' },
         ]
       }
     ]
@@ -287,6 +331,28 @@ export const languages = {
           { word: 'Fisch', translation: 'Fish', pronunciation: 'fish' },
           { word: 'Pferd', translation: 'Horse', pronunciation: 'pfairt' },
         ]
+      },
+      {
+        id: 9,
+        title: 'Time & Days',
+        words: [
+          { word: 'Heute', translation: 'Today', pronunciation: 'hoy-tuh' },
+          { word: 'Morgen', translation: 'Tomorrow', pronunciation: 'mor-gen' },
+          { word: 'Montag', translation: 'Monday', pronunciation: 'mohn-tahk' },
+          { word: 'Stunde', translation: 'Hour', pronunciation: 'shtoon-duh' },
+          { word: 'Tag', translation: 'Day', pronunciation: 'tahk' },
+        ]
+      },
+      {
+        id: 10,
+        title: 'Weather',
+        words: [
+          { word: 'Sonne', translation: 'Sun', pronunciation: 'zon-uh' },
+          { word: 'Regen', translation: 'Rain', pronunciation: 'ray-gen' },
+          { word: 'Schnee', translation: 'Snow', pronunciation: 'shnay' },
+          { word: 'Wind', translation: 'Wind', pronunciation: 'vint' },
+          { word: 'Wolke', translation: 'Cloud', pronunciation: 'vol-kuh' },
+        ]
       }
     ]
   },
@@ -384,6 +450,28 @@ export const languages = {
           { word: '물고기', translation: 'Fish', pronunciation: 'mul-go-gi', romanji: 'Mulgogi' },
           { word: '말', translation: 'Horse', pronunciation: 'mal', romanji: 'Mal' },
         ]
+      },
+      {
+        id: 9,
+        title: 'Time & Days',
+        words: [
+          { word: '오늘', translation: 'Today', pronunciation: 'o-neul', romanji: 'Oneul' },
+          { word: '내일', translation: 'Tomorrow', pronunciation: 'nae-il', romanji: 'Naeil' },
+          { word: '월요일', translation: 'Monday', pronunciation: 'wol-yo-il', romanji: 'Wolyoil' },
+          { word: '시간', translation: 'Hour', pronunciation: 'si-gan', romanji: 'Sigan' },
+          { word: '날', translation: 'Day', pronunciation: 'nal', romanji: 'Nal' },
+        ]
+      },
+      {
+        id: 10,
+        title: 'Weather',
+        words: [
+          { word: '태양', translation: 'Sun', pronunciation: 'tae-yang', romanji: 'Taeyang' },
+          { word: '비', translation: 'Rain', pronunciation: 'bi', romanji: 'Bi' },
+          { word: '눈', translation: 'Snow', pronunciation: 'nun', romanji: 'Nun' },
+          { word: '바람', translation: 'Wind', pronunciation: 'ba-ram', romanji: 'Baram' },
+          { word: '구름', translation: 'Cloud', pronunciation: 'gu-reum', romanji: 'Gureum' },
+        ]
       }
     ]
   },
@@ -469,6 +557,28 @@ export const languages = {
           { word: 'Pássaro', translation: 'Bird', pronunciation: 'pah-sah-roh' },
           { word: 'Peixe', translation: 'Fish', pronunciation: 'pay-sheh' },
           { word: 'Cavalo', translation: 'Horse', pronunciation: 'kah-vah-loh' },
+        ]
+      },
+      {
+        id: 9,
+        title: 'Time & Days',
+        words: [
+          { word: 'Hoje', translation: 'Today', pronunciation: 'oh-zheh' },
+          { word: 'Amanhã', translation: 'Tomorrow', pronunciation: 'ah-mahn-yah' },
+          { word: 'Segunda-feira', translation: 'Monday', pronunciation: 'seh-goon-dah fay-rah' },
+          { word: 'Hora', translation: 'Hour', pronunciation: 'oh-rah' },
+          { word: 'Dia', translation: 'Day', pronunciation: 'dee-ah' },
+        ]
+      },
+      {
+        id: 10,
+        title: 'Weather',
+        words: [
+          { word: 'Sol', translation: 'Sun', pronunciation: 'sohl' },
+          { word: 'Chuva', translation: 'Rain', pronunciation: 'shoo-vah' },
+          { word: 'Neve', translation: 'Snow', pronunciation: 'neh-veh' },
+          { word: 'Vento', translation: 'Wind', pronunciation: 'ven-toh' },
+          { word: 'Nuvem', translation: 'Cloud', pronunciation: 'noo-vem' },
         ]
       }
     ]
@@ -556,6 +666,28 @@ export const languages = {
           { word: '魚', translation: 'Fish', pronunciation: 'sakana', romanji: 'Sakana' },
           { word: '馬', translation: 'Horse', pronunciation: 'uma', romanji: 'Uma' },
         ]
+      },
+      {
+        id: 9,
+        title: 'Time & Days',
+        words: [
+          { word: '今日', translation: 'Today', pronunciation: 'kyou', romanji: 'Kyou' },
+          { word: '明日', translation: 'Tomorrow', pronunciation: 'ashita', romanji: 'Ashita' },
+          { word: '月曜日', translation: 'Monday', pronunciation: 'getsuyoubi', romanji: 'Getsuyoubi' },
+          { word: '時間', translation: 'Hour', pronunciation: 'jikan', romanji: 'Jikan' },
+          { word: '日', translation: 'Day', pronunciation: 'hi', romanji: 'Hi' },
+        ]
+      },
+      {
+        id: 10,
+        title: 'Weather',
+        words: [
+          { word: '太陽', translation: 'Sun', pronunciation: 'taiyou', romanji: 'Taiyou' },
+          { word: '雨', translation: 'Rain', pronunciation: 'ame', romanji: 'Ame' },
+          { word: '雪', translation: 'Snow', pronunciation: 'yuki', romanji: 'Yuki' },
+          { word: '風', translation: 'Wind', pronunciation: 'kaze', romanji: 'Kaze' },
+          { word: '雲', translation: 'Cloud', pronunciation: 'kumo', romanji: 'Kumo' },
+        ]
       }
     ]
   },
@@ -641,6 +773,28 @@ export const languages = {
           { word: '鸟', translation: 'Bird', pronunciation: 'niǎo', romanji: 'Niǎo' },
           { word: '鱼', translation: 'Fish', pronunciation: 'yú', romanji: 'Yú' },
           { word: '马', translation: 'Horse', pronunciation: 'mǎ', romanji: 'Mǎ' },
+        ]
+      },
+      {
+        id: 9,
+        title: 'Time & Days',
+        words: [
+          { word: '今天', translation: 'Today', pronunciation: 'jīntiān', romanji: 'Jīntiān' },
+          { word: '明天', translation: 'Tomorrow', pronunciation: 'míngtiān', romanji: 'Míngtiān' },
+          { word: '星期一', translation: 'Monday', pronunciation: 'xīngqīyī', romanji: 'Xīngqīyī' },
+          { word: '小时', translation: 'Hour', pronunciation: 'xiǎoshí', romanji: 'Xiǎoshí' },
+          { word: '天', translation: 'Day', pronunciation: 'tiān', romanji: 'Tiān' },
+        ]
+      },
+      {
+        id: 10,
+        title: 'Weather',
+        words: [
+          { word: '太阳', translation: 'Sun', pronunciation: 'tàiyáng', romanji: 'Tàiyáng' },
+          { word: '雨', translation: 'Rain', pronunciation: 'yǔ', romanji: 'Yǔ' },
+          { word: '雪', translation: 'Snow', pronunciation: 'xuě', romanji: 'Xuě' },
+          { word: '风', translation: 'Wind', pronunciation: 'fēng', romanji: 'Fēng' },
+          { word: '云', translation: 'Cloud', pronunciation: 'yún', romanji: 'Yún' },
         ]
       }
     ]
