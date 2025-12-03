@@ -82,6 +82,17 @@ export const languages = {
           { word: 'Pie', translation: 'Foot', pronunciation: 'pee-eh' },
           { word: 'Boca', translation: 'Mouth', pronunciation: 'boh-kah' },
         ]
+      },
+      {
+        id: 8,
+        title: 'Animals',
+        words: [
+          { word: 'Perro', translation: 'Dog', pronunciation: 'peh-roh' },
+          { word: 'Gato', translation: 'Cat', pronunciation: 'gah-toh' },
+          { word: 'Pájaro', translation: 'Bird', pronunciation: 'pah-hah-roh' },
+          { word: 'Pez', translation: 'Fish', pronunciation: 'pess' },
+          { word: 'Caballo', translation: 'Horse', pronunciation: 'kah-bah-yoh' },
+        ]
       }
     ]
   },
@@ -168,6 +179,17 @@ export const languages = {
           { word: 'Pied', translation: 'Foot', pronunciation: 'pee-ay' },
           { word: 'Bouche', translation: 'Mouth', pronunciation: 'boosh' },
         ]
+      },
+      {
+        id: 8,
+        title: 'Animals',
+        words: [
+          { word: 'Chien', translation: 'Dog', pronunciation: 'shee-en' },
+          { word: 'Chat', translation: 'Cat', pronunciation: 'shah' },
+          { word: 'Oiseau', translation: 'Bird', pronunciation: 'wah-zoh' },
+          { word: 'Poisson', translation: 'Fish', pronunciation: 'pwah-son' },
+          { word: 'Cheval', translation: 'Horse', pronunciation: 'shuh-vahl' },
+        ]
       }
     ]
   },
@@ -253,6 +275,17 @@ export const languages = {
           { word: 'Hand', translation: 'Hand', pronunciation: 'hahnt' },
           { word: 'Fuß', translation: 'Foot', pronunciation: 'foos' },
           { word: 'Mund', translation: 'Mouth', pronunciation: 'moont' },
+        ]
+      },
+      {
+        id: 8,
+        title: 'Animals',
+        words: [
+          { word: 'Hund', translation: 'Dog', pronunciation: 'hoont' },
+          { word: 'Katze', translation: 'Cat', pronunciation: 'kaht-suh' },
+          { word: 'Vogel', translation: 'Bird', pronunciation: 'foh-gel' },
+          { word: 'Fisch', translation: 'Fish', pronunciation: 'fish' },
+          { word: 'Pferd', translation: 'Horse', pronunciation: 'pfairt' },
         ]
       }
     ]
@@ -343,24 +376,13 @@ export const languages = {
       },
       {
         id: 8,
-        title: 'Common Phrases',
+        title: 'Animals',
         words: [
-          { word: '어떻게 지내세요?', translation: 'How are you?', pronunciation: 'uh-ttuh-keh jee-neh-seh-yo', romanji: 'Eotteoke jinaeseyo?' },
-          { word: '좋아요', translation: 'Good', pronunciation: 'joh-ah-yo', romanji: 'Joayo' },
-          { word: '어디에 있어요?', translation: 'Where is?', pronunciation: 'uh-dee-eh ee-ssuh-yo', romanji: 'Eodie isseoyo?' },
-          { word: '죄송합니다', translation: 'I\'m sorry', pronunciation: 'jweh-song-hap-nee-da', romanji: 'Jwesonghamnida' },
-          { word: '천만에요', translation: 'You\'re welcome', pronunciation: 'chun-man-eh-yo', romanji: 'Cheonmaneyo' },
-        ]
-      },
-      {
-        id: 8,
-        title: 'Food & Drink',
-        words: [
-          { word: '밥', translation: 'Rice', pronunciation: 'bap', romanji: 'Bap' },
-          { word: '물', translation: 'Water', pronunciation: 'mul', romanji: 'Mul' },
-          { word: '김치', translation: 'Kimchi', pronunciation: 'kim-chi', romanji: 'Kimchi' },
-          { word: '고기', translation: 'Meat', pronunciation: 'go-gi', romanji: 'Gogi' },
-          { word: '과일', translation: 'Fruit', pronunciation: 'gwa-il', romanji: 'Gwail' },
+          { word: '개', translation: 'Dog', pronunciation: 'gae', romanji: 'Gae' },
+          { word: '고양이', translation: 'Cat', pronunciation: 'go-yang-i', romanji: 'Goyangi' },
+          { word: '새', translation: 'Bird', pronunciation: 'sae', romanji: 'Sae' },
+          { word: '물고기', translation: 'Fish', pronunciation: 'mul-go-gi', romanji: 'Mulgogi' },
+          { word: '말', translation: 'Horse', pronunciation: 'mal', romanji: 'Mal' },
         ]
       }
     ]
@@ -437,6 +459,17 @@ export const languages = {
           { word: 'Pé', translation: 'Foot', pronunciation: 'peh' },
           { word: 'Boca', translation: 'Mouth', pronunciation: 'boh-kah' },
         ]
+      },
+      {
+        id: 8,
+        title: 'Animals',
+        words: [
+          { word: 'Cachorro', translation: 'Dog', pronunciation: 'kah-shoh-roh' },
+          { word: 'Gato', translation: 'Cat', pronunciation: 'gah-toh' },
+          { word: 'Pássaro', translation: 'Bird', pronunciation: 'pah-sah-roh' },
+          { word: 'Peixe', translation: 'Fish', pronunciation: 'pay-sheh' },
+          { word: 'Cavalo', translation: 'Horse', pronunciation: 'kah-vah-loh' },
+        ]
       }
     ]
   },
@@ -512,6 +545,17 @@ export const languages = {
           { word: '足', translation: 'Foot', pronunciation: 'ashi', romanji: 'Ashi' },
           { word: '口', translation: 'Mouth', pronunciation: 'kuchi', romanji: 'Kuchi' },
         ]
+      },
+      {
+        id: 8,
+        title: 'Animals',
+        words: [
+          { word: '犬', translation: 'Dog', pronunciation: 'inu', romanji: 'Inu' },
+          { word: '猫', translation: 'Cat', pronunciation: 'neko', romanji: 'Neko' },
+          { word: '鳥', translation: 'Bird', pronunciation: 'tori', romanji: 'Tori' },
+          { word: '魚', translation: 'Fish', pronunciation: 'sakana', romanji: 'Sakana' },
+          { word: '馬', translation: 'Horse', pronunciation: 'uma', romanji: 'Uma' },
+        ]
       }
     ]
   },
@@ -586,6 +630,17 @@ export const languages = {
           { word: '手', translation: 'Hand', pronunciation: 'shǒu', romanji: 'Shǒu' },
           { word: '脚', translation: 'Foot', pronunciation: 'jiǎo', romanji: 'Jiǎo' },
           { word: '嘴', translation: 'Mouth', pronunciation: 'zuǐ', romanji: 'Zuǐ' },
+        ]
+      },
+      {
+        id: 8,
+        title: 'Animals',
+        words: [
+          { word: '狗', translation: 'Dog', pronunciation: 'gǒu', romanji: 'Gǒu' },
+          { word: '猫', translation: 'Cat', pronunciation: 'māo', romanji: 'Māo' },
+          { word: '鸟', translation: 'Bird', pronunciation: 'niǎo', romanji: 'Niǎo' },
+          { word: '鱼', translation: 'Fish', pronunciation: 'yú', romanji: 'Yú' },
+          { word: '马', translation: 'Horse', pronunciation: 'mǎ', romanji: 'Mǎ' },
         ]
       }
     ]
