@@ -798,6 +798,124 @@ export const languages = {
         ]
       }
     ]
+  },
+  russian: {
+    id: 'russian',
+    name: 'Russian',
+    flag: '🇷🇺',
+    code: 'ru',
+    lessons: [
+      {
+        id: 1,
+        title: 'Greetings & Basics',
+        words: [
+          { word: 'Привет', translation: 'Hello', pronunciation: 'pri-vyet' },
+          { word: 'Спасибо', translation: 'Thank you', pronunciation: 'spa-see-boh' },
+          { word: 'Извините', translation: 'Sorry', pronunciation: 'iz-vi-nee-tye' },
+          { word: 'Пожалуйста', translation: 'Please', pronunciation: 'pah-zhah-loo-sta' },
+          { word: 'До свидания', translation: 'Goodbye', pronunciation: 'dah svi-dah-nee-ya' },
+        ]
+      },
+      {
+        id: 2,
+        title: 'Numbers',
+        words: [
+          { word: 'Один', translation: 'One', pronunciation: 'ah-deen' },
+          { word: 'Два', translation: 'Two', pronunciation: 'dvah' },
+          { word: 'Три', translation: 'Three', pronunciation: 'tree' },
+          { word: 'Четыре', translation: 'Four', pronunciation: 'chye-tee-rye' },
+          { word: 'Пять', translation: 'Five', pronunciation: 'pyat' },
+        ]
+      },
+      {
+        id: 3,
+        title: 'Colors',
+        words: [
+          { word: 'Красный', translation: 'Red', pronunciation: 'kras-niy' },
+          { word: 'Синий', translation: 'Blue', pronunciation: 'see-niy' },
+          { word: 'Зелёный', translation: 'Green', pronunciation: 'zi-lyo-niy' },
+          { word: 'Жёлтый', translation: 'Yellow', pronunciation: 'zhol-tiy' },
+          { word: 'Чёрный', translation: 'Black', pronunciation: 'chor-niy' },
+        ]
+      },
+      {
+        id: 4,
+        title: 'Common Phrases',
+        words: [
+          { word: 'Да', translation: 'Yes', pronunciation: 'dah' },
+          { word: 'Нет', translation: 'No', pronunciation: 'nyet' },
+          { word: 'Как дела?', translation: 'How are you?', pronunciation: 'kak di-lah' },
+          { word: 'Хорошо', translation: 'Good', pronunciation: 'ha-ra-sho' },
+          { word: 'Не знаю', translation: 'I don\'t know', pronunciation: 'nye zna-yu' },
+        ]
+      },
+      {
+        id: 5,
+        title: 'Food & Drink',
+        words: [
+          { word: 'Вода', translation: 'Water', pronunciation: 'va-dah' },
+          { word: 'Хлеб', translation: 'Bread', pronunciation: 'khleb' },
+          { word: 'Мясо', translation: 'Meat', pronunciation: 'mya-soh' },
+          { word: 'Фрукты', translation: 'Fruit', pronunciation: 'frook-tih' },
+          { word: 'Молоко', translation: 'Milk', pronunciation: 'ma-la-koh' },
+        ]
+      },
+      {
+        id: 6,
+        title: 'Family & People',
+        words: [
+          { word: 'Мать', translation: 'Mother', pronunciation: 'mat' },
+          { word: 'Отец', translation: 'Father', pronunciation: 'a-tyets' },
+          { word: 'Брат', translation: 'Brother', pronunciation: 'brat' },
+          { word: 'Сестра', translation: 'Sister', pronunciation: 'syes-tra' },
+          { word: 'Друг', translation: 'Friend', pronunciation: 'drook' },
+        ]
+      },
+      {
+        id: 7,
+        title: 'Body Parts',
+        words: [
+          { word: 'Голова', translation: 'Head', pronunciation: 'ga-la-vah' },
+          { word: 'Глаз', translation: 'Eye', pronunciation: 'glaz' },
+          { word: 'Рука', translation: 'Hand', pronunciation: 'roo-kah' },
+          { word: 'Нога', translation: 'Foot', pronunciation: 'na-gah' },
+          { word: 'Рот', translation: 'Mouth', pronunciation: 'rot' },
+        ]
+      },
+      {
+        id: 8,
+        title: 'Animals',
+        words: [
+          { word: 'Собака', translation: 'Dog', pronunciation: 'sa-bah-kah' },
+          { word: 'Кошка', translation: 'Cat', pronunciation: 'kosh-kah' },
+          { word: 'Птица', translation: 'Bird', pronunciation: 'ptee-tsa' },
+          { word: 'Рыба', translation: 'Fish', pronunciation: 'rih-bah' },
+          { word: 'Лошадь', translation: 'Horse', pronunciation: 'lo-shad' },
+        ]
+      },
+      {
+        id: 9,
+        title: 'Time & Days',
+        words: [
+          { word: 'Сегодня', translation: 'Today', pronunciation: 'sye-vod-nya' },
+          { word: 'Завтра', translation: 'Tomorrow', pronunciation: 'zav-tra' },
+          { word: 'Понедельник', translation: 'Monday', pronunciation: 'pa-nye-dyel-neek' },
+          { word: 'Час', translation: 'Hour', pronunciation: 'chas' },
+          { word: 'День', translation: 'Day', pronunciation: 'dyen' },
+        ]
+      },
+      {
+        id: 10,
+        title: 'Weather',
+        words: [
+          { word: 'Солнце', translation: 'Sun', pronunciation: 'sol-ntse' },
+          { word: 'Дождь', translation: 'Rain', pronunciation: 'dozhd' },
+          { word: 'Снег', translation: 'Snow', pronunciation: 'snyeg' },
+          { word: 'Ветер', translation: 'Wind', pronunciation: 'vye-ter' },
+          { word: 'Облако', translation: 'Cloud', pronunciation: 'ob-la-koh' },
+        ]
+      }
+    ]
   }
 };
 
