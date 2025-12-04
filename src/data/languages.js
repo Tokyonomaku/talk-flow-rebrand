@@ -15,6 +15,10 @@ export const languages = {
           { word: 'Gracias', translation: 'Thank you', pronunciation: 'GRAH-see-ahs' },
           { word: 'Sí', translation: 'Yes', pronunciation: 'see' },
           { word: 'No', translation: 'No', pronunciation: 'noh' },
+        ],
+        streetSlang: [
+          { word: '¿Qué onda?', translation: 'What\'s up? (casual)', pronunciation: 'keh on-dah' },
+          { word: 'Chido', translation: 'Cool/awesome', pronunciation: 'chee-doh' },
         ]
       },
       {
@@ -26,6 +30,10 @@ export const languages = {
           { word: 'Tres', translation: 'Three', pronunciation: 'trehs' },
           { word: 'Cuatro', translation: 'Four', pronunciation: 'KWAH-troh' },
           { word: 'Cinco', translation: 'Five', pronunciation: 'SEEN-koh' },
+        ],
+        streetSlang: [
+          { word: 'Un chingo', translation: 'A ton/a lot', pronunciation: 'oon cheen-goh' },
+          { word: 'A montón', translation: 'A bunch/many', pronunciation: 'ah mon-TOHN' },
         ]
       },
       {
@@ -37,6 +45,10 @@ export const languages = {
           { word: 'Verde', translation: 'Green', pronunciation: 'VEHR-deh' },
           { word: 'Amarillo', translation: 'Yellow', pronunciation: 'ah-mah-REE-yoh' },
           { word: 'Negro', translation: 'Black', pronunciation: 'NEH-groh' },
+        ],
+        streetSlang: [
+          { word: 'Estar en rojo', translation: 'To be broke (in debt)', pronunciation: 'es-TAR en ROH-hoh' },
+          { word: 'Verde', translation: 'Money (slang)', pronunciation: 'VEHR-deh' },
         ]
       },
       {
@@ -48,6 +60,10 @@ export const languages = {
           { word: 'De nada', translation: 'You\'re welcome', pronunciation: 'de na-da' },
           { word: 'Lo siento', translation: 'I\'m sorry', pronunciation: 'lo sien-to' },
           { word: 'Sí', translation: 'Yes', pronunciation: 'si' },
+        ],
+        streetSlang: [
+          { word: 'No hay pedo', translation: 'No problem (casual)', pronunciation: 'noh eye PEH-doh' },
+          { word: 'Órale', translation: 'Wow/alright (exclamation)', pronunciation: 'OH-rah-leh' },
         ]
       },
       {
@@ -59,6 +75,10 @@ export const languages = {
           { word: 'Carne', translation: 'Meat', pronunciation: 'kar-neh' },
           { word: 'Fruta', translation: 'Fruit', pronunciation: 'froo-tah' },
           { word: 'Leche', translation: 'Milk', pronunciation: 'leh-cheh' },
+        ],
+        streetSlang: [
+          { word: 'Echarse algo', translation: 'To grab/eat something', pronunciation: 'eh-CHAR-seh AHL-goh' },
+          { word: 'Está rico', translation: 'It\'s delicious/tasty', pronunciation: 'es-TAH REE-koh' },
         ]
       },
       {
@@ -70,6 +90,10 @@ export const languages = {
           { word: 'Hermano', translation: 'Brother', pronunciation: 'er-mah-no' },
           { word: 'Hermana', translation: 'Sister', pronunciation: 'er-mah-nah' },
           { word: 'Amigo', translation: 'Friend', pronunciation: 'ah-mee-go' },
+        ],
+        streetSlang: [
+          { word: 'Carnal', translation: 'Bro/dude (close friend)', pronunciation: 'kar-NAHL' },
+          { word: 'Cuate', translation: 'Buddy/pal', pronunciation: 'KWAH-teh' },
         ]
       },
       {
@@ -81,6 +105,10 @@ export const languages = {
           { word: 'Mano', translation: 'Hand', pronunciation: 'mah-no' },
           { word: 'Pie', translation: 'Foot', pronunciation: 'pee-eh' },
           { word: 'Boca', translation: 'Mouth', pronunciation: 'boh-kah' },
+        ],
+        streetSlang: [
+          { word: 'Echar un ojo', translation: 'To take a look', pronunciation: 'eh-CHAR oon OH-ho' },
+          { word: 'Dar la mano', translation: 'To give a hand (help)', pronunciation: 'dar lah MAH-no' },
         ]
       },
       {
@@ -92,6 +120,10 @@ export const languages = {
           { word: 'Pájaro', translation: 'Bird', pronunciation: 'pah-hah-roh' },
           { word: 'Pez', translation: 'Fish', pronunciation: 'pess' },
           { word: 'Caballo', translation: 'Horse', pronunciation: 'kah-bah-yoh' },
+        ],
+        streetSlang: [
+          { word: 'Estar como perro', translation: 'To be really tired', pronunciation: 'es-TAR KOH-moh PEH-roh' },
+          { word: 'Ser un gato', translation: 'To be sneaky/cunning', pronunciation: 'ser oon GAH-toh' },
         ]
       },
       {
@@ -103,6 +135,10 @@ export const languages = {
           { word: 'Lunes', translation: 'Monday', pronunciation: 'loo-ness' },
           { word: 'Hora', translation: 'Hour', pronunciation: 'oh-rah' },
           { word: 'Día', translation: 'Day', pronunciation: 'dee-ah' },
+        ],
+        streetSlang: [
+          { word: 'Ahorita', translation: 'Right now/in a bit (flexible)', pronunciation: 'ah-oh-REE-tah' },
+          { word: 'Ya mero', translation: 'Almost/just about', pronunciation: 'yah MEH-roh' },
         ]
       },
       {
@@ -114,6 +150,10 @@ export const languages = {
           { word: 'Nieve', translation: 'Snow', pronunciation: 'nee-eh-veh' },
           { word: 'Viento', translation: 'Wind', pronunciation: 'vee-en-toh' },
           { word: 'Nube', translation: 'Cloud', pronunciation: 'noo-beh' },
+        ],
+        streetSlang: [
+          { word: 'Hace un sol de justicia', translation: 'It\'s really hot (scorching sun)', pronunciation: 'AH-seh oon sohl deh hoos-TEE-see-ah' },
+          { word: 'Está lloviendo a cántaros', translation: 'It\'s pouring rain', pronunciation: 'es-TAH yoh-vee-EN-doh ah KAN-tah-rohs' },
         ]
       }
     ]
@@ -134,6 +174,10 @@ export const languages = {
           { word: 'Merci', translation: 'Thank you', pronunciation: 'mehr-SEE' },
           { word: 'Oui', translation: 'Yes', pronunciation: 'wee' },
           { word: 'Non', translation: 'No', pronunciation: 'nohn' },
+        ],
+        streetSlang: [
+          { word: 'Salut', translation: 'Hey/Hi (casual)', pronunciation: 'sah-LOO' },
+          { word: 'Ciao', translation: 'Bye (casual, borrowed)', pronunciation: 'chow' },
         ]
       },
       {
@@ -145,6 +189,10 @@ export const languages = {
           { word: 'Trois', translation: 'Three', pronunciation: 'trwah' },
           { word: 'Quatre', translation: 'Four', pronunciation: 'KAHT-ruh' },
           { word: 'Cinq', translation: 'Five', pronunciation: 'sank' },
+        ],
+        streetSlang: [
+          { word: 'Une tonne', translation: 'A ton/a lot', pronunciation: 'oon ton' },
+          { word: 'Des tonnes', translation: 'Tons of (many)', pronunciation: 'day ton' },
         ]
       },
       {
@@ -156,6 +204,10 @@ export const languages = {
           { word: 'Vert', translation: 'Green', pronunciation: 'vehr' },
           { word: 'Jaune', translation: 'Yellow', pronunciation: 'zhohn' },
           { word: 'Noir', translation: 'Black', pronunciation: 'nwahr' },
+        ],
+        streetSlang: [
+          { word: 'Être dans le rouge', translation: 'To be in debt/broke', pronunciation: 'etr dahn luh roozh' },
+          { word: 'Voir la vie en rose', translation: 'To see life positively', pronunciation: 'vwahr lah vee ahn rohz' },
         ]
       },
       {
@@ -167,6 +219,10 @@ export const languages = {
           { word: 'De rien', translation: 'You\'re welcome', pronunciation: 'duh ree-en' },
           { word: 'Désolé', translation: 'I\'m sorry', pronunciation: 'day-zo-lay' },
           { word: 'Oui', translation: 'Yes', pronunciation: 'wee' },
+        ],
+        streetSlang: [
+          { word: 'Pas de souci', translation: 'No worries (casual)', pronunciation: 'pah duh soo-SEE' },
+          { word: 'T\'inquiète', translation: 'Don\'t worry (casual)', pronunciation: 'tan-KYET' },
         ]
       },
       {
@@ -178,6 +234,10 @@ export const languages = {
           { word: 'Viande', translation: 'Meat', pronunciation: 'vee-ahnd' },
           { word: 'Fruit', translation: 'Fruit', pronunciation: 'frwee' },
           { word: 'Lait', translation: 'Milk', pronunciation: 'leh' },
+        ],
+        streetSlang: [
+          { word: 'Bouffer', translation: 'To eat (slang)', pronunciation: 'boo-FAY' },
+          { word: 'C\'est trop bon', translation: 'It\'s so good/delicious', pronunciation: 'say troh bohn' },
         ]
       },
       {
@@ -189,6 +249,10 @@ export const languages = {
           { word: 'Frère', translation: 'Brother', pronunciation: 'frehr' },
           { word: 'Sœur', translation: 'Sister', pronunciation: 'sur' },
           { word: 'Ami', translation: 'Friend', pronunciation: 'ah-mee' },
+        ],
+        streetSlang: [
+          { word: 'Pote', translation: 'Buddy/mate (casual friend)', pronunciation: 'poht' },
+          { word: 'Poto', translation: 'Friend (very casual)', pronunciation: 'poh-TOH' },
         ]
       },
       {
@@ -200,6 +264,10 @@ export const languages = {
           { word: 'Main', translation: 'Hand', pronunciation: 'man' },
           { word: 'Pied', translation: 'Foot', pronunciation: 'pee-ay' },
           { word: 'Bouche', translation: 'Mouth', pronunciation: 'boosh' },
+        ],
+        streetSlang: [
+          { word: 'Jeter un œil', translation: 'To take a look', pronunciation: 'zhuh-TAY oon uh-y' },
+          { word: 'Donner un coup de main', translation: 'To give a hand (help)', pronunciation: 'doh-NAY oon koo duh man' },
         ]
       },
       {
@@ -211,6 +279,10 @@ export const languages = {
           { word: 'Oiseau', translation: 'Bird', pronunciation: 'wah-zoh' },
           { word: 'Poisson', translation: 'Fish', pronunciation: 'pwah-son' },
           { word: 'Cheval', translation: 'Horse', pronunciation: 'shuh-vahl' },
+        ],
+        streetSlang: [
+          { word: 'Crever de faim', translation: 'To be starving (like a dog)', pronunciation: 'kruh-VAY duh fan' },
+          { word: 'Avoir un chat dans la gorge', translation: 'To have a frog in your throat', pronunciation: 'ah-VWAHR oon shah dahn lah gorzh' },
         ]
       },
       {
@@ -222,6 +294,10 @@ export const languages = {
           { word: 'Lundi', translation: 'Monday', pronunciation: 'lun-dee' },
           { word: 'Heure', translation: 'Hour', pronunciation: 'ur' },
           { word: 'Jour', translation: 'Day', pronunciation: 'zhoor' },
+        ],
+        streetSlang: [
+          { word: 'Tout à l\'heure', translation: 'In a bit/later', pronunciation: 'toot ah l-ur' },
+          { word: 'À tout de suite', translation: 'See you in a minute', pronunciation: 'ah toot duh sweet' },
         ]
       },
       {
@@ -233,6 +309,10 @@ export const languages = {
           { word: 'Neige', translation: 'Snow', pronunciation: 'nezh' },
           { word: 'Vent', translation: 'Wind', pronunciation: 'von' },
           { word: 'Nuage', translation: 'Cloud', pronunciation: 'noo-ahzh' },
+        ],
+        streetSlang: [
+          { word: 'Il fait un temps de chien', translation: 'Terrible weather (dog weather)', pronunciation: 'eel fay oon tahn duh shee-en' },
+          { word: 'Il pleut des cordes', translation: 'It\'s raining cats and dogs', pronunciation: 'eel pluh day kord' },
         ]
       }
     ]
@@ -253,6 +333,10 @@ export const languages = {
           { word: 'Danke', translation: 'Thank you', pronunciation: 'DAHN-kuh' },
           { word: 'Ja', translation: 'Yes', pronunciation: 'yah' },
           { word: 'Nein', translation: 'No', pronunciation: 'nine' },
+        ],
+        streetSlang: [
+          { word: 'Na', translation: 'Hey/Well (casual greeting)', pronunciation: 'nah' },
+          { word: 'Tschüss', translation: 'Bye (casual)', pronunciation: 'chooss' },
         ]
       },
       {
@@ -264,6 +348,10 @@ export const languages = {
           { word: 'Drei', translation: 'Three', pronunciation: 'dry' },
           { word: 'Vier', translation: 'Four', pronunciation: 'feer' },
           { word: 'Fünf', translation: 'Five', pronunciation: 'fuhnf' },
+        ],
+        streetSlang: [
+          { word: 'Mega viel', translation: 'A ton/a lot', pronunciation: 'MAY-gah feel' },
+          { word: 'Unmengen', translation: 'Loads/masses of', pronunciation: 'OON-meng-en' },
         ]
       },
       {
@@ -275,6 +363,10 @@ export const languages = {
           { word: 'Grün', translation: 'Green', pronunciation: 'gruun' },
           { word: 'Gelb', translation: 'Yellow', pronunciation: 'gelp' },
           { word: 'Schwarz', translation: 'Black', pronunciation: 'shvahrts' },
+        ],
+        streetSlang: [
+          { word: 'In den roten Zahlen sein', translation: 'To be in debt', pronunciation: 'in den ROH-ten TSAH-len zine' },
+          { word: 'Grün sein', translation: 'To be inexperienced/new', pronunciation: 'gruun zine' },
         ]
       },
       {
@@ -286,6 +378,10 @@ export const languages = {
           { word: 'Gern geschehen', translation: 'You\'re welcome', pronunciation: 'gehrn guh-sheh-hen' },
           { word: 'Es tut mir leid', translation: 'I\'m sorry', pronunciation: 'es toot meer lite' },
           { word: 'Ja', translation: 'Yes', pronunciation: 'yah' },
+        ],
+        streetSlang: [
+          { word: 'Kein Problem', translation: 'No problem (casual)', pronunciation: 'kine proh-BLEM' },
+          { word: 'Alles klar', translation: 'All good/alright', pronunciation: 'AH-les klahr' },
         ]
       },
       {
@@ -297,6 +393,10 @@ export const languages = {
           { word: 'Fleisch', translation: 'Meat', pronunciation: 'flysh' },
           { word: 'Obst', translation: 'Fruit', pronunciation: 'ohpst' },
           { word: 'Milch', translation: 'Milk', pronunciation: 'milkh' },
+        ],
+        streetSlang: [
+          { word: 'Futter', translation: 'Food/grub (slang)', pronunciation: 'FOO-ter' },
+          { word: 'Lecker', translation: 'Tasty/delicious', pronunciation: 'LEK-er' },
         ]
       },
       {
@@ -308,6 +408,10 @@ export const languages = {
           { word: 'Bruder', translation: 'Brother', pronunciation: 'broo-der' },
           { word: 'Schwester', translation: 'Sister', pronunciation: 'shves-ter' },
           { word: 'Freund', translation: 'Friend', pronunciation: 'froynt' },
+        ],
+        streetSlang: [
+          { word: 'Kumpel', translation: 'Buddy/mate (casual friend)', pronunciation: 'KOOM-pel' },
+          { word: 'Alter', translation: 'Dude/man (very casual)', pronunciation: 'AHL-ter' },
         ]
       },
       {
@@ -319,6 +423,10 @@ export const languages = {
           { word: 'Hand', translation: 'Hand', pronunciation: 'hahnt' },
           { word: 'Fuß', translation: 'Foot', pronunciation: 'foos' },
           { word: 'Mund', translation: 'Mouth', pronunciation: 'moont' },
+        ],
+        streetSlang: [
+          { word: 'Ein Auge zudrücken', translation: 'To turn a blind eye', pronunciation: 'ine OW-guh tsoo-DROO-ken' },
+          { word: 'Unter die Arme greifen', translation: 'To give a helping hand', pronunciation: 'OON-ter dee AHR-meh GRY-fen' },
         ]
       },
       {
@@ -330,6 +438,10 @@ export const languages = {
           { word: 'Vogel', translation: 'Bird', pronunciation: 'foh-gel' },
           { word: 'Fisch', translation: 'Fish', pronunciation: 'fish' },
           { word: 'Pferd', translation: 'Horse', pronunciation: 'pfairt' },
+        ],
+        streetSlang: [
+          { word: 'Wie ein Hund leben', translation: 'To live like a dog (miserably)', pronunciation: 'vee ine hoont LAY-ben' },
+          { word: 'Die Katze im Sack kaufen', translation: 'To buy a pig in a poke', pronunciation: 'dee KAHT-suh im zahk KOW-fen' },
         ]
       },
       {
@@ -341,6 +453,10 @@ export const languages = {
           { word: 'Montag', translation: 'Monday', pronunciation: 'mohn-tahk' },
           { word: 'Stunde', translation: 'Hour', pronunciation: 'shtoon-duh' },
           { word: 'Tag', translation: 'Day', pronunciation: 'tahk' },
+        ],
+        streetSlang: [
+          { word: 'Gleich', translation: 'In a bit/soon', pronunciation: 'glysh' },
+          { word: 'Später', translation: 'Later', pronunciation: 'SHPAY-ter' },
         ]
       },
       {
@@ -352,6 +468,10 @@ export const languages = {
           { word: 'Schnee', translation: 'Snow', pronunciation: 'shnay' },
           { word: 'Wind', translation: 'Wind', pronunciation: 'vint' },
           { word: 'Wolke', translation: 'Cloud', pronunciation: 'vol-kuh' },
+        ],
+        streetSlang: [
+          { word: 'Hundewetter', translation: 'Terrible weather (dog weather)', pronunciation: 'HOON-deh-VET-ter' },
+          { word: 'Es schüttet', translation: 'It\'s pouring (rain)', pronunciation: 'es SHOO-tet' },
         ]
       }
     ]
@@ -372,6 +492,10 @@ export const languages = {
           { word: '감사합니다', translation: 'Thank you', pronunciation: 'gam-sa-hap-nee-da', romanji: 'Gamsahamnida' },
           { word: '네', translation: 'Yes', pronunciation: 'neh', romanji: 'Ne' },
           { word: '아니요', translation: 'No', pronunciation: 'ah-nee-yo', romanji: 'Aniyo' },
+        ],
+        streetSlang: [
+          { word: '안녕', translation: 'Hey/Hi (casual)', pronunciation: 'an-nyeong', romanji: 'Annyeong' },
+          { word: '잘 가', translation: 'Bye (casual)', pronunciation: 'jal ga', romanji: 'Jal ga' },
         ]
       },
       {
@@ -383,6 +507,10 @@ export const languages = {
           { word: '셋', translation: 'Three', pronunciation: 'seht', romanji: 'Set' },
           { word: '넷', translation: 'Four', pronunciation: 'neht', romanji: 'Net' },
           { word: '다섯', translation: 'Five', pronunciation: 'dah-seot', romanji: 'Daseot' },
+        ],
+        streetSlang: [
+          { word: '대박', translation: 'Wow/jackpot (when surprised by a number/amount)', pronunciation: 'dae-bak', romanji: 'Daebak' },
+          { word: '쩐다', translation: 'That\'s a lot/expensive', pronunciation: 'jjeon-da', romanji: 'Jjeonda' },
         ]
       },
       {
@@ -394,6 +522,10 @@ export const languages = {
           { word: '초록색', translation: 'Green', pronunciation: 'cho-rok-saek', romanji: 'Chorok-saek' },
           { word: '노란색', translation: 'Yellow', pronunciation: 'no-ran-saek', romanji: 'Noran-saek' },
           { word: '검은색', translation: 'Black', pronunciation: 'geo-meun-saek', romanji: 'Geomeun-saek' },
+        ],
+        streetSlang: [
+          { word: '빨간불', translation: 'Red light (stop/danger)', pronunciation: 'ppal-gan-bul', romanji: 'Ppalganbul' },
+          { word: '초록불', translation: 'Green light (go/okay)', pronunciation: 'cho-rok-bul', romanji: 'Chorokbul' },
         ]
       },
       {
@@ -405,6 +537,10 @@ export const languages = {
           { word: '미안해요', translation: 'Sorry', pronunciation: 'mi-an-hae-yo', romanji: 'Mianhaeyo' },
           { word: '괜찮아요', translation: 'It\'s okay', pronunciation: 'gwaen-chan-a-yo', romanji: 'Gwaenchanayo' },
           { word: '안녕히 가세요', translation: 'Goodbye', pronunciation: 'an-nyeong-hi ga-se-yo', romanji: 'Annyeonghi gaseyo' },
+        ],
+        streetSlang: [
+          { word: '괜찮아', translation: 'It\'s fine (casual)', pronunciation: 'gwaen-chan-a', romanji: 'Gwaenchana' },
+          { word: '별말씀을', translation: 'Don\'t mention it (casual)', pronunciation: 'byeol-mal-sseum-eul', romanji: 'Byeolmalsseumeul' },
         ]
       },
       {
@@ -416,6 +552,10 @@ export const languages = {
           { word: '고기', translation: 'Meat', pronunciation: 'go-gi', romanji: 'Gogi' },
           { word: '과일', translation: 'Fruit', pronunciation: 'gwa-il', romanji: 'Gwail' },
           { word: '우유', translation: 'Milk', pronunciation: 'u-yu', romanji: 'Uyu' },
+        ],
+        streetSlang: [
+          { word: '맛있어', translation: 'It\'s delicious (casual)', pronunciation: 'ma-si-sseo', romanji: 'Masisseo' },
+          { word: '꿀맛', translation: 'Honey taste (super tasty)', pronunciation: 'kkul-mat', romanji: 'Kkulmat' },
         ]
       },
       {
@@ -427,6 +567,10 @@ export const languages = {
           { word: '형제', translation: 'Brother', pronunciation: 'hyeong-je', romanji: 'Hyeongje' },
           { word: '자매', translation: 'Sister', pronunciation: 'ja-mae', romanji: 'Jamae' },
           { word: '친구', translation: 'Friend', pronunciation: 'chin-gu', romanji: 'Chingu' },
+        ],
+        streetSlang: [
+          { word: '형', translation: 'Bro (to older male friend)', pronunciation: 'hyeong', romanji: 'Hyeong' },
+          { word: '누나', translation: 'Noona (to older female friend)', pronunciation: 'nu-na', romanji: 'Nuna' },
         ]
       },
       {
@@ -438,6 +582,10 @@ export const languages = {
           { word: '손', translation: 'Hand', pronunciation: 'son', romanji: 'Son' },
           { word: '발', translation: 'Foot', pronunciation: 'bal', romanji: 'Bal' },
           { word: '입', translation: 'Mouth', pronunciation: 'ip', romanji: 'Ip' },
+        ],
+        streetSlang: [
+          { word: '눈치', translation: 'Social awareness/reading the room', pronunciation: 'nun-chi', romanji: 'Nunchi' },
+          { word: '손이 크다', translation: 'To be generous (big hands)', pronunciation: 'son-i keu-da', romanji: 'Soni keuda' },
         ]
       },
       {
@@ -449,6 +597,10 @@ export const languages = {
           { word: '새', translation: 'Bird', pronunciation: 'sae', romanji: 'Sae' },
           { word: '물고기', translation: 'Fish', pronunciation: 'mul-go-gi', romanji: 'Mulgogi' },
           { word: '말', translation: 'Horse', pronunciation: 'mal', romanji: 'Mal' },
+        ],
+        streetSlang: [
+          { word: '개꿀', translation: 'Super lucky/awesome (dog honey)', pronunciation: 'gae-kkul', romanji: 'Gaekkul' },
+          { word: '고양이 같은', translation: 'Cat-like (sneaky/cute)', pronunciation: 'go-yang-i gat-eun', romanji: 'Goyangi gateun' },
         ]
       },
       {
@@ -460,6 +612,10 @@ export const languages = {
           { word: '월요일', translation: 'Monday', pronunciation: 'wol-yo-il', romanji: 'Wolyoil' },
           { word: '시간', translation: 'Hour', pronunciation: 'si-gan', romanji: 'Sigan' },
           { word: '날', translation: 'Day', pronunciation: 'nal', romanji: 'Nal' },
+        ],
+        streetSlang: [
+          { word: '지금', translation: 'Right now', pronunciation: 'ji-geum', romanji: 'Jigeum' },
+          { word: '나중에', translation: 'Later', pronunciation: 'na-jung-e', romanji: 'Najunge' },
         ]
       },
       {
@@ -471,6 +627,10 @@ export const languages = {
           { word: '눈', translation: 'Snow', pronunciation: 'nun', romanji: 'Nun' },
           { word: '바람', translation: 'Wind', pronunciation: 'ba-ram', romanji: 'Baram' },
           { word: '구름', translation: 'Cloud', pronunciation: 'gu-reum', romanji: 'Gureum' },
+        ],
+        streetSlang: [
+          { word: '비 오는 날', translation: 'Rainy day (bad day)', pronunciation: 'bi o-neun nal', romanji: 'Bi oneun nal' },
+          { word: '날씨가 좋다', translation: 'Good weather (good mood)', pronunciation: 'nal-ssi-ga jo-ta', romanji: 'Nalssiga jota' },
         ]
       }
     ]
@@ -491,6 +651,10 @@ export const languages = {
           { word: 'Obrigado', translation: 'Thank you', pronunciation: 'oh-bree-GAH-doo' },
           { word: 'Sim', translation: 'Yes', pronunciation: 'seem' },
           { word: 'Não', translation: 'No', pronunciation: 'now' },
+        ],
+        streetSlang: [
+          { word: 'E aí', translation: 'What\'s up? (casual)', pronunciation: 'eh eye' },
+          { word: 'Valeu', translation: 'Thanks (casual)', pronunciation: 'vah-LEH-oo' },
         ]
       },
       {
@@ -502,6 +666,10 @@ export const languages = {
           { word: 'Três', translation: 'Three', pronunciation: 'trehs' },
           { word: 'Quatro', translation: 'Four', pronunciation: 'KWAH-troo' },
           { word: 'Cinco', translation: 'Five', pronunciation: 'SEEN-koo' },
+        ],
+        streetSlang: [
+          { word: 'Um monte', translation: 'A ton/a lot', pronunciation: 'oon MON-teh' },
+          { word: 'Pra caramba', translation: 'A whole bunch', pronunciation: 'prah kah-RAHM-bah' },
         ]
       },
       {
@@ -513,6 +681,25 @@ export const languages = {
           { word: 'Onde está?', translation: 'Where is?', pronunciation: 'OHN-deh ehs-TAH' },
           { word: 'Desculpe', translation: 'I\'m sorry', pronunciation: 'dehs-KOOL-peh' },
           { word: 'De nada', translation: 'You\'re welcome', pronunciation: 'deh NAH-dah' },
+        ],
+        streetSlang: [
+          { word: 'Tranquilo', translation: 'No worries (casual)', pronunciation: 'trahn-KEE-loh' },
+          { word: 'Firmeza', translation: 'Cool/alright', pronunciation: 'feer-MEH-zah' },
+        ]
+      },
+      {
+        id: 4,
+        title: 'Colors',
+        words: [
+          { word: 'Vermelho', translation: 'Red', pronunciation: 'vehr-MEH-lyo' },
+          { word: 'Azul', translation: 'Blue', pronunciation: 'ah-ZOOL' },
+          { word: 'Verde', translation: 'Green', pronunciation: 'VEHR-deh' },
+          { word: 'Amarelo', translation: 'Yellow', pronunciation: 'ah-mah-REH-loh' },
+          { word: 'Preto', translation: 'Black', pronunciation: 'PREH-toh' },
+        ],
+        streetSlang: [
+          { word: 'Estar no vermelho', translation: 'To be in debt', pronunciation: 'es-TAR noh vehr-MEH-lyo' },
+          { word: 'Verde', translation: 'Money (slang)', pronunciation: 'VEHR-deh' },
         ]
       },
       {
@@ -524,6 +711,10 @@ export const languages = {
           { word: 'Carne', translation: 'Meat', pronunciation: 'kar-neh' },
           { word: 'Fruta', translation: 'Fruit', pronunciation: 'froo-tah' },
           { word: 'Leite', translation: 'Milk', pronunciation: 'lay-teh' },
+        ],
+        streetSlang: [
+          { word: 'Comer', translation: 'To eat (casual)', pronunciation: 'koh-MEHR' },
+          { word: 'Tá gostoso', translation: 'It\'s tasty', pronunciation: 'tah gohs-TOH-soo' },
         ]
       },
       {
@@ -535,6 +726,10 @@ export const languages = {
           { word: 'Irmão', translation: 'Brother', pronunciation: 'eer-mow' },
           { word: 'Irmã', translation: 'Sister', pronunciation: 'eer-mah' },
           { word: 'Amigo', translation: 'Friend', pronunciation: 'ah-mee-go' },
+        ],
+        streetSlang: [
+          { word: 'Mano', translation: 'Bro/dude (casual)', pronunciation: 'MAH-noh' },
+          { word: 'Cara', translation: 'Dude/guy', pronunciation: 'KAH-rah' },
         ]
       },
       {
@@ -546,6 +741,10 @@ export const languages = {
           { word: 'Mão', translation: 'Hand', pronunciation: 'mow' },
           { word: 'Pé', translation: 'Foot', pronunciation: 'peh' },
           { word: 'Boca', translation: 'Mouth', pronunciation: 'boh-kah' },
+        ],
+        streetSlang: [
+          { word: 'Dar uma olhada', translation: 'To take a look', pronunciation: 'dar OO-mah oh-LYAH-dah' },
+          { word: 'Dar uma mão', translation: 'To give a hand (help)', pronunciation: 'dar OO-mah mow' },
         ]
       },
       {
@@ -557,6 +756,10 @@ export const languages = {
           { word: 'Pássaro', translation: 'Bird', pronunciation: 'pah-sah-roh' },
           { word: 'Peixe', translation: 'Fish', pronunciation: 'pay-sheh' },
           { word: 'Cavalo', translation: 'Horse', pronunciation: 'kah-vah-loh' },
+        ],
+        streetSlang: [
+          { word: 'Cansado que nem cachorro', translation: 'Tired as a dog', pronunciation: 'kahn-SAH-doo keh nem kah-SHOH-roh' },
+          { word: 'Vida de gato', translation: 'Cat life (easy life)', pronunciation: 'VEE-dah deh GAH-toh' },
         ]
       },
       {
@@ -568,6 +771,10 @@ export const languages = {
           { word: 'Segunda-feira', translation: 'Monday', pronunciation: 'seh-goon-dah fay-rah' },
           { word: 'Hora', translation: 'Hour', pronunciation: 'oh-rah' },
           { word: 'Dia', translation: 'Day', pronunciation: 'dee-ah' },
+        ],
+        streetSlang: [
+          { word: 'Agora', translation: 'Right now', pronunciation: 'ah-GOH-rah' },
+          { word: 'Depois', translation: 'Later', pronunciation: 'deh-POYS' },
         ]
       },
       {
@@ -579,6 +786,10 @@ export const languages = {
           { word: 'Neve', translation: 'Snow', pronunciation: 'neh-veh' },
           { word: 'Vento', translation: 'Wind', pronunciation: 'ven-toh' },
           { word: 'Nuvem', translation: 'Cloud', pronunciation: 'noo-vem' },
+        ],
+        streetSlang: [
+          { word: 'Fazer um sol de rachar', translation: 'Scorching hot sun', pronunciation: 'fah-ZEHR oon sohl deh rah-SHAR' },
+          { word: 'Chuva torrencial', translation: 'Torrential rain', pronunciation: 'SHOO-vah tohr-ren-SEE-ahl' },
         ]
       }
     ]
@@ -599,6 +810,10 @@ export const languages = {
           { word: 'ありがとう', translation: 'Thank you', pronunciation: 'ah-ree-gah-toh', romanji: 'Arigatou' },
           { word: 'はい', translation: 'Yes', pronunciation: 'hai', romanji: 'Hai' },
           { word: 'いいえ', translation: 'No', pronunciation: 'ee-eh', romanji: 'Iie' },
+        ],
+        streetSlang: [
+          { word: 'やあ', translation: 'Hey/Hi (casual)', pronunciation: 'yaa', romanji: 'Yaa' },
+          { word: 'バイバイ', translation: 'Bye bye (casual)', pronunciation: 'bai-bai', romanji: 'Baibai' },
         ]
       },
       {
@@ -610,6 +825,10 @@ export const languages = {
           { word: '三', translation: 'Three', pronunciation: 'sahn', romanji: 'San' },
           { word: '四', translation: 'Four', pronunciation: 'shee', romanji: 'Shi' },
           { word: '五', translation: 'Five', pronunciation: 'goh', romanji: 'Go' },
+        ],
+        streetSlang: [
+          { word: 'めちゃくちゃ', translation: 'A ton/crazy amount', pronunciation: 'me-cha-ku-cha', romanji: 'Mechakucha' },
+          { word: 'すごい', translation: 'Amazing/a lot', pronunciation: 'su-goi', romanji: 'Sugoi' },
         ]
       },
       {
@@ -621,6 +840,25 @@ export const languages = {
           { word: 'どこですか?', translation: 'Where is?', pronunciation: 'doh-koh des-kah', romanji: 'Doko desu ka?' },
           { word: 'すみません', translation: 'I\'m sorry', pronunciation: 'soo-mee-mah-sen', romanji: 'Sumimasen' },
           { word: 'どういたしまして', translation: 'You\'re welcome', pronunciation: 'doh-ee-tah-shee-mah-sheh-teh', romanji: 'Douitashimashite' },
+        ],
+        streetSlang: [
+          { word: '大丈夫', translation: 'It\'s fine/okay (casual)', pronunciation: 'dai-jou-bu', romanji: 'Daijoubu' },
+          { word: '気にしないで', translation: 'Don\'t worry about it', pronunciation: 'ki-ni-shi-nai-de', romanji: 'Kini shinaide' },
+        ]
+      },
+      {
+        id: 4,
+        title: 'Colors',
+        words: [
+          { word: '赤', translation: 'Red', pronunciation: 'aka', romanji: 'Aka' },
+          { word: '青', translation: 'Blue', pronunciation: 'ao', romanji: 'Ao' },
+          { word: '緑', translation: 'Green', pronunciation: 'midori', romanji: 'Midori' },
+          { word: '黄色', translation: 'Yellow', pronunciation: 'kiiro', romanji: 'Kiiro' },
+          { word: '黒', translation: 'Black', pronunciation: 'kuro', romanji: 'Kuro' },
+        ],
+        streetSlang: [
+          { word: '赤字', translation: 'In the red (debt)', pronunciation: 'aka-ji', romanji: 'Akaji' },
+          { word: '黒字', translation: 'In the black (profit)', pronunciation: 'kuro-ji', romanji: 'Kuroji' },
         ]
       },
       {
@@ -632,6 +870,10 @@ export const languages = {
           { word: '肉', translation: 'Meat', pronunciation: 'niku', romanji: 'Niku' },
           { word: '果物', translation: 'Fruit', pronunciation: 'kudamono', romanji: 'Kudamono' },
           { word: '牛乳', translation: 'Milk', pronunciation: 'gyuunyuu', romanji: 'Gyuunyuu' },
+        ],
+        streetSlang: [
+          { word: '食べる', translation: 'To eat (casual)', pronunciation: 'ta-be-ru', romanji: 'Taberu' },
+          { word: 'うまい', translation: 'Delicious/tasty', pronunciation: 'u-ma-i', romanji: 'Umai' },
         ]
       },
       {
@@ -643,6 +885,10 @@ export const languages = {
           { word: '兄弟', translation: 'Brother', pronunciation: 'kyoudai', romanji: 'Kyoudai' },
           { word: '姉妹', translation: 'Sister', pronunciation: 'shimai', romanji: 'Shimai' },
           { word: '友達', translation: 'Friend', pronunciation: 'tomodachi', romanji: 'Tomodachi' },
+        ],
+        streetSlang: [
+          { word: '仲間', translation: 'Buddy/mate (close friend)', pronunciation: 'na-ka-ma', romanji: 'Nakama' },
+          { word: '相棒', translation: 'Partner/buddy', pronunciation: 'ai-bou', romanji: 'Aibou' },
         ]
       },
       {
@@ -654,6 +900,10 @@ export const languages = {
           { word: '手', translation: 'Hand', pronunciation: 'te', romanji: 'Te' },
           { word: '足', translation: 'Foot', pronunciation: 'ashi', romanji: 'Ashi' },
           { word: '口', translation: 'Mouth', pronunciation: 'kuchi', romanji: 'Kuchi' },
+        ],
+        streetSlang: [
+          { word: '目を通す', translation: 'To take a look', pronunciation: 'me-wo-too-su', romanji: 'Me wo toosu' },
+          { word: '手を貸す', translation: 'To give a hand (help)', pronunciation: 'te-wo-ka-su', romanji: 'Te wo kasu' },
         ]
       },
       {
@@ -665,6 +915,10 @@ export const languages = {
           { word: '鳥', translation: 'Bird', pronunciation: 'tori', romanji: 'Tori' },
           { word: '魚', translation: 'Fish', pronunciation: 'sakana', romanji: 'Sakana' },
           { word: '馬', translation: 'Horse', pronunciation: 'uma', romanji: 'Uma' },
+        ],
+        streetSlang: [
+          { word: '犬のように疲れる', translation: 'Tired like a dog', pronunciation: 'inu-no-yo-ni tsu-ka-re-ru', romanji: 'Inu no youni tsukareru' },
+          { word: '猫のような', translation: 'Cat-like (sneaky)', pronunciation: 'neko-no-yo-na', romanji: 'Neko no youna' },
         ]
       },
       {
@@ -676,6 +930,10 @@ export const languages = {
           { word: '月曜日', translation: 'Monday', pronunciation: 'getsuyoubi', romanji: 'Getsuyoubi' },
           { word: '時間', translation: 'Hour', pronunciation: 'jikan', romanji: 'Jikan' },
           { word: '日', translation: 'Day', pronunciation: 'hi', romanji: 'Hi' },
+        ],
+        streetSlang: [
+          { word: '今すぐ', translation: 'Right now', pronunciation: 'ima-su-gu', romanji: 'Ima sugu' },
+          { word: '後で', translation: 'Later', pronunciation: 'ato-de', romanji: 'Ato de' },
         ]
       },
       {
@@ -687,6 +945,10 @@ export const languages = {
           { word: '雪', translation: 'Snow', pronunciation: 'yuki', romanji: 'Yuki' },
           { word: '風', translation: 'Wind', pronunciation: 'kaze', romanji: 'Kaze' },
           { word: '雲', translation: 'Cloud', pronunciation: 'kumo', romanji: 'Kumo' },
+        ],
+        streetSlang: [
+          { word: '焼けつくような暑さ', translation: 'Scorching heat', pronunciation: 'ya-ke-tsu-ku-yo-na a-tsu-sa', romanji: 'Yaketsuku youna atsusa' },
+          { word: '土砂降り', translation: 'Downpour', pronunciation: 'do-sha-bu-ri', romanji: 'Doshaburi' },
         ]
       }
     ]
@@ -707,6 +969,10 @@ export const languages = {
           { word: '谢谢', translation: 'Thank you', pronunciation: 'shieh-shieh', romanji: 'Xièxiè' },
           { word: '是', translation: 'Yes', pronunciation: 'shir', romanji: 'Shì' },
           { word: '不', translation: 'No', pronunciation: 'boo', romanji: 'Bù' },
+        ],
+        streetSlang: [
+          { word: '嗨', translation: 'Hey/Hi (casual)', pronunciation: 'hai', romanji: 'Hāi' },
+          { word: '拜拜', translation: 'Bye bye (casual)', pronunciation: 'bai-bai', romanji: 'Bàibài' },
         ]
       },
       {
@@ -718,6 +984,10 @@ export const languages = {
           { word: '三', translation: 'Three', pronunciation: 'sahn', romanji: 'Sān' },
           { word: '四', translation: 'Four', pronunciation: 'sir', romanji: 'Sì' },
           { word: '五', translation: 'Five', pronunciation: 'woo', romanji: 'Wǔ' },
+        ],
+        streetSlang: [
+          { word: '很多', translation: 'A lot/many', pronunciation: 'hen duo', romanji: 'Hěn duō' },
+          { word: '超级多', translation: 'Super many', pronunciation: 'chao ji duo', romanji: 'Chāojí duō' },
         ]
       },
       {
@@ -729,6 +999,25 @@ export const languages = {
           { word: '在哪里?', translation: 'Where is?', pronunciation: 'zai-nah-lee', romanji: 'Zài nǎlǐ?' },
           { word: '对不起', translation: 'I\'m sorry', pronunciation: 'dway-boo-chee', romanji: 'Duìbùqǐ' },
           { word: '不客气', translation: 'You\'re welcome', pronunciation: 'boo-keh-chee', romanji: 'Bù kèqì' },
+        ],
+        streetSlang: [
+          { word: '没事', translation: 'It\'s fine/no problem (casual)', pronunciation: 'mei shi', romanji: 'Méishì' },
+          { word: '别客气', translation: 'Don\'t mention it', pronunciation: 'bie ke qi', romanji: 'Bié kèqì' },
+        ]
+      },
+      {
+        id: 4,
+        title: 'Colors',
+        words: [
+          { word: '红色', translation: 'Red', pronunciation: 'hóng sè', romanji: 'Hóng sè' },
+          { word: '蓝色', translation: 'Blue', pronunciation: 'lán sè', romanji: 'Lán sè' },
+          { word: '绿色', translation: 'Green', pronunciation: 'lǜ sè', romanji: 'Lǜ sè' },
+          { word: '黄色', translation: 'Yellow', pronunciation: 'huáng sè', romanji: 'Huáng sè' },
+          { word: '黑色', translation: 'Black', pronunciation: 'hēi sè', romanji: 'Hēi sè' },
+        ],
+        streetSlang: [
+          { word: '赤字', translation: 'In the red (debt)', pronunciation: 'chi zi', romanji: 'Chìzì' },
+          { word: '黑钱', translation: 'Black money (illegal money)', pronunciation: 'hei qian', romanji: 'Hēi qián' },
         ]
       },
       {
@@ -740,6 +1029,10 @@ export const languages = {
           { word: '肉', translation: 'Meat', pronunciation: 'ròu', romanji: 'Ròu' },
           { word: '水果', translation: 'Fruit', pronunciation: 'shuǐguǒ', romanji: 'Shuǐguǒ' },
           { word: '牛奶', translation: 'Milk', pronunciation: 'niúnǎi', romanji: 'Niúnǎi' },
+        ],
+        streetSlang: [
+          { word: '吃', translation: 'To eat (casual)', pronunciation: 'chi', romanji: 'Chī' },
+          { word: '好吃', translation: 'Delicious/tasty', pronunciation: 'hao chi', romanji: 'Hǎochī' },
         ]
       },
       {
@@ -751,6 +1044,10 @@ export const languages = {
           { word: '兄弟', translation: 'Brother', pronunciation: 'xiōngdì', romanji: 'Xiōngdì' },
           { word: '姐妹', translation: 'Sister', pronunciation: 'jiěmèi', romanji: 'Jiěmèi' },
           { word: '朋友', translation: 'Friend', pronunciation: 'péngyou', romanji: 'Péngyou' },
+        ],
+        streetSlang: [
+          { word: '哥们', translation: 'Bro/buddy (casual friend)', pronunciation: 'ge men', romanji: 'Gēmen' },
+          { word: '兄弟', translation: 'Brother/buddy', pronunciation: 'xiong di', romanji: 'Xiōngdì' },
         ]
       },
       {
@@ -762,6 +1059,10 @@ export const languages = {
           { word: '手', translation: 'Hand', pronunciation: 'shǒu', romanji: 'Shǒu' },
           { word: '脚', translation: 'Foot', pronunciation: 'jiǎo', romanji: 'Jiǎo' },
           { word: '嘴', translation: 'Mouth', pronunciation: 'zuǐ', romanji: 'Zuǐ' },
+        ],
+        streetSlang: [
+          { word: '看一眼', translation: 'To take a look', pronunciation: 'kan yi yan', romanji: 'Kàn yī yǎn' },
+          { word: '帮把手', translation: 'To give a hand (help)', pronunciation: 'bang ba shou', romanji: 'Bāng bǎ shǒu' },
         ]
       },
       {
@@ -773,6 +1074,10 @@ export const languages = {
           { word: '鸟', translation: 'Bird', pronunciation: 'niǎo', romanji: 'Niǎo' },
           { word: '鱼', translation: 'Fish', pronunciation: 'yú', romanji: 'Yú' },
           { word: '马', translation: 'Horse', pronunciation: 'mǎ', romanji: 'Mǎ' },
+        ],
+        streetSlang: [
+          { word: '累成狗', translation: 'Tired as a dog', pronunciation: 'lei cheng gou', romanji: 'Lèi chéng gǒu' },
+          { word: '像猫一样', translation: 'Cat-like (sneaky)', pronunciation: 'xiang mao yi yang', romanji: 'Xiàng māo yīyàng' },
         ]
       },
       {
@@ -784,6 +1089,10 @@ export const languages = {
           { word: '星期一', translation: 'Monday', pronunciation: 'xīngqīyī', romanji: 'Xīngqīyī' },
           { word: '小时', translation: 'Hour', pronunciation: 'xiǎoshí', romanji: 'Xiǎoshí' },
           { word: '天', translation: 'Day', pronunciation: 'tiān', romanji: 'Tiān' },
+        ],
+        streetSlang: [
+          { word: '现在', translation: 'Right now', pronunciation: 'xian zai', romanji: 'Xiànzài' },
+          { word: '待会儿', translation: 'Later', pronunciation: 'dai hui er', romanji: 'Dàihuìr' },
         ]
       },
       {
@@ -795,6 +1104,10 @@ export const languages = {
           { word: '雪', translation: 'Snow', pronunciation: 'xuě', romanji: 'Xuě' },
           { word: '风', translation: 'Wind', pronunciation: 'fēng', romanji: 'Fēng' },
           { word: '云', translation: 'Cloud', pronunciation: 'yún', romanji: 'Yún' },
+        ],
+        streetSlang: [
+          { word: '热死了', translation: 'Scorching hot', pronunciation: 're si le', romanji: 'Rè sǐle' },
+          { word: '下大雨', translation: 'Heavy rain', pronunciation: 'xia da yu', romanji: 'Xià dàyǔ' },
         ]
       }
     ]
@@ -814,6 +1127,10 @@ export const languages = {
           { word: 'Извините', translation: 'Sorry', pronunciation: 'iz-vi-nee-tye' },
           { word: 'Пожалуйста', translation: 'Please', pronunciation: 'pah-zhah-loo-sta' },
           { word: 'До свидания', translation: 'Goodbye', pronunciation: 'dah svi-dah-nee-ya' },
+        ],
+        streetSlang: [
+          { word: 'Приветик', translation: 'Hey/Hi (very casual)', pronunciation: 'pri-VYE-tik' },
+          { word: 'Пока', translation: 'Bye (casual)', pronunciation: 'pa-KAH' },
         ]
       },
       {
@@ -825,6 +1142,10 @@ export const languages = {
           { word: 'Три', translation: 'Three', pronunciation: 'tree' },
           { word: 'Четыре', translation: 'Four', pronunciation: 'chye-tee-rye' },
           { word: 'Пять', translation: 'Five', pronunciation: 'pyat' },
+        ],
+        streetSlang: [
+          { word: 'Куча', translation: 'A ton/a lot', pronunciation: 'KOO-chah' },
+          { word: 'Много', translation: 'Many/a lot', pronunciation: 'MNO-go' },
         ]
       },
       {
@@ -836,6 +1157,10 @@ export const languages = {
           { word: 'Зелёный', translation: 'Green', pronunciation: 'zi-lyo-niy' },
           { word: 'Жёлтый', translation: 'Yellow', pronunciation: 'zhol-tiy' },
           { word: 'Чёрный', translation: 'Black', pronunciation: 'chor-niy' },
+        ],
+        streetSlang: [
+          { word: 'В минусе', translation: 'In the red (in debt)', pronunciation: 'v MEE-noo-seh' },
+          { word: 'В плюсе', translation: 'In the black (profit)', pronunciation: 'v PLOO-seh' },
         ]
       },
       {
@@ -847,6 +1172,10 @@ export const languages = {
           { word: 'Как дела?', translation: 'How are you?', pronunciation: 'kak di-lah' },
           { word: 'Хорошо', translation: 'Good', pronunciation: 'ha-ra-sho' },
           { word: 'Не знаю', translation: 'I don\'t know', pronunciation: 'nye zna-yu' },
+        ],
+        streetSlang: [
+          { word: 'Всё ок', translation: 'Everything\'s okay (casual)', pronunciation: 'vsyo ok' },
+          { word: 'Ничего', translation: 'No problem/it\'s fine', pronunciation: 'nee-chee-VO' },
         ]
       },
       {
@@ -858,6 +1187,10 @@ export const languages = {
           { word: 'Мясо', translation: 'Meat', pronunciation: 'mya-soh' },
           { word: 'Фрукты', translation: 'Fruit', pronunciation: 'frook-tih' },
           { word: 'Молоко', translation: 'Milk', pronunciation: 'ma-la-koh' },
+        ],
+        streetSlang: [
+          { word: 'Жрать', translation: 'To eat (slang)', pronunciation: 'zhraht' },
+          { word: 'Вкусно', translation: 'Tasty/delicious', pronunciation: 'VKOO-sno' },
         ]
       },
       {
@@ -869,6 +1202,10 @@ export const languages = {
           { word: 'Брат', translation: 'Brother', pronunciation: 'brat' },
           { word: 'Сестра', translation: 'Sister', pronunciation: 'syes-tra' },
           { word: 'Друг', translation: 'Friend', pronunciation: 'drook' },
+        ],
+        streetSlang: [
+          { word: 'Братан', translation: 'Bro/buddy (casual)', pronunciation: 'bra-TAN' },
+          { word: 'Дружище', translation: 'Pal/buddy', pronunciation: 'droo-ZHEE-sheh' },
         ]
       },
       {
@@ -880,6 +1217,10 @@ export const languages = {
           { word: 'Рука', translation: 'Hand', pronunciation: 'roo-kah' },
           { word: 'Нога', translation: 'Foot', pronunciation: 'na-gah' },
           { word: 'Рот', translation: 'Mouth', pronunciation: 'rot' },
+        ],
+        streetSlang: [
+          { word: 'Глянуть', translation: 'To take a look (casual)', pronunciation: 'GLYA-noot' },
+          { word: 'Помочь', translation: 'To give a hand (help)', pronunciation: 'pa-MOCH' },
         ]
       },
       {
@@ -891,6 +1232,10 @@ export const languages = {
           { word: 'Птица', translation: 'Bird', pronunciation: 'ptee-tsa' },
           { word: 'Рыба', translation: 'Fish', pronunciation: 'rih-bah' },
           { word: 'Лошадь', translation: 'Horse', pronunciation: 'lo-shad' },
+        ],
+        streetSlang: [
+          { word: 'Устал как собака', translation: 'Tired as a dog', pronunciation: 'oos-TAL kak sa-BAH-kah' },
+          { word: 'Как кошка', translation: 'Cat-like (sneaky)', pronunciation: 'kak KOSH-kah' },
         ]
       },
       {
@@ -902,6 +1247,10 @@ export const languages = {
           { word: 'Понедельник', translation: 'Monday', pronunciation: 'pa-nye-dyel-neek' },
           { word: 'Час', translation: 'Hour', pronunciation: 'chas' },
           { word: 'День', translation: 'Day', pronunciation: 'dyen' },
+        ],
+        streetSlang: [
+          { word: 'Сейчас', translation: 'Right now', pronunciation: 'sye-CHAHS' },
+          { word: 'Потом', translation: 'Later', pronunciation: 'pa-TOM' },
         ]
       },
       {
@@ -913,6 +1262,10 @@ export const languages = {
           { word: 'Снег', translation: 'Snow', pronunciation: 'snyeg' },
           { word: 'Ветер', translation: 'Wind', pronunciation: 'vye-ter' },
           { word: 'Облако', translation: 'Cloud', pronunciation: 'ob-la-koh' },
+        ],
+        streetSlang: [
+          { word: 'Собачья погода', translation: 'Dog weather (terrible weather)', pronunciation: 'sa-BAH-chya pa-GO-dah' },
+          { word: 'Льёт как из ведра', translation: 'Pouring rain', pronunciation: 'lyot kak iz ved-RA' },
         ]
       }
     ]

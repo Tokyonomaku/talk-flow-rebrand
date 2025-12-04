@@ -1,8 +1,22 @@
-import { useState } from 'react';
-import { ArrowLeft, Volume2 } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { ArrowLeft, Volume2, Check } from 'lucide-react';
+import { markLessonComplete, isLessonCompleted } from '../utils/lessonTracking';
 
 export default function LessonView({ lesson, language, onBack }) {
   const [playingIndex, setPlayingIndex] = useState(null);
+  const [isCompleted, setIsCompleted] = useState(false);
+
+  // Check if lesson is already completed on mount
+  useEffect(() => {
+    setIsCompleted(isLessonCompleted(language.id, lesson.id));
+  }, [language.id, lesson.id]);
+
+  const handleMarkComplete = () => {
+    const success = markLessonComplete(language.id, lesson.id);
+    if (success) {
+      setIsCompleted(true);
+    }
+  };
 
   const speakText = (text, langCode, index) => {
     // Stop any currently playing audio
@@ -30,7 +44,8 @@ export default function LessonView({ lesson, language, onBack }) {
         'ko': 'ko-KR',
         'pt': 'pt-BR',
         'ja': 'ja-JP',
-        'zh': 'zh-CN'
+        'zh': 'zh-CN',
+        'ru': 'ru-RU'
       };
       
       utterance.lang = langMap[langCode] || 'en-US';
@@ -132,6 +147,67 @@ export default function LessonView({ lesson, language, onBack }) {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Street Slang Section */}
+        {lesson.streetSlang && lesson.streetSlang.length > 0 && (
+          <div className="mt-8">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Street Slang 💬</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {lesson.streetSlang.map((slangItem, index) => (
+                <div
+                  key={index}
+                  className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow border-2 border-purple-200"
+                >
+                  <div className="flex items-start justify-between mb-4">
+                    <div className="flex-1">
+                      <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                        {slangItem.word}
+                      </h3>
+                      {slangItem.romanji && (
+                        <p className="text-sm text-gray-500 mb-1">{slangItem.romanji}</p>
+                      )}
+                      <p className="text-lg text-gray-700 font-semibold">
+                        {slangItem.translation}
+                      </p>
+                      {slangItem.pronunciation && (
+                        <p className="text-sm text-gray-500 mt-1">
+                          {slangItem.pronunciation}
+                        </p>
+                      )}
+                    </div>
+                    <button
+                      onClick={() => speakText(slangItem.word, language.code, `slang-${index}`)}
+                      className={`ml-4 p-3 rounded-full transition-all ${
+                        playingIndex === `slang-${index}`
+                          ? 'bg-purple-500 text-white animate-pulse'
+                          : 'bg-purple-100 text-purple-700 hover:bg-purple-200 hover:text-purple-800'
+                      }`}
+                      aria-label={`Pronounce ${slangItem.word}`}
+                    >
+                      <Volume2 className="w-5 h-5" />
+                    </button>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Mark as Complete Button */}
+        <div className="mt-8 flex justify-center">
+          <button
+            onClick={handleMarkComplete}
+            disabled={isCompleted}
+            className={`flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all ${
+              isCompleted
+                ? 'bg-green-500 text-white cursor-not-allowed'
+                : 'bg-blue-600 text-white hover:bg-blue-700 hover:shadow-lg'
+            }`}
+          >
+            <Check className="w-5 h-5" />
+            {isCompleted ? 'Lesson Completed' : 'Mark as Complete'}
+          </button>
         </div>
       </div>
     </div>
