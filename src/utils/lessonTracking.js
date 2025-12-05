@@ -76,3 +76,82 @@ export function getCompletedLessonsForLanguage(language) {
   ).length;
 }
 
+/**
+ * Check if user has premium subscription
+ * @returns {boolean} True if user is premium
+ */
+export function isPremium() {
+  try {
+    const premium = localStorage.getItem('isPremium');
+    return premium === 'true';
+  } catch (error) {
+    console.error('Error reading premium status:', error);
+    return false;
+  }
+}
+
+/**
+ * Get the user's free language selection
+ * @returns {string|null} Language ID or null if not set
+ */
+export function getFreeLanguage() {
+  try {
+    return localStorage.getItem('freeLanguage');
+  } catch (error) {
+    console.error('Error reading free language:', error);
+    return null;
+  }
+}
+
+/**
+ * Set the user's free language selection
+ * @param {string} languageId - Language ID to set as free
+ */
+export function setFreeLanguage(languageId) {
+  try {
+    localStorage.setItem('freeLanguage', languageId);
+  } catch (error) {
+    console.error('Error saving free language:', error);
+  }
+}
+
+/**
+ * Check if user has selected a free language
+ * @returns {boolean} True if free language is set
+ */
+export function hasFreeLanguage() {
+  return getFreeLanguage() !== null;
+}
+
+/**
+ * Check if a language is accessible (free language or premium)
+ * @param {string} languageId - Language ID to check
+ * @returns {boolean} True if language is accessible
+ */
+export function isLanguageAccessible(languageId) {
+  if (isPremium()) {
+    return true; // Premium users have access to all languages
+  }
+  const freeLanguage = getFreeLanguage();
+  return freeLanguage === languageId;
+}
+
+/**
+ * Check if user can start a new lesson (always true now - all lessons in free language are available)
+ * @returns {boolean} True if user can start a lesson
+ */
+export function canStartLesson() {
+  // All lessons in the free language are available
+  // This function is kept for compatibility but always returns true
+  return true;
+}
+
+/**
+ * Get remaining free lessons (deprecated - kept for compatibility)
+ * @returns {number} Always returns Infinity since all lessons in free language are available
+ */
+export function getRemainingFreeLessons() {
+  // All 10 lessons in free language are available
+  return Infinity;
+}
+

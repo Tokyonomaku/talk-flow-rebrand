@@ -44,6 +44,7 @@ export default function LessonList({ language, onBack, onSelectLesson }) {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {language.lessons.map((lesson) => {
             const lessonCompleted = isLessonCompleted(language.id, lesson.id);
+            
             return (
               <button
                 key={lesson.id}
