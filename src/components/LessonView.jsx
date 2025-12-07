@@ -5,11 +5,34 @@ import { markLessonComplete, isLessonCompleted } from '../utils/lessonTracking';
 export default function LessonView({ lesson, language, onBack }) {
   const [playingIndex, setPlayingIndex] = useState(null);
   const [isCompleted, setIsCompleted] = useState(false);
+  const [voices, setVoices] = useState([]);
 
   // Check if lesson is already completed on mount
   useEffect(() => {
     setIsCompleted(isLessonCompleted(language.id, lesson.id));
   }, [language.id, lesson.id]);
+
+  // Load voices when component mounts
+  useEffect(() => {
+    if (!('speechSynthesis' in window)) {
+      return;
+    }
+
+    const loadVoices = () => {
+      const availableVoices = window.speechSynthesis.getVoices();
+      setVoices(availableVoices);
+    };
+
+    // Load voices immediately if available
+    loadVoices();
+
+    // Listen for voiceschanged event (voices load asynchronously)
+    window.speechSynthesis.addEventListener('voiceschanged', loadVoices);
+
+    return () => {
+      window.speechSynthesis.removeEventListener('voiceschanged', loadVoices);
+    };
+  }, []);
 
   const handleMarkComplete = () => {
     const success = markLessonComplete(language.id, lesson.id);
@@ -30,67 +53,110 @@ export default function LessonView({ lesson, language, onBack }) {
       return;
     }
 
-    setPlayingIndex(index);
+    // Language code mapping for speech synthesis
+    const langMap = {
+      'es': 'es-ES',
+      'fr': 'fr-FR',
+      'de': 'de-DE',
+      'ko': 'ko-KR',
+      'pt': 'pt-BR',
+      'ja': 'ja-JP',
+      'zh': 'zh-CN',
+      'ru': 'ru-RU'
+    };
+    
+    const targetLang = langMap[langCode] || 'en-US';
+    const langPrefix = targetLang.split('-')[0].toLowerCase();
 
-    // Wait a bit to ensure cancellation is complete
-    setTimeout(() => {
-      const utterance = new SpeechSynthesisUtterance(text);
+    // Function to find voice for language
+    const findVoice = () => {
+      const availableVoices = window.speechSynthesis.getVoices();
+      if (availableVoices.length === 0) return null;
+
+      // Try exact match first
+      let voice = availableVoices.find(v => v.lang.toLowerCase() === targetLang.toLowerCase());
       
-      // Set language based on language code
-      const langMap = {
-        'es': 'es-ES',
-        'fr': 'fr-FR',
-        'de': 'de-DE',
-        'ko': 'ko-KR',
-        'pt': 'pt-BR',
-        'ja': 'ja-JP',
-        'zh': 'zh-CN',
-        'ru': 'ru-RU'
-      };
+      // Try language prefix match (e.g., 'ja' for 'ja-JP')
+      if (!voice) {
+        voice = availableVoices.find(v => {
+          const voiceLang = v.lang.toLowerCase();
+          return voiceLang.includes(langPrefix) || voiceLang.startsWith(langPrefix);
+        });
+      }
       
-      utterance.lang = langMap[langCode] || 'en-US';
-      utterance.rate = 0.9;
-      utterance.pitch = 1;
-      utterance.volume = 1;
+      return voice;
+    };
 
-      utterance.onstart = () => {
-        // Ensure the button shows as playing
-        setPlayingIndex(index);
-      };
-
-      utterance.onend = () => {
+    // Wait for voices to load if needed
+    const attemptSpeak = () => {
+      const voice = findVoice();
+      
+      // Show error if no voice available for non-English languages
+      if (!voice && targetLang !== 'en-US') {
         setPlayingIndex(null);
-      };
+        alert(`${language.name} audio requires language support. Please install ${language.name} language pack on your device.`);
+        return;
+      }
 
-      utterance.onerror = (error) => {
-        console.error('Speech synthesis error:', error);
-        setPlayingIndex(null);
-        
-        // Try fallback with English if original language fails
-        if (utterance.lang !== 'en-US') {
-          setTimeout(() => {
-            const fallbackUtterance = new SpeechSynthesisUtterance(text);
-            fallbackUtterance.lang = 'en-US';
-            fallbackUtterance.rate = 0.9;
-            fallbackUtterance.volume = 1;
-            fallbackUtterance.onend = () => setPlayingIndex(null);
-            fallbackUtterance.onerror = () => setPlayingIndex(null);
-            window.speechSynthesis.speak(fallbackUtterance);
-          }, 100);
-        } else {
-          alert('Unable to play audio. Please check your browser settings or try a different browser.');
+      setPlayingIndex(index);
+
+      setTimeout(() => {
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = targetLang;
+        utterance.rate = 0.9;
+        utterance.pitch = 1;
+        utterance.volume = 1;
+
+        // Assign specific voice if found
+        if (voice) {
+          utterance.voice = voice;
+        }
+
+        utterance.onstart = () => {
+          setPlayingIndex(index);
+        };
+
+        utterance.onend = () => {
+          setPlayingIndex(null);
+        };
+
+        utterance.onerror = (error) => {
+          console.error('Speech synthesis error:', error);
+          setPlayingIndex(null);
+          
+          // Show error instead of falling back to English
+          if (targetLang !== 'en-US') {
+            alert(`Unable to play ${language.name} audio. Please ensure ${language.name} language support is installed on your device.`);
+          } else {
+            alert('Unable to play audio. Please check your browser settings or try a different browser.');
+          }
+        };
+
+        try {
+          window.speechSynthesis.speak(utterance);
+        } catch (error) {
+          console.error('Error speaking:', error);
+          setPlayingIndex(null);
+          alert('Error playing audio. Please try again.');
+        }
+      }, 50);
+    };
+
+    // Check if voices are loaded
+    const currentVoices = window.speechSynthesis.getVoices();
+    if (currentVoices.length === 0) {
+      // Wait for voices to load
+      const waitForVoices = () => {
+        const newVoices = window.speechSynthesis.getVoices();
+        if (newVoices.length > 0) {
+          window.speechSynthesis.removeEventListener('voiceschanged', waitForVoices);
+          attemptSpeak();
         }
       };
-
-      // Speak the text
-      try {
-        window.speechSynthesis.speak(utterance);
-      } catch (error) {
-        console.error('Error speaking:', error);
-        setPlayingIndex(null);
-        alert('Error playing audio. Please try again.');
-      }
-    }, 50);
+      window.speechSynthesis.addEventListener('voiceschanged', waitForVoices);
+    } else {
+      attemptSpeak();
+    }
   };
 
   return (
@@ -213,4 +279,3 @@ export default function LessonView({ lesson, language, onBack }) {
     </div>
   );
 }
-
