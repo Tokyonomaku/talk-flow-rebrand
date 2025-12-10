@@ -7,17 +7,30 @@ export default function Redeem({ onActivate }) {
   const [success, setSuccess] = useState(false);
   const premium = isPremium();
 
+  const validateLicenseKey = (key) => {
+    // Format: XXXXXXXX-XXXXXXXX-XXXXXXXX-XXXXXXXX
+    // 4 groups of 8 alphanumeric characters separated by hyphens
+    const licenseKeyPattern = /^[A-Z0-9]{8}-[A-Z0-9]{8}-[A-Z0-9]{8}-[A-Z0-9]{8}$/i;
+    return licenseKeyPattern.test(key.trim());
+  };
+
   const handleActivate = () => {
-    if (!licenseKey.trim()) {
+    const trimmedKey = licenseKey.trim();
+    
+    if (!trimmedKey) {
       setError('Please enter a license key');
       return;
     }
 
-    // Simple validation - in production, validate against backend
-    // For now, accept any non-empty key
+    // Validate license key format
+    if (!validateLicenseKey(trimmedKey)) {
+      setError('Invalid license key format. Expected: XXXXXXXX-XXXXXXXX-XXXXXXXX-XXXXXXXX');
+      return;
+    }
+
     try {
       localStorage.setItem('isPremium', 'true');
-      localStorage.setItem('licenseKey', licenseKey.trim());
+      localStorage.setItem('licenseKey', trimmedKey);
       setSuccess(true);
       setError('');
       onActivate?.();
@@ -92,10 +105,14 @@ export default function Redeem({ onActivate }) {
                 handleActivate();
               }
             }}
-            placeholder="Enter your license key"
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+            placeholder="XXXXXXXX-XXXXXXXX-XXXXXXXX-XXXXXXXX"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none font-mono text-sm"
             disabled={success}
+            maxLength={35}
           />
+          <p className="mt-2 text-xs text-gray-500">
+            Format: 8 characters - 8 characters - 8 characters - 8 characters
+          </p>
         </div>
 
         <button
