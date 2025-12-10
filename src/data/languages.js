@@ -195,6 +195,206 @@ export const languages = {
           { word: 'Hace un calorón', translation: 'It\'s super hot', pronunciation: 'AH-seh oon kah-loh-ROHN' },
           { word: 'Está haciendo viento', translation: 'It\'s windy', pronunciation: 'es-TAH ah-see-EN-doh vee-EN-toh' },
         ]
+      },
+      {
+        id: 11,
+        title: 'Transportation & Travel',
+        premium: true,
+        words: [
+          { word: 'Coche', translation: 'Car', pronunciation: 'KOH-cheh' },
+          { word: 'Avión', translation: 'Airplane', pronunciation: 'ah-vee-OHN' },
+          { word: 'Tren', translation: 'Train', pronunciation: 'tren' },
+          { word: 'Autobús', translation: 'Bus', pronunciation: 'ow-toh-BOOS' },
+          { word: 'Bicicleta', translation: 'Bicycle', pronunciation: 'bee-see-KLEH-tah' }
+        ],
+        streetSlang: [
+          { word: 'Echar gasolina', translation: 'To fill up gas', pronunciation: 'eh-CHAR gah-soh-LEE-nah' },
+          { word: 'Ir a toda velocidad', translation: 'To go full speed', pronunciation: 'eer ah TOH-dah veh-loh-see-DAHD' },
+          { word: 'Estar en el tráfico', translation: 'To be stuck in traffic', pronunciation: 'es-TAR en el TRAH-fee-koh' },
+          { word: 'Coger el autobús', translation: 'To catch the bus', pronunciation: 'koh-HEHR el ow-toh-BOOS' },
+          { word: 'Viajar', translation: 'To travel', pronunciation: 'vee-ah-HAHR' },
+          { word: 'Hacer un viaje', translation: 'To take a trip', pronunciation: 'ah-SEHR oon VEE-ah-heh' }
+        ]
+      },
+      {
+        id: 12,
+        title: 'Work & Business',
+        premium: true,
+        words: [
+          { word: 'Trabajo', translation: 'Work/Job', pronunciation: 'trah-BAH-hoh' },
+          { word: 'Oficina', translation: 'Office', pronunciation: 'oh-fee-SEE-nah' },
+          { word: 'Reunión', translation: 'Meeting', pronunciation: 'reh-oo-NYOHN' },
+          { word: 'Cliente', translation: 'Client', pronunciation: 'klee-EN-teh' },
+          { word: 'Negocio', translation: 'Business', pronunciation: 'neh-GOH-see-oh' }
+        ],
+        streetSlang: [
+          { word: 'Estar trabajando', translation: 'To be working', pronunciation: 'es-TAR trah-bah-HAHN-doh' },
+          { word: 'Tener mucho trabajo', translation: 'To have a lot of work', pronunciation: 'teh-NEHR MOO-choh trah-BAH-hoh' },
+          { word: 'Hacer negocios', translation: 'To do business', pronunciation: 'ah-SEHR neh-GOH-see-ohs' },
+          { word: 'Estar ocupado', translation: 'To be busy', pronunciation: 'es-TAR oh-koo-PAH-doh' },
+          { word: 'Trabajar duro', translation: 'To work hard', pronunciation: 'trah-bah-HAHR DOO-roh' },
+          { word: 'Hacer una reunión', translation: 'To have a meeting', pronunciation: 'ah-SEHR OO-nah reh-oo-NYOHN' }
+        ]
+      },
+      {
+        id: 13,
+        title: 'Hobbies & Interests',
+        premium: true,
+        words: [
+          { word: 'Música', translation: 'Music', pronunciation: 'MOO-see-kah' },
+          { word: 'Deporte', translation: 'Sport', pronunciation: 'deh-POR-teh' },
+          { word: 'Libro', translation: 'Book', pronunciation: 'LEE-broh' },
+          { word: 'Película', translation: 'Movie', pronunciation: 'peh-LEE-koo-lah' },
+          { word: 'Afición', translation: 'Hobby', pronunciation: 'ah-fee-SYOHN' }
+        ],
+        streetSlang: [
+          { word: 'Echar una película', translation: 'To watch a movie', pronunciation: 'eh-CHAR OO-nah peh-LEE-koo-lah' },
+          { word: 'Escuchar música', translation: 'To listen to music', pronunciation: 'es-koo-CHAR MOO-see-kah' },
+          { word: 'Hacer deporte', translation: 'To do sports', pronunciation: 'ah-SEHR deh-POR-teh' },
+          { word: 'Leer un libro', translation: 'To read a book', pronunciation: 'leh-EHR oon LEE-broh' },
+          { word: 'Tener un hobby', translation: 'To have a hobby', pronunciation: 'teh-NEHR oon HOH-bee' },
+          { word: 'Pasar el tiempo', translation: 'To spend time', pronunciation: 'pah-SAR el tee-EM-poh' }
+        ]
+      },
+      {
+        id: 14,
+        title: 'Emotions & Feelings',
+        premium: true,
+        words: [
+          { word: 'Feliz', translation: 'Happy', pronunciation: 'feh-LEES' },
+          { word: 'Triste', translation: 'Sad', pronunciation: 'TREES-teh' },
+          { word: 'Enojado', translation: 'Angry', pronunciation: 'eh-noh-HAH-doh' },
+          { word: 'Nervioso', translation: 'Nervous', pronunciation: 'nehr-vee-OH-soh' },
+          { word: 'Emocionado', translation: 'Excited', pronunciation: 'eh-moh-see-oh-NAH-doh' }
+        ],
+        streetSlang: [
+          { word: 'Estar feliz', translation: 'To be happy', pronunciation: 'es-TAR feh-LEES' },
+          { word: 'Estar triste', translation: 'To be sad', pronunciation: 'es-TAR TREES-teh' },
+          { word: 'Estar enojado', translation: 'To be angry', pronunciation: 'es-TAR eh-noh-HAH-doh' },
+          { word: 'Estar nervioso', translation: 'To be nervous', pronunciation: 'es-TAR nehr-vee-OH-soh' },
+          { word: 'Estar emocionado', translation: 'To be excited', pronunciation: 'es-TAR eh-moh-see-oh-NAH-doh' },
+          { word: 'Sentirse bien', translation: 'To feel good', pronunciation: 'sen-TEER-seh bee-EN' }
+        ]
+      },
+      {
+        id: 15,
+        title: 'Directions & Locations',
+        premium: true,
+        words: [
+          { word: 'Izquierda', translation: 'Left', pronunciation: 'ees-kee-EHR-dah' },
+          { word: 'Derecha', translation: 'Right', pronunciation: 'deh-REH-chah' },
+          { word: 'Recto', translation: 'Straight', pronunciation: 'REK-toh' },
+          { word: 'Cerca', translation: 'Near', pronunciation: 'SEHR-kah' },
+          { word: 'Lejos', translation: 'Far', pronunciation: 'LEH-hohs' }
+        ],
+        streetSlang: [
+          { word: 'Girar a la izquierda', translation: 'To turn left', pronunciation: 'hee-RAHR ah lah ees-kee-EHR-dah' },
+          { word: 'Girar a la derecha', translation: 'To turn right', pronunciation: 'hee-RAHR ah lah deh-REH-chah' },
+          { word: 'Seguir recto', translation: 'To go straight', pronunciation: 'seh-GEER REK-toh' },
+          { word: 'Estar cerca', translation: 'To be near', pronunciation: 'es-TAR SEHR-kah' },
+          { word: 'Estar lejos', translation: 'To be far', pronunciation: 'es-TAR LEH-hohs' },
+          { word: '¿Dónde está?', translation: 'Where is it?', pronunciation: 'DOHN-deh es-TAH' }
+        ]
+      },
+      {
+        id: 16,
+        title: 'Past Tense Basics',
+        premium: true,
+        words: [
+          { word: 'Fui', translation: 'I went', pronunciation: 'fwee' },
+          { word: 'Hice', translation: 'I did/made', pronunciation: 'EE-seh' },
+          { word: 'Vi', translation: 'I saw', pronunciation: 'vee' },
+          { word: 'Comí', translation: 'I ate', pronunciation: 'koh-MEE' },
+          { word: 'Bebí', translation: 'I drank', pronunciation: 'beh-BEE' }
+        ],
+        streetSlang: [
+          { word: 'Fui a...', translation: 'I went to...', pronunciation: 'fwee ah' },
+          { word: 'Hice...', translation: 'I did/made...', pronunciation: 'EE-seh' },
+          { word: 'Vi...', translation: 'I saw...', pronunciation: 'vee' },
+          { word: 'Comí...', translation: 'I ate...', pronunciation: 'koh-MEE' },
+          { word: 'Bebí...', translation: 'I drank...', pronunciation: 'beh-BEE' },
+          { word: 'Ayer', translation: 'Yesterday', pronunciation: 'ah-YEHR' }
+        ]
+      },
+      {
+        id: 17,
+        title: 'Future Plans',
+        premium: true,
+        words: [
+          { word: 'Voy a', translation: 'I\'m going to', pronunciation: 'boy ah' },
+          { word: 'Voy a ir', translation: 'I\'m going to go', pronunciation: 'boy ah eer' },
+          { word: 'Voy a hacer', translation: 'I\'m going to do', pronunciation: 'boy ah ah-SEHR' },
+          { word: 'Voy a ver', translation: 'I\'m going to see', pronunciation: 'boy ah vehr' },
+          { word: 'Mañana', translation: 'Tomorrow', pronunciation: 'mah-NYAH-nah' }
+        ],
+        streetSlang: [
+          { word: 'Voy a...', translation: 'I\'m going to...', pronunciation: 'boy ah' },
+          { word: 'Voy a ir a...', translation: 'I\'m going to go to...', pronunciation: 'boy ah eer ah' },
+          { word: 'Voy a hacer...', translation: 'I\'m going to do...', pronunciation: 'boy ah ah-SEHR' },
+          { word: 'Mañana voy a...', translation: 'Tomorrow I\'m going to...', pronunciation: 'mah-NYAH-nah boy ah' },
+          { word: 'Voy a ver...', translation: 'I\'m going to see...', pronunciation: 'boy ah vehr' },
+          { word: 'El próximo...', translation: 'Next...', pronunciation: 'el PROHK-see-moh' }
+        ]
+      },
+      {
+        id: 18,
+        title: 'Making Suggestions',
+        premium: true,
+        words: [
+          { word: '¿Qué tal si...?', translation: 'What if...?', pronunciation: 'keh tahl see' },
+          { word: '¿Por qué no...?', translation: 'Why don\'t we...?', pronunciation: 'por keh noh' },
+          { word: 'Deberíamos', translation: 'We should', pronunciation: 'deh-beh-ree-AH-mohs' },
+          { word: 'Podríamos', translation: 'We could', pronunciation: 'poh-DREE-ah-mohs' },
+          { word: 'Vamos a', translation: 'Let\'s', pronunciation: 'VAH-mohs ah' }
+        ],
+        streetSlang: [
+          { word: '¿Qué tal si vamos?', translation: 'What if we go?', pronunciation: 'keh tahl see VAH-mohs' },
+          { word: '¿Por qué no vamos?', translation: 'Why don\'t we go?', pronunciation: 'por keh noh VAH-mohs' },
+          { word: 'Deberíamos ir', translation: 'We should go', pronunciation: 'deh-beh-ree-AH-mohs eer' },
+          { word: 'Podríamos hacer', translation: 'We could do', pronunciation: 'poh-DREE-ah-mohs ah-SEHR' },
+          { word: 'Vamos a...', translation: 'Let\'s...', pronunciation: 'VAH-mohs ah' },
+          { word: 'Te propongo...', translation: 'I suggest...', pronunciation: 'teh proh-POHN-goh' }
+        ]
+      },
+      {
+        id: 19,
+        title: 'Expressing Opinions',
+        premium: true,
+        words: [
+          { word: 'Creo que', translation: 'I think that', pronunciation: 'KREH-oh keh' },
+          { word: 'Opino que', translation: 'I think that', pronunciation: 'oh-PEE-noh keh' },
+          { word: 'Me parece que', translation: 'It seems to me that', pronunciation: 'meh pah-REH-seh keh' },
+          { word: 'En mi opinión', translation: 'In my opinion', pronunciation: 'en mee oh-pee-NYOHN' },
+          { word: 'Para mí', translation: 'For me', pronunciation: 'pah-rah mee' }
+        ],
+        streetSlang: [
+          { word: 'Creo que...', translation: 'I think that...', pronunciation: 'KREH-oh keh' },
+          { word: 'Opino que...', translation: 'I think that...', pronunciation: 'oh-PEE-noh keh' },
+          { word: 'Me parece que...', translation: 'It seems to me that...', pronunciation: 'meh pah-REH-seh keh' },
+          { word: 'En mi opinión...', translation: 'In my opinion...', pronunciation: 'en mee oh-pee-NYOHN' },
+          { word: 'Para mí...', translation: 'For me...', pronunciation: 'pah-rah mee' },
+          { word: 'Yo creo...', translation: 'I believe...', pronunciation: 'yoh KREH-oh' }
+        ]
+      },
+      {
+        id: 20,
+        title: 'Problem Solving',
+        premium: true,
+        words: [
+          { word: 'Problema', translation: 'Problem', pronunciation: 'proh-BLEH-mah' },
+          { word: 'Solución', translation: 'Solution', pronunciation: 'soh-loo-SYOHN' },
+          { word: 'Ayuda', translation: 'Help', pronunciation: 'ah-YOO-dah' },
+          { word: 'Necesito', translation: 'I need', pronunciation: 'neh-seh-SEE-toh' },
+          { word: 'Puedo', translation: 'I can', pronunciation: 'PWEH-doh' }
+        ],
+        streetSlang: [
+          { word: 'Tener un problema', translation: 'To have a problem', pronunciation: 'teh-NEHR oon proh-BLEH-mah' },
+          { word: 'Buscar una solución', translation: 'To look for a solution', pronunciation: 'boos-KAHR OO-nah soh-loo-SYOHN' },
+          { word: 'Necesitar ayuda', translation: 'To need help', pronunciation: 'neh-seh-see-TAHR ah-YOO-dah' },
+          { word: 'Puedo ayudar', translation: 'I can help', pronunciation: 'PWEH-doh ah-yoo-DAHR' },
+          { word: 'Resolver un problema', translation: 'To solve a problem', pronunciation: 'reh-sohl-VEHR oon proh-BLEH-mah' },
+          { word: 'Encontrar una solución', translation: 'To find a solution', pronunciation: 'en-kohn-TRAHR OO-nah soh-loo-SYOHN' }
+        ]
       }
     ]
   },
@@ -393,6 +593,206 @@ export const languages = {
           { word: 'Il fait un soleil de plomb', translation: 'Scorching hot sun', pronunciation: 'eel fay oon so-LAY duh plohn' },
           { word: 'Il fait un froid de loup', translation: 'Freezing cold (wolf cold)', pronunciation: 'eel fay oon frwah duh loo' },
           { word: 'Il fait nuageux', translation: 'It\'s cloudy', pronunciation: 'eel fay noo-ah-ZHUH' },
+        ]
+      },
+      {
+        id: 11,
+        title: 'Transportation & Travel',
+        premium: true,
+        words: [
+          { word: 'Voiture', translation: 'Car', pronunciation: 'vwah-TOOR' },
+          { word: 'Avion', translation: 'Airplane', pronunciation: 'ah-vee-OHN' },
+          { word: 'Train', translation: 'Train', pronunciation: 'tran' },
+          { word: 'Bus', translation: 'Bus', pronunciation: 'boos' },
+          { word: 'Vélo', translation: 'Bicycle', pronunciation: 'vay-LOH' }
+        ],
+        streetSlang: [
+          { word: 'Faire le plein', translation: 'To fill up gas', pronunciation: 'fair luh plan' },
+          { word: 'Rouler à fond', translation: 'To go full speed', pronunciation: 'roo-LAY ah fohn' },
+          { word: 'Être dans les bouchons', translation: 'To be stuck in traffic', pronunciation: 'etr dahn lay boo-SHOHN' },
+          { word: 'Prendre le bus', translation: 'To catch the bus', pronunciation: 'prahn-druh luh boos' },
+          { word: 'Voyager', translation: 'To travel', pronunciation: 'vwah-yah-ZHAY' },
+          { word: 'Faire un voyage', translation: 'To take a trip', pronunciation: 'fair oon vwah-YAHZH' }
+        ]
+      },
+      {
+        id: 12,
+        title: 'Work & Business',
+        premium: true,
+        words: [
+          { word: 'Travail', translation: 'Work/Job', pronunciation: 'trah-VY' },
+          { word: 'Bureau', translation: 'Office', pronunciation: 'boo-ROH' },
+          { word: 'Réunion', translation: 'Meeting', pronunciation: 'ray-oo-NYOHN' },
+          { word: 'Client', translation: 'Client', pronunciation: 'klee-AHN' },
+          { word: 'Affaires', translation: 'Business', pronunciation: 'ah-FAIR' }
+        ],
+        streetSlang: [
+          { word: 'Être au travail', translation: 'To be working', pronunciation: 'etr oh trah-VY' },
+          { word: 'Avoir beaucoup de travail', translation: 'To have a lot of work', pronunciation: 'ah-VWAHR boh-KOO duh trah-VY' },
+          { word: 'Faire des affaires', translation: 'To do business', pronunciation: 'fair day zah-FAIR' },
+          { word: 'Être occupé', translation: 'To be busy', pronunciation: 'etr oh-koo-PAY' },
+          { word: 'Travailler dur', translation: 'To work hard', pronunciation: 'trah-vy-YAY door' },
+          { word: 'Avoir une réunion', translation: 'To have a meeting', pronunciation: 'ah-VWAHR oon ray-oo-NYOHN' }
+        ]
+      },
+      {
+        id: 13,
+        title: 'Hobbies & Interests',
+        premium: true,
+        words: [
+          { word: 'Musique', translation: 'Music', pronunciation: 'moo-ZEEK' },
+          { word: 'Sport', translation: 'Sport', pronunciation: 'spor' },
+          { word: 'Livre', translation: 'Book', pronunciation: 'leev-ruh' },
+          { word: 'Film', translation: 'Movie', pronunciation: 'feelm' },
+          { word: 'Passe-temps', translation: 'Hobby', pronunciation: 'pahs-tahn' }
+        ],
+        streetSlang: [
+          { word: 'Regarder un film', translation: 'To watch a movie', pronunciation: 'ruh-gar-DAY oon feelm' },
+          { word: 'Écouter de la musique', translation: 'To listen to music', pronunciation: 'ay-koo-TAY duh lah moo-ZEEK' },
+          { word: 'Faire du sport', translation: 'To do sports', pronunciation: 'fair doo spor' },
+          { word: 'Lire un livre', translation: 'To read a book', pronunciation: 'leer oon leev-ruh' },
+          { word: 'Avoir un passe-temps', translation: 'To have a hobby', pronunciation: 'ah-VWAHR oon pahs-tahn' },
+          { word: 'Passer le temps', translation: 'To spend time', pronunciation: 'pah-SAY luh tahn' }
+        ]
+      },
+      {
+        id: 14,
+        title: 'Emotions & Feelings',
+        premium: true,
+        words: [
+          { word: 'Heureux', translation: 'Happy', pronunciation: 'uh-RUH' },
+          { word: 'Triste', translation: 'Sad', pronunciation: 'treest' },
+          { word: 'En colère', translation: 'Angry', pronunciation: 'ahn koh-LAIR' },
+          { word: 'Nerveux', translation: 'Nervous', pronunciation: 'nehr-VUH' },
+          { word: 'Excité', translation: 'Excited', pronunciation: 'ek-see-TAY' }
+        ],
+        streetSlang: [
+          { word: 'Être heureux', translation: 'To be happy', pronunciation: 'etr uh-RUH' },
+          { word: 'Être triste', translation: 'To be sad', pronunciation: 'etr treest' },
+          { word: 'Être en colère', translation: 'To be angry', pronunciation: 'etr ahn koh-LAIR' },
+          { word: 'Être nerveux', translation: 'To be nervous', pronunciation: 'etr nehr-VUH' },
+          { word: 'Être excité', translation: 'To be excited', pronunciation: 'etr ek-see-TAY' },
+          { word: 'Se sentir bien', translation: 'To feel good', pronunciation: 'suh sahn-TEER bee-EN' }
+        ]
+      },
+      {
+        id: 15,
+        title: 'Directions & Locations',
+        premium: true,
+        words: [
+          { word: 'Gauche', translation: 'Left', pronunciation: 'gohsh' },
+          { word: 'Droite', translation: 'Right', pronunciation: 'drwaht' },
+          { word: 'Tout droit', translation: 'Straight', pronunciation: 'too drwah' },
+          { word: 'Près', translation: 'Near', pronunciation: 'preh' },
+          { word: 'Loin', translation: 'Far', pronunciation: 'lwan' }
+        ],
+        streetSlang: [
+          { word: 'Tourner à gauche', translation: 'To turn left', pronunciation: 'toor-NAY ah gohsh' },
+          { word: 'Tourner à droite', translation: 'To turn right', pronunciation: 'toor-NAY ah drwaht' },
+          { word: 'Aller tout droit', translation: 'To go straight', pronunciation: 'ah-LAY too drwah' },
+          { word: 'Être près', translation: 'To be near', pronunciation: 'etr preh' },
+          { word: 'Être loin', translation: 'To be far', pronunciation: 'etr lwan' },
+          { word: 'Où est...?', translation: 'Where is...?', pronunciation: 'oo ay' }
+        ]
+      },
+      {
+        id: 16,
+        title: 'Past Tense Basics',
+        premium: true,
+        words: [
+          { word: 'Je suis allé', translation: 'I went', pronunciation: 'zhuh swee zah-LAY' },
+          { word: 'J\'ai fait', translation: 'I did/made', pronunciation: 'zhay fay' },
+          { word: 'J\'ai vu', translation: 'I saw', pronunciation: 'zhay voo' },
+          { word: 'J\'ai mangé', translation: 'I ate', pronunciation: 'zhay mahn-ZHAY' },
+          { word: 'J\'ai bu', translation: 'I drank', pronunciation: 'zhay boo' }
+        ],
+        streetSlang: [
+          { word: 'Je suis allé à...', translation: 'I went to...', pronunciation: 'zhuh swee zah-LAY ah' },
+          { word: 'J\'ai fait...', translation: 'I did/made...', pronunciation: 'zhay fay' },
+          { word: 'J\'ai vu...', translation: 'I saw...', pronunciation: 'zhay voo' },
+          { word: 'J\'ai mangé...', translation: 'I ate...', pronunciation: 'zhay mahn-ZHAY' },
+          { word: 'J\'ai bu...', translation: 'I drank...', pronunciation: 'zhay boo' },
+          { word: 'Hier', translation: 'Yesterday', pronunciation: 'ee-AIR' }
+        ]
+      },
+      {
+        id: 17,
+        title: 'Future Plans',
+        premium: true,
+        words: [
+          { word: 'Je vais', translation: 'I\'m going to', pronunciation: 'zhuh vay' },
+          { word: 'Je vais aller', translation: 'I\'m going to go', pronunciation: 'zhuh vay zah-LAY' },
+          { word: 'Je vais faire', translation: 'I\'m going to do', pronunciation: 'zhuh vay fair' },
+          { word: 'Je vais voir', translation: 'I\'m going to see', pronunciation: 'zhuh vay vwahr' },
+          { word: 'Demain', translation: 'Tomorrow', pronunciation: 'duh-man' }
+        ],
+        streetSlang: [
+          { word: 'Je vais...', translation: 'I\'m going to...', pronunciation: 'zhuh vay' },
+          { word: 'Je vais aller à...', translation: 'I\'m going to go to...', pronunciation: 'zhuh vay zah-LAY ah' },
+          { word: 'Je vais faire...', translation: 'I\'m going to do...', pronunciation: 'zhuh vay fair' },
+          { word: 'Demain je vais...', translation: 'Tomorrow I\'m going to...', pronunciation: 'duh-man zhuh vay' },
+          { word: 'Je vais voir...', translation: 'I\'m going to see...', pronunciation: 'zhuh vay vwahr' },
+          { word: 'Le prochain...', translation: 'Next...', pronunciation: 'luh proh-SHAN' }
+        ]
+      },
+      {
+        id: 18,
+        title: 'Making Suggestions',
+        premium: true,
+        words: [
+          { word: 'Et si...?', translation: 'What if...?', pronunciation: 'ay see' },
+          { word: 'Pourquoi ne pas...?', translation: 'Why don\'t we...?', pronunciation: 'poor-kwah nuh pah' },
+          { word: 'On devrait', translation: 'We should', pronunciation: 'ohn duh-VAY' },
+          { word: 'On pourrait', translation: 'We could', pronunciation: 'ohn poo-RAY' },
+          { word: 'Allons', translation: 'Let\'s', pronunciation: 'ah-LOHN' }
+        ],
+        streetSlang: [
+          { word: 'Et si on allait?', translation: 'What if we go?', pronunciation: 'ay see ohn zah-LAY' },
+          { word: 'Pourquoi ne pas aller?', translation: 'Why don\'t we go?', pronunciation: 'poor-kwah nuh pah zah-LAY' },
+          { word: 'On devrait aller', translation: 'We should go', pronunciation: 'ohn duh-VAY zah-LAY' },
+          { word: 'On pourrait faire', translation: 'We could do', pronunciation: 'ohn poo-RAY fair' },
+          { word: 'Allons...', translation: 'Let\'s...', pronunciation: 'ah-LOHN' },
+          { word: 'Je propose...', translation: 'I suggest...', pronunciation: 'zhuh proh-POHZ' }
+        ]
+      },
+      {
+        id: 19,
+        title: 'Expressing Opinions',
+        premium: true,
+        words: [
+          { word: 'Je pense que', translation: 'I think that', pronunciation: 'zhuh pahns kuh' },
+          { word: 'Je crois que', translation: 'I believe that', pronunciation: 'zhuh krwah kuh' },
+          { word: 'Il me semble que', translation: 'It seems to me that', pronunciation: 'eel muh sahm-bluh kuh' },
+          { word: 'À mon avis', translation: 'In my opinion', pronunciation: 'ah mohn ah-VEE' },
+          { word: 'Pour moi', translation: 'For me', pronunciation: 'poor mwah' }
+        ],
+        streetSlang: [
+          { word: 'Je pense que...', translation: 'I think that...', pronunciation: 'zhuh pahns kuh' },
+          { word: 'Je crois que...', translation: 'I believe that...', pronunciation: 'zhuh krwah kuh' },
+          { word: 'Il me semble que...', translation: 'It seems to me that...', pronunciation: 'eel muh sahm-bluh kuh' },
+          { word: 'À mon avis...', translation: 'In my opinion...', pronunciation: 'ah mohn ah-VEE' },
+          { word: 'Pour moi...', translation: 'For me...', pronunciation: 'poor mwah' },
+          { word: 'Je trouve que...', translation: 'I find that...', pronunciation: 'zhuh troov kuh' }
+        ]
+      },
+      {
+        id: 20,
+        title: 'Problem Solving',
+        premium: true,
+        words: [
+          { word: 'Problème', translation: 'Problem', pronunciation: 'proh-BLEM' },
+          { word: 'Solution', translation: 'Solution', pronunciation: 'soh-loo-SYOHN' },
+          { word: 'Aide', translation: 'Help', pronunciation: 'ed' },
+          { word: 'J\'ai besoin', translation: 'I need', pronunciation: 'zhay buh-ZWAN' },
+          { word: 'Je peux', translation: 'I can', pronunciation: 'zhuh puh' }
+        ],
+        streetSlang: [
+          { word: 'Avoir un problème', translation: 'To have a problem', pronunciation: 'ah-VWAHR oon proh-BLEM' },
+          { word: 'Chercher une solution', translation: 'To look for a solution', pronunciation: 'sher-SHAY oon soh-loo-SYOHN' },
+          { word: 'Avoir besoin d\'aide', translation: 'To need help', pronunciation: 'ah-VWAHR buh-ZWAN ded' },
+          { word: 'Je peux aider', translation: 'I can help', pronunciation: 'zhuh puh ay-DAY' },
+          { word: 'Résoudre un problème', translation: 'To solve a problem', pronunciation: 'ray-ZOOD-ruh oon proh-BLEM' },
+          { word: 'Trouver une solution', translation: 'To find a solution', pronunciation: 'troo-VAY oon soh-loo-SYOHN' }
         ]
       }
     ]
@@ -593,6 +993,206 @@ export const languages = {
           { word: 'Es ist saukalt', translation: 'It\'s freezing cold (pig cold)', pronunciation: 'es ist ZOW-kahlt' },
           { word: 'Es ist bewölkt', translation: 'It\'s cloudy', pronunciation: 'es ist beh-VERKT' },
         ]
+      },
+      {
+        id: 11,
+        title: 'Transportation & Travel',
+        premium: true,
+        words: [
+          { word: 'Auto', translation: 'Car', pronunciation: 'OW-toh' },
+          { word: 'Flugzeug', translation: 'Airplane', pronunciation: 'FLOOG-tsoyk' },
+          { word: 'Zug', translation: 'Train', pronunciation: 'tsook' },
+          { word: 'Bus', translation: 'Bus', pronunciation: 'boos' },
+          { word: 'Fahrrad', translation: 'Bicycle', pronunciation: 'FAHR-raht' }
+        ],
+        streetSlang: [
+          { word: 'Tanken gehen', translation: 'To fill up gas', pronunciation: 'TAHN-ken GAY-en' },
+          { word: 'Vollgas geben', translation: 'To go full speed', pronunciation: 'FOHL-gahs GAY-ben' },
+          { word: 'Im Stau stehen', translation: 'To be stuck in traffic', pronunciation: 'im shtow SHTAY-en' },
+          { word: 'Den Bus nehmen', translation: 'To catch the bus', pronunciation: 'den boos NAY-men' },
+          { word: 'Reisen', translation: 'To travel', pronunciation: 'RY-zen' },
+          { word: 'Eine Reise machen', translation: 'To take a trip', pronunciation: 'I-neh RY-zeh MAH-khen' }
+        ]
+      },
+      {
+        id: 12,
+        title: 'Work & Business',
+        premium: true,
+        words: [
+          { word: 'Arbeit', translation: 'Work/Job', pronunciation: 'AHR-bite' },
+          { word: 'Büro', translation: 'Office', pronunciation: 'BOO-roh' },
+          { word: 'Meeting', translation: 'Meeting', pronunciation: 'MEE-ting' },
+          { word: 'Kunde', translation: 'Client', pronunciation: 'KOON-deh' },
+          { word: 'Geschäft', translation: 'Business', pronunciation: 'geh-SHEFT' }
+        ],
+        streetSlang: [
+          { word: 'Auf der Arbeit sein', translation: 'To be working', pronunciation: 'owf der AHR-bite zine' },
+          { word: 'Viel Arbeit haben', translation: 'To have a lot of work', pronunciation: 'feel AHR-bite HAH-ben' },
+          { word: 'Geschäfte machen', translation: 'To do business', pronunciation: 'geh-SHEF-teh MAH-khen' },
+          { word: 'Beschäftigt sein', translation: 'To be busy', pronunciation: 'beh-SHEF-tikt zine' },
+          { word: 'Hart arbeiten', translation: 'To work hard', pronunciation: 'hart AHR-bite-en' },
+          { word: 'Ein Meeting haben', translation: 'To have a meeting', pronunciation: 'ine MEE-ting HAH-ben' }
+        ]
+      },
+      {
+        id: 13,
+        title: 'Hobbies & Interests',
+        premium: true,
+        words: [
+          { word: 'Musik', translation: 'Music', pronunciation: 'moo-ZEEK' },
+          { word: 'Sport', translation: 'Sport', pronunciation: 'shport' },
+          { word: 'Buch', translation: 'Book', pronunciation: 'bookh' },
+          { word: 'Film', translation: 'Movie', pronunciation: 'film' },
+          { word: 'Hobby', translation: 'Hobby', pronunciation: 'HOH-bee' }
+        ],
+        streetSlang: [
+          { word: 'Einen Film schauen', translation: 'To watch a movie', pronunciation: 'I-nen film SHOW-en' },
+          { word: 'Musik hören', translation: 'To listen to music', pronunciation: 'moo-ZEEK HER-ren' },
+          { word: 'Sport treiben', translation: 'To do sports', pronunciation: 'shport TRY-ben' },
+          { word: 'Ein Buch lesen', translation: 'To read a book', pronunciation: 'ine bookh LAY-zen' },
+          { word: 'Ein Hobby haben', translation: 'To have a hobby', pronunciation: 'ine HOH-bee HAH-ben' },
+          { word: 'Zeit verbringen', translation: 'To spend time', pronunciation: 'tsite fer-BRING-en' }
+        ]
+      },
+      {
+        id: 14,
+        title: 'Emotions & Feelings',
+        premium: true,
+        words: [
+          { word: 'Glücklich', translation: 'Happy', pronunciation: 'GLOOK-likh' },
+          { word: 'Traurig', translation: 'Sad', pronunciation: 'TROW-rikh' },
+          { word: 'Wütend', translation: 'Angry', pronunciation: 'VOO-tent' },
+          { word: 'Nervös', translation: 'Nervous', pronunciation: 'nehr-VERS' },
+          { word: 'Aufgeregt', translation: 'Excited', pronunciation: 'OWF-geh-rehkt' }
+        ],
+        streetSlang: [
+          { word: 'Glücklich sein', translation: 'To be happy', pronunciation: 'GLOOK-likh zine' },
+          { word: 'Traurig sein', translation: 'To be sad', pronunciation: 'TROW-rikh zine' },
+          { word: 'Wütend sein', translation: 'To be angry', pronunciation: 'VOO-tent zine' },
+          { word: 'Nervös sein', translation: 'To be nervous', pronunciation: 'nehr-VERS zine' },
+          { word: 'Aufgeregt sein', translation: 'To be excited', pronunciation: 'OWF-geh-rehkt zine' },
+          { word: 'Sich gut fühlen', translation: 'To feel good', pronunciation: 'zikh goot FOO-len' }
+        ]
+      },
+      {
+        id: 15,
+        title: 'Directions & Locations',
+        premium: true,
+        words: [
+          { word: 'Links', translation: 'Left', pronunciation: 'links' },
+          { word: 'Rechts', translation: 'Right', pronunciation: 'rekhts' },
+          { word: 'Geradeaus', translation: 'Straight', pronunciation: 'geh-rah-deh-OWS' },
+          { word: 'Nah', translation: 'Near', pronunciation: 'nah' },
+          { word: 'Weit', translation: 'Far', pronunciation: 'vite' }
+        ],
+        streetSlang: [
+          { word: 'Links abbiegen', translation: 'To turn left', pronunciation: 'links AHP-bee-gen' },
+          { word: 'Rechts abbiegen', translation: 'To turn right', pronunciation: 'rekhts AHP-bee-gen' },
+          { word: 'Geradeaus gehen', translation: 'To go straight', pronunciation: 'geh-rah-deh-OWS GAY-en' },
+          { word: 'Nah sein', translation: 'To be near', pronunciation: 'nah zine' },
+          { word: 'Weit sein', translation: 'To be far', pronunciation: 'vite zine' },
+          { word: 'Wo ist...?', translation: 'Where is...?', pronunciation: 'voh ist' }
+        ]
+      },
+      {
+        id: 16,
+        title: 'Past Tense Basics',
+        premium: true,
+        words: [
+          { word: 'Ich bin gegangen', translation: 'I went', pronunciation: 'ikh bin geh-GAHN-gen' },
+          { word: 'Ich habe gemacht', translation: 'I did/made', pronunciation: 'ikh HAH-beh geh-MAHKT' },
+          { word: 'Ich habe gesehen', translation: 'I saw', pronunciation: 'ikh HAH-beh geh-ZAY-en' },
+          { word: 'Ich habe gegessen', translation: 'I ate', pronunciation: 'ikh HAH-beh geh-GES-sen' },
+          { word: 'Ich habe getrunken', translation: 'I drank', pronunciation: 'ikh HAH-beh geh-TROON-ken' }
+        ],
+        streetSlang: [
+          { word: 'Ich bin nach... gegangen', translation: 'I went to...', pronunciation: 'ikh bin nahkh... geh-GAHN-gen' },
+          { word: 'Ich habe... gemacht', translation: 'I did/made...', pronunciation: 'ikh HAH-beh... geh-MAHKT' },
+          { word: 'Ich habe... gesehen', translation: 'I saw...', pronunciation: 'ikh HAH-beh... geh-ZAY-en' },
+          { word: 'Ich habe... gegessen', translation: 'I ate...', pronunciation: 'ikh HAH-beh... geh-GES-sen' },
+          { word: 'Ich habe... getrunken', translation: 'I drank...', pronunciation: 'ikh HAH-beh... geh-TROON-ken' },
+          { word: 'Gestern', translation: 'Yesterday', pronunciation: 'GES-tern' }
+        ]
+      },
+      {
+        id: 17,
+        title: 'Future Plans',
+        premium: true,
+        words: [
+          { word: 'Ich werde', translation: 'I\'m going to', pronunciation: 'ikh VEHR-deh' },
+          { word: 'Ich werde gehen', translation: 'I\'m going to go', pronunciation: 'ikh VEHR-deh GAY-en' },
+          { word: 'Ich werde machen', translation: 'I\'m going to do', pronunciation: 'ikh VEHR-deh MAH-khen' },
+          { word: 'Ich werde sehen', translation: 'I\'m going to see', pronunciation: 'ikh VEHR-deh ZAY-en' },
+          { word: 'Morgen', translation: 'Tomorrow', pronunciation: 'MOR-gen' }
+        ],
+        streetSlang: [
+          { word: 'Ich werde...', translation: 'I\'m going to...', pronunciation: 'ikh VEHR-deh' },
+          { word: 'Ich werde nach... gehen', translation: 'I\'m going to go to...', pronunciation: 'ikh VEHR-deh nahkh... GAY-en' },
+          { word: 'Ich werde... machen', translation: 'I\'m going to do...', pronunciation: 'ikh VEHR-deh... MAH-khen' },
+          { word: 'Morgen werde ich...', translation: 'Tomorrow I\'m going to...', pronunciation: 'MOR-gen VEHR-deh ikh' },
+          { word: 'Ich werde... sehen', translation: 'I\'m going to see...', pronunciation: 'ikh VEHR-deh... ZAY-en' },
+          { word: 'Nächstes...', translation: 'Next...', pronunciation: 'NEHKH-stes' }
+        ]
+      },
+      {
+        id: 18,
+        title: 'Making Suggestions',
+        premium: true,
+        words: [
+          { word: 'Was wäre wenn...?', translation: 'What if...?', pronunciation: 'vahs VEH-reh ven' },
+          { word: 'Warum gehen wir nicht...?', translation: 'Why don\'t we...?', pronunciation: 'vah-ROOM GAY-en veer nikht' },
+          { word: 'Wir sollten', translation: 'We should', pronunciation: 'veer ZOHL-ten' },
+          { word: 'Wir könnten', translation: 'We could', pronunciation: 'veer KERN-ten' },
+          { word: 'Lass uns', translation: 'Let\'s', pronunciation: 'lahs oons' }
+        ],
+        streetSlang: [
+          { word: 'Was wäre wenn wir gehen?', translation: 'What if we go?', pronunciation: 'vahs VEH-reh ven veer GAY-en' },
+          { word: 'Warum gehen wir nicht?', translation: 'Why don\'t we go?', pronunciation: 'vah-ROOM GAY-en veer nikht' },
+          { word: 'Wir sollten gehen', translation: 'We should go', pronunciation: 'veer ZOHL-ten GAY-en' },
+          { word: 'Wir könnten machen', translation: 'We could do', pronunciation: 'veer KERN-ten MAH-khen' },
+          { word: 'Lass uns...', translation: 'Let\'s...', pronunciation: 'lahs oons' },
+          { word: 'Ich schlage vor...', translation: 'I suggest...', pronunciation: 'ikh SHLAH-geh for' }
+        ]
+      },
+      {
+        id: 19,
+        title: 'Expressing Opinions',
+        premium: true,
+        words: [
+          { word: 'Ich denke, dass', translation: 'I think that', pronunciation: 'ikh DEN-keh dahs' },
+          { word: 'Ich glaube, dass', translation: 'I believe that', pronunciation: 'ikh GLOW-beh dahs' },
+          { word: 'Es scheint mir, dass', translation: 'It seems to me that', pronunciation: 'es shint meer dahs' },
+          { word: 'Meiner Meinung nach', translation: 'In my opinion', pronunciation: 'MY-ner MY-noong nahkh' },
+          { word: 'Für mich', translation: 'For me', pronunciation: 'foor mikh' }
+        ],
+        streetSlang: [
+          { word: 'Ich denke, dass...', translation: 'I think that...', pronunciation: 'ikh DEN-keh dahs' },
+          { word: 'Ich glaube, dass...', translation: 'I believe that...', pronunciation: 'ikh GLOW-beh dahs' },
+          { word: 'Es scheint mir, dass...', translation: 'It seems to me that...', pronunciation: 'es shint meer dahs' },
+          { word: 'Meiner Meinung nach...', translation: 'In my opinion...', pronunciation: 'MY-ner MY-noong nahkh' },
+          { word: 'Für mich...', translation: 'For me...', pronunciation: 'foor mikh' },
+          { word: 'Ich finde, dass...', translation: 'I find that...', pronunciation: 'ikh FIN-deh dahs' }
+        ]
+      },
+      {
+        id: 20,
+        title: 'Problem Solving',
+        premium: true,
+        words: [
+          { word: 'Problem', translation: 'Problem', pronunciation: 'proh-BLEM' },
+          { word: 'Lösung', translation: 'Solution', pronunciation: 'LER-zoong' },
+          { word: 'Hilfe', translation: 'Help', pronunciation: 'HIL-feh' },
+          { word: 'Ich brauche', translation: 'I need', pronunciation: 'ikh BROW-kheh' },
+          { word: 'Ich kann', translation: 'I can', pronunciation: 'ikh kahn' }
+        ],
+        streetSlang: [
+          { word: 'Ein Problem haben', translation: 'To have a problem', pronunciation: 'ine proh-BLEM HAH-ben' },
+          { word: 'Nach einer Lösung suchen', translation: 'To look for a solution', pronunciation: 'nahkh I-ner LER-zoong ZOO-khen' },
+          { word: 'Hilfe brauchen', translation: 'To need help', pronunciation: 'HIL-feh BROW-khen' },
+          { word: 'Ich kann helfen', translation: 'I can help', pronunciation: 'ikh kahn HEL-fen' },
+          { word: 'Ein Problem lösen', translation: 'To solve a problem', pronunciation: 'ine proh-BLEM LER-zen' },
+          { word: 'Eine Lösung finden', translation: 'To find a solution', pronunciation: 'I-neh LER-zoong FIN-den' }
+        ]
       }
     ]
   },
@@ -791,6 +1391,206 @@ export const languages = {
           { word: '더워', translation: 'It\'s hot', pronunciation: 'deo-wo', romanji: 'Deowo' },
           { word: '날씨 완전 좋다', translation: 'Weather is totally great', pronunciation: 'nal-ssi wan-jeon jo-ta', romanji: 'Nalssi wanjeon jota' },
           { word: '구름 많다', translation: 'It\'s cloudy', pronunciation: 'gu-reum man-ta', romanji: 'Gureum manta' },
+        ]
+      },
+      {
+        id: 11,
+        title: 'Transportation & Travel',
+        premium: true,
+        words: [
+          { word: '자동차', translation: 'Car', pronunciation: 'ja-dong-cha', romanji: 'Jadongcha' },
+          { word: '비행기', translation: 'Airplane', pronunciation: 'bi-haeng-gi', romanji: 'Bihaenggi' },
+          { word: '기차', translation: 'Train', pronunciation: 'gi-cha', romanji: 'Gicha' },
+          { word: '버스', translation: 'Bus', pronunciation: 'beo-seu', romanji: 'Beoseu' },
+          { word: '자전거', translation: 'Bicycle', pronunciation: 'ja-jeon-geo', romanji: 'Jajeongeo' }
+        ],
+        streetSlang: [
+          { word: '주유소 가다', translation: 'To fill up gas', pronunciation: 'ju-yu-so ga-da', romanji: 'Juyuso gada' },
+          { word: '전속력으로 가다', translation: 'To go full speed', pronunciation: 'jeon-sok-ryeok-eu-ro ga-da', romanji: 'Jeonsokryeokeuro gada' },
+          { word: '교통 체증에 갇히다', translation: 'To be stuck in traffic', pronunciation: 'gyo-tong che-jeung-e gat-hi-da', romanji: 'Gyotong chejeunge gathida' },
+          { word: '버스 타다', translation: 'To catch the bus', pronunciation: 'beo-seu ta-da', romanji: 'Beoseu tada' },
+          { word: '여행하다', translation: 'To travel', pronunciation: 'yeo-haeng-ha-da', romanji: 'Yeohaenghada' },
+          { word: '여행 가다', translation: 'To take a trip', pronunciation: 'yeo-haeng ga-da', romanji: 'Yeohaeng gada' }
+        ]
+      },
+      {
+        id: 12,
+        title: 'Work & Business',
+        premium: true,
+        words: [
+          { word: '일', translation: 'Work/Job', pronunciation: 'il', romanji: 'Il' },
+          { word: '사무실', translation: 'Office', pronunciation: 'sa-mu-sil', romanji: 'Samusil' },
+          { word: '회의', translation: 'Meeting', pronunciation: 'hoe-ui', romanji: 'Hoeui' },
+          { word: '고객', translation: 'Client', pronunciation: 'go-gaek', romanji: 'Gogaek' },
+          { word: '사업', translation: 'Business', pronunciation: 'sa-eop', romanji: 'Saeop' }
+        ],
+        streetSlang: [
+          { word: '일하는 중', translation: 'To be working', pronunciation: 'il-ha-neun jung', romanji: 'Ilhaneun jung' },
+          { word: '일 많다', translation: 'To have a lot of work', pronunciation: 'il man-ta', romanji: 'Il manta' },
+          { word: '사업하다', translation: 'To do business', pronunciation: 'sa-eop-ha-da', romanji: 'Saeophada' },
+          { word: '바쁘다', translation: 'To be busy', pronunciation: 'ba-ppeu-da', romanji: 'Bappeuda' },
+          { word: '열심히 일하다', translation: 'To work hard', pronunciation: 'yeol-sim-hi il-ha-da', romanji: 'Yeolsimhi ilhada' },
+          { word: '회의 있다', translation: 'To have a meeting', pronunciation: 'hoe-ui it-da', romanji: 'Hoeui itda' }
+        ]
+      },
+      {
+        id: 13,
+        title: 'Hobbies & Interests',
+        premium: true,
+        words: [
+          { word: '음악', translation: 'Music', pronunciation: 'eum-ak', romanji: 'Eumak' },
+          { word: '운동', translation: 'Sport', pronunciation: 'un-dong', romanji: 'Undong' },
+          { word: '책', translation: 'Book', pronunciation: 'chaek', romanji: 'Chaek' },
+          { word: '영화', translation: 'Movie', pronunciation: 'yeong-hwa', romanji: 'Yeonghwa' },
+          { word: '취미', translation: 'Hobby', pronunciation: 'chwi-mi', romanji: 'Chwimi' }
+        ],
+        streetSlang: [
+          { word: '영화 보다', translation: 'To watch a movie', pronunciation: 'yeong-hwa bo-da', romanji: 'Yeonghwa boda' },
+          { word: '음악 듣다', translation: 'To listen to music', pronunciation: 'eum-ak deut-da', romanji: 'Eumak deutda' },
+          { word: '운동하다', translation: 'To do sports', pronunciation: 'un-dong-ha-da', romanji: 'Undonghada' },
+          { word: '책 읽다', translation: 'To read a book', pronunciation: 'chaek ilk-da', romanji: 'Chaek ilkda' },
+          { word: '취미 있다', translation: 'To have a hobby', pronunciation: 'chwi-mi it-da', romanji: 'Chwimi itda' },
+          { word: '시간 보내다', translation: 'To spend time', pronunciation: 'si-gan bo-nae-da', romanji: 'Sigan bonaeda' }
+        ]
+      },
+      {
+        id: 14,
+        title: 'Emotions & Feelings',
+        premium: true,
+        words: [
+          { word: '행복하다', translation: 'Happy', pronunciation: 'haeng-bok-ha-da', romanji: 'Haengbokhada' },
+          { word: '슬프다', translation: 'Sad', pronunciation: 'seul-peu-da', romanji: 'Seulpeuda' },
+          { word: '화나다', translation: 'Angry', pronunciation: 'hwa-na-da', romanji: 'Hwanada' },
+          { word: '긴장하다', translation: 'Nervous', pronunciation: 'gin-jang-ha-da', romanji: 'Ginjanghada' },
+          { word: '신나다', translation: 'Excited', pronunciation: 'sin-na-da', romanji: 'Sinnada' }
+        ],
+        streetSlang: [
+          { word: '행복해', translation: 'To be happy', pronunciation: 'haeng-bok-hae', romanji: 'Haengbokhae' },
+          { word: '슬퍼', translation: 'To be sad', pronunciation: 'seul-peo', romanji: 'Seulpeo' },
+          { word: '화나', translation: 'To be angry', pronunciation: 'hwa-na', romanji: 'Hwana' },
+          { word: '긴장돼', translation: 'To be nervous', pronunciation: 'gin-jang-dwae', romanji: 'Ginjangdwae' },
+          { word: '신나', translation: 'To be excited', pronunciation: 'sin-na', romanji: 'Sinna' },
+          { word: '기분 좋다', translation: 'To feel good', pronunciation: 'gi-bun jo-ta', romanji: 'Gibun jota' }
+        ]
+      },
+      {
+        id: 15,
+        title: 'Directions & Locations',
+        premium: true,
+        words: [
+          { word: '왼쪽', translation: 'Left', pronunciation: 'oen-jjok', romanji: 'Oenjjok' },
+          { word: '오른쪽', translation: 'Right', pronunciation: 'o-reun-jjok', romanji: 'Oreunjjok' },
+          { word: '직진', translation: 'Straight', pronunciation: 'jik-jin', romanji: 'Jikjin' },
+          { word: '가까이', translation: 'Near', pronunciation: 'ga-kka-i', romanji: 'Gakkai' },
+          { word: '멀리', translation: 'Far', pronunciation: 'meol-li', romanji: 'Meolli' }
+        ],
+        streetSlang: [
+          { word: '왼쪽으로 가다', translation: 'To turn left', pronunciation: 'oen-jjok-eu-ro ga-da', romanji: 'Oenjjokeuro gada' },
+          { word: '오른쪽으로 가다', translation: 'To turn right', pronunciation: 'o-reun-jjok-eu-ro ga-da', romanji: 'Oreunjjokeuro gada' },
+          { word: '직진하다', translation: 'To go straight', pronunciation: 'jik-jin-ha-da', romanji: 'Jikjinhada' },
+          { word: '가까이 있다', translation: 'To be near', pronunciation: 'ga-kka-i it-da', romanji: 'Gakkai itda' },
+          { word: '멀리 있다', translation: 'To be far', pronunciation: 'meol-li it-da', romanji: 'Meolli itda' },
+          { word: '어디 있어?', translation: 'Where is...?', pronunciation: 'eo-di it-eo', romanji: 'Eodi iteo?' }
+        ]
+      },
+      {
+        id: 16,
+        title: 'Past Tense Basics',
+        premium: true,
+        words: [
+          { word: '갔다', translation: 'I went', pronunciation: 'gat-da', romanji: 'Gatda' },
+          { word: '했다', translation: 'I did/made', pronunciation: 'haet-da', romanji: 'Haetda' },
+          { word: '봤다', translation: 'I saw', pronunciation: 'bwat-da', romanji: 'Bwatda' },
+          { word: '먹었다', translation: 'I ate', pronunciation: 'meok-eot-da', romanji: 'Meokeotda' },
+          { word: '마셨다', translation: 'I drank', pronunciation: 'ma-syeot-da', romanji: 'Masyeotda' }
+        ],
+        streetSlang: [
+          { word: '...에 갔다', translation: 'I went to...', pronunciation: '...e gat-da', romanji: '...e gatda' },
+          { word: '...했다', translation: 'I did/made...', pronunciation: '...haet-da', romanji: '...haetda' },
+          { word: '...봤다', translation: 'I saw...', pronunciation: '...bwat-da', romanji: '...bwatda' },
+          { word: '...먹었다', translation: 'I ate...', pronunciation: '...meok-eot-da', romanji: '...meokeotda' },
+          { word: '...마셨다', translation: 'I drank...', pronunciation: '...ma-syeot-da', romanji: '...masyeotda' },
+          { word: '어제', translation: 'Yesterday', pronunciation: 'eo-je', romanji: 'Eoje' }
+        ]
+      },
+      {
+        id: 17,
+        title: 'Future Plans',
+        premium: true,
+        words: [
+          { word: '갈 거야', translation: 'I\'m going to', pronunciation: 'gal geo-ya', romanji: 'Gal geoya' },
+          { word: '갈 거야', translation: 'I\'m going to go', pronunciation: 'gal geo-ya', romanji: 'Gal geoya' },
+          { word: '할 거야', translation: 'I\'m going to do', pronunciation: 'hal geo-ya', romanji: 'Hal geoya' },
+          { word: '볼 거야', translation: 'I\'m going to see', pronunciation: 'bol geo-ya', romanji: 'Bol geoya' },
+          { word: '내일', translation: 'Tomorrow', pronunciation: 'nae-il', romanji: 'Naeil' }
+        ],
+        streetSlang: [
+          { word: '...할 거야', translation: 'I\'m going to...', pronunciation: '...hal geo-ya', romanji: '...hal geoya' },
+          { word: '...에 갈 거야', translation: 'I\'m going to go to...', pronunciation: '...e gal geo-ya', romanji: '...e gal geoya' },
+          { word: '...할 거야', translation: 'I\'m going to do...', pronunciation: '...hal geo-ya', romanji: '...hal geoya' },
+          { word: '내일 ...할 거야', translation: 'Tomorrow I\'m going to...', pronunciation: 'nae-il ...hal geo-ya', romanji: 'Naeil ...hal geoya' },
+          { word: '...볼 거야', translation: 'I\'m going to see...', pronunciation: '...bol geo-ya', romanji: '...bol geoya' },
+          { word: '다음...', translation: 'Next...', pronunciation: 'da-eum', romanji: 'Daeum' }
+        ]
+      },
+      {
+        id: 18,
+        title: 'Making Suggestions',
+        premium: true,
+        words: [
+          { word: '...하면 어때?', translation: 'What if...?', pronunciation: '...ha-myeon eo-ttae', romanji: '...hamyeon eottae?' },
+          { word: '...가는 게 어때?', translation: 'Why don\'t we...?', pronunciation: '...ga-neun ge eo-ttae', romanji: '...ganeun ge eottae?' },
+          { word: '해야 해', translation: 'We should', pronunciation: 'hae-ya hae', romanji: 'Haeya hae' },
+          { word: '할 수 있어', translation: 'We could', pronunciation: 'hal su it-eo', romanji: 'Hal su iteo' },
+          { word: '가자', translation: 'Let\'s', pronunciation: 'ga-ja', romanji: 'Gaja' }
+        ],
+        streetSlang: [
+          { word: '가면 어때?', translation: 'What if we go?', pronunciation: 'ga-myeon eo-ttae', romanji: 'Gamyeon eottae?' },
+          { word: '가는 게 어때?', translation: 'Why don\'t we go?', pronunciation: 'ga-neun ge eo-ttae', romanji: 'Ganeun ge eottae?' },
+          { word: '가야 해', translation: 'We should go', pronunciation: 'ga-ya hae', romanji: 'Gaya hae' },
+          { word: '할 수 있어', translation: 'We could do', pronunciation: 'hal su it-eo', romanji: 'Hal su iteo' },
+          { word: '...하자', translation: 'Let\'s...', pronunciation: '...ha-ja', romanji: '...haja' },
+          { word: '제안해', translation: 'I suggest...', pronunciation: 'je-an-hae', romanji: 'Jeanhae' }
+        ]
+      },
+      {
+        id: 19,
+        title: 'Expressing Opinions',
+        premium: true,
+        words: [
+          { word: '생각해', translation: 'I think that', pronunciation: 'saeng-gak-hae', romanji: 'Saenggakhae' },
+          { word: '믿어', translation: 'I believe that', pronunciation: 'mid-eo', romanji: 'Mideo' },
+          { word: '...인 것 같아', translation: 'It seems to me that', pronunciation: '...in geot ga-ta', romanji: '...in geot gata' },
+          { word: '내 의견으로는', translation: 'In my opinion', pronunciation: 'nae ui-gyeon-eu-ro-neun', romanji: 'Nae uigyeoneuroneun' },
+          { word: '나에게는', translation: 'For me', pronunciation: 'na-e-ge-neun', romanji: 'Naegeneun' }
+        ],
+        streetSlang: [
+          { word: '...생각해', translation: 'I think that...', pronunciation: '...saeng-gak-hae', romanji: '...saenggakhae' },
+          { word: '...믿어', translation: 'I believe that...', pronunciation: '...mid-eo', romanji: '...mideo' },
+          { word: '...인 것 같아', translation: 'It seems to me that...', pronunciation: '...in geot ga-ta', romanji: '...in geot gata' },
+          { word: '내 의견으로는...', translation: 'In my opinion...', pronunciation: 'nae ui-gyeon-eu-ro-neun', romanji: 'Nae uigyeoneuroneun' },
+          { word: '나에게는...', translation: 'For me...', pronunciation: 'na-e-ge-neun', romanji: 'Naegeneun' },
+          { word: '...찾아', translation: 'I find that...', pronunciation: '...chat-a', romanji: '...chata' }
+        ]
+      },
+      {
+        id: 20,
+        title: 'Problem Solving',
+        premium: true,
+        words: [
+          { word: '문제', translation: 'Problem', pronunciation: 'mun-je', romanji: 'Munje' },
+          { word: '해결책', translation: 'Solution', pronunciation: 'hae-gyeol-chaek', romanji: 'Haegyeolchaek' },
+          { word: '도움', translation: 'Help', pronunciation: 'do-um', romanji: 'Doum' },
+          { word: '필요해', translation: 'I need', pronunciation: 'pil-yo-hae', romanji: 'Pillyohae' },
+          { word: '할 수 있어', translation: 'I can', pronunciation: 'hal su it-eo', romanji: 'Hal su iteo' }
+        ],
+        streetSlang: [
+          { word: '문제 있다', translation: 'To have a problem', pronunciation: 'mun-je it-da', romanji: 'Munje itda' },
+          { word: '해결책 찾다', translation: 'To look for a solution', pronunciation: 'hae-gyeol-chaek chat-da', romanji: 'Haegyeolchaek chatda' },
+          { word: '도움 필요해', translation: 'To need help', pronunciation: 'do-um pil-yo-hae', romanji: 'Doum pillyohae' },
+          { word: '도와줄 수 있어', translation: 'I can help', pronunciation: 'do-wa-jul su it-eo', romanji: 'Dowajul su iteo' },
+          { word: '문제 해결하다', translation: 'To solve a problem', pronunciation: 'mun-je hae-gyeol-ha-da', romanji: 'Munje haegyeolhada' },
+          { word: '해결책 찾다', translation: 'To find a solution', pronunciation: 'hae-gyeol-chaek chat-da', romanji: 'Haegyeolchaek chatda' }
         ]
       }
     ]
@@ -991,6 +1791,206 @@ export const languages = {
           { word: 'Calor do inferno', translation: 'Hell\'s heat', pronunciation: 'kah-LOR doo een-FEHR-loh' },
           { word: 'Vento forte', translation: 'Strong wind', pronunciation: 'VEN-toh FOHR-teh' },
         ]
+      },
+      {
+        id: 11,
+        title: 'Transportation & Travel',
+        premium: true,
+        words: [
+          { word: 'Carro', translation: 'Car', pronunciation: 'KAH-roh' },
+          { word: 'Avião', translation: 'Airplane', pronunciation: 'ah-vee-AOWN' },
+          { word: 'Trem', translation: 'Train', pronunciation: 'trem' },
+          { word: 'Ônibus', translation: 'Bus', pronunciation: 'OH-nee-boos' },
+          { word: 'Bicicleta', translation: 'Bicycle', pronunciation: 'bee-see-KLEH-tah' }
+        ],
+        streetSlang: [
+          { word: 'Abastecer', translation: 'To fill up gas', pronunciation: 'ah-bahs-teh-SEHR' },
+          { word: 'A toda velocidade', translation: 'To go full speed', pronunciation: 'ah TOH-dah veh-loh-see-DAH-deh' },
+          { word: 'Preso no trânsito', translation: 'To be stuck in traffic', pronunciation: 'PREH-zoh noh TRAHN-see-toh' },
+          { word: 'Pegar o ônibus', translation: 'To catch the bus', pronunciation: 'peh-GAHR oh OH-nee-boos' },
+          { word: 'Viajar', translation: 'To travel', pronunciation: 'vee-ah-ZHAHR' },
+          { word: 'Fazer uma viagem', translation: 'To take a trip', pronunciation: 'fah-ZEHR OO-mah vee-AH-zhem' }
+        ]
+      },
+      {
+        id: 12,
+        title: 'Work & Business',
+        premium: true,
+        words: [
+          { word: 'Trabalho', translation: 'Work/Job', pronunciation: 'trah-BAH-lyoh' },
+          { word: 'Escritório', translation: 'Office', pronunciation: 'es-kree-TOH-ree-oh' },
+          { word: 'Reunião', translation: 'Meeting', pronunciation: 'reh-oo-NYAOWN' },
+          { word: 'Cliente', translation: 'Client', pronunciation: 'klee-EN-teh' },
+          { word: 'Negócio', translation: 'Business', pronunciation: 'neh-GOH-see-oh' }
+        ],
+        streetSlang: [
+          { word: 'Estar trabalhando', translation: 'To be working', pronunciation: 'es-TAR trah-bah-LYAHN-doh' },
+          { word: 'Ter muito trabalho', translation: 'To have a lot of work', pronunciation: 'tehr MOO-ee-toh trah-BAH-lyoh' },
+          { word: 'Fazer negócios', translation: 'To do business', pronunciation: 'fah-ZEHR neh-GOH-see-ohs' },
+          { word: 'Estar ocupado', translation: 'To be busy', pronunciation: 'es-TAR oh-koo-PAH-doh' },
+          { word: 'Trabalhar duro', translation: 'To work hard', pronunciation: 'trah-bah-LYAHR DOO-roh' },
+          { word: 'Ter uma reunião', translation: 'To have a meeting', pronunciation: 'tehr OO-mah reh-oo-NYAOWN' }
+        ]
+      },
+      {
+        id: 13,
+        title: 'Hobbies & Interests',
+        premium: true,
+        words: [
+          { word: 'Música', translation: 'Music', pronunciation: 'MOO-see-kah' },
+          { word: 'Esporte', translation: 'Sport', pronunciation: 'es-POR-teh' },
+          { word: 'Livro', translation: 'Book', pronunciation: 'LEE-vroh' },
+          { word: 'Filme', translation: 'Movie', pronunciation: 'FEEL-meh' },
+          { word: 'Hobby', translation: 'Hobby', pronunciation: 'HOH-bee' }
+        ],
+        streetSlang: [
+          { word: 'Assistir um filme', translation: 'To watch a movie', pronunciation: 'ah-sees-TEER oon FEEL-meh' },
+          { word: 'Ouvir música', translation: 'To listen to music', pronunciation: 'oh-VEER MOO-see-kah' },
+          { word: 'Praticar esporte', translation: 'To do sports', pronunciation: 'prah-tee-KAHR es-POR-teh' },
+          { word: 'Ler um livro', translation: 'To read a book', pronunciation: 'lehr oon LEE-vroh' },
+          { word: 'Ter um hobby', translation: 'To have a hobby', pronunciation: 'tehr oon HOH-bee' },
+          { word: 'Passar o tempo', translation: 'To spend time', pronunciation: 'pah-SAR oh TEM-poh' }
+        ]
+      },
+      {
+        id: 14,
+        title: 'Emotions & Feelings',
+        premium: true,
+        words: [
+          { word: 'Feliz', translation: 'Happy', pronunciation: 'feh-LEES' },
+          { word: 'Triste', translation: 'Sad', pronunciation: 'TREES-teh' },
+          { word: 'Bravo', translation: 'Angry', pronunciation: 'BRAH-voh' },
+          { word: 'Nervoso', translation: 'Nervous', pronunciation: 'nehr-VOH-zoh' },
+          { word: 'Animado', translation: 'Excited', pronunciation: 'ah-nee-MAH-doh' }
+        ],
+        streetSlang: [
+          { word: 'Estar feliz', translation: 'To be happy', pronunciation: 'es-TAR feh-LEES' },
+          { word: 'Estar triste', translation: 'To be sad', pronunciation: 'es-TAR TREES-teh' },
+          { word: 'Estar bravo', translation: 'To be angry', pronunciation: 'es-TAR BRAH-voh' },
+          { word: 'Estar nervoso', translation: 'To be nervous', pronunciation: 'es-TAR nehr-VOH-zoh' },
+          { word: 'Estar animado', translation: 'To be excited', pronunciation: 'es-TAR ah-nee-MAH-doh' },
+          { word: 'Se sentir bem', translation: 'To feel good', pronunciation: 'seh sen-TEER behm' }
+        ]
+      },
+      {
+        id: 15,
+        title: 'Directions & Locations',
+        premium: true,
+        words: [
+          { word: 'Esquerda', translation: 'Left', pronunciation: 'es-KEHR-dah' },
+          { word: 'Direita', translation: 'Right', pronunciation: 'dee-RAY-tah' },
+          { word: 'Em frente', translation: 'Straight', pronunciation: 'em FREN-teh' },
+          { word: 'Perto', translation: 'Near', pronunciation: 'PEHR-toh' },
+          { word: 'Longe', translation: 'Far', pronunciation: 'LOHN-zheh' }
+        ],
+        streetSlang: [
+          { word: 'Virar à esquerda', translation: 'To turn left', pronunciation: 'vee-RAHR ah es-KEHR-dah' },
+          { word: 'Virar à direita', translation: 'To turn right', pronunciation: 'vee-RAHR ah dee-RAY-tah' },
+          { word: 'Seguir em frente', translation: 'To go straight', pronunciation: 'seh-GEER em FREN-teh' },
+          { word: 'Estar perto', translation: 'To be near', pronunciation: 'es-TAR PEHR-toh' },
+          { word: 'Estar longe', translation: 'To be far', pronunciation: 'es-TAR LOHN-zheh' },
+          { word: 'Onde fica...?', translation: 'Where is...?', pronunciation: 'OHN-deh FEE-kah' }
+        ]
+      },
+      {
+        id: 16,
+        title: 'Past Tense Basics',
+        premium: true,
+        words: [
+          { word: 'Fui', translation: 'I went', pronunciation: 'fwee' },
+          { word: 'Fiz', translation: 'I did/made', pronunciation: 'fees' },
+          { word: 'Vi', translation: 'I saw', pronunciation: 'vee' },
+          { word: 'Comi', translation: 'I ate', pronunciation: 'koh-MEE' },
+          { word: 'Bebi', translation: 'I drank', pronunciation: 'beh-BEE' }
+        ],
+        streetSlang: [
+          { word: 'Fui para...', translation: 'I went to...', pronunciation: 'fwee PAH-rah' },
+          { word: 'Fiz...', translation: 'I did/made...', pronunciation: 'fees' },
+          { word: 'Vi...', translation: 'I saw...', pronunciation: 'vee' },
+          { word: 'Comi...', translation: 'I ate...', pronunciation: 'koh-MEE' },
+          { word: 'Bebi...', translation: 'I drank...', pronunciation: 'beh-BEE' },
+          { word: 'Ontem', translation: 'Yesterday', pronunciation: 'OHN-tem' }
+        ]
+      },
+      {
+        id: 17,
+        title: 'Future Plans',
+        premium: true,
+        words: [
+          { word: 'Vou', translation: 'I\'m going to', pronunciation: 'voh' },
+          { word: 'Vou ir', translation: 'I\'m going to go', pronunciation: 'voh eer' },
+          { word: 'Vou fazer', translation: 'I\'m going to do', pronunciation: 'voh fah-ZEHR' },
+          { word: 'Vou ver', translation: 'I\'m going to see', pronunciation: 'voh vehr' },
+          { word: 'Amanhã', translation: 'Tomorrow', pronunciation: 'ah-mahn-YAHN' }
+        ],
+        streetSlang: [
+          { word: 'Vou...', translation: 'I\'m going to...', pronunciation: 'voh' },
+          { word: 'Vou para...', translation: 'I\'m going to go to...', pronunciation: 'voh PAH-rah' },
+          { word: 'Vou fazer...', translation: 'I\'m going to do...', pronunciation: 'voh fah-ZEHR' },
+          { word: 'Amanhã vou...', translation: 'Tomorrow I\'m going to...', pronunciation: 'ah-mahn-YAHN voh' },
+          { word: 'Vou ver...', translation: 'I\'m going to see...', pronunciation: 'voh vehr' },
+          { word: 'Próximo...', translation: 'Next...', pronunciation: 'PROHK-see-moh' }
+        ]
+      },
+      {
+        id: 18,
+        title: 'Making Suggestions',
+        premium: true,
+        words: [
+          { word: 'E se...?', translation: 'What if...?', pronunciation: 'eh seh' },
+          { word: 'Por que não...?', translation: 'Why don\'t we...?', pronunciation: 'por keh now' },
+          { word: 'Devemos', translation: 'We should', pronunciation: 'deh-VEH-mohs' },
+          { word: 'Podemos', translation: 'We could', pronunciation: 'poh-DEH-mohs' },
+          { word: 'Vamos', translation: 'Let\'s', pronunciation: 'VAH-mohs' }
+        ],
+        streetSlang: [
+          { word: 'E se formos?', translation: 'What if we go?', pronunciation: 'eh seh FOHR-mohs' },
+          { word: 'Por que não vamos?', translation: 'Why don\'t we go?', pronunciation: 'por keh now VAH-mohs' },
+          { word: 'Devemos ir', translation: 'We should go', pronunciation: 'deh-VEH-mohs eer' },
+          { word: 'Podemos fazer', translation: 'We could do', pronunciation: 'poh-DEH-mohs fah-ZEHR' },
+          { word: 'Vamos...', translation: 'Let\'s...', pronunciation: 'VAH-mohs' },
+          { word: 'Sugiro...', translation: 'I suggest...', pronunciation: 'soo-ZHEE-roh' }
+        ]
+      },
+      {
+        id: 19,
+        title: 'Expressing Opinions',
+        premium: true,
+        words: [
+          { word: 'Acho que', translation: 'I think that', pronunciation: 'AH-shoh keh' },
+          { word: 'Creio que', translation: 'I believe that', pronunciation: 'KRAY-oh keh' },
+          { word: 'Parece-me que', translation: 'It seems to me that', pronunciation: 'pah-REH-seh-meh keh' },
+          { word: 'Na minha opinião', translation: 'In my opinion', pronunciation: 'nah MEE-nyah oh-pee-NYAOWN' },
+          { word: 'Para mim', translation: 'For me', pronunciation: 'pah-rah meem' }
+        ],
+        streetSlang: [
+          { word: 'Acho que...', translation: 'I think that...', pronunciation: 'AH-shoh keh' },
+          { word: 'Creio que...', translation: 'I believe that...', pronunciation: 'KRAY-oh keh' },
+          { word: 'Parece-me que...', translation: 'It seems to me that...', pronunciation: 'pah-REH-seh-meh keh' },
+          { word: 'Na minha opinião...', translation: 'In my opinion...', pronunciation: 'nah MEE-nyah oh-pee-NYAOWN' },
+          { word: 'Para mim...', translation: 'For me...', pronunciation: 'pah-rah meem' },
+          { word: 'Acho...', translation: 'I find that...', pronunciation: 'AH-shoh' }
+        ]
+      },
+      {
+        id: 20,
+        title: 'Problem Solving',
+        premium: true,
+        words: [
+          { word: 'Problema', translation: 'Problem', pronunciation: 'proh-BLEH-mah' },
+          { word: 'Solução', translation: 'Solution', pronunciation: 'soh-loo-SYAOWN' },
+          { word: 'Ajuda', translation: 'Help', pronunciation: 'ah-ZHOO-dah' },
+          { word: 'Preciso', translation: 'I need', pronunciation: 'preh-SEE-zoh' },
+          { word: 'Posso', translation: 'I can', pronunciation: 'POH-soh' }
+        ],
+        streetSlang: [
+          { word: 'Ter um problema', translation: 'To have a problem', pronunciation: 'tehr oon proh-BLEH-mah' },
+          { word: 'Procurar uma solução', translation: 'To look for a solution', pronunciation: 'proh-koo-RAHR OO-mah soh-loo-SYAOWN' },
+          { word: 'Precisar de ajuda', translation: 'To need help', pronunciation: 'preh-see-ZAHR deh ah-ZHOO-dah' },
+          { word: 'Posso ajudar', translation: 'I can help', pronunciation: 'POH-soh ah-zhoo-DAHR' },
+          { word: 'Resolver um problema', translation: 'To solve a problem', pronunciation: 'reh-zohl-VEHR oon proh-BLEH-mah' },
+          { word: 'Encontrar uma solução', translation: 'To find a solution', pronunciation: 'en-kohn-TRAHR OO-mah soh-loo-SYAOWN' }
+        ]
       }
     ]
   },
@@ -1187,6 +2187,206 @@ export const languages = {
           { word: '暑い', translation: 'It\'s hot', pronunciation: 'a-tsu-i', romanji: 'Atsui' },
           { word: 'めちゃ暑い', translation: 'Super hot', pronunciation: 'me-cha a-tsu-i', romanji: 'Mecha atsui' },
           { word: '曇り', translation: 'Cloudy', pronunciation: 'ku-mo-ri', romanji: 'Kumori' },
+        ]
+      },
+      {
+        id: 11,
+        title: 'Transportation & Travel',
+        premium: true,
+        words: [
+          { word: '車', translation: 'Car', pronunciation: 'ku-ru-ma', romanji: 'Kuruma' },
+          { word: '飛行機', translation: 'Airplane', pronunciation: 'hi-kou-ki', romanji: 'Hikouki' },
+          { word: '電車', translation: 'Train', pronunciation: 'den-sha', romanji: 'Densha' },
+          { word: 'バス', translation: 'Bus', pronunciation: 'ba-su', romanji: 'Basu' },
+          { word: '自転車', translation: 'Bicycle', pronunciation: 'ji-ten-sha', romanji: 'Jitensha' }
+        ],
+        streetSlang: [
+          { word: 'ガソリンを入れる', translation: 'To fill up gas', pronunciation: 'ga-so-rin wo i-re-ru', romanji: 'Gasorin wo ireru' },
+          { word: '全速力で行く', translation: 'To go full speed', pronunciation: 'zen-so-ku-ryo-ku de i-ku', romanji: 'Zensokuryoku de iku' },
+          { word: '渋滞に巻き込まれる', translation: 'To be stuck in traffic', pronunciation: 'juu-tai ni ma-ki-ko-ma-re-ru', romanji: 'Juutai ni makikomareru' },
+          { word: 'バスに乗る', translation: 'To catch the bus', pronunciation: 'ba-su ni no-ru', romanji: 'Basu ni noru' },
+          { word: '旅行する', translation: 'To travel', pronunciation: 'ryo-kou su-ru', romanji: 'Ryoukou suru' },
+          { word: '旅行に行く', translation: 'To take a trip', pronunciation: 'ryo-kou ni i-ku', romanji: 'Ryoukou ni iku' }
+        ]
+      },
+      {
+        id: 12,
+        title: 'Work & Business',
+        premium: true,
+        words: [
+          { word: '仕事', translation: 'Work/Job', pronunciation: 'shi-go-to', romanji: 'Shigoto' },
+          { word: 'オフィス', translation: 'Office', pronunciation: 'o-fi-su', romanji: 'Ofisu' },
+          { word: '会議', translation: 'Meeting', pronunciation: 'kai-gi', romanji: 'Kaigi' },
+          { word: '顧客', translation: 'Client', pronunciation: 'ko-kyaku', romanji: 'Kokyaku' },
+          { word: 'ビジネス', translation: 'Business', pronunciation: 'bi-ji-ne-su', romanji: 'Bijinesu' }
+        ],
+        streetSlang: [
+          { word: '仕事中', translation: 'To be working', pronunciation: 'shi-go-to-chuu', romanji: 'Shigotochuu' },
+          { word: '仕事が多い', translation: 'To have a lot of work', pronunciation: 'shi-go-to ga o-o-i', romanji: 'Shigoto ga ooi' },
+          { word: 'ビジネスをする', translation: 'To do business', pronunciation: 'bi-ji-ne-su wo su-ru', romanji: 'Bijinesu wo suru' },
+          { word: '忙しい', translation: 'To be busy', pronunciation: 'i-so-ga-shi-i', romanji: 'Isogashii' },
+          { word: '一生懸命働く', translation: 'To work hard', pronunciation: 'is-shou-ken-mei ha-ta-ra-ku', romanji: 'Isshoukenmei hataraku' },
+          { word: '会議がある', translation: 'To have a meeting', pronunciation: 'kai-gi ga a-ru', romanji: 'Kaigi ga aru' }
+        ]
+      },
+      {
+        id: 13,
+        title: 'Hobbies & Interests',
+        premium: true,
+        words: [
+          { word: '音楽', translation: 'Music', pronunciation: 'on-ga-ku', romanji: 'Ongaku' },
+          { word: 'スポーツ', translation: 'Sport', pronunciation: 'su-po-tsu', romanji: 'Supootsu' },
+          { word: '本', translation: 'Book', pronunciation: 'hon', romanji: 'Hon' },
+          { word: '映画', translation: 'Movie', pronunciation: 'ei-ga', romanji: 'Eiga' },
+          { word: '趣味', translation: 'Hobby', pronunciation: 'shu-mi', romanji: 'Shumi' }
+        ],
+        streetSlang: [
+          { word: '映画を見る', translation: 'To watch a movie', pronunciation: 'ei-ga wo mi-ru', romanji: 'Eiga wo miru' },
+          { word: '音楽を聞く', translation: 'To listen to music', pronunciation: 'on-ga-ku wo ki-ku', romanji: 'Ongaku wo kiku' },
+          { word: 'スポーツをする', translation: 'To do sports', pronunciation: 'su-po-tsu wo su-ru', romanji: 'Supootsu wo suru' },
+          { word: '本を読む', translation: 'To read a book', pronunciation: 'hon wo yo-mu', romanji: 'Hon wo yomu' },
+          { word: '趣味がある', translation: 'To have a hobby', pronunciation: 'shu-mi ga a-ru', romanji: 'Shumi ga aru' },
+          { word: '時間を過ごす', translation: 'To spend time', pronunciation: 'ji-kan wo su-go-su', romanji: 'Jikan wo sugosu' }
+        ]
+      },
+      {
+        id: 14,
+        title: 'Emotions & Feelings',
+        premium: true,
+        words: [
+          { word: '幸せ', translation: 'Happy', pronunciation: 'shi-a-wa-se', romanji: 'Shiawase' },
+          { word: '悲しい', translation: 'Sad', pronunciation: 'ka-na-shi-i', romanji: 'Kanashii' },
+          { word: '怒っている', translation: 'Angry', pronunciation: 'o-ko-tte i-ru', romanji: 'Okotte iru' },
+          { word: '緊張している', translation: 'Nervous', pronunciation: 'kin-chou shi-te i-ru', romanji: 'Kinchou shite iru' },
+          { word: '興奮している', translation: 'Excited', pronunciation: 'kou-fun shi-te i-ru', romanji: 'Koufun shite iru' }
+        ],
+        streetSlang: [
+          { word: '幸せ', translation: 'To be happy', pronunciation: 'shi-a-wa-se', romanji: 'Shiawase' },
+          { word: '悲しい', translation: 'To be sad', pronunciation: 'ka-na-shi-i', romanji: 'Kanashii' },
+          { word: '怒っている', translation: 'To be angry', pronunciation: 'o-ko-tte i-ru', romanji: 'Okotte iru' },
+          { word: '緊張している', translation: 'To be nervous', pronunciation: 'kin-chou shi-te i-ru', romanji: 'Kinchou shite iru' },
+          { word: '興奮している', translation: 'To be excited', pronunciation: 'kou-fun shi-te i-ru', romanji: 'Koufun shite iru' },
+          { word: '気分がいい', translation: 'To feel good', pronunciation: 'ki-bun ga i-i', romanji: 'Kibun ga ii' }
+        ]
+      },
+      {
+        id: 15,
+        title: 'Directions & Locations',
+        premium: true,
+        words: [
+          { word: '左', translation: 'Left', pronunciation: 'hi-da-ri', romanji: 'Hidari' },
+          { word: '右', translation: 'Right', pronunciation: 'mi-gi', romanji: 'Migi' },
+          { word: 'まっすぐ', translation: 'Straight', pronunciation: 'mas-su-gu', romanji: 'Massugu' },
+          { word: '近い', translation: 'Near', pronunciation: 'chi-ka-i', romanji: 'Chikai' },
+          { word: '遠い', translation: 'Far', pronunciation: 'to-o-i', romanji: 'Tooi' }
+        ],
+        streetSlang: [
+          { word: '左に曲がる', translation: 'To turn left', pronunciation: 'hi-da-ri ni ma-ga-ru', romanji: 'Hidari ni magaru' },
+          { word: '右に曲がる', translation: 'To turn right', pronunciation: 'mi-gi ni ma-ga-ru', romanji: 'Migi ni magaru' },
+          { word: 'まっすぐ行く', translation: 'To go straight', pronunciation: 'mas-su-gu i-ku', romanji: 'Massugu iku' },
+          { word: '近い', translation: 'To be near', pronunciation: 'chi-ka-i', romanji: 'Chikai' },
+          { word: '遠い', translation: 'To be far', pronunciation: 'to-o-i', romanji: 'Tooi' },
+          { word: '...はどこですか?', translation: 'Where is...?', pronunciation: '...wa do-ko desu ka', romanji: '...wa doko desu ka?' }
+        ]
+      },
+      {
+        id: 16,
+        title: 'Past Tense Basics',
+        premium: true,
+        words: [
+          { word: '行った', translation: 'I went', pronunciation: 'it-ta', romanji: 'Itta' },
+          { word: 'した', translation: 'I did/made', pronunciation: 'shi-ta', romanji: 'Shita' },
+          { word: '見た', translation: 'I saw', pronunciation: 'mi-ta', romanji: 'Mita' },
+          { word: '食べた', translation: 'I ate', pronunciation: 'ta-be-ta', romanji: 'Tabeta' },
+          { word: '飲んだ', translation: 'I drank', pronunciation: 'non-da', romanji: 'Nonda' }
+        ],
+        streetSlang: [
+          { word: '...に行った', translation: 'I went to...', pronunciation: '...ni it-ta', romanji: '...ni itta' },
+          { word: '...した', translation: 'I did/made...', pronunciation: '...shi-ta', romanji: '...shita' },
+          { word: '...見た', translation: 'I saw...', pronunciation: '...mi-ta', romanji: '...mita' },
+          { word: '...食べた', translation: 'I ate...', pronunciation: '...ta-be-ta', romanji: '...tabeta' },
+          { word: '...飲んだ', translation: 'I drank...', pronunciation: '...non-da', romanji: '...nonda' },
+          { word: '昨日', translation: 'Yesterday', pronunciation: 'ki-nou', romanji: 'Kinou' }
+        ]
+      },
+      {
+        id: 17,
+        title: 'Future Plans',
+        premium: true,
+        words: [
+          { word: 'するつもり', translation: 'I\'m going to', pronunciation: 'su-ru tsu-mo-ri', romanji: 'Suru tsumori' },
+          { word: '行くつもり', translation: 'I\'m going to go', pronunciation: 'i-ku tsu-mo-ri', romanji: 'Iku tsumori' },
+          { word: 'するつもり', translation: 'I\'m going to do', pronunciation: 'su-ru tsu-mo-ri', romanji: 'Suru tsumori' },
+          { word: '見るつもり', translation: 'I\'m going to see', pronunciation: 'mi-ru tsu-mo-ri', romanji: 'Miru tsumori' },
+          { word: '明日', translation: 'Tomorrow', pronunciation: 'a-shi-ta', romanji: 'Ashita' }
+        ],
+        streetSlang: [
+          { word: '...するつもり', translation: 'I\'m going to...', pronunciation: '...su-ru tsu-mo-ri', romanji: '...suru tsumori' },
+          { word: '...に行くつもり', translation: 'I\'m going to go to...', pronunciation: '...ni i-ku tsu-mo-ri', romanji: '...ni iku tsumori' },
+          { word: '...するつもり', translation: 'I\'m going to do...', pronunciation: '...su-ru tsu-mo-ri', romanji: '...suru tsumori' },
+          { word: '明日...するつもり', translation: 'Tomorrow I\'m going to...', pronunciation: 'a-shi-ta ...su-ru tsu-mo-ri', romanji: 'Ashita ...suru tsumori' },
+          { word: '...見るつもり', translation: 'I\'m going to see...', pronunciation: '...mi-ru tsu-mo-ri', romanji: '...miru tsumori' },
+          { word: '次の...', translation: 'Next...', pronunciation: 'tsu-gi no', romanji: 'Tsugi no' }
+        ]
+      },
+      {
+        id: 18,
+        title: 'Making Suggestions',
+        premium: true,
+        words: [
+          { word: '...したらどう?', translation: 'What if...?', pronunciation: '...shi-ta-ra do-u', romanji: '...shitara dou?' },
+          { word: '...しない?', translation: 'Why don\'t we...?', pronunciation: '...shi-na-i', romanji: '...shinai?' },
+          { word: 'すべき', translation: 'We should', pronunciation: 'su-be-ki', romanji: 'Subeki' },
+          { word: 'できる', translation: 'We could', pronunciation: 'de-ki-ru', romanji: 'Dekiru' },
+          { word: 'しよう', translation: 'Let\'s', pronunciation: 'shi-you', romanji: 'Shiyou' }
+        ],
+        streetSlang: [
+          { word: '行ったらどう?', translation: 'What if we go?', pronunciation: 'it-ta-ra do-u', romanji: 'Ittara dou?' },
+          { word: '行かない?', translation: 'Why don\'t we go?', pronunciation: 'i-ka-na-i', romanji: 'Ikanai?' },
+          { word: '行くべき', translation: 'We should go', pronunciation: 'i-ku be-ki', romanji: 'Iku beki' },
+          { word: 'できる', translation: 'We could do', pronunciation: 'de-ki-ru', romanji: 'Dekiru' },
+          { word: '...しよう', translation: 'Let\'s...', pronunciation: '...shi-you', romanji: '...shiyou' },
+          { word: '提案する', translation: 'I suggest...', pronunciation: 'tei-an su-ru', romanji: 'Teian suru' }
+        ]
+      },
+      {
+        id: 19,
+        title: 'Expressing Opinions',
+        premium: true,
+        words: [
+          { word: '思う', translation: 'I think that', pronunciation: 'o-mo-u', romanji: 'Omou' },
+          { word: '信じる', translation: 'I believe that', pronunciation: 'shin-ji-ru', romanji: 'Shinjiru' },
+          { word: '...ように思える', translation: 'It seems to me that', pronunciation: '...yo-u ni o-mo-e-ru', romanji: '...you ni omoeru' },
+          { word: '私の意見では', translation: 'In my opinion', pronunciation: 'wa-ta-shi no i-ken de wa', romanji: 'Watashi no iken de wa' },
+          { word: '私にとって', translation: 'For me', pronunciation: 'wa-ta-shi ni to-tte', romanji: 'Watashi ni totte' }
+        ],
+        streetSlang: [
+          { word: '...と思う', translation: 'I think that...', pronunciation: '...to o-mo-u', romanji: '...to omou' },
+          { word: '...と信じる', translation: 'I believe that...', pronunciation: '...to shin-ji-ru', romanji: '...to shinjiru' },
+          { word: '...ように思える', translation: 'It seems to me that...', pronunciation: '...yo-u ni o-mo-e-ru', romanji: '...you ni omoeru' },
+          { word: '私の意見では...', translation: 'In my opinion...', pronunciation: 'wa-ta-shi no i-ken de wa', romanji: 'Watashi no iken de wa' },
+          { word: '私にとって...', translation: 'For me...', pronunciation: 'wa-ta-shi ni to-tte', romanji: 'Watashi ni totte' },
+          { word: '...と感じる', translation: 'I find that...', pronunciation: '...to kan-ji-ru', romanji: '...to kanjiru' }
+        ]
+      },
+      {
+        id: 20,
+        title: 'Problem Solving',
+        premium: true,
+        words: [
+          { word: '問題', translation: 'Problem', pronunciation: 'mon-dai', romanji: 'Mondai' },
+          { word: '解決策', translation: 'Solution', pronunciation: 'kai-ke-tsu-sa-ku', romanji: 'Kaiketsusaku' },
+          { word: '助け', translation: 'Help', pronunciation: 'ta-su-ke', romanji: 'Tasuke' },
+          { word: '必要', translation: 'I need', pronunciation: 'hi-tsu-you', romanji: 'Hitsuyou' },
+          { word: 'できる', translation: 'I can', pronunciation: 'de-ki-ru', romanji: 'Dekiru' }
+        ],
+        streetSlang: [
+          { word: '問題がある', translation: 'To have a problem', pronunciation: 'mon-dai ga a-ru', romanji: 'Mondai ga aru' },
+          { word: '解決策を探す', translation: 'To look for a solution', pronunciation: 'kai-ke-tsu-sa-ku wo sa-ga-su', romanji: 'Kaiketsusaku wo sagasu' },
+          { word: '助けが必要', translation: 'To need help', pronunciation: 'ta-su-ke ga hi-tsu-you', romanji: 'Tasuke ga hitsuyou' },
+          { word: '助けることができる', translation: 'I can help', pronunciation: 'ta-su-ke-ru ko-to ga de-ki-ru', romanji: 'Tasukeru koto ga dekiru' },
+          { word: '問題を解決する', translation: 'To solve a problem', pronunciation: 'mon-dai wo kai-ke-tsu su-ru', romanji: 'Mondai wo kaiketsu suru' },
+          { word: '解決策を見つける', translation: 'To find a solution', pronunciation: 'kai-ke-tsu-sa-ku wo mi-tsu-ke-ru', romanji: 'Kaiketsusaku wo mitsukeru' }
         ]
       }
     ]
@@ -1387,6 +2587,206 @@ export const languages = {
           { word: '超级热', translation: 'Super hot', pronunciation: 'chao ji re', romanji: 'Chāojí rè' },
           { word: '刮大风', translation: 'Strong wind', pronunciation: 'gua da feng', romanji: 'Guā dàfēng' },
         ]
+      },
+      {
+        id: 11,
+        title: 'Transportation & Travel',
+        premium: true,
+        words: [
+          { word: '汽车', translation: 'Car', pronunciation: 'qì chē', romanji: 'Qìchē' },
+          { word: '飞机', translation: 'Airplane', pronunciation: 'fēi jī', romanji: 'Fēijī' },
+          { word: '火车', translation: 'Train', pronunciation: 'huǒ chē', romanji: 'Huǒchē' },
+          { word: '公共汽车', translation: 'Bus', pronunciation: 'gōng gòng qì chē', romanji: 'Gōnggòng qìchē' },
+          { word: '自行车', translation: 'Bicycle', pronunciation: 'zì xíng chē', romanji: 'Zìxíngchē' }
+        ],
+        streetSlang: [
+          { word: '加油', translation: 'To fill up gas', pronunciation: 'jiā yóu', romanji: 'Jiāyóu' },
+          { word: '全速前进', translation: 'To go full speed', pronunciation: 'quán sù qián jìn', romanji: 'Quánsù qiánjìn' },
+          { word: '堵车', translation: 'To be stuck in traffic', pronunciation: 'dǔ chē', romanji: 'Dǔchē' },
+          { word: '坐公共汽车', translation: 'To catch the bus', pronunciation: 'zuò gōng gòng qì chē', romanji: 'Zuò gōnggòng qìchē' },
+          { word: '旅行', translation: 'To travel', pronunciation: 'lǚ xíng', romanji: 'Lǚxíng' },
+          { word: '去旅行', translation: 'To take a trip', pronunciation: 'qù lǚ xíng', romanji: 'Qù lǚxíng' }
+        ]
+      },
+      {
+        id: 12,
+        title: 'Work & Business',
+        premium: true,
+        words: [
+          { word: '工作', translation: 'Work/Job', pronunciation: 'gōng zuò', romanji: 'Gōngzuò' },
+          { word: '办公室', translation: 'Office', pronunciation: 'bàn gōng shì', romanji: 'Bàngōngshì' },
+          { word: '会议', translation: 'Meeting', pronunciation: 'huì yì', romanji: 'Huìyì' },
+          { word: '客户', translation: 'Client', pronunciation: 'kè hù', romanji: 'Kèhù' },
+          { word: '生意', translation: 'Business', pronunciation: 'shēng yì', romanji: 'Shēngyì' }
+        ],
+        streetSlang: [
+          { word: '在工作', translation: 'To be working', pronunciation: 'zài gōng zuò', romanji: 'Zài gōngzuò' },
+          { word: '工作很多', translation: 'To have a lot of work', pronunciation: 'gōng zuò hěn duō', romanji: 'Gōngzuò hěn duō' },
+          { word: '做生意', translation: 'To do business', pronunciation: 'zuò shēng yì', romanji: 'Zuò shēngyì' },
+          { word: '很忙', translation: 'To be busy', pronunciation: 'hěn máng', romanji: 'Hěn máng' },
+          { word: '努力工作', translation: 'To work hard', pronunciation: 'nǔ lì gōng zuò', romanji: 'Nǔlì gōngzuò' },
+          { word: '有会议', translation: 'To have a meeting', pronunciation: 'yǒu huì yì', romanji: 'Yǒu huìyì' }
+        ]
+      },
+      {
+        id: 13,
+        title: 'Hobbies & Interests',
+        premium: true,
+        words: [
+          { word: '音乐', translation: 'Music', pronunciation: 'yīn yuè', romanji: 'Yīnyuè' },
+          { word: '运动', translation: 'Sport', pronunciation: 'yùn dòng', romanji: 'Yùndòng' },
+          { word: '书', translation: 'Book', pronunciation: 'shū', romanji: 'Shū' },
+          { word: '电影', translation: 'Movie', pronunciation: 'diàn yǐng', romanji: 'Diànyǐng' },
+          { word: '爱好', translation: 'Hobby', pronunciation: 'ài hào', romanji: 'Àihào' }
+        ],
+        streetSlang: [
+          { word: '看电影', translation: 'To watch a movie', pronunciation: 'kàn diàn yǐng', romanji: 'Kàn diànyǐng' },
+          { word: '听音乐', translation: 'To listen to music', pronunciation: 'tīng yīn yuè', romanji: 'Tīng yīnyuè' },
+          { word: '做运动', translation: 'To do sports', pronunciation: 'zuò yùn dòng', romanji: 'Zuò yùndòng' },
+          { word: '看书', translation: 'To read a book', pronunciation: 'kàn shū', romanji: 'Kàn shū' },
+          { word: '有爱好', translation: 'To have a hobby', pronunciation: 'yǒu ài hào', romanji: 'Yǒu àihào' },
+          { word: '消磨时间', translation: 'To spend time', pronunciation: 'xiāo mó shí jiān', romanji: 'Xiāomó shíjiān' }
+        ]
+      },
+      {
+        id: 14,
+        title: 'Emotions & Feelings',
+        premium: true,
+        words: [
+          { word: '快乐', translation: 'Happy', pronunciation: 'kuài lè', romanji: 'Kuàilè' },
+          { word: '悲伤', translation: 'Sad', pronunciation: 'bēi shāng', romanji: 'Bēishāng' },
+          { word: '生气', translation: 'Angry', pronunciation: 'shēng qì', romanji: 'Shēngqì' },
+          { word: '紧张', translation: 'Nervous', pronunciation: 'jǐn zhāng', romanji: 'Jǐnzhāng' },
+          { word: '兴奋', translation: 'Excited', pronunciation: 'xīng fèn', romanji: 'Xīngfèn' }
+        ],
+        streetSlang: [
+          { word: '很快乐', translation: 'To be happy', pronunciation: 'hěn kuài lè', romanji: 'Hěn kuàilè' },
+          { word: '很悲伤', translation: 'To be sad', pronunciation: 'hěn bēi shāng', romanji: 'Hěn bēishāng' },
+          { word: '很生气', translation: 'To be angry', pronunciation: 'hěn shēng qì', romanji: 'Hěn shēngqì' },
+          { word: '很紧张', translation: 'To be nervous', pronunciation: 'hěn jǐn zhāng', romanji: 'Hěn jǐnzhāng' },
+          { word: '很兴奋', translation: 'To be excited', pronunciation: 'hěn xīng fèn', romanji: 'Hěn xīngfèn' },
+          { word: '感觉很好', translation: 'To feel good', pronunciation: 'gǎn jué hěn hǎo', romanji: 'Gǎnjué hěn hǎo' }
+        ]
+      },
+      {
+        id: 15,
+        title: 'Directions & Locations',
+        premium: true,
+        words: [
+          { word: '左边', translation: 'Left', pronunciation: 'zuǒ biān', romanji: 'Zuǒbiān' },
+          { word: '右边', translation: 'Right', pronunciation: 'yòu biān', romanji: 'Yòubiān' },
+          { word: '直走', translation: 'Straight', pronunciation: 'zhí zǒu', romanji: 'Zhí zǒu' },
+          { word: '附近', translation: 'Near', pronunciation: 'fù jìn', romanji: 'Fùjìn' },
+          { word: '远', translation: 'Far', pronunciation: 'yuǎn', romanji: 'Yuǎn' }
+        ],
+        streetSlang: [
+          { word: '向左转', translation: 'To turn left', pronunciation: 'xiàng zuǒ zhuǎn', romanji: 'Xiàng zuǒ zhuǎn' },
+          { word: '向右转', translation: 'To turn right', pronunciation: 'xiàng yòu zhuǎn', romanji: 'Xiàng yòu zhuǎn' },
+          { word: '直走', translation: 'To go straight', pronunciation: 'zhí zǒu', romanji: 'Zhí zǒu' },
+          { word: '在附近', translation: 'To be near', pronunciation: 'zài fù jìn', romanji: 'Zài fùjìn' },
+          { word: '很远', translation: 'To be far', pronunciation: 'hěn yuǎn', romanji: 'Hěn yuǎn' },
+          { word: '...在哪里?', translation: 'Where is...?', pronunciation: '...zài nǎ lǐ', romanji: '...zài nǎlǐ?' }
+        ]
+      },
+      {
+        id: 16,
+        title: 'Past Tense Basics',
+        premium: true,
+        words: [
+          { word: '去了', translation: 'I went', pronunciation: 'qù le', romanji: 'Qù le' },
+          { word: '做了', translation: 'I did/made', pronunciation: 'zuò le', romanji: 'Zuò le' },
+          { word: '看了', translation: 'I saw', pronunciation: 'kàn le', romanji: 'Kàn le' },
+          { word: '吃了', translation: 'I ate', pronunciation: 'chī le', romanji: 'Chī le' },
+          { word: '喝了', translation: 'I drank', pronunciation: 'hē le', romanji: 'Hē le' }
+        ],
+        streetSlang: [
+          { word: '去了...', translation: 'I went to...', pronunciation: 'qù le', romanji: 'Qù le' },
+          { word: '做了...', translation: 'I did/made...', pronunciation: 'zuò le', romanji: 'Zuò le' },
+          { word: '看了...', translation: 'I saw...', pronunciation: 'kàn le', romanji: 'Kàn le' },
+          { word: '吃了...', translation: 'I ate...', pronunciation: 'chī le', romanji: 'Chī le' },
+          { word: '喝了...', translation: 'I drank...', pronunciation: 'hē le', romanji: 'Hē le' },
+          { word: '昨天', translation: 'Yesterday', pronunciation: 'zuó tiān', romanji: 'Zuótiān' }
+        ]
+      },
+      {
+        id: 17,
+        title: 'Future Plans',
+        premium: true,
+        words: [
+          { word: '要去', translation: 'I\'m going to', pronunciation: 'yào qù', romanji: 'Yào qù' },
+          { word: '要去', translation: 'I\'m going to go', pronunciation: 'yào qù', romanji: 'Yào qù' },
+          { word: '要做', translation: 'I\'m going to do', pronunciation: 'yào zuò', romanji: 'Yào zuò' },
+          { word: '要看', translation: 'I\'m going to see', pronunciation: 'yào kàn', romanji: 'Yào kàn' },
+          { word: '明天', translation: 'Tomorrow', pronunciation: 'míng tiān', romanji: 'Míngtiān' }
+        ],
+        streetSlang: [
+          { word: '要...', translation: 'I\'m going to...', pronunciation: 'yào', romanji: 'Yào' },
+          { word: '要去...', translation: 'I\'m going to go to...', pronunciation: 'yào qù', romanji: 'Yào qù' },
+          { word: '要做...', translation: 'I\'m going to do...', pronunciation: 'yào zuò', romanji: 'Yào zuò' },
+          { word: '明天要...', translation: 'Tomorrow I\'m going to...', pronunciation: 'míng tiān yào', romanji: 'Míngtiān yào' },
+          { word: '要看...', translation: 'I\'m going to see...', pronunciation: 'yào kàn', romanji: 'Yào kàn' },
+          { word: '下一个...', translation: 'Next...', pronunciation: 'xià yī gè', romanji: 'Xià yīgè' }
+        ]
+      },
+      {
+        id: 18,
+        title: 'Making Suggestions',
+        premium: true,
+        words: [
+          { word: '如果...怎么样?', translation: 'What if...?', pronunciation: 'rú guǒ ... zěn me yàng', romanji: 'Rúguǒ ... zěnmeyàng?' },
+          { word: '为什么不...?', translation: 'Why don\'t we...?', pronunciation: 'wèi shén me bù', romanji: 'Wèishénme bù' },
+          { word: '应该', translation: 'We should', pronunciation: 'yīng gāi', romanji: 'Yīnggāi' },
+          { word: '可以', translation: 'We could', pronunciation: 'kě yǐ', romanji: 'Kěyǐ' },
+          { word: '让我们', translation: 'Let\'s', pronunciation: 'ràng wǒ men', romanji: 'Ràng wǒmen' }
+        ],
+        streetSlang: [
+          { word: '如果去怎么样?', translation: 'What if we go?', pronunciation: 'rú guǒ qù zěn me yàng', romanji: 'Rúguǒ qù zěnmeyàng?' },
+          { word: '为什么不去?', translation: 'Why don\'t we go?', pronunciation: 'wèi shén me bù qù', romanji: 'Wèishénme bù qù' },
+          { word: '应该去', translation: 'We should go', pronunciation: 'yīng gāi qù', romanji: 'Yīnggāi qù' },
+          { word: '可以做', translation: 'We could do', pronunciation: 'kě yǐ zuò', romanji: 'Kěyǐ zuò' },
+          { word: '让我们...', translation: 'Let\'s...', pronunciation: 'ràng wǒ men', romanji: 'Ràng wǒmen' },
+          { word: '我建议...', translation: 'I suggest...', pronunciation: 'wǒ jiàn yì', romanji: 'Wǒ jiànyì' }
+        ]
+      },
+      {
+        id: 19,
+        title: 'Expressing Opinions',
+        premium: true,
+        words: [
+          { word: '我认为', translation: 'I think that', pronunciation: 'wǒ rèn wéi', romanji: 'Wǒ rènwéi' },
+          { word: '我相信', translation: 'I believe that', pronunciation: 'wǒ xiāng xìn', romanji: 'Wǒ xiāngxìn' },
+          { word: '我觉得', translation: 'It seems to me that', pronunciation: 'wǒ jué dé', romanji: 'Wǒ juédé' },
+          { word: '在我看来', translation: 'In my opinion', pronunciation: 'zài wǒ kàn lái', romanji: 'Zài wǒ kànlái' },
+          { word: '对我来说', translation: 'For me', pronunciation: 'duì wǒ lái shuō', romanji: 'Duì wǒ láishuō' }
+        ],
+        streetSlang: [
+          { word: '我认为...', translation: 'I think that...', pronunciation: 'wǒ rèn wéi', romanji: 'Wǒ rènwéi' },
+          { word: '我相信...', translation: 'I believe that...', pronunciation: 'wǒ xiāng xìn', romanji: 'Wǒ xiāngxìn' },
+          { word: '我觉得...', translation: 'It seems to me that...', pronunciation: 'wǒ jué dé', romanji: 'Wǒ juédé' },
+          { word: '在我看来...', translation: 'In my opinion...', pronunciation: 'zài wǒ kàn lái', romanji: 'Zài wǒ kànlái' },
+          { word: '对我来说...', translation: 'For me...', pronunciation: 'duì wǒ lái shuō', romanji: 'Duì wǒ láishuō' },
+          { word: '我发现...', translation: 'I find that...', pronunciation: 'wǒ fā xiàn', romanji: 'Wǒ fāxiàn' }
+        ]
+      },
+      {
+        id: 20,
+        title: 'Problem Solving',
+        premium: true,
+        words: [
+          { word: '问题', translation: 'Problem', pronunciation: 'wèn tí', romanji: 'Wèntí' },
+          { word: '解决方案', translation: 'Solution', pronunciation: 'jiě jué fāng àn', romanji: 'Jiějué fāng\'àn' },
+          { word: '帮助', translation: 'Help', pronunciation: 'bāng zhù', romanji: 'Bāngzhù' },
+          { word: '需要', translation: 'I need', pronunciation: 'xū yào', romanji: 'Xūyào' },
+          { word: '可以', translation: 'I can', pronunciation: 'kě yǐ', romanji: 'Kěyǐ' }
+        ],
+        streetSlang: [
+          { word: '有问题', translation: 'To have a problem', pronunciation: 'yǒu wèn tí', romanji: 'Yǒu wèntí' },
+          { word: '找解决方案', translation: 'To look for a solution', pronunciation: 'zhǎo jiě jué fāng àn', romanji: 'Zhǎo jiějué fāng\'àn' },
+          { word: '需要帮助', translation: 'To need help', pronunciation: 'xū yào bāng zhù', romanji: 'Xūyào bāngzhù' },
+          { word: '可以帮助', translation: 'I can help', pronunciation: 'kě yǐ bāng zhù', romanji: 'Kěyǐ bāngzhù' },
+          { word: '解决问题', translation: 'To solve a problem', pronunciation: 'jiě jué wèn tí', romanji: 'Jiějué wèntí' },
+          { word: '找到解决方案', translation: 'To find a solution', pronunciation: 'zhǎo dào jiě jué fāng àn', romanji: 'Zhǎo dào jiějué fāng\'àn' }
+        ]
       }
     ]
   },
@@ -1584,6 +2984,206 @@ export const languages = {
           { word: 'Облачно', translation: 'Cloudy', pronunciation: 'ob-LACH-no' },
           { word: 'Очень жарко', translation: 'Very hot', pronunciation: 'O-chen ZHAR-ka' },
           { word: 'Сильный ветер', translation: 'Strong wind', pronunciation: 'SEEL-niy VYE-ter' },
+        ]
+      },
+      {
+        id: 11,
+        title: 'Transportation & Travel',
+        premium: true,
+        words: [
+          { word: 'Машина', translation: 'Car', pronunciation: 'mah-SHEE-nah' },
+          { word: 'Самолёт', translation: 'Airplane', pronunciation: 'sah-mah-LYOT' },
+          { word: 'Поезд', translation: 'Train', pronunciation: 'PO-yezd' },
+          { word: 'Автобус', translation: 'Bus', pronunciation: 'ahv-TOH-boos' },
+          { word: 'Велосипед', translation: 'Bicycle', pronunciation: 'veh-lah-see-PYED' }
+        ],
+        streetSlang: [
+          { word: 'Заправиться', translation: 'To fill up gas', pronunciation: 'zah-prah-VEET-syah' },
+          { word: 'На полной скорости', translation: 'To go full speed', pronunciation: 'nah POL-noy sko-ROS-tee' },
+          { word: 'Застрять в пробке', translation: 'To be stuck in traffic', pronunciation: 'zah-STRYAT v PROB-keh' },
+          { word: 'Сесть на автобус', translation: 'To catch the bus', pronunciation: 'syest nah ahv-TOH-boos' },
+          { word: 'Путешествовать', translation: 'To travel', pronunciation: 'poo-teh-SHEH-stvo-vat' },
+          { word: 'Отправиться в поездку', translation: 'To take a trip', pronunciation: 'at-PRAH-veet-syah v PO-yezd-koo' }
+        ]
+      },
+      {
+        id: 12,
+        title: 'Work & Business',
+        premium: true,
+        words: [
+          { word: 'Работа', translation: 'Work/Job', pronunciation: 'rah-BO-tah' },
+          { word: 'Офис', translation: 'Office', pronunciation: 'OH-fis' },
+          { word: 'Встреча', translation: 'Meeting', pronunciation: 'vstree-CHAH' },
+          { word: 'Клиент', translation: 'Client', pronunciation: 'klee-ENT' },
+          { word: 'Бизнес', translation: 'Business', pronunciation: 'BEEZ-nes' }
+        ],
+        streetSlang: [
+          { word: 'Быть на работе', translation: 'To be working', pronunciation: 'bit nah rah-BO-teh' },
+          { word: 'Много работы', translation: 'To have a lot of work', pronunciation: 'MNO-go rah-BO-ty' },
+          { word: 'Заниматься бизнесом', translation: 'To do business', pronunciation: 'zah-nee-MAHT-syah BEEZ-neh-som' },
+          { word: 'Быть занятым', translation: 'To be busy', pronunciation: 'bit zah-NYA-tim' },
+          { word: 'Много работать', translation: 'To work hard', pronunciation: 'MNO-go rah-BO-tat' },
+          { word: 'Быть на встрече', translation: 'To have a meeting', pronunciation: 'bit nah vstree-CHEH' }
+        ]
+      },
+      {
+        id: 13,
+        title: 'Hobbies & Interests',
+        premium: true,
+        words: [
+          { word: 'Музыка', translation: 'Music', pronunciation: 'MOO-zy-kah' },
+          { word: 'Спорт', translation: 'Sport', pronunciation: 'sport' },
+          { word: 'Книга', translation: 'Book', pronunciation: 'KNEE-gah' },
+          { word: 'Фильм', translation: 'Movie', pronunciation: 'feelm' },
+          { word: 'Хобби', translation: 'Hobby', pronunciation: 'HOH-bee' }
+        ],
+        streetSlang: [
+          { word: 'Смотреть фильм', translation: 'To watch a movie', pronunciation: 'smah-TRET feelm' },
+          { word: 'Слушать музыку', translation: 'To listen to music', pronunciation: 'SLOO-shat MOO-zy-koo' },
+          { word: 'Заниматься спортом', translation: 'To do sports', pronunciation: 'zah-nee-MAHT-syah SPOR-tom' },
+          { word: 'Читать книгу', translation: 'To read a book', pronunciation: 'chee-TAHT KNEE-goo' },
+          { word: 'Иметь хобби', translation: 'To have a hobby', pronunciation: 'ee-MET HOH-bee' },
+          { word: 'Проводить время', translation: 'To spend time', pronunciation: 'prah-vah-DEET VREH-myah' }
+        ]
+      },
+      {
+        id: 14,
+        title: 'Emotions & Feelings',
+        premium: true,
+        words: [
+          { word: 'Счастливый', translation: 'Happy', pronunciation: 'shas-TLEE-viy' },
+          { word: 'Грустный', translation: 'Sad', pronunciation: 'groost-niy' },
+          { word: 'Злой', translation: 'Angry', pronunciation: 'zloy' },
+          { word: 'Нервный', translation: 'Nervous', pronunciation: 'NYERV-niy' },
+          { word: 'Взволнованный', translation: 'Excited', pronunciation: 'vzval-NOH-van-niy' }
+        ],
+        streetSlang: [
+          { word: 'Быть счастливым', translation: 'To be happy', pronunciation: 'bit shas-TLEE-vim' },
+          { word: 'Быть грустным', translation: 'To be sad', pronunciation: 'bit GROOST-nim' },
+          { word: 'Быть злым', translation: 'To be angry', pronunciation: 'bit zlim' },
+          { word: 'Быть нервным', translation: 'To be nervous', pronunciation: 'bit NYERV-nim' },
+          { word: 'Быть взволнованным', translation: 'To be excited', pronunciation: 'bit vzval-NOH-van-nim' },
+          { word: 'Хорошо себя чувствовать', translation: 'To feel good', pronunciation: 'hah-rah-SHO se-BYA CHOOV-stvo-vat' }
+        ]
+      },
+      {
+        id: 15,
+        title: 'Directions & Locations',
+        premium: true,
+        words: [
+          { word: 'Лево', translation: 'Left', pronunciation: 'LEH-voh' },
+          { word: 'Право', translation: 'Right', pronunciation: 'PRAH-voh' },
+          { word: 'Прямо', translation: 'Straight', pronunciation: 'PRYAH-moh' },
+          { word: 'Близко', translation: 'Near', pronunciation: 'BLEEZ-koh' },
+          { word: 'Далеко', translation: 'Far', pronunciation: 'dah-leh-KOH' }
+        ],
+        streetSlang: [
+          { word: 'Повернуть налево', translation: 'To turn left', pronunciation: 'pah-vehr-NOOT nah-LEH-voh' },
+          { word: 'Повернуть направо', translation: 'To turn right', pronunciation: 'pah-vehr-NOOT nah-PRAH-voh' },
+          { word: 'Идти прямо', translation: 'To go straight', pronunciation: 'eed-TEE PRYAH-moh' },
+          { word: 'Быть близко', translation: 'To be near', pronunciation: 'bit BLEEZ-koh' },
+          { word: 'Быть далеко', translation: 'To be far', pronunciation: 'bit dah-leh-KOH' },
+          { word: 'Где находится...?', translation: 'Where is...?', pronunciation: 'gde nah-KHO-deet-syah' }
+        ]
+      },
+      {
+        id: 16,
+        title: 'Past Tense Basics',
+        premium: true,
+        words: [
+          { word: 'Я пошёл', translation: 'I went', pronunciation: 'ya pah-SHYOL' },
+          { word: 'Я сделал', translation: 'I did/made', pronunciation: 'ya SDEH-lal' },
+          { word: 'Я видел', translation: 'I saw', pronunciation: 'ya VEE-del' },
+          { word: 'Я ел', translation: 'I ate', pronunciation: 'ya yel' },
+          { word: 'Я пил', translation: 'I drank', pronunciation: 'ya peel' }
+        ],
+        streetSlang: [
+          { word: 'Я пошёл в...', translation: 'I went to...', pronunciation: 'ya pah-SHYOL v' },
+          { word: 'Я сделал...', translation: 'I did/made...', pronunciation: 'ya SDEH-lal' },
+          { word: 'Я видел...', translation: 'I saw...', pronunciation: 'ya VEE-del' },
+          { word: 'Я ел...', translation: 'I ate...', pronunciation: 'ya yel' },
+          { word: 'Я пил...', translation: 'I drank...', pronunciation: 'ya peel' },
+          { word: 'Вчера', translation: 'Yesterday', pronunciation: 'vcheh-RAH' }
+        ]
+      },
+      {
+        id: 17,
+        title: 'Future Plans',
+        premium: true,
+        words: [
+          { word: 'Я собираюсь', translation: 'I\'m going to', pronunciation: 'ya sah-bee-RAH-yoos' },
+          { word: 'Я собираюсь пойти', translation: 'I\'m going to go', pronunciation: 'ya sah-bee-RAH-yoos pah-ee-TEE' },
+          { word: 'Я собираюсь сделать', translation: 'I\'m going to do', pronunciation: 'ya sah-bee-RAH-yoos SDEH-lat' },
+          { word: 'Я собираюсь увидеть', translation: 'I\'m going to see', pronunciation: 'ya sah-bee-RAH-yoos oo-ee-DET' },
+          { word: 'Завтра', translation: 'Tomorrow', pronunciation: 'ZAV-trah' }
+        ],
+        streetSlang: [
+          { word: 'Я собираюсь...', translation: 'I\'m going to...', pronunciation: 'ya sah-bee-RAH-yoos' },
+          { word: 'Я собираюсь пойти в...', translation: 'I\'m going to go to...', pronunciation: 'ya sah-bee-RAH-yoos pah-ee-TEE v' },
+          { word: 'Я собираюсь сделать...', translation: 'I\'m going to do...', pronunciation: 'ya sah-bee-RAH-yoos SDEH-lat' },
+          { word: 'Завтра я собираюсь...', translation: 'Tomorrow I\'m going to...', pronunciation: 'ZAV-trah ya sah-bee-RAH-yoos' },
+          { word: 'Я собираюсь увидеть...', translation: 'I\'m going to see...', pronunciation: 'ya sah-bee-RAH-yoos oo-ee-DET' },
+          { word: 'Следующий...', translation: 'Next...', pronunciation: 'sleh-DOO-yoo-shiy' }
+        ]
+      },
+      {
+        id: 18,
+        title: 'Making Suggestions',
+        premium: true,
+        words: [
+          { word: 'А что если...?', translation: 'What if...?', pronunciation: 'ah shto YEH-slee' },
+          { word: 'Почему бы нам не...?', translation: 'Why don\'t we...?', pronunciation: 'pah-cheh-MOO bi nahm neh' },
+          { word: 'Нам следует', translation: 'We should', pronunciation: 'nahm SLEH-dooh-yet' },
+          { word: 'Мы могли бы', translation: 'We could', pronunciation: 'mi mah-GLEE bi' },
+          { word: 'Давайте', translation: 'Let\'s', pronunciation: 'dah-VAY-teh' }
+        ],
+        streetSlang: [
+          { word: 'А что если пойти?', translation: 'What if we go?', pronunciation: 'ah shto YEH-slee pah-ee-TEE' },
+          { word: 'Почему бы нам не пойти?', translation: 'Why don\'t we go?', pronunciation: 'pah-cheh-MOO bi nahm neh pah-ee-TEE' },
+          { word: 'Нам следует пойти', translation: 'We should go', pronunciation: 'nahm SLEH-dooh-yet pah-ee-TEE' },
+          { word: 'Мы могли бы сделать', translation: 'We could do', pronunciation: 'mi mah-GLEE bi SDEH-lat' },
+          { word: 'Давайте...', translation: 'Let\'s...', pronunciation: 'dah-VAY-teh' },
+          { word: 'Я предлагаю...', translation: 'I suggest...', pronunciation: 'ya prehd-lah-GAH-yoo' }
+        ]
+      },
+      {
+        id: 19,
+        title: 'Expressing Opinions',
+        premium: true,
+        words: [
+          { word: 'Я думаю, что', translation: 'I think that', pronunciation: 'ya DOO-mah-yoo shto' },
+          { word: 'Я верю, что', translation: 'I believe that', pronunciation: 'ya VEH-ryoo shto' },
+          { word: 'Мне кажется, что', translation: 'It seems to me that', pronunciation: 'mne KAH-zhet-syah shto' },
+          { word: 'По моему мнению', translation: 'In my opinion', pronunciation: 'poh mah-YEH-moo mneh-NYOO' },
+          { word: 'Для меня', translation: 'For me', pronunciation: 'dlyah meh-NYAH' }
+        ],
+        streetSlang: [
+          { word: 'Я думаю, что...', translation: 'I think that...', pronunciation: 'ya DOO-mah-yoo shto' },
+          { word: 'Я верю, что...', translation: 'I believe that...', pronunciation: 'ya VEH-ryoo shto' },
+          { word: 'Мне кажется, что...', translation: 'It seems to me that...', pronunciation: 'mne KAH-zhet-syah shto' },
+          { word: 'По моему мнению...', translation: 'In my opinion...', pronunciation: 'poh mah-YEH-moo mneh-NYOO' },
+          { word: 'Для меня...', translation: 'For me...', pronunciation: 'dlyah meh-NYAH' },
+          { word: 'Я нахожу, что...', translation: 'I find that...', pronunciation: 'ya nah-hah-ZHOO shto' }
+        ]
+      },
+      {
+        id: 20,
+        title: 'Problem Solving',
+        premium: true,
+        words: [
+          { word: 'Проблема', translation: 'Problem', pronunciation: 'prah-BLEH-mah' },
+          { word: 'Решение', translation: 'Solution', pronunciation: 'reh-SHEH-nee-yeh' },
+          { word: 'Помощь', translation: 'Help', pronunciation: 'pah-MOHSH' },
+          { word: 'Мне нужно', translation: 'I need', pronunciation: 'mne NOOZH-no' },
+          { word: 'Я могу', translation: 'I can', pronunciation: 'ya mah-GOO' }
+        ],
+        streetSlang: [
+          { word: 'Иметь проблему', translation: 'To have a problem', pronunciation: 'ee-MET prah-BLEH-moo' },
+          { word: 'Искать решение', translation: 'To look for a solution', pronunciation: 'ees-KAHT reh-SHEH-nee-yeh' },
+          { word: 'Нужна помощь', translation: 'To need help', pronunciation: 'noozh-NAH pah-MOHSH' },
+          { word: 'Я могу помочь', translation: 'I can help', pronunciation: 'ya mah-GOO pah-mo-CH' },
+          { word: 'Решить проблему', translation: 'To solve a problem', pronunciation: 'reh-SHEET prah-BLEH-moo' },
+          { word: 'Найти решение', translation: 'To find a solution', pronunciation: 'nah-ee-TEE reh-SHEH-nee-yeh' }
         ]
       }
     ]
