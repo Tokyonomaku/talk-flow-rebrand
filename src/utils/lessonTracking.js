@@ -91,36 +91,68 @@ export function isPremium() {
 }
 
 /**
- * Get the user's free language selection
+ * Get the user's free languages selection (array of 2 language IDs)
+ * @returns {string[]} Array of language IDs (max 2)
+ */
+export function getFreeLanguages() {
+  try {
+    const stored = localStorage.getItem('freeLanguages');
+    if (stored) {
+      const parsed = JSON.parse(stored);
+      return Array.isArray(parsed) ? parsed : [];
+    }
+    // Fallback to old single language format for migration
+    const oldLang = localStorage.getItem('freeLanguage');
+    if (oldLang) {
+      return [oldLang];
+    }
+    return [];
+  } catch (error) {
+    console.error('Error reading free languages:', error);
+    return [];
+  }
+}
+
+/**
+ * Get the user's free language selection (backward compatibility - returns first free language)
  * @returns {string|null} Language ID or null if not set
  */
 export function getFreeLanguage() {
+  const languages = getFreeLanguages();
+  return languages.length > 0 ? languages[0] : null;
+}
+
+/**
+ * Set the user's free languages selection (array of 2 language IDs)
+ * @param {string[]} languageIds - Array of language IDs to set as free (max 2)
+ */
+export function setFreeLanguages(languageIds) {
   try {
-    return localStorage.getItem('freeLanguage');
+    const languages = Array.isArray(languageIds) ? languageIds.slice(0, 2) : [];
+    localStorage.setItem('freeLanguages', JSON.stringify(languages));
+    // Also update old format for backward compatibility
+    if (languages.length > 0) {
+      localStorage.setItem('freeLanguage', languages[0]);
+    }
   } catch (error) {
-    console.error('Error reading free language:', error);
-    return null;
+    console.error('Error saving free languages:', error);
   }
 }
 
 /**
- * Set the user's free language selection
+ * Set the user's free language selection (backward compatibility - sets as first free language)
  * @param {string} languageId - Language ID to set as free
  */
 export function setFreeLanguage(languageId) {
-  try {
-    localStorage.setItem('freeLanguage', languageId);
-  } catch (error) {
-    console.error('Error saving free language:', error);
-  }
+  setFreeLanguages([languageId]);
 }
 
 /**
- * Check if user has selected a free language
- * @returns {boolean} True if free language is set
+ * Check if user has selected free languages
+ * @returns {boolean} True if at least one free language is set
  */
 export function hasFreeLanguage() {
-  return getFreeLanguage() !== null;
+  return getFreeLanguages().length > 0;
 }
 
 /**
@@ -132,8 +164,8 @@ export function isLanguageAccessible(languageId) {
   if (isPremium()) {
     return true; // Premium users have access to all languages
   }
-  const freeLanguage = getFreeLanguage();
-  return freeLanguage === languageId;
+  const freeLanguages = getFreeLanguages();
+  return freeLanguages.includes(languageId);
 }
 
 /**

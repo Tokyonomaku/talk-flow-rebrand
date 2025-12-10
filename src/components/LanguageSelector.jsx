@@ -1,10 +1,10 @@
 import { Lock } from 'lucide-react';
 import { getAllLanguages } from '../data/languages';
-import { isLanguageAccessible, getFreeLanguage, isPremium } from '../utils/lessonTracking';
+import { isLanguageAccessible, getFreeLanguages, isPremium } from '../utils/lessonTracking';
 
 export default function LanguageSelector({ onSelectLanguage, onLockedLanguageClick }) {
   const languages = getAllLanguages();
-  const freeLanguage = getFreeLanguage();
+  const freeLanguages = getFreeLanguages();
   const premium = isPremium();
 
   return (
@@ -20,7 +20,7 @@ export default function LanguageSelector({ onSelectLanguage, onLockedLanguageCli
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {languages.map((language) => {
             const isAccessible = isLanguageAccessible(language.id);
-            const isFree = freeLanguage === language.id && !premium;
+            const isFree = freeLanguages.includes(language.id) && !premium;
             const isLocked = !isAccessible;
 
             return (

@@ -6,7 +6,7 @@ import LessonView from './components/LessonView';
 import UpgradeModal from './components/UpgradeModal';
 import ChooseFreeLanguageModal from './components/ChooseFreeLanguageModal';
 import { getAllLanguages } from './data/languages';
-import { isPremium, hasFreeLanguage, setFreeLanguage, isLanguageAccessible } from './utils/lessonTracking';
+import { isPremium, hasFreeLanguage, setFreeLanguages, isLanguageAccessible, getFreeLanguages } from './utils/lessonTracking';
 
 function App() {
   const [currentView, setCurrentView] = useState('language-selector');
@@ -15,7 +15,7 @@ function App() {
   const [showUpgradeModal, setShowUpgradeModal] = useState(false);
   const [showFreeLanguageModal, setShowFreeLanguageModal] = useState(false);
   const [premiumStatus, setPremiumStatus] = useState(false);
-  const [freeLanguage, setFreeLanguageState] = useState(null);
+  const [freeLanguages, setFreeLanguagesState] = useState([]);
 
   // Check if user needs to select free language on mount
   useEffect(() => {
@@ -29,9 +29,9 @@ function App() {
         // First time user - show free language selection modal
         setShowFreeLanguageModal(true);
       } else if (!premium) {
-        // Free user with language selected
-        const freeLang = localStorage.getItem('freeLanguage');
-        setFreeLanguageState(freeLang);
+        // Free user with languages selected
+        const freeLangs = getFreeLanguages();
+        setFreeLanguagesState(freeLangs);
       }
     };
 
@@ -40,8 +40,8 @@ function App() {
     // Listen for storage changes
     const handleStorageChange = () => {
       setPremiumStatus(isPremium());
-      const freeLang = localStorage.getItem('freeLanguage');
-      setFreeLanguageState(freeLang);
+      const freeLangs = getFreeLanguages();
+      setFreeLanguagesState(freeLangs);
     };
 
     window.addEventListener('storage', handleStorageChange);
@@ -53,10 +53,14 @@ function App() {
     };
   }, []);
 
-  const handleSelectFreeLanguage = (languageId) => {
-    setFreeLanguage(languageId);
-    setFreeLanguageState(languageId);
-    setShowFreeLanguageModal(false);
+  const handleSelectFreeLanguages = (languageIds) => {
+    if (languageIds && languageIds.length === 2) {
+      setFreeLanguages(languageIds);
+      setFreeLanguagesState(languageIds);
+      setShowFreeLanguageModal(false);
+      // Ensure we're showing the language selector after selection
+      setCurrentView('language-selector');
+    }
   };
 
   const handleSelectLanguage = (language) => {
@@ -93,16 +97,19 @@ function App() {
 
   const handleLanguageChanged = () => {
     // Refresh state after language change
-    const freeLang = localStorage.getItem('freeLanguage');
-    setFreeLanguageState(freeLang);
+    const freeLangs = getFreeLanguages();
+    setFreeLanguagesState(freeLangs);
     setPremiumStatus(isPremium());
   };
 
-  // Get free language name for display
+  // Get free language names for display
   const languages = getAllLanguages();
-  const freeLanguageName = freeLanguage 
-    ? languages.find(lang => lang.id === freeLanguage)?.name 
-    : null;
+  const freeLanguageNames = freeLanguages
+    .map(id => languages.find(lang => lang.id === id)?.name)
+    .filter(Boolean);
+
+  // Ensure currentView is always valid
+  const validView = currentView || 'language-selector';
 
   return (
     <div className="App">
@@ -116,10 +123,10 @@ function App() {
                   Premium Member
                 </span>
               </div>
-            ) : freeLanguageName ? (
+            ) : freeLanguageNames.length > 0 ? (
               <div className="flex items-center gap-2">
                 <span className="text-gray-700 font-semibold">
-                  Learning <strong>{freeLanguageName}</strong> for free
+                  Learning <strong>{freeLanguageNames.join(' & ')}</strong> for free
                 </span>
               </div>
             ) : null}
@@ -127,20 +134,20 @@ function App() {
         </div>
       </div>
 
-      {currentView === 'language-selector' && (
+      {validView === 'language-selector' && (
         <LanguageSelector 
           onSelectLanguage={handleSelectLanguage}
           onLockedLanguageClick={handleLockedLanguageClick}
         />
       )}
-      {currentView === 'lesson-list' && selectedLanguage && (
+      {validView === 'lesson-list' && selectedLanguage && (
         <LessonList
           language={selectedLanguage}
           onBack={handleBackToLanguages}
           onSelectLesson={handleSelectLesson}
         />
       )}
-      {currentView === 'lesson-view' && selectedLesson && selectedLanguage && (
+      {validView === 'lesson-view' && selectedLesson && selectedLanguage && (
         <LessonView
           lesson={selectedLesson}
           language={selectedLanguage}
@@ -150,7 +157,7 @@ function App() {
 
       <ChooseFreeLanguageModal 
         isOpen={showFreeLanguageModal} 
-        onSelectLanguage={handleSelectFreeLanguage}
+        onSelectLanguages={handleSelectFreeLanguages}
       />
       <UpgradeModal 
         isOpen={showUpgradeModal} 
