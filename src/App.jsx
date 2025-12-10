@@ -5,6 +5,7 @@ import LessonList from './components/LessonList';
 import LessonView from './components/LessonView';
 import UpgradeModal from './components/UpgradeModal';
 import ChooseFreeLanguageModal from './components/ChooseFreeLanguageModal';
+import Redeem from './components/Redeem';
 import { getAllLanguages } from './data/languages';
 import { isPremium, hasFreeLanguage, setFreeLanguages, isLanguageAccessible, getFreeLanguages } from './utils/lessonTracking';
 
@@ -16,9 +17,27 @@ function App() {
   const [showFreeLanguageModal, setShowFreeLanguageModal] = useState(false);
   const [premiumStatus, setPremiumStatus] = useState(false);
   const [freeLanguages, setFreeLanguagesState] = useState([]);
+  const [currentRoute, setCurrentRoute] = useState(window.location.pathname);
+
+  // Handle routing
+  useEffect(() => {
+    const handleRouteChange = () => {
+      setCurrentRoute(window.location.pathname);
+    };
+
+    window.addEventListener('popstate', handleRouteChange);
+    handleRouteChange();
+
+    return () => {
+      window.removeEventListener('popstate', handleRouteChange);
+    };
+  }, []);
 
   // Check if user needs to select free language on mount
   useEffect(() => {
+    // Don't show modals on redeem page
+    if (currentRoute === '/redeem') return;
+
     const checkInitialState = () => {
       const premium = isPremium();
       const hasFree = hasFreeLanguage();
@@ -51,7 +70,7 @@ function App() {
       window.removeEventListener('storage', handleStorageChange);
       clearInterval(interval);
     };
-  }, []);
+  }, [currentRoute]);
 
   const handleSelectFreeLanguages = (languageIds) => {
     if (languageIds && languageIds.length === 2) {
@@ -101,6 +120,18 @@ function App() {
     setFreeLanguagesState(freeLangs);
     setPremiumStatus(isPremium());
   };
+
+  const handlePremiumActivate = () => {
+    setPremiumStatus(true);
+    // Update route to home
+    window.history.pushState({}, '', '/');
+    setCurrentRoute('/');
+  };
+
+  // Show redeem page if on /redeem route
+  if (currentRoute === '/redeem') {
+    return <Redeem onActivate={handlePremiumActivate} />;
+  }
 
   // Get free language names for display
   const languages = getAllLanguages();
