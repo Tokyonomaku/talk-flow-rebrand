@@ -382,7 +382,229 @@ export const languages = {
         premium: true,
         words: [
           { word: 'Problema', translation: 'Problem', pronunciation: 'proh-BLEH-mah' },
-          { word: 'Solución', translation: 'Solution', pronunciation: 'soh-loo-SYOHN' },
+          ,
+      {
+        id: 21,
+        title: 'Song Lesson: Los Pollitos Dicen (The Little Chicks Say)',
+        premium: true,
+        songInfo: {
+          name: 'Los Pollitos Dicen',
+          englishName: 'The Little Chicks Say',
+          type: 'Children\'s Song',
+          culturalSignificance: 'A beloved Latin American children\'s song teaching animal sounds, family words, and care. Sung in homes and schools across Spanish-speaking countries.'
+        },
+        lyrics: [
+          { original: 'Los pollitos dicen', translation: 'The little chicks say', pronunciation: 'lohs poh-YEE-tohs DEE-sen' },
+          { original: 'Pío, pío, pío', translation: 'Peep, peep, peep', pronunciation: 'PEE-oh PEE-oh PEE-oh' },
+          { original: 'Cuando tienen hambre', translation: 'When they are hungry', pronunciation: 'KWAN-doh tee-EH-nen AHM-breh' },
+          { original: 'Cuando tienen frío', translation: 'When they are cold', pronunciation: 'KWAN-doh tee-EH-nen FREE-oh' },
+          { original: 'La gallina busca', translation: 'The hen searches', pronunciation: 'lah gah-YEE-nah BOOS-kah' },
+          { original: 'El maíz y el trigo', translation: 'Corn and wheat', pronunciation: 'el mah-EES ee el TREE-goh' },
+          { original: 'Les da la comida', translation: 'Gives them food', pronunciation: 'lehs dah lah koh-MEE-dah' },
+          { original: 'Y les presta abrigo', translation: 'And gives them shelter', pronunciation: 'ee lehs PREHS-tah ah-BREE-goh' }
+        ],
+        culturalNotes: 'This song is sung to children from infancy, teaching them about animals, sounds, and maternal care. It\'s often used in preschools and family settings. The song represents warmth, care, and the bond between mother and children.',
+        words: [
+          { word: 'Pollitos', translation: 'Little chicks', pronunciation: 'poh-YEE-tohs', example: 'Los pollitos dicen pío' },
+          { word: 'Pío', translation: 'Peep (chick sound)', pronunciation: 'PEE-oh', example: 'Pío, pío, pío' },
+          { word: 'Hambre', translation: 'Hunger', pronunciation: 'AHM-breh', example: 'Cuando tienen hambre' },
+          { word: 'Frío', translation: 'Cold', pronunciation: 'FREE-oh', example: 'Cuando tienen frío' },
+          { word: 'Gallina', translation: 'Hen', pronunciation: 'gah-YEE-nah', example: 'La gallina busca' },
+          { word: 'Maíz', translation: 'Corn', pronunciation: 'mah-EES', example: 'El maíz y el trigo' },
+          { word: 'Trigo', translation: 'Wheat', pronunciation: 'TREE-goh', example: 'El maíz y el trigo' },
+          { word: 'Comida', translation: 'Food', pronunciation: 'koh-MEE-dah', example: 'Les da la comida' },
+          { word: 'Abrigo', translation: 'Shelter/warmth', pronunciation: 'ah-BREE-goh', example: 'Y les presta abrigo' },
+          { word: 'Busca', translation: 'Searches/looks for', pronunciation: 'BOOS-kah', example: 'La gallina busca' }
+        ],
+        streetSlang: [
+          { word: 'Esa canción está chida', translation: 'That song is cool/awesome', pronunciation: 'EH-sah kahn-SYOHN es-TAH CHEE-dah' },
+          { word: 'Me encanta esa rola', translation: 'I love that song (slang)', pronunciation: 'meh en-KAHN-tah EH-sah ROH-lah' },
+          { word: 'Está pegajosa', translation: 'It\'s catchy/stuck in my head', pronunciation: 'es-TAH peh-gah-HOH-sah' },
+          { word: 'Cantarla a todo pulmón', translation: 'To sing it at the top of your lungs', pronunciation: 'kahn-TAR-lah ah TOH-doh pool-MOHN' },
+          { word: 'Tiene buen ritmo', translation: 'It has good rhythm', pronunciation: 'tee-EH-neh bwehn REET-moh' },
+          { word: 'Me la sé de memoria', translation: 'I know it by heart', pronunciation: 'meh lah seh deh meh-MOH-ree-ah' }
+        ]
+      },
+      {
+        id: 22,
+        title: 'Proverbs & Sayings',
+        premium: true,
+        proverbs: [
+          { original: 'Más vale tarde que nunca', literalTranslation: 'Better late than never', meaning: 'It\'s better to do something late than not at all', context: 'When someone finally does something they\'ve been putting off', slangEquivalent: 'Mejor tarde que nunca' },
+          { original: 'No hay mal que por bien no venga', literalTranslation: 'There is no bad from which good doesn\'t come', meaning: 'Every cloud has a silver lining', context: 'When something bad happens but leads to something good', slangEquivalent: 'Todo pasa por algo' },
+          { original: 'A quien madruga, Dios le ayuda', literalTranslation: 'God helps those who wake up early', meaning: 'The early bird catches the worm', context: 'Encouraging someone to start early or work hard', slangEquivalent: 'El que madruga agarra más' },
+          { original: 'El que mucho abarca, poco aprieta', literalTranslation: 'He who grasps much, squeezes little', meaning: 'Don\'t bite off more than you can chew', context: 'Warning against taking on too many tasks', slangEquivalent: 'No puedes con todo' },
+          { original: 'Más vale pájaro en mano que ciento volando', literalTranslation: 'Better a bird in hand than a hundred flying', meaning: 'A bird in the hand is worth two in the bush', context: 'Preferring something certain over something uncertain', slangEquivalent: 'Mejor lo seguro' },
+          { original: 'Camarón que se duerme, se lo lleva la corriente', literalTranslation: 'The shrimp that falls asleep is carried away by the current', meaning: 'If you don\'t pay attention, you\'ll miss opportunities', context: 'Warning to stay alert and active', slangEquivalent: 'Si te duermes, pierdes' },
+          { original: 'Del dicho al hecho hay mucho trecho', literalTranslation: 'From saying to doing there is a long stretch', meaning: 'Easier said than done', context: 'When someone promises something but it\'s hard to do', slangEquivalent: 'Es más fácil decirlo que hacerlo' },
+          { original: 'En boca cerrada no entran moscas', literalTranslation: 'Flies don\'t enter a closed mouth', meaning: 'Sometimes it\'s better to keep quiet', context: 'Advising someone to stay silent to avoid trouble', slangEquivalent: 'Mejor callar' }
+        ],
+        streetSlang: [
+          { word: 'Eso es la neta', translation: 'That\'s the truth', pronunciation: 'EH-soh es lah NEH-tah' },
+          { word: 'Está cañón', translation: 'It\'s really hard/difficult', pronunciation: 'es-TAH kah-NYOHN' },
+          { word: 'No mames', translation: 'No way!/Are you serious?', pronunciation: 'noh MAH-mes' },
+          { word: 'Está chido', translation: 'It\'s cool/awesome', pronunciation: 'es-TAH CHEE-doh' },
+          { word: 'Está de pelos', translation: 'It\'s perfect/amazing', pronunciation: 'es-TAH deh PEH-lohs' },
+          { word: 'Está padrísimo', translation: 'It\'s super cool', pronunciation: 'es-TAH pah-DREE-see-moh' }
+        ]
+      },
+      {
+        id: 23,
+        title: 'Texting & Internet Slang',
+        premium: true,
+        abbreviations: [
+          { abbreviation: 'q', fullForm: 'que', englishEquivalent: 'that/what', usage: 'Friends only, very casual', platform: 'WhatsApp, Instagram, Twitter' },
+          { abbreviation: 'xq', fullForm: 'porque', englishEquivalent: 'because', usage: 'Friends only', platform: 'WhatsApp, Instagram' },
+          { abbreviation: 'tqm', fullForm: 'te quiero mucho', englishEquivalent: 'I love you a lot', usage: 'Close friends/family', platform: 'WhatsApp, Instagram' },
+          { abbreviation: 'tmb', fullForm: 'también', englishEquivalent: 'also/too', usage: 'Anyone, casual', platform: 'All platforms' },
+          { abbreviation: 'tb', fullForm: 'también', englishEquivalent: 'also/too', usage: 'Anyone, casual', platform: 'All platforms' },
+          { abbreviation: 'xfa', fullForm: 'por favor', englishEquivalent: 'please', usage: 'Anyone, casual', platform: 'WhatsApp, Instagram' },
+          { abbreviation: 'nms', fullForm: 'no mames', englishEquivalent: 'no way!/seriously?', usage: 'Friends only, very casual', platform: 'WhatsApp, Instagram' },
+          { abbreviation: 'qpd', fullForm: 'qué pedo', englishEquivalent: 'what\'s up?', usage: 'Friends only, very casual', platform: 'WhatsApp' },
+          { abbreviation: 'saludos', fullForm: 'saludos', englishEquivalent: 'greetings', usage: 'Anyone, formal', platform: 'Email, WhatsApp' },
+          { abbreviation: 'bsos', fullForm: 'besos', englishEquivalent: 'kisses', usage: 'Friends/family', platform: 'WhatsApp, Instagram' }
+        ],
+        emojiMeanings: [
+          { emoji: '😎', meaning: 'Cool/awesome', culturalContext: 'Very common, used for anything cool' },
+          { emoji: '🔥', meaning: 'Fire/amazing', culturalContext: 'Something is really good or exciting' },
+          { emoji: '💯', meaning: 'Perfect/100%', culturalContext: 'Agreement or something is perfect' },
+          { emoji: '🤙', meaning: 'Hang loose/okay', culturalContext: 'Very casual, friends only' },
+          { emoji: '👌', meaning: 'Okay/perfect', culturalContext: 'Universal approval sign' }
+        ],
+        internetSlang: [
+          { word: 'LOL', translation: 'Laughing out loud', pronunciation: 'el-oh-el', usage: 'Anyone, very common' },
+          { word: 'OMG', translation: 'Oh my God', pronunciation: 'oh-em-gee', usage: 'Anyone, casual' },
+          { word: 'WTF', translation: 'What the f***', pronunciation: 'double-u-tee-ef', usage: 'Friends only, very casual' },
+          { word: 'BTW', translation: 'By the way', pronunciation: 'bee-tee-double-u', usage: 'Anyone, casual' },
+          { word: 'IDK', translation: 'I don\'t know', pronunciation: 'eye-dee-kay', usage: 'Anyone, casual' },
+          { word: 'TBH', translation: 'To be honest', pronunciation: 'tee-bee-aitch', usage: 'Anyone, casual' }
+        ]
+      },
+      {
+        id: 24,
+        title: 'House & Home',
+        premium: true,
+        words: [
+          { word: 'Dormitorio', translation: 'Bedroom', pronunciation: 'dor-mee-TOH-ree-oh' },
+          { word: 'Baño', translation: 'Bathroom', pronunciation: 'BAH-nyoh' },
+          { word: 'Cocina', translation: 'Kitchen', pronunciation: 'koh-SEE-nah' },
+          { word: 'Sala de estar', translation: 'Living room', pronunciation: 'SAH-lah deh es-TAHR' },
+          { word: 'Comedor', translation: 'Dining room', pronunciation: 'koh-meh-DOR' },
+          { word: 'Cama', translation: 'Bed', pronunciation: 'KAH-mah' },
+          { word: 'Mesa', translation: 'Table', pronunciation: 'MEH-sah' },
+          { word: 'Silla', translation: 'Chair', pronunciation: 'SEE-yah' },
+          { word: 'Sofá', translation: 'Sofa', pronunciation: 'soh-FAH' },
+          { word: 'Lámpara', translation: 'Lamp', pronunciation: 'LAHM-pah-rah' },
+          { word: 'Refrigerador', translation: 'Refrigerator', pronunciation: 'reh-free-heh-rah-DOR' },
+          { word: 'Estufa', translation: 'Stove', pronunciation: 'es-TOO-fah' },
+          { word: 'Televisión', translation: 'TV', pronunciation: 'teh-leh-vee-SYOHN' },
+          { word: 'Lavadora', translation: 'Washing machine', pronunciation: 'lah-vah-DOH-rah' },
+          { word: 'Microondas', translation: 'Microwave', pronunciation: 'mee-kroh-OHN-dahs' },
+          { word: 'Limpiar', translation: 'To clean', pronunciation: 'leem-pee-AHR' },
+          { word: 'Cocinar', translation: 'To cook', pronunciation: 'koh-see-NAHR' },
+          { word: 'Dormir', translation: 'To sleep', pronunciation: 'dor-MEER' },
+          { word: 'Relajarse', translation: 'To relax', pronunciation: 'reh-lah-HAHR-seh' },
+          { word: 'Ver televisión', translation: 'To watch TV', pronunciation: 'vehr teh-leh-vee-SYOHN' }
+        ],
+        phrases: [
+          { word: '¿Dónde está el baño?', translation: 'Where is the bathroom?', pronunciation: 'DOHN-deh es-TAH el BAH-nyoh' },
+          { word: 'Siéntete como en casa', translation: 'Make yourself at home', pronunciation: 'see-EN-teh-teh KOH-moh en KAH-sah' },
+          { word: 'Esta es mi habitación', translation: 'This is my room', pronunciation: 'ES-tah es mee ah-bee-tah-SYOHN' },
+          { word: 'Voy a cocinar', translation: 'I\'m going to cook', pronunciation: 'voy ah koh-see-NAHR' },
+          { word: 'Necesito limpiar', translation: 'I need to clean', pronunciation: 'neh-seh-SEE-toh leem-pee-AHR' },
+          { word: '¿Puedo usar la cocina?', translation: 'Can I use the kitchen?', pronunciation: 'PWEH-doh oo-SAHR lah koh-SEE-nah' }
+        ],
+        culturalNotes: 'Homes in Spanish-speaking countries vary by region. In Spain, apartments (pisos) are common in cities, while in Latin America, houses (casas) are more typical. The living room (sala) is often the social center of the home. Kitchens are important gathering spaces, especially for family meals. Bathrooms are called "baño" or "servicio" depending on the country. Many homes have patios or courtyards (patios) for outdoor living. Home life emphasizes family time, with meals being important social events. It\'s common to remove shoes when entering homes in some regions. Spanish homes often have tiled floors and are designed for warm climates with good ventilation.',
+        streetSlang: [
+          { word: 'Mi casa es tu casa', translation: 'My house is your house (make yourself at home)', pronunciation: 'mee KAH-sah es too KAH-sah' },
+          { word: 'Echarse en el sofá', translation: 'To crash on the sofa (relax)', pronunciation: 'eh-CHAR-seh en el soh-FAH' },
+          { word: 'Estar en casa', translation: 'To be at home (chilling)', pronunciation: 'es-TAR en KAH-sah' },
+          { word: 'Quedarse en casa', translation: 'To stay home (hang out)', pronunciation: 'keh-DAHR-seh en KAH-sah' },
+          { word: 'Casa chica', translation: 'Small apartment/place (casual)', pronunciation: 'KAH-sah CHEE-kah' },
+          { word: 'Estar cómodo', translation: 'To be comfortable/at ease', pronunciation: 'es-TAR KOH-moh-doh' }
+        ]
+      },
+      {
+        id: 25,
+        title: 'Clothing & Fashion',
+        premium: true,
+        words: [
+          { word: 'Camisa', translation: 'Shirt', pronunciation: 'kah-MEE-sah' },
+          { word: 'Pantalones', translation: 'Pants', pronunciation: 'pahn-tah-LOH-nes' },
+          { word: 'Vestido', translation: 'Dress', pronunciation: 'ves-TEE-doh' },
+          { word: 'Zapatos', translation: 'Shoes', pronunciation: 'sah-PAH-tohs' },
+          { word: 'Calcetines', translation: 'Socks', pronunciation: 'kahl-seh-TEE-nes' },
+          { word: 'Chaqueta', translation: 'Jacket', pronunciation: 'chah-KEH-tah' },
+          { word: 'Abrigo', translation: 'Coat', pronunciation: 'ah-BREE-goh' },
+          { word: 'Sombrero', translation: 'Hat', pronunciation: 'sohm-BREH-roh' },
+          { word: 'Cinturón', translation: 'Belt', pronunciation: 'seen-too-ROHN' },
+          { word: 'Bolso', translation: 'Bag', pronunciation: 'BOHL-soh' },
+          { word: 'Gafas', translation: 'Glasses', pronunciation: 'GAH-fahs' },
+          { word: 'Reloj', translation: 'Watch', pronunciation: 'reh-LOH' },
+          { word: 'Usar', translation: 'To wear', pronunciation: 'oo-SAHR' },
+          { word: 'Probarse', translation: 'To try on', pronunciation: 'proh-BAHR-seh' },
+          { word: 'Quedar bien', translation: 'To fit/look good', pronunciation: 'keh-DAHR bee-EN' },
+          { word: 'Quitarse', translation: 'To take off', pronunciation: 'kee-TAHR-seh' },
+          { word: 'Ponerse', translation: 'To put on', pronunciation: 'poh-NEHR-seh' }
+        ],
+        phrases: [
+          { word: '¿Qué talla usas?', translation: 'What size do you wear?', pronunciation: 'keh TAH-yah OO-sahs' },
+          { word: '¿Cuánto cuesta?', translation: 'How much does it cost?', pronunciation: 'KWAN-toh KWEHS-tah' },
+          { word: '¿Tienes esto en [color]?', translation: 'Do you have this in [color]?', pronunciation: 'tee-EH-nes ES-toh en [color]' },
+          { word: '¿Puedo probármelo?', translation: 'Can I try this on?', pronunciation: 'PWEH-doh proh-BAHR-meh-loh' },
+          { word: 'Te queda muy bien', translation: 'It looks great on you', pronunciation: 'teh KEH-dah moo-ee bee-EN' },
+          { word: '¿Dónde están los probadores?', translation: 'Where are the fitting rooms?', pronunciation: 'DOHN-deh es-TAHN lohs proh-bah-DOH-res' }
+        ],
+        culturalNotes: 'Fashion in Spanish-speaking countries varies by region. Spain is known for stylish, modern fashion, while Latin American countries have vibrant, colorful styles. Zara, Mango, and Bershka are popular Spanish brands. In Latin America, bright colors and patterns are common. Shoes are often removed when entering homes. Fashion is important for social occasions, and people dress well for going out. Street fashion is casual but put-together. Shopping malls (centros comerciales) are popular, and bargaining can occur in markets. Size systems vary: Spain uses European sizes, while Latin America may use US sizes. Fashion is seen as a form of self-expression and social status.',
+        streetSlang: [
+          { word: 'Estar a la moda', translation: 'To be fashionable/in style', pronunciation: 'es-TAR ah lah MOH-dah' },
+          { word: 'Verse bien', translation: 'To look good', pronunciation: 'vehr-seh bee-EN' },
+          { word: 'Ropa chida', translation: 'Cool clothes', pronunciation: 'ROH-pah CHEE-dah' },
+          { word: 'Estar guapo/guapa', translation: 'To look handsome/beautiful', pronunciation: 'es-TAR GWAH-poh / GWAH-pah' },
+          { word: 'Ir de compras', translation: 'To go shopping', pronunciation: 'eer deh KOHM-prahs' },
+          { word: 'Quedar genial', translation: 'To look amazing', pronunciation: 'keh-DAHR heh-nee-AHL' }
+        ]
+      },
+      {
+        id: 26,
+        title: 'Dance & Movement',
+        premium: true,
+        danceStyles: [
+          { name: 'Flamenco', pronunciation: 'flah-MEN-koh', context: 'Traditional Spanish dance, seen at festivals and cultural events', type: 'Traditional' },
+          { name: 'Salsa', pronunciation: 'SAHL-sah', context: 'Popular Latin dance in clubs and dance halls', type: 'Traditional/Modern' },
+          { name: 'Bachata', pronunciation: 'bah-CHAH-tah', context: 'Romantic Latin dance, very popular in clubs', type: 'Traditional/Modern' },
+          { name: 'Tango', pronunciation: 'TAHN-goh', context: 'Passionate dance from Argentina, seen in dance studios and shows', type: 'Traditional' },
+          { name: 'Reggaeton', pronunciation: 'reh-gah-eh-TOHN', context: 'Modern club dance style, very popular in nightlife', type: 'Modern' }
+        ],
+        words: [
+          { word: 'Bailar', translation: 'To dance', pronunciation: 'bah-ee-LAHR' },
+          { word: 'Bailarín/Bailarina', translation: 'Dancer', pronunciation: 'bah-ee-lah-REEN / bah-ee-lah-REE-nah' },
+          { word: 'Música', translation: 'Music', pronunciation: 'MOO-see-kah' },
+          { word: 'Ritmo', translation: 'Rhythm', pronunciation: 'REET-moh' },
+          { word: 'Pista de baile', translation: 'Dance floor', pronunciation: 'PEES-tah deh BAH-ee-leh' },
+          { word: 'Pareja de baile', translation: 'Dance partner', pronunciation: 'pah-REH-hah deh BAH-ee-leh' },
+          { word: 'Rápido/Lento', translation: 'Fast/Slow', pronunciation: 'RAH-pee-doh / LEN-toh' },
+          { word: 'Girar', translation: 'To spin/turn', pronunciation: 'hee-RAHR' },
+          { word: 'Mover el cuerpo', translation: 'Move your body', pronunciation: 'moh-VEHR el KWEHR-poh' }
+        ],
+        phrases: [
+          { word: '¿Quieres bailar?', translation: 'Do you want to dance?', pronunciation: 'kee-EH-res bah-ee-LAHR' },
+          { word: '¡Bailas muy bien!', translation: 'You\'re a great dancer!', pronunciation: 'bah-EE-lahs moo-ee bee-EN' },
+          { word: 'No sé bailar', translation: 'I don\'t know how to dance', pronunciation: 'noh seh bah-ee-LAHR' },
+          { word: 'Enséñame este baile', translation: 'Teach me this dance', pronunciation: 'en-SEH-nyah-meh ES-teh BAH-ee-leh' },
+          { word: 'Vamos a la pista de baile', translation: 'Let\'s go to the dance floor', pronunciation: 'VAH-mohs ah lah PEES-tah deh BAH-ee-leh' },
+          { word: '¿Qué canción es esta?', translation: 'What song is this?', pronunciation: 'keh kahn-SYOHN es ES-tah' }
+        ],
+        culturalNotes: 'Dance is central to Spanish and Latin American culture. Flamenco from Andalusia is world-famous, performed at festivals and tablaos. Salsa and Bachata dominate Latin dance clubs worldwide. Reggaeton has become the soundtrack of modern Spanish nightlife, especially among young people. People dance at weddings, festivals (fiestas), clubs (discotecas), and family gatherings. Dance etiquette varies: formal for traditional dances like Flamenco, casual and energetic for club dancing. Modern dance culture in Spain and Latin America blends traditional styles with international trends, creating a vibrant nightlife scene.',
+        streetSlang: [
+          { word: 'Baila como los dioses', translation: 'Dances like the gods (dances amazingly)', pronunciation: 'BAH-ee-lah KOH-moh lohs dee-OH-ses' },
+          { word: 'Tiene dos pies izquierdos', translation: 'Has two left feet (can\'t dance)', pronunciation: 'tee-EH-neh dohs pees ees-kee-EHR-dohs' },
+          { word: 'Pegarse', translation: 'To grind/dance close (club slang)', pronunciation: 'peh-GAHR-seh' },
+          { word: '¡Vamos a rumbear!', translation: 'Let\'s party/dance!', pronunciation: 'VAH-mohs ah room-beh-AHR' },
+          { word: 'Está prendido', translation: 'It\'s lit/hot (party energy)', pronunciation: 'es-TAH pren-DEE-doh' },
+          { word: 'Romper la pista', translation: 'To tear up the dance floor', pronunciation: 'rohm-PEHR lah PEES-tah' }
+        ]
+      }{ word: 'Solución', translation: 'Solution', pronunciation: 'soh-loo-SYOHN' },
           { word: 'Ayuda', translation: 'Help', pronunciation: 'ah-YOO-dah' },
           { word: 'Necesito', translation: 'I need', pronunciation: 'neh-seh-SEE-toh' },
           { word: 'Puedo', translation: 'I can', pronunciation: 'PWEH-doh' }
@@ -781,7 +1003,224 @@ export const languages = {
         premium: true,
         words: [
           { word: 'Problème', translation: 'Problem', pronunciation: 'proh-BLEM' },
-          { word: 'Solution', translation: 'Solution', pronunciation: 'soh-loo-SYOHN' },
+          ,
+      {
+        id: 21,
+        title: 'Song Lesson: Frère Jacques (Brother John)',
+        premium: true,
+        songInfo: {
+          name: 'Frère Jacques',
+          englishName: 'Brother John',
+          type: 'Children\'s Song',
+          culturalSignificance: 'One of the most famous French children\'s songs, known worldwide. Teaches time, actions, and questions. Often used as a round/canon song.'
+        },
+        lyrics: [
+          { original: 'Frère Jacques, Frère Jacques', translation: 'Brother John, Brother John', pronunciation: 'frehr zhahk frehr zhahk' },
+          { original: 'Dormez-vous? Dormez-vous?', translation: 'Are you sleeping? Are you sleeping?', pronunciation: 'dor-may voo dor-may voo' },
+          { original: 'Sonnez les matines! Sonnez les matines!', translation: 'Ring the morning bells! Ring the morning bells!', pronunciation: 'soh-nay lay mah-teen soh-nay lay mah-teen' },
+          { original: 'Ding, dang, dong. Ding, dang, dong.', translation: 'Ding, dang, dong. Ding, dang, dong.', pronunciation: 'deeng dahng dohng deeng dahng dohng' }
+        ],
+        culturalNotes: 'This song is sung as a round (canon) where different groups start at different times. It\'s taught in French schools to help children learn about time, morning routines, and musical rounds. The song has been translated into many languages and is recognized globally.',
+        words: [
+          { word: 'Frère', translation: 'Brother', pronunciation: 'frehr', example: 'Frère Jacques' },
+          { word: 'Dormez', translation: 'Sleep (you plural)', pronunciation: 'dor-may', example: 'Dormez-vous?' },
+          { word: 'Sonnez', translation: 'Ring (imperative)', pronunciation: 'soh-nay', example: 'Sonnez les matines!' },
+          { word: 'Matines', translation: 'Morning bells', pronunciation: 'mah-teen', example: 'Sonnez les matines!' },
+          { word: 'Ding', translation: 'Ding (bell sound)', pronunciation: 'deeng', example: 'Ding, dang, dong' },
+          { word: 'Dang', translation: 'Dang (bell sound)', pronunciation: 'dahng', example: 'Ding, dang, dong' },
+          { word: 'Dong', translation: 'Dong (bell sound)', pronunciation: 'dohng', example: 'Ding, dang, dong' },
+          { word: 'Vous', translation: 'You (formal/plural)', pronunciation: 'voo', example: 'Dormez-vous?' },
+          { word: 'Les', translation: 'The (plural)', pronunciation: 'lay', example: 'Sonnez les matines!' }
+        ],
+        streetSlang: [
+          { word: 'Cette chanson est cool', translation: 'This song is cool', pronunciation: 'set shahn-SOHN ay kool' },
+          { word: 'J\'adore ce morceau', translation: 'I love this track/song', pronunciation: 'zhah-dor suh mor-SOH' },
+          { word: 'C\'est accrocheur', translation: 'It\'s catchy', pronunciation: 'say ah-kroh-SHUHR' },
+          { word: 'Chanter à tue-tête', translation: 'To sing at the top of your lungs', pronunciation: 'shahn-tay ah too-tet' },
+          { word: 'Ça a du rythme', translation: 'It has rhythm', pronunciation: 'sah ah doo REET-muh' },
+          { word: 'Je la connais par cœur', translation: 'I know it by heart', pronunciation: 'zhuh lah kon-ay par kuhr' }
+        ]
+      },
+      {
+        id: 22,
+        title: 'Proverbs & Sayings',
+        premium: true,
+        proverbs: [
+          { original: 'Mieux vaut tard que jamais', literalTranslation: 'Better late than never', meaning: 'It\'s better to do something late than not at all', context: 'When someone finally does something they\'ve been putting off', slangEquivalent: 'Mieux vaut tard' },
+          { original: 'À chaque jour suffit sa peine', literalTranslation: 'Each day has enough trouble of its own', meaning: 'Don\'t worry about tomorrow', context: 'Advising to focus on today\'s problems', slangEquivalent: 'Un jour à la fois' },
+          { original: 'L\'appétit vient en mangeant', literalTranslation: 'Appetite comes while eating', meaning: 'The more you have, the more you want', context: 'When someone gets more interested as they do something', slangEquivalent: 'Plus tu en as, plus tu en veux' },
+          { original: 'Qui ne risque rien n\'a rien', literalTranslation: 'Who risks nothing has nothing', meaning: 'Nothing ventured, nothing gained', context: 'Encouraging someone to take risks', slangEquivalent: 'Faut oser' },
+          { original: 'Il ne faut pas mettre tous ses œufs dans le même panier', literalTranslation: 'Don\'t put all your eggs in the same basket', meaning: 'Don\'t put all your resources in one place', context: 'Warning against relying on one thing', slangEquivalent: 'Ne mets pas tout au même endroit' },
+          { original: 'Qui vivra verra', literalTranslation: 'Who will live will see', meaning: 'Time will tell', context: 'When the outcome is uncertain', slangEquivalent: 'On verra bien' },
+          { original: 'Pierre qui roule n\'amasse pas mousse', literalTranslation: 'A rolling stone gathers no moss', meaning: 'People who move around don\'t accumulate things', context: 'About someone who doesn\'t settle down', slangEquivalent: 'Il bouge tout le temps' },
+          { original: 'C\'est en forgeant qu\'on devient forgeron', literalTranslation: 'It\'s by forging that one becomes a blacksmith', meaning: 'Practice makes perfect', context: 'Encouraging practice and learning', slangEquivalent: 'C\'est en pratiquant' }
+        ],
+        streetSlang: [
+          { word: 'C\'est de la balle', translation: 'It\'s awesome', pronunciation: 'seh duh lah bahl' },
+          { word: 'C\'est stylé', translation: 'It\'s cool/stylish', pronunciation: 'seh stee-LAY' },
+          { word: 'C\'est ouf', translation: 'It\'s crazy/amazing', pronunciation: 'seh oof' },
+          { word: 'C\'est trop bien', translation: 'It\'s too good', pronunciation: 'seh troh bee-en' },
+          { word: 'C\'est génial', translation: 'It\'s great', pronunciation: 'seh zhay-NYAL' },
+          { word: 'C\'est nickel', translation: 'It\'s perfect', pronunciation: 'seh nee-KEL' }
+        ]
+      },
+      {
+        id: 23,
+        title: 'Texting & Internet Slang',
+        premium: true,
+        abbreviations: [
+          { abbreviation: 'c', fullForm: 'c\'est', englishEquivalent: 'it is', usage: 'Friends only, very casual', platform: 'WhatsApp, Instagram' },
+          { abbreviation: 'jsp', fullForm: 'je ne sais pas', englishEquivalent: 'I don\'t know', usage: 'Anyone, casual', platform: 'WhatsApp, Instagram, Twitter' },
+          { abbreviation: 'ptdr', fullForm: 'pété de rire', englishEquivalent: 'dying of laughter', usage: 'Friends only, casual', platform: 'WhatsApp, Instagram' },
+          { abbreviation: 'mdr', fullForm: 'mort de rire', englishEquivalent: 'dying of laughter', usage: 'Anyone, very common', platform: 'All platforms' },
+          { abbreviation: 'tkt', fullForm: 't\'inquiète', englishEquivalent: 'don\'t worry', usage: 'Friends only, casual', platform: 'WhatsApp, Instagram' },
+          { abbreviation: 'bjr', fullForm: 'bonjour', englishEquivalent: 'hello', usage: 'Anyone, casual', platform: 'WhatsApp, Instagram' },
+          { abbreviation: 'stp', fullForm: 's\'il te plaît', englishEquivalent: 'please', usage: 'Friends only, casual', platform: 'WhatsApp, Instagram' },
+          { abbreviation: 'svp', fullForm: 's\'il vous plaît', englishEquivalent: 'please', usage: 'Anyone, formal', platform: 'Email, WhatsApp' },
+          { abbreviation: 'biz', fullForm: 'bisous', englishEquivalent: 'kisses', usage: 'Friends/family', platform: 'WhatsApp, Instagram' },
+          { abbreviation: 'a+', fullForm: 'à plus', englishEquivalent: 'see you later', usage: 'Friends only, casual', platform: 'WhatsApp, Instagram' }
+        ],
+        emojiMeanings: [
+          { emoji: '😊', meaning: 'Happy/smiling', culturalContext: 'Very common, friendly' },
+          { emoji: '❤️', meaning: 'Love', culturalContext: 'Used with friends and family' },
+          { emoji: '👍', meaning: 'Okay/approval', culturalContext: 'Universal approval' },
+          { emoji: '😉', meaning: 'Winking/joking', culturalContext: 'Playful, friends only' },
+          { emoji: '💪', meaning: 'Strength/good luck', culturalContext: 'Encouragement' }
+        ],
+        internetSlang: [
+          { word: 'LOL', translation: 'Laughing out loud', pronunciation: 'el-oh-el', usage: 'Anyone, very common' },
+          { word: 'OMG', translation: 'Oh my God', pronunciation: 'oh-em-gee', usage: 'Anyone, casual' },
+          { word: 'WTF', translation: 'What the f***', pronunciation: 'double-u-tee-ef', usage: 'Friends only, very casual' },
+          { word: 'BTW', translation: 'By the way', pronunciation: 'bee-tee-double-u', usage: 'Anyone, casual' },
+          { word: 'IDK', translation: 'I don\'t know', pronunciation: 'eye-dee-kay', usage: 'Anyone, casual' },
+          { word: 'TBH', translation: 'To be honest', pronunciation: 'tee-bee-aitch', usage: 'Anyone, casual' }
+        ]
+      },
+      {
+        id: 24,
+        title: 'House & Home',
+        premium: true,
+        words: [
+          { word: 'Chambre', translation: 'Bedroom', pronunciation: 'shahm-bruh' },
+          { word: 'Salle de bain', translation: 'Bathroom', pronunciation: 'sahl duh ban' },
+          { word: 'Cuisine', translation: 'Kitchen', pronunciation: 'kwee-ZEEN' },
+          { word: 'Salon', translation: 'Living room', pronunciation: 'sah-LOHN' },
+          { word: 'Salle à manger', translation: 'Dining room', pronunciation: 'sahl ah mahn-ZHAY' },
+          { word: 'Lit', translation: 'Bed', pronunciation: 'lee' },
+          { word: 'Table', translation: 'Table', pronunciation: 'TAH-bluh' },
+          { word: 'Chaise', translation: 'Chair', pronunciation: 'shez' },
+          { word: 'Canapé', translation: 'Sofa', pronunciation: 'kah-nah-PAY' },
+          { word: 'Lampe', translation: 'Lamp', pronunciation: 'lahmp' },
+          { word: 'Réfrigérateur', translation: 'Refrigerator', pronunciation: 'ray-free-zhay-rah-TUR' },
+          { word: 'Cuisinière', translation: 'Stove', pronunciation: 'kwee-zee-NYAIR' },
+          { word: 'Télévision', translation: 'TV', pronunciation: 'tay-lay-vee-ZYOHN' },
+          { word: 'Lave-linge', translation: 'Washing machine', pronunciation: 'lahv-LANZH' },
+          { word: 'Micro-ondes', translation: 'Microwave', pronunciation: 'mee-kroh-ohnd' },
+          { word: 'Nettoyer', translation: 'To clean', pronunciation: 'neh-twah-YAY' },
+          { word: 'Cuisiner', translation: 'To cook', pronunciation: 'kwee-zee-NAY' },
+          { word: 'Dormir', translation: 'To sleep', pronunciation: 'dor-MEER' },
+          { word: 'Se détendre', translation: 'To relax', pronunciation: 'suh day-TAHND-ruh' },
+          { word: 'Regarder la télé', translation: 'To watch TV', pronunciation: 'ruh-gar-DAY lah tay-LAY' }
+        ],
+        phrases: [
+          { word: 'Où sont les toilettes?', translation: 'Where is the bathroom?', pronunciation: 'oo sohn lay twah-LET' },
+          { word: 'Fais comme chez toi', translation: 'Make yourself at home', pronunciation: 'fay kohm shay twah' },
+          { word: 'C\'est ma chambre', translation: 'This is my room', pronunciation: 'say mah shahm-bruh' },
+          { word: 'Je vais cuisiner', translation: 'I\'m going to cook', pronunciation: 'zhuh vay kwee-zee-NAY' },
+          { word: 'Je dois nettoyer', translation: 'I need to clean', pronunciation: 'zhuh dwah neh-twah-YAY' },
+          { word: 'Puis-je utiliser la cuisine?', translation: 'Can I use the kitchen?', pronunciation: 'pwee zhuh oo-tee-lee-ZAY lah kwee-ZEEN' }
+        ],
+        culturalNotes: 'French homes (maisons) vary from city apartments to countryside houses. Parisian apartments are often compact but elegant. The living room (salon) is the social center. Kitchens are important for French cuisine culture. Bathrooms may be separate from toilets (WC). Many French homes have balconies or small gardens. Home life emphasizes meals and family time. French people value their private space and home decor. It\'s common to remove shoes when entering homes. French homes often feature high ceilings, large windows, and decorative elements. The concept of "chez moi" (at my place) is important in French culture.',
+        streetSlang: [
+          { word: 'Chez moi', translation: 'At my place/home', pronunciation: 'shay mwah' },
+          { word: 'Se poser', translation: 'To chill/relax at home', pronunciation: 'suh poh-ZAY' },
+          { word: 'Être chez soi', translation: 'To be at home (comfortable)', pronunciation: 'etr shay swah' },
+          { word: 'Rester à la maison', translation: 'To stay home', pronunciation: 'res-TAY ah lah may-ZOHN' },
+          { word: 'Piaule', translation: 'Place/room (slang)', pronunciation: 'pee-OHL' },
+          { word: 'Être bien installé', translation: 'To be comfortable/settled', pronunciation: 'etr bee-en an-stah-LAY' }
+        ]
+      },
+      {
+        id: 25,
+        title: 'Clothing & Fashion',
+        premium: true,
+        words: [
+          { word: 'Chemise', translation: 'Shirt', pronunciation: 'shuh-MEEZ' },
+          { word: 'Pantalon', translation: 'Pants', pronunciation: 'pahn-tah-LOHN' },
+          { word: 'Robe', translation: 'Dress', pronunciation: 'rohb' },
+          { word: 'Chaussures', translation: 'Shoes', pronunciation: 'shoh-SOOR' },
+          { word: 'Chaussettes', translation: 'Socks', pronunciation: 'shoh-SET' },
+          { word: 'Veste', translation: 'Jacket', pronunciation: 'vest' },
+          { word: 'Manteau', translation: 'Coat', pronunciation: 'mahn-TOH' },
+          { word: 'Chapeau', translation: 'Hat', pronunciation: 'shah-POH' },
+          { word: 'Ceinture', translation: 'Belt', pronunciation: 'san-TOOR' },
+          { word: 'Sac', translation: 'Bag', pronunciation: 'sahk' },
+          { word: 'Lunettes', translation: 'Glasses', pronunciation: 'loo-NET' },
+          { word: 'Montre', translation: 'Watch', pronunciation: 'mohnt-ruh' },
+          { word: 'Porter', translation: 'To wear', pronunciation: 'por-TAY' },
+          { word: 'Essayer', translation: 'To try on', pronunciation: 'eh-say-YAY' },
+          { word: 'Aller bien', translation: 'To fit/look good', pronunciation: 'ah-LAY bee-EN' },
+          { word: 'Enlever', translation: 'To take off', pronunciation: 'ahn-luh-VAY' },
+          { word: 'Mettre', translation: 'To put on', pronunciation: 'MET-ruh' }
+        ],
+        phrases: [
+          { word: 'Quelle taille faites-vous?', translation: 'What size do you wear?', pronunciation: 'kel ty fayt-voo' },
+          { word: 'Combien ça coûte?', translation: 'How much does it cost?', pronunciation: 'kohm-bee-EN sah koot' },
+          { word: 'Vous avez ça en [couleur]?', translation: 'Do you have this in [color]?', pronunciation: 'voo zah-VAY sah ahn [color]' },
+          { word: 'Je peux l\'essayer?', translation: 'Can I try this on?', pronunciation: 'zhuh puh lay-say-YAY' },
+          { word: 'Ça vous va très bien', translation: 'It looks great on you', pronunciation: 'sah voo vah treh bee-EN' },
+          { word: 'Où sont les cabines d\'essayage?', translation: 'Where are the fitting rooms?', pronunciation: 'oo sohn lay kah-BEEN day-say-YAZH' }
+        ],
+        culturalNotes: 'France is a global fashion capital, home to luxury brands like Chanel, Dior, and Louis Vuitton. Paris Fashion Week is world-renowned. French fashion emphasizes elegance, simplicity, and quality over trends. The "less is more" philosophy is common. Street style in Paris is chic and understated. French people invest in quality pieces rather than fast fashion. Shopping at markets (marchés) and boutiques is popular. Size systems use European measurements. Fashion is seen as an art form and cultural expression. French people dress well even casually, valuing style and presentation. The concept of "chic" is deeply ingrained in French culture.',
+        streetSlang: [
+          { word: 'Être à la mode', translation: 'To be fashionable/in style', pronunciation: 'etr ah lah mohd' },
+          { word: 'Avoir du style', translation: 'To have style', pronunciation: 'ah-VWAHR doo steel' },
+          { word: 'Fringues', translation: 'Clothes (slang)', pronunciation: 'fran-guh' },
+          { word: 'Être stylé', translation: 'To be stylish', pronunciation: 'etr stee-LAY' },
+          { word: 'Faire du shopping', translation: 'To go shopping', pronunciation: 'fair doo shoh-PEENG' },
+          { word: 'Ça te va super bien', translation: 'It looks amazing on you', pronunciation: 'sah tuh vah soo-PER bee-EN' }
+        ]
+      },
+      {
+        id: 26,
+        title: 'Dance & Movement',
+        premium: true,
+        danceStyles: [
+          { name: 'Cancan', pronunciation: 'kahn-KAHN', context: 'Famous French dance from the Moulin Rouge era, seen in shows', type: 'Traditional' },
+          { name: 'Valse', pronunciation: 'vahls', context: 'Waltz, elegant ballroom dance', type: 'Traditional' },
+          { name: 'Danse de salon', pronunciation: 'dahns duh sah-LOHN', context: 'Ballroom dancing, formal events', type: 'Traditional' },
+          { name: 'Danse de club', pronunciation: 'dahns duh kloob', context: 'Modern club dancing, very popular in Paris nightlife', type: 'Modern' },
+          { name: 'Électro', pronunciation: 'ay-lek-TROH', context: 'Electronic dance music scene, popular in clubs', type: 'Modern' }
+        ],
+        words: [
+          { word: 'Danser', translation: 'To dance', pronunciation: 'dahn-SAY' },
+          { word: 'Danseur/Danseuse', translation: 'Dancer', pronunciation: 'dahn-SUR / dahn-SUHZ' },
+          { word: 'Musique', translation: 'Music', pronunciation: 'moo-ZEEK' },
+          { word: 'Rythme', translation: 'Rhythm', pronunciation: 'reetm' },
+          { word: 'Piste de danse', translation: 'Dance floor', pronunciation: 'peest duh dahns' },
+          { word: 'Partenaire de danse', translation: 'Dance partner', pronunciation: 'par-tuh-NAIR duh dahns' },
+          { word: 'Rapide/Lent', translation: 'Fast/Slow', pronunciation: 'rah-PEED / lahn' },
+          { word: 'Tourner', translation: 'To spin/turn', pronunciation: 'toor-NAY' },
+          { word: 'Bouger le corps', translation: 'Move your body', pronunciation: 'boo-ZHAY luh kor' }
+        ],
+        phrases: [
+          { word: 'Tu veux danser?', translation: 'Do you want to dance?', pronunciation: 'too vuh dahn-SAY' },
+          { word: 'Tu danses très bien!', translation: 'You\'re a great dancer!', pronunciation: 'too dahns treh bee-EN' },
+          { word: 'Je ne sais pas danser', translation: 'I don\'t know how to dance', pronunciation: 'zhuh nuh say pah dahn-SAY' },
+          { word: 'Apprends-moi cette danse', translation: 'Teach me this dance', pronunciation: 'ah-PRAHN mwah set dahns' },
+          { word: 'Allons sur la piste de danse', translation: 'Let\'s go to the dance floor', pronunciation: 'ah-LOHN soor lah peest duh dahns' },
+          { word: 'Quelle est cette chanson?', translation: 'What song is this?', pronunciation: 'kel ay set shahn-SOHN' }
+        ],
+        culturalNotes: 'Dance culture in France blends elegance and modernity. The Cancan is iconic, originating from 19th-century Paris cabarets like the Moulin Rouge. Ballroom dancing (danse de salon) remains popular at formal events and weddings. Paris has a vibrant nightlife scene with world-famous clubs featuring electronic music and modern dance styles. People dance at festivals (festivals), clubs (boîtes de nuit), weddings (mariages), and cultural events. Dance etiquette is more formal for traditional dances, while club culture is casual and energetic. Modern French dance culture is heavily influenced by electronic music, especially in cities like Paris and Lyon, creating a sophisticated yet fun nightlife experience.',
+        streetSlang: [
+          { word: 'Danser comme un dieu', translation: 'Dances like a god (dances amazingly)', pronunciation: 'dahn-SAY kohm uhn dee-UH' },
+          { word: 'Avoir deux pieds gauches', translation: 'To have two left feet (can\'t dance)', pronunciation: 'ah-VWAHR duh pee-ay gohsh' },
+          { word: 'Se déhancher', translation: 'To move your hips (dance slang)', pronunciation: 'suh day-ahn-SHAY' },
+          { word: 'On fait la fête!', translation: 'Let\'s party!', pronunciation: 'ohn fay lah FET' },
+          { word: 'C\'est chaud', translation: 'It\'s hot/lit (party energy)', pronunciation: 'say shoh' },
+          { word: 'Défoncer la piste', translation: 'To tear up the dance floor', pronunciation: 'day-fohn-SAY lah peest' }
+        ]
+      }{ word: 'Solution', translation: 'Solution', pronunciation: 'soh-loo-SYOHN' },
           { word: 'Aide', translation: 'Help', pronunciation: 'ed' },
           { word: 'J\'ai besoin', translation: 'I need', pronunciation: 'zhay buh-ZWAN' },
           { word: 'Je peux', translation: 'I can', pronunciation: 'zhuh puh' }
@@ -1180,7 +1619,229 @@ export const languages = {
         premium: true,
         words: [
           { word: 'Problem', translation: 'Problem', pronunciation: 'proh-BLEM' },
-          { word: 'Lösung', translation: 'Solution', pronunciation: 'LER-zoong' },
+          ,
+      {
+        id: 21,
+        title: 'Song Lesson: Hänschen klein (Little Hans)',
+        premium: true,
+        songInfo: {
+          name: 'Hänschen klein',
+          englishName: 'Little Hans',
+          type: 'Children\'s Song',
+          culturalSignificance: 'A classic German children\'s song about a small boy venturing into the world. Teaches independence, family bonds, and adventure. Often sung in kindergartens and homes across German-speaking countries.'
+        },
+        lyrics: [
+          { original: 'Hänschen klein, ging allein', translation: 'Little Hans went alone', pronunciation: 'HEN-shen kline ging ahl-LINE' },
+          { original: 'In die weite Welt hinein', translation: 'Into the wide world', pronunciation: 'in dee VY-teh velt hin-INE' },
+          { original: 'Stock und Hut steht ihm gut', translation: 'Staff and hat suit him well', pronunciation: 'shtok oont hoot shtayt eem goot' },
+          { original: 'Ist gar wohlgemut', translation: 'He is quite cheerful', pronunciation: 'ist gar VOHL-geh-moot' },
+          { original: 'Aber Mama weinet sehr', translation: 'But Mama cries very much', pronunciation: 'AH-ber MAH-mah VY-net zayr' },
+          { original: 'Hat ja nun kein Hänschen mehr', translation: 'She has no little Hans anymore', pronunciation: 'hat yah noon kine HEN-shen mayr' },
+          { original: 'Wünsch dir Glück, sagt ihr Blick', translation: 'Wish you luck, says her look', pronunciation: 'voonsh deer glook zahkt eer blik' },
+          { original: 'Kehr\' nur bald zurück', translation: 'Just return soon', pronunciation: 'kayr noor bahlt tsoo-ROOK' }
+        ],
+        culturalNotes: 'This song teaches children about independence and adventure while emphasizing the importance of family bonds. It\'s often used in German kindergartens to help children understand separation and reunion. The song represents the universal theme of growing up and exploring the world while maintaining family connections.',
+        words: [
+          { word: 'Hänschen', translation: 'Little Hans (diminutive)', pronunciation: 'HEN-shen', example: 'Hänschen klein' },
+          { word: 'klein', translation: 'Small/little', pronunciation: 'kline', example: 'Hänschen klein' },
+          { word: 'allein', translation: 'Alone', pronunciation: 'ahl-LINE', example: 'ging allein' },
+          { word: 'weite Welt', translation: 'Wide world', pronunciation: 'VY-teh velt', example: 'In die weite Welt hinein' },
+          { word: 'Stock', translation: 'Staff/stick', pronunciation: 'shtok', example: 'Stock und Hut' },
+          { word: 'Hut', translation: 'Hat', pronunciation: 'hoot', example: 'Stock und Hut' },
+          { word: 'wohlgemut', translation: 'Cheerful/in good spirits', pronunciation: 'VOHL-geh-moot', example: 'Ist gar wohlgemut' },
+          { word: 'Mama', translation: 'Mom/Mama', pronunciation: 'MAH-mah', example: 'Aber Mama weinet sehr' },
+          { word: 'weinet', translation: 'Cries (old form)', pronunciation: 'VY-net', example: 'Mama weinet sehr' },
+          { word: 'zurück', translation: 'Back/return', pronunciation: 'tsoo-ROOK', example: 'Kehr\' nur bald zurück' }
+        ],
+        streetSlang: [
+          { word: 'Dieses Lied ist cool', translation: 'This song is cool', pronunciation: 'DEE-zes leet ist kool' },
+          { word: 'Ich liebe diesen Song', translation: 'I love this song', pronunciation: 'ikh LEE-beh DEE-zen song' },
+          { word: 'Es ist eingängig', translation: 'It\'s catchy', pronunciation: 'es ist INE-geng-ikh' },
+          { word: 'Aus voller Kehle singen', translation: 'To sing at the top of your lungs', pronunciation: 'ows FOL-ler KAY-leh ZING-en' },
+          { word: 'Es hat Rhythmus', translation: 'It has rhythm', pronunciation: 'es hat REET-moos' },
+          { word: 'Ich kann es auswendig', translation: 'I know it by heart', pronunciation: 'ikh kahn es OWS-ven-dikh' }
+        ]
+      },
+      {
+        id: 22,
+        title: 'Proverbs & Sayings',
+        premium: true,
+        proverbs: [
+          { original: 'Besser spät als nie', literalTranslation: 'Better late than never', meaning: 'It\'s better to do something late than not at all', context: 'When someone finally does something they\'ve been putting off', slangEquivalent: 'Besser spät' },
+          { original: 'Was du heute kannst besorgen, das verschiebe nicht auf morgen', literalTranslation: 'What you can do today, don\'t postpone until tomorrow', meaning: 'Don\'t put off until tomorrow what you can do today', context: 'Encouraging immediate action', slangEquivalent: 'Mach es jetzt' },
+          { original: 'Der frühe Vogel fängt den Wurm', literalTranslation: 'The early bird catches the worm', meaning: 'Those who start early succeed', context: 'Encouraging early action', slangEquivalent: 'Früh aufstehen lohnt sich' },
+          { original: 'Wer nicht wagt, der nicht gewinnt', literalTranslation: 'Who doesn\'t dare, doesn\'t win', meaning: 'Nothing ventured, nothing gained', context: 'Encouraging risk-taking', slangEquivalent: 'Risiko lohnt sich' },
+          { original: 'Alles hat ein Ende, nur die Wurst hat zwei', literalTranslation: 'Everything has an end, only the sausage has two', meaning: 'Everything comes to an end', context: 'When something is ending', slangEquivalent: 'Alles geht vorbei' },
+          { original: 'Wer A sagt, muss auch B sagen', literalTranslation: 'Who says A must also say B', meaning: 'In for a penny, in for a pound', context: 'When committed to something', slangEquivalent: 'Wenn schon, denn schon' },
+          { original: 'Übung macht den Meister', literalTranslation: 'Practice makes the master', meaning: 'Practice makes perfect', context: 'Encouraging practice', slangEquivalent: 'Üben, üben, üben' },
+          { original: 'Morgenstund hat Gold im Mund', literalTranslation: 'Morning hour has gold in its mouth', meaning: 'The early bird catches the worm', context: 'Encouraging early rising', slangEquivalent: 'Früh aufstehen' }
+        ],
+        streetSlang: [
+          { word: 'Das ist geil', translation: 'That\'s awesome/cool', pronunciation: 'dahs ist gile' },
+          { word: 'Das ist krass', translation: 'That\'s crazy/amazing', pronunciation: 'dahs ist krahs' },
+          { word: 'Das ist mega', translation: 'That\'s mega/awesome', pronunciation: 'dahs ist MAY-gah' },
+          { word: 'Das ist cool', translation: 'That\'s cool', pronunciation: 'dahs ist kool' },
+          { word: 'Das ist der Hammer', translation: 'That\'s the bomb/awesome', pronunciation: 'dahs ist der HAH-mer' },
+          { word: 'Das ist super', translation: 'That\'s super', pronunciation: 'dahs ist ZOO-per' }
+        ]
+      },
+      {
+        id: 23,
+        title: 'Texting & Internet Slang',
+        premium: true,
+        abbreviations: [
+          { abbreviation: 'vllt', fullForm: 'vielleicht', englishEquivalent: 'maybe', usage: 'Anyone, casual', platform: 'WhatsApp, Instagram' },
+          { abbreviation: 'lg', fullForm: 'liebe Grüße', englishEquivalent: 'best regards', usage: 'Anyone, formal', platform: 'Email, WhatsApp' },
+          { abbreviation: 'hdgdl', fullForm: 'hab dich ganz doll lieb', englishEquivalent: 'love you very much', usage: 'Close friends/family', platform: 'WhatsApp, Instagram' },
+          { abbreviation: 'ka', fullForm: 'keine Ahnung', englishEquivalent: 'no idea', usage: 'Anyone, casual', platform: 'WhatsApp, Instagram' },
+          { abbreviation: 'kp', fullForm: 'kein Plan', englishEquivalent: 'no idea', usage: 'Friends only, casual', platform: 'WhatsApp, Instagram' },
+          { abbreviation: 'mfg', fullForm: 'mit freundlichen Grüßen', englishEquivalent: 'with kind regards', usage: 'Anyone, formal', platform: 'Email' },
+          { abbreviation: 'gn8', fullForm: 'gute Nacht', englishEquivalent: 'good night', usage: 'Anyone, casual', platform: 'WhatsApp, Instagram' },
+          { abbreviation: 'vlt', fullForm: 'vielleicht', englishEquivalent: 'maybe', usage: 'Anyone, casual', platform: 'WhatsApp, Instagram' },
+          { abbreviation: 'bzw', fullForm: 'beziehungsweise', englishEquivalent: 'respectively/or', usage: 'Anyone, formal', platform: 'Email, WhatsApp' },
+          { abbreviation: 'zB', fullForm: 'zum Beispiel', englishEquivalent: 'for example', usage: 'Anyone, casual', platform: 'All platforms' }
+        ],
+        emojiMeanings: [
+          { emoji: '👍', meaning: 'Okay/approval', culturalContext: 'Very common, universal' },
+          { emoji: '😊', meaning: 'Happy/smiling', culturalContext: 'Friendly, common' },
+          { emoji: '🔥', meaning: 'Fire/amazing', culturalContext: 'Something is really good' },
+          { emoji: '💪', meaning: 'Strength/good luck', culturalContext: 'Encouragement' },
+          { emoji: '❤️', meaning: 'Love', culturalContext: 'Used with friends and family' }
+        ],
+        internetSlang: [
+          { word: 'LOL', translation: 'Laughing out loud', pronunciation: 'el-oh-el', usage: 'Anyone, very common' },
+          { word: 'OMG', translation: 'Oh my God', pronunciation: 'oh-em-gee', usage: 'Anyone, casual' },
+          { word: 'WTF', translation: 'What the f***', pronunciation: 'double-u-tee-ef', usage: 'Friends only, very casual' },
+          { word: 'BTW', translation: 'By the way', pronunciation: 'bee-tee-double-u', usage: 'Anyone, casual' },
+          { word: 'IDK', translation: 'I don\'t know', pronunciation: 'eye-dee-kay', usage: 'Anyone, casual' },
+          { word: 'TBH', translation: 'To be honest', pronunciation: 'tee-bee-aitch', usage: 'Anyone, casual' }
+        ]
+      },
+      {
+        id: 24,
+        title: 'House & Home',
+        premium: true,
+        words: [
+          { word: 'Schlafzimmer', translation: 'Bedroom', pronunciation: 'SHLAHF-tsim-mer' },
+          { word: 'Badezimmer', translation: 'Bathroom', pronunciation: 'BAH-deh-tsim-mer' },
+          { word: 'Küche', translation: 'Kitchen', pronunciation: 'KOO-sheh' },
+          { word: 'Wohnzimmer', translation: 'Living room', pronunciation: 'VOHN-tsim-mer' },
+          { word: 'Esszimmer', translation: 'Dining room', pronunciation: 'ES-tsim-mer' },
+          { word: 'Bett', translation: 'Bed', pronunciation: 'bet' },
+          { word: 'Tisch', translation: 'Table', pronunciation: 'tish' },
+          { word: 'Stuhl', translation: 'Chair', pronunciation: 'shtool' },
+          { word: 'Sofa', translation: 'Sofa', pronunciation: 'ZOH-fah' },
+          { word: 'Lampe', translation: 'Lamp', pronunciation: 'LAHM-peh' },
+          { word: 'Kühlschrank', translation: 'Refrigerator', pronunciation: 'KOOL-shrahnk' },
+          { word: 'Herd', translation: 'Stove', pronunciation: 'hehrt' },
+          { word: 'Fernseher', translation: 'TV', pronunciation: 'FEHRN-zay-er' },
+          { word: 'Waschmaschine', translation: 'Washing machine', pronunciation: 'VAHSH-mah-SHEE-neh' },
+          { word: 'Mikrowelle', translation: 'Microwave', pronunciation: 'MEE-kroh-vel-leh' },
+          { word: 'Putzen', translation: 'To clean', pronunciation: 'POOT-tsen' },
+          { word: 'Kochen', translation: 'To cook', pronunciation: 'KOH-chen' },
+          { word: 'Schlafen', translation: 'To sleep', pronunciation: 'SHLAH-fen' },
+          { word: 'Entspannen', translation: 'To relax', pronunciation: 'ent-SPAHN-nen' },
+          { word: 'Fernsehen', translation: 'To watch TV', pronunciation: 'FEHRN-zay-en' }
+        ],
+        phrases: [
+          { word: 'Wo ist das Badezimmer?', translation: 'Where is the bathroom?', pronunciation: 'voh ist dahs BAH-deh-tsim-mer' },
+          { word: 'Fühl dich wie zu Hause', translation: 'Make yourself at home', pronunciation: 'fool dikh vee tsoo HOW-zeh' },
+          { word: 'Das ist mein Zimmer', translation: 'This is my room', pronunciation: 'dahs ist mine TSIM-mer' },
+          { word: 'Ich werde kochen', translation: 'I\'m going to cook', pronunciation: 'ikh VEHR-deh KOH-chen' },
+          { word: 'Ich muss putzen', translation: 'I need to clean', pronunciation: 'ikh moos POOT-tsen' },
+          { word: 'Kann ich die Küche benutzen?', translation: 'Can I use the kitchen?', pronunciation: 'kahn ikh dee KOO-sheh beh-NOOT-tsen' }
+        ],
+        culturalNotes: 'German homes (Häuser) emphasize efficiency and organization. Many Germans live in apartments (Wohnungen) in cities. The living room (Wohnzimmer) is the social center. Kitchens are well-equipped and important for German cooking culture. Bathrooms are separate from toilets (WC). Many homes have balconies (Balkone) or gardens (Gärten). Home life emphasizes order, cleanliness (Ordnung), and quality. Germans value their private space and home decor. It\'s very common to remove shoes when entering homes. German homes often feature practical design, energy efficiency, and high-quality appliances. The concept of "Gemütlichkeit" (coziness) is important in German home culture.',
+        streetSlang: [
+          { word: 'Bei mir', translation: 'At my place', pronunciation: 'by meer' },
+          { word: 'Chillen', translation: 'To chill/relax', pronunciation: 'CHIL-len' },
+          { word: 'Zu Hause sein', translation: 'To be at home', pronunciation: 'tsoo HOW-zeh zine' },
+          { word: 'Zuhause bleiben', translation: 'To stay home', pronunciation: 'tsoo-HOW-zeh BLY-ben' },
+          { word: 'Bude', translation: 'Place/room (slang)', pronunciation: 'BOO-deh' },
+          { word: 'Sich wohlfühlen', translation: 'To feel comfortable', pronunciation: 'zikh VOHL-fool-en' }
+        ]
+      },
+      {
+        id: 25,
+        title: 'Clothing & Fashion',
+        premium: true,
+        words: [
+          { word: 'Hemd', translation: 'Shirt', pronunciation: 'hemt' },
+          { word: 'Hose', translation: 'Pants', pronunciation: 'HOH-zeh' },
+          { word: 'Kleid', translation: 'Dress', pronunciation: 'klyt' },
+          { word: 'Schuhe', translation: 'Shoes', pronunciation: 'SHOO-eh' },
+          { word: 'Socken', translation: 'Socks', pronunciation: 'ZOH-ken' },
+          { word: 'Jacke', translation: 'Jacket', pronunciation: 'YAH-keh' },
+          { word: 'Mantel', translation: 'Coat', pronunciation: 'MAHN-tel' },
+          { word: 'Hut', translation: 'Hat', pronunciation: 'hoot' },
+          { word: 'Gürtel', translation: 'Belt', pronunciation: 'GOOR-tel' },
+          { word: 'Tasche', translation: 'Bag', pronunciation: 'TAH-sheh' },
+          { word: 'Brille', translation: 'Glasses', pronunciation: 'BRIL-leh' },
+          { word: 'Uhr', translation: 'Watch', pronunciation: 'oor' },
+          { word: 'Tragen', translation: 'To wear', pronunciation: 'TRAH-gen' },
+          { word: 'Anprobieren', translation: 'To try on', pronunciation: 'AHN-proh-bee-ren' },
+          { word: 'Passen', translation: 'To fit/look good', pronunciation: 'PAH-sen' },
+          { word: 'Ausziehen', translation: 'To take off', pronunciation: 'OWS-tsee-en' },
+          { word: 'Anziehen', translation: 'To put on', pronunciation: 'AHN-tsee-en' }
+        ],
+        phrases: [
+          { word: 'Welche Größe tragen Sie?', translation: 'What size do you wear?', pronunciation: 'VEL-kheh GROH-seh TRAH-gen zee' },
+          { word: 'Wie viel kostet das?', translation: 'How much does it cost?', pronunciation: 'vee feel KOS-tet dahs' },
+          { word: 'Haben Sie das in [Farbe]?', translation: 'Do you have this in [color]?', pronunciation: 'HAH-ben zee dahs in [FAHR-beh]' },
+          { word: 'Kann ich das anprobieren?', translation: 'Can I try this on?', pronunciation: 'kahn ikh dahs AHN-proh-bee-ren' },
+          { word: 'Das steht Ihnen sehr gut', translation: 'It looks great on you', pronunciation: 'dahs shtayt EE-nen zayr goot' },
+          { word: 'Wo sind die Umkleidekabinen?', translation: 'Where are the fitting rooms?', pronunciation: 'voh zint dee OOM-kly-deh-kah-BEE-nen' }
+        ],
+        culturalNotes: 'German fashion emphasizes practicality, quality, and functionality. Brands like Adidas, Puma, and Hugo Boss are well-known. German style is often understated and well-made rather than trendy. Street fashion is casual but put-together. Germans invest in quality pieces that last. Shopping at department stores (Kaufhäuser) and boutiques is common. Size systems use European measurements. Fashion is seen as practical rather than purely aesthetic. Germans dress appropriately for the occasion and weather. The concept of "Zweckmäßigkeit" (purposefulness) influences German fashion choices. Berlin has a more avant-garde fashion scene compared to other German cities.',
+        streetSlang: [
+          { word: 'In Mode sein', translation: 'To be fashionable/in style', pronunciation: 'in MOH-deh zine' },
+          { word: 'Stylisch sein', translation: 'To have style', pronunciation: 'SHTEE-lish zine' },
+          { word: 'Klamotten', translation: 'Clothes (slang)', pronunciation: 'klah-MOT-ten' },
+          { word: 'Cool aussehen', translation: 'To look cool', pronunciation: 'kool OWS-zay-en' },
+          { word: 'Einkaufen gehen', translation: 'To go shopping', pronunciation: 'INE-kow-fen GAY-en' },
+          { word: 'Das sieht super aus', translation: 'It looks amazing', pronunciation: 'dahs zeet ZOO-per ows' }
+        ]
+      },
+      {
+        id: 26,
+        title: 'Dance & Movement',
+        premium: true,
+        danceStyles: [
+          { name: 'Schuhplattler', pronunciation: 'SHOO-plaht-ler', context: 'Traditional Bavarian folk dance, seen at Oktoberfest', type: 'Traditional' },
+          { name: 'Walzer', pronunciation: 'VAHLT-ser', context: 'Waltz, elegant ballroom dance', type: 'Traditional' },
+          { name: 'Volkstanz', pronunciation: 'FOHLKS-tahnts', context: 'Folk dance, traditional celebrations', type: 'Traditional' },
+          { name: 'Techno', pronunciation: 'TEK-noh', context: 'Berlin techno club culture, world-famous scene', type: 'Modern' },
+          { name: 'Club-Tanz', pronunciation: 'kloob-TAHNTZ', context: 'Modern club dancing, popular in cities', type: 'Modern' }
+        ],
+        words: [
+          { word: 'Tanzen', translation: 'To dance', pronunciation: 'TAHN-tsen' },
+          { word: 'Tänzer/Tänzerin', translation: 'Dancer', pronunciation: 'TEN-tser / TEN-tseh-rin' },
+          { word: 'Musik', translation: 'Music', pronunciation: 'moo-ZEEK' },
+          { word: 'Rhythmus', translation: 'Rhythm', pronunciation: 'REET-moos' },
+          { word: 'Tanzfläche', translation: 'Dance floor', pronunciation: 'TAHNTZ-fleh-sheh' },
+          { word: 'Tanzpartner', translation: 'Dance partner', pronunciation: 'TAHNTZ-par-tner' },
+          { word: 'Schnell/Langsam', translation: 'Fast/Slow', pronunciation: 'shnel / LAHNG-zahm' },
+          { word: 'Drehen', translation: 'To spin/turn', pronunciation: 'DRAY-en' },
+          { word: 'Den Körper bewegen', translation: 'Move your body', pronunciation: 'den KER-per beh-VAY-gen' }
+        ],
+        phrases: [
+          { word: 'Willst du tanzen?', translation: 'Do you want to dance?', pronunciation: 'vilst doo TAHN-tsen' },
+          { word: 'Du tanzt sehr gut!', translation: 'You\'re a great dancer!', pronunciation: 'doo tahntst zayr goot' },
+          { word: 'Ich kann nicht tanzen', translation: 'I don\'t know how to dance', pronunciation: 'ikh kahn nikht TAHN-tsen' },
+          { word: 'Zeig mir diesen Tanz', translation: 'Teach me this dance', pronunciation: 'tsike meer DEE-zen tahnts' },
+          { word: 'Gehen wir auf die Tanzfläche', translation: 'Let\'s go to the dance floor', pronunciation: 'GAY-en veer owf dee TAHNTZ-fleh-sheh' },
+          { word: 'Welches Lied ist das?', translation: 'What song is this?', pronunciation: 'VEL-khes leet ist dahs' }
+        ],
+        culturalNotes: 'German dance culture combines traditional folk dances with cutting-edge modern scenes. Schuhplattler is a famous Bavarian dance performed at Oktoberfest and traditional festivals. Berlin\'s techno club scene is world-renowned, with legendary clubs like Berghain attracting international dancers. People dance at Oktoberfest, weddings (Hochzeiten), clubs (Clubs), and festivals (Feste). Dance etiquette varies: traditional dances are formal and structured, while techno clubs have a more free-form, energetic atmosphere. Modern German dance culture is heavily influenced by electronic music, especially in Berlin, creating one of the most vibrant nightlife scenes in Europe.',
+        streetSlang: [
+          { word: 'Tanzt wie ein Gott', translation: 'Dances like a god (dances amazingly)', pronunciation: 'tahntst vee ine goht' },
+          { word: 'Zwei linke Füße haben', translation: 'To have two left feet (can\'t dance)', pronunciation: 'tsvike LIN-keh FOO-seh HAH-ben' },
+          { word: 'Abgehen', translation: 'To go off/party hard (club slang)', pronunciation: 'AHP-geh-en' },
+          { word: 'Lass uns feiern!', translation: 'Let\'s party!', pronunciation: 'lahs oons FIE-ern' },
+          { word: 'Es ist geil', translation: 'It\'s hot/lit (party energy)', pronunciation: 'es ist gile' },
+          { word: 'Die Tanzfläche aufreißen', translation: 'To tear up the dance floor', pronunciation: 'dee TAHNTZ-fleh-sheh OWF-rye-sen' }
+        ]
+      }{ word: 'Lösung', translation: 'Solution', pronunciation: 'LER-zoong' },
           { word: 'Hilfe', translation: 'Help', pronunciation: 'HIL-feh' },
           { word: 'Ich brauche', translation: 'I need', pronunciation: 'ikh BROW-kheh' },
           { word: 'Ich kann', translation: 'I can', pronunciation: 'ikh kahn' }
@@ -1579,7 +2240,230 @@ export const languages = {
         premium: true,
         words: [
           { word: '문제', translation: 'Problem', pronunciation: 'mun-je', romanji: 'Munje' },
-          { word: '해결책', translation: 'Solution', pronunciation: 'hae-gyeol-chaek', romanji: 'Haegyeolchaek' },
+          ,
+      {
+        id: 21,
+        title: 'Song Lesson: 곰 세 마리 (Three Bears)',
+        premium: true,
+        songInfo: {
+          name: '곰 세 마리',
+          englishName: 'Three Bears',
+          type: 'Children\'s Song',
+          culturalSignificance: 'A beloved Korean children\'s song about a bear family. Teaches family members, counting, and descriptions. Often sung in kindergartens and homes.'
+        },
+        lyrics: [
+          { original: '곰 세 마리가', translation: 'Three bears', pronunciation: 'gom se ma-ri-ga', romanji: 'Gom se mari-ga' },
+          { original: '한 집에 있어', translation: 'Live in one house', pronunciation: 'han jip-e it-eo', romanji: 'Han jip-e iteo' },
+          { original: '아빠 곰', translation: 'Papa bear', pronunciation: 'a-ppa gom', romanji: 'Appa gom' },
+          { original: '엄마 곰', translation: 'Mama bear', pronunciation: 'eom-ma gom', romanji: 'Eomma gom' },
+          { original: '아기 곰', translation: 'Baby bear', pronunciation: 'a-gi gom', romanji: 'Agi gom' },
+          { original: '아빠 곰은 뚱뚱해', translation: 'Papa bear is fat', pronunciation: 'a-ppa go-meun ttung-ttung-hae', romanji: 'Appa gomeun ttungttunghae' },
+          { original: '엄마 곰은 날씬해', translation: 'Mama bear is slim', pronunciation: 'eom-ma go-meun nal-ssin-hae', romanji: 'Eomma gomeun nalssinhae' },
+          { original: '아기 곰은 너무 귀여워', translation: 'Baby bear is so cute', pronunciation: 'a-gi go-meun neo-mu gwi-yeo-wo', romanji: 'Agi gomeun neomu gwiyeowo' },
+          { original: '으쓱으쓱 잘한다', translation: 'Shakes well', pronunciation: 'eu-sseuk-eu-sseuk jal-han-da', romanji: 'Eusseukeusseuk jalhanda' }
+        ],
+        culturalNotes: 'This song is one of the first songs Korean children learn. It teaches family vocabulary (아빠, 엄마, 아기), counting (세 마리 = three), and descriptive words. The song is often accompanied by hand gestures and is used in early childhood education throughout Korea.',
+        words: [
+          { word: '곰', translation: 'Bear', pronunciation: 'gom', romanji: 'Gom', example: '곰 세 마리' },
+          { word: '세 마리', translation: 'Three (animals)', pronunciation: 'se ma-ri', romanji: 'Se mari', example: '곰 세 마리' },
+          { word: '한 집', translation: 'One house', pronunciation: 'han jip', romanji: 'Han jip', example: '한 집에 있어' },
+          { word: '아빠', translation: 'Dad/Papa', pronunciation: 'a-ppa', romanji: 'Appa', example: '아빠 곰' },
+          { word: '엄마', translation: 'Mom/Mama', pronunciation: 'eom-ma', romanji: 'Eomma', example: '엄마 곰' },
+          { word: '아기', translation: 'Baby', pronunciation: 'a-gi', romanji: 'Agi', example: '아기 곰' },
+          { word: '뚱뚱해', translation: 'Fat/chubby', pronunciation: 'ttung-ttung-hae', romanji: 'Ttungttunghae', example: '아빠 곰은 뚱뚱해' },
+          { word: '날씬해', translation: 'Slim/thin', pronunciation: 'nal-ssin-hae', romanji: 'Nalssinhae', example: '엄마 곰은 날씬해' },
+          { word: '귀여워', translation: 'Cute', pronunciation: 'gwi-yeo-wo', romanji: 'Gwiyeowo', example: '아기 곰은 너무 귀여워' },
+          { word: '으쓱으쓱', translation: 'Shake/shake (onomatopoeia)', pronunciation: 'eu-sseuk-eu-sseuk', romanji: 'Eusseukeusseuk', example: '으쓱으쓱 잘한다' }
+        ],
+        streetSlang: [
+          { word: '이 노래 완전 좋아', translation: 'I totally love this song', pronunciation: 'i no-rae wan-jeon jo-a', romanji: 'I norae wanjeon joa' },
+          { word: '이 곡 진짜 좋다', translation: 'This track is really good', pronunciation: 'i gok jin-jja jo-ta', romanji: 'I gok jinjja jota' },
+          { word: '중독성 있어', translation: 'It\'s addictive/catchy', pronunciation: 'jung-dok-seong it-eo', romanji: 'Jungdokseong iteo' },
+          { word: '목청 터지게 부르다', translation: 'To sing at the top of your lungs', pronunciation: 'mok-cheong teo-ji-ge bu-reu-da', romanji: 'Mokcheong teojige bureuda' },
+          { word: '리듬이 좋아', translation: 'The rhythm is good', pronunciation: 'ri-deu-mi jo-a', romanji: 'Rideumi joa' },
+          { word: '외워서 부를 수 있어', translation: 'I can sing it from memory', pronunciation: 'oe-wo-seo bu-reul su it-eo', romanji: 'Oewoseo bureul su iteo' }
+        ]
+      },
+      {
+        id: 22,
+        title: 'Proverbs & Sayings',
+        premium: true,
+        proverbs: [
+          { original: '늦어도 안 하는 것보다 낫다', literalTranslation: 'Better late than not doing', meaning: 'Better late than never', context: 'When someone finally does something', slangEquivalent: '늦어도 해' },
+          { original: '시작이 반이다', literalTranslation: 'Starting is half', meaning: 'Well begun is half done', context: 'Encouraging to start something', slangEquivalent: '시작만 하면 돼' },
+          { original: '백문이 불여일견', literalTranslation: 'Hearing a hundred times is not as good as seeing once', meaning: 'Seeing is believing', context: 'When you need to see something to believe it', slangEquivalent: '직접 봐야 해' },
+          { original: '가는 말이 고와야 오는 말이 곱다', literalTranslation: 'If the going word is nice, the coming word is nice', meaning: 'Treat others as you want to be treated', context: 'About reciprocity', slangEquivalent: '서로 잘해줘야 해' },
+          { original: '하늘이 무너져도 솟아날 구멍이 있다', literalTranslation: 'Even if the sky collapses, there is a hole to escape', meaning: 'There\'s always a way out', context: 'Encouraging hope', slangEquivalent: '다 방법이 있어' },
+          { original: '원숭이도 나무에서 떨어진다', literalTranslation: 'Even monkeys fall from trees', meaning: 'Even experts make mistakes', context: 'When someone makes an unexpected mistake', slangEquivalent: '누구나 실수해' },
+          { original: '개구리 올챙이 적 생각 못 한다', literalTranslation: 'A frog cannot remember when it was a tadpole', meaning: 'People forget their humble origins', context: 'When someone acts superior', slangEquivalent: '과거를 잊지 마' },
+          { original: '천리 길도 한 걸음부터', literalTranslation: 'A journey of a thousand miles starts with one step', meaning: 'Every journey begins with a single step', context: 'Encouraging to start', slangEquivalent: '한 걸음씩' }
+        ],
+        streetSlang: [
+          { word: '대박', translation: 'Amazing/awesome', pronunciation: 'dae-bak', romanji: 'Daebak' },
+          { word: '완전 좋아', translation: 'Totally good', pronunciation: 'wan-jeon jo-a', romanji: 'Wanjeon joa' },
+          { word: '진짜 멋져', translation: 'Really cool', pronunciation: 'jin-jja meot-jyeo', romanji: 'Jinjja meotjyeo' },
+          { word: '개꿀', translation: 'Super sweet/awesome', pronunciation: 'gae-ggul', romanji: 'Gaeggul' },
+          { word: '완전 레전드', translation: 'Totally legendary', pronunciation: 'wan-jeon re-jeon-deu', romanji: 'Wanjeon rejeondeu' },
+          { word: '최고', translation: 'The best', pronunciation: 'choe-go', romanji: 'Choego' }
+        ]
+      },
+      {
+        id: 23,
+        title: 'Texting & Internet Slang',
+        premium: true,
+        abbreviations: [
+          { abbreviation: 'ㅇㅇ', fullForm: '응응', englishEquivalent: 'yeah yeah', usage: 'Friends only, very casual', platform: 'KakaoTalk, Instagram' },
+          { abbreviation: 'ㄱㄱ', fullForm: '고고', englishEquivalent: 'let\'s go', usage: 'Friends only, casual', platform: 'KakaoTalk, Instagram' },
+          { abbreviation: 'ㅎㅎ', fullForm: '하하', englishEquivalent: 'haha', usage: 'Anyone, very common', platform: 'All platforms' },
+          { abbreviation: 'ㅋㅋ', fullForm: '크크', englishEquivalent: 'keke (laughing)', usage: 'Anyone, very common', platform: 'All platforms' },
+          { abbreviation: 'ㄴㄴ', fullForm: '아니', englishEquivalent: 'no', usage: 'Friends only, casual', platform: 'KakaoTalk, Instagram' },
+          { abbreviation: 'ㅇㅋ', fullForm: '오케이', englishEquivalent: 'okay', usage: 'Anyone, casual', platform: 'KakaoTalk, Instagram' },
+          { abbreviation: 'ㄱㄷ', fullForm: '기다려', englishEquivalent: 'wait', usage: 'Friends only, casual', platform: 'KakaoTalk' },
+          { abbreviation: 'ㅠㅠ', fullForm: 'crying face', englishEquivalent: 'sad/crying', usage: 'Friends only, casual', platform: 'KakaoTalk, Instagram' },
+          { abbreviation: 'ㅇㅈ', fullForm: '인정', englishEquivalent: 'I agree/true', usage: 'Anyone, casual', platform: 'KakaoTalk, Instagram' },
+          { abbreviation: 'ㄷㄷ', fullForm: '덜덜', englishEquivalent: 'shaking (scared)', usage: 'Friends only, casual', platform: 'KakaoTalk, Instagram' }
+        ],
+        emojiMeanings: [
+          { emoji: 'ㅋㅋ', meaning: 'Laughing', culturalContext: 'Very common, equivalent to LOL' },
+          { emoji: 'ㅎㅎ', meaning: 'Haha', culturalContext: 'Polite laughter' },
+          { emoji: 'ㅠㅠ', meaning: 'Crying/sad', culturalContext: 'Expressing sadness' },
+          { emoji: 'ㅇㅇ', meaning: 'Yes/yeah', culturalContext: 'Very casual agreement' },
+          { emoji: 'ㄱㄱ', meaning: 'Let\'s go', culturalContext: 'Encouraging action' }
+        ],
+        internetSlang: [
+          { word: '대박', translation: 'Amazing/awesome', pronunciation: 'dae-bak', romanji: 'Daebak', usage: 'Anyone, very common' },
+          { word: '헐', translation: 'OMG/What?!', pronunciation: 'heol', romanji: 'Heol', usage: 'Anyone, casual' },
+          { word: '진짜?', translation: 'Really?', pronunciation: 'jin-jja', romanji: 'Jinjja?', usage: 'Anyone, casual' },
+          { word: '완전', translation: 'Totally', pronunciation: 'wan-jeon', romanji: 'Wanjeon', usage: 'Anyone, casual' },
+          { word: '개꿀', translation: 'Super sweet', pronunciation: 'gae-ggul', romanji: 'Gaeggul', usage: 'Friends only, casual' },
+          { word: '레전드', translation: 'Legendary', pronunciation: 're-jeon-deu', romanji: 'Rejeondeu', usage: 'Anyone, casual' }
+        ]
+      },
+      {
+        id: 24,
+        title: 'House & Home',
+        premium: true,
+        words: [
+          { word: '침실', translation: 'Bedroom', pronunciation: 'chim-sil', romanji: 'Chimsil' },
+          { word: '화장실', translation: 'Bathroom', pronunciation: 'hwa-jang-sil', romanji: 'Hwajangsil' },
+          { word: '부엌', translation: 'Kitchen', pronunciation: 'bu-eok', romanji: 'Bueok' },
+          { word: '거실', translation: 'Living room', pronunciation: 'geo-sil', romanji: 'Geosil' },
+          { word: '식당', translation: 'Dining room', pronunciation: 'sik-dang', romanji: 'Sikdang' },
+          { word: '침대', translation: 'Bed', pronunciation: 'chim-dae', romanji: 'Chimdae' },
+          { word: '테이블', translation: 'Table', pronunciation: 'te-i-beul', romanji: 'Teibeul' },
+          { word: '의자', translation: 'Chair', pronunciation: 'ui-ja', romanji: 'Uija' },
+          { word: '소파', translation: 'Sofa', pronunciation: 'so-pa', romanji: 'Sopa' },
+          { word: '램프', translation: 'Lamp', pronunciation: 'raem-peu', romanji: 'Raempeu' },
+          { word: '냉장고', translation: 'Refrigerator', pronunciation: 'naeng-jang-go', romanji: 'Naengjanggo' },
+          { word: '가스레인지', translation: 'Stove', pronunciation: 'ga-seu-re-in-ji', romanji: 'Gaseureinji' },
+          { word: '텔레비전', translation: 'TV', pronunciation: 'tel-le-bi-jeon', romanji: 'Tellebijeon' },
+          { word: '세탁기', translation: 'Washing machine', pronunciation: 'se-tak-gi', romanji: 'Setakgi' },
+          { word: '전자레인지', translation: 'Microwave', pronunciation: 'jeon-ja-re-in-ji', romanji: 'Jeonjareinji' },
+          { word: '청소하다', translation: 'To clean', pronunciation: 'cheong-so-ha-da', romanji: 'Cheongsohada' },
+          { word: '요리하다', translation: 'To cook', pronunciation: 'yo-ri-ha-da', romanji: 'Yorihada' },
+          { word: '자다', translation: 'To sleep', pronunciation: 'ja-da', romanji: 'Jada' },
+          { word: '쉬다', translation: 'To relax', pronunciation: 'swi-da', romanji: 'Swida' },
+          { word: '텔레비전 보다', translation: 'To watch TV', pronunciation: 'tel-le-bi-jeon bo-da', romanji: 'Tellebijeon boda' }
+        ],
+        phrases: [
+          { word: '화장실이 어디예요?', translation: 'Where is the bathroom?', pronunciation: 'hwa-jang-si-ri eo-di-ye-yo', romanji: 'Hwajangsiri eodiyeyo?' },
+          { word: '편하게 지내세요', translation: 'Make yourself at home', pronunciation: 'pyeon-ha-ge ji-nae-se-yo', romanji: 'Pyeonhage jinaeseyo' },
+          { word: '이게 제 방이에요', translation: 'This is my room', pronunciation: 'i-ge je bang-i-e-yo', romanji: 'Ige je bangi-eyo' },
+          { word: '요리할 거예요', translation: 'I\'m going to cook', pronunciation: 'yo-ri-hal geo-ye-yo', romanji: 'Yorihal geoyeyo' },
+          { word: '청소해야 해요', translation: 'I need to clean', pronunciation: 'cheong-so-hae-ya hae-yo', romanji: 'Cheongsohaeya haeyo' },
+          { word: '부엌 써도 돼요?', translation: 'Can I use the kitchen?', pronunciation: 'bu-eok sseo-do dwae-yo', romanji: 'Bueok sseodo dwaeyo?' }
+        ],
+        culturalNotes: 'Korean homes (집) vary from small apartments in cities to larger houses. Many Koreans live in apartments (아파트) in urban areas. The living room (거실) is the social center. Kitchens are important for Korean cuisine. Bathrooms often have heated floors (온돌). Many homes have ondol (underfloor heating) systems. Home life emphasizes family time and respect for elders. It\'s very common to remove shoes when entering homes - this is essential Korean etiquette. Korean homes often feature modern appliances and efficient use of space. The concept of "안방" (main room) is important in traditional Korean homes. Modern Korean homes blend traditional elements with contemporary design.',
+        streetSlang: [
+          { word: '우리 집', translation: 'My place/home', pronunciation: 'u-ri jip', romanji: 'Uri jip' },
+          { word: '집에서 쉬다', translation: 'To chill/relax at home', pronunciation: 'jib-e-seo swi-da', romanji: 'Jibeseo swida' },
+          { word: '집에 있다', translation: 'To be at home', pronunciation: 'jib-e it-da', romanji: 'Jibe itda' },
+          { word: '집에만 있다', translation: 'To stay home', pronunciation: 'jib-e-man it-da', romanji: 'Jibeman itda' },
+          { word: '방', translation: 'Room (casual)', pronunciation: 'bang', romanji: 'Bang' },
+          { word: '편안하다', translation: 'To be comfortable', pronunciation: 'pyeon-an-ha-da', romanji: 'Pyeonanhada' }
+        ]
+      },
+      {
+        id: 25,
+        title: 'Clothing & Fashion',
+        premium: true,
+        words: [
+          { word: '셔츠', translation: 'Shirt', pronunciation: 'syeo-cheu', romanji: 'Syeocheu' },
+          { word: '바지', translation: 'Pants', pronunciation: 'ba-ji', romanji: 'Baji' },
+          { word: '드레스', translation: 'Dress', pronunciation: 'deu-re-seu', romanji: 'Deureseu' },
+          { word: '신발', translation: 'Shoes', pronunciation: 'sin-bal', romanji: 'Sinbal' },
+          { word: '양말', translation: 'Socks', pronunciation: 'yang-mal', romanji: 'Yangmal' },
+          { word: '재킷', translation: 'Jacket', pronunciation: 'jae-kit', romanji: 'Jaekit' },
+          { word: '코트', translation: 'Coat', pronunciation: 'ko-teu', romanji: 'Koteu' },
+          { word: '모자', translation: 'Hat', pronunciation: 'mo-ja', romanji: 'Moja' },
+          { word: '벨트', translation: 'Belt', pronunciation: 'bel-teu', romanji: 'Belteu' },
+          { word: '가방', translation: 'Bag', pronunciation: 'ga-bang', romanji: 'Gabang' },
+          { word: '안경', translation: 'Glasses', pronunciation: 'an-gyeong', romanji: 'Angyeong' },
+          { word: '시계', translation: 'Watch', pronunciation: 'si-gye', romanji: 'Sigye' },
+          { word: '입다', translation: 'To wear', pronunciation: 'ip-da', romanji: 'Ipda' },
+          { word: '입어 보다', translation: 'To try on', pronunciation: 'ib-eo bo-da', romanji: 'Ibeo boda' },
+          { word: '잘 어울리다', translation: 'To fit/look good', pronunciation: 'jal eo-ul-li-da', romanji: 'Jal eoullida' },
+          { word: '벗다', translation: 'To take off', pronunciation: 'beot-da', romanji: 'Beotda' },
+          { word: '입다', translation: 'To put on', pronunciation: 'ip-da', romanji: 'Ipda' }
+        ],
+        phrases: [
+          { word: '사이즈가 어떻게 되세요?', translation: 'What size do you wear?', pronunciation: 'sa-i-jeu-ga eo-tteo-ke doe-se-yo', romanji: 'Saijeuga eotteoke doeseyo?' },
+          { word: '얼마예요?', translation: 'How much does it cost?', pronunciation: 'eol-ma-ye-yo', romanji: 'Eolmayeyo?' },
+          { word: '이거 [색깔]로 있어요?', translation: 'Do you have this in [color]?', pronunciation: 'i-geo [saek-kkal]-ro it-eo-yo', romanji: 'Igeo [saekkkal]ro iteoyo?' },
+          { word: '입어 봐도 돼요?', translation: 'Can I try this on?', pronunciation: 'ib-eo bwa-do dwae-yo', romanji: 'Ibeo bwado dwaeyo?' },
+          { word: '정말 잘 어울려요', translation: 'It looks great on you', pronunciation: 'jeong-mal jal eo-ul-lyeo-yo', romanji: 'Jeongmal jal eoullyeoyo' },
+          { word: '탈의실이 어디예요?', translation: 'Where are the fitting rooms?', pronunciation: 'tal-ui-si-ri eo-di-ye-yo', romanji: 'Taluisiri eodiyeyo?' }
+        ],
+        culturalNotes: 'Korea is a major fashion hub, especially Seoul. K-fashion and K-beauty are global trends. Korean fashion emphasizes cute, trendy styles and attention to detail. Street fashion in Seoul is very influential. Shopping districts like Myeongdong and Gangnam are famous. Korean people invest in skincare and fashion. Size systems use Korean measurements (often smaller than Western sizes). Fashion is seen as important for social presentation. Korean fashion blends cute (aegyo) aesthetics with modern trends. The concept of "스타일" (style) is important. Korean people dress well even casually, valuing presentation and coordination.',
+        streetSlang: [
+          { word: '유행이다', translation: 'To be fashionable/in style', pronunciation: 'yu-haeng-i-da', romanji: 'Yuhaengida' },
+          { word: '스타일 있다', translation: 'To have style', pronunciation: 'seu-ta-il it-da', romanji: 'Seutail itda' },
+          { word: '옷', translation: 'Clothes (casual)', pronunciation: 'ot', romanji: 'Ot' },
+          { word: '스타일리시하다', translation: 'To be stylish', pronunciation: 'seu-ta-il-li-si-ha-da', romanji: 'Seutaillisihada' },
+          { word: '쇼핑하다', translation: 'To go shopping', pronunciation: 'syo-ping-ha-da', romanji: 'Syopinghada' },
+          { word: '완전 잘 어울려', translation: 'It looks amazing on you', pronunciation: 'wan-jeon jal eo-ul-lyeo', romanji: 'Wanjeon jal eoullyeo' }
+        ]
+      },
+      {
+        id: 26,
+        title: 'Dance & Movement',
+        premium: true,
+        danceStyles: [
+          { name: '한복 춤', pronunciation: 'han-bok chum', context: 'Traditional Korean dance in hanbok, seen at cultural festivals', type: 'Traditional', romanji: 'Hanbok chum' },
+          { name: '판소리', pronunciation: 'pan-so-ri', context: 'Traditional Korean performance art with dance elements', type: 'Traditional', romanji: 'Pansori' },
+          { name: 'K-pop 안무', pronunciation: 'kei-pop an-mu', context: 'K-pop choreography, very popular worldwide', type: 'Modern', romanji: 'Keipop anmu' },
+          { name: '클럽 댄스', pronunciation: 'keul-leop daen-seu', context: 'Club dancing, popular in Seoul nightlife', type: 'Modern', romanji: 'Keulleop daenseu' },
+          { name: '힙합 댄스', pronunciation: 'hip-hap daen-seu', context: 'Hip hop dance, influenced by K-pop', type: 'Modern', romanji: 'Hiphap daenseu' }
+        ],
+        words: [
+          { word: '춤추다', translation: 'To dance', pronunciation: 'chum-chu-da', romanji: 'Chumchuda' },
+          { word: '춤꾼', translation: 'Dancer', pronunciation: 'chum-kkun', romanji: 'Chumkkun' },
+          { word: '음악', translation: 'Music', pronunciation: 'eum-ak', romanji: 'Eumak' },
+          { word: '리듬', translation: 'Rhythm', pronunciation: 'ri-deum', romanji: 'Rideum' },
+          { word: '댄스 플로어', translation: 'Dance floor', pronunciation: 'daen-seu peu-lo-eo', romanji: 'Daenseu peuloeo' },
+          { word: '춤 파트너', translation: 'Dance partner', pronunciation: 'chum pa-teu-neo', romanji: 'Chum pateuneo' },
+          { word: '빠르다/느리다', translation: 'Fast/Slow', pronunciation: 'ppa-reu-da / neu-ri-da', romanji: 'Ppareuda / Neurida' },
+          { word: '돌다', translation: 'To spin/turn', pronunciation: 'dol-da', romanji: 'Dolda' },
+          { word: '몸을 움직이다', translation: 'Move your body', pronunciation: 'mo-meul um-ji-gi-da', romanji: 'Momeul umjigida' }
+        ],
+        phrases: [
+          { word: '춤출래?', translation: 'Do you want to dance?', pronunciation: 'chum-chul-lae', romanji: 'Chumchullae?' },
+          { word: '춤 잘 춰요!', translation: 'You\'re a great dancer!', pronunciation: 'chum jal chwo-yo', romanji: 'Chum jal chwoyo!' },
+          { word: '춤을 못 춰요', translation: 'I don\'t know how to dance', pronunciation: 'chu-meul mot chwo-yo', romanji: 'Chumeul mot chwoyo' },
+          { word: '이 춤 가르쳐 주세요', translation: 'Teach me this dance', pronunciation: 'i chum ga-reu-chyeo ju-se-yo', romanji: 'I chum gareuchyeo juseyo' },
+          { word: '댄스 플로어로 가요', translation: 'Let\'s go to the dance floor', pronunciation: 'daen-seu peu-lo-eo-ro ga-yo', romanji: 'Daenseu peuloeoro gayo' },
+          { word: '이 노래 뭐예요?', translation: 'What song is this?', pronunciation: 'i no-rae mwo-ye-yo', romanji: 'I norae mwoyeyo?' }
+        ],
+        culturalNotes: 'Dance is deeply integrated into Korean culture, from traditional performances to modern K-pop. 한복 춤 (Hanbok dance) showcases traditional Korean aesthetics at cultural festivals. K-pop choreography has become a global phenomenon, with fans worldwide learning dance moves. Noraebang (karaoke rooms) often include dancing. People dance at festivals (축제), clubs (클럽), weddings (결혼식), and noraebang (노래방). Dance etiquette is respectful and group-oriented, especially for traditional dances. Modern Korean dance culture is heavily influenced by K-pop, creating a vibrant scene where dancing is both entertainment and social activity. Seoul\'s nightlife features clubs where K-pop and international music blend.',
+        streetSlang: [
+          { word: '춤 신', translation: 'Dance god (dances amazingly)', pronunciation: 'chum sin', romanji: 'Chum sin' },
+          { word: '춤 못 춰', translation: 'Can\'t dance (playful)', pronunciation: 'chum mot chwo', romanji: 'Chum mot chwo' },
+          { word: '클럽 가자', translation: 'Let\'s go to the club', pronunciation: 'keul-leop ga-ja', romanji: 'Keulleop gaja' },
+          { word: '신나게 놀자!', translation: 'Let\'s party!', pronunciation: 'sin-na-ge nol-ja', romanji: 'Sinnage nolja!' },
+          { word: '분위기 좋다', translation: 'Good vibes/atmosphere (party energy)', pronunciation: 'bun-wi-gi jo-ta', romanji: 'Bunwigi jota' },
+          { word: '플로어 터트리다', translation: 'To tear up the dance floor', pronunciation: 'peu-lo-eo teo-teu-ri-da', romanji: 'Peuloeo teoteurida' }
+        ]
+      }{ word: '해결책', translation: 'Solution', pronunciation: 'hae-gyeol-chaek', romanji: 'Haegyeolchaek' },
           { word: '도움', translation: 'Help', pronunciation: 'do-um', romanji: 'Doum' },
           { word: '필요해', translation: 'I need', pronunciation: 'pil-yo-hae', romanji: 'Pillyohae' },
           { word: '할 수 있어', translation: 'I can', pronunciation: 'hal su it-eo', romanji: 'Hal su iteo' }
@@ -1978,7 +2862,233 @@ export const languages = {
         premium: true,
         words: [
           { word: 'Problema', translation: 'Problem', pronunciation: 'proh-BLEH-mah' },
-          { word: 'Solução', translation: 'Solution', pronunciation: 'soh-loo-SYAOWN' },
+          ,
+      {
+        id: 21,
+        title: 'Song Lesson: A Barata (The Cockroach)',
+        premium: true,
+        songInfo: {
+          name: 'A Barata',
+          englishName: 'The Cockroach',
+          type: 'Children\'s Song',
+          culturalSignificance: 'A popular Brazilian children\'s song known for its humor and playfulness. Teaches vocabulary through repetition and humor. Often sung in Brazilian schools and homes, teaching children about animals and clothing in a fun way.'
+        },
+        lyrics: [
+          { original: 'A barata diz que tem', translation: 'The cockroach says it has', pronunciation: 'ah bah-RAH-tah dees keh tem' },
+          { original: 'Sete saias de filó', translation: 'Seven petticoats of fine fabric', pronunciation: 'SEH-teh SAY-ahs deh fee-LOH' },
+          { original: 'É mentira da barata', translation: 'It\'s a lie from the cockroach', pronunciation: 'eh men-TEE-rah dah bah-RAH-tah' },
+          { original: 'Ela tem é uma só', translation: 'She only has one', pronunciation: 'EH-lah tem eh OO-mah soh' },
+          { original: 'Ah ah ah, oh oh oh', translation: 'Ah ah ah, oh oh oh', pronunciation: 'ah ah ah oh oh oh' },
+          { original: 'Ela tem é uma só', translation: 'She only has one', pronunciation: 'EH-lah tem eh OO-mah soh' },
+          { original: 'A barata diz que tem', translation: 'The cockroach says it has', pronunciation: 'ah bah-RAH-tah dees keh tem' },
+          { original: 'Um sapato de veludo', translation: 'A velvet shoe', pronunciation: 'oon sah-PAH-toh deh veh-LOO-doh' },
+          { original: 'É mentira da barata', translation: 'It\'s a lie from the cockroach', pronunciation: 'eh men-TEE-rah dah bah-RAH-tah' },
+          { original: 'O pé dela é peludo', translation: 'Her foot is hairy', pronunciation: 'oh peh DEH-lah eh peh-LOO-doh' },
+          { original: 'Ah ah ah, oh oh oh', translation: 'Ah ah ah, oh oh oh', pronunciation: 'ah ah ah oh oh oh' },
+          { original: 'O pé dela é peludo', translation: 'Her foot is hairy', pronunciation: 'oh peh DEH-lah eh peh-LOO-doh' }
+        ],
+        culturalNotes: 'This humorous song is beloved by Brazilian children for its playful nature and repetition. It teaches vocabulary about clothing and body parts while being entertaining. The song is often used in early childhood education to engage children and teach them Portuguese through music and humor.',
+        words: [
+          { word: 'Barata', translation: 'Cockroach', pronunciation: 'bah-RAH-tah', example: 'A barata diz que tem' },
+          { word: 'Sete', translation: 'Seven', pronunciation: 'SEH-teh', example: 'Sete saias' },
+          { word: 'Saias', translation: 'Petticoats/skirts', pronunciation: 'SAY-ahs', example: 'Sete saias de filó' },
+          { word: 'Filó', translation: 'Fine fabric', pronunciation: 'fee-LOH', example: 'Sete saias de filó' },
+          { word: 'Mentira', translation: 'Lie/falsehood', pronunciation: 'men-TEE-rah', example: 'É mentira da barata' },
+          { word: 'Sapato', translation: 'Shoe', pronunciation: 'sah-PAH-toh', example: 'Um sapato de veludo' },
+          { word: 'Veludo', translation: 'Velvet', pronunciation: 'veh-LOO-doh', example: 'Um sapato de veludo' },
+          { word: 'Pé', translation: 'Foot', pronunciation: 'peh', example: 'O pé dela é peludo' },
+          { word: 'Peludo', translation: 'Hairy', pronunciation: 'peh-LOO-doh', example: 'O pé dela é peludo' },
+          { word: 'Ela', translation: 'She', pronunciation: 'EH-lah', example: 'Ela tem é uma só' }
+        ],
+        streetSlang: [
+          { word: 'Essa música é massa', translation: 'This song is cool/awesome', pronunciation: 'EH-sah MOO-see-kah eh MAH-sah' },
+          { word: 'Adoro essa música', translation: 'I love this song', pronunciation: 'ah-DOH-roh EH-sah MOO-see-kah' },
+          { word: 'É viciante', translation: 'It\'s addictive/catchy', pronunciation: 'eh vee-see-AHN-teh' },
+          { word: 'Cantar no topo da voz', translation: 'To sing at the top of your lungs', pronunciation: 'kahn-TAR noh TOH-poh dah vohs' },
+          { word: 'Tem um ritmo legal', translation: 'It has a cool rhythm', pronunciation: 'tem oong REET-moh leh-GAHL' },
+          { word: 'Sei de cor', translation: 'I know it by heart', pronunciation: 'say deh kor' }
+        ]
+      },
+      {
+        id: 22,
+        title: 'Proverbs & Sayings',
+        premium: true,
+        proverbs: [
+          { original: 'Antes tarde do que nunca', literalTranslation: 'Better late than never', meaning: 'It\'s better to do something late than not at all', context: 'When someone finally does something', slangEquivalent: 'Melhor tarde' },
+          { original: 'Não deixe para amanhã o que você pode fazer hoje', literalTranslation: 'Don\'t leave for tomorrow what you can do today', meaning: 'Don\'t put off until tomorrow what you can do today', context: 'Encouraging immediate action', slangEquivalent: 'Faz agora' },
+          { original: 'Quem cedo madruga, Deus ajuda', literalTranslation: 'God helps those who wake up early', meaning: 'The early bird catches the worm', context: 'Encouraging early action', slangEquivalent: 'Acorda cedo' },
+          { original: 'Quem não arrisca, não petisca', literalTranslation: 'Who doesn\'t risk, doesn\'t snack', meaning: 'Nothing ventured, nothing gained', context: 'Encouraging risk-taking', slangEquivalent: 'Arrisca aí' },
+          { original: 'Quem tudo quer, tudo perde', literalTranslation: 'Who wants everything, loses everything', meaning: 'Greed leads to loss', context: 'Warning against greed', slangEquivalent: 'Não seja ganancioso' },
+          { original: 'A união faz a força', literalTranslation: 'Unity makes strength', meaning: 'Together we are stronger', context: 'Encouraging teamwork', slangEquivalent: 'Juntos somos mais fortes' },
+          { original: 'A prática leva à perfeição', literalTranslation: 'Practice leads to perfection', meaning: 'Practice makes perfect', context: 'Encouraging practice', slangEquivalent: 'Treina mais' },
+          { original: 'Água mole em pedra dura, tanto bate até que fura', literalTranslation: 'Soft water on hard stone, hits so much until it pierces', meaning: 'Persistence pays off', context: 'Encouraging persistence', slangEquivalent: 'Não desiste' }
+        ],
+        streetSlang: [
+          { word: 'Massa demais', translation: 'Super cool/awesome', pronunciation: 'MAH-sah deh-MAIS' },
+          { word: 'Muito legal', translation: 'Very cool', pronunciation: 'MOO-ee-toh leh-GAHL' },
+          { word: 'Top demais', translation: 'Top/awesome', pronunciation: 'top deh-MAIS' },
+          { word: 'Show de bola', translation: 'Great/awesome', pronunciation: 'show deh BOH-lah' },
+          { word: 'Muito bom', translation: 'Very good', pronunciation: 'MOO-ee-toh bohm' },
+          { word: 'Perfeito', translation: 'Perfect', pronunciation: 'per-FAY-toh' }
+        ]
+      },
+      {
+        id: 23,
+        title: 'Texting & Internet Slang',
+        premium: true,
+        abbreviations: [
+          { abbreviation: 'vc', fullForm: 'você', englishEquivalent: 'you', usage: 'Anyone, casual', platform: 'WhatsApp, Instagram' },
+          { abbreviation: 'tb', fullForm: 'também', englishEquivalent: 'also/too', usage: 'Anyone, casual', platform: 'All platforms' },
+          { abbreviation: 'pq', fullForm: 'porque', englishEquivalent: 'because', usage: 'Friends only, casual', platform: 'WhatsApp, Instagram' },
+          { abbreviation: 'q', fullForm: 'que', englishEquivalent: 'that/what', usage: 'Friends only, very casual', platform: 'WhatsApp, Instagram' },
+          { abbreviation: 'blz', fullForm: 'beleza', englishEquivalent: 'okay/cool', usage: 'Anyone, casual', platform: 'WhatsApp, Instagram' },
+          { abbreviation: 'vlw', fullForm: 'valeu', englishEquivalent: 'thanks', usage: 'Friends only, casual', platform: 'WhatsApp, Instagram' },
+          { abbreviation: 'flw', fullForm: 'falou', englishEquivalent: 'see you', usage: 'Friends only, casual', platform: 'WhatsApp, Instagram' },
+          { abbreviation: 'obg', fullForm: 'obrigado', englishEquivalent: 'thanks', usage: 'Anyone, casual', platform: 'WhatsApp, Instagram' },
+          { abbreviation: 'sdd', fullForm: 'saudade', englishEquivalent: 'missing you', usage: 'Close friends/family', platform: 'WhatsApp, Instagram' },
+          { abbreviation: 'bjs', fullForm: 'beijos', englishEquivalent: 'kisses', usage: 'Friends/family', platform: 'WhatsApp, Instagram' }
+        ],
+        emojiMeanings: [
+          { emoji: '😊', meaning: 'Happy/smiling', culturalContext: 'Very common, friendly' },
+          { emoji: '❤️', meaning: 'Love', culturalContext: 'Used with friends and family' },
+          { emoji: '👍', meaning: 'Okay/approval', culturalContext: 'Universal approval' },
+          { emoji: '🔥', meaning: 'Fire/amazing', culturalContext: 'Something is really good' },
+          { emoji: '💪', meaning: 'Strength/good luck', culturalContext: 'Encouragement' }
+        ],
+        internetSlang: [
+          { word: 'LOL', translation: 'Laughing out loud', pronunciation: 'el-oh-el', usage: 'Anyone, very common' },
+          { word: 'OMG', translation: 'Oh my God', pronunciation: 'oh-em-gee', usage: 'Anyone, casual' },
+          { word: 'WTF', translation: 'What the f***', pronunciation: 'double-u-tee-ef', usage: 'Friends only, very casual' },
+          { word: 'BTW', translation: 'By the way', pronunciation: 'bee-tee-double-u', usage: 'Anyone, casual' },
+          { word: 'IDK', translation: 'I don\'t know', pronunciation: 'eye-dee-kay', usage: 'Anyone, casual' },
+          { word: 'TBH', translation: 'To be honest', pronunciation: 'tee-bee-aitch', usage: 'Anyone, casual' }
+        ]
+      },
+      {
+        id: 24,
+        title: 'House & Home',
+        premium: true,
+        words: [
+          { word: 'Quarto', translation: 'Bedroom', pronunciation: 'KWAR-toh' },
+          { word: 'Banheiro', translation: 'Bathroom', pronunciation: 'bahn-YAY-roh' },
+          { word: 'Cozinha', translation: 'Kitchen', pronunciation: 'koh-ZEE-nyah' },
+          { word: 'Sala de estar', translation: 'Living room', pronunciation: 'SAH-lah deh es-TAHR' },
+          { word: 'Sala de jantar', translation: 'Dining room', pronunciation: 'SAH-lah deh zhahn-TAHR' },
+          { word: 'Cama', translation: 'Bed', pronunciation: 'KAH-mah' },
+          { word: 'Mesa', translation: 'Table', pronunciation: 'MEH-zah' },
+          { word: 'Cadeira', translation: 'Chair', pronunciation: 'kah-DAY-rah' },
+          { word: 'Sofá', translation: 'Sofa', pronunciation: 'soh-FAH' },
+          { word: 'Lâmpada', translation: 'Lamp', pronunciation: 'LAHM-pah-dah' },
+          { word: 'Geladeira', translation: 'Refrigerator', pronunciation: 'zheh-lah-DAY-rah' },
+          { word: 'Fogão', translation: 'Stove', pronunciation: 'foh-GAOWN' },
+          { word: 'Televisão', translation: 'TV', pronunciation: 'teh-leh-vee-ZAOWN' },
+          { word: 'Máquina de lavar', translation: 'Washing machine', pronunciation: 'MAH-kee-nah deh lah-VAHR' },
+          { word: 'Micro-ondas', translation: 'Microwave', pronunciation: 'MEE-kroh-ohn-dahs' },
+          { word: 'Limpar', translation: 'To clean', pronunciation: 'leem-PAHR' },
+          { word: 'Cozinhar', translation: 'To cook', pronunciation: 'koh-zee-NYAHR' },
+          { word: 'Dormir', translation: 'To sleep', pronunciation: 'dor-MEER' },
+          { word: 'Relaxar', translation: 'To relax', pronunciation: 'reh-lah-SHAHR' },
+          { word: 'Assistir TV', translation: 'To watch TV', pronunciation: 'ah-sees-TEER teh-veh' }
+        ],
+        phrases: [
+          { word: 'Onde fica o banheiro?', translation: 'Where is the bathroom?', pronunciation: 'OHN-deh FEE-kah oh bahn-YAY-roh' },
+          { word: 'Fique à vontade', translation: 'Make yourself at home', pronunciation: 'FEE-keh ah vohn-TAH-deh' },
+          { word: 'Este é meu quarto', translation: 'This is my room', pronunciation: 'ES-teh eh meh-oo KWAR-toh' },
+          { word: 'Vou cozinhar', translation: 'I\'m going to cook', pronunciation: 'voh koh-zee-NYAHR' },
+          { word: 'Preciso limpar', translation: 'I need to clean', pronunciation: 'preh-SEE-zoh leem-PAHR' },
+          { word: 'Posso usar a cozinha?', translation: 'Can I use the kitchen?', pronunciation: 'POH-soh oo-SAHR ah koh-ZEE-nyah' }
+        ],
+        culturalNotes: 'Homes in Brazil and Portugal vary by region. In Brazil, houses (casas) are common, while apartments (apartamentos) are popular in cities. The living room (sala) is the social center. Kitchens are important for Brazilian and Portuguese cuisine. Bathrooms are called "banheiro" in Brazil and "casa de banho" in Portugal. Many Brazilian homes have outdoor spaces (quintais) and are designed for warm climates. Home life emphasizes family time and hospitality. It\'s common to remove shoes when entering homes. Brazilian homes often feature colorful decor and open layouts. The concept of "lar" (home/hearth) is important in Portuguese-speaking cultures.',
+        streetSlang: [
+          { word: 'Minha casa é sua casa', translation: 'My house is your house', pronunciation: 'MEE-nyah KAH-zah eh SOO-ah KAH-zah' },
+          { word: 'Relaxar em casa', translation: 'To chill/relax at home', pronunciation: 'reh-lah-SHAHR em KAH-zah' },
+          { word: 'Estar em casa', translation: 'To be at home', pronunciation: 'es-TAR em KAH-zah' },
+          { word: 'Ficar em casa', translation: 'To stay home', pronunciation: 'fee-KAHR em KAH-zah' },
+          { word: 'Casa', translation: 'Place/home (casual)', pronunciation: 'KAH-zah' },
+          { word: 'Estar confortável', translation: 'To be comfortable', pronunciation: 'es-TAR kohn-for-TAH-vehl' }
+        ]
+      },
+      {
+        id: 25,
+        title: 'Clothing & Fashion',
+        premium: true,
+        words: [
+          { word: 'Camisa', translation: 'Shirt', pronunciation: 'kah-MEE-zah' },
+          { word: 'Calça', translation: 'Pants', pronunciation: 'KAHL-sah' },
+          { word: 'Vestido', translation: 'Dress', pronunciation: 'ves-TEE-doh' },
+          { word: 'Sapatos', translation: 'Shoes', pronunciation: 'sah-PAH-tohs' },
+          { word: 'Meias', translation: 'Socks', pronunciation: 'MAY-ahs' },
+          { word: 'Jaqueta', translation: 'Jacket', pronunciation: 'zhah-KEH-tah' },
+          { word: 'Casaco', translation: 'Coat', pronunciation: 'kah-ZAH-koh' },
+          { word: 'Chapéu', translation: 'Hat', pronunciation: 'shah-PAY-oo' },
+          { word: 'Cinto', translation: 'Belt', pronunciation: 'SEEN-toh' },
+          { word: 'Bolsa', translation: 'Bag', pronunciation: 'BOHL-sah' },
+          { word: 'Óculos', translation: 'Glasses', pronunciation: 'OH-kloo-lohs' },
+          { word: 'Relógio', translation: 'Watch', pronunciation: 'reh-LOH-zhee-oh' },
+          { word: 'Usar', translation: 'To wear', pronunciation: 'oo-SAHR' },
+          { word: 'Experimentar', translation: 'To try on', pronunciation: 'es-peh-ree-men-TAHR' },
+          { word: 'Ficar bem', translation: 'To fit/look good', pronunciation: 'fee-KAHR behm' },
+          { word: 'Tirar', translation: 'To take off', pronunciation: 'tee-RAHR' },
+          { word: 'Vestir', translation: 'To put on', pronunciation: 'ves-TEER' }
+        ],
+        phrases: [
+          { word: 'Qual é o seu tamanho?', translation: 'What size do you wear?', pronunciation: 'kwahl eh oh seh-oo tah-MAH-nyoh' },
+          { word: 'Quanto custa?', translation: 'How much does it cost?', pronunciation: 'KWAN-toh KOOS-tah' },
+          { word: 'Você tem isso em [cor]?', translation: 'Do you have this in [color]?', pronunciation: 'voh-SEH tem EE-soh em [kor]' },
+          { word: 'Posso experimentar?', translation: 'Can I try this on?', pronunciation: 'POH-soh es-peh-ree-men-TAHR' },
+          { word: 'Ficou ótimo em você', translation: 'It looks great on you', pronunciation: 'fee-KOH OH-tee-moh em voh-SEH' },
+          { word: 'Onde ficam os provadores?', translation: 'Where are the fitting rooms?', pronunciation: 'OHN-deh FEE-kahm ohs proh-vah-DOH-res' }
+        ],
+        culturalNotes: 'Brazilian and Portuguese fashion emphasizes vibrant colors, comfort, and style. Brazil is known for beach fashion and colorful styles. Portuguese fashion is more European-influenced. Shopping at markets (feiras) and malls (shoppings) is popular. Brazilian brands like Havaianas are world-famous. Fashion is important for social occasions. Street fashion is casual but stylish. Size systems use Brazilian/European measurements. Fashion is seen as self-expression. Brazilian people dress well for going out. The concept of "estilo" (style) is important. Beach culture influences casual fashion in Brazil.',
+        streetSlang: [
+          { word: 'Estar na moda', translation: 'To be fashionable/in style', pronunciation: 'es-TAR nah MOH-dah' },
+          { word: 'Ter estilo', translation: 'To have style', pronunciation: 'tehr es-TEE-loh' },
+          { word: 'Roupa', translation: 'Clothes (casual)', pronunciation: 'ROH-pah' },
+          { word: 'Estar estiloso', translation: 'To be stylish', pronunciation: 'es-TAR es-tee-LOH-zoh' },
+          { word: 'Fazer compras', translation: 'To go shopping', pronunciation: 'fah-ZEHR KOHM-prahs' },
+          { word: 'Ficou incrível', translation: 'It looks amazing', pronunciation: 'fee-KOH een-kree-VEHL' }
+        ]
+      },
+      {
+        id: 26,
+        title: 'Dance & Movement',
+        premium: true,
+        danceStyles: [
+          { name: 'Samba', pronunciation: 'SAHM-bah', context: 'Famous Brazilian dance, seen at Carnival and festivals', type: 'Traditional' },
+          { name: 'Forró', pronunciation: 'foh-HOH', context: 'Popular Brazilian dance, especially in Northeast', type: 'Traditional' },
+          { name: 'Fado', pronunciation: 'FAH-doo', context: 'Portuguese music/dance tradition, emotional and expressive', type: 'Traditional' },
+          { name: 'Funk brasileiro', pronunciation: 'foonk brah-zee-LEH-roh', context: 'Brazilian funk, very popular in clubs and parties', type: 'Modern' },
+          { name: 'Dança de clube', pronunciation: 'DAHN-sah deh KLOO-beh', context: 'Club dancing, popular in nightlife', type: 'Modern' }
+        ],
+        words: [
+          { word: 'Dançar', translation: 'To dance', pronunciation: 'dahn-SAHR' },
+          { word: 'Dançarino/Dançarina', translation: 'Dancer', pronunciation: 'dahn-sah-REE-noh / dahn-sah-REE-nah' },
+          { word: 'Música', translation: 'Music', pronunciation: 'MOO-zee-kah' },
+          { word: 'Ritmo', translation: 'Rhythm', pronunciation: 'REET-moh' },
+          { word: 'Pista de dança', translation: 'Dance floor', pronunciation: 'PEES-tah deh DAHN-sah' },
+          { word: 'Parceiro de dança', translation: 'Dance partner', pronunciation: 'par-SAY-roh deh DAHN-sah' },
+          { word: 'Rápido/Devagar', translation: 'Fast/Slow', pronunciation: 'RAH-pee-doh / deh-vah-GAHR' },
+          { word: 'Girar', translation: 'To spin/turn', pronunciation: 'zhee-RAHR' },
+          { word: 'Mover o corpo', translation: 'Move your body', pronunciation: 'moh-VEHR oh KOR-poh' }
+        ],
+        phrases: [
+          { word: 'Quer dançar?', translation: 'Do you want to dance?', pronunciation: 'kehr dahn-SAHR' },
+          { word: 'Você dança muito bem!', translation: 'You\'re a great dancer!', pronunciation: 'voh-SEH DAHN-sah MOO-ee-toh behm' },
+          { word: 'Não sei dançar', translation: 'I don\'t know how to dance', pronunciation: 'now say dahn-SAHR' },
+          { word: 'Me ensina essa dança', translation: 'Teach me this dance', pronunciation: 'meh en-SEE-nah EH-sah DAHN-sah' },
+          { word: 'Vamos para a pista de dança', translation: 'Let\'s go to the dance floor', pronunciation: 'VAH-mohs PAH-rah ah PEES-tah deh DAHN-sah' },
+          { word: 'Qual é essa música?', translation: 'What song is this?', pronunciation: 'kwahl eh EH-sah MOO-zee-kah' }
+        ],
+        culturalNotes: 'Dance is central to Brazilian and Portuguese culture. Samba is iconic, especially during Carnival in Rio de Janeiro, where elaborate parades showcase incredible dancing. Forró is beloved in Northeast Brazil, often danced at festivals and parties. Fado from Portugal is more about emotional expression through music and movement. Brazilian funk has become a massive cultural force, dominating clubs and parties. People dance at Carnival (Carnaval), beach parties (festas na praia), clubs (baladas), and festivals (festivais). Dance etiquette is casual and energetic - Brazilians are known for their natural rhythm and love of dancing. Modern dance culture blends traditional styles with international trends, creating one of the most vibrant party scenes in the world.',
+        streetSlang: [
+          { word: 'Dança que é um deus', translation: 'Dances like a god (dances amazingly)', pronunciation: 'DAHN-sah keh eh oong deh-oos' },
+          { word: 'Tem dois pés esquerdos', translation: 'Has two left feet (can\'t dance)', pronunciation: 'tem doys pehs es-KEHR-dohs' },
+          { word: 'Rebolar', translation: 'To shake your hips (dance slang)', pronunciation: 'reh-boh-LAHR' },
+          { word: 'Vamos festejar!', translation: 'Let\'s party!', pronunciation: 'VAH-mohs fes-teh-ZAHR' },
+          { word: 'Tá pegando fogo', translation: 'It\'s on fire/lit (party energy)', pronunciation: 'tah peh-GAHN-doh FOH-goh' },
+          { word: 'Arrasar na pista', translation: 'To tear up the dance floor', pronunciation: 'ah-rah-SAHR nah PEES-tah' }
+        ]
+      }{ word: 'Solução', translation: 'Solution', pronunciation: 'soh-loo-SYAOWN' },
           { word: 'Ajuda', translation: 'Help', pronunciation: 'ah-ZHOO-dah' },
           { word: 'Preciso', translation: 'I need', pronunciation: 'preh-SEE-zoh' },
           { word: 'Posso', translation: 'I can', pronunciation: 'POH-soh' }
@@ -2375,7 +3485,226 @@ export const languages = {
         premium: true,
         words: [
           { word: '問題', translation: 'Problem', pronunciation: 'mon-dai', romanji: 'Mondai' },
-          { word: '解決策', translation: 'Solution', pronunciation: 'kai-ke-tsu-sa-ku', romanji: 'Kaiketsusaku' },
+          ,
+      {
+        id: 21,
+        title: 'Song Lesson: ちょうちょう (Butterfly)',
+        premium: true,
+        songInfo: {
+          name: 'ちょうちょう',
+          englishName: 'Butterfly',
+          type: 'Children\'s Song',
+          culturalSignificance: 'A traditional Japanese children\'s song about a butterfly. Teaches nature vocabulary, movement, and seasons. Often sung in spring and used in early childhood education.'
+        },
+        lyrics: [
+          { original: 'ちょうちょう ちょうちょう', translation: 'Butterfly, butterfly', pronunciation: 'chou chou chou chou', romanji: 'Chou chou chou chou' },
+          { original: '菜の葉にとまれ', translation: 'Land on the vegetable leaves', pronunciation: 'na no ha ni to ma re', romanji: 'Na no ha ni tomare' },
+          { original: '菜の葉にとまれば', translation: 'If you land on the vegetable leaves', pronunciation: 'na no ha ni to ma re ba', romanji: 'Na no ha ni tomareba' },
+          { original: '桜の花とまれ', translation: 'Land on the cherry blossoms', pronunciation: 'sa ku ra no ha na to ma re', romanji: 'Sakura no hana tomare' },
+          { original: '桜の花とまれば', translation: 'If you land on the cherry blossoms', pronunciation: 'sa ku ra no ha na to ma re ba', romanji: 'Sakura no hana tomareba' },
+          { original: '菜の葉にとまれ', translation: 'Land on the vegetable leaves', pronunciation: 'na no ha ni to ma re', romanji: 'Na no ha ni tomare' }
+        ],
+        culturalNotes: 'This song celebrates spring and cherry blossom season (桜), a deeply important cultural time in Japan. The song teaches children about nature, butterflies, and the beauty of seasonal changes. It\'s commonly sung during hanami (cherry blossom viewing) season and in preschools.',
+        words: [
+          { word: 'ちょうちょう', translation: 'Butterfly', pronunciation: 'chou chou', romanji: 'Chou chou', example: 'ちょうちょう ちょうちょう' },
+          { word: '菜の葉', translation: 'Vegetable leaves', pronunciation: 'na no ha', romanji: 'Na no ha', example: '菜の葉にとまれ' },
+          { word: 'とまれ', translation: 'Land/stop (imperative)', pronunciation: 'to ma re', romanji: 'Tomare', example: '菜の葉にとまれ' },
+          { word: 'とまれば', translation: 'If you land', pronunciation: 'to ma re ba', romanji: 'Tomareba', example: '菜の葉にとまれば' },
+          { word: '桜', translation: 'Cherry blossom', pronunciation: 'sa ku ra', romanji: 'Sakura', example: '桜の花' },
+          { word: '花', translation: 'Flower', pronunciation: 'ha na', romanji: 'Hana', example: '桜の花' },
+          { word: 'の', translation: 'Of (possessive particle)', pronunciation: 'no', romanji: 'No', example: '桜の花' },
+          { word: 'に', translation: 'On/at (location particle)', pronunciation: 'ni', romanji: 'Ni', example: '菜の葉に' },
+          { word: 'と', translation: 'And/with (particle)', pronunciation: 'to', romanji: 'To', example: '桜の花と' }
+        ],
+        streetSlang: [
+          { word: 'この曲めちゃいい', translation: 'This song is super good', pronunciation: 'kono kyoku mecha ii', romanji: 'Kono kyoku mecha ii' },
+          { word: 'この曲好き', translation: 'I like this song', pronunciation: 'kono kyoku suki', romanji: 'Kono kyoku suki' },
+          { word: 'ハマる', translation: 'To be hooked/addicted (to a song)', pronunciation: 'ha ma ru', romanji: 'Hamaruru' },
+          { word: '大声で歌う', translation: 'To sing loudly', pronunciation: 'o go e de u ta u', romanji: 'Ogoe de utau' },
+          { word: 'リズムがいい', translation: 'The rhythm is good', pronunciation: 'ri zu mu ga ii', romanji: 'Rizumu ga ii' },
+          { word: '覚えて歌える', translation: 'I can sing it from memory', pronunciation: 'obo e te u ta e ru', romanji: 'Oboete utaeru' }
+        ]
+      },
+      {
+        id: 22,
+        title: 'Proverbs & Sayings',
+        premium: true,
+        proverbs: [
+          { original: '遅くてもしないよりはまし', literalTranslation: 'Better late than not doing', meaning: 'Better late than never', context: 'When someone finally does something', slangEquivalent: '遅くてもやる' },
+          { original: '始めが半分', literalTranslation: 'The beginning is half', meaning: 'Well begun is half done', context: 'Encouraging to start', slangEquivalent: '始めれば半分' },
+          { original: '百聞は一見に如かず', literalTranslation: 'Hearing a hundred times is not as good as seeing once', meaning: 'Seeing is believing', context: 'When you need to see something', slangEquivalent: '見た方がいい' },
+          { original: '出る杭は打たれる', literalTranslation: 'The nail that sticks out gets hammered', meaning: 'Don\'t stand out too much', context: 'Warning about conformity', slangEquivalent: '目立ちすぎない' },
+          { original: '石の上にも三年', literalTranslation: 'Three years on a stone', meaning: 'Persistence pays off', context: 'Encouraging persistence', slangEquivalent: '続ければできる' },
+          { original: '猿も木から落ちる', literalTranslation: 'Even monkeys fall from trees', meaning: 'Even experts make mistakes', context: 'When someone makes a mistake', slangEquivalent: '誰でも失敗する' },
+          { original: '継続は力なり', literalTranslation: 'Continuation is power', meaning: 'Practice makes perfect', context: 'Encouraging practice', slangEquivalent: '続けることが大事' },
+          { original: '千里の道も一歩から', literalTranslation: 'A journey of a thousand miles starts with one step', meaning: 'Every journey begins with a single step', context: 'Encouraging to start', slangEquivalent: '一歩ずつ' }
+        ],
+        streetSlang: [
+          { word: 'めちゃくちゃいい', translation: 'Super good/awesome', pronunciation: 'me cha ku cha ii', romanji: 'Mechakucha ii' },
+          { word: '最高', translation: 'The best', pronunciation: 'sai kou', romanji: 'Saikou' },
+          { word: 'やばい', translation: 'Crazy/amazing', pronunciation: 'ya bai', romanji: 'Yabai' },
+          { word: 'すごい', translation: 'Amazing', pronunciation: 'su go i', romanji: 'Sugoi' },
+          { word: 'かっこいい', translation: 'Cool', pronunciation: 'ka kko ii', romanji: 'Kakkoii' },
+          { word: '完璧', translation: 'Perfect', pronunciation: 'kan peki', romanji: 'Kanpeki' }
+        ]
+      },
+      {
+        id: 23,
+        title: 'Texting & Internet Slang',
+        premium: true,
+        abbreviations: [
+          { abbreviation: 'w', fullForm: '笑', englishEquivalent: 'laughing', usage: 'Anyone, very common', platform: 'Line, Twitter, Instagram' },
+          { abbreviation: 'www', fullForm: '笑', englishEquivalent: 'laughing (multiple)', usage: 'Anyone, very common', platform: 'All platforms' },
+          { abbreviation: '草', fullForm: '笑', englishEquivalent: 'laughing (slang)', usage: 'Friends only, casual', platform: 'Twitter, Instagram' },
+          { abbreviation: 'kwsk', fullForm: '詳しく', englishEquivalent: 'tell me more', usage: 'Friends only, casual', platform: 'Line, Twitter' },
+          { abbreviation: 'ggrks', fullForm: 'ググレカス', englishEquivalent: 'google it', usage: 'Friends only, casual', platform: 'Twitter' },
+          { abbreviation: 'ty', fullForm: 'thank you', englishEquivalent: 'thanks', usage: 'Anyone, casual', platform: 'All platforms' },
+          { abbreviation: 'gn', fullForm: 'good night', englishEquivalent: 'good night', usage: 'Anyone, casual', platform: 'Line, WhatsApp' },
+          { abbreviation: 'おk', fullForm: 'OK', englishEquivalent: 'okay', usage: 'Anyone, casual', platform: 'Line, WhatsApp' },
+          { abbreviation: '了解', fullForm: '了解', englishEquivalent: 'got it/understood', usage: 'Anyone, casual', platform: 'Line, WhatsApp' },
+          { abbreviation: 'おつ', fullForm: 'お疲れ様', englishEquivalent: 'thanks for your work', usage: 'Anyone, casual', platform: 'Line, WhatsApp' }
+        ],
+        emojiMeanings: [
+          { emoji: 'w', meaning: 'Laughing', culturalContext: 'Very common, equivalent to LOL' },
+          { emoji: 'www', meaning: 'Laughing hard', culturalContext: 'Multiple w\'s = harder laugh' },
+          { emoji: '草', meaning: 'Laughing (slang)', culturalContext: 'Internet slang for laughing' },
+          { emoji: '👍', meaning: 'Okay/approval', culturalContext: 'Universal approval' },
+          { emoji: '💪', meaning: 'Strength/good luck', culturalContext: 'Encouragement' }
+        ],
+        internetSlang: [
+          { word: 'LOL', translation: 'Laughing out loud', pronunciation: 'el-oh-el', usage: 'Anyone, very common' },
+          { word: 'OMG', translation: 'Oh my God', pronunciation: 'oh-em-gee', usage: 'Anyone, casual' },
+          { word: 'WTF', translation: 'What the f***', pronunciation: 'double-u-tee-ef', usage: 'Friends only, very casual' },
+          { word: 'BTW', translation: 'By the way', pronunciation: 'bee-tee-double-u', usage: 'Anyone, casual' },
+          { word: 'IDK', translation: 'I don\'t know', pronunciation: 'eye-dee-kay', usage: 'Anyone, casual' },
+          { word: 'TBH', translation: 'To be honest', pronunciation: 'tee-bee-aitch', usage: 'Anyone, casual' }
+        ]
+      },
+      {
+        id: 24,
+        title: 'House & Home',
+        premium: true,
+        words: [
+          { word: '寝室', translation: 'Bedroom', pronunciation: 'shin-shitsu', romanji: 'Shinshitsu' },
+          { word: 'お風呂', translation: 'Bathroom', pronunciation: 'o-fu-ro', romanji: 'Ofuro' },
+          { word: 'キッチン', translation: 'Kitchen', pronunciation: 'kit-chin', romanji: 'Kitchin' },
+          { word: 'リビング', translation: 'Living room', pronunciation: 'ri-bing-u', romanji: 'Ribingu' },
+          { word: 'ダイニング', translation: 'Dining room', pronunciation: 'dai-ning-u', romanji: 'Dainingu' },
+          { word: 'ベッド', translation: 'Bed', pronunciation: 'bed-do', romanji: 'Beddo' },
+          { word: 'テーブル', translation: 'Table', pronunciation: 'te-bu-ru', romanji: 'Teburu' },
+          { word: '椅子', translation: 'Chair', pronunciation: 'i-su', romanji: 'Isu' },
+          { word: 'ソファ', translation: 'Sofa', pronunciation: 'so-fa', romanji: 'Sofa' },
+          { word: 'ランプ', translation: 'Lamp', pronunciation: 'ran-pu', romanji: 'Ranpu' },
+          { word: '冷蔵庫', translation: 'Refrigerator', pronunciation: 'rei-zou-ko', romanji: 'Reizouko' },
+          { word: 'コンロ', translation: 'Stove', pronunciation: 'kon-ro', romanji: 'Konro' },
+          { word: 'テレビ', translation: 'TV', pronunciation: 'te-re-bi', romanji: 'Terebi' },
+          { word: '洗濯機', translation: 'Washing machine', pronunciation: 'sen-ta-ku-ki', romanji: 'Sentakuki' },
+          { word: '電子レンジ', translation: 'Microwave', pronunciation: 'den-shi ren-ji', romanji: 'Denshi renji' },
+          { word: '掃除する', translation: 'To clean', pronunciation: 'sou-ji su-ru', romanji: 'Souji suru' },
+          { word: '料理する', translation: 'To cook', pronunciation: 'ryou-ri su-ru', romanji: 'Ryouri suru' },
+          { word: '寝る', translation: 'To sleep', pronunciation: 'ne-ru', romanji: 'Neru' },
+          { word: 'リラックスする', translation: 'To relax', pronunciation: 'ri-rak-ku-su su-ru', romanji: 'Rirakkusu suru' },
+          { word: 'テレビを見る', translation: 'To watch TV', pronunciation: 'te-re-bi wo mi-ru', romanji: 'Terebi wo miru' }
+        ],
+        phrases: [
+          { word: 'お風呂はどこですか?', translation: 'Where is the bathroom?', pronunciation: 'o-fu-ro wa do-ko desu ka', romanji: 'Ofuro wa doko desu ka?' },
+          { word: 'くつろいでください', translation: 'Make yourself at home', pronunciation: 'ku-tsu-ro-i-de ku-da-sai', romanji: 'Kutsuroide kudasai' },
+          { word: 'これが私の部屋です', translation: 'This is my room', pronunciation: 'ko-re ga wa-ta-shi no he-ya desu', romanji: 'Kore ga watashi no heya desu' },
+          { word: '料理します', translation: 'I\'m going to cook', pronunciation: 'ryou-ri shi-ma-su', romanji: 'Ryouri shimasu' },
+          { word: '掃除する必要があります', translation: 'I need to clean', pronunciation: 'sou-ji su-ru hi-tsu-you ga a-ri-ma-su', romanji: 'Souji suru hitsuyou ga arimasu' },
+          { word: 'キッチンを使ってもいいですか?', translation: 'Can I use the kitchen?', pronunciation: 'kit-chin wo tsu-ka-tte mo ii desu ka', romanji: 'Kitchin wo tsukatte mo ii desu ka?' }
+        ],
+        culturalNotes: 'Japanese homes (家) emphasize simplicity, organization, and harmony. Many Japanese live in compact apartments (アパート) in cities. The living room (リビング) is the social center. Kitchens are efficient and well-organized. Bathrooms often have separate areas for bathing (お風呂) and toilet (トイレ). Many homes have tatami rooms (畳の部屋) with traditional flooring. Home life emphasizes respect, cleanliness, and order. It\'s essential to remove shoes when entering homes - this is fundamental Japanese etiquette. Japanese homes often feature sliding doors (襖), minimal decor, and efficient use of space. The concept of "間" (ma - space/interval) is important in Japanese home design.',
+        streetSlang: [
+          { word: 'うち', translation: 'My place/home', pronunciation: 'u-chi', romanji: 'Uchi' },
+          { word: '家でまったり', translation: 'To chill/relax at home', pronunciation: 'u-chi de ma-ta-ri', romanji: 'Uchi de mattari' },
+          { word: '家にいる', translation: 'To be at home', pronunciation: 'u-chi ni i-ru', romanji: 'Uchi ni iru' },
+          { word: '家にいる', translation: 'To stay home', pronunciation: 'u-chi ni i-ru', romanji: 'Uchi ni iru' },
+          { word: '部屋', translation: 'Room (casual)', pronunciation: 'he-ya', romanji: 'Heya' },
+          { word: 'リラックス', translation: 'To be comfortable/relaxed', pronunciation: 'ri-rak-ku-su', romanji: 'Rirakkusu' }
+        ]
+      },
+      {
+        id: 25,
+        title: 'Clothing & Fashion',
+        premium: true,
+        words: [
+          { word: 'シャツ', translation: 'Shirt', pronunciation: 'sha-tsu', romanji: 'Shatsu' },
+          { word: 'ズボン', translation: 'Pants', pronunciation: 'zu-bon', romanji: 'Zubon' },
+          { word: 'ドレス', translation: 'Dress', pronunciation: 'do-re-su', romanji: 'Doresu' },
+          { word: '靴', translation: 'Shoes', pronunciation: 'ku-tsu', romanji: 'Kutsu' },
+          { word: '靴下', translation: 'Socks', pronunciation: 'ku-tsu-shi-ta', romanji: 'Kutsushita' },
+          { word: 'ジャケット', translation: 'Jacket', pronunciation: 'ja-ket-to', romanji: 'Jaketto' },
+          { word: 'コート', translation: 'Coat', pronunciation: 'ko-to', romanji: 'Koto' },
+          { word: '帽子', translation: 'Hat', pronunciation: 'bou-shi', romanji: 'Boushi' },
+          { word: 'ベルト', translation: 'Belt', pronunciation: 'be-ru-to', romanji: 'Beruto' },
+          { word: 'バッグ', translation: 'Bag', pronunciation: 'bag-gu', romanji: 'Baggu' },
+          { word: '眼鏡', translation: 'Glasses', pronunciation: 'me-ga-ne', romanji: 'Megane' },
+          { word: '時計', translation: 'Watch', pronunciation: 'to-kei', romanji: 'Tokei' },
+          { word: '着る', translation: 'To wear', pronunciation: 'ki-ru', romanji: 'Kiru' },
+          { word: '試着する', translation: 'To try on', pronunciation: 'shi-cha-ku su-ru', romanji: 'Shichaku suru' },
+          { word: '似合う', translation: 'To fit/look good', pronunciation: 'ni-a-u', romanji: 'Niau' },
+          { word: '脱ぐ', translation: 'To take off', pronunciation: 'nu-gu', romanji: 'Nugu' },
+          { word: '着る', translation: 'To put on', pronunciation: 'ki-ru', romanji: 'Kiru' }
+        ],
+        phrases: [
+          { word: 'サイズはいくつですか?', translation: 'What size do you wear?', pronunciation: 'sa-i-zu wa i-ku-tsu desu ka', romanji: 'Saizu wa ikutsu desu ka?' },
+          { word: 'いくらですか?', translation: 'How much does it cost?', pronunciation: 'i-ku-ra desu ka', romanji: 'Ikura desu ka?' },
+          { word: 'これは[色]でありますか?', translation: 'Do you have this in [color]?', pronunciation: 'ko-re wa [i-ro] de a-ri-ma-su ka', romanji: 'Kore wa [iro] de arimasu ka?' },
+          { word: '試着してもいいですか?', translation: 'Can I try this on?', pronunciation: 'shi-cha-ku shi-te mo ii desu ka', romanji: 'Shichaku shite mo ii desu ka?' },
+          { word: 'とてもよく似合います', translation: 'It looks great on you', pronunciation: 'to-te-mo yo-ku ni-a-i-ma-su', romanji: 'Totemo yoku niaimasu' },
+          { word: '試着室はどこですか?', translation: 'Where are the fitting rooms?', pronunciation: 'shi-cha-ku-shi-tsu wa do-ko desu ka', romanji: 'Shichakushitsu wa doko desu ka?' }
+        ],
+        culturalNotes: 'Japan is a major fashion hub, especially Tokyo. Japanese fashion emphasizes quality, attention to detail, and often unique styles. Street fashion in Harajuku and Shibuya is world-famous. Japanese brands like Uniqlo are globally recognized. Fashion varies from traditional (和服) to cutting-edge streetwear. Shopping districts like Ginza and Shibuya are famous. Japanese people invest in quality pieces. Size systems use Japanese measurements (often smaller than Western sizes). Fashion is seen as important for social presentation. Japanese fashion blends traditional aesthetics with modern trends. The concept of "おしゃれ" (oshare - fashionable) is important. Japanese people dress appropriately for the occasion.',
+        streetSlang: [
+          { word: '流行っている', translation: 'To be fashionable/in style', pronunciation: 'ha-ya-tte i-ru', romanji: 'Hayatte iru' },
+          { word: 'おしゃれ', translation: 'To have style/fashionable', pronunciation: 'o-sha-re', romanji: 'Oshare' },
+          { word: '服', translation: 'Clothes (casual)', pronunciation: 'fu-ku', romanji: 'Fuku' },
+          { word: 'スタイリッシュ', translation: 'To be stylish', pronunciation: 'su-ta-i-ri-s-shu', romanji: 'Sutairisshu' },
+          { word: '買い物する', translation: 'To go shopping', pronunciation: 'ka-i-mo-no su-ru', romanji: 'Kaimono suru' },
+          { word: 'めちゃ似合う', translation: 'It looks amazing on you', pronunciation: 'me-cha ni-a-u', romanji: 'Mecha niau' }
+        ]
+      },
+      {
+        id: 26,
+        title: 'Dance & Movement',
+        premium: true,
+        danceStyles: [
+          { name: '盆踊り', pronunciation: 'bon odo-ri', context: 'Traditional festival dance, seen at summer festivals', type: 'Traditional', romanji: 'Bon odori' },
+          { name: '歌舞伎', pronunciation: 'ka-bu-ki', context: 'Traditional Japanese theater with dance elements', type: 'Traditional', romanji: 'Kabuki' },
+          { name: 'パラパラ', pronunciation: 'pa-ra pa-ra', context: 'Para para dance, popular in the 90s-2000s', type: 'Modern', romanji: 'Para para' },
+          { name: 'クラブダンス', pronunciation: 'ku-ra-bu dan-su', context: 'Club dancing, popular in Tokyo nightlife', type: 'Modern', romanji: 'Kurabu dansu' },
+          { name: 'ヒップホップ', pronunciation: 'hip-pu hop-pu', context: 'Hip hop dance, influenced by international trends', type: 'Modern', romanji: 'Hippu hoppu' }
+        ],
+        words: [
+          { word: '踊る', translation: 'To dance', pronunciation: 'odo-ru', romanji: 'Odoru' },
+          { word: 'ダンサー', translation: 'Dancer', pronunciation: 'dan-sa-', romanji: 'Dansaa' },
+          { word: '音楽', translation: 'Music', pronunciation: 'on-gaku', romanji: 'Ongaku' },
+          { word: 'リズム', translation: 'Rhythm', pronunciation: 'ri-zu-mu', romanji: 'Rizumu' },
+          { word: 'ダンスフロア', translation: 'Dance floor', pronunciation: 'dan-su fu-ro-a', romanji: 'Dansu furoa' },
+          { word: 'ダンスパートナー', translation: 'Dance partner', pronunciation: 'dan-su pa-to-na-', romanji: 'Dansu paatonaa' },
+          { word: '速い/遅い', translation: 'Fast/Slow', pronunciation: 'haya-i / oso-i', romanji: 'Hayai / Osoi' },
+          { word: '回る', translation: 'To spin/turn', pronunciation: 'mawa-ru', romanji: 'Mawaru' },
+          { word: '体を動かす', translation: 'Move your body', pronunciation: 'kara-da wo ugo-ka-su', romanji: 'Karada wo ugokasu' }
+        ],
+        phrases: [
+          { word: '踊りませんか?', translation: 'Do you want to dance?', pronunciation: 'odori-masen ka', romanji: 'Odorimasen ka?' },
+          { word: '踊りが上手ですね!', translation: 'You\'re a great dancer!', pronunciation: 'odori ga jou-zu desu ne', romanji: 'Odori ga jouzu desu ne!' },
+          { word: '踊れません', translation: 'I don\'t know how to dance', pronunciation: 'odore-masen', romanji: 'Odoremasen' },
+          { word: 'この踊りを教えてください', translation: 'Teach me this dance', pronunciation: 'kono odori wo oshie-te kudasai', romanji: 'Kono odori wo oshiete kudasai' },
+          { word: 'ダンスフロアに行きましょう', translation: 'Let\'s go to the dance floor', pronunciation: 'dan-su fu-ro-a ni iki-mashou', romanji: 'Dansu furoa ni ikimashou' },
+          { word: 'この曲は何ですか?', translation: 'What song is this?', pronunciation: 'kono kyoku wa nan desu ka', romanji: 'Kono kyoku wa nan desu ka?' }
+        ],
+        culturalNotes: 'Dance in Japan ranges from traditional festival performances to modern club culture. 盆踊り (Bon Odori) is performed at summer festivals (matsuri) where communities gather to dance in circles. Kabuki theater incorporates stylized dance movements. Para para was a popular synchronized dance fad. Karaoke culture often includes dancing. People dance at festivals (祭り), clubs (クラブ), weddings (結婚式), and karaoke (カラオケ). Dance etiquette emphasizes group harmony and respect - traditional dances are often group activities. Modern Japanese dance culture blends traditional elements with international trends, especially in cities like Tokyo and Osaka. Club culture is vibrant but more reserved than Western clubs, with emphasis on style and coordination.',
+        streetSlang: [
+          { word: '踊りの神', translation: 'Dance god (dances amazingly)', pronunciation: 'odori no kami', romanji: 'Odori no kami' },
+          { word: '踊れない', translation: 'Can\'t dance (playful)', pronunciation: 'odore-nai', romanji: 'Odorenai' },
+          { word: 'クラブ行こう', translation: 'Let\'s go to the club', pronunciation: 'ku-ra-bu iko-u', romanji: 'Kurabu ikou' },
+          { word: 'パーティーしよう!', translation: 'Let\'s party!', pronunciation: 'pa-ti- shiyou', romanji: 'Paatii shiyou!' },
+          { word: '盛り上がってる', translation: 'It\'s lit/hot (party energy)', pronunciation: 'mori-agat-te-ru', romanji: 'Moriagatteru' },
+          { word: 'フロアを壊す', translation: 'To tear up the dance floor', pronunciation: 'fu-ro-a wo kowa-su', romanji: 'Furoa wo kowasu' }
+        ]
+      }{ word: '解決策', translation: 'Solution', pronunciation: 'kai-ke-tsu-sa-ku', romanji: 'Kaiketsusaku' },
           { word: '助け', translation: 'Help', pronunciation: 'ta-su-ke', romanji: 'Tasuke' },
           { word: '必要', translation: 'I need', pronunciation: 'hi-tsu-you', romanji: 'Hitsuyou' },
           { word: 'できる', translation: 'I can', pronunciation: 'de-ki-ru', romanji: 'Dekiru' }
@@ -2774,7 +4103,226 @@ export const languages = {
         premium: true,
         words: [
           { word: '问题', translation: 'Problem', pronunciation: 'wèn tí', romanji: 'Wèntí' },
-          { word: '解决方案', translation: 'Solution', pronunciation: 'jiě jué fāng àn', romanji: 'Jiějué fāng\'àn' },
+          ,
+      {
+        id: 21,
+        title: 'Song Lesson: 两只老虎 (Liǎng Zhī Lǎohǔ - Two Tigers)',
+        premium: true,
+        songInfo: {
+          name: '两只老虎',
+          englishName: 'Two Tigers',
+          type: 'Children\'s Song',
+          culturalSignificance: 'The Chinese version of "Frère Jacques," this is one of the most popular children\'s songs in China. It teaches counting, body parts, and descriptions. Sung by generations of Chinese children in kindergartens and homes.'
+        },
+        lyrics: [
+          { original: '两只老虎，两只老虎', translation: 'Two tigers, two tigers', pronunciation: 'liǎng zhī lǎohǔ liǎng zhī lǎohǔ', romanji: 'Liǎng zhī lǎohǔ, liǎng zhī lǎohǔ' },
+          { original: '跑得快，跑得快', translation: 'Run fast, run fast', pronunciation: 'pǎo dé kuài pǎo dé kuài', romanji: 'Pǎo dé kuài, pǎo dé kuài' },
+          { original: '一只没有耳朵', translation: 'One has no ears', pronunciation: 'yī zhī méiyǒu ěrduo', romanji: 'Yī zhī méiyǒu ěrduo' },
+          { original: '一只没有尾巴', translation: 'One has no tail', pronunciation: 'yī zhī méiyǒu wěiba', romanji: 'Yī zhī méiyǒu wěiba' },
+          { original: '真奇怪！真奇怪！', translation: 'Really strange! Really strange!', pronunciation: 'zhēn qíguài zhēn qíguài', romanji: 'Zhēn qíguài! Zhēn qíguài!' }
+        ],
+        culturalNotes: 'This song is universally known by Chinese children and is often one of the first songs they learn. It teaches basic vocabulary about animals, body parts, and counting. The repetitive structure makes it easy for children to memorize. The song is commonly used in Chinese kindergartens and represents a shared cultural experience across generations.',
+        words: [
+          { word: '两只', translation: 'Two (animals)', pronunciation: 'liǎng zhī', romanji: 'Liǎng zhī', example: '两只老虎' },
+          { word: '老虎', translation: 'Tiger', pronunciation: 'lǎohǔ', romanji: 'Lǎohǔ', example: '两只老虎' },
+          { word: '跑', translation: 'Run', pronunciation: 'pǎo', romanji: 'Pǎo', example: '跑得快' },
+          { word: '快', translation: 'Fast', pronunciation: 'kuài', romanji: 'Kuài', example: '跑得快' },
+          { word: '一只', translation: 'One (animal)', pronunciation: 'yī zhī', romanji: 'Yī zhī', example: '一只没有耳朵' },
+          { word: '没有', translation: 'Don\'t have/no', pronunciation: 'méiyǒu', romanji: 'Méiyǒu', example: '没有耳朵' },
+          { word: '耳朵', translation: 'Ears', pronunciation: 'ěrduo', romanji: 'Ěrduo', example: '没有耳朵' },
+          { word: '尾巴', translation: 'Tail', pronunciation: 'wěiba', romanji: 'Wěiba', example: '没有尾巴' },
+          { word: '真', translation: 'Really/very', pronunciation: 'zhēn', romanji: 'Zhēn', example: '真奇怪' },
+          { word: '奇怪', translation: 'Strange/weird', pronunciation: 'qíguài', romanji: 'Qíguài', example: '真奇怪' }
+        ],
+        streetSlang: [
+          { word: '这首歌超好听', translation: 'This song is super good', pronunciation: 'zhè shǒu gē chāo hǎotīng', romanji: 'Zhè shǒu gē chāo hǎotīng' },
+          { word: '我喜欢这首歌', translation: 'I like this song', pronunciation: 'wǒ xǐhuān zhè shǒu gē', romanji: 'Wǒ xǐhuān zhè shǒu gē' },
+          { word: '很洗脑', translation: 'It\'s catchy/stuck in my head', pronunciation: 'hěn xǐnǎo', romanji: 'Hěn xǐnǎo' },
+          { word: '大声唱', translation: 'To sing loudly', pronunciation: 'dàshēng chàng', romanji: 'Dàshēng chàng' },
+          { word: '节奏很好', translation: 'The rhythm is good', pronunciation: 'jiézòu hěn hǎo', romanji: 'Jiézòu hěn hǎo' },
+          { word: '我会背', translation: 'I know it by heart', pronunciation: 'wǒ huì bèi', romanji: 'Wǒ huì bèi' }
+        ]
+      },
+      {
+        id: 22,
+        title: 'Proverbs & Sayings',
+        premium: true,
+        proverbs: [
+          { original: '迟做总比不做好', literalTranslation: 'Better late than not doing', meaning: 'Better late than never', context: 'When someone finally does something', slangEquivalent: '迟做也比不做强', romanji: 'Chí zuò zǒng bǐ bù zuò hǎo' },
+          { original: '万事开头难', literalTranslation: 'Everything is difficult at the beginning', meaning: 'The first step is the hardest', context: 'Encouraging to start', slangEquivalent: '开始最难', romanji: 'Wànshì kāitóu nán' },
+          { original: '百闻不如一见', literalTranslation: 'Hearing a hundred times is not as good as seeing once', meaning: 'Seeing is believing', context: 'When you need to see something', slangEquivalent: '亲眼看看', romanji: 'Bǎi wén bùrú yī jiàn' },
+          { original: '一分耕耘，一分收获', literalTranslation: 'One point of plowing, one point of harvest', meaning: 'You reap what you sow', context: 'About hard work paying off', slangEquivalent: '努力就有回报', romanji: 'Yī fēn gēngyún, yī fēn shōuhuò' },
+          { original: '熟能生巧', literalTranslation: 'Familiarity breeds skill', meaning: 'Practice makes perfect', context: 'Encouraging practice', slangEquivalent: '多练就会', romanji: 'Shú néng shēng qiǎo' },
+          { original: '千里之行，始于足下', literalTranslation: 'A journey of a thousand miles starts under one\'s feet', meaning: 'Every journey begins with a single step', context: 'Encouraging to start', slangEquivalent: '一步一步来', romanji: 'Qiānlǐ zhī xíng, shǐ yú zú xià' },
+          { original: '失败是成功之母', literalTranslation: 'Failure is the mother of success', meaning: 'Failure leads to success', context: 'Encouraging after failure', slangEquivalent: '失败是经验', romanji: 'Shībài shì chénggōng zhī mǔ' },
+          { original: '有志者事竟成', literalTranslation: 'Where there is a will, there is a way', meaning: 'Perseverance leads to success', context: 'Encouraging persistence', slangEquivalent: '坚持就会成功', romanji: 'Yǒuzhì zhě shì jìng chéng' }
+        ],
+        streetSlang: [
+          { word: '超赞', translation: 'Super awesome', pronunciation: 'chāo zàn', romanji: 'Chāo zàn' },
+          { word: '太棒了', translation: 'Too awesome', pronunciation: 'tài bàng le', romanji: 'Tài bàng le' },
+          { word: '牛逼', translation: 'Awesome/cool (slang)', pronunciation: 'niú bī', romanji: 'Niú bī' },
+          { word: '厉害', translation: 'Amazing', pronunciation: 'lì hài', romanji: 'Lìhài' },
+          { word: '完美', translation: 'Perfect', pronunciation: 'wán měi', romanji: 'Wánměi' },
+          { word: '绝了', translation: 'Amazing/perfect', pronunciation: 'jué le', romanji: 'Jué le' }
+        ]
+      },
+      {
+        id: 23,
+        title: 'Texting & Internet Slang',
+        premium: true,
+        abbreviations: [
+          { abbreviation: 'nb', fullForm: '牛逼', englishEquivalent: 'awesome', usage: 'Friends only, casual', platform: 'WeChat, QQ' },
+          { abbreviation: 'gg', fullForm: '哥哥', englishEquivalent: 'brother', usage: 'Anyone, casual', platform: 'WeChat, QQ' },
+          { abbreviation: 'mm', fullForm: '妹妹', englishEquivalent: 'sister', usage: 'Anyone, casual', platform: 'WeChat, QQ' },
+          { abbreviation: '88', fullForm: '拜拜', englishEquivalent: 'bye bye', usage: 'Anyone, casual', platform: 'All platforms' },
+          { abbreviation: '666', fullForm: '六六六', englishEquivalent: 'awesome (slang)', usage: 'Anyone, casual', platform: 'All platforms' },
+          { abbreviation: '233', fullForm: 'laughing', englishEquivalent: 'laughing', usage: 'Anyone, casual', platform: 'WeChat, QQ' },
+          { abbreviation: 'orz', fullForm: 'kneeling', englishEquivalent: 'respect/defeat', usage: 'Anyone, casual', platform: 'All platforms' },
+          { abbreviation: 'tql', fullForm: '太强了', englishEquivalent: 'too strong', usage: 'Anyone, casual', platform: 'WeChat, QQ' },
+          { abbreviation: 'yyds', fullForm: '永远的神', englishEquivalent: 'eternal god (GOAT)', usage: 'Anyone, casual', platform: 'WeChat, QQ, Bilibili' },
+          { abbreviation: 'awsl', fullForm: '啊我死了', englishEquivalent: 'I\'m dead (cute)', usage: 'Anyone, casual', platform: 'WeChat, QQ, Bilibili' }
+        ],
+        emojiMeanings: [
+          { emoji: '👍', meaning: 'Okay/approval', culturalContext: 'Very common, universal' },
+          { emoji: '😊', meaning: 'Happy/smiling', culturalContext: 'Friendly, common' },
+          { emoji: '❤️', meaning: 'Love', culturalContext: 'Used with friends and family' },
+          { emoji: '666', meaning: 'Awesome', culturalContext: 'Very common internet slang' },
+          { emoji: 'orz', meaning: 'Respect/defeat', culturalContext: 'Internet meme' }
+        ],
+        internetSlang: [
+          { word: 'LOL', translation: 'Laughing out loud', pronunciation: 'el-oh-el', usage: 'Anyone, very common' },
+          { word: 'OMG', translation: 'Oh my God', pronunciation: 'oh-em-gee', usage: 'Anyone, casual' },
+          { word: 'WTF', translation: 'What the f***', pronunciation: 'double-u-tee-ef', usage: 'Friends only, very casual' },
+          { word: 'BTW', translation: 'By the way', pronunciation: 'bee-tee-double-u', usage: 'Anyone, casual' },
+          { word: 'IDK', translation: 'I don\'t know', pronunciation: 'eye-dee-kay', usage: 'Anyone, casual' },
+          { word: 'TBH', translation: 'To be honest', pronunciation: 'tee-bee-aitch', usage: 'Anyone, casual' }
+        ]
+      },
+      {
+        id: 24,
+        title: 'House & Home',
+        premium: true,
+        words: [
+          { word: '卧室', translation: 'Bedroom', pronunciation: 'wòshì', romanji: 'Wòshì' },
+          { word: '浴室', translation: 'Bathroom', pronunciation: 'yùshì', romanji: 'Yùshì' },
+          { word: '厨房', translation: 'Kitchen', pronunciation: 'chúfáng', romanji: 'Chúfáng' },
+          { word: '客厅', translation: 'Living room', pronunciation: 'kètīng', romanji: 'Kètīng' },
+          { word: '餐厅', translation: 'Dining room', pronunciation: 'cāntīng', romanji: 'Cāntīng' },
+          { word: '床', translation: 'Bed', pronunciation: 'chuáng', romanji: 'Chuáng' },
+          { word: '桌子', translation: 'Table', pronunciation: 'zhuōzi', romanji: 'Zhuōzi' },
+          { word: '椅子', translation: 'Chair', pronunciation: 'yǐzi', romanji: 'Yǐzi' },
+          { word: '沙发', translation: 'Sofa', pronunciation: 'shāfā', romanji: 'Shāfā' },
+          { word: '台灯', translation: 'Lamp', pronunciation: 'táidēng', romanji: 'Táidēng' },
+          { word: '冰箱', translation: 'Refrigerator', pronunciation: 'bīngxiāng', romanji: 'Bīngxiāng' },
+          { word: '炉子', translation: 'Stove', pronunciation: 'lúzi', romanji: 'Lúzi' },
+          { word: '电视', translation: 'TV', pronunciation: 'diànshì', romanji: 'Diànshì' },
+          { word: '洗衣机', translation: 'Washing machine', pronunciation: 'xǐyījī', romanji: 'Xǐyījī' },
+          { word: '微波炉', translation: 'Microwave', pronunciation: 'wēibōlú', romanji: 'Wēibōlú' },
+          { word: '打扫', translation: 'To clean', pronunciation: 'dǎsǎo', romanji: 'Dǎsǎo' },
+          { word: '做饭', translation: 'To cook', pronunciation: 'zuòfàn', romanji: 'Zuòfàn' },
+          { word: '睡觉', translation: 'To sleep', pronunciation: 'shuìjiào', romanji: 'Shuìjiào' },
+          { word: '放松', translation: 'To relax', pronunciation: 'fàngsōng', romanji: 'Fàngsōng' },
+          { word: '看电视', translation: 'To watch TV', pronunciation: 'kàn diànshì', romanji: 'Kàn diànshì' }
+        ],
+        phrases: [
+          { word: '浴室在哪里?', translation: 'Where is the bathroom?', pronunciation: 'yùshì zài nǎlǐ', romanji: 'Yùshì zài nǎlǐ?' },
+          { word: '请随意', translation: 'Make yourself at home', pronunciation: 'qǐng suíyì', romanji: 'Qǐng suíyì' },
+          { word: '这是我的房间', translation: 'This is my room', pronunciation: 'zhè shì wǒ de fángjiān', romanji: 'Zhè shì wǒ de fángjiān' },
+          { word: '我要做饭', translation: 'I\'m going to cook', pronunciation: 'wǒ yào zuòfàn', romanji: 'Wǒ yào zuòfàn' },
+          { word: '我需要打扫', translation: 'I need to clean', pronunciation: 'wǒ xūyào dǎsǎo', romanji: 'Wǒ xūyào dǎsǎo' },
+          { word: '我可以用厨房吗?', translation: 'Can I use the kitchen?', pronunciation: 'wǒ kěyǐ yòng chúfáng ma', romanji: 'Wǒ kěyǐ yòng chúfáng ma?' }
+        ],
+        culturalNotes: 'Chinese homes (家) vary from modern apartments in cities to traditional courtyard houses. Many Chinese live in apartments (公寓) in urban areas. The living room (客厅) is the social center. Kitchens are important for Chinese cuisine. Bathrooms may be separate from toilets. Many homes have balconies (阳台). Home life emphasizes family time and respect for elders. It\'s common to remove shoes when entering homes. Chinese homes often feature practical design and efficient use of space. The concept of "家" (home/family) is deeply important in Chinese culture. Modern Chinese homes blend traditional elements with contemporary design.',
+        streetSlang: [
+          { word: '我家', translation: 'My place/home', pronunciation: 'wǒ jiā', romanji: 'Wǒ jiā' },
+          { word: '在家放松', translation: 'To chill/relax at home', pronunciation: 'zài jiā fàngsōng', romanji: 'Zài jiā fàngsōng' },
+          { word: '在家', translation: 'To be at home', pronunciation: 'zài jiā', romanji: 'Zài jiā' },
+          { word: '待在家里', translation: 'To stay home', pronunciation: 'dài zài jiālǐ', romanji: 'Dài zài jiālǐ' },
+          { word: '房间', translation: 'Room (casual)', pronunciation: 'fángjiān', romanji: 'Fángjiān' },
+          { word: '舒服', translation: 'To be comfortable', pronunciation: 'shūfu', romanji: 'Shūfu' }
+        ]
+      },
+      {
+        id: 25,
+        title: 'Clothing & Fashion',
+        premium: true,
+        words: [
+          { word: '衬衫', translation: 'Shirt', pronunciation: 'chènshān', romanji: 'Chènshān' },
+          { word: '裤子', translation: 'Pants', pronunciation: 'kùzi', romanji: 'Kùzi' },
+          { word: '连衣裙', translation: 'Dress', pronunciation: 'liányīqún', romanji: 'Liányīqún' },
+          { word: '鞋子', translation: 'Shoes', pronunciation: 'xiézi', romanji: 'Xiézi' },
+          { word: '袜子', translation: 'Socks', pronunciation: 'wàzi', romanji: 'Wàzi' },
+          { word: '夹克', translation: 'Jacket', pronunciation: 'jiákè', romanji: 'Jiákè' },
+          { word: '外套', translation: 'Coat', pronunciation: 'wàitào', romanji: 'Wàitào' },
+          { word: '帽子', translation: 'Hat', pronunciation: 'màozi', romanji: 'Màozi' },
+          { word: '腰带', translation: 'Belt', pronunciation: 'yāodài', romanji: 'Yāodài' },
+          { word: '包', translation: 'Bag', pronunciation: 'bāo', romanji: 'Bāo' },
+          { word: '眼镜', translation: 'Glasses', pronunciation: 'yǎnjìng', romanji: 'Yǎnjìng' },
+          { word: '手表', translation: 'Watch', pronunciation: 'shǒubiǎo', romanji: 'Shǒubiǎo' },
+          { word: '穿', translation: 'To wear', pronunciation: 'chuān', romanji: 'Chuān' },
+          { word: '试穿', translation: 'To try on', pronunciation: 'shìchuān', romanji: 'Shìchuān' },
+          { word: '合身', translation: 'To fit/look good', pronunciation: 'héshēn', romanji: 'Héshēn' },
+          { word: '脱', translation: 'To take off', pronunciation: 'tuō', romanji: 'Tuō' },
+          { word: '穿', translation: 'To put on', pronunciation: 'chuān', romanji: 'Chuān' }
+        ],
+        phrases: [
+          { word: '你穿什么尺码?', translation: 'What size do you wear?', pronunciation: 'nǐ chuān shénme chǐmǎ', romanji: 'Nǐ chuān shénme chǐmǎ?' },
+          { word: '多少钱?', translation: 'How much does it cost?', pronunciation: 'duōshǎo qián', romanji: 'Duōshǎo qián?' },
+          { word: '这个有[颜色]的吗?', translation: 'Do you have this in [color]?', pronunciation: 'zhège yǒu [yánsè] de ma', romanji: 'Zhège yǒu [yánsè] de ma?' },
+          { word: '我可以试穿吗?', translation: 'Can I try this on?', pronunciation: 'wǒ kěyǐ shìchuān ma', romanji: 'Wǒ kěyǐ shìchuān ma?' },
+          { word: '你穿起来很好看', translation: 'It looks great on you', pronunciation: 'nǐ chuān qǐlái hěn hǎokàn', romanji: 'Nǐ chuān qǐlái hěn hǎokàn' },
+          { word: '试衣间在哪里?', translation: 'Where are the fitting rooms?', pronunciation: 'shìyījiān zài nǎlǐ', romanji: 'Shìyījiān zài nǎlǐ?' }
+        ],
+        culturalNotes: 'China is a major fashion manufacturing hub and has a growing fashion industry. Chinese fashion emphasizes quality and value. Shopping at markets (市场) and malls (商场) is popular. Chinese brands are becoming more recognized globally. Fashion is important for social occasions. Street fashion in cities like Shanghai and Beijing is trendy. Size systems use Chinese measurements. Fashion is seen as important for social presentation. Chinese people dress appropriately for the occasion. The concept of "时尚" (fashion/style) is important. Online shopping (网购) is very popular in China.',
+        streetSlang: [
+          { word: '很时尚', translation: 'To be fashionable/in style', pronunciation: 'hěn shíshàng', romanji: 'Hěn shíshàng' },
+          { word: '有风格', translation: 'To have style', pronunciation: 'yǒu fēnggé', romanji: 'Yǒu fēnggé' },
+          { word: '衣服', translation: 'Clothes (casual)', pronunciation: 'yīfu', romanji: 'Yīfu' },
+          { word: '很潮', translation: 'To be stylish/trendy', pronunciation: 'hěn cháo', romanji: 'Hěn cháo' },
+          { word: '购物', translation: 'To go shopping', pronunciation: 'gòuwù', romanji: 'Gòuwù' },
+          { word: '超好看', translation: 'It looks amazing', pronunciation: 'chāo hǎokàn', romanji: 'Chāo hǎokàn' }
+        ]
+      },
+      {
+        id: 26,
+        title: 'Dance & Movement',
+        premium: true,
+        danceStyles: [
+          { name: '舞龙', pronunciation: 'wǔ lóng', context: 'Dragon dance, seen at Chinese New Year and festivals', type: 'Traditional', romanji: 'Wǔ lóng' },
+          { name: '广场舞', pronunciation: 'guǎngchǎng wǔ', context: 'Square dancing, very popular in public squares', type: 'Traditional/Modern', romanji: 'Guǎngchǎng wǔ' },
+          { name: '民族舞', pronunciation: 'mínzú wǔ', context: 'Traditional folk dance, seen at cultural events', type: 'Traditional', romanji: 'Mínzú wǔ' },
+          { name: '俱乐部舞蹈', pronunciation: 'jùlèbù wǔdǎo', context: 'Club dancing, popular in urban nightlife', type: 'Modern', romanji: 'Jùlèbù wǔdǎo' },
+          { name: '街舞', pronunciation: 'jiē wǔ', context: 'Hip hop/street dance, very popular among youth', type: 'Modern', romanji: 'Jiē wǔ' }
+        ],
+        words: [
+          { word: '跳舞', translation: 'To dance', pronunciation: 'tiào wǔ', romanji: 'Tiào wǔ' },
+          { word: '舞者', translation: 'Dancer', pronunciation: 'wǔ zhě', romanji: 'Wǔ zhě' },
+          { word: '音乐', translation: 'Music', pronunciation: 'yīnyuè', romanji: 'Yīnyuè' },
+          { word: '节奏', translation: 'Rhythm', pronunciation: 'jiézòu', romanji: 'Jiézòu' },
+          { word: '舞池', translation: 'Dance floor', pronunciation: 'wǔ chí', romanji: 'Wǔ chí' },
+          { word: '舞伴', translation: 'Dance partner', pronunciation: 'wǔ bàn', romanji: 'Wǔ bàn' },
+          { word: '快/慢', translation: 'Fast/Slow', pronunciation: 'kuài / màn', romanji: 'Kuài / Màn' },
+          { word: '转', translation: 'To spin/turn', pronunciation: 'zhuàn', romanji: 'Zhuàn' },
+          { word: '动身体', translation: 'Move your body', pronunciation: 'dòng shēntǐ', romanji: 'Dòng shēntǐ' }
+        ],
+        phrases: [
+          { word: '你想跳舞吗?', translation: 'Do you want to dance?', pronunciation: 'nǐ xiǎng tiào wǔ ma', romanji: 'Nǐ xiǎng tiào wǔ ma?' },
+          { word: '你跳得真好!', translation: 'You\'re a great dancer!', pronunciation: 'nǐ tiào dé zhēn hǎo', romanji: 'Nǐ tiào dé zhēn hǎo!' },
+          { word: '我不会跳舞', translation: 'I don\'t know how to dance', pronunciation: 'wǒ bù huì tiào wǔ', romanji: 'Wǒ bù huì tiào wǔ' },
+          { word: '教我这个舞蹈', translation: 'Teach me this dance', pronunciation: 'jiāo wǒ zhège wǔdǎo', romanji: 'Jiāo wǒ zhège wǔdǎo' },
+          { word: '我们去舞池吧', translation: 'Let\'s go to the dance floor', pronunciation: 'wǒmen qù wǔ chí ba', romanji: 'Wǒmen qù wǔ chí ba' },
+          { word: '这是什么歌?', translation: 'What song is this?', pronunciation: 'zhè shì shénme gē', romanji: 'Zhè shì shénme gē?' }
+        ],
+        culturalNotes: 'Dance in Chinese culture spans from ancient traditions to modern expressions. 舞龙 (Dragon dance) is iconic, performed during Chinese New Year and festivals with elaborate dragon costumes. 广场舞 (Square dancing) is extremely popular among middle-aged and elderly people, performed in public squares and parks every morning and evening. Traditional folk dances showcase regional diversity. Modern dance culture includes hip hop (街舞) which is very popular among young people, and club dancing in major cities. People dance at festivals (节日), weddings (婚礼), public squares (广场), and clubs (俱乐部). Dance etiquette emphasizes group harmony - square dancing is a social activity that builds community. Modern Chinese dance culture blends traditional elements with international trends, especially in cities like Beijing, Shanghai, and Shenzhen.',
+        streetSlang: [
+          { word: '跳舞大神', translation: 'Dance god (dances amazingly)', pronunciation: 'tiào wǔ dàshén', romanji: 'Tiào wǔ dàshén' },
+          { word: '不会跳舞', translation: 'Can\'t dance (playful)', pronunciation: 'bù huì tiào wǔ', romanji: 'Bù huì tiào wǔ' },
+          { word: '去俱乐部', translation: 'Let\'s go to the club', pronunciation: 'qù jùlèbù', romanji: 'Qù jùlèbù' },
+          { word: '去嗨吧!', translation: 'Let\'s party!', pronunciation: 'qù hāi ba', romanji: 'Qù hāi ba!' },
+          { word: '气氛很好', translation: 'Good vibes/atmosphere (party energy)', pronunciation: 'qìfēn hěn hǎo', romanji: 'Qìfēn hěn hǎo' },
+          { word: '炸场', translation: 'To tear up the dance floor', pronunciation: 'zhà chǎng', romanji: 'Zhà chǎng' }
+        ]
+      }{ word: '解决方案', translation: 'Solution', pronunciation: 'jiě jué fāng àn', romanji: 'Jiějué fāng\'àn' },
           { word: '帮助', translation: 'Help', pronunciation: 'bāng zhù', romanji: 'Bāngzhù' },
           { word: '需要', translation: 'I need', pronunciation: 'xū yào', romanji: 'Xūyào' },
           { word: '可以', translation: 'I can', pronunciation: 'kě yǐ', romanji: 'Kěyǐ' }
@@ -3172,7 +4720,229 @@ export const languages = {
         premium: true,
         words: [
           { word: 'Проблема', translation: 'Problem', pronunciation: 'prah-BLEH-mah' },
-          { word: 'Решение', translation: 'Solution', pronunciation: 'reh-SHEH-nee-yeh' },
+          ,
+      {
+        id: 21,
+        title: 'Song Lesson: В лесу родилась ёлочка (A Christmas Tree Was Born in the Forest)',
+        premium: true,
+        songInfo: {
+          name: 'В лесу родилась ёлочка',
+          englishName: 'A Christmas Tree Was Born in the Forest',
+          type: 'Children\'s Song',
+          culturalSignificance: 'Russia\'s most beloved New Year and Christmas song, sung by generations. This song is central to Russian winter celebrations and represents family, tradition, and the magic of the holiday season. Every Russian child knows this song.'
+        },
+        lyrics: [
+          { original: 'В лесу родилась ёлочка', translation: 'A Christmas tree was born in the forest', pronunciation: 'v leh-SOO ra-DEEL-as YO-loch-ka' },
+          { original: 'В лесу она росла', translation: 'In the forest it grew', pronunciation: 'v leh-SOO ah-NA ras-LAH' },
+          { original: 'Зимой и летом стройная', translation: 'In winter and summer, slender', pronunciation: 'zee-MOY ee LYE-tom STROY-na-ya' },
+          { original: 'Зелёная была', translation: 'It was green', pronunciation: 'zeh-LYO-na-ya bi-LAH' },
+          { original: 'Метель ей пела песенку', translation: 'The blizzard sang it a song', pronunciation: 'meh-TYEL yey PEH-la PEH-sen-koo' },
+          { original: 'Спи, ёлочка, бай-бай', translation: 'Sleep, little tree, bye-bye', pronunciation: 'spee YO-loch-ka bay-bay' },
+          { original: 'Мороз снежком укутывал', translation: 'Frost wrapped it with snow', pronunciation: 'mah-ROZ snyezh-KOM oo-KOO-ti-val' },
+          { original: 'Смотри, не замерзай', translation: 'Look, don\'t freeze', pronunciation: 'sma-TREE neh zah-mer-ZAY' }
+        ],
+        culturalNotes: 'This is the quintessential Russian New Year song, sung at every family celebration, school concert, and public gathering during the winter holidays. The song represents Russian winter culture, family traditions, and the magic of the New Year celebration. It\'s often the first song Russian children learn and holds deep emotional significance for Russians of all ages.',
+        words: [
+          { word: 'Лес', translation: 'Forest', pronunciation: 'lyes', example: 'В лесу родилась' },
+          { word: 'Родилась', translation: 'Was born', pronunciation: 'ra-DEEL-as', example: 'В лесу родилась ёлочка' },
+          { word: 'Ёлочка', translation: 'Little Christmas tree', pronunciation: 'YO-loch-ka', example: 'В лесу родилась ёлочка' },
+          { word: 'Росла', translation: 'Grew', pronunciation: 'ras-LAH', example: 'В лесу она росла' },
+          { word: 'Зимой', translation: 'In winter', pronunciation: 'zee-MOY', example: 'Зимой и летом' },
+          { word: 'Летом', translation: 'In summer', pronunciation: 'LYE-tom', example: 'Зимой и летом' },
+          { word: 'Стройная', translation: 'Slender', pronunciation: 'STROY-na-ya', example: 'Зимой и летом стройная' },
+          { word: 'Зелёная', translation: 'Green', pronunciation: 'zeh-LYO-na-ya', example: 'Зелёная была' },
+          { word: 'Метель', translation: 'Blizzard', pronunciation: 'meh-TYEL', example: 'Метель ей пела песенку' },
+          { word: 'Мороз', translation: 'Frost', pronunciation: 'mah-ROZ', example: 'Мороз снежком укутывал' }
+        ],
+        streetSlang: [
+          { word: 'Эта песня крутая', translation: 'This song is cool', pronunciation: 'EH-ta PYES-nya kroo-TA-ya' },
+          { word: 'Обожаю эту песню', translation: 'I love this song', pronunciation: 'ah-bah-ZHA-yu EH-too PYES-nyu' },
+          { word: 'Она затягивает', translation: 'It\'s catchy/addictive', pronunciation: 'ah-NA zah-tya-GI-va-yet' },
+          { word: 'Петь во весь голос', translation: 'To sing at the top of your lungs', pronunciation: 'pyet voh ves GOH-los' },
+          { word: 'У неё хороший ритм', translation: 'It has good rhythm', pronunciation: 'oo neh-YO hah-RO-shiy reetm' },
+          { word: 'Знаю наизусть', translation: 'I know it by heart', pronunciation: 'ZNA-yu nah-ee-ZOOST' }
+        ]
+      },
+      {
+        id: 22,
+        title: 'Proverbs & Sayings',
+        premium: true,
+        proverbs: [
+          { original: 'Лучше поздно, чем никогда', literalTranslation: 'Better late than never', meaning: 'It\'s better to do something late than not at all', context: 'When someone finally does something', slangEquivalent: 'Лучше поздно' },
+          { original: 'Не откладывай на завтра то, что можно сделать сегодня', literalTranslation: 'Don\'t put off until tomorrow what you can do today', meaning: 'Don\'t procrastinate', context: 'Encouraging immediate action', slangEquivalent: 'Делай сейчас' },
+          { original: 'Кто рано встаёт, тому Бог подаёт', literalTranslation: 'God gives to those who rise early', meaning: 'The early bird catches the worm', context: 'Encouraging early action', slangEquivalent: 'Вставай рано' },
+          { original: 'Кто не рискует, тот не пьёт шампанского', literalTranslation: 'Who doesn\'t risk, doesn\'t drink champagne', meaning: 'Nothing ventured, nothing gained', context: 'Encouraging risk-taking', slangEquivalent: 'Рискуй' },
+          { original: 'Всё хорошо, что хорошо кончается', literalTranslation: 'All is well that ends well', meaning: 'The end justifies the means', context: 'When something ends well', slangEquivalent: 'Главное - результат' },
+          { original: 'Повторение - мать учения', literalTranslation: 'Repetition is the mother of learning', meaning: 'Practice makes perfect', context: 'Encouraging practice', slangEquivalent: 'Повторяй больше' },
+          { original: 'Тише едешь - дальше будешь', literalTranslation: 'Drive slower - you\'ll go farther', meaning: 'Slow and steady wins the race', context: 'Encouraging patience', slangEquivalent: 'Не спеши' },
+          { original: 'Дорога в тысячу вёрст начинается с одного шага', literalTranslation: 'A journey of a thousand versts begins with one step', meaning: 'Every journey begins with a single step', context: 'Encouraging to start', slangEquivalent: 'Шаг за шагом' }
+        ],
+        streetSlang: [
+          { word: 'Круто', translation: 'Cool/awesome', pronunciation: 'KROO-toh' },
+          { word: 'Классно', translation: 'Classy/awesome', pronunciation: 'KLAS-sno' },
+          { word: 'Офигенно', translation: 'Amazing/awesome (slang)', pronunciation: 'ah-fee-GYEN-no' },
+          { word: 'Шикарно', translation: 'Gorgeous/amazing', pronunciation: 'shee-KAR-no' },
+          { word: 'Супер', translation: 'Super', pronunciation: 'SOO-per' },
+          { word: 'Отлично', translation: 'Excellent', pronunciation: 'at-LEECH-no' }
+        ]
+      },
+      {
+        id: 23,
+        title: 'Texting & Internet Slang',
+        premium: true,
+        abbreviations: [
+          { abbreviation: 'спс', fullForm: 'спасибо', englishEquivalent: 'thanks', usage: 'Anyone, casual', platform: 'VK, WhatsApp, Telegram' },
+          { abbreviation: 'пж', fullForm: 'пожалуйста', englishEquivalent: 'please', usage: 'Anyone, casual', platform: 'VK, WhatsApp, Telegram' },
+          { abbreviation: 'ок', fullForm: 'окей', englishEquivalent: 'okay', usage: 'Anyone, very common', platform: 'All platforms' },
+          { abbreviation: 'нзч', fullForm: 'не за что', englishEquivalent: 'you\'re welcome', usage: 'Anyone, casual', platform: 'VK, WhatsApp, Telegram' },
+          { abbreviation: 'мб', fullForm: 'может быть', englishEquivalent: 'maybe', usage: 'Anyone, casual', platform: 'VK, WhatsApp, Telegram' },
+          { abbreviation: 'хз', fullForm: 'хрен знает', englishEquivalent: 'no idea', usage: 'Friends only, casual', platform: 'VK, WhatsApp, Telegram' },
+          { abbreviation: 'имхо', fullForm: 'по моему скромному мнению', englishEquivalent: 'in my humble opinion', usage: 'Anyone, casual', platform: 'VK, forums' },
+          { abbreviation: 'лол', fullForm: 'laughing out loud', englishEquivalent: 'laughing', usage: 'Anyone, very common', platform: 'All platforms' },
+          { abbreviation: 'сп', fullForm: 'спокойной ночи', englishEquivalent: 'good night', usage: 'Anyone, casual', platform: 'VK, WhatsApp, Telegram' },
+          { abbreviation: 'всм', fullForm: 'в смысле', englishEquivalent: 'what do you mean', usage: 'Anyone, casual', platform: 'VK, WhatsApp, Telegram' }
+        ],
+        emojiMeanings: [
+          { emoji: '👍', meaning: 'Okay/approval', culturalContext: 'Very common, universal' },
+          { emoji: '😊', meaning: 'Happy/smiling', culturalContext: 'Friendly, common' },
+          { emoji: '❤️', meaning: 'Love', culturalContext: 'Used with friends and family' },
+          { emoji: '🔥', meaning: 'Fire/amazing', culturalContext: 'Something is really good' },
+          { emoji: '💪', meaning: 'Strength/good luck', culturalContext: 'Encouragement' }
+        ],
+        internetSlang: [
+          { word: 'LOL', translation: 'Laughing out loud', pronunciation: 'el-oh-el', usage: 'Anyone, very common' },
+          { word: 'OMG', translation: 'Oh my God', pronunciation: 'oh-em-gee', usage: 'Anyone, casual' },
+          { word: 'WTF', translation: 'What the f***', pronunciation: 'double-u-tee-ef', usage: 'Friends only, very casual' },
+          { word: 'BTW', translation: 'By the way', pronunciation: 'bee-tee-double-u', usage: 'Anyone, casual' },
+          { word: 'IDK', translation: 'I don\'t know', pronunciation: 'eye-dee-kay', usage: 'Anyone, casual' },
+          { word: 'TBH', translation: 'To be honest', pronunciation: 'tee-bee-aitch', usage: 'Anyone, casual' }
+        ]
+      },
+      {
+        id: 24,
+        title: 'House & Home',
+        premium: true,
+        words: [
+          { word: 'Спальня', translation: 'Bedroom', pronunciation: 'SPAL-nya' },
+          { word: 'Ванная', translation: 'Bathroom', pronunciation: 'VAN-na-ya' },
+          { word: 'Кухня', translation: 'Kitchen', pronunciation: 'KOOKH-nya' },
+          { word: 'Гостиная', translation: 'Living room', pronunciation: 'gas-TEE-na-ya' },
+          { word: 'Столовая', translation: 'Dining room', pronunciation: 'sta-LO-va-ya' },
+          { word: 'Кровать', translation: 'Bed', pronunciation: 'kra-VAT' },
+          { word: 'Стол', translation: 'Table', pronunciation: 'stol' },
+          { word: 'Стул', translation: 'Chair', pronunciation: 'stool' },
+          { word: 'Диван', translation: 'Sofa', pronunciation: 'dee-VAN' },
+          { word: 'Лампа', translation: 'Lamp', pronunciation: 'LAM-pah' },
+          { word: 'Холодильник', translation: 'Refrigerator', pronunciation: 'ha-la-DEEL-neek' },
+          { word: 'Плита', translation: 'Stove', pronunciation: 'plee-TAH' },
+          { word: 'Телевизор', translation: 'TV', pronunciation: 'teh-leh-VEE-zor' },
+          { word: 'Стиральная машина', translation: 'Washing machine', pronunciation: 'stee-RAL-na-ya ma-SHEE-na' },
+          { word: 'Микроволновка', translation: 'Microwave', pronunciation: 'mee-kro-vol-NOV-ka' },
+          { word: 'Убирать', translation: 'To clean', pronunciation: 'oo-bee-RAT' },
+          { word: 'Готовить', translation: 'To cook', pronunciation: 'ga-TO-veet' },
+          { word: 'Спать', translation: 'To sleep', pronunciation: 'spat' },
+          { word: 'Расслабляться', translation: 'To relax', pronunciation: 'ras-lab-LYA-tsa' },
+          { word: 'Смотреть телевизор', translation: 'To watch TV', pronunciation: 'sma-TRET teh-leh-VEE-zor' }
+        ],
+        phrases: [
+          { word: 'Где ванная?', translation: 'Where is the bathroom?', pronunciation: 'gde VAN-na-ya' },
+          { word: 'Чувствуй себя как дома', translation: 'Make yourself at home', pronunciation: 'CHOOV-stvuy se-BYA kak DO-ma' },
+          { word: 'Это моя комната', translation: 'This is my room', pronunciation: 'EH-to ma-YA KOM-na-ta' },
+          { word: 'Я буду готовить', translation: 'I\'m going to cook', pronunciation: 'ya BOO-doo ga-TO-veet' },
+          { word: 'Мне нужно убрать', translation: 'I need to clean', pronunciation: 'mne NOOZH-no oo-bee-RAT' },
+          { word: 'Можно использовать кухню?', translation: 'Can I use the kitchen?', pronunciation: 'MOZH-no is-POL-zo-vat KOOKH-nyu' }
+        ],
+        culturalNotes: 'Russian homes (дом) vary from Soviet-era apartments to modern houses. Many Russians live in apartments (квартиры) in cities. The living room (гостиная) is the social center. Kitchens are important for Russian cuisine and family gatherings. Bathrooms may be separate from toilets. Many homes have balconies (балконы). Home life emphasizes family time and hospitality. It\'s very common to remove shoes when entering homes - this is essential Russian etiquette. Russian homes often feature practical design and efficient use of space. The concept of "дом" (home) is deeply important in Russian culture. Modern Russian homes blend traditional elements with contemporary design.',
+        streetSlang: [
+          { word: 'У меня', translation: 'At my place', pronunciation: 'oo me-NYA' },
+          { word: 'Отдыхать дома', translation: 'To chill/relax at home', pronunciation: 'at-dy-KHAT DO-ma' },
+          { word: 'Быть дома', translation: 'To be at home', pronunciation: 'bit DO-ma' },
+          { word: 'Оставаться дома', translation: 'To stay home', pronunciation: 'as-ta-VA-tsa DO-ma' },
+          { word: 'Квартира', translation: 'Apartment/place (casual)', pronunciation: 'kvar-TEE-ra' },
+          { word: 'Быть комфортно', translation: 'To be comfortable', pronunciation: 'bit kom-FORT-no' }
+        ]
+      },
+      {
+        id: 25,
+        title: 'Clothing & Fashion',
+        premium: true,
+        words: [
+          { word: 'Рубашка', translation: 'Shirt', pronunciation: 'roo-BASH-ka' },
+          { word: 'Брюки', translation: 'Pants', pronunciation: 'BRYU-ki' },
+          { word: 'Платье', translation: 'Dress', pronunciation: 'PLAT-ye' },
+          { word: 'Обувь', translation: 'Shoes', pronunciation: 'O-buv' },
+          { word: 'Носки', translation: 'Socks', pronunciation: 'nos-KEE' },
+          { word: 'Куртка', translation: 'Jacket', pronunciation: 'KOORT-ka' },
+          { word: 'Пальто', translation: 'Coat', pronunciation: 'pal-TO' },
+          { word: 'Шляпа', translation: 'Hat', pronunciation: 'SHLYA-pa' },
+          { word: 'Ремень', translation: 'Belt', pronunciation: 'RYE-men' },
+          { word: 'Сумка', translation: 'Bag', pronunciation: 'SOOM-ka' },
+          { word: 'Очки', translation: 'Glasses', pronunciation: 'och-KEE' },
+          { word: 'Часы', translation: 'Watch', pronunciation: 'cha-SY' },
+          { word: 'Носить', translation: 'To wear', pronunciation: 'na-SEET' },
+          { word: 'Примерять', translation: 'To try on', pronunciation: 'pree-me-RYAT' },
+          { word: 'Подходить', translation: 'To fit/look good', pronunciation: 'pad-ha-DEET' },
+          { word: 'Снимать', translation: 'To take off', pronunciation: 'snee-MAT' },
+          { word: 'Надевать', translation: 'To put on', pronunciation: 'na-de-VAT' }
+        ],
+        phrases: [
+          { word: 'Какой размер вы носите?', translation: 'What size do you wear?', pronunciation: 'ka-KOY raz-MYER vi na-SEE-te' },
+          { word: 'Сколько это стоит?', translation: 'How much does it cost?', pronunciation: 'SKOL-ko EH-to STO-eet' },
+          { word: 'Есть это в [цвете]?', translation: 'Do you have this in [color]?', pronunciation: 'yest EH-to v [TSVE-te]' },
+          { word: 'Можно примерить?', translation: 'Can I try this on?', pronunciation: 'MOZH-no pree-me-REET' },
+          { word: 'Вам очень идёт', translation: 'It looks great on you', pronunciation: 'vam O-chen ee-DYOT' },
+          { word: 'Где примерочная?', translation: 'Where are the fitting rooms?', pronunciation: 'gde pree-me-ROCH-na-ya' }
+        ],
+        culturalNotes: 'Russian fashion emphasizes practicality and quality. Russian brands are less known globally but quality is valued. Shopping at markets (рынки) and malls (торговые центры) is popular. Fashion is important for social occasions. Street fashion in cities like Moscow and St. Petersburg is stylish. Russians invest in quality pieces, especially outerwear for harsh winters. Size systems use European/Russian measurements. Fashion is seen as important for social presentation. Russian people dress appropriately for the occasion and weather. The concept of "стиль" (style) is important. Winter fashion is particularly important due to the climate.',
+        streetSlang: [
+          { word: 'Быть в моде', translation: 'To be fashionable/in style', pronunciation: 'bit v MO-de' },
+          { word: 'Иметь стиль', translation: 'To have style', pronunciation: 'ee-MET steel' },
+          { word: 'Одежда', translation: 'Clothes (casual)', pronunciation: 'a-DYEZH-da' },
+          { word: 'Стильный', translation: 'To be stylish', pronunciation: 'STEEL-niy' },
+          { word: 'Ходить по магазинам', translation: 'To go shopping', pronunciation: 'ha-DEET po ma-ga-ZEE-nam' },
+          { word: 'Выглядит отлично', translation: 'It looks amazing', pronunciation: 'vi-GLYA-deet at-LEECH-no' }
+        ]
+      },
+      {
+        id: 26,
+        title: 'Dance & Movement',
+        premium: true,
+        danceStyles: [
+          { name: 'Казачок', pronunciation: 'kah-zah-CHOK', context: 'Traditional Cossack dance, seen at cultural events and festivals', type: 'Traditional' },
+          { name: 'Балет', pronunciation: 'bah-LYET', context: 'Ballet, world-famous Russian art form', type: 'Traditional' },
+          { name: 'Русский народный танец', pronunciation: 'ROOS-skee nah-ROD-nyy tah-NETS', context: 'Russian folk dance, seen at celebrations', type: 'Traditional' },
+          { name: 'Клубные танцы', pronunciation: 'kloob-nye TAHN-tsy', context: 'Club dancing, popular in Moscow and St. Petersburg nightlife', type: 'Modern' },
+          { name: 'Электронная музыка', pronunciation: 'el-ek-TROH-nah-yah MOO-zee-kah', context: 'EDM scene, very popular in clubs', type: 'Modern' }
+        ],
+        words: [
+          { word: 'Танцевать', translation: 'To dance', pronunciation: 'tahn-tseh-VAHT' },
+          { word: 'Танцор/Танцовщица', translation: 'Dancer', pronunciation: 'tahn-TSOR / tahn-TSOV-shchee-tsah' },
+          { word: 'Музыка', translation: 'Music', pronunciation: 'MOO-zee-kah' },
+          { word: 'Ритм', translation: 'Rhythm', pronunciation: 'reetm' },
+          { word: 'Танцпол', translation: 'Dance floor', pronunciation: 'tahn-TS-pohl' },
+          { word: 'Партнёр по танцам', translation: 'Dance partner', pronunciation: 'part-NYOR poh TAHN-tsam' },
+          { word: 'Быстро/Медленно', translation: 'Fast/Slow', pronunciation: 'BYST-roh / MED-len-noh' },
+          { word: 'Крутиться', translation: 'To spin/turn', pronunciation: 'kroo-TEET-syah' },
+          { word: 'Двигать телом', translation: 'Move your body', pronunciation: 'dvee-GAHT TYEH-lom' }
+        ],
+        phrases: [
+          { word: 'Хочешь потанцевать?', translation: 'Do you want to dance?', pronunciation: 'HO-chesh poh-tahn-tseh-VAHT' },
+          { word: 'Ты отлично танцуешь!', translation: 'You\'re a great dancer!', pronunciation: 'ty at-LEECH-no tahn-TSOO-yesh' },
+          { word: 'Я не умею танцевать', translation: 'I don\'t know how to dance', pronunciation: 'ya ne oo-MEH-yoo tahn-tseh-VAHT' },
+          { word: 'Научи меня этому танцу', translation: 'Teach me this dance', pronunciation: 'nah-oo-CHEE meh-NYAH EH-toh-moo TAHN-tsoo' },
+          { word: 'Пойдём на танцпол', translation: 'Let\'s go to the dance floor', pronunciation: 'poy-DYOM nah tahn-TS-pohl' },
+          { word: 'Какая это песня?', translation: 'What song is this?', pronunciation: 'kah-KAH-yah EH-tah PYES-nyah' }
+        ],
+        culturalNotes: 'Dance in Russian culture ranges from world-renowned ballet to energetic folk traditions. Балет (Ballet) is a source of national pride, with companies like the Bolshoi and Mariinsky being world-famous. Казачок (Kazachok) is a lively Cossack dance performed at festivals and celebrations. Russian folk dances showcase regional diversity and are often performed at weddings and cultural events. Modern club culture is vibrant in cities like Moscow and St. Petersburg, with a strong EDM scene. People dance at weddings (свадьбы), New Year celebrations (Новый год), clubs (клубы), and festivals (фестивали). Dance etiquette varies: formal and elegant for ballet, energetic and expressive for folk dances, and free-form for club culture. Modern Russian dance culture blends traditional elements with international trends, creating a dynamic nightlife scene.',
+        streetSlang: [
+          { word: 'Танцует как бог', translation: 'Dances like a god (dances amazingly)', pronunciation: 'tahn-TSOO-yet kahk bohg' },
+          { word: 'Две левые ноги', translation: 'Two left feet (can\'t dance)', pronunciation: 'dveh LEH-vye noh-GEE' },
+          { word: 'Отрываться', translation: 'To go off/party hard (club slang)', pronunciation: 'at-ry-VAHT-syah' },
+          { word: 'Давай веселиться!', translation: 'Let\'s party!', pronunciation: 'dah-VAY veh-seh-LEET-syah' },
+          { word: 'Огонь', translation: 'Fire/lit (party energy)', pronunciation: 'oh-GOHN' },
+          { word: 'Разрывать танцпол', translation: 'To tear up the dance floor', pronunciation: 'raz-ry-VAHT tahn-TS-pohl' }
+        ]
+      }{ word: 'Решение', translation: 'Solution', pronunciation: 'reh-SHEH-nee-yeh' },
           { word: 'Помощь', translation: 'Help', pronunciation: 'pah-MOHSH' },
           { word: 'Мне нужно', translation: 'I need', pronunciation: 'mne NOOZH-no' },
           { word: 'Я могу', translation: 'I can', pronunciation: 'ya mah-GOO' }
