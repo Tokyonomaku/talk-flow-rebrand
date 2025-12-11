@@ -382,7 +382,20 @@ export const languages = {
         premium: true,
         words: [
           { word: 'Problema', translation: 'Problem', pronunciation: 'proh-BLEH-mah' },
-          ,
+          { word: 'Solución', translation: 'Solution', pronunciation: 'soh-loo-SYOHN' },
+          { word: 'Ayuda', translation: 'Help', pronunciation: 'ah-YOO-dah' },
+          { word: 'Necesito', translation: 'I need', pronunciation: 'neh-seh-SEE-toh' },
+          { word: 'Puedo', translation: 'I can', pronunciation: 'PWEH-doh' }
+        ],
+        streetSlang: [
+          { word: 'Tener un problema', translation: 'To have a problem', pronunciation: 'teh-NEHR oon proh-BLEH-mah' },
+          { word: 'Buscar una solución', translation: 'To look for a solution', pronunciation: 'boos-KAHR OO-nah soh-loo-SYOHN' },
+          { word: 'Necesitar ayuda', translation: 'To need help', pronunciation: 'neh-seh-see-TAHR ah-YOO-dah' },
+          { word: 'Puedo ayudar', translation: 'I can help', pronunciation: 'PWEH-doh ah-yoo-DAHR' },
+          { word: 'Resolver un problema', translation: 'To solve a problem', pronunciation: 'reh-sohl-VEHR oon proh-BLEH-mah' },
+          { word: 'Encontrar una solución', translation: 'To find a solution', pronunciation: 'en-kohn-TRAHR OO-nah soh-loo-SYOHN' }
+        ]
+      },
       {
         id: 21,
         title: 'Song Lesson: Los Pollitos Dicen (The Little Chicks Say)',
@@ -603,19 +616,6 @@ export const languages = {
           { word: '¡Vamos a rumbear!', translation: 'Let\'s party/dance!', pronunciation: 'VAH-mohs ah room-beh-AHR' },
           { word: 'Está prendido', translation: 'It\'s lit/hot (party energy)', pronunciation: 'es-TAH pren-DEE-doh' },
           { word: 'Romper la pista', translation: 'To tear up the dance floor', pronunciation: 'rohm-PEHR lah PEES-tah' }
-        ]
-      }{ word: 'Solución', translation: 'Solution', pronunciation: 'soh-loo-SYOHN' },
-          { word: 'Ayuda', translation: 'Help', pronunciation: 'ah-YOO-dah' },
-          { word: 'Necesito', translation: 'I need', pronunciation: 'neh-seh-SEE-toh' },
-          { word: 'Puedo', translation: 'I can', pronunciation: 'PWEH-doh' }
-        ],
-        streetSlang: [
-          { word: 'Tener un problema', translation: 'To have a problem', pronunciation: 'teh-NEHR oon proh-BLEH-mah' },
-          { word: 'Buscar una solución', translation: 'To look for a solution', pronunciation: 'boos-KAHR OO-nah soh-loo-SYOHN' },
-          { word: 'Necesitar ayuda', translation: 'To need help', pronunciation: 'neh-seh-see-TAHR ah-YOO-dah' },
-          { word: 'Puedo ayudar', translation: 'I can help', pronunciation: 'PWEH-doh ah-yoo-DAHR' },
-          { word: 'Resolver un problema', translation: 'To solve a problem', pronunciation: 'reh-sohl-VEHR oon proh-BLEH-mah' },
-          { word: 'Encontrar una solución', translation: 'To find a solution', pronunciation: 'en-kohn-TRAHR OO-nah soh-loo-SYOHN' }
         ]
       }
     ]
@@ -1003,7 +1003,20 @@ export const languages = {
         premium: true,
         words: [
           { word: 'Problème', translation: 'Problem', pronunciation: 'proh-BLEM' },
-          ,
+          { word: 'Solution', translation: 'Solution', pronunciation: 'soh-loo-SYOHN' },
+          { word: 'Aide', translation: 'Help', pronunciation: 'ed' },
+          { word: 'J\'ai besoin', translation: 'I need', pronunciation: 'zhay buh-ZWAN' },
+          { word: 'Je peux', translation: 'I can', pronunciation: 'zhuh puh' }
+        ],
+        streetSlang: [
+          { word: 'Avoir un problème', translation: 'To have a problem', pronunciation: 'ah-VWAHR oon proh-BLEM' },
+          { word: 'Chercher une solution', translation: 'To look for a solution', pronunciation: 'sher-SHAY oon soh-loo-SYOHN' },
+          { word: 'Avoir besoin d\'aide', translation: 'To need help', pronunciation: 'ah-VWAHR buh-ZWAN ded' },
+          { word: 'Je peux aider', translation: 'I can help', pronunciation: 'zhuh puh ay-DAY' },
+          { word: 'Résoudre un problème', translation: 'To solve a problem', pronunciation: 'ray-ZOOD-ruh oon proh-BLEM' },
+          { word: 'Trouver une solution', translation: 'To find a solution', pronunciation: 'troo-VAY oon soh-loo-SYOHN' }
+        ]
+      },
       {
         id: 21,
         title: 'Song Lesson: Frère Jacques (Brother John)',
@@ -1219,19 +1232,6 @@ export const languages = {
           { word: 'On fait la fête!', translation: 'Let\'s party!', pronunciation: 'ohn fay lah FET' },
           { word: 'C\'est chaud', translation: 'It\'s hot/lit (party energy)', pronunciation: 'say shoh' },
           { word: 'Défoncer la piste', translation: 'To tear up the dance floor', pronunciation: 'day-fohn-SAY lah peest' }
-        ]
-      }{ word: 'Solution', translation: 'Solution', pronunciation: 'soh-loo-SYOHN' },
-          { word: 'Aide', translation: 'Help', pronunciation: 'ed' },
-          { word: 'J\'ai besoin', translation: 'I need', pronunciation: 'zhay buh-ZWAN' },
-          { word: 'Je peux', translation: 'I can', pronunciation: 'zhuh puh' }
-        ],
-        streetSlang: [
-          { word: 'Avoir un problème', translation: 'To have a problem', pronunciation: 'ah-VWAHR oon proh-BLEM' },
-          { word: 'Chercher une solution', translation: 'To look for a solution', pronunciation: 'sher-SHAY oon soh-loo-SYOHN' },
-          { word: 'Avoir besoin d\'aide', translation: 'To need help', pronunciation: 'ah-VWAHR buh-ZWAN ded' },
-          { word: 'Je peux aider', translation: 'I can help', pronunciation: 'zhuh puh ay-DAY' },
-          { word: 'Résoudre un problème', translation: 'To solve a problem', pronunciation: 'ray-ZOOD-ruh oon proh-BLEM' },
-          { word: 'Trouver une solution', translation: 'To find a solution', pronunciation: 'troo-VAY oon soh-loo-SYOHN' }
         ]
       }
     ]
@@ -1619,7 +1619,20 @@ export const languages = {
         premium: true,
         words: [
           { word: 'Problem', translation: 'Problem', pronunciation: 'proh-BLEM' },
-          ,
+          { word: 'Lösung', translation: 'Solution', pronunciation: 'LER-zoong' },
+          { word: 'Hilfe', translation: 'Help', pronunciation: 'HIL-feh' },
+          { word: 'Ich brauche', translation: 'I need', pronunciation: 'ikh BROW-kheh' },
+          { word: 'Ich kann', translation: 'I can', pronunciation: 'ikh kahn' }
+        ],
+        streetSlang: [
+          { word: 'Ein Problem haben', translation: 'To have a problem', pronunciation: 'ine proh-BLEM HAH-ben' },
+          { word: 'Nach einer Lösung suchen', translation: 'To look for a solution', pronunciation: 'nahkh I-ner LER-zoong ZOO-khen' },
+          { word: 'Hilfe brauchen', translation: 'To need help', pronunciation: 'HIL-feh BROW-khen' },
+          { word: 'Ich kann helfen', translation: 'I can help', pronunciation: 'ikh kahn HEL-fen' },
+          { word: 'Ein Problem lösen', translation: 'To solve a problem', pronunciation: 'ine proh-BLEM LER-zen' },
+          { word: 'Eine Lösung finden', translation: 'To find a solution', pronunciation: 'I-neh LER-zoong FIN-den' }
+        ]
+      },
       {
         id: 21,
         title: 'Song Lesson: Hänschen klein (Little Hans)',
@@ -1841,7 +1854,13 @@ export const languages = {
           { word: 'Es ist geil', translation: 'It\'s hot/lit (party energy)', pronunciation: 'es ist gile' },
           { word: 'Die Tanzfläche aufreißen', translation: 'To tear up the dance floor', pronunciation: 'dee TAHNTZ-fleh-sheh OWF-rye-sen' }
         ]
-      }{ word: 'Lösung', translation: 'Solution', pronunciation: 'LER-zoong' },
+      },
+      {
+        id: 20,
+        title: 'Problem Solving',
+        premium: true,
+        words: [
+          { word: 'Lösung', translation: 'Solution', pronunciation: 'LER-zoong' },
           { word: 'Hilfe', translation: 'Help', pronunciation: 'HIL-feh' },
           { word: 'Ich brauche', translation: 'I need', pronunciation: 'ikh BROW-kheh' },
           { word: 'Ich kann', translation: 'I can', pronunciation: 'ikh kahn' }
@@ -2240,7 +2259,20 @@ export const languages = {
         premium: true,
         words: [
           { word: '문제', translation: 'Problem', pronunciation: 'mun-je', romanji: 'Munje' },
-          ,
+          { word: '해결책', translation: 'Solution', pronunciation: 'hae-gyeol-chaek', romanji: 'Haegyeolchaek' },
+          { word: '도움', translation: 'Help', pronunciation: 'do-um', romanji: 'Doum' },
+          { word: '필요해', translation: 'I need', pronunciation: 'pil-yo-hae', romanji: 'Pilyohae' },
+          { word: '할 수 있어', translation: 'I can', pronunciation: 'hal su isseo', romanji: 'Hal su isseo' }
+        ],
+        streetSlang: [
+          { word: '문제가 있어', translation: 'To have a problem', pronunciation: 'mun-je-ga isseo', romanji: 'Munjega isseo' },
+          { word: '해결책을 찾다', translation: 'To look for a solution', pronunciation: 'hae-gyeol-chaek-eul chat-da', romanji: 'Haegyeolchaekeul chatda' },
+          { word: '도움이 필요해', translation: 'To need help', pronunciation: 'do-um-i pil-yo-hae', romanji: 'Doumi pilyohae' },
+          { word: '도와줄 수 있어', translation: 'I can help', pronunciation: 'do-wa-jul su isseo', romanji: 'Dowajul su isseo' },
+          { word: '문제를 해결하다', translation: 'To solve a problem', pronunciation: 'mun-je-reul hae-gyeol-ha-da', romanji: 'Munjereul haegyeolhada' },
+          { word: '해결책을 찾다', translation: 'To find a solution', pronunciation: 'hae-gyeol-chaek-eul chat-da', romanji: 'Haegyeolchaekeul chatda' }
+        ]
+      },
       {
         id: 21,
         title: 'Song Lesson: 곰 세 마리 (Three Bears)',
@@ -2463,7 +2495,13 @@ export const languages = {
           { word: '분위기 좋다', translation: 'Good vibes/atmosphere (party energy)', pronunciation: 'bun-wi-gi jo-ta', romanji: 'Bunwigi jota' },
           { word: '플로어 터트리다', translation: 'To tear up the dance floor', pronunciation: 'peu-lo-eo teo-teu-ri-da', romanji: 'Peuloeo teoteurida' }
         ]
-      }{ word: '해결책', translation: 'Solution', pronunciation: 'hae-gyeol-chaek', romanji: 'Haegyeolchaek' },
+      },
+      {
+        id: 20,
+        title: 'Problem Solving',
+        premium: true,
+        words: [
+          { word: '해결책', translation: 'Solution', pronunciation: 'hae-gyeol-chaek', romanji: 'Haegyeolchaek' },
           { word: '도움', translation: 'Help', pronunciation: 'do-um', romanji: 'Doum' },
           { word: '필요해', translation: 'I need', pronunciation: 'pil-yo-hae', romanji: 'Pillyohae' },
           { word: '할 수 있어', translation: 'I can', pronunciation: 'hal su it-eo', romanji: 'Hal su iteo' }
@@ -2862,7 +2900,20 @@ export const languages = {
         premium: true,
         words: [
           { word: 'Problema', translation: 'Problem', pronunciation: 'proh-BLEH-mah' },
-          ,
+          { word: 'Solução', translation: 'Solution', pronunciation: 'soh-loo-SYAOWN' },
+          { word: 'Ajuda', translation: 'Help', pronunciation: 'ah-ZHOO-dah' },
+          { word: 'Preciso', translation: 'I need', pronunciation: 'preh-SEE-zoh' },
+          { word: 'Posso', translation: 'I can', pronunciation: 'POH-soh' }
+        ],
+        streetSlang: [
+          { word: 'Ter um problema', translation: 'To have a problem', pronunciation: 'tehr oon proh-BLEH-mah' },
+          { word: 'Procurar uma solução', translation: 'To look for a solution', pronunciation: 'proh-koo-RAHR OO-mah soh-loo-SYAOWN' },
+          { word: 'Precisar de ajuda', translation: 'To need help', pronunciation: 'preh-see-ZAHR deh ah-ZHOO-dah' },
+          { word: 'Posso ajudar', translation: 'I can help', pronunciation: 'POH-soh ah-zhoo-DAHR' },
+          { word: 'Resolver um problema', translation: 'To solve a problem', pronunciation: 'reh-sohl-VEHR oon proh-BLEH-mah' },
+          { word: 'Encontrar uma solução', translation: 'To find a solution', pronunciation: 'en-kohn-TRAHR OO-mah soh-loo-SYAOWN' }
+        ]
+      },
       {
         id: 21,
         title: 'Song Lesson: A Barata (The Cockroach)',
@@ -3088,7 +3139,13 @@ export const languages = {
           { word: 'Tá pegando fogo', translation: 'It\'s on fire/lit (party energy)', pronunciation: 'tah peh-GAHN-doh FOH-goh' },
           { word: 'Arrasar na pista', translation: 'To tear up the dance floor', pronunciation: 'ah-rah-SAHR nah PEES-tah' }
         ]
-      }{ word: 'Solução', translation: 'Solution', pronunciation: 'soh-loo-SYAOWN' },
+      },
+      {
+        id: 20,
+        title: 'Problem Solving',
+        premium: true,
+        words: [
+          { word: 'Solução', translation: 'Solution', pronunciation: 'soh-loo-SYAOWN' },
           { word: 'Ajuda', translation: 'Help', pronunciation: 'ah-ZHOO-dah' },
           { word: 'Preciso', translation: 'I need', pronunciation: 'preh-SEE-zoh' },
           { word: 'Posso', translation: 'I can', pronunciation: 'POH-soh' }
@@ -3485,7 +3542,20 @@ export const languages = {
         premium: true,
         words: [
           { word: '問題', translation: 'Problem', pronunciation: 'mon-dai', romanji: 'Mondai' },
-          ,
+          { word: '解決策', translation: 'Solution', pronunciation: 'kai-ke-tsu-sa-ku', romanji: 'Kaiketsusaku' },
+          { word: '助け', translation: 'Help', pronunciation: 'ta-su-ke', romanji: 'Tasuke' },
+          { word: '必要', translation: 'I need', pronunciation: 'hi-tsu-yo-u', romanji: 'Hitsuyou' },
+          { word: 'できる', translation: 'I can', pronunciation: 'de-ki-ru', romanji: 'Dekiru' }
+        ],
+        streetSlang: [
+          { word: '問題がある', translation: 'To have a problem', pronunciation: 'mon-dai ga aru', romanji: 'Mondai ga aru' },
+          { word: '解決策を探す', translation: 'To look for a solution', pronunciation: 'kai-ke-tsu-sa-ku wo sa-ga-su', romanji: 'Kaiketsusaku wo sagasu' },
+          { word: '助けが必要', translation: 'To need help', pronunciation: 'ta-su-ke ga hi-tsu-yo-u', romanji: 'Tasuke ga hitsuyou' },
+          { word: '手伝える', translation: 'I can help', pronunciation: 'te-tsu-da-e-ru', romanji: 'Tetsudaeru' },
+          { word: '問題を解決する', translation: 'To solve a problem', pronunciation: 'mon-dai wo kai-ke-tsu su-ru', romanji: 'Mondai wo kaiketsu suru' },
+          { word: '解決策を見つける', translation: 'To find a solution', pronunciation: 'kai-ke-tsu-sa-ku wo mi-tsu-ke-ru', romanji: 'Kaiketsusaku wo mitsukeru' }
+        ]
+      },
       {
         id: 21,
         title: 'Song Lesson: ちょうちょう (Butterfly)',
@@ -3704,7 +3774,13 @@ export const languages = {
           { word: '盛り上がってる', translation: 'It\'s lit/hot (party energy)', pronunciation: 'mori-agat-te-ru', romanji: 'Moriagatteru' },
           { word: 'フロアを壊す', translation: 'To tear up the dance floor', pronunciation: 'fu-ro-a wo kowa-su', romanji: 'Furoa wo kowasu' }
         ]
-      }{ word: '解決策', translation: 'Solution', pronunciation: 'kai-ke-tsu-sa-ku', romanji: 'Kaiketsusaku' },
+      },
+      {
+        id: 20,
+        title: 'Problem Solving',
+        premium: true,
+        words: [
+          { word: '解決策', translation: 'Solution', pronunciation: 'kai-ke-tsu-sa-ku', romanji: 'Kaiketsusaku' },
           { word: '助け', translation: 'Help', pronunciation: 'ta-su-ke', romanji: 'Tasuke' },
           { word: '必要', translation: 'I need', pronunciation: 'hi-tsu-you', romanji: 'Hitsuyou' },
           { word: 'できる', translation: 'I can', pronunciation: 'de-ki-ru', romanji: 'Dekiru' }
@@ -4103,7 +4179,20 @@ export const languages = {
         premium: true,
         words: [
           { word: '问题', translation: 'Problem', pronunciation: 'wèn tí', romanji: 'Wèntí' },
-          ,
+          { word: '解决方案', translation: 'Solution', pronunciation: 'jiě jué fāng àn', romanji: 'Jiějué fāng\'àn' },
+          { word: '帮助', translation: 'Help', pronunciation: 'bāng zhù', romanji: 'Bāngzhù' },
+          { word: '我需要', translation: 'I need', pronunciation: 'wǒ xū yào', romanji: 'Wǒ xūyào' },
+          { word: '我可以', translation: 'I can', pronunciation: 'wǒ kě yǐ', romanji: 'Wǒ kěyǐ' }
+        ],
+        streetSlang: [
+          { word: '有问题', translation: 'To have a problem', pronunciation: 'yǒu wèn tí', romanji: 'Yǒu wèntí' },
+          { word: '找解决方案', translation: 'To look for a solution', pronunciation: 'zhǎo jiě jué fāng àn', romanji: 'Zhǎo jiějué fāng\'àn' },
+          { word: '需要帮助', translation: 'To need help', pronunciation: 'xū yào bāng zhù', romanji: 'Xūyào bāngzhù' },
+          { word: '我可以帮忙', translation: 'I can help', pronunciation: 'wǒ kě yǐ bāng máng', romanji: 'Wǒ kěyǐ bāngmáng' },
+          { word: '解决问题', translation: 'To solve a problem', pronunciation: 'jiě jué wèn tí', romanji: 'Jiějué wèntí' },
+          { word: '找到解决方案', translation: 'To find a solution', pronunciation: 'zhǎo dào jiě jué fāng àn', romanji: 'Zhǎo dào jiějué fāng\'àn' }
+        ]
+      },
       {
         id: 21,
         title: 'Song Lesson: 两只老虎 (Liǎng Zhī Lǎohǔ - Two Tigers)',
@@ -4322,7 +4411,13 @@ export const languages = {
           { word: '气氛很好', translation: 'Good vibes/atmosphere (party energy)', pronunciation: 'qìfēn hěn hǎo', romanji: 'Qìfēn hěn hǎo' },
           { word: '炸场', translation: 'To tear up the dance floor', pronunciation: 'zhà chǎng', romanji: 'Zhà chǎng' }
         ]
-      }{ word: '解决方案', translation: 'Solution', pronunciation: 'jiě jué fāng àn', romanji: 'Jiějué fāng\'àn' },
+      },
+      {
+        id: 20,
+        title: 'Problem Solving',
+        premium: true,
+        words: [
+          { word: '解决方案', translation: 'Solution', pronunciation: 'jiě jué fāng àn', romanji: 'Jiějué fāng\'àn' },
           { word: '帮助', translation: 'Help', pronunciation: 'bāng zhù', romanji: 'Bāngzhù' },
           { word: '需要', translation: 'I need', pronunciation: 'xū yào', romanji: 'Xūyào' },
           { word: '可以', translation: 'I can', pronunciation: 'kě yǐ', romanji: 'Kěyǐ' }
@@ -4720,7 +4815,20 @@ export const languages = {
         premium: true,
         words: [
           { word: 'Проблема', translation: 'Problem', pronunciation: 'prah-BLEH-mah' },
-          ,
+          { word: 'Решение', translation: 'Solution', pronunciation: 'reh-SHEH-nee-yeh' },
+          { word: 'Помощь', translation: 'Help', pronunciation: 'poh-MOHSH' },
+          { word: 'Мне нужно', translation: 'I need', pronunciation: 'mnyeh NOOZH-noh' },
+          { word: 'Я могу', translation: 'I can', pronunciation: 'yah moh-GOO' }
+        ],
+        streetSlang: [
+          { word: 'Иметь проблему', translation: 'To have a problem', pronunciation: 'ee-MEHT prah-BLEH-moo' },
+          { word: 'Искать решение', translation: 'To look for a solution', pronunciation: 'ees-KAHT reh-SHEH-nee-yeh' },
+          { word: 'Нужна помощь', translation: 'To need help', pronunciation: 'noozh-NAH poh-MOHSH' },
+          { word: 'Я могу помочь', translation: 'I can help', pronunciation: 'yah moh-GOO poh-MOHSH' },
+          { word: 'Решить проблему', translation: 'To solve a problem', pronunciation: 'reh-SHEET prah-BLEH-moo' },
+          { word: 'Найти решение', translation: 'To find a solution', pronunciation: 'nahy-TEE reh-SHEH-nee-yeh' }
+        ]
+      },
       {
         id: 21,
         title: 'Song Lesson: В лесу родилась ёлочка (A Christmas Tree Was Born in the Forest)',
@@ -4942,7 +5050,13 @@ export const languages = {
           { word: 'Огонь', translation: 'Fire/lit (party energy)', pronunciation: 'oh-GOHN' },
           { word: 'Разрывать танцпол', translation: 'To tear up the dance floor', pronunciation: 'raz-ry-VAHT tahn-TS-pohl' }
         ]
-      }{ word: 'Решение', translation: 'Solution', pronunciation: 'reh-SHEH-nee-yeh' },
+      },
+      {
+        id: 20,
+        title: 'Problem Solving',
+        premium: true,
+        words: [
+          { word: 'Решение', translation: 'Solution', pronunciation: 'reh-SHEH-nee-yeh' },
           { word: 'Помощь', translation: 'Help', pronunciation: 'pah-MOHSH' },
           { word: 'Мне нужно', translation: 'I need', pronunciation: 'mne NOOZH-no' },
           { word: 'Я могу', translation: 'I can', pronunciation: 'ya mah-GOO' }
