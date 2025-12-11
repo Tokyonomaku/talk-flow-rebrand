@@ -84,10 +84,10 @@ export function isPremium() {
   try {
     const premium = localStorage.getItem('isPremium');
     const isPremiumUser = premium === 'true';
-    console.log('Premium status check:', isPremiumUser, 'raw value:', premium);
+    console.log('[isPremium] Premium status:', isPremiumUser, '| Raw localStorage value:', premium, '| Type:', typeof premium);
     return isPremiumUser;
   } catch (error) {
-    console.error('Error reading premium status:', error);
+    console.error('[isPremium] Error reading premium status:', error);
     return false;
   }
 }
@@ -196,20 +196,30 @@ export function getRemainingFreeLessons() {
  * @returns {boolean} True if lesson is accessible
  */
 export function isLessonAccessible(languageId, lessonId) {
+  // Get premium status directly from localStorage
+  const premiumStatus = localStorage.getItem('isPremium') === 'true';
+  console.log(`[isLessonAccessible] Premium status: ${premiumStatus}, Lesson ID: ${lessonId}, Language: ${languageId}`);
+  
   // Premium users have access to all lessons
-  if (isPremium()) {
+  if (premiumStatus) {
+    console.log(`[isLessonAccessible] Premium user - lesson ${lessonId} is accessible`);
     return true;
   }
   
   // Check if language is accessible (free language)
   if (!isLanguageAccessible(languageId)) {
+    console.log(`[isLessonAccessible] Language ${languageId} not accessible - lesson ${lessonId} locked`);
     return false;
   }
   
-  // Free users get lessons 1-10, premium lessons are 11-26
+  // Free users get lessons 1-10 ONLY, premium lessons are 11-26
   // Ensure lessonId is treated as a number for comparison
-  const lessonNum = typeof lessonId === 'string' ? parseInt(lessonId, 10) : lessonId;
-  return lessonNum <= 10;
+  const lessonNum = typeof lessonId === 'string' ? parseInt(lessonId, 10) : Number(lessonId);
+  const isAccessible = lessonNum <= 10;
+  
+  console.log(`[isLessonAccessible] Free user - lesson ${lessonNum} accessible: ${isAccessible} (must be <= 10)`);
+  
+  return isAccessible;
 }
 
 /**

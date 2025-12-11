@@ -4,15 +4,20 @@ import { getCompletedLessonsForLanguage, isLessonCompleted, isLessonAccessible, 
 export default function LessonList({ language, onBack, onSelectLesson, onLockedLessonClick }) {
   const completedCount = getCompletedLessonsForLanguage(language.id);
   const totalLessons = language.lessons.length;
-  const premium = isPremium();
+  
+  // Get premium status directly and log it
+  const premiumRaw = localStorage.getItem('isPremium');
+  const premium = premiumRaw === 'true';
   
   // Debug logging
   console.log('=== LESSON LIST DEBUG ===');
   console.log('Premium status:', premium);
+  console.log('Premium raw value:', premiumRaw, '| Type:', typeof premiumRaw);
   console.log('Total lessons:', totalLessons);
   console.log('Language:', language.name);
   console.log('Lessons array length:', language.lessons.length);
-  console.log('Showing lessons 1-10 unlocked, 11-26 locked:', !premium);
+  console.log('Free users: lessons 1-10 unlocked, 11-26 locked');
+  console.log('Premium users: all lessons unlocked');
   
   // Calculate unlocked vs locked lessons
   const unlockedLessons = premium ? totalLessons : Math.min(10, totalLessons);
@@ -40,11 +45,14 @@ export default function LessonList({ language, onBack, onSelectLesson, onLockedL
             <div className="flex items-center justify-between flex-wrap gap-4">
               <div className="flex-1">
                 <p className="font-semibold text-lg mb-1">
-                  🔒 You have {unlockedLessons} of {totalLessons} lessons unlocked. Upgrade to Premium for $150/year
+                  🔒 {unlockedLessons} of {totalLessons} lessons unlocked. Upgrade to Premium - $150/year
                 </p>
               </div>
               <button
-                onClick={() => onLockedLessonClick && onLockedLessonClick(11)}
+                onClick={() => {
+                  console.log('[Upgrade Banner] Clicked - opening upgrade modal');
+                  onLockedLessonClick && onLockedLessonClick(11);
+                }}
                 className="bg-white text-blue-600 px-6 py-2 rounded-lg font-semibold hover:bg-blue-50 transition-colors whitespace-nowrap shadow-md"
               >
                 Upgrade Now
@@ -97,18 +105,32 @@ export default function LessonList({ language, onBack, onSelectLesson, onLockedL
             const isAccessible = isLessonAccessible(language.id, lesson.id);
             const isLocked = !isAccessible;
             
-            // Debug log for first few lessons
-            if (index < 3 || index >= 20) {
-              console.log(`Lesson ${lesson.id} (index ${index}): accessible=${isAccessible}, locked=${isLocked}`);
+            // Debug log for all lessons
+            console.log(`[LessonList] Lesson ${lesson.id} (index ${index}): accessible=${isAccessible}, locked=${isLocked}, premium=${premium}`);
+            
+            // CRITICAL: Double-check locking logic
+            const lessonNum = typeof lesson.id === 'string' ? parseInt(lesson.id, 10) : Number(lesson.id);
+            const shouldBeLocked = !premium && lessonNum > 10;
+            
+            if (isLocked !== shouldBeLocked) {
+              console.error(`[LessonList] MISMATCH! Lesson ${lesson.id}: isLocked=${isLocked}, shouldBeLocked=${shouldBeLocked}`);
             }
             
             return (
               <button
                 key={lesson.id}
                 onClick={() => {
-                  if (isLocked) {
+                  console.log(`[LessonList] Lesson ${lesson.id} clicked. isLocked=${isLocked}, premium=${premium}`);
+                  
+                  // CRITICAL: Double-check locking before allowing access
+                  const lessonNum = typeof lesson.id === 'string' ? parseInt(lesson.id, 10) : Number(lesson.id);
+                  const isActuallyLocked = !premium && lessonNum > 10;
+                  
+                  if (isLocked || isActuallyLocked) {
+                    console.log(`[LessonList] BLOCKING lesson ${lesson.id} - showing upgrade modal`);
                     onLockedLessonClick(lesson.id);
                   } else {
+                    console.log(`[LessonList] ALLOWING lesson ${lesson.id}`);
                     onSelectLesson(lesson);
                   }
                 }}

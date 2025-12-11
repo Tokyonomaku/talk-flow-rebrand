@@ -24,17 +24,25 @@ export default function Activate({ onActivate }) {
     }
 
     try {
+      console.log('[Activate] Setting premium status to true');
       localStorage.setItem('isPremium', 'true');
       localStorage.setItem('activatedAt', new Date().toISOString());
+      
+      // Verify it was set correctly
+      const verifyPremium = localStorage.getItem('isPremium');
+      console.log('[Activate] Premium status set. Verification:', verifyPremium, '===', verifyPremium === 'true');
+      
       setSuccess(true);
       setError('');
       onActivate?.();
       
       // Redirect to home after 2 seconds
       setTimeout(() => {
+        console.log('[Activate] Redirecting to home page');
         window.location.href = '/';
       }, 2000);
     } catch (err) {
+      console.error('[Activate] Error activating premium:', err);
       setError('Failed to activate premium. Please try again.');
     }
   };

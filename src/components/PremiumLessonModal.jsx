@@ -12,6 +12,7 @@ export default function PremiumLessonModal({ isOpen, onClose, languageName, less
   if (!isOpen) return null;
 
   const handleUpgrade = () => {
+    console.log('[PremiumLessonModal] Upgrade button clicked - redirecting to Gumroad');
     // Redirect to Gumroad payment page
     window.location.href = 'https://winterfuyu.gumroad.com/l/iecvpk?wanted=true';
   };
@@ -38,7 +39,7 @@ export default function PremiumLessonModal({ isOpen, onClose, languageName, less
         {/* Header */}
         <div className="mb-6 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-2">
-            Unlock All Advanced Lessons
+            Unlock Advanced Lessons
           </h2>
           <p className="text-gray-600">
             Upgrade to Premium to access lessons 11-26 in all 8 languages
