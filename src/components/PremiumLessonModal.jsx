@@ -12,8 +12,8 @@ export default function PremiumLessonModal({ isOpen, onClose, languageName, less
   if (!isOpen) return null;
 
   const handleUpgrade = () => {
-    // Open Gumroad payment page
-    window.open('https://winterfuyu.gumroad.com/l/iecvpk?wanted=true', '_blank');
+    // Redirect to Gumroad payment page
+    window.location.href = 'https://winterfuyu.gumroad.com/l/iecvpk?wanted=true';
   };
 
   return (

@@ -6,6 +6,14 @@ export default function LessonList({ language, onBack, onSelectLesson, onLockedL
   const totalLessons = language.lessons.length;
   const premium = isPremium();
   
+  // Debug logging
+  console.log('=== LESSON LIST DEBUG ===');
+  console.log('Premium status:', premium);
+  console.log('Total lessons:', totalLessons);
+  console.log('Language:', language.name);
+  console.log('Lessons array length:', language.lessons.length);
+  console.log('Showing lessons 1-10 unlocked, 11-26 locked:', !premium);
+  
   // Calculate unlocked vs locked lessons
   const unlockedLessons = premium ? totalLessons : Math.min(10, totalLessons);
   const lockedLessons = totalLessons - unlockedLessons;
@@ -29,15 +37,15 @@ export default function LessonList({ language, onBack, onSelectLesson, onLockedL
         {/* Upgrade Banner */}
         {!premium && lockedLessons > 0 && (
           <div className="mb-6 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg p-4 shadow-lg">
-            <div className="flex items-center justify-between">
-              <div>
+            <div className="flex items-center justify-between flex-wrap gap-4">
+              <div className="flex-1">
                 <p className="font-semibold text-lg mb-1">
-                  🔒 You have {unlockedLessons} of {totalLessons} lessons unlocked. Upgrade to access {lockedLessons} more lessons
+                  🔒 You have {unlockedLessons} of {totalLessons} lessons unlocked. Upgrade to Premium for $150/year
                 </p>
               </div>
               <button
                 onClick={() => onLockedLessonClick && onLockedLessonClick(11)}
-                className="bg-white text-blue-600 px-4 py-2 rounded-lg font-semibold hover:bg-blue-50 transition-colors whitespace-nowrap"
+                className="bg-white text-blue-600 px-6 py-2 rounded-lg font-semibold hover:bg-blue-50 transition-colors whitespace-nowrap shadow-md"
               >
                 Upgrade Now
               </button>
@@ -84,10 +92,15 @@ export default function LessonList({ language, onBack, onSelectLesson, onLockedL
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {language.lessons.map((lesson) => {
+          {language.lessons.map((lesson, index) => {
             const lessonCompleted = isLessonCompleted(language.id, lesson.id);
             const isAccessible = isLessonAccessible(language.id, lesson.id);
             const isLocked = !isAccessible;
+            
+            // Debug log for first few lessons
+            if (index < 3 || index >= 20) {
+              console.log(`Lesson ${lesson.id} (index ${index}): accessible=${isAccessible}, locked=${isLocked}`);
+            }
             
             return (
               <button
@@ -108,14 +121,14 @@ export default function LessonList({ language, onBack, onSelectLesson, onLockedL
                 {/* Lock Icon and Premium Badge for Premium Lessons */}
                 {isLocked && (
                   <>
-                    <div className="absolute top-4 right-4">
-                      <div className="bg-gray-100 rounded-full p-2">
-                        <Lock className="w-5 h-5 text-gray-500" />
+                    <div className="absolute top-4 right-4 z-10">
+                      <div className="bg-red-100 rounded-full p-2 border-2 border-red-300">
+                        <Lock className="w-5 h-5 text-red-600" />
                       </div>
                     </div>
-                    <div className="absolute top-2 left-2">
-                      <span className="bg-yellow-400 text-gray-900 text-xs font-semibold px-2 py-1 rounded">
-                        Premium
+                    <div className="absolute top-2 left-2 z-10">
+                      <span className="bg-yellow-400 text-gray-900 text-xs font-bold px-2 py-1 rounded shadow-md">
+                        🔒 Premium
                       </span>
                     </div>
                   </>

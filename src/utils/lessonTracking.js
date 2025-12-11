@@ -83,7 +83,9 @@ export function getCompletedLessonsForLanguage(language) {
 export function isPremium() {
   try {
     const premium = localStorage.getItem('isPremium');
-    return premium === 'true';
+    const isPremiumUser = premium === 'true';
+    console.log('Premium status check:', isPremiumUser, 'raw value:', premium);
+    return isPremiumUser;
   } catch (error) {
     console.error('Error reading premium status:', error);
     return false;

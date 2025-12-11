@@ -180,17 +180,28 @@ function App() {
           </div>
           <div className="flex items-center gap-4">
             {!premiumStatus && (
-              <a
-                href="/activate"
-                onClick={(e) => {
-                  e.preventDefault();
-                  window.history.pushState({}, '', '/activate');
-                  setCurrentRoute('/activate');
-                }}
-                className="text-blue-600 hover:text-blue-700 font-semibold text-sm transition-colors"
-              >
-                Activate Premium
-              </a>
+              <>
+                <button
+                  onClick={() => {
+                    setShowPremiumLessonModal(true);
+                    setSelectedLessonForUpgrade(11);
+                  }}
+                  className="text-blue-600 hover:text-blue-700 font-semibold text-sm transition-colors"
+                >
+                  Upgrade to Premium
+                </button>
+                <a
+                  href="/activate"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.history.pushState({}, '', '/activate');
+                    setCurrentRoute('/activate');
+                  }}
+                  className="text-gray-600 hover:text-gray-700 font-semibold text-sm transition-colors"
+                >
+                  Activate Code
+                </a>
+              </>
             )}
           </div>
         </div>
