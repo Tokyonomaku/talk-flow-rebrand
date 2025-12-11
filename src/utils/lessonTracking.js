@@ -205,7 +205,9 @@ export function isLessonAccessible(languageId, lessonId) {
   }
   
   // Free users get lessons 1-10, premium lessons are 11-26
-  return lessonId <= 10;
+  // Ensure lessonId is treated as a number for comparison
+  const lessonNum = typeof lessonId === 'string' ? parseInt(lessonId, 10) : lessonId;
+  return lessonNum <= 10;
 }
 
 /**
@@ -214,6 +216,8 @@ export function isLessonAccessible(languageId, lessonId) {
  * @returns {boolean} True if lesson is premium
  */
 export function isPremiumLesson(lessonId) {
-  return lessonId > 10;
+  // Ensure lessonId is treated as a number for comparison
+  const lessonNum = typeof lessonId === 'string' ? parseInt(lessonId, 10) : lessonId;
+  return lessonNum > 10;
 }
 
