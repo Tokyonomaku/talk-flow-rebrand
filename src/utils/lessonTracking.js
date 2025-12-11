@@ -187,3 +187,33 @@ export function getRemainingFreeLessons() {
   return Infinity;
 }
 
+/**
+ * Check if a lesson is accessible (free users get lessons 1-10, premium gets all)
+ * @param {string} languageId - Language ID to check
+ * @param {number} lessonId - Lesson ID to check
+ * @returns {boolean} True if lesson is accessible
+ */
+export function isLessonAccessible(languageId, lessonId) {
+  // Premium users have access to all lessons
+  if (isPremium()) {
+    return true;
+  }
+  
+  // Check if language is accessible (free language)
+  if (!isLanguageAccessible(languageId)) {
+    return false;
+  }
+  
+  // Free users get lessons 1-10, premium lessons are 11-26
+  return lessonId <= 10;
+}
+
+/**
+ * Check if a lesson is premium (lessons 11-26)
+ * @param {number} lessonId - Lesson ID to check
+ * @returns {boolean} True if lesson is premium
+ */
+export function isPremiumLesson(lessonId) {
+  return lessonId > 10;
+}
+

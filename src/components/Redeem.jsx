@@ -31,14 +31,15 @@ export default function Redeem({ onActivate }) {
     try {
       localStorage.setItem('isPremium', 'true');
       localStorage.setItem('licenseKey', trimmedKey);
+      localStorage.setItem('premiumActivatedAt', new Date().toISOString());
       setSuccess(true);
       setError('');
       onActivate?.();
       
-      // Redirect to home after 1 second
+      // Redirect to home after 2 seconds
       setTimeout(() => {
         window.location.href = '/';
-      }, 1000);
+      }, 2000);
     } catch (err) {
       setError('Failed to activate premium. Please try again.');
     }
@@ -73,7 +74,7 @@ export default function Redeem({ onActivate }) {
           Activate Premium
         </h1>
         <p className="text-gray-600 mb-6 text-center">
-          Enter your license key to unlock all 8 languages
+          Enter your license key from Gumroad
         </p>
 
         {success && (

@@ -4,20 +4,23 @@ import LanguageSelector from './components/LanguageSelector';
 import LessonList from './components/LessonList';
 import LessonView from './components/LessonView';
 import UpgradeModal from './components/UpgradeModal';
+import PremiumLessonModal from './components/PremiumLessonModal';
 import ChooseFreeLanguageModal from './components/ChooseFreeLanguageModal';
 import Redeem from './components/Redeem';
 import { getAllLanguages } from './data/languages';
-import { isPremium, hasFreeLanguage, setFreeLanguages, isLanguageAccessible, getFreeLanguages } from './utils/lessonTracking';
+import { isPremium, hasFreeLanguage, setFreeLanguages, isLanguageAccessible, getFreeLanguages, isLessonAccessible } from './utils/lessonTracking';
 
 function App() {
   const [currentView, setCurrentView] = useState('language-selector');
   const [selectedLanguage, setSelectedLanguage] = useState(null);
   const [selectedLesson, setSelectedLesson] = useState(null);
   const [showUpgradeModal, setShowUpgradeModal] = useState(false);
+  const [showPremiumLessonModal, setShowPremiumLessonModal] = useState(false);
   const [showFreeLanguageModal, setShowFreeLanguageModal] = useState(false);
   const [premiumStatus, setPremiumStatus] = useState(false);
   const [freeLanguages, setFreeLanguagesState] = useState([]);
   const [currentRoute, setCurrentRoute] = useState(window.location.pathname);
+  const [selectedLessonForUpgrade, setSelectedLessonForUpgrade] = useState(null);
 
   // Handle routing
   useEffect(() => {
@@ -98,9 +101,22 @@ function App() {
   };
 
   const handleSelectLesson = (lesson) => {
-    // All lessons in accessible languages are available
+    // Check if lesson is accessible
+    if (!isLessonAccessible(selectedLanguage.id, lesson.id)) {
+      setSelectedLessonForUpgrade(lesson.id);
+      setShowPremiumLessonModal(true);
+      return;
+    }
+    
     setSelectedLesson(lesson);
     setCurrentView('lesson-view');
+  };
+
+  const handleLockedLessonClick = (lessonId) => {
+    if (lessonId) {
+      setSelectedLessonForUpgrade(lessonId);
+    }
+    setShowPremiumLessonModal(true);
   };
 
   const handleBackToLanguages = () => {
@@ -162,6 +178,19 @@ function App() {
               </div>
             ) : null}
           </div>
+          <div className="flex items-center gap-4">
+            <a
+              href="/redeem"
+              onClick={(e) => {
+                e.preventDefault();
+                window.history.pushState({}, '', '/redeem');
+                setCurrentRoute('/redeem');
+              }}
+              className="text-blue-600 hover:text-blue-700 font-semibold text-sm transition-colors"
+            >
+              Redeem Key
+            </a>
+          </div>
         </div>
       </div>
 
@@ -176,6 +205,7 @@ function App() {
           language={selectedLanguage}
           onBack={handleBackToLanguages}
           onSelectLesson={handleSelectLesson}
+          onLockedLessonClick={handleLockedLessonClick}
         />
       )}
       {validView === 'lesson-view' && selectedLesson && selectedLanguage && (
@@ -183,6 +213,7 @@ function App() {
           lesson={selectedLesson}
           language={selectedLanguage}
           onBack={handleBackToLessons}
+          onUpgradeClick={() => handleLockedLessonClick(11)}
         />
       )}
 
@@ -194,6 +225,15 @@ function App() {
         isOpen={showUpgradeModal} 
         onClose={() => setShowUpgradeModal(false)}
         onLanguageChanged={handleLanguageChanged}
+      />
+      <PremiumLessonModal 
+        isOpen={showPremiumLessonModal} 
+        onClose={() => {
+          setShowPremiumLessonModal(false);
+          setSelectedLessonForUpgrade(null);
+        }}
+        languageName={selectedLanguage?.name}
+        lessonNumber={selectedLessonForUpgrade}
       />
     </div>
   );

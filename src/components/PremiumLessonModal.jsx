@@ -1,8 +1,8 @@
-import { X } from 'lucide-react';
+import { X, Lock } from 'lucide-react';
 import { getFreeLanguages } from '../utils/lessonTracking';
 import { getAllLanguages } from '../data/languages';
 
-export default function UpgradeModal({ isOpen, onClose, onLanguageChanged }) {
+export default function PremiumLessonModal({ isOpen, onClose, languageName, lessonNumber }) {
   const freeLanguages = getFreeLanguages();
   const languages = getAllLanguages();
   const freeLanguageNames = freeLanguages
@@ -28,16 +28,20 @@ export default function UpgradeModal({ isOpen, onClose, onLanguageChanged }) {
           <X className="w-6 h-6" />
         </button>
 
+        {/* Lock Icon */}
+        <div className="flex justify-center mb-4">
+          <div className="bg-gray-100 rounded-full p-4">
+            <Lock className="w-8 h-8 text-gray-600" />
+          </div>
+        </div>
+
         {/* Header */}
-        <div className="mb-6">
+        <div className="mb-6 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-2">
-            Unlock All 8 Languages
+            Unlock All Advanced Lessons
           </h2>
           <p className="text-gray-600">
-            {freeLanguageNames.length > 0 
-              ? `You're currently learning ${freeLanguageNames.join(' & ')} for free. Upgrade to access all 8 languages!`
-              : 'Upgrade to access all 8 languages!'
-            }
+            Upgrade to Premium to access lessons 11-26 in all 8 languages
           </p>
         </div>
 
@@ -66,7 +70,13 @@ export default function UpgradeModal({ isOpen, onClose, onLanguageChanged }) {
             <li className="flex items-start gap-2">
               <span className="text-green-500 font-bold">✓</span>
               <span className="text-gray-700">
-                208 lessons (26 per language)
+                208 total lessons (26 per language)
+              </span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-green-500 font-bold">✓</span>
+              <span className="text-gray-700">
+                Songs, slang, cultural content
               </span>
             </li>
             <li className="flex items-start gap-2">

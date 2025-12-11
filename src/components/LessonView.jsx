@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { ArrowLeft, Volume2, Check } from 'lucide-react';
-import { markLessonComplete, isLessonCompleted } from '../utils/lessonTracking';
+import { markLessonComplete, isLessonCompleted, isPremium } from '../utils/lessonTracking';
 
 export default function LessonView({ lesson, language, onBack }) {
   const [playingIndex, setPlayingIndex] = useState(null);
@@ -275,6 +275,26 @@ export default function LessonView({ lesson, language, onBack }) {
             {isCompleted ? 'Lesson Completed' : 'Mark as Complete'}
           </button>
         </div>
+
+        {/* Upgrade Prompt after Lesson 10 */}
+        {justCompletedLesson10 && (
+          <div className="mt-8 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg p-6 shadow-xl">
+            <div className="text-center">
+              <h3 className="text-2xl font-bold mb-2">
+                🎉 You've finished the free lessons!
+              </h3>
+              <p className="text-blue-100 mb-4 text-lg">
+                Unlock 16 more advanced lessons including songs, proverbs, texting slang, and cultural content
+              </p>
+              <button
+                onClick={onUpgradeClick}
+                className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors shadow-lg"
+              >
+                Upgrade to Premium - $150/year
+              </button>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
