@@ -6,7 +6,7 @@ import LessonView from './components/LessonView';
 import UpgradeModal from './components/UpgradeModal';
 import PremiumLessonModal from './components/PremiumLessonModal';
 import ChooseFreeLanguageModal from './components/ChooseFreeLanguageModal';
-import Redeem from './components/Redeem';
+import Activate from './components/Activate';
 import { getAllLanguages } from './data/languages';
 import { isPremium, hasFreeLanguage, setFreeLanguages, isLanguageAccessible, getFreeLanguages, isLessonAccessible } from './utils/lessonTracking';
 
@@ -38,8 +38,8 @@ function App() {
 
   // Check if user needs to select free language on mount
   useEffect(() => {
-    // Don't show modals on redeem page
-    if (currentRoute === '/redeem') return;
+    // Don't show modals on activate page
+    if (currentRoute === '/activate') return;
 
     const checkInitialState = () => {
       const premium = isPremium();
@@ -144,9 +144,9 @@ function App() {
     setCurrentRoute('/');
   };
 
-  // Show redeem page if on /redeem route
-  if (currentRoute === '/redeem') {
-    return <Redeem onActivate={handlePremiumActivate} />;
+  // Show activate page if on /activate route
+  if (currentRoute === '/activate') {
+    return <Activate onActivate={handlePremiumActivate} />;
   }
 
   // Get free language names for display
@@ -179,17 +179,19 @@ function App() {
             ) : null}
           </div>
           <div className="flex items-center gap-4">
-            <a
-              href="/redeem"
-              onClick={(e) => {
-                e.preventDefault();
-                window.history.pushState({}, '', '/redeem');
-                setCurrentRoute('/redeem');
-              }}
-              className="text-blue-600 hover:text-blue-700 font-semibold text-sm transition-colors"
-            >
-              Redeem Key
-            </a>
+            {!premiumStatus && (
+              <a
+                href="/activate"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.history.pushState({}, '', '/activate');
+                  setCurrentRoute('/activate');
+                }}
+                className="text-blue-600 hover:text-blue-700 font-semibold text-sm transition-colors"
+              >
+                Activate Premium
+              </a>
+            )}
           </div>
         </div>
       </div>

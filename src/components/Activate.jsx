@@ -1,37 +1,31 @@
 import { useState } from 'react';
 import { isPremium } from '../utils/lessonTracking';
 
-export default function Redeem({ onActivate }) {
-  const [licenseKey, setLicenseKey] = useState('');
+const ACCESS_CODE = 'PREMIUM2025';
+
+export default function Activate({ onActivate }) {
+  const [accessCode, setAccessCode] = useState('');
   const [error, setError] = useState('');
   const [success, setSuccess] = useState(false);
   const premium = isPremium();
 
-  const validateLicenseKey = (key) => {
-    // Format: XXXXXXXX-XXXXXXXX-XXXXXXXX-XXXXXXXX
-    // 4 groups of 8 alphanumeric characters separated by hyphens
-    const licenseKeyPattern = /^[A-Z0-9]{8}-[A-Z0-9]{8}-[A-Z0-9]{8}-[A-Z0-9]{8}$/i;
-    return licenseKeyPattern.test(key.trim());
-  };
-
   const handleActivate = () => {
-    const trimmedKey = licenseKey.trim();
+    const trimmedCode = accessCode.trim();
     
-    if (!trimmedKey) {
-      setError('Please enter a license key');
+    if (!trimmedCode) {
+      setError('Please enter an access code');
       return;
     }
 
-    // Validate license key format
-    if (!validateLicenseKey(trimmedKey)) {
-      setError('Invalid license key format. Expected: XXXXXXXX-XXXXXXXX-XXXXXXXX-XXXXXXXX');
+    // Case-insensitive check
+    if (trimmedCode.toUpperCase() !== ACCESS_CODE.toUpperCase()) {
+      setError('Invalid access code. Check your Gumroad purchase email.');
       return;
     }
 
     try {
       localStorage.setItem('isPremium', 'true');
-      localStorage.setItem('licenseKey', trimmedKey);
-      localStorage.setItem('premiumActivatedAt', new Date().toISOString());
+      localStorage.setItem('activatedAt', new Date().toISOString());
       setSuccess(true);
       setError('');
       onActivate?.();
@@ -71,15 +65,15 @@ export default function Redeem({ onActivate }) {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4">
       <div className="bg-white rounded-lg shadow-xl max-w-md w-full p-8">
         <h1 className="text-3xl font-bold text-gray-900 mb-2 text-center">
-          Activate Premium
+          Activate Your Premium Access
         </h1>
         <p className="text-gray-600 mb-6 text-center">
-          Enter your license key from Gumroad
+          Enter the access code from your Gumroad purchase
         </p>
 
         {success && (
           <div className="mb-4 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg">
-            Premium activated successfully! Redirecting...
+            ✅ Premium Activated! All languages and lessons unlocked
           </div>
         )}
 
@@ -90,15 +84,15 @@ export default function Redeem({ onActivate }) {
         )}
 
         <div className="mb-6">
-          <label htmlFor="licenseKey" className="block text-sm font-medium text-gray-700 mb-2">
-            License Key
+          <label htmlFor="accessCode" className="block text-sm font-medium text-gray-700 mb-2">
+            Access Code
           </label>
           <input
-            id="licenseKey"
+            id="accessCode"
             type="text"
-            value={licenseKey}
+            value={accessCode}
             onChange={(e) => {
-              setLicenseKey(e.target.value);
+              setAccessCode(e.target.value);
               setError('');
             }}
             onKeyPress={(e) => {
@@ -106,14 +100,11 @@ export default function Redeem({ onActivate }) {
                 handleActivate();
               }
             }}
-            placeholder="XXXXXXXX-XXXXXXXX-XXXXXXXX-XXXXXXXX"
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none font-mono text-sm"
+            placeholder="PREMIUM2025"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none text-center text-lg font-semibold uppercase tracking-wider"
             disabled={success}
-            maxLength={35}
+            autoFocus
           />
-          <p className="mt-2 text-xs text-gray-500">
-            Format: 8 characters - 8 characters - 8 characters - 8 characters
-          </p>
         </div>
 
         <button
