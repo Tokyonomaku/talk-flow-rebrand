@@ -188,6 +188,19 @@ function App() {
             ) : null}
           </div>
           <div className="flex items-center gap-4">
+            <button
+              onClick={() => {
+                // Navigate "home" and show language selector view
+                window.history.pushState({}, '', '/');
+                setCurrentRoute('/');
+                setSelectedLanguage(null);
+                setSelectedLesson(null);
+                setCurrentView('language-selector');
+              }}
+              className="text-gray-600 hover:text-gray-700 font-semibold text-sm transition-colors whitespace-nowrap"
+            >
+              Languages
+            </button>
             {!premiumStatus && (
               <>
                 <button
@@ -206,9 +219,9 @@ function App() {
                     window.history.pushState({}, '', '/activate');
                     setCurrentRoute('/activate');
                   }}
-                  className="text-gray-600 hover:text-gray-700 font-semibold text-sm transition-colors"
+                  className="text-gray-600 hover:text-gray-700 font-semibold text-sm transition-colors whitespace-nowrap"
                 >
-                  Activate Code
+                  Activate Premium
                 </a>
               </>
             )}

@@ -1,8 +1,10 @@
-import { X, Lock } from 'lucide-react';
+import { useState } from 'react';
+import { X, Lock, Loader2 } from 'lucide-react';
 import { getFreeLanguages } from '../utils/lessonTracking';
 import { getAllLanguages } from '../data/languages';
 
 export default function PremiumLessonModal({ isOpen, onClose, languageName, lessonNumber }) {
+  const [isRedirectingToCheckout, setIsRedirectingToCheckout] = useState(false);
   const freeLanguages = getFreeLanguages();
   const languages = getAllLanguages();
   const freeLanguageNames = freeLanguages
@@ -12,6 +14,8 @@ export default function PremiumLessonModal({ isOpen, onClose, languageName, less
   if (!isOpen) return null;
 
   const handleUpgrade = () => {
+    if (isRedirectingToCheckout) return;
+    setIsRedirectingToCheckout(true);
     console.log('[PremiumLessonModal] Upgrade button clicked - redirecting to Gumroad');
     // Redirect to Gumroad payment page
     window.location.href = 'https://winterfuyu.gumroad.com/l/iecvpk?wanted=true';
@@ -92,9 +96,17 @@ export default function PremiumLessonModal({ isOpen, onClose, languageName, less
         {/* Button */}
         <button
           onClick={handleUpgrade}
-          className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors shadow-md hover:shadow-lg"
+          disabled={isRedirectingToCheckout}
+          className={`w-full py-3 px-6 rounded-lg font-semibold transition-colors shadow-md hover:shadow-lg ${
+            isRedirectingToCheckout
+              ? 'bg-gray-400 text-gray-600 cursor-not-allowed'
+              : 'bg-blue-600 text-white hover:bg-blue-700'
+          }`}
         >
-          Upgrade for $150/year
+          <span className="inline-flex items-center justify-center gap-2">
+            {isRedirectingToCheckout && <Loader2 className="w-5 h-5 animate-spin" />}
+            {isRedirectingToCheckout ? 'Opening checkout...' : 'Upgrade for $150/year'}
+          </span>
         </button>
       </div>
     </div>

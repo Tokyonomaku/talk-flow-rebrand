@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Loader2 } from 'lucide-react';
 import { isPremium } from '../utils/lessonTracking';
 
 const ACCESS_CODE = 'PREMIUM2025';
@@ -7,19 +8,27 @@ export default function Activate({ onActivate }) {
   const [accessCode, setAccessCode] = useState('');
   const [error, setError] = useState('');
   const [success, setSuccess] = useState(false);
+  const [isActivating, setIsActivating] = useState(false);
   const premium = isPremium();
 
   const handleActivate = () => {
+    if (isActivating || success) return;
+
+    setIsActivating(true);
+    setError('');
+
     const trimmedCode = accessCode.trim();
     
     if (!trimmedCode) {
       setError('Please enter an access code');
+      setIsActivating(false);
       return;
     }
 
     // Case-insensitive check
     if (trimmedCode.toUpperCase() !== ACCESS_CODE.toUpperCase()) {
       setError('Invalid access code. Check your Gumroad purchase email.');
+      setIsActivating(false);
       return;
     }
 
@@ -34,16 +43,21 @@ export default function Activate({ onActivate }) {
       
       setSuccess(true);
       setError('');
-      onActivate?.();
+      setIsActivating(false);
       
-      // Redirect to home after 2 seconds
+      // Redirect to home after showing success state briefly
       setTimeout(() => {
         console.log('[Activate] Redirecting to home page');
-        window.location.href = '/';
-      }, 2000);
+        if (typeof onActivate === 'function') {
+          onActivate();
+        } else {
+          window.location.href = '/';
+        }
+      }, 900);
     } catch (err) {
       console.error('[Activate] Error activating premium:', err);
       setError('Failed to activate premium. Please try again.');
+      setIsActivating(false);
     }
   };
 
@@ -103,28 +117,31 @@ export default function Activate({ onActivate }) {
               setAccessCode(e.target.value);
               setError('');
             }}
-            onKeyPress={(e) => {
+            onKeyDown={(e) => {
               if (e.key === 'Enter') {
                 handleActivate();
               }
             }}
             placeholder="PREMIUM2025"
             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none text-center text-lg font-semibold uppercase tracking-wider"
-            disabled={success}
+            disabled={success || isActivating}
             autoFocus
           />
         </div>
 
         <button
           onClick={handleActivate}
-          disabled={success}
+          disabled={success || isActivating}
           className={`w-full py-3 px-6 rounded-lg font-semibold transition-colors ${
-            success
+            success || isActivating
               ? 'bg-gray-400 text-gray-600 cursor-not-allowed'
               : 'bg-blue-600 text-white hover:bg-blue-700 shadow-md hover:shadow-lg'
           }`}
         >
-          {success ? 'Activated!' : 'Activate Premium'}
+          <span className="inline-flex items-center justify-center gap-2">
+            {isActivating && <Loader2 className="w-5 h-5 animate-spin" />}
+            {success ? '✅ Activated!' : isActivating ? 'Activating...' : 'Activate'}
+          </span>
         </button>
 
         <div className="mt-6 text-center">
