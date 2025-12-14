@@ -30,11 +30,21 @@ export default function LessonView({ lesson, language, onBack, onUpgradeClick })
     // Load voices immediately if available
     loadVoices();
 
+    // Also attach onvoiceschanged (some browsers rely on this)
+    const prevOnVoicesChanged = window.speechSynthesis.onvoiceschanged;
+    if (window.speechSynthesis.onvoiceschanged !== undefined) {
+      window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+
     // Listen for voiceschanged event (voices load asynchronously)
     window.speechSynthesis.addEventListener('voiceschanged', loadVoices);
 
     return () => {
       window.speechSynthesis.removeEventListener('voiceschanged', loadVoices);
+      // Restore previous handler if we overwrote it
+      if (window.speechSynthesis.onvoiceschanged === loadVoices) {
+        window.speechSynthesis.onvoiceschanged = prevOnVoicesChanged;
+      }
     };
   }, []);
 
@@ -74,10 +84,53 @@ export default function LessonView({ lesson, language, onBack, onUpgradeClick })
     const targetLang = langMap[langCode] || 'en-US';
     const langPrefix = targetLang.split('-')[0].toLowerCase();
 
+    const isEnglishEducationTrack = language.id === 'esl-english' || language.id === 'english-native';
+
+    const pickPreferredEnglishVoice = (availableVoices) => {
+      if (!availableVoices || availableVoices.length === 0) return null;
+
+      const preferredVoices = [
+        'Samantha',           // macOS
+        'Google US English',  // Chrome
+        'Microsoft Zira',     // Windows
+        'Karen',              // macOS (AU)
+        'Alex',               // macOS
+      ];
+
+      // Try exact preferred matches first
+      for (const preferred of preferredVoices) {
+        const match = availableVoices.find(v =>
+          typeof v?.name === 'string' &&
+          v.name.includes(preferred) &&
+          typeof v?.lang === 'string' &&
+          v.lang.toLowerCase().startsWith('en')
+        );
+        if (match) return match;
+      }
+
+      // Fallback: any English voice that isn't default (often higher quality)
+      const nonDefaultEnglish = availableVoices.find(v =>
+        typeof v?.lang === 'string' &&
+        v.lang.toLowerCase().startsWith('en') &&
+        v.default === false
+      );
+      if (nonDefaultEnglish) return nonDefaultEnglish;
+
+      // Last resort: any English voice
+      return availableVoices.find(v =>
+        typeof v?.lang === 'string' && v.lang.toLowerCase().startsWith('en')
+      ) || null;
+    };
+
     // Function to find voice for language
     const findVoice = () => {
       const availableVoices = window.speechSynthesis.getVoices();
       if (availableVoices.length === 0) return null;
+
+      // English education tracks: use best available high-quality English voice
+      if (isEnglishEducationTrack && targetLang.toLowerCase().startsWith('en')) {
+        return pickPreferredEnglishVoice(availableVoices);
+      }
 
       // Try exact match first
       let voice = availableVoices.find(v => v.lang.toLowerCase() === targetLang.toLowerCase());
@@ -109,14 +162,17 @@ export default function LessonView({ lesson, language, onBack, onUpgradeClick })
       setTimeout(() => {
         const utterance = new SpeechSynthesisUtterance(text);
         utterance.lang = targetLang;
+        // Improve clarity for ESL/English Essentials without affecting other languages
         utterance.rate = 0.9;
-        utterance.pitch = 1;
+        utterance.pitch = isEnglishEducationTrack && targetLang.toLowerCase().startsWith('en') ? 1.1 : 1;
         utterance.volume = 1;
 
         // Assign specific voice if found
         if (voice) {
           utterance.voice = voice;
         }
+
+        // (No console logging in production)
 
         utterance.onstart = () => {
           setPlayingIndex(index);
