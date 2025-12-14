@@ -62,7 +62,9 @@ export default function LessonView({ lesson, language, onBack }) {
       'pt': 'pt-BR',
       'ja': 'ja-JP',
       'zh': 'zh-CN',
-      'ru': 'ru-RU'
+      'ru': 'ru-RU',
+      'ar': 'ar-SA',
+      'en': 'en-US'
     };
     
     const targetLang = langMap[langCode] || 'en-US';
@@ -257,6 +259,20 @@ export default function LessonView({ lesson, language, onBack }) {
                 </div>
               ))}
             </div>
+          </div>
+        )}
+
+        {/* Notes / Context */}
+        {lesson.culturalNotes && (
+          <div className="mt-8">
+            <details className="bg-white rounded-lg shadow-md border border-gray-200 p-5">
+              <summary className="cursor-pointer select-none text-lg font-semibold text-gray-900">
+                Notes & Context
+              </summary>
+              <div className="mt-3 text-gray-700 whitespace-pre-line leading-relaxed">
+                {lesson.culturalNotes}
+              </div>
+            </details>
           </div>
         )}
 

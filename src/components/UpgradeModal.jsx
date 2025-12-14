@@ -46,7 +46,7 @@ export default function UpgradeModal({ isOpen, onClose, onLanguageChanged }) {
             Unlock 128 More Lessons
           </h2>
           <p className="text-gray-700 font-medium">
-            Get instant access to advanced content in all 8 languages
+            Get instant access to premium content across all 11 languages
           </p>
           <p className="text-gray-600 mt-2">
             {freeLanguageNames.length > 0

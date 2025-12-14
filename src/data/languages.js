@@ -5072,6 +5072,552 @@ export const languages = {
       }
     ]
   }
+  ,
+  arabic: {
+    id: 'arabic',
+    name: 'Arabic (العربية)',
+    flag: '🇸🇦',
+    code: 'ar',
+    lessons: [
+      {
+        id: 1,
+        title: 'Basic Greetings & Introductions',
+        words: [
+          { word: 'مرحباً', translation: 'Hello', pronunciation: 'marhaban (MAR-ha-ban)' },
+          { word: 'السلام عليكم', translation: 'Peace be upon you (hello)', pronunciation: 'as-salāmu ʿalaykum (as-sa-LAA-moo a-LAY-koom)' },
+          { word: 'وعليكم السلام', translation: 'And upon you peace (response)', pronunciation: 'wa ʿalaykum as-salām (wa a-LAY-koom as-sa-LAAM)' },
+          { word: 'اسمي…', translation: 'My name is…', pronunciation: 'ismī… (IS-mee)' },
+          { word: 'تشرفنا', translation: 'Nice to meet you', pronunciation: 'tasharrafnā (ta-SHAR-raf-naa)' }
+        ],
+        streetSlang: [
+          { word: 'إزيك؟', translation: 'How are you? (very casual, Egyptian)', pronunciation: 'izzayyak? (iz-ZAY-yak)' },
+          { word: 'شو الأخبار؟', translation: 'What’s up? / What’s the news? (Levantine)', pronunciation: 'shu l-akhbār? (shoo l-akh-BAAR)' },
+          { word: 'تمام', translation: 'All good / OK', pronunciation: 'tamām (ta-MAAM)' },
+          { word: 'يلا', translation: 'Let’s go / come on', pronunciation: 'yalla (YAL-la)' },
+          { word: 'حبيبي/حبيبتي', translation: 'My dear (friendly; “bro/sis” vibe)', pronunciation: 'habibi / habibti (ha-BEE-bee / ha-BEEB-tee)' },
+          { word: 'خلاص', translation: 'OK, done / that’s enough', pronunciation: 'khalāṣ (kha-LAAS)' }
+        ],
+        culturalNotes: 'Greetings matter a lot in Arabic-speaking cultures. “السلام عليكم” is common and polite; the traditional reply is “وعليكم السلام”. Handshakes are often gentle and longer than in the US/UK; use the right hand. Dialects vary widely—what you hear in Egypt, the Levant, and the Gulf can sound different from Modern Standard Arabic.'
+      },
+      {
+        id: 2,
+        title: 'Essential Questions (where, when, how much)',
+        words: [
+          { word: 'أين؟', translation: 'Where?', pronunciation: 'ayna? (EYE-na)' },
+          { word: 'متى؟', translation: 'When?', pronunciation: 'matā? (ma-TAA)' },
+          { word: 'كم السعر؟', translation: 'How much is it?', pronunciation: 'kam as-siʿr? (kam as-SIIR?)' },
+          { word: 'كيف؟', translation: 'How?', pronunciation: 'kayfa? (KAY-fa)' },
+          { word: 'لماذا؟', translation: 'Why?', pronunciation: 'limādhā? (lee-MAA-dhaa)' }
+        ],
+        streetSlang: [
+          { word: 'فين؟', translation: 'Where? (very common, Egyptian)', pronunciation: 'fein? (FAYN)' },
+          { word: 'وين؟', translation: 'Where? (very common, Levantine)', pronunciation: 'wein? (WAYN)' },
+          { word: 'إمتى؟', translation: 'When? (Egyptian)', pronunciation: 'emta? (EM-ta)' },
+          { word: 'قديش؟', translation: 'How much? / How many? (Levantine)', pronunciation: 'addeish? (ad-DAYSH)' },
+          { word: 'ليش؟', translation: 'Why? (Levantine)', pronunciation: 'leish? (LAYS H)' },
+          { word: 'بجد؟', translation: 'Really? (Egyptian)', pronunciation: 'bigadd? (bee-GADD)' }
+        ],
+        culturalNotes: 'In conversation, many people use dialect forms (فين/وين, إمتى, قديش) more than textbook Modern Standard Arabic. Prices may be quoted differently by region; in markets, bargaining can be normal (especially in souqs), while malls and supermarkets are usually fixed-price.'
+      },
+      {
+        id: 3,
+        title: 'Restaurant & Food',
+        words: [
+          { word: 'من فضلك', translation: 'Please', pronunciation: 'min faḍlak (min FAD-lak)' },
+          { word: 'قائمة الطعام', translation: 'Menu', pronunciation: 'qāʾimat aṭ-ṭaʿām (KAA-eh-mat at-ta-AAM)' },
+          { word: 'أريد…', translation: 'I want…', pronunciation: 'urīd… (oo-REED)' },
+          { word: 'ماء', translation: 'Water', pronunciation: 'māʾ (maaʔ)' },
+          { word: 'الحساب', translation: 'The bill / check', pronunciation: 'al-ḥisāb (al-hee-SAAB)' }
+        ],
+        streetSlang: [
+          { word: 'عايز/عايزة…', translation: 'I want… (Egyptian)', pronunciation: 'ʿāyez / ʿāyza (AA-yez / AA-yza)' },
+          { word: 'بدّي…', translation: 'I want… (Levantine)', pronunciation: 'biddi… (BID-dee)' },
+          { word: 'يمي', translation: 'Yummy / delicious (casual)', pronunciation: 'yammī (YAM-mee)' },
+          { word: 'على حسابي', translation: 'It’s on me', pronunciation: 'ʿalā ḥisābī (a-LAA hee-SAA-bee)' },
+          { word: 'شو بتوصي؟', translation: 'What do you recommend? (Levantine)', pronunciation: 'shu btoṣṣī? (shoo btoss-SEE)' },
+          { word: 'خلّصنا', translation: 'We’re done (ordering/eating) (casual)', pronunciation: 'khallaṣnā (khal-LASS-naa)' }
+        ],
+        culturalNotes: 'Hospitality is a big value. In many places, sharing food is common, and people may insist you eat more as a sign of generosity. Tipping practices vary by country and venue. If you’re offered tea/coffee, accepting (at least a little) can be seen as polite.'
+      },
+      {
+        id: 4,
+        title: 'Directions & Transportation',
+        words: [
+          { word: 'أين…؟', translation: 'Where is…?', pronunciation: 'ayna…? (EYE-na …?)' },
+          { word: 'يمين', translation: 'Right', pronunciation: 'yamīn (ya-MEEN)' },
+          { word: 'يسار', translation: 'Left', pronunciation: 'yasār (ya-SAAR)' },
+          { word: 'مباشرة', translation: 'Straight ahead', pronunciation: 'mubāshara (moo-BAA-sha-ra)' },
+          { word: 'محطة', translation: 'Station / stop', pronunciation: 'maḥaṭṭa (ma-HAT-ta)' }
+        ],
+        streetSlang: [
+          { word: 'على طول', translation: 'Straight ahead / keep going', pronunciation: 'ʿala ṭūl (a-la TOOL)' },
+          { word: 'لف يمين/شمال', translation: 'Turn right/left (very common)', pronunciation: 'lef yamīn / shimāl (lef ya-MEEN / she-MAAL)' },
+          { word: 'قدّام', translation: 'In front / ahead (Egyptian)', pronunciation: 'uddām (ood-DAAM)' },
+          { word: 'ورا', translation: 'Behind / back there (Egyptian)', pronunciation: 'wara (WA-ra)' },
+          { word: 'مو بعيد', translation: 'Not far (Levantine)', pronunciation: 'mū baʿīd (moo ba-EED)' },
+          { word: 'وين؟', translation: 'Where? (quick, casual)', pronunciation: 'wein? (WAYN)' }
+        ],
+        culturalNotes: 'Directions are often given using landmarks (“next to the mosque”, “near the big roundabout”) rather than street names. Ride-hailing apps are common in many cities, but in some places taxis may negotiate the fare—asking “قديش؟” before you ride can help avoid confusion.'
+      },
+      {
+        id: 5,
+        title: 'Shopping & Money',
+        words: [
+          { word: 'بكم هذا؟', translation: 'How much is this?', pronunciation: 'bikam hādhā? (bee-KAM HAA-dhaa)' },
+          { word: 'غالي', translation: 'Expensive', pronunciation: 'ghālī (GHA-lee)' },
+          { word: 'رخيص', translation: 'Cheap', pronunciation: 'rakhīṣ (ra-KHEES)' },
+          { word: 'نقداً', translation: 'Cash', pronunciation: 'naqdan (NAK-dan)' },
+          { word: 'بطاقة', translation: 'Card', pronunciation: 'biṭāqa (bee-TAA-qa)' }
+        ],
+        streetSlang: [
+          { word: 'بكم؟', translation: 'How much? (quick, casual)', pronunciation: 'bikam? (bee-KAM)' },
+          { word: 'غالي قوي', translation: 'So expensive! (Egyptian)', pronunciation: 'ghālī awī (GHA-lee a-WEE)' },
+          { word: 'فِكّة', translation: 'Small change (coins) (Egyptian)', pronunciation: 'fakka (FAK-ka)' },
+          { word: 'فيزا', translation: 'Card / “Visa” (common slang)', pronunciation: 'vīza (VEE-za)' },
+          { word: 'يظبط؟', translation: 'Does it fit / does it work? (Egyptian)', pronunciation: 'yizboṭ? (yiz-BOT)' },
+          { word: 'آخر سعر؟', translation: 'What’s your final price? (bargaining)', pronunciation: 'ākhir siʿr? (AA-khir SIIR?)' }
+        ],
+        culturalNotes: 'In traditional markets (souqs), bargaining can be expected—keep it friendly and smile. In malls, prices are usually fixed. In some countries, cash is still preferred for small purchases, while card and contactless are common in others.'
+      },
+      {
+        id: 6,
+        title: 'Hotel & Accommodation',
+        words: [
+          { word: 'فندق', translation: 'Hotel', pronunciation: 'funduq (FOON-dook)' },
+          { word: 'غرفة', translation: 'Room', pronunciation: 'ghurfa (GHUR-fa)' },
+          { word: 'حجز', translation: 'Reservation / booking', pronunciation: 'ḥajz (HAJZ)' },
+          { word: 'مفتاح', translation: 'Key', pronunciation: 'miftāḥ (mif-TAAH)' },
+          { word: 'واي فاي', translation: 'Wi‑Fi', pronunciation: 'wāy fāy (WHY-FY)' }
+        ],
+        streetSlang: [
+          { word: 'لو سمحت', translation: 'Excuse me / please (very common)', pronunciation: 'law samaḥt (low sa-MAHT)' },
+          { word: 'ممكن…؟', translation: 'Can…? / Is it possible…? (casual)', pronunciation: 'mumkin…? (MOOM-kin)' },
+          { word: 'تمام؟', translation: 'OK? / all set?', pronunciation: 'tamām? (ta-MAAM?)' },
+          { word: 'على السريع', translation: 'Quickly / real quick', pronunciation: 'ʿala s-sarīʿ (a-la sa-REEʿ)' },
+          { word: 'ولا يهمك', translation: 'No worries / don’t mention it', pronunciation: 'walā yihimmak (wa-LAA yi-HIM-mak)' },
+          { word: 'إيش فيه؟', translation: 'What’s up / what’s wrong? (Gulf)', pronunciation: 'ēsh fīh? (eesh FEEH)' }
+        ],
+        culturalNotes: 'Politeness phrases (“لو سمحت”, “شكراً”) go a long way with service staff. In many places, you may be asked for a passport at check-in. Quiet hours and family-oriented spaces vary by country and hotel style.'
+      },
+      {
+        id: 7,
+        title: 'Emergency Phrases',
+        words: [
+          { word: 'ساعدني!', translation: 'Help me!', pronunciation: 'sāʿidnī! (SAA-id-nee)' },
+          { word: 'اتصل بالشرطة', translation: 'Call the police', pronunciation: 'ittiṣil bi-sh-shurṭa (it-TI-sil bish-SHUR-ta)' },
+          { word: 'أنا مريض', translation: 'I am sick', pronunciation: 'anā marīḍ (a-NAA ma-REED)' },
+          { word: 'أين المستشفى؟', translation: 'Where is the hospital?', pronunciation: 'ayna al-mustashfā? (EYE-na al moos-TASH-fa?)' },
+          { word: 'لا أفهم', translation: 'I don’t understand', pronunciation: 'lā afham (laa AF-ham)' }
+        ],
+        streetSlang: [
+          { word: 'بسرعة!', translation: 'Quickly!', pronunciation: 'bisurʿa! (bee-SOOR-a)' },
+          { word: 'في مشكلة', translation: 'There’s a problem', pronunciation: 'fī mushkila (fee MOOSH-ki-la)' },
+          { word: 'ضايع', translation: 'I’m lost', pronunciation: 'ḍāyeʿ (DAA-yeʿ)' },
+          { word: 'خلي بالك', translation: 'Be careful / watch out (Egyptian)', pronunciation: 'khallī bālak (khal-LEE BAA-lak)' },
+          { word: 'مستعجل', translation: 'I’m in a hurry', pronunciation: 'mustaʿjil (moos-TAʿ-jil)' },
+          { word: 'ما في', translation: 'There isn’t / no (Levantine)', pronunciation: 'mā fī (maa FEE)' }
+        ],
+        culturalNotes: 'If you need help, many people will try to assist even if they speak limited English—using short phrases and pointing to maps can help. Emergency numbers and services differ by country, so it’s worth learning the local number where you’re traveling.'
+      },
+      {
+        id: 8,
+        title: 'Small Talk & Pleasantries',
+        words: [
+          { word: 'كيف حالك؟', translation: 'How are you?', pronunciation: 'kayf ḥālak? (kayf HAA-lak)' },
+          { word: 'الحمد لله', translation: 'I’m fine / thanks (lit. “praise be to God”)', pronunciation: 'al-ḥamdu lillāh (al-HAM-doo lil-LAAH)' },
+          { word: 'ما اسمك؟', translation: 'What is your name?', pronunciation: 'mā ismuk? (maa IS-mook)' },
+          { word: 'من أين أنت؟', translation: 'Where are you from?', pronunciation: 'min ayna anta? (min EYE-na AN-ta)' },
+          { word: 'سعدت بلقائك', translation: 'Nice meeting you', pronunciation: 'saʿidtu biliqāʾik (sa-EED-too bi-li-QAA-ik)' }
+        ],
+        streetSlang: [
+          { word: 'ماشي', translation: 'OK / sounds good (Egyptian)', pronunciation: 'māshī (MAA-shee)' },
+          { word: 'شو عم تعمل؟', translation: 'What are you doing? (Levantine)', pronunciation: 'shu ʿam taʿmel? (shoo am TAʿ-mel)' },
+          { word: 'فاضي؟', translation: 'Are you free? (casual)', pronunciation: 'fāḍī? (FAA-dee)' },
+          { word: 'مبسوط', translation: 'Happy / glad', pronunciation: 'mabsūṭ (mab-SOOT)' },
+          { word: 'ولا شي', translation: 'Nothing / no big deal (Levantine)', pronunciation: 'walā shi (wa-LAA shee)' },
+          { word: 'إن شاء الله', translation: 'Hopefully / God willing', pronunciation: 'in shāʾ allāh (in shaa ALL-ah)' }
+        ],
+        culturalNotes: 'Small talk often includes polite, warm expressions like “الحمد لله” and “إن شاء الله”. Asking about family and well-being can be normal and friendly. Tone matters—keep it respectful until you know someone well.'
+      },
+      {
+        id: 9,
+        title: 'Numbers, Time, Dates',
+        words: [
+          { word: 'واحد', translation: 'One', pronunciation: 'wāḥid (WAA-hid)' },
+          { word: 'اثنين', translation: 'Two', pronunciation: 'ithnayn (ith-NAYN)' },
+          { word: 'كم الساعة؟', translation: 'What time is it?', pronunciation: 'kam as-sāʿa? (kam as-SAA-a?)' },
+          { word: 'اليوم', translation: 'Today', pronunciation: 'al-yawm (al-YAWM)' },
+          { word: 'بكرة', translation: 'Tomorrow', pronunciation: 'bukra (BOOK-ra)' }
+        ],
+        streetSlang: [
+          { word: 'دلوقتي', translation: 'Now (Egyptian)', pronunciation: 'dilwaʾtī (dil-WAʾ-tee)' },
+          { word: 'هلّق', translation: 'Now (Levantine)', pronunciation: 'hallaʾ (hal-LAʾ)' },
+          { word: 'بعد شوي', translation: 'In a little bit', pronunciation: 'baʿd shway (baʿd sh-WAY)' },
+          { word: 'الأسبوع الجاي', translation: 'Next week (Egyptian)', pronunciation: 'al-usbūʿ il-gāy (al oos-BOOʿ el-GUY)' },
+          { word: 'نص', translation: 'Half (for time)', pronunciation: 'nuṣṣ (nooss)' },
+          { word: 'ربع', translation: 'Quarter (for time)', pronunciation: 'rubʿ (roobʿ)' }
+        ],
+        culturalNotes: 'Arabic has both Western numerals (0–9) and “Arabic-Indic” numerals (٠١٢٣٤٥٦٧٨٩) depending on country. Time is often discussed flexibly (“بعد شوي”)—context and tone help clarify whether it’s minutes or longer.'
+      },
+      {
+        id: 10,
+        title: 'Common Responses',
+        words: [
+          { word: 'نعم', translation: 'Yes', pronunciation: 'naʿam (NA-am)' },
+          { word: 'لا', translation: 'No', pronunciation: 'lā (laa)' },
+          { word: 'ممكن', translation: 'Maybe / possible', pronunciation: 'mumkin (MOOM-kin)' },
+          { word: 'شكراً', translation: 'Thank you', pronunciation: 'shukran (SHOOK-ran)' },
+          { word: 'عفواً', translation: 'You’re welcome / excuse me', pronunciation: 'ʿafwan (AF-wan)' }
+        ],
+        streetSlang: [
+          { word: 'أكيد', translation: 'For sure / definitely', pronunciation: 'akīd (a-KEED)' },
+          { word: 'تمام', translation: 'OK / got it', pronunciation: 'tamām (ta-MAAM)' },
+          { word: 'ماشي', translation: 'OK / fine (Egyptian)', pronunciation: 'māshī (MAA-shee)' },
+          { word: 'ولا يهمك', translation: 'No worries / don’t mention it', pronunciation: 'walā yihimmak (wa-LAA yi-HIM-mak)' },
+          { word: 'إن شاء الله', translation: 'Hopefully / God willing', pronunciation: 'in shāʾ allāh (in shaa ALL-ah)' },
+          { word: 'خلاص', translation: 'OK, done', pronunciation: 'khalāṣ (kha-LAAS)' }
+        ],
+        culturalNotes: '“إن شاء الله” is extremely common and can mean “hopefully”, “we’ll see”, or simply a polite, culturally normal way to talk about future plans. Listening for tone and context helps you understand whether it’s confident or non-committal.'
+      }
+    ]
+  },
+  'esl-english': {
+    id: 'esl-english',
+    name: 'ESL English (For Non-Native Speakers)',
+    flag: '🇺🇸',
+    code: 'en',
+    lessons: [
+      {
+        id: 1,
+        title: 'Basic English Greetings (formal vs informal)',
+        words: [
+          { word: 'Hello. Nice to meet you.', translation: 'Polite greeting + introduction', pronunciation: 'HEH-loh. Nice tuh MEET you.' },
+          { word: 'Good morning.', translation: 'Formal greeting (before noon)', pronunciation: 'good MOR-ning' },
+          { word: 'How are you?', translation: 'Common greeting question', pronunciation: 'how ar you' },
+          { word: 'I’m doing well, thanks.', translation: 'Polite response', pronunciation: 'I’m DOO-ing well, thanks' },
+          { word: 'Nice to meet you.', translation: 'Polite after introductions', pronunciation: 'nice tuh MEET you' }
+        ],
+        streetSlang: [
+          { word: 'Hey', translation: 'Casual “hello”', pronunciation: 'hay' },
+          { word: 'What’s up?', translation: 'Very casual greeting (“How’s it going?”)', pronunciation: 'wuts up' },
+          { word: 'How’s it going?', translation: 'Casual greeting', pronunciation: 'howz it GO-ing' },
+          { word: 'Yo', translation: 'Very casual greeting (friends)', pronunciation: 'yoh' },
+          { word: 'Sup?', translation: 'Short for “What’s up?”', pronunciation: 'sup' },
+          { word: 'Cheers (UK)', translation: 'Thanks / goodbye (informal, UK)', pronunciation: 'cheerz' }
+        ],
+        culturalNotes: 'Formal vs casual: use “Good morning/afternoon” with coworkers, service staff, or new people; use “Hey/What’s up?” with friends. Common ESL mistakes: answering “How are you?” with very long details in quick greetings; saying “I am fine” can sound stiff—“I’m good / doing well” is common. Grammar tip: contractions (“I’m”, “you’re”, “it’s”) are normal in speech and writing (except very formal writing).'
+      },
+      {
+        id: 2,
+        title: 'Essential Questions in English',
+        words: [
+          { word: 'Where is the restroom?', translation: 'Ask for the bathroom (polite)', pronunciation: 'wair iz thuh REST-room' },
+          { word: 'How much is this?', translation: 'Ask about price', pronunciation: 'how much iz this' },
+          { word: 'What time do you open?', translation: 'Ask about opening time', pronunciation: 'wut time do you OH-pen' },
+          { word: 'Could you repeat that, please?', translation: 'Ask someone to say it again', pronunciation: 'kood you ruh-PEET that, pleez' },
+          { word: 'Can you speak slowly?', translation: 'Ask for slower English', pronunciation: 'can you speak SLOW-lee' }
+        ],
+        streetSlang: [
+          { word: 'Where’s the bathroom?', translation: 'More common than “restroom” (US)', pronunciation: 'wairz thuh BATH-room' },
+          { word: 'How much is it gonna be?', translation: 'Very casual price question', pronunciation: 'how much iz it GUN-uh bee' },
+          { word: 'What’s the deal?', translation: 'What’s happening/what’s the situation?', pronunciation: 'wuts thuh deel' },
+          { word: 'Can you say that again?', translation: 'Casual repeat request', pronunciation: 'can you say that uh-GEN' },
+          { word: 'My bad', translation: 'My mistake / sorry (casual)', pronunciation: 'my bad' },
+          { word: 'No worries', translation: 'It’s okay / don’t worry', pronunciation: 'noh WOR-reez' }
+        ],
+        culturalNotes: 'Formal vs casual: “Could you…” is more polite than “Can you…”, but both are common. Common mistakes: forgetting “do/does” in questions (“What time you open?” → add “do”). Grammar tip: many questions use DO-support: “Where do you live?”, “What do you need?”, “How much does it cost?”'
+      },
+      {
+        id: 3,
+        title: 'Ordering Food in English',
+        words: [
+          { word: 'I’d like the chicken, please.', translation: 'Polite ordering phrase', pronunciation: 'I’d like thuh CHIK-in, pleez' },
+          { word: 'Can I get a water?', translation: 'Common US ordering phrase', pronunciation: 'can I get uh WAH-ter' },
+          { word: 'No onions, please.', translation: 'Request to remove an ingredient', pronunciation: 'noh UN-yunz, pleez' },
+          { word: 'Can we have the check, please?', translation: 'Ask for the bill (US)', pronunciation: 'can we hav thuh chek, pleez' },
+          { word: 'I have an allergy to peanuts.', translation: 'Safety phrase', pronunciation: 'I hav an AL-er-jee too PEE-nuts' }
+        ],
+        streetSlang: [
+          { word: 'I’ll do the burger.', translation: 'Casual “I’ll choose/order…”', pronunciation: 'I’ll do thuh BUR-ger' },
+          { word: 'Can I grab a coffee?', translation: 'Casual “get”', pronunciation: 'can I grab uh KAW-fee' },
+          { word: 'To go (US) / Takeaway (UK)', translation: 'Not eating here', pronunciation: 'tuh GOH / TAKE-uh-way' },
+          { word: 'I’m starving', translation: 'I’m very hungry', pronunciation: 'I’m STAR-ving' },
+          { word: 'This is so good', translation: 'Very common compliment', pronunciation: 'this iz soh good' },
+          { word: 'It’s on me', translation: 'I’ll pay', pronunciation: 'its on mee' }
+        ],
+        culturalNotes: 'Formal vs casual: “I’d like…” is polite; “Can I get…” is common in the US and sounds natural. Common mistakes: saying “I want…” can sound too direct—add “please” or use “I’d like…”. Grammar tip: count vs non-count nouns: “a water” is common in US restaurants (meaning “a bottle/glass of water”), but in formal grammar you’d say “some water”.'
+      },
+      {
+        id: 4,
+        title: 'Asking for Directions',
+        words: [
+          { word: 'Excuse me, where is the station?', translation: 'Polite way to start', pronunciation: 'ex-KYOOZ mee, wair iz thuh STAY-shun' },
+          { word: 'How do I get to Main Street?', translation: 'Ask route', pronunciation: 'how do I get too MAYN street' },
+          { word: 'Is it far from here?', translation: 'Ask distance', pronunciation: 'iz it far frum heer' },
+          { word: 'Can you show me on the map?', translation: 'Ask for visual help', pronunciation: 'can you show mee on thuh map' },
+          { word: 'Turn left/right here.', translation: 'Simple directions phrase', pronunciation: 'turn left/right heer' }
+        ],
+        streetSlang: [
+          { word: 'I’m kinda lost', translation: 'Casual: a little lost', pronunciation: 'I’m KINE-duh lost' },
+          { word: 'Is it a long walk?', translation: 'Casual distance question', pronunciation: 'iz it uh long wak' },
+          { word: 'Just around the corner', translation: 'Very close', pronunciation: 'just uh-round thuh KOR-ner' },
+          { word: 'A couple blocks', translation: 'A short distance (US)', pronunciation: 'uh KUP-uhl bloks' },
+          { word: 'Right over there', translation: 'Nearby', pronunciation: 'right OH-ver thair' },
+          { word: 'Hop on the bus', translation: 'Get on the bus (casual)', pronunciation: 'hop on thuh bus' }
+        ],
+        culturalNotes: 'Formal vs casual: “Excuse me” is key before asking strangers. Common mistakes: confusing “turn” vs “go”; mixing prepositions (“on” vs “in”). Grammar tip: use “to” for destinations (“get to the station”) and “on” for surfaces/transport (“on the bus”).'
+      },
+      {
+        id: 5,
+        title: 'Shopping Conversations',
+        words: [
+          { word: 'How much is this?', translation: 'Price question', pronunciation: 'how much iz this' },
+          { word: 'Do you have this in a larger size?', translation: 'Ask for size', pronunciation: 'do you hav this in uh LAR-jer size' },
+          { word: 'Can I try it on?', translation: 'Ask to use fitting room', pronunciation: 'can I try it on' },
+          { word: 'I’m just looking, thanks.', translation: 'Polite “no help needed”', pronunciation: 'I’m just LOOK-ing, thanks' },
+          { word: 'I’ll take it.', translation: 'Decision to buy', pronunciation: 'I’ll TAKE it' }
+        ],
+        streetSlang: [
+          { word: 'Do you have this in a different color?', translation: 'Very common request', pronunciation: '…diff-rent KUH-ler' },
+          { word: 'That’s pricey', translation: 'It’s expensive (casual)', pronunciation: 'thats PRY-see' },
+          { word: 'Any discounts?', translation: 'Casual asking for sales', pronunciation: 'EN-ee DIS-kownts' },
+          { word: 'I’m gonna pass', translation: 'I won’t buy it (casual)', pronunciation: 'I’m GUN-uh pass' },
+          { word: 'It’s a good deal', translation: 'It’s a bargain', pronunciation: 'its uh good deel' },
+          { word: 'Cash or card?', translation: 'Common checkout question', pronunciation: 'cash or kard' }
+        ],
+        culturalNotes: 'Formal vs casual: “I’m just looking” is polite and common; “I don’t want it” can sound harsh—use “I’m going to pass.” Common mistakes: mixing “bigger” vs “larger”; forgetting articles (“I want size L” → “I want a size L”). Grammar tip: use “Do you have…?” for inventory; “Can I…?” for permission.'
+      },
+      {
+        id: 6,
+        title: 'Work/School Basic English',
+        words: [
+          { word: 'I have a question.', translation: 'Polite in meetings/class', pronunciation: 'I hav uh KWES-chun' },
+          { word: 'Could you help me, please?', translation: 'Ask for assistance', pronunciation: 'kood you help mee, pleez' },
+          { word: 'I don’t understand this.', translation: 'Clarify confusion', pronunciation: 'I don’t un-der-STAND this' },
+          { word: 'Can you email me the details?', translation: 'Request written info', pronunciation: 'can you EE-mail mee thuh DEE-taylz' },
+          { word: 'What does this mean?', translation: 'Ask for explanation', pronunciation: 'wut duz this meen' }
+        ],
+        streetSlang: [
+          { word: 'Can you loop me in?', translation: 'Include me in the email/thread', pronunciation: 'loop mee in' },
+          { word: 'ASAP', translation: 'As soon as possible', pronunciation: 'AY-sap' },
+          { word: 'I’m swamped', translation: 'I’m very busy', pronunciation: 'I’m swompt' },
+          { word: 'Touch base', translation: 'Talk/check in briefly', pronunciation: 'tuch base' },
+          { word: 'Heads up', translation: 'Warning / FYI', pronunciation: 'hedz up' },
+          { word: 'No rush', translation: 'It’s not urgent', pronunciation: 'noh rush' }
+        ],
+        culturalNotes: 'Formal vs casual: use “Could you…” with managers/teachers; slang like “swamped” is fine with coworkers but avoid in very formal emails. Common mistakes: confusing “actually” (meaning “in fact”) with similar words in other languages. Grammar tip: for requests, soften with modal verbs: could/would/can + please.'
+      },
+      {
+        id: 7,
+        title: 'Emergency English Phrases',
+        words: [
+          { word: 'Help!', translation: 'Get attention quickly', pronunciation: 'help' },
+          { word: 'Call the police, please.', translation: 'Emergency request', pronunciation: 'kawl thuh puh-LEES, pleez' },
+          { word: 'I need a doctor.', translation: 'Medical help', pronunciation: 'I need uh DOK-ter' },
+          { word: 'I’m lost.', translation: 'Location problem', pronunciation: 'I’m lost' },
+          { word: 'I don’t feel well.', translation: 'Health problem', pronunciation: 'I don’t feel well' }
+        ],
+        streetSlang: [
+          { word: 'Something’s wrong', translation: 'There is a problem', pronunciation: 'SOM-thingz rong' },
+          { word: 'I got hurt', translation: 'I was injured (casual)', pronunciation: 'I got hurt' },
+          { word: 'I need help right now', translation: 'Urgent request', pronunciation: '…right now' },
+          { word: 'I’m in trouble', translation: 'Serious problem', pronunciation: 'I’m in TRUH-bul' },
+          { word: 'Stay back', translation: 'Keep distance (safety)', pronunciation: 'stay bak' },
+          { word: 'Are you okay?', translation: 'Check on someone', pronunciation: 'ar you oh-KAY' }
+        ],
+        culturalNotes: 'Formal vs casual: in emergencies, short direct phrases are best. Common mistakes: saying “I have pain” (understandable but unnatural) → “It hurts here” or “I’m in pain.” Grammar tip: “I need + noun” is the fastest structure (“I need help / a doctor / an ambulance”).'
+      },
+      {
+        id: 8,
+        title: 'Phone & Email English',
+        words: [
+          { word: 'Hello, this is [Name].', translation: 'Phone introduction', pronunciation: '…this iz [name]' },
+          { word: 'Could you please hold?', translation: 'Ask someone to wait', pronunciation: '…pleez hohld' },
+          { word: 'Can you hear me?', translation: 'Check connection', pronunciation: 'can you heer mee' },
+          { word: 'I’m following up on my email.', translation: 'Polite reminder', pronunciation: 'I’m FOL-oh-ing up…' },
+          { word: 'Thank you for your time.', translation: 'Polite closing', pronunciation: 'thank you for your time' }
+        ],
+        streetSlang: [
+          { word: 'Sorry, bad signal', translation: 'Connection issue (casual)', pronunciation: '…bad SIG-nul' },
+          { word: 'Can you text me?', translation: 'Ask for a text message', pronunciation: 'can you tekst mee' },
+          { word: 'I’ll shoot you an email', translation: 'I’ll send an email (casual)', pronunciation: 'shoot you…' },
+          { word: 'FYI', translation: 'For your information', pronunciation: 'eff-why-eye' },
+          { word: 'BTW', translation: 'By the way', pronunciation: 'bee-tee-dub-uhl-yoo' },
+          { word: 'Talk soon', translation: 'Friendly closing', pronunciation: 'tawk soon' }
+        ],
+        culturalNotes: 'Formal vs casual: emails often start with “Hi [Name],” and end with “Best regards,” in professional settings; “Talk soon” is casual. Common mistakes: writing emails that are too direct without greetings/closings. Grammar tip: polite email verbs: “I’m writing to…”, “I’m following up…”, “Could you please…”.'
+      },
+      {
+        id: 9,
+        title: 'Numbers, Dates, Time in English',
+        words: [
+          { word: 'What time is it?', translation: 'Ask the time', pronunciation: 'wut time iz it' },
+          { word: 'It’s 3:30.', translation: 'Tell time', pronunciation: 'its three THUR-tee' },
+          { word: 'Today is December 14th.', translation: 'Say the date', pronunciation: '…deh-SEM-ber for-TEENTH' },
+          { word: 'I have an appointment at 9 a.m.', translation: 'Schedule phrase', pronunciation: '…at nine ay em' },
+          { word: 'Can we meet on Friday?', translation: 'Plan a meeting', pronunciation: 'can we meet on FRY-day' }
+        ],
+        streetSlang: [
+          { word: 'Half past three', translation: '3:30 (common in UK)', pronunciation: 'haf past three' },
+          { word: 'Quarter to four', translation: '3:45', pronunciation: 'KWOR-ter too for' },
+          { word: 'Around noon', translation: 'About 12 p.m.', pronunciation: 'uh-round noon' },
+          { word: 'In a sec', translation: 'In a moment (very casual)', pronunciation: 'in uh sek' },
+          { word: 'Right now', translation: 'Immediately', pronunciation: 'right now' },
+          { word: 'Next week', translation: 'The week after this one', pronunciation: 'next week' }
+        ],
+        culturalNotes: 'Common mistakes: mixing US vs UK date formats (US: 12/14, UK: 14/12). Grammar tip: use “on” for days (“on Friday”), “at” for times (“at 9”), and “in” for months/years (“in December”, “in 2025”).'
+      },
+      {
+        id: 10,
+        title: 'Common Mistakes to Avoid',
+        words: [
+          { word: 'Could you say that again?', translation: 'Ask for repetition politely', pronunciation: 'kood you say that uh-GEN' },
+          { word: 'What does that mean?', translation: 'Ask for meaning', pronunciation: 'wut duz that meen' },
+          { word: 'I’m not sure.', translation: 'Soft “I don’t know”', pronunciation: 'I’m not shur' },
+          { word: 'That sounds good.', translation: 'Agree / accept', pronunciation: 'that sowndz good' },
+          { word: 'Let me think.', translation: 'Buy time to answer', pronunciation: 'let mee think' }
+        ],
+        streetSlang: [
+          { word: 'Kinda / sort of', translation: 'A little / approximately (casual)', pronunciation: 'KINE-duh / sort uhv' },
+          { word: 'Gonna / wanna', translation: 'Going to / want to (speech)', pronunciation: 'GUN-uh / WUN-uh' },
+          { word: 'It’s up to you', translation: 'Your choice', pronunciation: 'its up too you' },
+          { word: 'No big deal', translation: 'Not important', pronunciation: 'noh big deel' },
+          { word: 'That’s on me', translation: 'I take responsibility / I’ll pay', pronunciation: 'thats on mee' },
+          { word: 'All good', translation: 'Everything is fine', pronunciation: 'awl good' }
+        ],
+        culturalNotes: 'Common ESL mistakes (high-impact): (1) Article errors: “I have car” → “I have a car”; (2) Prepositions: “married with” → “married to”; (3) Word order in questions: “You are coming?” → “Are you coming?” (depending on context); (4) Confusing “he/she”. Grammar tips: practice simple question forms (Do/Does/Did), and use contractions in speech. Formal vs casual: avoid “gonna/wanna” in formal writing, but expect to hear them in conversation.'
+      }
+    ]
+  },
+  'english-native': {
+    id: 'english-native',
+    name: 'English Essentials',
+    flag: '🇺🇸',
+    code: 'en',
+    badge: 'For Native Speakers',
+    lessons: [
+      {
+        id: 1,
+        title: 'Common Grammar Mistakes (your/you\'re, there/their/they\'re, its/it\'s)',
+        words: [
+          { word: 'Your vs you\'re', translation: 'Your = possessive (“your resume”). You\'re = “you are” (“you\'re ready”).', pronunciation: 'Tip: If you can replace with “you are”, use you\'re.' },
+          { word: 'There / their / they\'re', translation: 'There = place (“over there”). Their = possessive (“their manager”). They\'re = “they are”.', pronunciation: 'Tip: “they\'re” = “they are”.' },
+          { word: 'Its vs it\'s', translation: 'Its = possessive (“its features”). It\'s = “it is/it has”.', pronunciation: 'Tip: Apostrophe usually means a contraction here.' },
+          { word: 'Then vs than', translation: 'Then = time/sequence (“then send it”). Than = comparison (“better than”).', pronunciation: 'Common in emails and reports.' },
+          { word: 'Fewer vs less', translation: 'Fewer = countable items (“fewer errors”). Less = uncountable (“less confusion”).', pronunciation: 'Use “fewer” for things you can count.' }
+        ],
+        culturalNotes: 'Mission (social good): Education should be free. This track is designed for native English speakers leveling up grammar and writing for school, work, and career growth.\n\n5 common mistakes to avoid:\n1) Writing “your” when you mean “you are” (you\'re)\n2) Mixing “there/their/they\'re”\n3) Using “it\'s” for possession (“the company changed it\'s policy”)\n4) Confusing “then/than” in comparisons\n5) Using “less” for countable nouns (“less mistakes” → “fewer mistakes”)\n\n5 practice examples (fix the sentence):\n1) “Your going to love the new policy.”\n2) “Their going to be a meeting at 3.”\n3) “The product changed it\'s pricing.”\n4) “This version is better then the last.”\n5) “We made less errors this week.”\n\nCareer tip: These errors can be interpreted as lack of attention to detail. Run a final proofread pass just for these five patterns before sending emails or submitting resumes.'
+      },
+      {
+        id: 2,
+        title: 'Professional Email Writing (subject lines, greetings, tone, closings)',
+        words: [
+          { word: 'Clear subject lines', translation: 'Use action + topic + date if needed (e.g., “Meeting Notes — Dec 14”).', pronunciation: 'Avoid vague subjects like “Hi” or “Question”.' },
+          { word: 'Professional greeting', translation: 'Use “Hi [Name],” or “Hello [Name],” (safe default).', pronunciation: '“Dear” is more formal; “Hey” is casual.' },
+          { word: 'One purpose per email', translation: 'State the ask early: what you need, by when, and what you’ve done.', pronunciation: 'Skimmable writing = faster replies.' },
+          { word: 'Tone control', translation: 'Be direct but courteous. Use “could you…” and “thank you”.', pronunciation: 'Remove sarcasm; avoid ALL CAPS.' },
+          { word: 'Strong closing', translation: 'Close with next step + sign-off (“Best,” “Thanks,”).', pronunciation: 'Include contact info when appropriate.' }
+        ],
+        culturalNotes: '5 common mistakes to avoid:\n1) No subject or vague subject (“Quick question”)\n2) Starting without a greeting (can sound abrupt)\n3) Burying the request in a long paragraph\n4) Over-apologizing (“Sorry to bother you…” repeatedly)\n5) Missing a clear next step or deadline\n\n5 practice examples:\n1) Rewrite a vague subject: “Important” → (make it specific)\n2) Rewrite an abrupt line: “Send me the file.” → (polite request)\n3) Turn a long paragraph into 3 bullet points\n4) Write a closing that includes a deadline (“by Friday 3pm”)\n5) Write a 2-sentence follow-up email (friendly, not pushy)\n\nCareer tip: Professional emails are judged on clarity and speed. Aim for: greeting → purpose → details/bullets → call to action → thanks → sign-off.'
+      },
+      {
+        id: 3,
+        title: 'Sentence Structure Basics (subject-verb-object, avoiding run-ons, punctuation)',
+        words: [
+          { word: 'Subject–Verb–Object', translation: 'Core pattern: “The team (S) finished (V) the report (O).”', pronunciation: 'Use this when writing feels messy.' },
+          { word: 'Avoid run-ons', translation: 'Don’t join full sentences with just a comma.', pronunciation: 'Use a period, semicolon, or conjunction.' },
+          { word: 'Use punctuation for clarity', translation: 'Commas, periods, and dashes guide the reader.', pronunciation: 'Punctuation affects meaning.' },
+          { word: 'Parallel structure', translation: 'Keep lists consistent: “plan, draft, and revise.”', pronunciation: 'Avoid mixing forms (“planning, drafted, revise”).' },
+          { word: 'Concise sentences', translation: 'Prefer shorter sentences for professional writing.', pronunciation: 'One idea per sentence is usually enough.' }
+        ],
+        culturalNotes: '5 common mistakes to avoid:\n1) Comma splices (“I emailed you, I didn’t hear back.”)\n2) Run-on sentences (no punctuation between complete thoughts)\n3) Dangling modifiers (“After reading the email, the mistake was obvious.”)\n4) Unclear pronouns (“They said it was fine” — who is “they”?)\n5) Inconsistent list structure\n\n5 practice examples:\n1) Fix: “I reviewed the doc, I added comments.”\n2) Break into two sentences: “We met yesterday we decided to delay.”\n3) Rewrite for parallelism: “We will hiring, training, and to onboard.”\n4) Clarify pronoun: “They approved it.”\n5) Rewrite a long sentence into two shorter ones.\n\nCareer tip: Clear sentences reduce back-and-forth. If your message will be forwarded, write it so a stranger can understand it instantly.'
+      },
+      {
+        id: 4,
+        title: 'Commonly Confused Words (accept/except, lose/loose, affect/effect)',
+        words: [
+          { word: 'Accept vs except', translation: 'Accept = receive/agree. Except = exclude.', pronunciation: '“I accept the offer.” / “Everyone except Sam.”' },
+          { word: 'Lose vs loose', translation: 'Lose = misplace/not win. Loose = not tight.', pronunciation: '“Lose the keys.” / “Loose shirt.”' },
+          { word: 'Affect vs effect', translation: 'Affect (verb) = influence. Effect (noun) = result.', pronunciation: '“Affect results.” / “An effect.”' },
+          { word: 'Compliment vs complement', translation: 'Compliment = praise. Complement = completes/works well with.', pronunciation: '“Nice compliment.” / “Colors complement.”' },
+          { word: 'Principle vs principal', translation: 'Principle = rule/value. Principal = main/person in charge.', pronunciation: '“Key principle.” / “School principal.”' }
+        ],
+        culturalNotes: '5 common mistakes to avoid:\n1) “Except the offer” when you mean “accept”\n2) “Loose” for “lose” in writing\n3) Using “effect” as a verb (“This will effect…” — sometimes correct, but risky)\n4) Mixing compliment/complement in professional writing\n5) Confusing principle/principal on resumes and school/work docs\n\n5 practice examples:\n1) Choose: “Please (accept/except) my apology.”\n2) Fix: “I don’t want to loose this opportunity.”\n3) Choose: “How will this change (affect/effect) our timeline?”\n4) Fix: “Your work really compliments the team.”\n5) Choose: “Our main (principal/principle) goal is quality.”\n\nCareer tip: If you’re not 100% sure, rewrite the sentence to avoid the risky word (e.g., use “influence” instead of “affect”).'
+      },
+      {
+        id: 5,
+        title: 'Writing Cover Letters (opening strong, highlighting skills, professional tone)',
+        words: [
+          { word: 'Strong opening', translation: 'Lead with role + value (“I’m applying for X; I bring Y.”).', pronunciation: 'Avoid generic openings.' },
+          { word: 'Evidence over claims', translation: 'Show achievements with numbers and outcomes.', pronunciation: '“Improved X by 20%” beats “hardworking”.' },
+          { word: 'Match job language', translation: 'Mirror key terms from the posting (truthfully).', pronunciation: 'This helps recruiters scan quickly.' },
+          { word: 'Professional tone', translation: 'Confident, specific, and respectful.', pronunciation: 'Avoid overly casual language.' },
+          { word: 'Clear closing', translation: 'Re-state interest + next step (“I’d welcome an interview.”).', pronunciation: 'End politely.' }
+        ],
+        culturalNotes: '5 common mistakes to avoid:\n1) Repeating the resume without adding context\n2) Using clichés (“team player”, “go-getter”) with no proof\n3) Writing too long (aim ~200–350 words)\n4) Addressing the wrong company/role (copy/paste error)\n5) Focusing on what you want, not what you offer\n\n5 practice examples:\n1) Write a 2-sentence opening for a role you want\n2) Turn a claim into evidence (“I’m organized” → measurable example)\n3) Rewrite a casual line into professional tone\n4) Draft a 3-bullet “Why I’m a fit” section\n5) Write a closing that asks for an interview politely\n\nCareer tip: Treat the cover letter as a writing sample. Hiring managers use it to judge clarity, tone, and attention to detail.'
+      },
+      {
+        id: 6,
+        title: 'Punctuation That Matters (commas, semicolons, apostrophes, quotation marks)',
+        words: [
+          { word: 'Commas for clarity', translation: 'Use commas to separate ideas and avoid confusion.', pronunciation: 'Avoid comma splices.' },
+          { word: 'Semicolons', translation: 'Join two related complete sentences; or separate complex list items.', pronunciation: 'Use sparingly.' },
+          { word: 'Apostrophes', translation: 'Contractions and possession (not plurals).', pronunciation: '“it’s” vs “its” is key.' },
+          { word: 'Quotation marks', translation: 'Use for direct quotes and titles (varies by style guide).', pronunciation: 'Keep punctuation consistent.' },
+          { word: 'Hyphens vs dashes', translation: 'Hyphen connects words; em dash sets off a phrase.', pronunciation: 'Don’t overuse dashes.' }
+        ],
+        culturalNotes: '5 common mistakes to avoid:\n1) Comma splices (“We finished, we sent it.”)\n2) Apostrophes for plurals (“deadline’s” when you mean “deadlines”)\n3) Random semicolons to “sound smart”\n4) Inconsistent quote punctuation\n5) Missing commas that change meaning (“Let’s eat, Grandma”)\n\n5 practice examples:\n1) Fix the comma splice using a period or semicolon\n2) Fix: “The manager\'s are meeting.”\n3) Add commas to clarify a sentence\n4) Correct a quote with punctuation\n5) Rewrite a sentence using an em dash appropriately\n\nCareer tip: In professional documents, punctuation signals credibility. If you’re unsure, choose the simplest correct option (short sentences + periods).'
+      },
+      {
+        id: 7,
+        title: 'Speaking Professionally (interviews, presentations, meetings, phone calls)',
+        words: [
+          { word: 'Structured answers', translation: 'Use STAR (Situation, Task, Action, Result) for interview stories.', pronunciation: 'Keeps answers concise.' },
+          { word: 'Professional filler control', translation: 'Reduce “um/like”; pause instead.', pronunciation: 'Silence is better than rambling.' },
+          { word: 'Clarifying questions', translation: 'Repeat back and confirm the ask.', pronunciation: 'Shows listening and prevents errors.' },
+          { word: 'Meeting language', translation: 'Use phrases like “To clarify…” and “My recommendation is…”.', pronunciation: 'Be direct and respectful.' },
+          { word: 'Phone etiquette', translation: 'Smile, speak slower, confirm names and numbers.', pronunciation: 'Phones remove body language—clarity matters.' }
+        ],
+        culturalNotes: '5 common mistakes to avoid:\n1) Answering without structure (rambling)\n2) Overusing filler words\n3) Talking too fast under stress\n4) Being vague about outcomes (“I helped” instead of specifics)\n5) Not confirming next steps (“So what happens next?”)\n\n5 practice examples:\n1) Write a STAR answer for “Tell me about yourself”\n2) Rewrite a vague statement into a measurable one\n3) Create a 30-second summary of a project\n4) Draft a meeting phrase to disagree politely\n5) Practice a phone script to schedule an appointment\n\nCareer tip: Professional speaking is a skill, not a personality trait. Prepare 3–5 stories you can reuse across interviews and presentations.'
+      },
+      {
+        id: 8,
+        title: 'Improving Vocabulary (professional alternatives, context-appropriate language)',
+        words: [
+          { word: 'Precision', translation: 'Choose exact words (“request” vs “ask”, “purchase” vs “buy”).', pronunciation: 'Avoid vague words like “stuff”.' },
+          { word: 'Professional alternatives', translation: 'Swap informal words (“kids” → “children”, “a lot” → “significantly”).', pronunciation: 'Match the context.' },
+          { word: 'Tone matching', translation: 'Different audiences need different vocabulary.', pronunciation: 'Email vs text message.' },
+          { word: 'Avoid buzzword overload', translation: 'Use buzzwords only when you can back them up.', pronunciation: 'Clarity > hype.' },
+          { word: 'Active verbs', translation: 'Prefer strong verbs (“led”, “built”, “improved”).', pronunciation: 'Especially for resumes.' }
+        ],
+        culturalNotes: '5 common mistakes to avoid:\n1) Using overly informal words in professional contexts\n2) Using words you don’t fully understand\n3) Overusing buzzwords (“synergy”, “rockstar”) without proof\n4) Repeating the same weak verbs (“did”, “helped”)\n5) Writing too “fancy” and becoming unclear\n\n5 practice examples:\n1) Replace: “a lot of” with a precise alternative\n2) Replace: “stuff” with a specific noun\n3) Rewrite a sentence to sound more professional\n4) Convert passive voice to active voice\n5) Create 5 resume bullets using action verbs\n\nCareer tip: Strong vocabulary isn’t about big words—it’s about the right word. If you can’t explain a word simply, don’t use it in a cover letter or interview.'
+      },
+      {
+        id: 9,
+        title: 'Reading Comprehension (understanding complex texts, identifying main ideas)',
+        words: [
+          { word: 'Main idea vs details', translation: 'Main idea = the point; details = support.', pronunciation: 'Summarize in 1 sentence.' },
+          { word: 'Context clues', translation: 'Use surrounding sentences to infer meaning.', pronunciation: 'Don’t stop at every unknown word.' },
+          { word: 'Active reading', translation: 'Annotate, highlight claims, and write questions.', pronunciation: 'Engage with the text.' },
+          { word: 'Argument structure', translation: 'Identify claim → evidence → conclusion.', pronunciation: 'Especially in essays and reports.' },
+          { word: 'Reliable sources', translation: 'Check author, date, and evidence quality.', pronunciation: 'Avoid misinformation.' }
+        ],
+        culturalNotes: '5 common mistakes to avoid:\n1) Reading every sentence at the same speed\n2) Confusing examples with the main idea\n3) Ignoring headings and topic sentences\n4) Not checking definitions of key terms\n5) Skipping the conclusion (often restates the claim)\n\n5 practice examples:\n1) Write a 1-sentence summary of a paragraph\n2) Identify the author’s claim in an article\n3) List 3 supporting details\n4) Define 3 key terms from context\n5) Write a question you’d ask the author\n\nCareer tip: Strong reading comprehension helps you follow policies, contracts, and technical docs—skills employers value. Practice summarizing what you read in 2–3 bullets.'
+      },
+      {
+        id: 10,
+        title: 'Writing Resumes (action verbs, quantifying achievements, formatting)',
+        words: [
+          { word: 'Action verbs', translation: 'Start bullets with strong verbs: “Led, Built, Improved, Reduced”.', pronunciation: 'Avoid “Responsible for…”.' },
+          { word: 'Quantify impact', translation: 'Add numbers: time saved, revenue, volume, accuracy, size.', pronunciation: 'Proof beats claims.' },
+          { word: 'Formatting consistency', translation: 'Consistent dates, spacing, tense, and punctuation.', pronunciation: 'Make it easy to scan.' },
+          { word: 'Tailor to the role', translation: 'Prioritize relevant experience and keywords.', pronunciation: 'Different resume for different roles.' },
+          { word: 'Error-free final pass', translation: 'Proofread carefully; run spellcheck; read aloud.', pronunciation: 'One typo can cost an interview.' }
+        ],
+        culturalNotes: '5 common mistakes to avoid:\n1) “Responsible for…” with no outcomes\n2) No metrics (no proof of impact)\n3) Inconsistent formatting and dates\n4) Long paragraphs instead of bullets\n5) Typos and grammar errors\n\n5 practice examples:\n1) Rewrite: “Helped customers” into an achievement bullet with a metric\n2) Rewrite: “Responsible for scheduling” into an action verb bullet\n3) Turn a task into an outcome (“processed invoices” → how many / accuracy)\n4) Create 3 bullets for one job using different action verbs\n5) Draft a one-line summary statement for the top of a resume\n\nCareer tip: Your resume is a marketing document. Recruiters scan in seconds—lead with impact, make it skimmable, and remove anything that doesn’t support the target role.'
+      }
+    ]
+  }
 };
 
 export const getLanguageById = (id) => languages[id];

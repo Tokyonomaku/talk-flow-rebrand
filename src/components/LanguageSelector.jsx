@@ -58,6 +58,11 @@ export default function LanguageSelector({ onSelectLanguage, onLockedLanguageCli
                 <h2 className="text-2xl font-bold text-gray-900 mb-1 pr-16">
                   {language.name}
                 </h2>
+                {language.badge && (
+                  <p className="text-xs font-semibold text-indigo-700 bg-indigo-50 inline-block px-2 py-1 rounded-full mb-2">
+                    {language.badge}
+                  </p>
+                )}
                 <p className="text-gray-600">
                   {language.lessons.length} lessons available
                 </p>

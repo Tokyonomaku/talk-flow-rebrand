@@ -100,7 +100,7 @@ localStorage.removeItem('completedLessons');
 
 - **First-time users**: Must select one free language before accessing app
 - **Free users**: Can access all 10 lessons in their selected free language only
-- **Premium users**: Unlimited access to all 8 languages and all lessons
+- **Premium users**: Unlimited access to all 11 languages and all lessons
 - **Status bar**: Shows "Premium Member" or "Learning [Language] for free"
 - **Language cards**: 
   - Free language shows "FREE" badge (green border)

@@ -46,7 +46,7 @@ export default function PremiumLessonModal({ isOpen, onClose, languageName, less
             Unlock Advanced Lessons
           </h2>
           <p className="text-gray-600">
-            Upgrade to Premium to access lessons 11-26 in all 8 languages
+            Upgrade to Premium to unlock all 11 languages (and lessons 11–26 where available)
           </p>
         </div>
 
@@ -69,7 +69,7 @@ export default function PremiumLessonModal({ isOpen, onClose, languageName, less
             <li className="flex items-start gap-2">
               <span className="text-green-500 font-bold">✓</span>
               <span className="text-gray-700">
-                All 8 languages unlocked
+                All 11 languages unlocked
               </span>
             </li>
             <li className="flex items-start gap-2">
