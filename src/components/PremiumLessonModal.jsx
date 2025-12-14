@@ -46,7 +46,10 @@ export default function PremiumLessonModal({ isOpen, onClose, languageName, less
             Unlock Advanced Lessons
           </h2>
           <p className="text-gray-600">
-            Upgrade to Premium to unlock all 11 languages (and lessons 11–26 where available)
+            Unlock advanced lessons in 9 languages: Spanish, French, German, Korean, Portuguese, Japanese, Chinese, Russian, Arabic
+          </p>
+          <p className="text-gray-600 mt-2 text-sm">
+            English education (ESL & Native Speakers) is 100% free, always. Premium unlocks lessons 11–26 in the 9 languages above (as they’re available).
           </p>
         </div>
 
@@ -69,13 +72,13 @@ export default function PremiumLessonModal({ isOpen, onClose, languageName, less
             <li className="flex items-start gap-2">
               <span className="text-green-500 font-bold">✓</span>
               <span className="text-gray-700">
-                All 11 languages unlocked
+                Advanced lessons (11–26) in 9 languages
               </span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-green-500 font-bold">✓</span>
               <span className="text-gray-700">
-                208 total lessons (26 per language)
+                16 advanced lessons per language (where available)
               </span>
             </li>
             <li className="flex items-start gap-2">

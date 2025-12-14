@@ -158,11 +158,25 @@ export function hasFreeLanguage() {
 }
 
 /**
+ * English education tracks that are always free for everyone.
+ * These tracks should never show paywalls, locks, or premium prompts.
+ * @param {string} languageId
+ * @returns {boolean}
+ */
+export function isFreeEnglishTrack(languageId) {
+  return languageId === 'esl-english' || languageId === 'english-native';
+}
+
+/**
  * Check if a language is accessible (free language or premium)
  * @param {string} languageId - Language ID to check
  * @returns {boolean} True if language is accessible
  */
 export function isLanguageAccessible(languageId) {
+  // English education is always free (social good positioning)
+  if (isFreeEnglishTrack(languageId)) {
+    return true;
+  }
   if (isPremium()) {
     return true; // Premium users have access to all languages
   }
@@ -196,6 +210,11 @@ export function getRemainingFreeLessons() {
  * @returns {boolean} True if lesson is accessible
  */
 export function isLessonAccessible(languageId, lessonId) {
+  // English education tracks are always free — all lessons unlocked.
+  if (isFreeEnglishTrack(languageId)) {
+    return true;
+  }
+
   // Get premium status directly from localStorage
   const premiumStatus = localStorage.getItem('isPremium') === 'true';
   console.log(`[isLessonAccessible] Premium status: ${premiumStatus}, Lesson ID: ${lessonId}, Language: ${languageId}`);

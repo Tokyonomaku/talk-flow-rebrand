@@ -101,21 +101,18 @@ function App() {
   };
 
   const handleSelectLesson = (lesson) => {
-    // CRITICAL: Check premium status directly
-    const premiumStatus = localStorage.getItem('isPremium') === 'true';
-    const lessonNum = typeof lesson.id === 'string' ? parseInt(lesson.id, 10) : Number(lesson.id);
-    const isAccessible = premiumStatus || lessonNum <= 10;
-    
-    console.log(`[handleSelectLesson] Lesson ${lesson.id}: premium=${premiumStatus}, lessonNum=${lessonNum}, isAccessible=${isAccessible}`);
-    
-    // Check if lesson is accessible
-    if (!isAccessible) {
+    const languageId = selectedLanguage?.id;
+    const accessible = isLessonAccessible(languageId, lesson.id);
+
+    console.log(`[handleSelectLesson] Lesson ${lesson.id}: language=${languageId}, accessible=${accessible}`);
+
+    if (!accessible) {
       console.log(`[handleSelectLesson] BLOCKING access to lesson ${lesson.id} - showing upgrade modal`);
       setSelectedLessonForUpgrade(lesson.id);
       setShowPremiumLessonModal(true);
       return;
     }
-    
+
     console.log(`[handleSelectLesson] ALLOWING access to lesson ${lesson.id}`);
     setSelectedLesson(lesson);
     setCurrentView('lesson-view');

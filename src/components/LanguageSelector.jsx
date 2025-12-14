@@ -1,6 +1,6 @@
 import { Lock } from 'lucide-react';
 import { getAllLanguages } from '../data/languages';
-import { isLanguageAccessible, getFreeLanguages, isPremium } from '../utils/lessonTracking';
+import { isLanguageAccessible, getFreeLanguages, isPremium, isFreeEnglishTrack } from '../utils/lessonTracking';
 
 export default function LanguageSelector({ onSelectLanguage, onLockedLanguageClick }) {
   const languages = getAllLanguages();
@@ -16,12 +16,19 @@ export default function LanguageSelector({ onSelectLanguage, onLockedLanguageCli
         <p className="text-center text-gray-600 mb-8">
           Choose a language to start learning
         </p>
+
+        <div className="mb-6 text-center">
+          <p className="text-sm text-gray-700">
+            <span className="font-semibold">English education (ESL & Native Speakers) is 100% free, always.</span> Premium unlocks 9 other languages.
+          </p>
+        </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {languages.map((language) => {
+            const alwaysFree = isFreeEnglishTrack(language.id);
             const isAccessible = isLanguageAccessible(language.id);
             const isFree = freeLanguages.includes(language.id) && !premium;
-            const isLocked = !isAccessible;
+            const isLocked = !isAccessible && !alwaysFree;
 
             return (
               <button
@@ -42,7 +49,11 @@ export default function LanguageSelector({ onSelectLanguage, onLockedLanguageCli
               >
                 {/* Badges */}
                 <div className="absolute top-4 right-4">
-                  {isFree ? (
+                  {alwaysFree ? (
+                    <span className="bg-blue-600 text-white px-2 py-1 rounded-full text-xs font-semibold">
+                      100% Free
+                    </span>
+                  ) : isFree ? (
                     <span className="bg-green-500 text-white px-2 py-1 rounded-full text-xs font-semibold">
                       FREE
                     </span>
@@ -66,6 +77,11 @@ export default function LanguageSelector({ onSelectLanguage, onLockedLanguageCli
                 <p className="text-gray-600">
                   {language.lessons.length} lessons available
                 </p>
+                {!premium && !alwaysFree && (
+                  <p className="text-xs text-gray-500 mt-1">
+                    10 free lessons • 11–26 Premium
+                  </p>
+                )}
               </button>
             );
           })}

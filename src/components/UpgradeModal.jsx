@@ -43,17 +43,17 @@ export default function UpgradeModal({ isOpen, onClose, onLanguageChanged }) {
         {/* Header */}
         <div className="mb-6">
           <h2 className="text-3xl font-bold text-gray-900 mb-2">
-            Unlock 128 More Lessons
+            Unlock Advanced Lessons
           </h2>
           <p className="text-gray-700 font-medium">
-            Get instant access to premium content across all 11 languages
+            Unlock advanced lessons in 9 languages: Spanish, French, German, Korean, Portuguese, Japanese, Chinese, Russian, Arabic
           </p>
           <p className="text-gray-600 mt-2">
             {freeLanguageNames.length > 0
               ? `You're currently learning ${freeLanguageNames.join(' & ')} for free.`
               : 'You’re currently on the free plan.'
             }{' '}
-            Upgrade to unlock lessons 11–26 in every language.
+            English education (ESL & Native Speakers) is 100% free, always. Premium unlocks lessons 11–26 in the 9 languages above (as they’re available).
           </p>
         </div>
 

@@ -1,11 +1,15 @@
 import { useState, useEffect } from 'react';
 import { ArrowLeft, Volume2, Check } from 'lucide-react';
-import { markLessonComplete, isLessonCompleted, isPremium } from '../utils/lessonTracking';
+import { markLessonComplete, isLessonCompleted, isPremium, isFreeEnglishTrack } from '../utils/lessonTracking';
 
-export default function LessonView({ lesson, language, onBack }) {
+export default function LessonView({ lesson, language, onBack, onUpgradeClick }) {
   const [playingIndex, setPlayingIndex] = useState(null);
   const [isCompleted, setIsCompleted] = useState(false);
   const [voices, setVoices] = useState([]);
+  const premium = isPremium();
+  const alwaysFreeEnglish = isFreeEnglishTrack(language.id);
+  const lessonNum = typeof lesson.id === 'string' ? parseInt(lesson.id, 10) : Number(lesson.id);
+  const justCompletedLesson10 = lessonNum === 10 && isCompleted && !premium && !alwaysFreeEnglish;
 
   // Check if lesson is already completed on mount
   useEffect(() => {
@@ -308,6 +312,20 @@ export default function LessonView({ lesson, language, onBack }) {
               >
                 Upgrade to Premium - $150/year
               </button>
+            </div>
+          </div>
+        )}
+
+        {/* Completion Prompt for Free English Education Tracks */}
+        {lessonNum === 10 && isCompleted && !premium && alwaysFreeEnglish && (
+          <div className="mt-8 bg-gradient-to-r from-emerald-600 to-teal-600 text-white rounded-lg p-6 shadow-xl">
+            <div className="text-center">
+              <h3 className="text-2xl font-bold mb-2">
+                ✅ Great work — you finished Lesson 10!
+              </h3>
+              <p className="text-emerald-100 mb-0 text-lg">
+                English education (ESL & Native Speakers) is 100% free, always.
+              </p>
             </div>
           </div>
         )}
