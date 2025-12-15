@@ -40,10 +40,10 @@ export default function LanguageSelector({ onSelectLanguage, onLockedLanguageCli
                     onSelectLanguage(language);
                   }
                 }}
-                disabled={isLocked}
+                aria-disabled={isLocked}
                 className={`bg-white rounded-lg shadow-md p-6 text-left relative transition-all ${
                   isLocked
-                    ? 'opacity-60 cursor-not-allowed'
+                    ? 'opacity-60'
                     : 'hover:shadow-lg hover:scale-105'
                 } ${isFree ? 'border-2 border-green-400' : ''}`}
               >

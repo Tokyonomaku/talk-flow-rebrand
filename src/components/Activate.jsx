@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Loader2 } from 'lucide-react';
 import { isPremium } from '../utils/lessonTracking';
+import { logEvent } from '../utils/eventLog';
 
 const ACCESS_CODE = 'PREMIUM2025';
 
@@ -10,6 +11,10 @@ export default function Activate({ onActivate }) {
   const [success, setSuccess] = useState(false);
   const [isActivating, setIsActivating] = useState(false);
   const premium = isPremium();
+
+  useEffect(() => {
+    logEvent('activate_visited');
+  }, []);
 
   const handleActivate = () => {
     if (isActivating || success) return;

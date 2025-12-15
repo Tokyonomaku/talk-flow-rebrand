@@ -46,7 +46,7 @@ export default function LessonList({ language, onBack, onSelectLesson, onLockedL
             <div className="flex items-center justify-between flex-wrap gap-4">
               <div className="flex-1">
                 <p className="font-semibold text-lg mb-1">
-                  🔒 {unlockedLessons} of {totalLessons} lessons unlocked. Upgrade to Premium - $150/year
+                  🔒 {unlockedLessons} of {totalLessons} lessons unlocked. Upgrade to Premium (Monthly $20/mo or Annual $150/yr)
                 </p>
               </div>
               <button
@@ -56,7 +56,7 @@ export default function LessonList({ language, onBack, onSelectLesson, onLockedL
                 }}
                 className="bg-white text-blue-600 px-6 py-2 rounded-lg font-semibold hover:bg-blue-50 transition-colors whitespace-nowrap shadow-md"
               >
-                Upgrade Now
+                View plans
               </button>
             </div>
           </div>

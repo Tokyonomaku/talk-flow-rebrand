@@ -366,7 +366,7 @@ export default function LessonView({ lesson, language, onBack, onUpgradeClick })
                 onClick={onUpgradeClick}
                 className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors shadow-lg"
               >
-                Upgrade to Premium - $150/year
+                View plans (Monthly or Annual)
               </button>
             </div>
           </div>

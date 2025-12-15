@@ -2,9 +2,11 @@ import { useState } from 'react';
 import { X, Lock, Loader2 } from 'lucide-react';
 import { getFreeLanguages } from '../utils/lessonTracking';
 import { getAllLanguages } from '../data/languages';
+import { logEvent } from '../utils/eventLog';
 
 export default function PremiumLessonModal({ isOpen, onClose, languageName, lessonNumber }) {
   const [isRedirectingToCheckout, setIsRedirectingToCheckout] = useState(false);
+  const [selectedPlan, setSelectedPlan] = useState(null); // 'monthly' | 'annual' | null
   const freeLanguages = getFreeLanguages();
   const languages = getAllLanguages();
   const freeLanguageNames = freeLanguages
@@ -13,17 +15,20 @@ export default function PremiumLessonModal({ isOpen, onClose, languageName, less
 
   if (!isOpen) return null;
 
-  const handleUpgrade = () => {
+  const startCheckout = (plan) => {
     if (isRedirectingToCheckout) return;
+    setSelectedPlan(plan);
     setIsRedirectingToCheckout(true);
-    console.log('[PremiumLessonModal] Upgrade button clicked - redirecting to Gumroad');
-    // Redirect to Gumroad payment page
-    window.location.href = 'https://winterfuyu.gumroad.com/l/iecvpk?wanted=true';
+    logEvent('upgrade_clicked', { from_where: plan === 'monthly' ? 'premium_lesson_modal_monthly' : 'premium_lesson_modal_annual' });
+    window.location.href =
+      plan === 'monthly'
+        ? 'https://winterfuyu.gumroad.com/l/gmijuf'
+        : 'https://winterfuyu.gumroad.com/l/iecvpk';
   };
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[100] p-4">
-      <div className="bg-white rounded-lg shadow-xl max-w-md w-full p-6 relative">
+      <div className="bg-white rounded-lg shadow-xl max-w-3xl w-full p-6 relative">
         {/* Close Button */}
         <button
           onClick={onClose}
@@ -43,74 +48,83 @@ export default function PremiumLessonModal({ isOpen, onClose, languageName, less
         {/* Header */}
         <div className="mb-6 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-2">
-            Unlock Advanced Lessons
+            Unlock All 11 Languages
           </h2>
-          <p className="text-gray-600">
-            Unlock advanced lessons in 9 languages: Spanish, French, German, Korean, Portuguese, Japanese, Chinese, Russian, Arabic
-          </p>
-          <p className="text-gray-600 mt-2 text-sm">
-            English education (ESL & Native Speakers) is 100% free, always. Premium unlocks lessons 11–26 in the 9 languages above (as they’re available).
-          </p>
+          <p className="text-gray-600">Choose your plan:</p>
+          <p className="text-gray-600 mt-2 text-sm">Premium unlocks all languages and lessons.</p>
         </div>
 
-        {/* Pricing */}
-        <div className="mb-6 p-4 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg border-2 border-blue-200">
-          <div className="text-center">
-            <div className="text-4xl font-bold text-gray-900 mb-1">
-              $150<span className="text-xl text-gray-600">/year</span>
+        {/* Pricing Options */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+          {/* Monthly */}
+          <div className="bg-white rounded-lg border border-gray-200 shadow-sm p-5 text-left">
+            <h3 className="text-xl font-bold text-gray-900 mb-2">Monthly</h3>
+            <div className="mb-3">
+              <div className="flex items-baseline gap-1">
+                <span className="text-4xl font-extrabold text-gray-900">$20</span>
+                <span className="text-gray-600 font-semibold">/month</span>
+              </div>
             </div>
-            <p className="text-sm text-gray-600">Unlimited access</p>
+            <ul className="space-y-2 text-gray-700 mb-4">
+              <li>✓ All 11 languages</li>
+              <li>✓ 260 lessons</li>
+              <li>✓ Cancel anytime</li>
+            </ul>
+            <button
+              className={`w-full py-3 px-4 rounded-lg font-semibold transition-colors border ${
+                isRedirectingToCheckout
+                  ? 'bg-gray-100 text-gray-400 border-gray-200 cursor-not-allowed'
+                  : 'bg-white text-gray-800 border-gray-300 hover:bg-gray-50'
+              }`}
+              disabled={isRedirectingToCheckout}
+              onClick={() => startCheckout('monthly')}
+            >
+              <span className="inline-flex items-center justify-center gap-2">
+                {isRedirectingToCheckout && selectedPlan === 'monthly' && <Loader2 className="w-5 h-5 animate-spin" />}
+                {isRedirectingToCheckout && selectedPlan === 'monthly' ? 'Opening...' : 'Start Monthly'}
+              </span>
+            </button>
+          </div>
+
+          {/* Annual (featured) */}
+          <div className="relative bg-white rounded-lg border-2 border-blue-300 shadow-lg p-5 md:scale-[1.03] text-left">
+            <div className="absolute -top-3 left-4 bg-yellow-400 text-gray-900 px-3 py-1 rounded-full text-xs font-extrabold shadow">
+              SAVE $90
+            </div>
+            <h3 className="text-xl font-bold text-gray-900 mb-2">Annual</h3>
+            <div className="mb-1">
+              <div className="flex items-baseline gap-1">
+                <span className="text-4xl font-extrabold text-gray-900">$150</span>
+                <span className="text-gray-600 font-semibold">/year</span>
+              </div>
+            </div>
+            <div className="text-sm font-semibold text-blue-700 mb-3">Just $12.50/month</div>
+            <ul className="space-y-2 text-gray-700 mb-4">
+              <li>✓ All 11 languages</li>
+              <li>✓ 260 lessons</li>
+              <li>✓ Save $90 vs monthly</li>
+              <li>✓ Best value</li>
+            </ul>
+            <button
+              className={`w-full py-3 px-4 rounded-lg font-semibold transition-colors shadow-md ${
+                isRedirectingToCheckout
+                  ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
+                  : 'bg-blue-600 text-white hover:bg-blue-700'
+              }`}
+              disabled={isRedirectingToCheckout}
+              onClick={() => startCheckout('annual')}
+            >
+              <span className="inline-flex items-center justify-center gap-2">
+                {isRedirectingToCheckout && selectedPlan === 'annual' && <Loader2 className="w-5 h-5 animate-spin" />}
+                {isRedirectingToCheckout && selectedPlan === 'annual' ? 'Opening...' : 'Get Annual - Best Deal'}
+              </span>
+            </button>
           </div>
         </div>
 
-        {/* Features */}
-        <div className="mb-6">
-          <h3 className="text-lg font-semibold text-gray-900 mb-3">
-            Premium Features:
-          </h3>
-          <ul className="space-y-2">
-            <li className="flex items-start gap-2">
-              <span className="text-green-500 font-bold">✓</span>
-              <span className="text-gray-700">
-                Advanced lessons (11–26) in 9 languages
-              </span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-green-500 font-bold">✓</span>
-              <span className="text-gray-700">
-                16 advanced lessons per language (where available)
-              </span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-green-500 font-bold">✓</span>
-              <span className="text-gray-700">
-                Songs, slang, cultural content
-              </span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-green-500 font-bold">✓</span>
-              <span className="text-gray-700">
-                All future updates
-              </span>
-            </li>
-          </ul>
-        </div>
-
-        {/* Button */}
-        <button
-          onClick={handleUpgrade}
-          disabled={isRedirectingToCheckout}
-          className={`w-full py-3 px-6 rounded-lg font-semibold transition-colors shadow-md hover:shadow-lg ${
-            isRedirectingToCheckout
-              ? 'bg-gray-400 text-gray-600 cursor-not-allowed'
-              : 'bg-blue-600 text-white hover:bg-blue-700'
-          }`}
-        >
-          <span className="inline-flex items-center justify-center gap-2">
-            {isRedirectingToCheckout && <Loader2 className="w-5 h-5 animate-spin" />}
-            {isRedirectingToCheckout ? 'Opening checkout...' : 'Upgrade for $150/year'}
-          </span>
-        </button>
+        <p className="text-sm text-gray-600 text-center">
+          Both plans include all languages and lessons. Cancel monthly anytime.
+        </p>
       </div>
     </div>
   );

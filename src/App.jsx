@@ -7,8 +7,10 @@ import UpgradeModal from './components/UpgradeModal';
 import PremiumLessonModal from './components/PremiumLessonModal';
 import ChooseFreeLanguageModal from './components/ChooseFreeLanguageModal';
 import Activate from './components/Activate';
+import Stats from './components/Stats';
 import { getAllLanguages } from './data/languages';
 import { isPremium, hasFreeLanguage, setFreeLanguages, isLanguageAccessible, getFreeLanguages, isLessonAccessible } from './utils/lessonTracking';
+import { logEvent } from './utils/eventLog';
 
 function App() {
   const [currentView, setCurrentView] = useState('language-selector');
@@ -39,7 +41,7 @@ function App() {
   // Check if user needs to select free language on mount
   useEffect(() => {
     // Don't show modals on activate page
-    if (currentRoute === '/activate') return;
+    if (currentRoute === '/activate' || currentRoute === '/stats') return;
 
     const checkInitialState = () => {
       const premium = isPremium();
@@ -77,6 +79,7 @@ function App() {
 
   const handleSelectFreeLanguages = (languageIds) => {
     if (languageIds && languageIds.length === 2) {
+      logEvent('languages_selected', { lang1: languageIds[0], lang2: languageIds[1] });
       setFreeLanguages(languageIds);
       setFreeLanguagesState(languageIds);
       setShowFreeLanguageModal(false);
@@ -97,6 +100,7 @@ function App() {
   };
 
   const handleLockedLanguageClick = () => {
+    logEvent('upgrade_clicked', { from_where: 'locked_language' });
     setShowUpgradeModal(true);
   };
 
@@ -114,11 +118,13 @@ function App() {
     }
 
     console.log(`[handleSelectLesson] ALLOWING access to lesson ${lesson.id}`);
+    logEvent('lesson_opened', { language: languageId, lesson_number: lesson.id });
     setSelectedLesson(lesson);
     setCurrentView('lesson-view');
   };
 
-  const handleLockedLessonClick = (lessonId) => {
+  const handleLockedLessonClick = (lessonId, fromWhere = 'locked_lesson') => {
+    logEvent('upgrade_clicked', { from_where: fromWhere });
     if (lessonId) {
       setSelectedLessonForUpgrade(lessonId);
     }
@@ -153,6 +159,19 @@ function App() {
   // Show activate page if on /activate route
   if (currentRoute === '/activate') {
     return <Activate onActivate={handlePremiumActivate} />;
+  }
+
+  // Simple stats page
+  if (currentRoute === '/stats') {
+    return (
+      <Stats
+        onBack={() => {
+          window.history.pushState({}, '', '/');
+          setCurrentRoute('/');
+          setCurrentView('language-selector');
+        }}
+      />
+    );
   }
 
   // Get free language names for display
@@ -198,16 +217,24 @@ function App() {
             >
               Languages
             </button>
+            <button
+              onClick={() => {
+                window.history.pushState({}, '', '/stats');
+                setCurrentRoute('/stats');
+              }}
+              className="text-gray-600 hover:text-gray-700 font-semibold text-sm transition-colors whitespace-nowrap"
+            >
+              Stats
+            </button>
             {!premiumStatus && (
               <>
                 <button
                   onClick={() => {
-                    setShowPremiumLessonModal(true);
-                    setSelectedLessonForUpgrade(11);
+                    handleLockedLessonClick(11, 'topbar_upgrade');
                   }}
                   className="text-blue-600 hover:text-blue-700 font-semibold text-sm transition-colors"
                 >
-                  Upgrade to Premium
+                  Upgrade
                 </button>
                 <a
                   href="/activate"
@@ -245,7 +272,7 @@ function App() {
           lesson={selectedLesson}
           language={selectedLanguage}
           onBack={handleBackToLessons}
-          onUpgradeClick={() => handleLockedLessonClick(11)}
+          onUpgradeClick={() => handleLockedLessonClick(11, 'lesson_complete_prompt')}
         />
       )}
 
