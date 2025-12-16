@@ -8,6 +8,10 @@ import PremiumLessonModal from './components/PremiumLessonModal';
 import ChooseFreeLanguageModal from './components/ChooseFreeLanguageModal';
 import Activate from './components/Activate';
 import Stats from './components/Stats';
+import LandingPage from './components/LandingPage';
+import Privacy from './components/Privacy';
+import Terms from './components/Terms';
+import Contact from './components/Contact';
 import { getAllLanguages } from './data/languages';
 import { isPremium, hasFreeLanguage, setFreeLanguages, isLanguageAccessible, getFreeLanguages, isLessonAccessible } from './utils/lessonTracking';
 import { logEvent } from './utils/eventLog';
@@ -23,6 +27,29 @@ function App() {
   const [freeLanguages, setFreeLanguagesState] = useState([]);
   const [currentRoute, setCurrentRoute] = useState(window.location.pathname);
   const [selectedLessonForUpgrade, setSelectedLessonForUpgrade] = useState(null);
+
+  const navigate = (path) => {
+    window.history.pushState({}, '', path);
+    setCurrentRoute(path);
+  };
+
+  useEffect(() => {
+    const knownRoutes = new Set([
+      '/',
+      '/select',
+      '/choose-languages',
+      '/activate',
+      '/stats',
+      '/privacy',
+      '/terms',
+      '/contact',
+    ]);
+
+    if (!knownRoutes.has(currentRoute)) {
+      window.history.replaceState({}, '', '/');
+      setCurrentRoute('/');
+    }
+  }, [currentRoute]);
 
   // Handle routing
   useEffect(() => {
@@ -40,8 +67,9 @@ function App() {
 
   // Check if user needs to select free language on mount
   useEffect(() => {
-    // Don't show modals on activate page
-    if (currentRoute === '/activate' || currentRoute === '/stats') return;
+    // Don't show modals on non-app routes
+    const nonAppRoutes = new Set(['/', '/activate', '/stats', '/privacy', '/terms', '/contact']);
+    if (nonAppRoutes.has(currentRoute)) return;
 
     const checkInitialState = () => {
       const premium = isPremium();
@@ -151,9 +179,9 @@ function App() {
 
   const handlePremiumActivate = () => {
     setPremiumStatus(true);
-    // Update route to home
-    window.history.pushState({}, '', '/');
-    setCurrentRoute('/');
+    // After activation, take user to language picker
+    navigate('/select');
+    setCurrentView('language-selector');
   };
 
   // Show activate page if on /activate route
@@ -161,18 +189,45 @@ function App() {
     return <Activate onActivate={handlePremiumActivate} />;
   }
 
+  if (currentRoute === '/privacy') {
+    return <Privacy onBackHome={() => navigate('/')} />;
+  }
+  if (currentRoute === '/terms') {
+    return <Terms onBackHome={() => navigate('/')} />;
+  }
+  if (currentRoute === '/contact') {
+    return <Contact onBackHome={() => navigate('/')} />;
+  }
+
   // Simple stats page
   if (currentRoute === '/stats') {
     return (
       <Stats
         onBack={() => {
-          window.history.pushState({}, '', '/');
-          setCurrentRoute('/');
+          navigate('/select');
           setCurrentView('language-selector');
         }}
       />
     );
   }
+
+  // Landing page at root
+  if (currentRoute === '/') {
+    return (
+      <LandingPage
+        onNavigate={navigate}
+        onTryFree={() => {
+          navigate('/select');
+          setCurrentView('language-selector');
+          setSelectedLanguage(null);
+          setSelectedLesson(null);
+        }}
+      />
+    );
+  }
+
+  // Language selector (app entry)
+  const isSelectRoute = currentRoute === '/select' || currentRoute === '/choose-languages';
 
   // Get free language names for display
   const languages = getAllLanguages();
@@ -206,9 +261,8 @@ function App() {
           <div className="flex items-center gap-4">
             <button
               onClick={() => {
-                // Navigate "home" and show language selector view
-                window.history.pushState({}, '', '/');
-                setCurrentRoute('/');
+                // Go to language selector route
+                navigate('/select');
                 setSelectedLanguage(null);
                 setSelectedLesson(null);
                 setCurrentView('language-selector');
@@ -219,8 +273,7 @@ function App() {
             </button>
             <button
               onClick={() => {
-                window.history.pushState({}, '', '/stats');
-                setCurrentRoute('/stats');
+                navigate('/stats');
               }}
               className="text-gray-600 hover:text-gray-700 font-semibold text-sm transition-colors whitespace-nowrap"
             >
@@ -240,8 +293,7 @@ function App() {
                   href="/activate"
                   onClick={(e) => {
                     e.preventDefault();
-                    window.history.pushState({}, '', '/activate');
-                    setCurrentRoute('/activate');
+                    navigate('/activate');
                   }}
                   className="text-gray-600 hover:text-gray-700 font-semibold text-sm transition-colors whitespace-nowrap"
                 >
