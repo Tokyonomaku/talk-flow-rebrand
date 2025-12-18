@@ -26,7 +26,7 @@ export default function LandingPage({ onTryFree, onNavigate }) {
             onClick={onTryFree}
             className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold shadow-sm"
           >
-            Try Free
+            Try 2 Languages Free - No Card Required
           </button>
         </div>
       </div>
@@ -46,7 +46,7 @@ export default function LandingPage({ onTryFree, onNavigate }) {
                 onClick={onTryFree}
                 className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-4 rounded-xl font-extrabold text-base md:text-lg shadow-md"
               >
-                Choose 2 Free Foreign Languages + Free English
+                Try 2 Languages Free - No Card Required
               </button>
               <a
                 href="#pricing"
@@ -182,7 +182,7 @@ export default function LandingPage({ onTryFree, onNavigate }) {
                 onClick={onTryFree}
                 className="mt-6 w-full bg-emerald-500 hover:bg-emerald-600 text-white py-3 rounded-xl font-extrabold"
               >
-                Start free
+                Try 2 Languages Free - No Card Required
               </button>
             </div>
 
@@ -207,7 +207,7 @@ export default function LandingPage({ onTryFree, onNavigate }) {
                 onClick={onTryFree}
                 className="mt-6 w-full bg-blue-500 hover:bg-blue-600 text-white py-3 rounded-xl font-extrabold"
               >
-                View details
+                Try 2 Languages Free - No Card Required
               </button>
               <p className="mt-3 text-sm text-gray-600">Upgrade inside the app anytime.</p>
             </div>
@@ -283,7 +283,7 @@ export default function LandingPage({ onTryFree, onNavigate }) {
               onClick={onTryFree}
               className="mt-6 bg-white text-blue-700 hover:bg-blue-50 px-6 py-4 rounded-xl font-extrabold"
             >
-              Choose Your 2 Free Foreign Languages
+              Try 2 Languages Free - No Card Required
             </button>
           </div>
         </div>

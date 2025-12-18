@@ -1,15 +1,16 @@
 import { useState, useEffect } from 'react';
 import { ArrowLeft, Volume2, Check } from 'lucide-react';
-import { markLessonComplete, isLessonCompleted, isPremium, isFreeEnglishTrack } from '../utils/lessonTracking';
+import { getCompletedLessonsForLanguage, markLessonComplete, isLessonCompleted, isPremium, isFreeEnglishTrack } from '../utils/lessonTracking';
+import UpgradeCelebrationModal from './UpgradeCelebrationModal';
 
 export default function LessonView({ lesson, language, onBack, onUpgradeClick }) {
   const [playingIndex, setPlayingIndex] = useState(null);
   const [isCompleted, setIsCompleted] = useState(false);
   const [voices, setVoices] = useState([]);
+  const [showCelebrationModal, setShowCelebrationModal] = useState(false);
   const premium = isPremium();
   const alwaysFreeEnglish = isFreeEnglishTrack(language.id);
   const lessonNum = typeof lesson.id === 'string' ? parseInt(lesson.id, 10) : Number(lesson.id);
-  const justCompletedLesson10 = lessonNum === 10 && isCompleted && !premium && !alwaysFreeEnglish;
 
   // Check if lesson is already completed on mount
   useEffect(() => {
@@ -52,6 +53,29 @@ export default function LessonView({ lesson, language, onBack, onUpgradeClick })
     const success = markLessonComplete(language.id, lesson.id);
     if (success) {
       setIsCompleted(true);
+
+      // Celebration modal trigger:
+      // When a free user completes their 10th lesson in one of their free foreign languages,
+      // show a celebratory upgrade modal ONCE per language (tracked in localStorage).
+      if (!premium && !alwaysFreeEnglish) {
+        try {
+          const completedCount = getCompletedLessonsForLanguage(language.id);
+          if (completedCount === 10) {
+            const completedLanguages = JSON.parse(
+              localStorage.getItem('completedFreeLanguages') || '[]'
+            );
+            if (!Array.isArray(completedLanguages) || !completedLanguages.includes(language.id)) {
+              const next = Array.isArray(completedLanguages) ? completedLanguages : [];
+              next.push(language.id);
+              localStorage.setItem('completedFreeLanguages', JSON.stringify(next));
+              setShowCelebrationModal(true);
+            }
+          }
+        } catch (e) {
+          // Fail open: if storage is blocked, still show the modal once per session.
+          setShowCelebrationModal(true);
+        }
+      }
     }
   };
 
@@ -224,6 +248,13 @@ export default function LessonView({ lesson, language, onBack, onUpgradeClick })
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-4">
       <div className="max-w-4xl mx-auto">
+        <UpgradeCelebrationModal
+          isOpen={showCelebrationModal}
+          onClose={() => setShowCelebrationModal(false)}
+          languageName={language.name}
+          extraLessonsCount={Math.max(0, (language?.lessons?.length || 0) - 10)}
+        />
+
         {/* Header */}
         <div className="mb-6">
           <button
@@ -352,21 +383,21 @@ export default function LessonView({ lesson, language, onBack, onUpgradeClick })
           </button>
         </div>
 
-        {/* Upgrade Prompt after Lesson 10 */}
-        {justCompletedLesson10 && (
-          <div className="mt-8 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg p-6 shadow-xl">
+        {/* If they close the celebration modal, keep a gentle, non-blocking upgrade option */}
+        {lessonNum === 10 && isCompleted && !premium && !alwaysFreeEnglish && !showCelebrationModal && (
+          <div className="mt-8 bg-white/70 border border-blue-200 rounded-lg p-5 shadow-sm">
             <div className="text-center">
-              <h3 className="text-2xl font-bold mb-2">
-                🎉 You've finished the free lessons!
+              <h3 className="text-xl font-extrabold text-gray-900 mb-1">
+                Nice work — you finished 10 lessons!
               </h3>
-              <p className="text-blue-100 mb-4 text-lg">
-                Unlock 16 more advanced lessons including songs, proverbs, texting slang, and cultural content
+              <p className="text-gray-700 mb-4">
+                Upgrade anytime to unlock advanced lessons and all foreign languages.
               </p>
               <button
                 onClick={onUpgradeClick}
-                className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors shadow-lg"
+                className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors shadow-md"
               >
-                View plans (Monthly or Annual)
+                View plans
               </button>
             </div>
           </div>
