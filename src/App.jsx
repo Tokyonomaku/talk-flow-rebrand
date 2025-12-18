@@ -253,7 +253,10 @@ function App() {
             ) : freeLanguageNames.length > 0 ? (
               <div className="flex items-center gap-2">
                 <span className="text-gray-700 font-semibold">
-                  Learning <strong>{freeLanguageNames.join(' & ')}</strong> for free
+                  Free foreign languages: <strong>{freeLanguageNames.join(' & ')}</strong>
+                </span>
+                <span className="text-gray-500 text-sm hidden sm:inline">
+                  (English is always free)
                 </span>
               </div>
             ) : null}

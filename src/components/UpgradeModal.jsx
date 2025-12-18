@@ -15,6 +15,7 @@ export default function UpgradeModal({ isOpen, onClose, onLanguageChanged }) {
   const freeLanguageNames = freeLanguages
     .map(id => languages.find(lang => lang.id === id)?.name)
     .filter(Boolean);
+  const remainingForeignCount = Math.max(0, 9 - freeLanguages.length);
 
   if (!isOpen) return null;
 
@@ -48,14 +49,14 @@ export default function UpgradeModal({ isOpen, onClose, onLanguageChanged }) {
 
         {/* Header */}
         <div className="mb-6">
-          <h2 className="text-3xl font-bold text-gray-900 mb-2">Unlock All 11 Languages</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-2">Unlock All Foreign Languages</h2>
           <p className="text-gray-700 font-medium">Choose your plan:</p>
           <p className="text-gray-600 mt-2">
             {freeLanguageNames.length > 0
               ? `You're currently learning ${freeLanguageNames.join(' & ')} for free.`
               : 'You’re currently on the free plan.'
             }{' '}
-            English education (ESL & Native Speakers) is 100% free, always. Premium unlocks all languages and lessons.
+            English education (ESL & Native Speakers) is 100% free, always. Premium unlocks {remainingForeignCount} more foreign languages and lessons 11–26.
           </p>
         </div>
 
@@ -71,7 +72,7 @@ export default function UpgradeModal({ isOpen, onClose, onLanguageChanged }) {
               </div>
             </div>
             <ul className="space-y-2 text-gray-700 mb-4">
-              <li>✓ All 11 languages</li>
+              <li>✓ Unlock {remainingForeignCount} more foreign languages</li>
               <li>✓ 260 lessons</li>
               <li>✓ Cancel anytime</li>
             </ul>
@@ -105,7 +106,7 @@ export default function UpgradeModal({ isOpen, onClose, onLanguageChanged }) {
             </div>
             <div className="text-sm font-semibold text-blue-700 mb-3">Just $12.50/month</div>
             <ul className="space-y-2 text-gray-700 mb-4">
-              <li>✓ All 11 languages</li>
+              <li>✓ Unlock {remainingForeignCount} more foreign languages</li>
               <li>✓ 260 lessons</li>
               <li>✓ Save $90 vs monthly</li>
               <li>✓ Best value</li>
@@ -128,7 +129,7 @@ export default function UpgradeModal({ isOpen, onClose, onLanguageChanged }) {
         </div>
 
         <p className="text-sm text-gray-600">
-          Both plans include all languages and lessons. Cancel monthly anytime.
+          Both plans include all 9 foreign languages and all lessons. English tracks are always free.
         </p>
 
         {OFFER_MONEY_BACK_GUARANTEE && (

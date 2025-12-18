@@ -36,7 +36,7 @@ export default function LandingPage({ onTryFree, onNavigate }) {
         <div className="max-w-6xl mx-auto px-4 py-16 md:py-20">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-gray-900">
-              Learn 11 Languages Without the Manipulation
+              Learn 2 Foreign Languages Free (Plus Free English)
             </h1>
             <p className="mt-4 text-lg md:text-xl text-gray-700">
               No energy systems. No forced ads. Just honest language learning.
@@ -46,7 +46,7 @@ export default function LandingPage({ onTryFree, onNavigate }) {
                 onClick={onTryFree}
                 className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-4 rounded-xl font-extrabold text-base md:text-lg shadow-md"
               >
-                Try 2 Languages Free - No Credit Card
+                Choose 2 Free Foreign Languages + Free English
               </button>
               <a
                 href="#pricing"
@@ -56,7 +56,7 @@ export default function LandingPage({ onTryFree, onNavigate }) {
               </a>
             </div>
             <p className="mt-4 text-sm text-gray-600">
-              No credit card required. Upgrade only if you want more languages.
+              Start with 4 tracks total: 2 foreign languages + both English tracks (always free).
             </p>
           </div>
         </div>
@@ -110,7 +110,7 @@ export default function LandingPage({ onTryFree, onNavigate }) {
             <div className="bg-white rounded-xl border border-gray-200 p-5">
               <div className="text-emerald-600 font-extrabold">✓ 11 Languages</div>
               <p className="mt-2 text-gray-700">
-                Spanish, French, German, Korean, Portuguese, Japanese, Chinese, Russian, Arabic + English.
+                9 foreign languages + 2 English tracks (ESL + English Essentials).
               </p>
             </div>
             <div className="bg-white rounded-xl border border-gray-200 p-5">
@@ -132,7 +132,7 @@ export default function LandingPage({ onTryFree, onNavigate }) {
           <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="rounded-xl border border-gray-200 p-6 bg-white">
               <div className="text-blue-500 font-extrabold">Step 1</div>
-              <div className="mt-2 font-bold text-gray-900">Choose 2 free languages</div>
+              <div className="mt-2 font-bold text-gray-900">Choose 2 free foreign languages</div>
             </div>
             <div className="rounded-xl border border-gray-200 p-6 bg-white">
               <div className="text-blue-500 font-extrabold">Step 2</div>
@@ -140,7 +140,7 @@ export default function LandingPage({ onTryFree, onNavigate }) {
             </div>
             <div className="rounded-xl border border-gray-200 p-6 bg-white">
               <div className="text-blue-500 font-extrabold">Step 3</div>
-              <div className="mt-2 font-bold text-gray-900">Upgrade for all 11 languages (optional)</div>
+              <div className="mt-2 font-bold text-gray-900">Upgrade to unlock 7 more foreign languages (optional)</div>
             </div>
           </div>
         </div>
@@ -173,9 +173,10 @@ export default function LandingPage({ onTryFree, onNavigate }) {
               <div className="mt-4 text-5xl font-extrabold text-gray-900">$0</div>
               <div className="text-gray-700 font-semibold">forever</div>
               <ul className="mt-5 space-y-2 text-gray-800">
-                <li>✓ Pick 2 languages</li>
+                <li>✓ Pick 2 foreign languages</li>
                 <li>✓ 10 lessons per language</li>
                 <li>✓ 20 total lessons</li>
+                <li>✓ PLUS: Both English tracks (100% free)</li>
               </ul>
               <button
                 onClick={onTryFree}
@@ -197,9 +198,10 @@ export default function LandingPage({ onTryFree, onNavigate }) {
                 $150<span className="text-base font-semibold text-gray-700">/year</span>
               </div>
               <ul className="mt-5 space-y-2 text-gray-800">
-                <li>✓ All 11 languages</li>
+                <li>✓ All 9 foreign languages</li>
                 <li>✓ 260 total lessons</li>
                 <li>✓ Advanced content</li>
+                <li>✓ English tracks (always free)</li>
               </ul>
               <button
                 onClick={onTryFree}
@@ -209,6 +211,64 @@ export default function LandingPage({ onTryFree, onNavigate }) {
               </button>
               <p className="mt-3 text-sm text-gray-600">Upgrade inside the app anytime.</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="bg-gray-50">
+        <div className="max-w-6xl mx-auto px-4 py-14">
+          <h2 className="text-3xl md:text-4xl font-extrabold">FAQ</h2>
+          <div className="mt-6 max-w-3xl space-y-3">
+            <details className="group bg-white rounded-xl border border-gray-200 p-5">
+              <summary className="cursor-pointer list-none flex items-center justify-between gap-4 font-extrabold text-gray-900">
+                <span>Is it really free?</span>
+                <span className="text-gray-400 group-open:rotate-180 transition-transform">⌄</span>
+              </summary>
+              <p className="mt-3 text-gray-700">
+                Yes. Pick 2 languages + get English. No credit card.
+              </p>
+            </details>
+
+            <details className="group bg-white rounded-xl border border-gray-200 p-5">
+              <summary className="cursor-pointer list-none flex items-center justify-between gap-4 font-extrabold text-gray-900">
+                <span>What if I want more than 2 languages?</span>
+                <span className="text-gray-400 group-open:rotate-180 transition-transform">⌄</span>
+              </summary>
+              <p className="mt-3 text-gray-700">
+                $150/year unlocks all 11.
+              </p>
+            </details>
+
+            <details className="group bg-white rounded-xl border border-gray-200 p-5">
+              <summary className="cursor-pointer list-none flex items-center justify-between gap-4 font-extrabold text-gray-900">
+                <span>No energy systems?</span>
+                <span className="text-gray-400 group-open:rotate-180 transition-transform">⌄</span>
+              </summary>
+              <p className="mt-3 text-gray-700">
+                No energy systems. Learn as much as you want.
+              </p>
+            </details>
+
+            <details className="group bg-white rounded-xl border border-gray-200 p-5">
+              <summary className="cursor-pointer list-none flex items-center justify-between gap-4 font-extrabold text-gray-900">
+                <span>How is this different from Duolingo?</span>
+                <span className="text-gray-400 group-open:rotate-180 transition-transform">⌄</span>
+              </summary>
+              <p className="mt-3 text-gray-700">
+                We don&apos;t lock you out or force ads. Just learning.
+              </p>
+            </details>
+
+            <details className="group bg-white rounded-xl border border-gray-200 p-5">
+              <summary className="cursor-pointer list-none flex items-center justify-between gap-4 font-extrabold text-gray-900">
+                <span>Can I cancel anytime?</span>
+                <span className="text-gray-400 group-open:rotate-180 transition-transform">⌄</span>
+              </summary>
+              <p className="mt-3 text-gray-700">
+                Yes, cancel monthly anytime. Annual is one-time payment.
+              </p>
+            </details>
           </div>
         </div>
       </section>
@@ -223,7 +283,7 @@ export default function LandingPage({ onTryFree, onNavigate }) {
               onClick={onTryFree}
               className="mt-6 bg-white text-blue-700 hover:bg-blue-50 px-6 py-4 rounded-xl font-extrabold"
             >
-              Choose Your 2 Free Languages
+              Choose Your 2 Free Foreign Languages
             </button>
           </div>
         </div>

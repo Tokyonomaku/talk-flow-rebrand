@@ -1,4 +1,18 @@
 const STORAGE_KEY = 'completedLessons';
+const USER_LANGUAGES_KEY = 'userLanguages';
+
+const ENGLISH_TRACK_IDS = ['esl-english', 'english-native'];
+const FOREIGN_LANGUAGE_IDS = [
+  'spanish',
+  'french',
+  'german',
+  'korean',
+  'portuguese',
+  'japanese',
+  'chinese',
+  'russian',
+  'arabic',
+];
 
 /**
  * Get all completed lessons from localStorage
@@ -93,30 +107,66 @@ export function isPremium() {
 }
 
 /**
- * Get the user's free languages selection (array of 2 language IDs)
- * @returns {string[]} Array of language IDs (max 2)
+ * English education tracks that are always free for everyone.
+ * These tracks should never show paywalls, locks, or premium prompts.
+ * @param {string} languageId
+ * @returns {boolean}
  */
-export function getFreeLanguages() {
+export function isFreeEnglishTrack(languageId) {
+  return ENGLISH_TRACK_IDS.includes(languageId);
+}
+
+function normalizeForeignSelection(ids) {
+  const arr = Array.isArray(ids) ? ids : [];
+  // Deduplicate while preserving order
+  const deduped = Array.from(new Set(arr));
+  return deduped.filter((id) => FOREIGN_LANGUAGE_IDS.includes(id)).slice(0, 2);
+}
+
+/**
+ * Get the user's language selections.
+ * - `english` is always included (and never counts toward limits)
+ * - `foreign` is the user's 2 selected foreign languages (free users) unless premium.
+ * @returns {{ foreign: string[], english: string[] }}
+ */
+export function getUserLanguages() {
   try {
-    const stored = localStorage.getItem('freeLanguages');
+    const stored = localStorage.getItem(USER_LANGUAGES_KEY);
     if (stored) {
       const parsed = JSON.parse(stored);
-      return Array.isArray(parsed) ? parsed : [];
+      const foreign = normalizeForeignSelection(parsed?.foreign);
+      return { foreign, english: [...ENGLISH_TRACK_IDS] };
     }
-    // Fallback to old single language format for migration
-    const oldLang = localStorage.getItem('freeLanguage');
-    if (oldLang) {
-      return [oldLang];
-    }
-    return [];
+
+    // Backward compatibility: previously stored "freeLanguages" could include English tracks.
+    const legacy = (() => {
+      const raw = localStorage.getItem('freeLanguages');
+      if (raw) {
+        const parsed = JSON.parse(raw);
+        if (Array.isArray(parsed)) return parsed;
+      }
+      const oldLang = localStorage.getItem('freeLanguage');
+      return oldLang ? [oldLang] : [];
+    })();
+
+    return { foreign: normalizeForeignSelection(legacy), english: [...ENGLISH_TRACK_IDS] };
   } catch (error) {
-    console.error('Error reading free languages:', error);
-    return [];
+    console.error('Error reading user languages:', error);
+    return { foreign: [], english: [...ENGLISH_TRACK_IDS] };
   }
 }
 
 /**
- * Get the user's free language selection (backward compatibility - returns first free language)
+ * Get the user's selected free foreign languages (array of 2 language IDs).
+ * NOTE: English tracks are always free and are NOT returned here.
+ * @returns {string[]} Array of foreign language IDs (max 2)
+ */
+export function getFreeLanguages() {
+  return getUserLanguages().foreign;
+}
+
+/**
+ * Get the user's free language selection (backward compatibility - returns first free FOREIGN language)
  * @returns {string|null} Language ID or null if not set
  */
 export function getFreeLanguage() {
@@ -125,46 +175,42 @@ export function getFreeLanguage() {
 }
 
 /**
- * Set the user's free languages selection (array of 2 language IDs)
- * @param {string[]} languageIds - Array of language IDs to set as free (max 2)
+ * Set the user's selected free FOREIGN languages (array of 2 language IDs).
+ * English tracks are always available and stored implicitly.
+ * @param {string[]} languageIds - Array of foreign language IDs to set as free (max 2)
  */
 export function setFreeLanguages(languageIds) {
   try {
-    const languages = Array.isArray(languageIds) ? languageIds.slice(0, 2) : [];
-    localStorage.setItem('freeLanguages', JSON.stringify(languages));
-    // Also update old format for backward compatibility
-    if (languages.length > 0) {
-      localStorage.setItem('freeLanguage', languages[0]);
+    const foreign = normalizeForeignSelection(languageIds);
+    const payload = { foreign, english: [...ENGLISH_TRACK_IDS] };
+    localStorage.setItem(USER_LANGUAGES_KEY, JSON.stringify(payload));
+
+    // Backward compatibility for older code paths / analytics:
+    localStorage.setItem('freeLanguages', JSON.stringify(foreign));
+    if (foreign.length > 0) {
+      localStorage.setItem('freeLanguage', foreign[0]);
+    } else {
+      localStorage.removeItem('freeLanguage');
     }
   } catch (error) {
-    console.error('Error saving free languages:', error);
+    console.error('Error saving user languages:', error);
   }
 }
 
 /**
- * Set the user's free language selection (backward compatibility - sets as first free language)
- * @param {string} languageId - Language ID to set as free
+ * Set the user's free language selection (backward compatibility - sets as first free FOREIGN language)
+ * @param {string} languageId - Foreign language ID to set as free
  */
 export function setFreeLanguage(languageId) {
   setFreeLanguages([languageId]);
 }
 
 /**
- * Check if user has selected free languages
- * @returns {boolean} True if at least one free language is set
+ * Check if user has selected their 2 free foreign languages.
+ * @returns {boolean} True if exactly 2 foreign languages are selected
  */
 export function hasFreeLanguage() {
-  return getFreeLanguages().length > 0;
-}
-
-/**
- * English education tracks that are always free for everyone.
- * These tracks should never show paywalls, locks, or premium prompts.
- * @param {string} languageId
- * @returns {boolean}
- */
-export function isFreeEnglishTrack(languageId) {
-  return languageId === 'esl-english' || languageId === 'english-native';
+  return getFreeLanguages().length === 2;
 }
 
 /**

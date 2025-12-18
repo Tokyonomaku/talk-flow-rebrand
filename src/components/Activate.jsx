@@ -75,7 +75,7 @@ export default function Activate({ onActivate }) {
             Premium Activated
           </h1>
           <p className="text-gray-600 mb-6">
-            You already have premium access to all 11 languages!
+            You already have premium access to all 9 foreign languages and all lessons (English is always free).
           </p>
           <a
             href="/select"
