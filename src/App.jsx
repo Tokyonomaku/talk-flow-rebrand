@@ -74,9 +74,20 @@ function App() {
     const checkInitialState = () => {
       const premium = isPremium();
       const hasFree = hasFreeLanguage();
+      const wantsUpgrade = new URLSearchParams(window.location.search).get('upgrade') === '1';
       
       setPremiumStatus(premium);
-      
+
+      // If the user explicitly requested upgrade (e.g. from the landing page),
+      // show the upgrade modal first. After closing, we'll fall back to free selection.
+      if (!premium && wantsUpgrade) {
+        setShowUpgradeModal(true);
+        setShowFreeLanguageModal(false);
+        const freeLangs = getFreeLanguages();
+        setFreeLanguagesState(freeLangs);
+        return;
+      }
+
       if (!premium && !hasFree) {
         // First time user - show free language selection modal
         setShowFreeLanguageModal(true);
@@ -337,7 +348,23 @@ function App() {
       />
       <UpgradeModal 
         isOpen={showUpgradeModal} 
-        onClose={() => setShowUpgradeModal(false)}
+        onClose={() => {
+          setShowUpgradeModal(false);
+          // If they came here via ?upgrade=1 and haven't selected free languages yet,
+          // guide them into the free selection flow after closing.
+          try {
+            const url = new URL(window.location.href);
+            if (url.searchParams.get('upgrade') === '1') {
+              url.searchParams.delete('upgrade');
+              window.history.replaceState({}, '', url.pathname + url.search);
+            }
+          } catch (_) {
+            // ignore
+          }
+          if (!isPremium() && !hasFreeLanguage()) {
+            setShowFreeLanguageModal(true);
+          }
+        }}
         onLanguageChanged={handleLanguageChanged}
       />
       <PremiumLessonModal 
