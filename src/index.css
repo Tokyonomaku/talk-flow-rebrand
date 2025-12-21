@@ -11,3 +11,95 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Ultra-simple ad landing page */
+.hero-simple {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #ffffff;
+  color: #0f172a;
+  padding: 24px 16px;
+}
+
+.hero-simple h1 {
+  margin: 0;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  font-size: 48px;
+  line-height: 1.05;
+}
+
+.hero-simple p {
+  margin: 12px 0 0;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #334155;
+  max-width: 46ch;
+}
+
+.cta-massive {
+  margin-top: 20px;
+  height: 60px;
+  width: 100%;
+  max-width: 560px;
+  border: 0;
+  border-radius: 16px;
+  background: #ff4d00;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 20px;
+  letter-spacing: -0.01em;
+  box-shadow: 0 14px 30px rgba(255, 77, 0, 0.25);
+  cursor: pointer;
+}
+
+.cta-massive:hover {
+  background: #ff3f00;
+}
+
+.cta-massive:active {
+  transform: translateY(1px);
+}
+
+.cta-massive:focus-visible {
+  outline: 4px solid rgba(255, 77, 0, 0.35);
+  outline-offset: 3px;
+}
+
+.trust-signals {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 12px;
+  justify-content: center;
+  color: #475569;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.trust-signals span {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 999px;
+  padding: 6px 10px;
+}
+
+@media (max-width: 420px) {
+  .hero-simple h1 {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-simple {
+    padding: 56px 24px;
+  }
+
+  .cta-massive {
+    font-size: 22px;
+  }
+}
+
