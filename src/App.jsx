@@ -38,6 +38,7 @@ function App() {
       '/',
       '/select',
       '/choose-languages',
+      '/dashboard',
       '/activate',
       '/stats',
       '/privacy',
@@ -89,8 +90,8 @@ function App() {
       }
 
       if (!premium && !hasFree) {
-        // First time user - show free language selection modal
-        setShowFreeLanguageModal(true);
+        // First time free user - language selection is handled inline in LanguageSelector
+        setShowFreeLanguageModal(false);
       } else if (!premium) {
         // Free user with languages selected
         const freeLangs = getFreeLanguages();
@@ -117,7 +118,7 @@ function App() {
   }, [currentRoute]);
 
   const handleSelectFreeLanguages = (languageIds) => {
-    if (languageIds && languageIds.length === 2) {
+    if (Array.isArray(languageIds) && languageIds.length > 0) {
       logEvent('languages_selected', { lang1: languageIds[0], lang2: languageIds[1] });
       setFreeLanguages(languageIds);
       setFreeLanguagesState(languageIds);
@@ -228,7 +229,7 @@ function App() {
       <LandingPage
         onNavigate={navigate}
         onTryFree={() => {
-          navigate('/select');
+          navigate('/choose-languages');
           setCurrentView('language-selector');
           setSelectedLanguage(null);
           setSelectedLesson(null);
@@ -360,9 +361,6 @@ function App() {
             }
           } catch (_) {
             // ignore
-          }
-          if (!isPremium() && !hasFreeLanguage()) {
-            setShowFreeLanguageModal(true);
           }
         }}
         onLanguageChanged={handleLanguageChanged}

@@ -206,11 +206,11 @@ export function setFreeLanguage(languageId) {
 }
 
 /**
- * Check if user has selected their 2 free foreign languages.
- * @returns {boolean} True if exactly 2 foreign languages are selected
+ * Check if user has selected at least 1 free foreign language.
+ * @returns {boolean} True if at least 1 foreign language is selected
  */
 export function hasFreeLanguage() {
-  return getFreeLanguages().length === 2;
+  return getFreeLanguages().length > 0;
 }
 
 /**
