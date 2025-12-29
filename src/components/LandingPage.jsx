@@ -12,23 +12,32 @@ export default function LandingPage({ onTryFree, onNavigate }) {
 
   return (
     <div className="hero-conversion-optimized">
-      <h1>Learn Spanish, French, or 9 Other Languages Free</h1>
+      <h1>Learn Any Language You Want - Free Forever</h1>
       <p className="subheadline">
-        Real conversations. No credit card. Start your first lesson in 60 seconds.
+        Real conversations from day 1. Pick 2 languages and start speaking today. No credit card required.
       </p>
 
       <div className="quick-value" aria-label="Quick value preview">
         <div className="value-item">
           <span className="emoji" aria-hidden="true">🌍</span>
-          <span>Choose 2 of 11 languages</span>
+          <div>
+            <div>Choose 2 of 11 languages</div>
+            <div>Spanish, French, German, Korean, Portuguese, Japanese, Chinese, Russian, Arabic + English</div>
+          </div>
         </div>
         <div className="value-item">
           <span className="emoji" aria-hidden="true">💬</span>
-          <span>20 practical lessons</span>
+          <div>
+            <div>20 practical lessons per language</div>
+            <div>Learn phrases you&apos;ll actually use in real-life situations</div>
+          </div>
         </div>
         <div className="value-item">
           <span className="emoji" aria-hidden="true">🎯</span>
-          <span>Learn phrases you&apos;ll actually use</span>
+          <div>
+            <div>Learn at your own pace</div>
+            <div>Practice as much as you want. Transparent pricing. Honest approach.</div>
+          </div>
         </div>
       </div>
 
