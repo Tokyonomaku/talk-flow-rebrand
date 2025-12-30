@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { X } from 'lucide-react';
 import { logEvent } from '../utils/eventLog';
+import { gaEvent } from '../utils/analytics';
 
 export default function UpgradeCelebrationModal({
   isOpen,
@@ -29,11 +30,15 @@ export default function UpgradeCelebrationModal({
 
   const goMonthly = () => {
     logEvent('upgrade_clicked', { from_where: 'celebration_modal_monthly' });
+    gaEvent('upgrade_clicked', { from_page: 'celebration_modal', price: '20' });
+    gaEvent('begin_checkout', { currency: 'USD', value: 20 });
     window.location.href = 'https://winterfuyu.gumroad.com/l/gmijuf';
   };
 
   const goAnnual = () => {
     logEvent('upgrade_clicked', { from_where: 'celebration_modal_annual' });
+    gaEvent('upgrade_clicked', { from_page: 'celebration_modal', price: '150' });
+    gaEvent('begin_checkout', { currency: 'USD', value: 150 });
     window.location.href = 'https://winterfuyu.gumroad.com/l/iecvpk';
   };
 

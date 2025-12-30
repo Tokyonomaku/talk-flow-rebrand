@@ -15,6 +15,7 @@ import Contact from './components/Contact';
 import { getAllLanguages } from './data/languages';
 import { isPremium, hasFreeLanguage, setFreeLanguages, isLanguageAccessible, getFreeLanguages, isLessonAccessible } from './utils/lessonTracking';
 import { logEvent } from './utils/eventLog';
+import { gaEvent } from './utils/analytics';
 
 function App() {
   const [currentView, setCurrentView] = useState('language-selector');
@@ -120,6 +121,10 @@ function App() {
   const handleSelectFreeLanguages = (languageIds) => {
     if (Array.isArray(languageIds) && languageIds.length > 0) {
       logEvent('languages_selected', { lang1: languageIds[0], lang2: languageIds[1] });
+      gaEvent('languages_selected', {
+        language1: languageIds[0],
+        language2: languageIds[1],
+      });
       setFreeLanguages(languageIds);
       setFreeLanguagesState(languageIds);
       setShowFreeLanguageModal(false);

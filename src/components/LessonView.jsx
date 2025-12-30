@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { ArrowLeft, Volume2, Check } from 'lucide-react';
 import { getCompletedLessonsForLanguage, markLessonComplete, isLessonCompleted, isPremium, isFreeEnglishTrack } from '../utils/lessonTracking';
 import UpgradeCelebrationModal from './UpgradeCelebrationModal';
+import { gaEvent } from '../utils/analytics';
 
 export default function LessonView({ lesson, language, onBack, onUpgradeClick }) {
   const [playingIndex, setPlayingIndex] = useState(null);
@@ -11,6 +12,14 @@ export default function LessonView({ lesson, language, onBack, onUpgradeClick })
   const premium = isPremium();
   const alwaysFreeEnglish = isFreeEnglishTrack(language.id);
   const lessonNum = typeof lesson.id === 'string' ? parseInt(lesson.id, 10) : Number(lesson.id);
+
+  // GA4: lesson started (fires when lesson loads)
+  useEffect(() => {
+    gaEvent('lesson_started', {
+      language: language?.id,
+      lesson_number: Number.isFinite(lessonNum) ? lessonNum : lesson?.id,
+    });
+  }, [language?.id, lesson?.id]);
 
   // Check if lesson is already completed on mount
   useEffect(() => {
@@ -394,7 +403,13 @@ export default function LessonView({ lesson, language, onBack, onUpgradeClick })
                 Upgrade anytime to unlock advanced lessons and all foreign languages.
               </p>
               <button
-                onClick={onUpgradeClick}
+                onClick={() => {
+                  gaEvent('upgrade_clicked', {
+                    from_page: 'lesson_completion',
+                    price: '150',
+                  });
+                  onUpgradeClick?.();
+                }}
                 className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors shadow-md"
               >
                 View plans

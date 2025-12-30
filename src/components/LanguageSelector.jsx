@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { Lock } from 'lucide-react';
 import { getAllLanguages } from '../data/languages';
 import { isLanguageAccessible, getFreeLanguages, isPremium, isFreeEnglishTrack, setFreeLanguages } from '../utils/lessonTracking';
+import { gaEvent } from '../utils/analytics';
 
 export default function LanguageSelector({ onSelectLanguage, onLockedLanguageClick }) {
   // --- New onboarding selector flow (only when user hasn't picked free foreign languages yet) ---
@@ -63,6 +64,15 @@ export default function LanguageSelector({ onSelectLanguage, onLockedLanguageCli
     freeLanguages.length === 0 &&
     (window.location.pathname === '/select' || window.location.pathname === '/choose-languages');
 
+  // GA4: language selector page view
+  useEffect(() => {
+    if (window.location.pathname !== '/select' && window.location.pathname !== '/choose-languages') return;
+    gaEvent('page_view', {
+      page_title: 'Language Selector',
+      page_location: window.location.href,
+    });
+  }, []);
+
   useEffect(() => {
     if (!shouldShowOnboarding) return;
     // Reset if user hits back / revisits the selector with no stored selection
@@ -94,6 +104,12 @@ export default function LanguageSelector({ onSelectLanguage, onLockedLanguageCli
       foreign,
       english: ['esl-english', 'english-native'], // Always included
     };
+
+    // GA4: languages selected (free onboarding)
+    gaEvent('languages_selected', {
+      language1: primaryLanguage,
+      language2: bonusLanguage || 'none',
+    });
 
     // Save to the new requested key
     localStorage.setItem('selectedLanguages', JSON.stringify(userLanguages));

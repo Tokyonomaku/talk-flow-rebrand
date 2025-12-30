@@ -1,4 +1,7 @@
+import { gaEvent } from '../utils/analytics';
+
 export default function LandingPage({ onTryFree, onNavigate }) {
+
   const navigate = (path) => {
     if (typeof onNavigate === 'function') onNavigate(path);
     else window.location.href = path;
@@ -8,6 +11,14 @@ export default function LandingPage({ onTryFree, onNavigate }) {
     // Keeps the app routing logic centralized in App.jsx
     if (typeof onTryFree === 'function') onTryFree();
     else navigate('/choose-languages');
+  };
+
+  const handleCtaClick = () => {
+    gaEvent('cta_button_clicked', {
+      button_location: 'hero_section',
+      button_text: 'Choose Your 2 Free Languages',
+    });
+    goToLanguageSelector();
   };
 
   return (
@@ -41,7 +52,7 @@ export default function LandingPage({ onTryFree, onNavigate }) {
         </div>
       </div>
 
-      <button className="cta-primary" onClick={goToLanguageSelector}>
+      <button className="cta-primary" onClick={handleCtaClick}>
         Choose Your 2 Free Languages →
       </button>
 

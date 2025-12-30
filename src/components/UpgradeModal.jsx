@@ -3,6 +3,7 @@ import { X, Loader2 } from 'lucide-react';
 import { getFreeLanguages } from '../utils/lessonTracking';
 import { getAllLanguages } from '../data/languages';
 import { logEvent } from '../utils/eventLog';
+import { gaEvent } from '../utils/analytics';
 
 export default function UpgradeModal({ isOpen, onClose, onLanguageChanged }) {
   // Toggle this only if your purchase flow truly offers it.
@@ -25,6 +26,14 @@ export default function UpgradeModal({ isOpen, onClose, onLanguageChanged }) {
     setIsOpeningCheckout(true);
     try {
       logEvent('upgrade_clicked', { from_where: plan === 'monthly' ? 'upgrade_modal_monthly' : 'upgrade_modal_annual' });
+      gaEvent('upgrade_clicked', {
+        from_page: 'upgrade_modal',
+        price: plan === 'monthly' ? '20' : '150',
+      });
+      gaEvent('begin_checkout', {
+        currency: 'USD',
+        value: plan === 'monthly' ? 20 : 150,
+      });
       window.location.href =
         plan === 'monthly'
           ? 'https://winterfuyu.gumroad.com/l/gmijuf'

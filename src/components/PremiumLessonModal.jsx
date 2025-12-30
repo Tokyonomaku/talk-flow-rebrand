@@ -3,6 +3,7 @@ import { X, Lock, Loader2 } from 'lucide-react';
 import { getFreeLanguages } from '../utils/lessonTracking';
 import { getAllLanguages } from '../data/languages';
 import { logEvent } from '../utils/eventLog';
+import { gaEvent } from '../utils/analytics';
 
 export default function PremiumLessonModal({ isOpen, onClose, languageName, lessonNumber }) {
   const [isRedirectingToCheckout, setIsRedirectingToCheckout] = useState(false);
@@ -21,6 +22,14 @@ export default function PremiumLessonModal({ isOpen, onClose, languageName, less
     setSelectedPlan(plan);
     setIsRedirectingToCheckout(true);
     logEvent('upgrade_clicked', { from_where: plan === 'monthly' ? 'premium_lesson_modal_monthly' : 'premium_lesson_modal_annual' });
+    gaEvent('upgrade_clicked', {
+      from_page: 'premium_lesson_modal',
+      price: plan === 'monthly' ? '20' : '150',
+    });
+    gaEvent('begin_checkout', {
+      currency: 'USD',
+      value: plan === 'monthly' ? 20 : 150,
+    });
     window.location.href =
       plan === 'monthly'
         ? 'https://winterfuyu.gumroad.com/l/gmijuf'
