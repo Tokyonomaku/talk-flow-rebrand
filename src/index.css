@@ -104,6 +104,11 @@ body {
 }
 
 /* Conversion-optimized ad landing page hero */
+.landing-page {
+  background: #ffffff;
+  color: #0f172a;
+}
+
 .hero-conversion-optimized {
   min-height: 100svh;
   display: flex;
@@ -111,32 +116,33 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: #ffffff;
-  color: #0f172a;
-  padding: 24px 16px;
+  background: transparent;
+  padding: 16px 16px;
+  gap: 6px; /* tight vertical spacing */
 }
 
 .hero-conversion-optimized h1 {
   margin: 0;
   font-weight: 900;
   letter-spacing: -0.02em;
-  font-size: 44px;
+  font-size: 42px;
   line-height: 1.05;
-  max-width: 22ch;
+  max-width: 24ch;
 }
 
 .hero-conversion-optimized .subheadline {
-  margin: 12px 0 0;
-  font-size: 18px;
+  margin: 0;
+  font-size: clamp(13px, 3.9vw, 16px); /* keep one line on iPhone 14/15 */
+  white-space: nowrap;
   line-height: 1.4;
   color: #334155;
-  max-width: 52ch;
+  max-width: none;
 }
 
 .quick-value {
   width: 100%;
   max-width: 720px;
-  margin-top: 16px;
+  margin-top: 12px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -162,8 +168,8 @@ body {
 }
 
 .cta-primary {
-  margin-top: 16px;
-  height: 60px; /* >= 50px on mobile */
+  margin-top: 4px; /* tight spacing below subheadline */
+  height: 72px; /* ~20% larger */
   width: 100%;
   max-width: 560px;
   border: 0;
@@ -171,7 +177,7 @@ body {
   background: #ff4d00;
   color: #ffffff;
   font-weight: 900;
-  font-size: 20px;
+  font-size: 24px;
   letter-spacing: -0.01em;
   box-shadow: 0 14px 30px rgba(255, 77, 0, 0.25);
   cursor: pointer;
@@ -205,6 +211,16 @@ body {
   .cta-primary {
     animation: none;
   }
+}
+
+.hero-conversion-optimized .trust-signals {
+  margin-top: 6px;
+}
+
+.hero-conversion-optimized .trust-signals span {
+  background: transparent;
+  border: 0;
+  padding: 0;
 }
 
 .language-preview {
@@ -241,7 +257,12 @@ body {
 
 @media (max-width: 420px) {
   .hero-conversion-optimized h1 {
-    font-size: 36px;
+    font-size: 34px;
+  }
+
+  .cta-primary {
+    height: 70px;
+    font-size: 22px;
   }
 }
 

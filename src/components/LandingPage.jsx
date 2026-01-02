@@ -22,11 +22,20 @@ export default function LandingPage({ onTryFree, onNavigate }) {
   };
 
   return (
-    <div className="hero-conversion-optimized">
-      <h1>Learn Any Language You Want - Free Forever</h1>
-      <p className="subheadline">
-        Real conversations from day 1. Pick 2 languages and start speaking today. No credit card required.
-      </p>
+    <div className="landing-page">
+      <div className="hero-conversion-optimized">
+        <h1>Speak Spanish, French, or 9 Other Languages</h1>
+        <p className="subheadline">Pick 2 languages. Start speaking today. 100% free.</p>
+
+        <button className="cta-primary" onClick={handleCtaClick}>
+          Choose Your 2 Free Languages →
+        </button>
+
+        <div className="trust-signals" aria-label="Trust signals">
+          <span>✓ No credit card</span>
+          <span>✓ Free forever</span>
+        </div>
+      </div>
 
       <div className="quick-value" aria-label="Quick value preview">
         <div className="value-item">
@@ -50,16 +59,6 @@ export default function LandingPage({ onTryFree, onNavigate }) {
             <div>Practice as much as you want. Transparent pricing. Honest approach.</div>
           </div>
         </div>
-      </div>
-
-      <button className="cta-primary" onClick={handleCtaClick}>
-        Choose Your 2 Free Languages →
-      </button>
-
-      <div className="trust-signals" aria-label="Trust signals">
-        <span>✓ No credit card</span>
-        <span>✓ Free forever</span>
-        <span>✓ Start in 60 seconds</span>
       </div>
 
       <div className="language-preview" aria-label="Language preview">
