@@ -24,8 +24,8 @@ export default function LandingPage({ onTryFree, onNavigate }) {
   return (
     <div className="landing-page">
       <div className="hero-conversion-optimized">
-        <h1>Speak Spanish, French, or 9 Other Languages</h1>
-        <p className="subheadline">Pick 2 languages. Start speaking today. 100% free.</p>
+        <h1>2 Languages. 20 Lessons Each. Free Forever.</h1>
+        <p className="subheadline">Pick Spanish, French, German, Korean, or 7 more. Start speaking in minutes.</p>
 
         <button className="cta-primary" onClick={handleCtaClick}>
           Choose Your 2 Free Languages →
