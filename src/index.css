@@ -110,48 +110,37 @@ body {
 }
 
 .hero-conversion-optimized {
+  /* Ultra-minimal mobile-first hero (above the fold) */
   min-height: 100svh;
-  display: grid;
-  grid-template-rows: 1.3fr auto 0.7fr;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* keeps CTA visible around ~60% viewport height on small iPhones */
   align-items: center;
   text-align: center;
   background: transparent;
-  padding: 20px 12px;
-  gap: 0;
+  padding: 80px 16px 24px; /* top padding required: 80px */
 }
 
 .hero-conversion-optimized h1 {
   margin: 0;
-  font-weight: 900;
-  letter-spacing: -0.02em;
-  font-size: 36px;
-  line-height: 1.06;
-  max-width: 14ch; /* keep lines short on mobile */
-}
-
-.hero-conversion-optimized .subheadline {
-  margin: 12px 0 0;
-  font-size: clamp(16px, 4.4vw, 18px);
-  white-space: nowrap;
-  line-height: 1.3;
-  color: #334155;
-  max-width: none;
+  font-weight: 700; /* required: bold */
   letter-spacing: -0.01em;
+  font-size: clamp(32px, 9vw, 36px); /* 36px on mobile, slightly smaller on very small screens */
+  line-height: 1.3; /* required */
+  max-width: 90vw; /* required */
 }
 
 .hero-conversion-optimized .hero-text {
-  align-self: end;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .hero-conversion-optimized .hero-cta {
-  align-self: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 14px;
+  margin-top: 40px; /* required: headline -> button gap */
 }
 
 .quick-value {
@@ -184,24 +173,21 @@ body {
 
 .cta-primary {
   margin-top: 0;
-  height: 72px;
-  width: 100%;
-  max-width: 560px;
   border: 0;
-  border-radius: 16px;
-  background: #ff4d00;
+  border-radius: 12px; /* required */
+  background: #ff5722; /* required */
   color: #ffffff;
-  font-weight: 900;
-  font-size: 20px;
-  letter-spacing: -0.01em;
-  box-shadow: 0 14px 30px rgba(255, 77, 0, 0.25);
+  font-weight: 700;
+  font-size: 22px; /* required */
+  padding: 20px 50px; /* required */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* required */
   cursor: pointer;
   transform: translateZ(0);
   white-space: nowrap;
 }
 
 .cta-primary:hover {
-  background: #ff3f00;
+  filter: brightness(0.97);
 }
 
 .cta-primary:active {
@@ -209,15 +195,18 @@ body {
 }
 
 .cta-primary:focus-visible {
-  outline: 4px solid rgba(255, 77, 0, 0.35);
+  outline: 4px solid rgba(255, 87, 34, 0.35);
   outline-offset: 3px;
 }
 
 /* (removed pulsing animation for a cleaner, more readable mobile hero) */
 
 .hero-conversion-optimized .trust-signals {
-  margin-top: 0;
-  font-size: 14px;
+  margin-top: 20px; /* required: button -> trust badges gap */
+  font-size: 14px; /* required */
+  color: #666; /* required */
+  font-weight: 400;
+  display: block;
 }
 
 .hero-conversion-optimized .trust-signals span {
@@ -261,18 +250,17 @@ body {
 
 @media (max-width: 420px) {
   .hero-conversion-optimized h1 {
-    font-size: 36px;
+    font-size: clamp(32px, 9vw, 36px);
   }
 
   .cta-primary {
-    height: 70px;
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 
 @media (min-width: 768px) {
   .hero-conversion-optimized {
-    padding: 56px 24px;
+    padding: 80px 24px 56px;
   }
 
   .quick-value {
@@ -286,7 +274,7 @@ body {
   }
 
   .cta-primary {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 

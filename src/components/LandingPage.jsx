@@ -16,7 +16,7 @@ export default function LandingPage({ onTryFree, onNavigate }) {
   const handleCtaClick = () => {
     gaEvent('cta_button_clicked', {
       button_location: 'hero_section',
-      button_text: 'Choose Your Languages →',
+      button_text: 'Start Today →',
     });
     goToLanguageSelector();
   };
@@ -25,18 +25,16 @@ export default function LandingPage({ onTryFree, onNavigate }) {
     <div className="landing-page">
       <div className="hero-conversion-optimized">
         <div className="hero-text">
-          <h1>Speak Spanish in 30 Days</h1>
-          <p className="subheadline">Or French. Or Korean. Pick 2, free forever.</p>
+          <h1>Finally Speak the Language You&apos;ve Been Putting Off</h1>
         </div>
 
         <div className="hero-cta">
           <button className="cta-primary" onClick={handleCtaClick}>
-            Choose Your Languages →
+            Start Today →
           </button>
 
           <div className="trust-signals" aria-label="Trust signals">
-            <span>✓ No credit card</span>
-            <span>✓ Free forever</span>
+            ✓ No credit card&nbsp;&nbsp;&nbsp;&nbsp;✓ Always free
           </div>
         </div>
       </div>
