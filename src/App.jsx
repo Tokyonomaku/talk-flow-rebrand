@@ -8,7 +8,6 @@ import PremiumLessonModal from './components/PremiumLessonModal';
 import ChooseFreeLanguageModal from './components/ChooseFreeLanguageModal';
 import Activate from './components/Activate';
 import Stats from './components/Stats';
-import LandingPage from './components/LandingPage';
 import Privacy from './components/Privacy';
 import Terms from './components/Terms';
 import Contact from './components/Contact';
@@ -228,23 +227,8 @@ function App() {
     );
   }
 
-  // Landing page at root
-  if (currentRoute === '/') {
-    return (
-      <LandingPage
-        onNavigate={navigate}
-        onTryFree={() => {
-          navigate('/choose-languages');
-          setCurrentView('language-selector');
-          setSelectedLanguage(null);
-          setSelectedLesson(null);
-        }}
-      />
-    );
-  }
-
   // Language selector (app entry)
-  const isSelectRoute = currentRoute === '/select' || currentRoute === '/choose-languages';
+  const isSelectRoute = currentRoute === '/' || currentRoute === '/select' || currentRoute === '/choose-languages';
   const showTopBar = !isSelectRoute;
 
   // Get free language names for display

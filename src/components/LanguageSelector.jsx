@@ -41,11 +41,15 @@ export default function LanguageSelector({ onSelectLanguage, onLockedLanguageCli
   const shouldShowOnboarding =
     !premium &&
     freeLanguages.length === 0 &&
-    (window.location.pathname === '/select' || window.location.pathname === '/choose-languages');
+    (window.location.pathname === '/' || window.location.pathname === '/select' || window.location.pathname === '/choose-languages');
 
   // GA4: language selector page view
   useEffect(() => {
-    if (window.location.pathname !== '/select' && window.location.pathname !== '/choose-languages') return;
+    if (
+      window.location.pathname !== '/' &&
+      window.location.pathname !== '/select' &&
+      window.location.pathname !== '/choose-languages'
+    ) return;
     gaEvent('page_view', {
       page_title: 'Language Selector',
       page_location: window.location.href,
