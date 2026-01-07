@@ -32,14 +32,12 @@ export default function UpgradeCelebrationModal({
     logEvent('upgrade_clicked', { from_where: 'celebration_modal_monthly' });
     gaEvent('upgrade_clicked', { from_page: 'celebration_modal', price: '20' });
     gaEvent('begin_checkout', { currency: 'USD', value: 20 });
-    window.location.href = 'https://winterfuyu.gumroad.com/l/gmijuf';
   };
 
   const goAnnual = () => {
     logEvent('upgrade_clicked', { from_where: 'celebration_modal_annual' });
     gaEvent('upgrade_clicked', { from_page: 'celebration_modal', price: '150' });
     gaEvent('begin_checkout', { currency: 'USD', value: 150 });
-    window.location.href = 'https://winterfuyu.gumroad.com/l/iecvpk';
   };
 
   return (
@@ -114,12 +112,14 @@ export default function UpgradeCelebrationModal({
             <div className="bg-white rounded-2xl border border-gray-200 p-5">
               <div className="text-2xl font-extrabold text-gray-900">$20/month</div>
               <div className="text-sm font-semibold text-gray-600 mt-1">Cancel anytime</div>
-              <button
-                className="mt-4 w-full py-3 rounded-xl font-extrabold border border-gray-300 text-gray-800 hover:bg-gray-50 transition-colors"
+              <a
+                className="gumroad-button mt-4 w-full py-3 rounded-xl font-extrabold border border-gray-300 text-gray-800 hover:bg-gray-50 transition-colors inline-flex items-center justify-center"
+                href="https://winterfuyu.gumroad.com/l/gmijuf"
+                data-gumroad-overlay-checkout="true"
                 onClick={goMonthly}
               >
                 Start Monthly
-              </button>
+              </a>
             </div>
 
             <div className="relative bg-white rounded-2xl border-2 border-blue-300 shadow-lg p-5 md:scale-[1.02]">
@@ -128,12 +128,14 @@ export default function UpgradeCelebrationModal({
               </div>
               <div className="text-2xl font-extrabold text-gray-900">$150/year</div>
               <div className="text-sm font-semibold text-blue-700 mt-1">Just $12.50/month</div>
-              <button
-                className="mt-4 w-full py-3 rounded-xl font-extrabold bg-blue-600 text-white hover:bg-blue-700 transition-colors shadow-md"
+              <a
+                className="gumroad-button mt-4 w-full py-3 rounded-xl font-extrabold bg-blue-600 text-white hover:bg-blue-700 transition-colors shadow-md inline-flex items-center justify-center"
+                href="https://winterfuyu.gumroad.com/l/iecvpk"
+                data-gumroad-overlay-checkout="true"
                 onClick={goAnnual}
               >
                 Get Annual - Best Deal
-              </button>
+              </a>
             </div>
           </div>
 

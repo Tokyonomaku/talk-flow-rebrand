@@ -34,12 +34,8 @@ export default function UpgradeModal({ isOpen, onClose, onLanguageChanged }) {
         currency: 'USD',
         value: plan === 'monthly' ? 20 : 150,
       });
-      window.location.href =
-        plan === 'monthly'
-          ? 'https://winterfuyu.gumroad.com/l/gmijuf'
-          : 'https://winterfuyu.gumroad.com/l/iecvpk';
     } finally {
-      // Keep UI responsive if redirect is blocked.
+      // Keep UI responsive if overlay doesn't open for some reason.
       window.setTimeout(() => setIsOpeningCheckout(false), 1200);
     }
   };
@@ -85,20 +81,28 @@ export default function UpgradeModal({ isOpen, onClose, onLanguageChanged }) {
               <li>✓ 260 lessons</li>
               <li>✓ Cancel anytime</li>
             </ul>
-            <button
-              className={`w-full py-3 px-4 rounded-lg font-semibold transition-colors border ${
+            <a
+              href="https://winterfuyu.gumroad.com/l/gmijuf"
+              data-gumroad-overlay-checkout="true"
+              className={`gumroad-button w-full py-3 px-4 rounded-lg font-semibold transition-colors border ${
                 isOpeningCheckout
                   ? 'bg-gray-100 text-gray-400 border-gray-200 cursor-not-allowed'
                   : 'bg-white text-gray-800 border-gray-300 hover:bg-gray-50'
               }`}
-              disabled={isOpeningCheckout}
-              onClick={() => startCheckout('monthly')}
+              aria-disabled={isOpeningCheckout}
+              onClick={(e) => {
+                if (isOpeningCheckout) {
+                  e.preventDefault();
+                  return;
+                }
+                startCheckout('monthly');
+              }}
             >
               <span className="inline-flex items-center justify-center gap-2">
                 {isOpeningCheckout && selectedPlan === 'monthly' && <Loader2 className="w-5 h-5 animate-spin" />}
                 {isOpeningCheckout && selectedPlan === 'monthly' ? 'Opening...' : 'Start Monthly'}
               </span>
-            </button>
+            </a>
           </div>
 
           {/* Annual (featured) */}
@@ -120,20 +124,28 @@ export default function UpgradeModal({ isOpen, onClose, onLanguageChanged }) {
               <li>✓ Save $90 vs monthly</li>
               <li>✓ Best value</li>
             </ul>
-            <button
-              className={`w-full py-3 px-4 rounded-lg font-semibold transition-colors shadow-md ${
+            <a
+              href="https://winterfuyu.gumroad.com/l/iecvpk"
+              data-gumroad-overlay-checkout="true"
+              className={`gumroad-button w-full py-3 px-4 rounded-lg font-semibold transition-colors shadow-md ${
                 isOpeningCheckout
                   ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
                   : 'bg-blue-600 text-white hover:bg-blue-700'
               }`}
-              disabled={isOpeningCheckout}
-              onClick={() => startCheckout('annual')}
+              aria-disabled={isOpeningCheckout}
+              onClick={(e) => {
+                if (isOpeningCheckout) {
+                  e.preventDefault();
+                  return;
+                }
+                startCheckout('annual');
+              }}
             >
               <span className="inline-flex items-center justify-center gap-2">
                 {isOpeningCheckout && selectedPlan === 'annual' && <Loader2 className="w-5 h-5 animate-spin" />}
                 {isOpeningCheckout && selectedPlan === 'annual' ? 'Opening...' : 'Get Annual - Best Deal'}
               </span>
-            </button>
+            </a>
           </div>
         </div>
 
