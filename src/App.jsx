@@ -245,6 +245,7 @@ function App() {
 
   // Language selector (app entry)
   const isSelectRoute = currentRoute === '/select' || currentRoute === '/choose-languages';
+  const showTopBar = !isSelectRoute;
 
   // Get free language names for display
   const languages = getAllLanguages();
@@ -258,72 +259,74 @@ function App() {
   return (
     <div className="App">
       {/* Status Bar */}
-      <div className="bg-white border-b border-gray-200 shadow-sm sticky top-0 z-40">
-        <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-          <div className="flex items-center gap-4">
-            {premiumStatus ? (
-              <div className="flex items-center gap-2">
-                <span className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                  Premium Member
-                </span>
-              </div>
-            ) : freeLanguageNames.length > 0 ? (
-              <div className="flex items-center gap-2">
-                <span className="text-gray-700 font-semibold">
-                  Free foreign languages: <strong>{freeLanguageNames.join(' & ')}</strong>
-                </span>
-                <span className="text-gray-500 text-sm hidden sm:inline">
-                  (English is always free)
-                </span>
-              </div>
-            ) : null}
-          </div>
-          <div className="flex items-center gap-4">
-            <button
-              onClick={() => {
-                // Go to language selector route
-                navigate('/select');
-                setSelectedLanguage(null);
-                setSelectedLesson(null);
-                setCurrentView('language-selector');
-              }}
-              className="text-gray-600 hover:text-gray-700 font-semibold text-sm transition-colors whitespace-nowrap"
-            >
-              Languages
-            </button>
-            <button
-              onClick={() => {
-                navigate('/stats');
-              }}
-              className="text-gray-600 hover:text-gray-700 font-semibold text-sm transition-colors whitespace-nowrap"
-            >
-              Stats
-            </button>
-            {!premiumStatus && (
-              <>
-                <button
-                  onClick={() => {
-                    handleLockedLessonClick(11, 'topbar_upgrade');
-                  }}
-                  className="text-blue-600 hover:text-blue-700 font-semibold text-sm transition-colors"
-                >
-                  Upgrade
-                </button>
-                <a
-                  href="/activate"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    navigate('/activate');
-                  }}
-                  className="text-gray-600 hover:text-gray-700 font-semibold text-sm transition-colors whitespace-nowrap"
-                >
-                  Activate Premium
-                </a>
-              </>
-            )}
+      {showTopBar && (
+        <div className="bg-white border-b border-gray-200 shadow-sm sticky top-0 z-40">
+          <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+            <div className="flex items-center gap-4">
+              {premiumStatus ? (
+                <div className="flex items-center gap-2">
+                  <span className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                    Premium Member
+                  </span>
+                </div>
+              ) : freeLanguageNames.length > 0 ? (
+                <div className="flex items-center gap-2">
+                  <span className="text-gray-700 font-semibold">
+                    Free foreign languages: <strong>{freeLanguageNames.join(' & ')}</strong>
+                  </span>
+                  <span className="text-gray-500 text-sm hidden sm:inline">
+                    (English is always free)
+                  </span>
+                </div>
+              ) : null}
+            </div>
+            <div className="flex items-center gap-4">
+              <button
+                onClick={() => {
+                  // Go to language selector route
+                  navigate('/select');
+                  setSelectedLanguage(null);
+                  setSelectedLesson(null);
+                  setCurrentView('language-selector');
+                }}
+                className="text-gray-600 hover:text-gray-700 font-semibold text-sm transition-colors whitespace-nowrap"
+              >
+                Languages
+              </button>
+              <button
+                onClick={() => {
+                  navigate('/stats');
+                }}
+                className="text-gray-600 hover:text-gray-700 font-semibold text-sm transition-colors whitespace-nowrap"
+              >
+                Stats
+              </button>
+              {!premiumStatus && (
+                <>
+                  <button
+                    onClick={() => {
+                      handleLockedLessonClick(11, 'topbar_upgrade');
+                    }}
+                    className="text-blue-600 hover:text-blue-700 font-semibold text-sm transition-colors"
+                  >
+                    Upgrade
+                  </button>
+                  <a
+                    href="/activate"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      navigate('/activate');
+                    }}
+                    className="text-gray-600 hover:text-gray-700 font-semibold text-sm transition-colors whitespace-nowrap"
+                  >
+                    Activate Premium
+                  </a>
+                </>
+              )}
+            </div>
           </div>
         </div>
-      </div>
+      )}
 
       {validView === 'language-selector' && (
         <LanguageSelector 
