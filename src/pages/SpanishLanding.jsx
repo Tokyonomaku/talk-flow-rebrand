@@ -1,48 +1,137 @@
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import './SpanishLanding.css';
 
 /**
- * Spanish landing page (conversation-first).
+ * Spanish landing page as an interactive 30-second mini-lesson.
  * Standalone route: /spanish-landing
  */
 export default function SpanishLanding() {
-  // Send into the existing selector flow (user can pick 2 free languages).
   const startUrl = useMemo(() => '/select?language=spanish&lesson=1', []);
+  const [step, setStep] = useState(1); // 1..4
 
   const handleStart = () => {
     window.location.href = startUrl;
   };
 
+  const advance = () => {
+    setStep((s) => (s < 4 ? s + 1 : 4));
+  };
+
+  const onLessonKeyDown = (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      advance();
+    }
+  };
+
   return (
-    <div className="sl-page">
-      <main className="sl-main" aria-label="Spanish landing page">
-        {/* TOP SECTION */}
-        <header className="sl-hero">
-          <div className="sl-flag" aria-hidden="true">🇪🇸</div>
-          <h1 className="sl-title">Learn Spanish - Real Conversations</h1>
-          <p className="sl-subtitle">Start speaking from Day 1. No boring drills.</p>
+    <div className="ml-page">
+      <main className="ml-main" aria-label="Spanish mini-lesson">
+        {/* SIMPLE HEADER */}
+        <header className="ml-header">
+          <div className="ml-flag" aria-hidden="true">🇪🇸</div>
+          <h1 className="ml-title">
+            Learn Your First
+            <br />
+            Spanish Phrase
+          </h1>
+          <p className="ml-subtitle">
+            Takes 30 seconds.
+            <br />
+            No signup.
+          </p>
         </header>
 
-        {/* PHRASE EXAMPLE */}
-        <section className="sl-card" aria-label="Phrase example">
-          <div className="sl-es">¿Dónde está el baño?</div>
-          <div className="sl-arrow" aria-hidden="true">↓</div>
-          <div className="sl-en">Where is the bathroom?</div>
-          <div className="sl-note">This is Lesson 1. No &quot;the apple is red&quot; nonsense.</div>
+        {/* INTERACTIVE LESSON */}
+        <section
+          className="ml-lesson"
+          role="button"
+          tabIndex={0}
+          onClick={advance}
+          onKeyDown={onLessonKeyDown}
+          aria-label="Tap to continue the lesson"
+        >
+          <div className="ml-progress" aria-hidden="true">
+            <span className={step >= 1 ? 'on' : ''} />
+            <span className={step >= 2 ? 'on' : ''} />
+            <span className={step >= 3 ? 'on' : ''} />
+            <span className={step >= 4 ? 'on' : ''} />
+          </div>
+
+          {/* Step prompt (swaps in place to keep layout compact) */}
+          {step === 1 && (
+            <div className="ml-line">
+              In Spanish,
+              <br />
+              you say:
+            </div>
+          )}
+          {step === 2 && (
+            <div className="ml-line">
+              This means:
+            </div>
+          )}
+          {step === 3 && (
+            <div className="ml-line">
+              Try saying it
+              <br />
+              out loud now.
+            </div>
+          )}
+          {step === 4 && (
+            <div className="ml-line">
+              Nice!
+              <br />
+              You learned a
+              <br />
+              travel phrase.
+            </div>
+          )}
+
+          <div className="ml-phraseBox">
+            <div className="ml-spanish">¿Dónde está el baño?</div>
+            <div className="ml-phonetic">(DOHN-deh eh-STAH el BAH-nyo)</div>
+          </div>
+
+          {/* Step detail (also swaps) */}
+          {step === 1 && (
+            <div className="ml-detail" aria-hidden="true">
+              Tap to continue
+            </div>
+          )}
+          {step === 2 && (
+            <div className="ml-detail">
+              <div className="ml-english">Where is the bathroom?</div>
+            </div>
+          )}
+          {step === 3 && (
+            <div className="ml-detail">
+              <div className="ml-nudge">Say it once.</div>
+            </div>
+          )}
+          {step === 4 && (
+            <div className="ml-detail">
+              <div className="ml-nudge">You can use it today.</div>
+            </div>
+          )}
+
+          <div className="ml-hint">
+            {step < 4 ? 'Tap anywhere to continue' : 'You did it'}
+          </div>
         </section>
 
-        {/* ONE BIG CTA */}
-        <section className="sl-cta">
-          <button type="button" className="sl-button" onClick={handleStart}>
-            START YOUR FIRST FREE LESSON →
+        {/* ONE BUTTON */}
+        <section className="ml-cta">
+          <button type="button" className="ml-button" onClick={handleStart}>
+            LEARN 9 MORE PHRASES FREE →
           </button>
-          <div className="sl-tiny">10 free lessons • No credit card</div>
+          <div className="ml-tiny">No credit card • Lesson 1 is free</div>
         </section>
 
-        {/* BOTTOM LINK */}
-        <div className="sl-bottom">
-          <a className="sl-link" href="/select">
-            Want a different language? Click here
+        {/* BOTTOM */}
+        <div className="ml-bottom">
+          <a className="ml-link" href="/select">
+            Want French or German instead? Click here
           </a>
         </div>
       </main>
