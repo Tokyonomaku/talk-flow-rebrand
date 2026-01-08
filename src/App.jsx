@@ -11,7 +11,7 @@ import Stats from './components/Stats';
 import Privacy from './components/Privacy';
 import Terms from './components/Terms';
 import Contact from './components/Contact';
-import SpanishLanding from './pages/spanish-landing';
+import SpanishLanding from './pages/SpanishLanding';
 import { getAllLanguages } from './data/languages';
 import { isPremium, hasFreeLanguage, setFreeLanguages, isLanguageAccessible, getFreeLanguages, isLessonAccessible } from './utils/lessonTracking';
 import { logEvent } from './utils/eventLog';
@@ -276,7 +276,7 @@ function App() {
               <button
                 onClick={() => {
                   // Go to language selector route
-                  navigate('/app');
+                  navigate('/select');
                   setSelectedLanguage(null);
                   setSelectedLesson(null);
                   setCurrentView('language-selector');

@@ -3,6 +3,7 @@
   color: #0f172a;
 }
 
+/* Smooth scrolling for in-page anchors (if added later) */
 html {
   scroll-behavior: smooth;
 }
@@ -10,7 +11,8 @@ html {
 .tf-container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 28px 18px 60px;
+  /* >= 20px side padding requirement on mobile */
+  padding: 28px 20px 60px;
 }
 
 .tf-hero {
@@ -41,12 +43,12 @@ html {
 }
 
 .tf-phrase {
-  margin-top: 22px;
+  margin-top: 18px;
 }
 
 .tf-phrase-card {
   border-radius: 20px;
-  padding: 26px 22px;
+  padding: 22px 18px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   box-shadow: 0 16px 40px rgba(31, 41, 55, 0.16);
   color: #ffffff;
@@ -63,9 +65,11 @@ html {
 .tf-audio {
   display: block;
   width: 100%;
-  margin: 16px auto 0;
+  margin: 14px auto 0;
   border: 0;
   border-radius: 50px;
+  /* >= 44px tap target */
+  min-height: 48px;
   padding: 14px 16px;
   font-size: 16px;
   font-weight: 800;
@@ -86,11 +90,10 @@ html {
   opacity: 0.75;
   cursor: not-allowed;
   transform: none;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
 }
 
 .tf-translation-label {
-  margin-top: 18px;
+  margin-top: 16px;
   text-align: center;
   font-size: 16px;
   font-weight: 700;
@@ -106,19 +109,8 @@ html {
   font-weight: 700;
 }
 
-.tf-context {
-  margin-top: 18px;
-  padding: 16px 16px;
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  font-size: 15px;
-  line-height: 1.55;
-  color: rgba(255, 255, 255, 0.92);
-}
-
 .tf-cta-wrap {
-  margin-top: 18px;
+  margin-top: 14px;
   text-align: center;
 }
 
@@ -126,6 +118,8 @@ html {
   border: 0;
   width: 100%;
   border-radius: 50px;
+  /* >= 44px tap target */
+  min-height: 52px;
   padding: 16px 18px;
   font-size: 22px;
   font-weight: 900;
@@ -143,18 +137,8 @@ html {
   filter: brightness(1.02);
 }
 
-.tf-cta:active {
-  transform: translateY(-1px);
-}
-
-.tf-cta-lg {
-  margin-top: 10px;
-  padding: 18px 20px;
-  font-size: 24px;
-}
-
 .tf-trust {
-  margin-top: 12px;
+  margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
   gap: 10px 14px;
@@ -164,111 +148,15 @@ html {
   font-weight: 700;
 }
 
-.tf-section {
-  margin-top: 26px;
-}
-
-.tf-features {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
-}
-
-.tf-feature {
-  border: 1px solid #e2e8f0;
-  border-radius: 20px;
-  padding: 16px 16px;
-  background: #ffffff;
-  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.06);
-}
-
-.tf-feature-title {
-  font-weight: 900;
-  font-size: 18px;
-  letter-spacing: -0.01em;
-}
-
-.tf-feature-text {
-  margin-top: 8px;
-  color: #475569;
-  font-size: 15px;
-  line-height: 1.5;
-}
-
-.tf-h2 {
-  font-size: 24px;
-  line-height: 1.25;
-  font-weight: 900;
-  letter-spacing: -0.01em;
-  margin: 0 0 12px;
-}
-
-.tf-phrase-list {
-  border: 1px solid #e2e8f0;
-  border-radius: 20px;
-  padding: 16px 16px;
-  background: #ffffff;
-  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.06);
-}
-
-.tf-phrase-item {
-  padding: 10px 4px;
-  font-size: 16px;
-  color: #0f172a;
-}
-
-.tf-phrase-item + .tf-phrase-item {
-  border-top: 1px solid #f1f5f9;
-}
-
-.tf-final {
-  margin-top: 26px;
-  text-align: center;
-  border: 1px solid #e2e8f0;
-  border-radius: 20px;
-  padding: 20px 16px;
-  background: #ffffff;
-  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.06);
-}
-
-.tf-final-title {
-  margin-bottom: 8px;
-}
-
-.tf-final-sub {
-  margin: 0 0 10px;
-  color: #64748b;
-  font-size: 16px;
-}
-
-.tf-final-small {
-  margin-top: 10px;
-  color: #64748b;
-  font-size: 13px;
-}
-
-.tf-footer {
-  margin-top: 28px;
-  text-align: center;
-  color: #64748b;
-}
-
-.tf-footer-link {
-  display: inline-block;
-  color: #2563eb;
-  font-weight: 800;
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
-.tf-footer-brand {
-  margin-top: 12px;
-  font-weight: 900;
-  color: #0f172a;
-}
-
-.tf-footer-tagline {
-  margin-top: 6px;
+.tf-context {
+  margin-top: 14px;
+  padding: 14px 14px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  font-size: 16px; /* minimum 16px body text */
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.92);
 }
 
 /* Fade-in-up */
@@ -295,34 +183,60 @@ html {
   }
 }
 
-/* Mobile responsive */
-@media (max-width: 768px) {
+/* Mobile-first: tighten typography on very small screens (iPhone SE 320px) */
+@media (max-width: 360px) {
+  .tf-container {
+    padding: 18px 20px 44px;
+  }
+  .tf-hero {
+    padding-top: 2px;
+  }
   .tf-title {
-    font-size: 34px;
+    font-size: 32px; /* 42 desktop -> 32 mobile requirement */
+  }
+  .tf-flag {
+    font-size: 60px; /* 60px mobile */
   }
   .tf-subtitle {
     font-size: 16px;
   }
-  .tf-phrase-es {
-    font-size: 30px;
-  }
-  .tf-phrase-en {
-    font-size: 22px;
+  .tf-phrase {
+    margin-top: 12px;
   }
   .tf-phrase-card {
-    padding: 20px 16px;
+    padding: 16px 14px;
   }
-  .tf-context {
+  .tf-phrase-es {
+    font-size: 28px;
+  }
+  .tf-phrase-en {
+    font-size: 20px;
+  }
+  .tf-translation-label {
+    font-size: 14px;
     margin-top: 14px;
   }
-  .tf-features {
-    grid-template-columns: 1fr;
+  .tf-audio {
+    margin-top: 12px;
+    min-height: 44px;
+    padding: 12px 14px;
+    font-size: 15px;
   }
   .tf-cta {
+    min-height: 48px;
+    padding: 14px 16px;
     font-size: 18px;
   }
-  .tf-cta-lg {
-    font-size: 20px;
+  .tf-trust {
+    font-size: 13px;
+    gap: 8px 12px;
+  }
+}
+
+/* Tablet layout tweaks */
+@media (min-width: 768px) {
+  .tf-container {
+    padding: 36px 24px 70px;
   }
 }
 
