@@ -41,12 +41,12 @@ export default function LanguageSelector({ onSelectLanguage, onLockedLanguageCli
   const shouldShowOnboarding =
     !premium &&
     freeLanguages.length === 0 &&
-    (window.location.pathname === '/' || window.location.pathname === '/select' || window.location.pathname === '/choose-languages');
+    (window.location.pathname === '/app' || window.location.pathname === '/select' || window.location.pathname === '/choose-languages');
 
   // GA4: language selector page view
   useEffect(() => {
     if (
-      window.location.pathname !== '/' &&
+      window.location.pathname !== '/app' &&
       window.location.pathname !== '/select' &&
       window.location.pathname !== '/choose-languages'
     ) return;
@@ -56,11 +56,22 @@ export default function LanguageSelector({ onSelectLanguage, onLockedLanguageCli
     });
   }, []);
 
+  // On first touch to /app (or /select), preselect language intent if provided (e.g. from / Spanish landing CTA).
   useEffect(() => {
     if (!shouldShowOnboarding) return;
-    // Reset if user hits back / revisits the selector with no stored selection
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const lang = params.get('language');
+      if (lang && FOREIGN_LANGUAGE_IDS.includes(lang)) {
+        setSelectedOnboarding([lang]);
+        return;
+      }
+    } catch (_) {
+      // ignore
+    }
+    // Default: no preselection
     setSelectedOnboarding([]);
-  }, [shouldShowOnboarding]);
+  }, [shouldShowOnboarding, FOREIGN_LANGUAGE_IDS]);
 
   const toggleOnboardingLanguage = (langId) => {
     setSelectedOnboarding((prev) => {

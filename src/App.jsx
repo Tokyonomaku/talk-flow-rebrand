@@ -11,6 +11,7 @@ import Stats from './components/Stats';
 import Privacy from './components/Privacy';
 import Terms from './components/Terms';
 import Contact from './components/Contact';
+import SpanishLanding from './pages/spanish-landing';
 import { getAllLanguages } from './data/languages';
 import { isPremium, hasFreeLanguage, setFreeLanguages, isLanguageAccessible, getFreeLanguages, isLessonAccessible } from './utils/lessonTracking';
 import { logEvent } from './utils/eventLog';
@@ -36,6 +37,8 @@ function App() {
   useEffect(() => {
     const knownRoutes = new Set([
       '/',
+      '/spanish-landing',
+      '/app',
       '/select',
       '/choose-languages',
       '/dashboard',
@@ -69,7 +72,7 @@ function App() {
   // Check if user needs to select free language on mount
   useEffect(() => {
     // Don't show modals on non-app routes
-    const nonAppRoutes = new Set(['/', '/activate', '/stats', '/privacy', '/terms', '/contact']);
+    const nonAppRoutes = new Set(['/', '/spanish-landing', '/activate', '/stats', '/privacy', '/terms', '/contact']);
     if (nonAppRoutes.has(currentRoute)) return;
 
     const checkInitialState = () => {
@@ -227,8 +230,13 @@ function App() {
     );
   }
 
+  // Spanish landing page (default home)
+  if (currentRoute === '/' || currentRoute === '/spanish-landing') {
+    return <SpanishLanding />;
+  }
+
   // Language selector (app entry)
-  const isSelectRoute = currentRoute === '/' || currentRoute === '/select' || currentRoute === '/choose-languages';
+  const isSelectRoute = currentRoute === '/app' || currentRoute === '/select' || currentRoute === '/choose-languages';
   const showTopBar = !isSelectRoute;
 
   // Get free language names for display
@@ -268,7 +276,7 @@ function App() {
               <button
                 onClick={() => {
                   // Go to language selector route
-                  navigate('/select');
+                  navigate('/app');
                   setSelectedLanguage(null);
                   setSelectedLesson(null);
                   setCurrentView('language-selector');
