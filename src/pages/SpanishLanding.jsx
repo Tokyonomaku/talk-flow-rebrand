@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useMemo } from 'react';
 import './SpanishLanding.css';
 
 /**
@@ -6,9 +6,6 @@ import './SpanishLanding.css';
  * Standalone route: /spanish-landing
  */
 export default function SpanishLanding() {
-  const [isPlaying, setIsPlaying] = useState(false);
-  const audioRef = useRef(null);
-
   // Send into the existing selector flow (user can pick 2 free languages).
   const startUrl = useMemo(() => '/select?language=spanish&lesson=1', []);
 
@@ -16,103 +13,39 @@ export default function SpanishLanding() {
     window.location.href = startUrl;
   };
 
-  const handlePlayAudio = async () => {
-    if (isPlaying) return;
-    setIsPlaying(true);
-
-    try {
-      if (!audioRef.current) {
-        audioRef.current = new Audio('/audio/donde-bano.mp3');
-      }
-      const audio = audioRef.current;
-      audio.currentTime = 0;
-
-      const cleanup = () => {
-        audio.removeEventListener('ended', cleanup);
-        audio.removeEventListener('pause', cleanup);
-        audio.removeEventListener('error', onError);
-        setIsPlaying(false);
-      };
-      const onError = () => cleanup();
-
-      audio.addEventListener('ended', cleanup);
-      audio.addEventListener('pause', cleanup);
-      audio.addEventListener('error', onError);
-
-      // play() can reject if the file is missing or autoplay is blocked.
-      await audio.play();
-    } catch (err) {
-      console.warn('[SpanishLanding] Audio failed to play:', err);
-      setIsPlaying(false);
-    }
-  };
-
-  // Fade-in-up on scroll via IntersectionObserver (no dependencies).
-  useEffect(() => {
-    const nodes = Array.from(document.querySelectorAll('.tf-animate'));
-    if (nodes.length === 0) return;
-
-    const io = new IntersectionObserver(
-      (entries) => {
-        for (const entry of entries) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('is-visible');
-            io.unobserve(entry.target);
-          }
-        }
-      },
-      { threshold: 0.12 }
-    );
-
-    nodes.forEach((n) => io.observe(n));
-    return () => io.disconnect();
-  }, []);
-
   return (
-    <div className="tf-spanish">
-      <div className="tf-container">
-        <section className="tf-hero tf-animate">
-          <div className="tf-flag" aria-hidden="true">🇪🇸</div>
-          <h1 className="tf-title">Learn Spanish - Conversation First</h1>
-          <p className="tf-subtitle">No &quot;the apple is red.&quot; Just real phrases you&apos;ll actually use.</p>
+    <div className="sl-page">
+      <main className="sl-main" aria-label="Spanish landing page">
+        {/* TOP SECTION */}
+        <header className="sl-hero">
+          <div className="sl-flag" aria-hidden="true">🇪🇸</div>
+          <h1 className="sl-title">Learn Spanish - Real Conversations</h1>
+          <p className="sl-subtitle">Start speaking from Day 1. No boring drills.</p>
+        </header>
+
+        {/* PHRASE EXAMPLE */}
+        <section className="sl-card" aria-label="Phrase example">
+          <div className="sl-es">¿Dónde está el baño?</div>
+          <div className="sl-arrow" aria-hidden="true">↓</div>
+          <div className="sl-en">Where is the bathroom?</div>
+          <div className="sl-note">This is Lesson 1. No &quot;the apple is red&quot; nonsense.</div>
         </section>
 
-        <section className="tf-phrase tf-animate" aria-label="Spanish phrase preview">
-          <div className="tf-phrase-card">
-            <div className="tf-phrase-es">¿Dónde está el baño?</div>
-
-            {/* MAIN CTA (must be visible above the fold on mobile) */}
-            <div className="tf-cta-wrap">
-              <button type="button" className="tf-cta" onClick={handleStart}>
-                START YOUR FIRST LESSON FREE →
-              </button>
-              <div className="tf-trust" aria-label="Trust badges">
-                <span>✓ No credit card required</span>
-                <span>✓ 10 free lessons</span>
-                <span>✓ Takes 5 minutes</span>
-              </div>
-            </div>
-
-            <button
-              type="button"
-              className="tf-audio"
-              onClick={handlePlayAudio}
-              disabled={isPlaying}
-              aria-disabled={isPlaying}
-            >
-              {isPlaying ? 'Playing…' : '🔊 Listen to Pronunciation'}
-            </button>
-
-            <div className="tf-translation-label">↓ Translation ↓</div>
-            <div className="tf-phrase-en">Where is the bathroom?</div>
-
-            <div className="tf-context">
-              You&apos;ll learn this in Lesson 1 — along with 9 other essential phrases for traveling in Spanish-speaking
-              countries. No boring vocabulary lists. Just real conversation.
-            </div>
-          </div>
+        {/* ONE BIG CTA */}
+        <section className="sl-cta">
+          <button type="button" className="sl-button" onClick={handleStart}>
+            START YOUR FIRST FREE LESSON →
+          </button>
+          <div className="sl-tiny">10 free lessons • No credit card</div>
         </section>
-      </div>
+
+        {/* BOTTOM LINK */}
+        <div className="sl-bottom">
+          <a className="sl-link" href="/select">
+            Want a different language? Click here
+          </a>
+        </div>
+      </main>
     </div>
   );
 }
