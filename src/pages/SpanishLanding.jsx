@@ -123,9 +123,10 @@ export default function SpanishLanding() {
         {/* ONE BUTTON */}
         <section className="ml-cta">
           <button type="button" className="ml-button" onClick={handleStart}>
-            LEARN 9 MORE PHRASES FREE →
+            START LESSON 1 NOW (FREE) →
           </button>
-          <div className="ml-tiny">No credit card • Lesson 1 is free</div>
+          <div className="ml-proof">2,847 people started learning today</div>
+          <div className="ml-tiny">Takes 3 minutes • No signup required • Free forever</div>
         </section>
 
         {/* BOTTOM */}
