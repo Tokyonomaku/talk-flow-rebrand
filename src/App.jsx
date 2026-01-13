@@ -12,6 +12,7 @@ import Privacy from './components/Privacy';
 import Terms from './components/Terms';
 import Contact from './components/Contact';
 import SpanishLanding from './pages/SpanishLanding';
+import HomePage from './pages/HomePage';
 import { getAllLanguages } from './data/languages';
 import { isPremium, hasFreeLanguage, setFreeLanguages, isLanguageAccessible, getFreeLanguages, isLessonAccessible } from './utils/lessonTracking';
 import { logEvent } from './utils/eventLog';
@@ -231,7 +232,10 @@ function App() {
   }
 
   // Spanish landing page (default home)
-  if (currentRoute === '/' || currentRoute === '/spanish-landing') {
+  if (currentRoute === '/') {
+    return <HomePage />;
+  }
+  if (currentRoute === '/spanish-landing') {
     return <SpanishLanding />;
   }
 

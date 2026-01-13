@@ -6,7 +6,8 @@ import './SpanishLanding.css';
  * Standalone route: /spanish-landing
  */
 export default function SpanishLanding() {
-  const startUrl = useMemo(() => '/select?language=spanish&lesson=1', []);
+  // Keep a single, clear path: language selection in /select
+  const startUrl = useMemo(() => '/select', []);
   const [step, setStep] = useState(1); // 1..4
 
   const handleStart = () => {
@@ -125,8 +126,7 @@ export default function SpanishLanding() {
           <button type="button" className="ml-button" onClick={handleStart}>
             START LESSON 1 NOW (FREE) →
           </button>
-          <div className="ml-proof">2,847 people started learning today</div>
-          <div className="ml-tiny">Takes 3 minutes • No signup required • Free forever</div>
+          <div className="ml-tiny">Takes 3 minutes • No signup required • No credit card</div>
         </section>
 
         {/* BOTTOM */}
