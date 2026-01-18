@@ -7,7 +7,7 @@ import './SpanishLanding.css';
  */
 export default function SpanishLanding() {
   // Keep a single, clear path: language selection in /select
-  const startUrl = useMemo(() => '/select', []);
+  const startUrl = useMemo(() => '/select?language=korean', []);
   const [step, setStep] = useState(1); // 1..4
 
   const handleStart = () => {
@@ -27,14 +27,14 @@ export default function SpanishLanding() {
 
   return (
     <div className="ml-page">
-      <main className="ml-main" aria-label="Spanish mini-lesson">
+      <main className="ml-main" aria-label="Korean mini-lesson">
         {/* SIMPLE HEADER */}
         <header className="ml-header">
-          <div className="ml-flag" aria-hidden="true">🇪🇸</div>
+          <div className="ml-flag" aria-hidden="true">🇰🇷</div>
           <h1 className="ml-title">
-            Learn Your First
+            Learn Korean Phrases
             <br />
-            Spanish Phrase
+            You'll Actually Use
           </h1>
           <p className="ml-subtitle">
             Takes 30 seconds.
@@ -62,7 +62,7 @@ export default function SpanishLanding() {
           {/* Step prompt (swaps in place to keep layout compact) */}
           {step === 1 && (
             <div className="ml-line">
-              In Spanish,
+              In Korean,
               <br />
               you say:
             </div>
@@ -90,8 +90,8 @@ export default function SpanishLanding() {
           )}
 
           <div className="ml-phraseBox">
-            <div className="ml-spanish">¿Dónde está el baño?</div>
-            <div className="ml-phonetic">(DOHN-deh eh-STAH el BAH-nyo)</div>
+            <div className="ml-spanish">화장실이 어디예요?</div>
+            <div className="ml-phonetic">(hwa-jang-shi-ri eo-di-ye-yo?)</div>
           </div>
 
           {/* Step detail (also swaps) */}
