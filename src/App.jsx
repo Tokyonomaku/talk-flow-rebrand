@@ -17,6 +17,8 @@ import { getAllLanguages } from './data/languages';
 import { isPremium, hasFreeLanguage, setFreeLanguages, isLanguageAccessible, getFreeLanguages, isLessonAccessible } from './utils/lessonTracking';
 import { logEvent } from './utils/eventLog';
 import { gaEvent } from './utils/analytics';
+import StreakCard from './components/StreakCard';
+import { updateStreakOnLogin } from './utils/streakTracking';
 
 function App() {
   const [currentView, setCurrentView] = useState('language-selector');
@@ -29,6 +31,8 @@ function App() {
   const [freeLanguages, setFreeLanguagesState] = useState([]);
   const [currentRoute, setCurrentRoute] = useState(window.location.pathname);
   const [selectedLessonForUpgrade, setSelectedLessonForUpgrade] = useState(null);
+  const [streakData, setStreakData] = useState({ currentStreak: 0, longestStreak: 0, lastLoginDate: null });
+  const [streakMeta, setStreakMeta] = useState({ streakBroken: false, previousStreak: 0 });
 
   const navigate = (path) => {
     window.history.pushState({}, '', path);
@@ -69,6 +73,12 @@ function App() {
       window.removeEventListener('popstate', handleRouteChange);
     };
   }, []);
+
+  useEffect(() => {
+    const updated = updateStreakOnLogin();
+    setStreakData(updated);
+    setStreakMeta({ streakBroken: updated.streakBroken, previousStreak: updated.previousStreak });
+  }, [currentRoute]);
 
   // Check if user needs to select free language on mount
   useEffect(() => {
@@ -277,6 +287,7 @@ function App() {
               ) : null}
             </div>
             <div className="flex items-center gap-4">
+              <StreakCard variant="badge" streakData={streakData} streakMeta={streakMeta} />
               <button
                 onClick={() => {
                   // Go to language selector route
@@ -328,6 +339,8 @@ function App() {
         <LanguageSelector 
           onSelectLanguage={handleSelectLanguage}
           onLockedLanguageClick={handleLockedLanguageClick}
+          streakData={streakData}
+          streakMeta={streakMeta}
         />
       )}
       {validView === 'lesson-list' && selectedLanguage && (
@@ -336,6 +349,8 @@ function App() {
           onBack={handleBackToLanguages}
           onSelectLesson={handleSelectLesson}
           onLockedLessonClick={handleLockedLessonClick}
+          streakData={streakData}
+          streakMeta={streakMeta}
         />
       )}
       {validView === 'lesson-view' && selectedLesson && selectedLanguage && (

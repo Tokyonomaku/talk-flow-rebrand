@@ -1,6 +1,8 @@
 import { useMemo, useState } from 'react';
 import { getAllLanguages } from '../data/languages';
 import { clearEvents, readEvents } from '../utils/eventLog';
+import { getStreakData } from '../utils/streakTracking';
+import { getQuizStats } from '../utils/quizTracking';
 
 export default function Stats({ onBack }) {
   const [refreshKey, setRefreshKey] = useState(0);
@@ -10,6 +12,8 @@ export default function Stats({ onBack }) {
     void refreshKey;
 
     const events = readEvents();
+    const streak = getStreakData();
+    const quizStats = getQuizStats();
 
     const languagesSelected = events.filter(e => e?.type === 'languages_selected');
     const lessonOpened = events.filter(e => e?.type === 'lesson_opened');
@@ -40,6 +44,10 @@ export default function Stats({ onBack }) {
       mostPopularLanguageName,
       lessonsOpenedCount: lessonOpened.length,
       upgradeClicksCount: upgradeClicked.length,
+      currentStreak: streak.currentStreak,
+      longestStreak: streak.longestStreak,
+      quizzesTaken: quizStats.total,
+      averageQuizScore: quizStats.averageScore,
     };
   }, [refreshKey]);
 
@@ -77,6 +85,22 @@ export default function Stats({ onBack }) {
         </div>
 
         <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 space-y-4">
+          <div className="flex items-center justify-between">
+            <div className="text-gray-700 font-semibold">Current streak</div>
+            <div className="text-gray-900 font-bold">{stats.currentStreak} days 🔥</div>
+          </div>
+          <div className="flex items-center justify-between">
+            <div className="text-gray-700 font-semibold">Longest streak</div>
+            <div className="text-gray-900 font-bold">{stats.longestStreak} days</div>
+          </div>
+          <div className="flex items-center justify-between">
+            <div className="text-gray-700 font-semibold">Quizzes taken</div>
+            <div className="text-gray-900 font-bold">{stats.quizzesTaken}</div>
+          </div>
+          <div className="flex items-center justify-between">
+            <div className="text-gray-700 font-semibold">Average quiz score</div>
+            <div className="text-gray-900 font-bold">{stats.averageQuizScore}%</div>
+          </div>
           <div className="flex items-center justify-between">
             <div className="text-gray-700 font-semibold">Languages selected</div>
             <div className="text-gray-900 font-bold">{stats.languagesSelectedCount} times</div>

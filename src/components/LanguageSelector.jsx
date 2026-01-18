@@ -3,8 +3,9 @@ import { Lock } from 'lucide-react';
 import { getAllLanguages } from '../data/languages';
 import { isLanguageAccessible, getFreeLanguages, isPremium, isFreeEnglishTrack, setFreeLanguages } from '../utils/lessonTracking';
 import { gaEvent } from '../utils/analytics';
+import StreakCard from './StreakCard';
 
-export default function LanguageSelector({ onSelectLanguage, onLockedLanguageClick }) {
+export default function LanguageSelector({ onSelectLanguage, onLockedLanguageClick, streakData, streakMeta }) {
   // --- New onboarding selector flow (only when user hasn't picked free foreign languages yet) ---
   const FOREIGN_LANGUAGE_IDS = useMemo(
     () => ([
@@ -129,6 +130,9 @@ export default function LanguageSelector({ onSelectLanguage, onLockedLanguageCli
               Pick 2 to start learning ({selectedOnboarding.length}/2)
             </p>
           </div>
+          <div className="flex justify-center mb-6">
+            <StreakCard variant="badge" streakData={streakData} streakMeta={streakMeta} />
+          </div>
 
           <div className="language-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {foreignLanguages.map((lang) => {
@@ -227,6 +231,9 @@ export default function LanguageSelector({ onSelectLanguage, onLockedLanguageCli
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-4">
       <div className="max-w-6xl mx-auto">
+        <div className="flex justify-center mb-6">
+          <StreakCard variant="badge" streakData={streakData} streakMeta={streakMeta} />
+        </div>
         <h1 className="text-4xl font-bold text-center text-gray-900 mb-2">
           Language Learning App
         </h1>

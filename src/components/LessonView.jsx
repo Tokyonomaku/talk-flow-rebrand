@@ -3,12 +3,15 @@ import { ArrowLeft, Volume2, Check } from 'lucide-react';
 import { getCompletedLessonsForLanguage, markLessonComplete, isLessonCompleted, isPremium, isFreeEnglishTrack } from '../utils/lessonTracking';
 import UpgradeCelebrationModal from './UpgradeCelebrationModal';
 import { gaEvent } from '../utils/analytics';
+import LessonQuiz from './LessonQuiz';
 
 export default function LessonView({ lesson, language, onBack, onUpgradeClick }) {
   const [playingIndex, setPlayingIndex] = useState(null);
   const [isCompleted, setIsCompleted] = useState(false);
   const [voices, setVoices] = useState([]);
   const [showCelebrationModal, setShowCelebrationModal] = useState(false);
+  const [showQuizPrompt, setShowQuizPrompt] = useState(false);
+  const [showQuiz, setShowQuiz] = useState(false);
   const premium = isPremium();
   const alwaysFreeEnglish = isFreeEnglishTrack(language.id);
   const lessonNum = typeof lesson.id === 'string' ? parseInt(lesson.id, 10) : Number(lesson.id);
@@ -25,6 +28,12 @@ export default function LessonView({ lesson, language, onBack, onUpgradeClick })
   useEffect(() => {
     setIsCompleted(isLessonCompleted(language.id, lesson.id));
   }, [language.id, lesson.id]);
+
+  useEffect(() => {
+    if (isCompleted) {
+      setShowQuizPrompt(true);
+    }
+  }, [isCompleted]);
 
   // Load voices when component mounts
   useEffect(() => {
@@ -62,6 +71,7 @@ export default function LessonView({ lesson, language, onBack, onUpgradeClick })
     const success = markLessonComplete(language.id, lesson.id);
     if (success) {
       setIsCompleted(true);
+      setShowQuizPrompt(true);
 
       // Celebration modal trigger:
       // When a free user completes their 10th lesson in one of their free foreign languages,
@@ -277,48 +287,64 @@ export default function LessonView({ lesson, language, onBack, onUpgradeClick })
           <p className="text-gray-600 mt-2">Learn {language.name} vocabulary</p>
         </div>
 
+        {showQuiz && (
+          <div className="mb-8">
+            <LessonQuiz
+              lesson={lesson}
+              language={language}
+              onExit={() => {
+                setShowQuiz(false);
+                setShowQuizPrompt(true);
+              }}
+              onContinue={onBack}
+            />
+          </div>
+        )}
+
         {/* Words Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {lesson.words.map((wordItem, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow"
-            >
-              <div className="flex items-start justify-between mb-4">
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                    {wordItem.word}
-                  </h3>
-                  {wordItem.romanji && (
-                    <p className="text-sm text-gray-500 mb-1">{wordItem.romanji}</p>
-                  )}
-                  <p className="text-lg text-gray-700 font-semibold">
-                    {wordItem.translation}
-                  </p>
-                  {wordItem.pronunciation && (
-                    <p className="text-sm text-gray-500 mt-1">
-                      {wordItem.pronunciation}
+        {!showQuiz && (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {lesson.words.map((wordItem, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow"
+              >
+                <div className="flex items-start justify-between mb-4">
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                      {wordItem.word}
+                    </h3>
+                    {wordItem.romanji && (
+                      <p className="text-sm text-gray-500 mb-1">{wordItem.romanji}</p>
+                    )}
+                    <p className="text-lg text-gray-700 font-semibold">
+                      {wordItem.translation}
                     </p>
-                  )}
+                    {wordItem.pronunciation && (
+                      <p className="text-sm text-gray-500 mt-1">
+                        {wordItem.pronunciation}
+                      </p>
+                    )}
+                  </div>
+                  <button
+                    onClick={() => speakText(wordItem.word, language.code, index)}
+                    className={`ml-4 p-3 rounded-full transition-all ${
+                      playingIndex === index
+                        ? 'bg-blue-500 text-white animate-pulse'
+                        : 'bg-gray-100 text-gray-700 hover:bg-blue-100 hover:text-blue-600'
+                    }`}
+                    aria-label={`Pronounce ${wordItem.word}`}
+                  >
+                    <Volume2 className="w-5 h-5" />
+                  </button>
                 </div>
-                <button
-                  onClick={() => speakText(wordItem.word, language.code, index)}
-                  className={`ml-4 p-3 rounded-full transition-all ${
-                    playingIndex === index
-                      ? 'bg-blue-500 text-white animate-pulse'
-                      : 'bg-gray-100 text-gray-700 hover:bg-blue-100 hover:text-blue-600'
-                  }`}
-                  aria-label={`Pronounce ${wordItem.word}`}
-                >
-                  <Volume2 className="w-5 h-5" />
-                </button>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        )}
 
         {/* Street Slang Section */}
-        {lesson.streetSlang && lesson.streetSlang.length > 0 && (
+        {!showQuiz && lesson.streetSlang && lesson.streetSlang.length > 0 && (
           <div className="mt-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Street Slang 💬</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -363,7 +389,7 @@ export default function LessonView({ lesson, language, onBack, onUpgradeClick })
         )}
 
         {/* Notes / Context */}
-        {lesson.culturalNotes && (
+        {!showQuiz && lesson.culturalNotes && (
           <div className="mt-8">
             <details className="bg-white rounded-lg shadow-md border border-gray-200 p-5">
               <summary className="cursor-pointer select-none text-lg font-semibold text-gray-900">
@@ -377,20 +403,46 @@ export default function LessonView({ lesson, language, onBack, onUpgradeClick })
         )}
 
         {/* Mark as Complete Button */}
-        <div className="mt-8 flex justify-center">
-          <button
-            onClick={handleMarkComplete}
-            disabled={isCompleted}
-            className={`flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all ${
-              isCompleted
-                ? 'bg-green-500 text-white cursor-not-allowed'
-                : 'bg-blue-600 text-white hover:bg-blue-700 hover:shadow-lg'
-            }`}
-          >
-            <Check className="w-5 h-5" />
-            {isCompleted ? 'Lesson Completed' : 'Mark as Complete'}
-          </button>
-        </div>
+        {!showQuiz && (
+          <div className="mt-8 flex justify-center">
+            <button
+              onClick={handleMarkComplete}
+              disabled={isCompleted}
+              className={`flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all ${
+                isCompleted
+                  ? 'bg-green-500 text-white cursor-not-allowed'
+                  : 'bg-blue-600 text-white hover:bg-blue-700 hover:shadow-lg'
+              }`}
+            >
+              <Check className="w-5 h-5" />
+              {isCompleted ? 'Lesson Completed' : 'Mark as Complete'}
+            </button>
+          </div>
+        )}
+
+        {showQuizPrompt && !showQuiz && (
+          <div className="mt-8 bg-white rounded-xl shadow-md border border-gray-200 p-6">
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">✅ Lesson Complete!</h2>
+            <p className="text-gray-700 mb-4">
+              You learned {lesson.words.length + (lesson.streetSlang?.length || 0)} new phrases.
+            </p>
+            <p className="text-gray-700 mb-6">Ready to test your knowledge?</p>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <button
+                onClick={() => setShowQuiz(true)}
+                className="px-4 py-3 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-colors"
+              >
+                Take 5-Question Quiz →
+              </button>
+              <button
+                onClick={onBack}
+                className="px-4 py-3 rounded-lg bg-gray-100 text-gray-700 font-semibold hover:bg-gray-200 transition-colors"
+              >
+                Skip for now
+              </button>
+            </div>
+          </div>
+        )}
 
         {/* If they close the celebration modal, keep a gentle, non-blocking upgrade option */}
         {lessonNum === 10 && isCompleted && !premium && !alwaysFreeEnglish && !showCelebrationModal && (

@@ -1,7 +1,8 @@
 import { ArrowLeft, Check, Lock } from 'lucide-react';
 import { getCompletedLessonsForLanguage, isLessonCompleted, isLessonAccessible, isPremium, isPremiumLesson, isFreeEnglishTrack } from '../utils/lessonTracking';
+import StreakCard from './StreakCard';
 
-export default function LessonList({ language, onBack, onSelectLesson, onLockedLessonClick }) {
+export default function LessonList({ language, onBack, onSelectLesson, onLockedLessonClick, streakData, streakMeta }) {
   const completedCount = getCompletedLessonsForLanguage(language.id);
   const totalLessons = language.lessons.length;
   const alwaysFreeEnglish = isFreeEnglishTrack(language.id);
@@ -35,6 +36,10 @@ export default function LessonList({ language, onBack, onSelectLesson, onLockedL
           <ArrowLeft className="w-5 h-5" />
           <span>Back to Languages</span>
         </button>
+
+        <div className="mb-6">
+          <StreakCard streakData={streakData} streakMeta={streakMeta} />
+        </div>
         
         <h1 className="text-3xl font-bold text-gray-900 mb-2">
           {language.flag} {language.name}
