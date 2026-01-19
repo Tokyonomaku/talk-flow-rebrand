@@ -3,10 +3,10 @@ import { logEvent } from '../utils/eventLog';
 
 function goToSelect() {
   try {
-    window.history.pushState({}, '', '/select');
+    window.history.pushState({}, '', '/select?language=korean');
     window.dispatchEvent(new PopStateEvent('popstate'));
   } catch (_) {
-    window.location.href = '/select';
+    window.location.href = '/select?language=korean';
   }
 }
 
@@ -14,19 +14,19 @@ function trackCtaClick(buttonLocation) {
   gaEvent('homepage_cta_clicked', {
     button_location: buttonLocation,
     button_text: 'CHOOSE YOUR 2 FREE LANGUAGES →',
-    destination: '/select',
+    destination: '/select?language=korean',
   });
   logEvent('homepage_cta_clicked', {
     button_location: buttonLocation,
-    destination: '/select',
+    destination: '/select?language=korean',
   });
 }
 
 const EXAMPLE_PHRASES = [
   {
-    flag: '🇪🇸',
-    language: 'Spanish',
-    foreign: '¿Dónde está el baño?',
+    flag: '🇰🇷',
+    language: 'Korean',
+    foreign: '화장실이 어디예요?',
     english: 'Where is the bathroom?',
   },
 ];
@@ -37,7 +37,7 @@ export default function HomePage() {
     goToSelect();
   };
 
-  const spanishExample = EXAMPLE_PHRASES[0];
+  const koreanExample = EXAMPLE_PHRASES[0];
 
   return (
     <div className="bg-white text-slate-900">
@@ -48,7 +48,7 @@ export default function HomePage() {
             <div className="space-y-8">
               <div className="space-y-3">
                 <h1 className="text-[28px] leading-[1.2] font-extrabold tracking-[-0.02em] md:text-[42px]">
-                  <span className="block">Learn Spanish Phrases</span>
+                  <span className="block">Learn Korean Phrases</span>
                   <span className="block">You&apos;ll Actually Use</span>
                 </h1>
                 <p className="text-[16px] leading-[1.3] font-semibold text-[#666]">
@@ -76,17 +76,17 @@ export default function HomePage() {
               <div className="mx-auto w-full rounded-[12px] bg-[#f0f4ff] p-[30px] text-left">
                 <div className="flex items-center gap-2">
                   <span className="text-2xl leading-none" aria-hidden="true">
-                    {spanishExample.flag}
+                    {koreanExample.flag}
                   </span>
                   <span className="text-[16px] font-extrabold text-slate-900">
-                    {spanishExample.language}
+                    {koreanExample.language}
                   </span>
                 </div>
                 <div className="mt-4 text-[24px] leading-[1.2] font-extrabold text-slate-900 md:text-[26px]">
-                  “{spanishExample.foreign}”
+                  “{koreanExample.foreign}”
                 </div>
                 <div className="mt-2 text-[16px] leading-[1.25] font-semibold text-[#666]">
-                  {spanishExample.english}
+                  {koreanExample.english}
                 </div>
                 <div className="mt-4 text-[14px] font-semibold text-slate-700">
                   This is Lesson 1.
