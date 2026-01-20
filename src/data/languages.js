@@ -8,6 +8,7 @@ export const languages = {
       {
         id: 1,
         title: 'Greetings & Basics',
+        level: 'beginner',
         words: [
           { word: 'Hola', translation: 'Hello', pronunciation: 'OH-lah' },
           { word: 'Adiós', translation: 'Goodbye', pronunciation: 'ah-DYOHS' },
@@ -28,6 +29,7 @@ export const languages = {
       {
         id: 2,
         title: 'Numbers',
+        level: 'beginner',
         words: [
           { word: 'Uno', translation: 'One', pronunciation: 'OO-noh' },
           { word: 'Dos', translation: 'Two', pronunciation: 'dohs' },
@@ -47,6 +49,7 @@ export const languages = {
       {
         id: 3,
         title: 'Colors',
+        level: 'beginner',
         words: [
           { word: 'Rojo', translation: 'Red', pronunciation: 'ROH-hoh' },
           { word: 'Azul', translation: 'Blue', pronunciation: 'ah-SOOL' },
@@ -66,6 +69,7 @@ export const languages = {
       {
         id: 4,
         title: 'Common Phrases',
+        level: 'beginner',
         words: [
           { word: 'Por favor', translation: 'Please', pronunciation: 'por fa-vor' },
           { word: 'Gracias', translation: 'Thank you', pronunciation: 'gra-sias' },
@@ -85,6 +89,7 @@ export const languages = {
       {
         id: 5,
         title: 'Food & Drink',
+        level: 'beginner',
         words: [
           { word: 'Agua', translation: 'Water', pronunciation: 'ah-gwa' },
           { word: 'Pan', translation: 'Bread', pronunciation: 'pahn' },
@@ -104,6 +109,7 @@ export const languages = {
       {
         id: 6,
         title: 'Family & People',
+        level: 'beginner',
         words: [
           { word: 'Madre', translation: 'Mother', pronunciation: 'mah-dreh' },
           { word: 'Padre', translation: 'Father', pronunciation: 'pah-dreh' },
@@ -123,6 +129,7 @@ export const languages = {
       {
         id: 7,
         title: 'Body Parts',
+        level: 'beginner',
         words: [
           { word: 'Cabeza', translation: 'Head', pronunciation: 'kah-beh-sah' },
           { word: 'Ojo', translation: 'Eye', pronunciation: 'oh-ho' },
@@ -142,6 +149,7 @@ export const languages = {
       {
         id: 8,
         title: 'Animals',
+        level: 'beginner',
         words: [
           { word: 'Perro', translation: 'Dog', pronunciation: 'peh-roh' },
           { word: 'Gato', translation: 'Cat', pronunciation: 'gah-toh' },
@@ -161,6 +169,7 @@ export const languages = {
       {
         id: 9,
         title: 'Time & Days',
+        level: 'beginner',
         words: [
           { word: 'Hoy', translation: 'Today', pronunciation: 'oy' },
           { word: 'Mañana', translation: 'Tomorrow', pronunciation: 'mah-nyah-nah' },
@@ -180,6 +189,7 @@ export const languages = {
       {
         id: 10,
         title: 'Weather',
+        level: 'beginner',
         words: [
           { word: 'Sol', translation: 'Sun', pronunciation: 'sohl' },
           { word: 'Lluvia', translation: 'Rain', pronunciation: 'yoo-vee-ah' },
@@ -199,6 +209,7 @@ export const languages = {
       {
         id: 11,
         title: 'Transportation & Travel',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Coche', translation: 'Car', pronunciation: 'KOH-cheh' },
@@ -219,6 +230,7 @@ export const languages = {
       {
         id: 12,
         title: 'Work & Business',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Trabajo', translation: 'Work/Job', pronunciation: 'trah-BAH-hoh' },
@@ -239,6 +251,7 @@ export const languages = {
       {
         id: 13,
         title: 'Hobbies & Interests',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Música', translation: 'Music', pronunciation: 'MOO-see-kah' },
@@ -259,6 +272,7 @@ export const languages = {
       {
         id: 14,
         title: 'Emotions & Feelings',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Feliz', translation: 'Happy', pronunciation: 'feh-LEES' },
@@ -279,6 +293,7 @@ export const languages = {
       {
         id: 15,
         title: 'Directions & Locations',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Izquierda', translation: 'Left', pronunciation: 'ees-kee-EHR-dah' },
@@ -299,6 +314,7 @@ export const languages = {
       {
         id: 16,
         title: 'Past Tense Basics',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Fui', translation: 'I went', pronunciation: 'fwee' },
@@ -319,6 +335,7 @@ export const languages = {
       {
         id: 17,
         title: 'Future Plans',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Voy a', translation: 'I\'m going to', pronunciation: 'boy ah' },
@@ -339,6 +356,7 @@ export const languages = {
       {
         id: 18,
         title: 'Making Suggestions',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: '¿Qué tal si...?', translation: 'What if...?', pronunciation: 'keh tahl see' },
@@ -359,6 +377,7 @@ export const languages = {
       {
         id: 19,
         title: 'Expressing Opinions',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Creo que', translation: 'I think that', pronunciation: 'KREH-oh keh' },
@@ -379,6 +398,7 @@ export const languages = {
       {
         id: 20,
         title: 'Problem Solving',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Problema', translation: 'Problem', pronunciation: 'proh-BLEH-mah' },
@@ -399,6 +419,7 @@ export const languages = {
       {
         id: 21,
         title: 'Song Lesson: Los Pollitos Dicen (The Little Chicks Say)',
+        level: 'intermediate',
         premium: true,
         songInfo: {
           name: 'Los Pollitos Dicen',
@@ -441,6 +462,7 @@ export const languages = {
       {
         id: 22,
         title: 'Proverbs & Sayings',
+        level: 'intermediate',
         premium: true,
         proverbs: [
           { original: 'Más vale tarde que nunca', literalTranslation: 'Better late than never', meaning: 'It\'s better to do something late than not at all', context: 'When someone finally does something they\'ve been putting off', slangEquivalent: 'Mejor tarde que nunca' },
@@ -464,6 +486,7 @@ export const languages = {
       {
         id: 23,
         title: 'Texting & Internet Slang',
+        level: 'intermediate',
         premium: true,
         abbreviations: [
           { abbreviation: 'q', fullForm: 'que', englishEquivalent: 'that/what', usage: 'Friends only, very casual', platform: 'WhatsApp, Instagram, Twitter' },
@@ -496,6 +519,7 @@ export const languages = {
       {
         id: 24,
         title: 'House & Home',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Dormitorio', translation: 'Bedroom', pronunciation: 'dor-mee-TOH-ree-oh' },
@@ -540,6 +564,7 @@ export const languages = {
       {
         id: 25,
         title: 'Clothing & Fashion',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Camisa', translation: 'Shirt', pronunciation: 'kah-MEE-sah' },
@@ -581,6 +606,7 @@ export const languages = {
       {
         id: 26,
         title: 'Dance & Movement',
+        level: 'intermediate',
         premium: true,
         danceStyles: [
           { name: 'Flamenco', pronunciation: 'flah-MEN-koh', context: 'Traditional Spanish dance, seen at festivals and cultural events', type: 'Traditional' },
@@ -629,6 +655,7 @@ export const languages = {
       {
         id: 1,
         title: 'Greetings & Basics',
+        level: 'beginner',
         words: [
           { word: 'Bonjour', translation: 'Hello', pronunciation: 'bohn-ZHOOR' },
           { word: 'Au revoir', translation: 'Goodbye', pronunciation: 'oh ruh-VWAHR' },
@@ -649,6 +676,7 @@ export const languages = {
       {
         id: 2,
         title: 'Numbers',
+        level: 'beginner',
         words: [
           { word: 'Un', translation: 'One', pronunciation: 'uhn' },
           { word: 'Deux', translation: 'Two', pronunciation: 'duh' },
@@ -668,6 +696,7 @@ export const languages = {
       {
         id: 3,
         title: 'Colors',
+        level: 'beginner',
         words: [
           { word: 'Rouge', translation: 'Red', pronunciation: 'roozh' },
           { word: 'Bleu', translation: 'Blue', pronunciation: 'bluh' },
@@ -687,6 +716,7 @@ export const languages = {
       {
         id: 4,
         title: 'Common Phrases',
+        level: 'beginner',
         words: [
           { word: 'S\'il vous plaît', translation: 'Please', pronunciation: 'seel voo pleh' },
           { word: 'Merci', translation: 'Thank you', pronunciation: 'mer-see' },
@@ -706,6 +736,7 @@ export const languages = {
       {
         id: 5,
         title: 'Food & Drink',
+        level: 'beginner',
         words: [
           { word: 'Eau', translation: 'Water', pronunciation: 'oh' },
           { word: 'Pain', translation: 'Bread', pronunciation: 'pan' },
@@ -725,6 +756,7 @@ export const languages = {
       {
         id: 6,
         title: 'Family & People',
+        level: 'beginner',
         words: [
           { word: 'Mère', translation: 'Mother', pronunciation: 'mehr' },
           { word: 'Père', translation: 'Father', pronunciation: 'pehr' },
@@ -744,6 +776,7 @@ export const languages = {
       {
         id: 7,
         title: 'Body Parts',
+        level: 'beginner',
         words: [
           { word: 'Tête', translation: 'Head', pronunciation: 'tet' },
           { word: 'Œil', translation: 'Eye', pronunciation: 'uh-y' },
@@ -763,6 +796,7 @@ export const languages = {
       {
         id: 8,
         title: 'Animals',
+        level: 'beginner',
         words: [
           { word: 'Chien', translation: 'Dog', pronunciation: 'shee-en' },
           { word: 'Chat', translation: 'Cat', pronunciation: 'shah' },
@@ -782,6 +816,7 @@ export const languages = {
       {
         id: 9,
         title: 'Time & Days',
+        level: 'beginner',
         words: [
           { word: 'Aujourd\'hui', translation: 'Today', pronunciation: 'oh-zhoor-dwee' },
           { word: 'Demain', translation: 'Tomorrow', pronunciation: 'duh-man' },
@@ -801,6 +836,7 @@ export const languages = {
       {
         id: 10,
         title: 'Weather',
+        level: 'beginner',
         words: [
           { word: 'Soleil', translation: 'Sun', pronunciation: 'so-lay' },
           { word: 'Pluie', translation: 'Rain', pronunciation: 'plwee' },
@@ -820,6 +856,7 @@ export const languages = {
       {
         id: 11,
         title: 'Transportation & Travel',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Voiture', translation: 'Car', pronunciation: 'vwah-TOOR' },
@@ -840,6 +877,7 @@ export const languages = {
       {
         id: 12,
         title: 'Work & Business',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Travail', translation: 'Work/Job', pronunciation: 'trah-VY' },
@@ -860,6 +898,7 @@ export const languages = {
       {
         id: 13,
         title: 'Hobbies & Interests',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Musique', translation: 'Music', pronunciation: 'moo-ZEEK' },
@@ -880,6 +919,7 @@ export const languages = {
       {
         id: 14,
         title: 'Emotions & Feelings',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Heureux', translation: 'Happy', pronunciation: 'uh-RUH' },
@@ -900,6 +940,7 @@ export const languages = {
       {
         id: 15,
         title: 'Directions & Locations',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Gauche', translation: 'Left', pronunciation: 'gohsh' },
@@ -920,6 +961,7 @@ export const languages = {
       {
         id: 16,
         title: 'Past Tense Basics',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Je suis allé', translation: 'I went', pronunciation: 'zhuh swee zah-LAY' },
@@ -940,6 +982,7 @@ export const languages = {
       {
         id: 17,
         title: 'Future Plans',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Je vais', translation: 'I\'m going to', pronunciation: 'zhuh vay' },
@@ -960,6 +1003,7 @@ export const languages = {
       {
         id: 18,
         title: 'Making Suggestions',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Et si...?', translation: 'What if...?', pronunciation: 'ay see' },
@@ -980,6 +1024,7 @@ export const languages = {
       {
         id: 19,
         title: 'Expressing Opinions',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Je pense que', translation: 'I think that', pronunciation: 'zhuh pahns kuh' },
@@ -1000,6 +1045,7 @@ export const languages = {
       {
         id: 20,
         title: 'Problem Solving',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Problème', translation: 'Problem', pronunciation: 'proh-BLEM' },
@@ -1020,6 +1066,7 @@ export const languages = {
       {
         id: 21,
         title: 'Song Lesson: Frère Jacques (Brother John)',
+        level: 'intermediate',
         premium: true,
         songInfo: {
           name: 'Frère Jacques',
@@ -1057,6 +1104,7 @@ export const languages = {
       {
         id: 22,
         title: 'Proverbs & Sayings',
+        level: 'intermediate',
         premium: true,
         proverbs: [
           { original: 'Mieux vaut tard que jamais', literalTranslation: 'Better late than never', meaning: 'It\'s better to do something late than not at all', context: 'When someone finally does something they\'ve been putting off', slangEquivalent: 'Mieux vaut tard' },
@@ -1080,6 +1128,7 @@ export const languages = {
       {
         id: 23,
         title: 'Texting & Internet Slang',
+        level: 'intermediate',
         premium: true,
         abbreviations: [
           { abbreviation: 'c', fullForm: 'c\'est', englishEquivalent: 'it is', usage: 'Friends only, very casual', platform: 'WhatsApp, Instagram' },
@@ -1112,6 +1161,7 @@ export const languages = {
       {
         id: 24,
         title: 'House & Home',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Chambre', translation: 'Bedroom', pronunciation: 'shahm-bruh' },
@@ -1156,6 +1206,7 @@ export const languages = {
       {
         id: 25,
         title: 'Clothing & Fashion',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Chemise', translation: 'Shirt', pronunciation: 'shuh-MEEZ' },
@@ -1197,6 +1248,7 @@ export const languages = {
       {
         id: 26,
         title: 'Dance & Movement',
+        level: 'intermediate',
         premium: true,
         danceStyles: [
           { name: 'Cancan', pronunciation: 'kahn-KAHN', context: 'Famous French dance from the Moulin Rouge era, seen in shows', type: 'Traditional' },
@@ -1245,6 +1297,7 @@ export const languages = {
       {
         id: 1,
         title: 'Greetings & Basics',
+        level: 'beginner',
         words: [
           { word: 'Hallo', translation: 'Hello', pronunciation: 'HAH-loh' },
           { word: 'Auf Wiedersehen', translation: 'Goodbye', pronunciation: 'owf VEE-der-zay-en' },
@@ -1265,6 +1318,7 @@ export const languages = {
       {
         id: 2,
         title: 'Numbers',
+        level: 'beginner',
         words: [
           { word: 'Eins', translation: 'One', pronunciation: 'eyns' },
           { word: 'Zwei', translation: 'Two', pronunciation: 'tsvy' },
@@ -1284,6 +1338,7 @@ export const languages = {
       {
         id: 3,
         title: 'Colors',
+        level: 'beginner',
         words: [
           { word: 'Rot', translation: 'Red', pronunciation: 'roht' },
           { word: 'Blau', translation: 'Blue', pronunciation: 'blow' },
@@ -1303,6 +1358,7 @@ export const languages = {
       {
         id: 4,
         title: 'Common Phrases',
+        level: 'beginner',
         words: [
           { word: 'Bitte', translation: 'Please', pronunciation: 'bit-tuh' },
           { word: 'Danke', translation: 'Thank you', pronunciation: 'dahn-kuh' },
@@ -1322,6 +1378,7 @@ export const languages = {
       {
         id: 5,
         title: 'Food & Drink',
+        level: 'beginner',
         words: [
           { word: 'Wasser', translation: 'Water', pronunciation: 'vah-ser' },
           { word: 'Brot', translation: 'Bread', pronunciation: 'broht' },
@@ -1341,6 +1398,7 @@ export const languages = {
       {
         id: 6,
         title: 'Family & People',
+        level: 'beginner',
         words: [
           { word: 'Mutter', translation: 'Mother', pronunciation: 'moo-ter' },
           { word: 'Vater', translation: 'Father', pronunciation: 'fah-ter' },
@@ -1360,6 +1418,7 @@ export const languages = {
       {
         id: 7,
         title: 'Body Parts',
+        level: 'beginner',
         words: [
           { word: 'Kopf', translation: 'Head', pronunciation: 'kohpf' },
           { word: 'Auge', translation: 'Eye', pronunciation: 'ow-guh' },
@@ -1379,6 +1438,7 @@ export const languages = {
       {
         id: 8,
         title: 'Animals',
+        level: 'beginner',
         words: [
           { word: 'Hund', translation: 'Dog', pronunciation: 'hoont' },
           { word: 'Katze', translation: 'Cat', pronunciation: 'kaht-suh' },
@@ -1398,6 +1458,7 @@ export const languages = {
       {
         id: 9,
         title: 'Time & Days',
+        level: 'beginner',
         words: [
           { word: 'Heute', translation: 'Today', pronunciation: 'hoy-tuh' },
           { word: 'Morgen', translation: 'Tomorrow', pronunciation: 'mor-gen' },
@@ -1417,6 +1478,7 @@ export const languages = {
       {
         id: 10,
         title: 'Weather',
+        level: 'beginner',
         words: [
           { word: 'Sonne', translation: 'Sun', pronunciation: 'zon-uh' },
           { word: 'Regen', translation: 'Rain', pronunciation: 'ray-gen' },
@@ -1436,6 +1498,7 @@ export const languages = {
       {
         id: 11,
         title: 'Transportation & Travel',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Auto', translation: 'Car', pronunciation: 'OW-toh' },
@@ -1456,6 +1519,7 @@ export const languages = {
       {
         id: 12,
         title: 'Work & Business',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Arbeit', translation: 'Work/Job', pronunciation: 'AHR-bite' },
@@ -1476,6 +1540,7 @@ export const languages = {
       {
         id: 13,
         title: 'Hobbies & Interests',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Musik', translation: 'Music', pronunciation: 'moo-ZEEK' },
@@ -1496,6 +1561,7 @@ export const languages = {
       {
         id: 14,
         title: 'Emotions & Feelings',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Glücklich', translation: 'Happy', pronunciation: 'GLOOK-likh' },
@@ -1516,6 +1582,7 @@ export const languages = {
       {
         id: 15,
         title: 'Directions & Locations',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Links', translation: 'Left', pronunciation: 'links' },
@@ -1536,6 +1603,7 @@ export const languages = {
       {
         id: 16,
         title: 'Past Tense Basics',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Ich bin gegangen', translation: 'I went', pronunciation: 'ikh bin geh-GAHN-gen' },
@@ -1556,6 +1624,7 @@ export const languages = {
       {
         id: 17,
         title: 'Future Plans',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Ich werde', translation: 'I\'m going to', pronunciation: 'ikh VEHR-deh' },
@@ -1576,6 +1645,7 @@ export const languages = {
       {
         id: 18,
         title: 'Making Suggestions',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Was wäre wenn...?', translation: 'What if...?', pronunciation: 'vahs VEH-reh ven' },
@@ -1596,6 +1666,7 @@ export const languages = {
       {
         id: 19,
         title: 'Expressing Opinions',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Ich denke, dass', translation: 'I think that', pronunciation: 'ikh DEN-keh dahs' },
@@ -1616,6 +1687,7 @@ export const languages = {
       {
         id: 20,
         title: 'Problem Solving',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Problem', translation: 'Problem', pronunciation: 'proh-BLEM' },
@@ -1636,6 +1708,7 @@ export const languages = {
       {
         id: 21,
         title: 'Song Lesson: Hänschen klein (Little Hans)',
+        level: 'intermediate',
         premium: true,
         songInfo: {
           name: 'Hänschen klein',
@@ -1678,6 +1751,7 @@ export const languages = {
       {
         id: 22,
         title: 'Proverbs & Sayings',
+        level: 'intermediate',
         premium: true,
         proverbs: [
           { original: 'Besser spät als nie', literalTranslation: 'Better late than never', meaning: 'It\'s better to do something late than not at all', context: 'When someone finally does something they\'ve been putting off', slangEquivalent: 'Besser spät' },
@@ -1701,6 +1775,7 @@ export const languages = {
       {
         id: 23,
         title: 'Texting & Internet Slang',
+        level: 'intermediate',
         premium: true,
         abbreviations: [
           { abbreviation: 'vllt', fullForm: 'vielleicht', englishEquivalent: 'maybe', usage: 'Anyone, casual', platform: 'WhatsApp, Instagram' },
@@ -1733,6 +1808,7 @@ export const languages = {
       {
         id: 24,
         title: 'House & Home',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Schlafzimmer', translation: 'Bedroom', pronunciation: 'SHLAHF-tsim-mer' },
@@ -1777,6 +1853,7 @@ export const languages = {
       {
         id: 25,
         title: 'Clothing & Fashion',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Hemd', translation: 'Shirt', pronunciation: 'hemt' },
@@ -1818,6 +1895,7 @@ export const languages = {
       {
         id: 26,
         title: 'Dance & Movement',
+        level: 'intermediate',
         premium: true,
         danceStyles: [
           { name: 'Schuhplattler', pronunciation: 'SHOO-plaht-ler', context: 'Traditional Bavarian folk dance, seen at Oktoberfest', type: 'Traditional' },
@@ -1858,6 +1936,7 @@ export const languages = {
       {
         id: 20,
         title: 'Problem Solving',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Lösung', translation: 'Solution', pronunciation: 'LER-zoong' },
@@ -1885,6 +1964,7 @@ export const languages = {
       {
         id: 1,
         title: 'Greetings & Basics',
+        level: 'beginner',
         words: [
           { word: '안녕하세요', translation: 'Hello', pronunciation: 'ahn-nyung-ha-se-yo', romanji: 'Annyeonghaseyo' },
           { word: '안녕히 계세요', translation: 'Goodbye (to person staying)', pronunciation: 'ahn-nyung-hee geh-seh-yo', romanji: 'Annyeonghi gyeseyo' },
@@ -1905,6 +1985,7 @@ export const languages = {
       {
         id: 2,
         title: 'Numbers',
+        level: 'beginner',
         words: [
           { word: '하나', translation: 'One', pronunciation: 'hah-nah', romanji: 'Hana' },
           { word: '둘', translation: 'Two', pronunciation: 'dool', romanji: 'Dul' },
@@ -1924,6 +2005,7 @@ export const languages = {
       {
         id: 3,
         title: 'Colors',
+        level: 'beginner',
         words: [
           { word: '빨간색', translation: 'Red', pronunciation: 'ppal-gan-saek', romanji: 'Ppalgan-saek' },
           { word: '파란색', translation: 'Blue', pronunciation: 'pa-ran-saek', romanji: 'Paran-saek' },
@@ -1943,6 +2025,7 @@ export const languages = {
       {
         id: 4,
         title: 'Greetings',
+        level: 'beginner',
         words: [
           { word: '안녕하세요', translation: 'Hello', pronunciation: 'an-nyeong-ha-se-yo', romanji: 'Annyeonghaseyo' },
           { word: '감사합니다', translation: 'Thank you', pronunciation: 'gam-sa-ham-ni-da', romanji: 'Gamsahamnida' },
@@ -1962,6 +2045,7 @@ export const languages = {
       {
         id: 5,
         title: 'Food & Drink',
+        level: 'beginner',
         words: [
           { word: '물', translation: 'Water', pronunciation: 'mul', romanji: 'Mul' },
           { word: '빵', translation: 'Bread', pronunciation: 'ppang', romanji: 'Ppang' },
@@ -1981,6 +2065,7 @@ export const languages = {
       {
         id: 6,
         title: 'Family & People',
+        level: 'beginner',
         words: [
           { word: '어머니', translation: 'Mother', pronunciation: 'eo-meo-ni', romanji: 'Eomeoni' },
           { word: '아버지', translation: 'Father', pronunciation: 'a-beo-ji', romanji: 'Abeoji' },
@@ -2000,6 +2085,7 @@ export const languages = {
       {
         id: 7,
         title: 'Body Parts',
+        level: 'beginner',
         words: [
           { word: '머리', translation: 'Head', pronunciation: 'meo-ri', romanji: 'Meori' },
           { word: '눈', translation: 'Eye', pronunciation: 'nun', romanji: 'Nun' },
@@ -2019,6 +2105,7 @@ export const languages = {
       {
         id: 8,
         title: 'Animals',
+        level: 'beginner',
         words: [
           { word: '개', translation: 'Dog', pronunciation: 'gae', romanji: 'Gae' },
           { word: '고양이', translation: 'Cat', pronunciation: 'go-yang-i', romanji: 'Goyangi' },
@@ -2038,6 +2125,7 @@ export const languages = {
       {
         id: 9,
         title: 'Time & Days',
+        level: 'beginner',
         words: [
           { word: '오늘', translation: 'Today', pronunciation: 'o-neul', romanji: 'Oneul' },
           { word: '내일', translation: 'Tomorrow', pronunciation: 'nae-il', romanji: 'Naeil' },
@@ -2057,6 +2145,7 @@ export const languages = {
       {
         id: 10,
         title: 'Weather',
+        level: 'beginner',
         words: [
           { word: '태양', translation: 'Sun', pronunciation: 'tae-yang', romanji: 'Taeyang' },
           { word: '비', translation: 'Rain', pronunciation: 'bi', romanji: 'Bi' },
@@ -2076,6 +2165,7 @@ export const languages = {
       {
         id: 11,
         title: 'Transportation & Travel',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: '자동차', translation: 'Car', pronunciation: 'ja-dong-cha', romanji: 'Jadongcha' },
@@ -2096,6 +2186,7 @@ export const languages = {
       {
         id: 12,
         title: 'Work & Business',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: '일', translation: 'Work/Job', pronunciation: 'il', romanji: 'Il' },
@@ -2116,6 +2207,7 @@ export const languages = {
       {
         id: 13,
         title: 'Hobbies & Interests',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: '음악', translation: 'Music', pronunciation: 'eum-ak', romanji: 'Eumak' },
@@ -2136,6 +2228,7 @@ export const languages = {
       {
         id: 14,
         title: 'Emotions & Feelings',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: '행복하다', translation: 'Happy', pronunciation: 'haeng-bok-ha-da', romanji: 'Haengbokhada' },
@@ -2156,6 +2249,7 @@ export const languages = {
       {
         id: 15,
         title: 'Directions & Locations',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: '왼쪽', translation: 'Left', pronunciation: 'oen-jjok', romanji: 'Oenjjok' },
@@ -2176,6 +2270,7 @@ export const languages = {
       {
         id: 16,
         title: 'Past Tense Basics',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: '갔다', translation: 'I went', pronunciation: 'gat-da', romanji: 'Gatda' },
@@ -2196,6 +2291,7 @@ export const languages = {
       {
         id: 17,
         title: 'Future Plans',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: '갈 거야', translation: 'I\'m going to', pronunciation: 'gal geo-ya', romanji: 'Gal geoya' },
@@ -2216,6 +2312,7 @@ export const languages = {
       {
         id: 18,
         title: 'Making Suggestions',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: '...하면 어때?', translation: 'What if...?', pronunciation: '...ha-myeon eo-ttae', romanji: '...hamyeon eottae?' },
@@ -2236,6 +2333,7 @@ export const languages = {
       {
         id: 19,
         title: 'Expressing Opinions',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: '생각해', translation: 'I think that', pronunciation: 'saeng-gak-hae', romanji: 'Saenggakhae' },
@@ -2256,6 +2354,7 @@ export const languages = {
       {
         id: 20,
         title: 'Problem Solving',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: '문제', translation: 'Problem', pronunciation: 'mun-je', romanji: 'Munje' },
@@ -2276,6 +2375,7 @@ export const languages = {
       {
         id: 21,
         title: 'Song Lesson: 곰 세 마리 (Three Bears)',
+        level: 'intermediate',
         premium: true,
         songInfo: {
           name: '곰 세 마리',
@@ -2319,6 +2419,7 @@ export const languages = {
       {
         id: 22,
         title: 'Proverbs & Sayings',
+        level: 'intermediate',
         premium: true,
         proverbs: [
           { original: '늦어도 안 하는 것보다 낫다', literalTranslation: 'Better late than not doing', meaning: 'Better late than never', context: 'When someone finally does something', slangEquivalent: '늦어도 해' },
@@ -2342,6 +2443,7 @@ export const languages = {
       {
         id: 23,
         title: 'Texting & Internet Slang',
+        level: 'intermediate',
         premium: true,
         abbreviations: [
           { abbreviation: 'ㅇㅇ', fullForm: '응응', englishEquivalent: 'yeah yeah', usage: 'Friends only, very casual', platform: 'KakaoTalk, Instagram' },
@@ -2374,6 +2476,7 @@ export const languages = {
       {
         id: 24,
         title: 'House & Home',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: '침실', translation: 'Bedroom', pronunciation: 'chim-sil', romanji: 'Chimsil' },
@@ -2418,6 +2521,7 @@ export const languages = {
       {
         id: 25,
         title: 'Clothing & Fashion',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: '셔츠', translation: 'Shirt', pronunciation: 'syeo-cheu', romanji: 'Syeocheu' },
@@ -2459,6 +2563,7 @@ export const languages = {
       {
         id: 26,
         title: 'Dance & Movement',
+        level: 'intermediate',
         premium: true,
         danceStyles: [
           { name: '한복 춤', pronunciation: 'han-bok chum', context: 'Traditional Korean dance in hanbok, seen at cultural festivals', type: 'Traditional', romanji: 'Hanbok chum' },
@@ -2499,6 +2604,7 @@ export const languages = {
       {
         id: 20,
         title: 'Problem Solving',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: '해결책', translation: 'Solution', pronunciation: 'hae-gyeol-chaek', romanji: 'Haegyeolchaek' },
@@ -2526,6 +2632,7 @@ export const languages = {
       {
         id: 1,
         title: 'Greetings & Basics',
+        level: 'beginner',
         words: [
           { word: 'Olá', translation: 'Hello', pronunciation: 'oh-LAH' },
           { word: 'Tchau', translation: 'Goodbye', pronunciation: 'chow' },
@@ -2546,6 +2653,7 @@ export const languages = {
       {
         id: 2,
         title: 'Numbers',
+        level: 'beginner',
         words: [
           { word: 'Um', translation: 'One', pronunciation: 'oong' },
           { word: 'Dois', translation: 'Two', pronunciation: 'doysh' },
@@ -2565,6 +2673,7 @@ export const languages = {
       {
         id: 3,
         title: 'Common Phrases',
+        level: 'beginner',
         words: [
           { word: 'Como você está?', translation: 'How are you?', pronunciation: 'KOH-moo voh-SAY ehs-TAH' },
           { word: 'Bem', translation: 'Good', pronunciation: 'bayng' },
@@ -2584,6 +2693,7 @@ export const languages = {
       {
         id: 4,
         title: 'Colors',
+        level: 'beginner',
         words: [
           { word: 'Vermelho', translation: 'Red', pronunciation: 'vehr-MEH-lyo' },
           { word: 'Azul', translation: 'Blue', pronunciation: 'ah-ZOOL' },
@@ -2603,6 +2713,7 @@ export const languages = {
       {
         id: 5,
         title: 'Food & Drink',
+        level: 'beginner',
         words: [
           { word: 'Água', translation: 'Water', pronunciation: 'ah-gwa' },
           { word: 'Pão', translation: 'Bread', pronunciation: 'pow' },
@@ -2622,6 +2733,7 @@ export const languages = {
       {
         id: 6,
         title: 'Family & People',
+        level: 'beginner',
         words: [
           { word: 'Mãe', translation: 'Mother', pronunciation: 'mah-eh' },
           { word: 'Pai', translation: 'Father', pronunciation: 'pie' },
@@ -2641,6 +2753,7 @@ export const languages = {
       {
         id: 7,
         title: 'Body Parts',
+        level: 'beginner',
         words: [
           { word: 'Cabeça', translation: 'Head', pronunciation: 'kah-beh-sah' },
           { word: 'Olho', translation: 'Eye', pronunciation: 'oh-lyo' },
@@ -2660,6 +2773,7 @@ export const languages = {
       {
         id: 8,
         title: 'Animals',
+        level: 'beginner',
         words: [
           { word: 'Cachorro', translation: 'Dog', pronunciation: 'kah-shoh-roh' },
           { word: 'Gato', translation: 'Cat', pronunciation: 'gah-toh' },
@@ -2679,6 +2793,7 @@ export const languages = {
       {
         id: 9,
         title: 'Time & Days',
+        level: 'beginner',
         words: [
           { word: 'Hoje', translation: 'Today', pronunciation: 'oh-zheh' },
           { word: 'Amanhã', translation: 'Tomorrow', pronunciation: 'ah-mahn-yah' },
@@ -2698,6 +2813,7 @@ export const languages = {
       {
         id: 10,
         title: 'Weather',
+        level: 'beginner',
         words: [
           { word: 'Sol', translation: 'Sun', pronunciation: 'sohl' },
           { word: 'Chuva', translation: 'Rain', pronunciation: 'shoo-vah' },
@@ -2717,6 +2833,7 @@ export const languages = {
       {
         id: 11,
         title: 'Transportation & Travel',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Carro', translation: 'Car', pronunciation: 'KAH-roh' },
@@ -2737,6 +2854,7 @@ export const languages = {
       {
         id: 12,
         title: 'Work & Business',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Trabalho', translation: 'Work/Job', pronunciation: 'trah-BAH-lyoh' },
@@ -2757,6 +2875,7 @@ export const languages = {
       {
         id: 13,
         title: 'Hobbies & Interests',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Música', translation: 'Music', pronunciation: 'MOO-see-kah' },
@@ -2777,6 +2896,7 @@ export const languages = {
       {
         id: 14,
         title: 'Emotions & Feelings',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Feliz', translation: 'Happy', pronunciation: 'feh-LEES' },
@@ -2797,6 +2917,7 @@ export const languages = {
       {
         id: 15,
         title: 'Directions & Locations',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Esquerda', translation: 'Left', pronunciation: 'es-KEHR-dah' },
@@ -2817,6 +2938,7 @@ export const languages = {
       {
         id: 16,
         title: 'Past Tense Basics',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Fui', translation: 'I went', pronunciation: 'fwee' },
@@ -2837,6 +2959,7 @@ export const languages = {
       {
         id: 17,
         title: 'Future Plans',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Vou', translation: 'I\'m going to', pronunciation: 'voh' },
@@ -2857,6 +2980,7 @@ export const languages = {
       {
         id: 18,
         title: 'Making Suggestions',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'E se...?', translation: 'What if...?', pronunciation: 'eh seh' },
@@ -2877,6 +3001,7 @@ export const languages = {
       {
         id: 19,
         title: 'Expressing Opinions',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Acho que', translation: 'I think that', pronunciation: 'AH-shoh keh' },
@@ -2897,6 +3022,7 @@ export const languages = {
       {
         id: 20,
         title: 'Problem Solving',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Problema', translation: 'Problem', pronunciation: 'proh-BLEH-mah' },
@@ -2917,6 +3043,7 @@ export const languages = {
       {
         id: 21,
         title: 'Song Lesson: A Barata (The Cockroach)',
+        level: 'intermediate',
         premium: true,
         songInfo: {
           name: 'A Barata',
@@ -2963,6 +3090,7 @@ export const languages = {
       {
         id: 22,
         title: 'Proverbs & Sayings',
+        level: 'intermediate',
         premium: true,
         proverbs: [
           { original: 'Antes tarde do que nunca', literalTranslation: 'Better late than never', meaning: 'It\'s better to do something late than not at all', context: 'When someone finally does something', slangEquivalent: 'Melhor tarde' },
@@ -2986,6 +3114,7 @@ export const languages = {
       {
         id: 23,
         title: 'Texting & Internet Slang',
+        level: 'intermediate',
         premium: true,
         abbreviations: [
           { abbreviation: 'vc', fullForm: 'você', englishEquivalent: 'you', usage: 'Anyone, casual', platform: 'WhatsApp, Instagram' },
@@ -3018,6 +3147,7 @@ export const languages = {
       {
         id: 24,
         title: 'House & Home',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Quarto', translation: 'Bedroom', pronunciation: 'KWAR-toh' },
@@ -3062,6 +3192,7 @@ export const languages = {
       {
         id: 25,
         title: 'Clothing & Fashion',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Camisa', translation: 'Shirt', pronunciation: 'kah-MEE-zah' },
@@ -3103,6 +3234,7 @@ export const languages = {
       {
         id: 26,
         title: 'Dance & Movement',
+        level: 'intermediate',
         premium: true,
         danceStyles: [
           { name: 'Samba', pronunciation: 'SAHM-bah', context: 'Famous Brazilian dance, seen at Carnival and festivals', type: 'Traditional' },
@@ -3143,6 +3275,7 @@ export const languages = {
       {
         id: 20,
         title: 'Problem Solving',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Solução', translation: 'Solution', pronunciation: 'soh-loo-SYAOWN' },
@@ -3170,6 +3303,7 @@ export const languages = {
       {
         id: 1,
         title: 'Greetings & Basics',
+        level: 'beginner',
         words: [
           { word: 'こんにちは', translation: 'Hello', pronunciation: 'kon-nee-chee-wah', romanji: 'Konnichiwa' },
           { word: 'さようなら', translation: 'Goodbye', pronunciation: 'sah-yoh-nah-rah', romanji: 'Sayonara' },
@@ -3190,6 +3324,7 @@ export const languages = {
       {
         id: 2,
         title: 'Numbers',
+        level: 'beginner',
         words: [
           { word: '一', translation: 'One', pronunciation: 'ee-chee', romanji: 'Ichi' },
           { word: '二', translation: 'Two', pronunciation: 'nee', romanji: 'Ni' },
@@ -3209,6 +3344,7 @@ export const languages = {
       {
         id: 3,
         title: 'Common Phrases',
+        level: 'beginner',
         words: [
           { word: 'お元気ですか?', translation: 'How are you?', pronunciation: 'oh-gen-kee des-kah', romanji: 'Ogenki desu ka?' },
           { word: '良い', translation: 'Good', pronunciation: 'ee-ee', romanji: 'Ii' },
@@ -3228,6 +3364,7 @@ export const languages = {
       {
         id: 4,
         title: 'Colors',
+        level: 'beginner',
         words: [
           { word: '赤', translation: 'Red', pronunciation: 'aka', romanji: 'Aka' },
           { word: '青', translation: 'Blue', pronunciation: 'ao', romanji: 'Ao' },
@@ -3247,6 +3384,7 @@ export const languages = {
       {
         id: 5,
         title: 'Food & Drink',
+        level: 'beginner',
         words: [
           { word: '水', translation: 'Water', pronunciation: 'mizu', romanji: 'Mizu' },
           { word: 'パン', translation: 'Bread', pronunciation: 'pan', romanji: 'Pan' },
@@ -3266,6 +3404,7 @@ export const languages = {
       {
         id: 6,
         title: 'Family & People',
+        level: 'beginner',
         words: [
           { word: '母', translation: 'Mother', pronunciation: 'haha', romanji: 'Haha' },
           { word: '父', translation: 'Father', pronunciation: 'chichi', romanji: 'Chichi' },
@@ -3285,6 +3424,7 @@ export const languages = {
       {
         id: 7,
         title: 'Body Parts',
+        level: 'beginner',
         words: [
           { word: '頭', translation: 'Head', pronunciation: 'atama', romanji: 'Atama' },
           { word: '目', translation: 'Eye', pronunciation: 'me', romanji: 'Me' },
@@ -3304,6 +3444,7 @@ export const languages = {
       {
         id: 8,
         title: 'Animals',
+        level: 'beginner',
         words: [
           { word: '犬', translation: 'Dog', pronunciation: 'inu', romanji: 'Inu' },
           { word: '猫', translation: 'Cat', pronunciation: 'neko', romanji: 'Neko' },
@@ -3323,6 +3464,7 @@ export const languages = {
       {
         id: 9,
         title: 'Time & Days',
+        level: 'beginner',
         words: [
           { word: '今日', translation: 'Today', pronunciation: 'kyou', romanji: 'Kyou' },
           { word: '明日', translation: 'Tomorrow', pronunciation: 'ashita', romanji: 'Ashita' },
@@ -3340,6 +3482,7 @@ export const languages = {
       {
         id: 10,
         title: 'Weather',
+        level: 'beginner',
         words: [
           { word: '太陽', translation: 'Sun', pronunciation: 'taiyou', romanji: 'Taiyou' },
           { word: '雨', translation: 'Rain', pronunciation: 'ame', romanji: 'Ame' },
@@ -3359,6 +3502,7 @@ export const languages = {
       {
         id: 11,
         title: 'Transportation & Travel',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: '車', translation: 'Car', pronunciation: 'ku-ru-ma', romanji: 'Kuruma' },
@@ -3379,6 +3523,7 @@ export const languages = {
       {
         id: 12,
         title: 'Work & Business',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: '仕事', translation: 'Work/Job', pronunciation: 'shi-go-to', romanji: 'Shigoto' },
@@ -3399,6 +3544,7 @@ export const languages = {
       {
         id: 13,
         title: 'Hobbies & Interests',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: '音楽', translation: 'Music', pronunciation: 'on-ga-ku', romanji: 'Ongaku' },
@@ -3419,6 +3565,7 @@ export const languages = {
       {
         id: 14,
         title: 'Emotions & Feelings',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: '幸せ', translation: 'Happy', pronunciation: 'shi-a-wa-se', romanji: 'Shiawase' },
@@ -3439,6 +3586,7 @@ export const languages = {
       {
         id: 15,
         title: 'Directions & Locations',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: '左', translation: 'Left', pronunciation: 'hi-da-ri', romanji: 'Hidari' },
@@ -3459,6 +3607,7 @@ export const languages = {
       {
         id: 16,
         title: 'Past Tense Basics',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: '行った', translation: 'I went', pronunciation: 'it-ta', romanji: 'Itta' },
@@ -3479,6 +3628,7 @@ export const languages = {
       {
         id: 17,
         title: 'Future Plans',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'するつもり', translation: 'I\'m going to', pronunciation: 'su-ru tsu-mo-ri', romanji: 'Suru tsumori' },
@@ -3499,6 +3649,7 @@ export const languages = {
       {
         id: 18,
         title: 'Making Suggestions',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: '...したらどう?', translation: 'What if...?', pronunciation: '...shi-ta-ra do-u', romanji: '...shitara dou?' },
@@ -3519,6 +3670,7 @@ export const languages = {
       {
         id: 19,
         title: 'Expressing Opinions',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: '思う', translation: 'I think that', pronunciation: 'o-mo-u', romanji: 'Omou' },
@@ -3539,6 +3691,7 @@ export const languages = {
       {
         id: 20,
         title: 'Problem Solving',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: '問題', translation: 'Problem', pronunciation: 'mon-dai', romanji: 'Mondai' },
@@ -3559,6 +3712,7 @@ export const languages = {
       {
         id: 21,
         title: 'Song Lesson: ちょうちょう (Butterfly)',
+        level: 'intermediate',
         premium: true,
         songInfo: {
           name: 'ちょうちょう',
@@ -3598,6 +3752,7 @@ export const languages = {
       {
         id: 22,
         title: 'Proverbs & Sayings',
+        level: 'intermediate',
         premium: true,
         proverbs: [
           { original: '遅くてもしないよりはまし', literalTranslation: 'Better late than not doing', meaning: 'Better late than never', context: 'When someone finally does something', slangEquivalent: '遅くてもやる' },
@@ -3621,6 +3776,7 @@ export const languages = {
       {
         id: 23,
         title: 'Texting & Internet Slang',
+        level: 'intermediate',
         premium: true,
         abbreviations: [
           { abbreviation: 'w', fullForm: '笑', englishEquivalent: 'laughing', usage: 'Anyone, very common', platform: 'Line, Twitter, Instagram' },
@@ -3653,6 +3809,7 @@ export const languages = {
       {
         id: 24,
         title: 'House & Home',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: '寝室', translation: 'Bedroom', pronunciation: 'shin-shitsu', romanji: 'Shinshitsu' },
@@ -3697,6 +3854,7 @@ export const languages = {
       {
         id: 25,
         title: 'Clothing & Fashion',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'シャツ', translation: 'Shirt', pronunciation: 'sha-tsu', romanji: 'Shatsu' },
@@ -3738,6 +3896,7 @@ export const languages = {
       {
         id: 26,
         title: 'Dance & Movement',
+        level: 'intermediate',
         premium: true,
         danceStyles: [
           { name: '盆踊り', pronunciation: 'bon odo-ri', context: 'Traditional festival dance, seen at summer festivals', type: 'Traditional', romanji: 'Bon odori' },
@@ -3778,6 +3937,7 @@ export const languages = {
       {
         id: 20,
         title: 'Problem Solving',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: '解決策', translation: 'Solution', pronunciation: 'kai-ke-tsu-sa-ku', romanji: 'Kaiketsusaku' },
@@ -3805,6 +3965,7 @@ export const languages = {
       {
         id: 1,
         title: 'Greetings & Basics',
+        level: 'beginner',
         words: [
           { word: '你好', translation: 'Hello', pronunciation: 'nee-hah-oh', romanji: 'Nǐ hǎo' },
           { word: '再见', translation: 'Goodbye', pronunciation: 'zai-jee-en', romanji: 'Zàijiàn' },
@@ -3825,6 +3986,7 @@ export const languages = {
       {
         id: 2,
         title: 'Numbers',
+        level: 'beginner',
         words: [
           { word: '一', translation: 'One', pronunciation: 'ee', romanji: 'Yī' },
           { word: '二', translation: 'Two', pronunciation: 'ur', romanji: 'Èr' },
@@ -3844,6 +4006,7 @@ export const languages = {
       {
         id: 3,
         title: 'Common Phrases',
+        level: 'beginner',
         words: [
           { word: '你好吗?', translation: 'How are you?', pronunciation: 'nee-hah-oh-mah', romanji: 'Nǐ hǎo ma?' },
           { word: '好', translation: 'Good', pronunciation: 'hah-oh', romanji: 'Hǎo' },
@@ -3863,6 +4026,7 @@ export const languages = {
       {
         id: 4,
         title: 'Colors',
+        level: 'beginner',
         words: [
           { word: '红色', translation: 'Red', pronunciation: 'hóng sè', romanji: 'Hóng sè' },
           { word: '蓝色', translation: 'Blue', pronunciation: 'lán sè', romanji: 'Lán sè' },
@@ -3882,6 +4046,7 @@ export const languages = {
       {
         id: 5,
         title: 'Food & Drink',
+        level: 'beginner',
         words: [
           { word: '水', translation: 'Water', pronunciation: 'shuǐ', romanji: 'Shuǐ' },
           { word: '面包', translation: 'Bread', pronunciation: 'miànbāo', romanji: 'Miànbāo' },
@@ -3901,6 +4066,7 @@ export const languages = {
       {
         id: 6,
         title: 'Family & People',
+        level: 'beginner',
         words: [
           { word: '母亲', translation: 'Mother', pronunciation: 'mǔqīn', romanji: 'Mǔqīn' },
           { word: '父亲', translation: 'Father', pronunciation: 'fùqīn', romanji: 'Fùqīn' },
@@ -3920,6 +4086,7 @@ export const languages = {
       {
         id: 7,
         title: 'Body Parts',
+        level: 'beginner',
         words: [
           { word: '头', translation: 'Head', pronunciation: 'tóu', romanji: 'Tóu' },
           { word: '眼睛', translation: 'Eye', pronunciation: 'yǎnjīng', romanji: 'Yǎnjīng' },
@@ -3939,6 +4106,7 @@ export const languages = {
       {
         id: 8,
         title: 'Animals',
+        level: 'beginner',
         words: [
           { word: '狗', translation: 'Dog', pronunciation: 'gǒu', romanji: 'Gǒu' },
           { word: '猫', translation: 'Cat', pronunciation: 'māo', romanji: 'Māo' },
@@ -3958,6 +4126,7 @@ export const languages = {
       {
         id: 9,
         title: 'Time & Days',
+        level: 'beginner',
         words: [
           { word: '今天', translation: 'Today', pronunciation: 'jīntiān', romanji: 'Jīntiān' },
           { word: '明天', translation: 'Tomorrow', pronunciation: 'míngtiān', romanji: 'Míngtiān' },
@@ -3977,6 +4146,7 @@ export const languages = {
       {
         id: 10,
         title: 'Weather',
+        level: 'beginner',
         words: [
           { word: '太阳', translation: 'Sun', pronunciation: 'tàiyáng', romanji: 'Tàiyáng' },
           { word: '雨', translation: 'Rain', pronunciation: 'yǔ', romanji: 'Yǔ' },
@@ -3996,6 +4166,7 @@ export const languages = {
       {
         id: 11,
         title: 'Transportation & Travel',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: '汽车', translation: 'Car', pronunciation: 'qì chē', romanji: 'Qìchē' },
@@ -4016,6 +4187,7 @@ export const languages = {
       {
         id: 12,
         title: 'Work & Business',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: '工作', translation: 'Work/Job', pronunciation: 'gōng zuò', romanji: 'Gōngzuò' },
@@ -4036,6 +4208,7 @@ export const languages = {
       {
         id: 13,
         title: 'Hobbies & Interests',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: '音乐', translation: 'Music', pronunciation: 'yīn yuè', romanji: 'Yīnyuè' },
@@ -4056,6 +4229,7 @@ export const languages = {
       {
         id: 14,
         title: 'Emotions & Feelings',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: '快乐', translation: 'Happy', pronunciation: 'kuài lè', romanji: 'Kuàilè' },
@@ -4076,6 +4250,7 @@ export const languages = {
       {
         id: 15,
         title: 'Directions & Locations',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: '左边', translation: 'Left', pronunciation: 'zuǒ biān', romanji: 'Zuǒbiān' },
@@ -4096,6 +4271,7 @@ export const languages = {
       {
         id: 16,
         title: 'Past Tense Basics',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: '去了', translation: 'I went', pronunciation: 'qù le', romanji: 'Qù le' },
@@ -4116,6 +4292,7 @@ export const languages = {
       {
         id: 17,
         title: 'Future Plans',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: '要去', translation: 'I\'m going to', pronunciation: 'yào qù', romanji: 'Yào qù' },
@@ -4136,6 +4313,7 @@ export const languages = {
       {
         id: 18,
         title: 'Making Suggestions',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: '如果...怎么样?', translation: 'What if...?', pronunciation: 'rú guǒ ... zěn me yàng', romanji: 'Rúguǒ ... zěnmeyàng?' },
@@ -4156,6 +4334,7 @@ export const languages = {
       {
         id: 19,
         title: 'Expressing Opinions',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: '我认为', translation: 'I think that', pronunciation: 'wǒ rèn wéi', romanji: 'Wǒ rènwéi' },
@@ -4176,6 +4355,7 @@ export const languages = {
       {
         id: 20,
         title: 'Problem Solving',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: '问题', translation: 'Problem', pronunciation: 'wèn tí', romanji: 'Wèntí' },
@@ -4196,6 +4376,7 @@ export const languages = {
       {
         id: 21,
         title: 'Song Lesson: 两只老虎 (Liǎng Zhī Lǎohǔ - Two Tigers)',
+        level: 'intermediate',
         premium: true,
         songInfo: {
           name: '两只老虎',
@@ -4235,6 +4416,7 @@ export const languages = {
       {
         id: 22,
         title: 'Proverbs & Sayings',
+        level: 'intermediate',
         premium: true,
         proverbs: [
           { original: '迟做总比不做好', literalTranslation: 'Better late than not doing', meaning: 'Better late than never', context: 'When someone finally does something', slangEquivalent: '迟做也比不做强', romanji: 'Chí zuò zǒng bǐ bù zuò hǎo' },
@@ -4258,6 +4440,7 @@ export const languages = {
       {
         id: 23,
         title: 'Texting & Internet Slang',
+        level: 'intermediate',
         premium: true,
         abbreviations: [
           { abbreviation: 'nb', fullForm: '牛逼', englishEquivalent: 'awesome', usage: 'Friends only, casual', platform: 'WeChat, QQ' },
@@ -4290,6 +4473,7 @@ export const languages = {
       {
         id: 24,
         title: 'House & Home',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: '卧室', translation: 'Bedroom', pronunciation: 'wòshì', romanji: 'Wòshì' },
@@ -4334,6 +4518,7 @@ export const languages = {
       {
         id: 25,
         title: 'Clothing & Fashion',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: '衬衫', translation: 'Shirt', pronunciation: 'chènshān', romanji: 'Chènshān' },
@@ -4375,6 +4560,7 @@ export const languages = {
       {
         id: 26,
         title: 'Dance & Movement',
+        level: 'intermediate',
         premium: true,
         danceStyles: [
           { name: '舞龙', pronunciation: 'wǔ lóng', context: 'Dragon dance, seen at Chinese New Year and festivals', type: 'Traditional', romanji: 'Wǔ lóng' },
@@ -4415,6 +4601,7 @@ export const languages = {
       {
         id: 20,
         title: 'Problem Solving',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: '解决方案', translation: 'Solution', pronunciation: 'jiě jué fāng àn', romanji: 'Jiějué fāng\'àn' },
@@ -4442,6 +4629,7 @@ export const languages = {
       {
         id: 1,
         title: 'Greetings & Basics',
+        level: 'beginner',
         words: [
           { word: 'Привет', translation: 'Hello', pronunciation: 'pri-vyet' },
           { word: 'Спасибо', translation: 'Thank you', pronunciation: 'spa-see-boh' },
@@ -4461,6 +4649,7 @@ export const languages = {
       {
         id: 2,
         title: 'Numbers',
+        level: 'beginner',
         words: [
           { word: 'Один', translation: 'One', pronunciation: 'ah-deen' },
           { word: 'Два', translation: 'Two', pronunciation: 'dvah' },
@@ -4480,6 +4669,7 @@ export const languages = {
       {
         id: 3,
         title: 'Colors',
+        level: 'beginner',
         words: [
           { word: 'Красный', translation: 'Red', pronunciation: 'kras-niy' },
           { word: 'Синий', translation: 'Blue', pronunciation: 'see-niy' },
@@ -4499,6 +4689,7 @@ export const languages = {
       {
         id: 4,
         title: 'Common Phrases',
+        level: 'beginner',
         words: [
           { word: 'Да', translation: 'Yes', pronunciation: 'dah' },
           { word: 'Нет', translation: 'No', pronunciation: 'nyet' },
@@ -4518,6 +4709,7 @@ export const languages = {
       {
         id: 5,
         title: 'Food & Drink',
+        level: 'beginner',
         words: [
           { word: 'Вода', translation: 'Water', pronunciation: 'va-dah' },
           { word: 'Хлеб', translation: 'Bread', pronunciation: 'khleb' },
@@ -4537,6 +4729,7 @@ export const languages = {
       {
         id: 6,
         title: 'Family & People',
+        level: 'beginner',
         words: [
           { word: 'Мать', translation: 'Mother', pronunciation: 'mat' },
           { word: 'Отец', translation: 'Father', pronunciation: 'a-tyets' },
@@ -4556,6 +4749,7 @@ export const languages = {
       {
         id: 7,
         title: 'Body Parts',
+        level: 'beginner',
         words: [
           { word: 'Голова', translation: 'Head', pronunciation: 'ga-la-vah' },
           { word: 'Глаз', translation: 'Eye', pronunciation: 'glaz' },
@@ -4575,6 +4769,7 @@ export const languages = {
       {
         id: 8,
         title: 'Animals',
+        level: 'beginner',
         words: [
           { word: 'Собака', translation: 'Dog', pronunciation: 'sa-bah-kah' },
           { word: 'Кошка', translation: 'Cat', pronunciation: 'kosh-kah' },
@@ -4594,6 +4789,7 @@ export const languages = {
       {
         id: 9,
         title: 'Time & Days',
+        level: 'beginner',
         words: [
           { word: 'Сегодня', translation: 'Today', pronunciation: 'sye-vod-nya' },
           { word: 'Завтра', translation: 'Tomorrow', pronunciation: 'zav-tra' },
@@ -4613,6 +4809,7 @@ export const languages = {
       {
         id: 10,
         title: 'Weather',
+        level: 'beginner',
         words: [
           { word: 'Солнце', translation: 'Sun', pronunciation: 'sol-ntse' },
           { word: 'Дождь', translation: 'Rain', pronunciation: 'dozhd' },
@@ -4632,6 +4829,7 @@ export const languages = {
       {
         id: 11,
         title: 'Transportation & Travel',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Машина', translation: 'Car', pronunciation: 'mah-SHEE-nah' },
@@ -4652,6 +4850,7 @@ export const languages = {
       {
         id: 12,
         title: 'Work & Business',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Работа', translation: 'Work/Job', pronunciation: 'rah-BO-tah' },
@@ -4672,6 +4871,7 @@ export const languages = {
       {
         id: 13,
         title: 'Hobbies & Interests',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Музыка', translation: 'Music', pronunciation: 'MOO-zy-kah' },
@@ -4692,6 +4892,7 @@ export const languages = {
       {
         id: 14,
         title: 'Emotions & Feelings',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Счастливый', translation: 'Happy', pronunciation: 'shas-TLEE-viy' },
@@ -4712,6 +4913,7 @@ export const languages = {
       {
         id: 15,
         title: 'Directions & Locations',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Лево', translation: 'Left', pronunciation: 'LEH-voh' },
@@ -4732,6 +4934,7 @@ export const languages = {
       {
         id: 16,
         title: 'Past Tense Basics',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Я пошёл', translation: 'I went', pronunciation: 'ya pah-SHYOL' },
@@ -4752,6 +4955,7 @@ export const languages = {
       {
         id: 17,
         title: 'Future Plans',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Я собираюсь', translation: 'I\'m going to', pronunciation: 'ya sah-bee-RAH-yoos' },
@@ -4772,6 +4976,7 @@ export const languages = {
       {
         id: 18,
         title: 'Making Suggestions',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'А что если...?', translation: 'What if...?', pronunciation: 'ah shto YEH-slee' },
@@ -4792,6 +4997,7 @@ export const languages = {
       {
         id: 19,
         title: 'Expressing Opinions',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Я думаю, что', translation: 'I think that', pronunciation: 'ya DOO-mah-yoo shto' },
@@ -4812,6 +5018,7 @@ export const languages = {
       {
         id: 20,
         title: 'Problem Solving',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Проблема', translation: 'Problem', pronunciation: 'prah-BLEH-mah' },
@@ -4832,6 +5039,7 @@ export const languages = {
       {
         id: 21,
         title: 'Song Lesson: В лесу родилась ёлочка (A Christmas Tree Was Born in the Forest)',
+        level: 'intermediate',
         premium: true,
         songInfo: {
           name: 'В лесу родилась ёлочка',
@@ -4874,6 +5082,7 @@ export const languages = {
       {
         id: 22,
         title: 'Proverbs & Sayings',
+        level: 'intermediate',
         premium: true,
         proverbs: [
           { original: 'Лучше поздно, чем никогда', literalTranslation: 'Better late than never', meaning: 'It\'s better to do something late than not at all', context: 'When someone finally does something', slangEquivalent: 'Лучше поздно' },
@@ -4897,6 +5106,7 @@ export const languages = {
       {
         id: 23,
         title: 'Texting & Internet Slang',
+        level: 'intermediate',
         premium: true,
         abbreviations: [
           { abbreviation: 'спс', fullForm: 'спасибо', englishEquivalent: 'thanks', usage: 'Anyone, casual', platform: 'VK, WhatsApp, Telegram' },
@@ -4929,6 +5139,7 @@ export const languages = {
       {
         id: 24,
         title: 'House & Home',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Спальня', translation: 'Bedroom', pronunciation: 'SPAL-nya' },
@@ -4973,6 +5184,7 @@ export const languages = {
       {
         id: 25,
         title: 'Clothing & Fashion',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Рубашка', translation: 'Shirt', pronunciation: 'roo-BASH-ka' },
@@ -5014,6 +5226,7 @@ export const languages = {
       {
         id: 26,
         title: 'Dance & Movement',
+        level: 'intermediate',
         premium: true,
         danceStyles: [
           { name: 'Казачок', pronunciation: 'kah-zah-CHOK', context: 'Traditional Cossack dance, seen at cultural events and festivals', type: 'Traditional' },
@@ -5054,6 +5267,7 @@ export const languages = {
       {
         id: 20,
         title: 'Problem Solving',
+        level: 'intermediate',
         premium: true,
         words: [
           { word: 'Решение', translation: 'Solution', pronunciation: 'reh-SHEH-nee-yeh' },
@@ -5082,6 +5296,7 @@ export const languages = {
       {
         id: 1,
         title: 'Basic Greetings & Introductions',
+        level: 'beginner',
         words: [
           { word: 'مرحباً', translation: 'Hello', pronunciation: 'marhaban (MAR-ha-ban)' },
           { word: 'السلام عليكم', translation: 'Peace be upon you (hello)', pronunciation: 'as-salāmu ʿalaykum (as-sa-LAA-moo a-LAY-koom)' },
@@ -5101,7 +5316,8 @@ export const languages = {
       },
       {
         id: 2,
-        title: 'Essential Questions (where, when, how much)',
+        title: 'Essential Questions (where,
+        level: 'beginner', when, how much)',
         words: [
           { word: 'أين؟', translation: 'Where?', pronunciation: 'ayna? (EYE-na)' },
           { word: 'متى؟', translation: 'When?', pronunciation: 'matā? (ma-TAA)' },
@@ -5122,6 +5338,7 @@ export const languages = {
       {
         id: 3,
         title: 'Restaurant & Food',
+        level: 'beginner',
         words: [
           { word: 'من فضلك', translation: 'Please', pronunciation: 'min faḍlak (min FAD-lak)' },
           { word: 'قائمة الطعام', translation: 'Menu', pronunciation: 'qāʾimat aṭ-ṭaʿām (KAA-eh-mat at-ta-AAM)' },
@@ -5142,6 +5359,7 @@ export const languages = {
       {
         id: 4,
         title: 'Directions & Transportation',
+        level: 'beginner',
         words: [
           { word: 'أين…؟', translation: 'Where is…?', pronunciation: 'ayna…? (EYE-na …?)' },
           { word: 'يمين', translation: 'Right', pronunciation: 'yamīn (ya-MEEN)' },
@@ -5162,6 +5380,7 @@ export const languages = {
       {
         id: 5,
         title: 'Shopping & Money',
+        level: 'beginner',
         words: [
           { word: 'بكم هذا؟', translation: 'How much is this?', pronunciation: 'bikam hādhā? (bee-KAM HAA-dhaa)' },
           { word: 'غالي', translation: 'Expensive', pronunciation: 'ghālī (GHA-lee)' },
@@ -5182,6 +5401,7 @@ export const languages = {
       {
         id: 6,
         title: 'Hotel & Accommodation',
+        level: 'beginner',
         words: [
           { word: 'فندق', translation: 'Hotel', pronunciation: 'funduq (FOON-dook)' },
           { word: 'غرفة', translation: 'Room', pronunciation: 'ghurfa (GHUR-fa)' },
@@ -5202,6 +5422,7 @@ export const languages = {
       {
         id: 7,
         title: 'Emergency Phrases',
+        level: 'beginner',
         words: [
           { word: 'ساعدني!', translation: 'Help me!', pronunciation: 'sāʿidnī! (SAA-id-nee)' },
           { word: 'اتصل بالشرطة', translation: 'Call the police', pronunciation: 'ittiṣil bi-sh-shurṭa (it-TI-sil bish-SHUR-ta)' },
@@ -5222,6 +5443,7 @@ export const languages = {
       {
         id: 8,
         title: 'Small Talk & Pleasantries',
+        level: 'beginner',
         words: [
           { word: 'كيف حالك؟', translation: 'How are you?', pronunciation: 'kayf ḥālak? (kayf HAA-lak)' },
           { word: 'الحمد لله', translation: 'I’m fine / thanks (lit. “praise be to God”)', pronunciation: 'al-ḥamdu lillāh (al-HAM-doo lil-LAAH)' },
@@ -5241,7 +5463,8 @@ export const languages = {
       },
       {
         id: 9,
-        title: 'Numbers, Time, Dates',
+        title: 'Numbers,
+        level: 'beginner', Time, Dates',
         words: [
           { word: 'واحد', translation: 'One', pronunciation: 'wāḥid (WAA-hid)' },
           { word: 'اثنين', translation: 'Two', pronunciation: 'ithnayn (ith-NAYN)' },
@@ -5262,6 +5485,7 @@ export const languages = {
       {
         id: 10,
         title: 'Common Responses',
+        level: 'beginner',
         words: [
           { word: 'نعم', translation: 'Yes', pronunciation: 'naʿam (NA-am)' },
           { word: 'لا', translation: 'No', pronunciation: 'lā (laa)' },
@@ -5290,6 +5514,7 @@ export const languages = {
       {
         id: 1,
         title: 'Basic English Greetings (formal vs informal)',
+        level: 'beginner',
         words: [
           { word: 'Hello. Nice to meet you.', translation: 'Polite greeting + introduction', pronunciation: 'HEH-loh. Nice tuh MEET you.' },
           { word: 'Good morning.', translation: 'Formal greeting (before noon)', pronunciation: 'good MOR-ning' },
@@ -5310,6 +5535,7 @@ export const languages = {
       {
         id: 2,
         title: 'Essential Questions in English',
+        level: 'beginner',
         words: [
           { word: 'Where is the restroom?', translation: 'Ask for the bathroom (polite)', pronunciation: 'wair iz thuh REST-room' },
           { word: 'How much is this?', translation: 'Ask about price', pronunciation: 'how much iz this' },
@@ -5330,6 +5556,7 @@ export const languages = {
       {
         id: 3,
         title: 'Ordering Food in English',
+        level: 'beginner',
         words: [
           { word: 'I’d like the chicken, please.', translation: 'Polite ordering phrase', pronunciation: 'I’d like thuh CHIK-in, pleez' },
           { word: 'Can I get a water?', translation: 'Common US ordering phrase', pronunciation: 'can I get uh WAH-ter' },
@@ -5350,6 +5577,7 @@ export const languages = {
       {
         id: 4,
         title: 'Asking for Directions',
+        level: 'beginner',
         words: [
           { word: 'Excuse me, where is the station?', translation: 'Polite way to start', pronunciation: 'ex-KYOOZ mee, wair iz thuh STAY-shun' },
           { word: 'How do I get to Main Street?', translation: 'Ask route', pronunciation: 'how do I get too MAYN street' },
@@ -5370,6 +5598,7 @@ export const languages = {
       {
         id: 5,
         title: 'Shopping Conversations',
+        level: 'beginner',
         words: [
           { word: 'How much is this?', translation: 'Price question', pronunciation: 'how much iz this' },
           { word: 'Do you have this in a larger size?', translation: 'Ask for size', pronunciation: 'do you hav this in uh LAR-jer size' },
@@ -5390,6 +5619,7 @@ export const languages = {
       {
         id: 6,
         title: 'Work/School Basic English',
+        level: 'beginner',
         words: [
           { word: 'I have a question.', translation: 'Polite in meetings/class', pronunciation: 'I hav uh KWES-chun' },
           { word: 'Could you help me, please?', translation: 'Ask for assistance', pronunciation: 'kood you help mee, pleez' },
@@ -5410,6 +5640,7 @@ export const languages = {
       {
         id: 7,
         title: 'Emergency English Phrases',
+        level: 'beginner',
         words: [
           { word: 'Help!', translation: 'Get attention quickly', pronunciation: 'help' },
           { word: 'Call the police, please.', translation: 'Emergency request', pronunciation: 'kawl thuh puh-LEES, pleez' },
@@ -5430,6 +5661,7 @@ export const languages = {
       {
         id: 8,
         title: 'Phone & Email English',
+        level: 'beginner',
         words: [
           { word: 'Hello, this is [Name].', translation: 'Phone introduction', pronunciation: '…this iz [name]' },
           { word: 'Could you please hold?', translation: 'Ask someone to wait', pronunciation: '…pleez hohld' },
@@ -5449,7 +5681,8 @@ export const languages = {
       },
       {
         id: 9,
-        title: 'Numbers, Dates, Time in English',
+        title: 'Numbers,
+        level: 'beginner', Dates, Time in English',
         words: [
           { word: 'What time is it?', translation: 'Ask the time', pronunciation: 'wut time iz it' },
           { word: 'It’s 3:30.', translation: 'Tell time', pronunciation: 'its three THUR-tee' },
@@ -5470,6 +5703,7 @@ export const languages = {
       {
         id: 10,
         title: 'Common Mistakes to Avoid',
+        level: 'beginner',
         words: [
           { word: 'Could you say that again?', translation: 'Ask for repetition politely', pronunciation: 'kood you say that uh-GEN' },
           { word: 'What does that mean?', translation: 'Ask for meaning', pronunciation: 'wut duz that meen' },
@@ -5498,7 +5732,8 @@ export const languages = {
     lessons: [
       {
         id: 1,
-        title: 'Common Grammar Mistakes (your/you\'re, there/their/they\'re, its/it\'s)',
+        title: 'Common Grammar Mistakes (your/you\'re,
+        level: 'beginner', there/their/they\'re, its/it\'s)',
         words: [
           { word: 'Your vs you\'re', translation: 'Your = possessive (“your resume”). You\'re = “you are” (“you\'re ready”).', pronunciation: 'Tip: If you can replace with “you are”, use you\'re.' },
           { word: 'There / their / they\'re', translation: 'There = place (“over there”). Their = possessive (“their manager”). They\'re = “they are”.', pronunciation: 'Tip: “they\'re” = “they are”.' },
@@ -5510,7 +5745,8 @@ export const languages = {
       },
       {
         id: 2,
-        title: 'Professional Email Writing (subject lines, greetings, tone, closings)',
+        title: 'Professional Email Writing (subject lines,
+        level: 'beginner', greetings, tone, closings)',
         words: [
           { word: 'Clear subject lines', translation: 'Use action + topic + date if needed (e.g., “Meeting Notes — Dec 14”).', pronunciation: 'Avoid vague subjects like “Hi” or “Question”.' },
           { word: 'Professional greeting', translation: 'Use “Hi [Name],” or “Hello [Name],” (safe default).', pronunciation: '“Dear” is more formal; “Hey” is casual.' },
@@ -5522,7 +5758,8 @@ export const languages = {
       },
       {
         id: 3,
-        title: 'Sentence Structure Basics (subject-verb-object, avoiding run-ons, punctuation)',
+        title: 'Sentence Structure Basics (subject-verb-object,
+        level: 'beginner', avoiding run-ons, punctuation)',
         words: [
           { word: 'Subject–Verb–Object', translation: 'Core pattern: “The team (S) finished (V) the report (O).”', pronunciation: 'Use this when writing feels messy.' },
           { word: 'Avoid run-ons', translation: 'Don’t join full sentences with just a comma.', pronunciation: 'Use a period, semicolon, or conjunction.' },
@@ -5534,7 +5771,8 @@ export const languages = {
       },
       {
         id: 4,
-        title: 'Commonly Confused Words (accept/except, lose/loose, affect/effect)',
+        title: 'Commonly Confused Words (accept/except,
+        level: 'beginner', lose/loose, affect/effect)',
         words: [
           { word: 'Accept vs except', translation: 'Accept = receive/agree. Except = exclude.', pronunciation: '“I accept the offer.” / “Everyone except Sam.”' },
           { word: 'Lose vs loose', translation: 'Lose = misplace/not win. Loose = not tight.', pronunciation: '“Lose the keys.” / “Loose shirt.”' },
@@ -5546,7 +5784,8 @@ export const languages = {
       },
       {
         id: 5,
-        title: 'Writing Cover Letters (opening strong, highlighting skills, professional tone)',
+        title: 'Writing Cover Letters (opening strong,
+        level: 'beginner', highlighting skills, professional tone)',
         words: [
           { word: 'Strong opening', translation: 'Lead with role + value (“I’m applying for X; I bring Y.”).', pronunciation: 'Avoid generic openings.' },
           { word: 'Evidence over claims', translation: 'Show achievements with numbers and outcomes.', pronunciation: '“Improved X by 20%” beats “hardworking”.' },
@@ -5558,7 +5797,8 @@ export const languages = {
       },
       {
         id: 6,
-        title: 'Punctuation That Matters (commas, semicolons, apostrophes, quotation marks)',
+        title: 'Punctuation That Matters (commas,
+        level: 'beginner', semicolons, apostrophes, quotation marks)',
         words: [
           { word: 'Commas for clarity', translation: 'Use commas to separate ideas and avoid confusion.', pronunciation: 'Avoid comma splices.' },
           { word: 'Semicolons', translation: 'Join two related complete sentences; or separate complex list items.', pronunciation: 'Use sparingly.' },
@@ -5570,7 +5810,8 @@ export const languages = {
       },
       {
         id: 7,
-        title: 'Speaking Professionally (interviews, presentations, meetings, phone calls)',
+        title: 'Speaking Professionally (interviews,
+        level: 'beginner', presentations, meetings, phone calls)',
         words: [
           { word: 'Structured answers', translation: 'Use STAR (Situation, Task, Action, Result) for interview stories.', pronunciation: 'Keeps answers concise.' },
           { word: 'Professional filler control', translation: 'Reduce “um/like”; pause instead.', pronunciation: 'Silence is better than rambling.' },
@@ -5582,7 +5823,8 @@ export const languages = {
       },
       {
         id: 8,
-        title: 'Improving Vocabulary (professional alternatives, context-appropriate language)',
+        title: 'Improving Vocabulary (professional alternatives,
+        level: 'beginner', context-appropriate language)',
         words: [
           { word: 'Precision', translation: 'Choose exact words (“request” vs “ask”, “purchase” vs “buy”).', pronunciation: 'Avoid vague words like “stuff”.' },
           { word: 'Professional alternatives', translation: 'Swap informal words (“kids” → “children”, “a lot” → “significantly”).', pronunciation: 'Match the context.' },
@@ -5594,7 +5836,8 @@ export const languages = {
       },
       {
         id: 9,
-        title: 'Reading Comprehension (understanding complex texts, identifying main ideas)',
+        title: 'Reading Comprehension (understanding complex texts,
+        level: 'beginner', identifying main ideas)',
         words: [
           { word: 'Main idea vs details', translation: 'Main idea = the point; details = support.', pronunciation: 'Summarize in 1 sentence.' },
           { word: 'Context clues', translation: 'Use surrounding sentences to infer meaning.', pronunciation: 'Don’t stop at every unknown word.' },
@@ -5606,7 +5849,8 @@ export const languages = {
       },
       {
         id: 10,
-        title: 'Writing Resumes (action verbs, quantifying achievements, formatting)',
+        title: 'Writing Resumes (action verbs,
+        level: 'beginner', quantifying achievements, formatting)',
         words: [
           { word: 'Action verbs', translation: 'Start bullets with strong verbs: “Led, Built, Improved, Reduced”.', pronunciation: 'Avoid “Responsible for…”.' },
           { word: 'Quantify impact', translation: 'Add numbers: time saved, revenue, volume, accuracy, size.', pronunciation: 'Proof beats claims.' },
