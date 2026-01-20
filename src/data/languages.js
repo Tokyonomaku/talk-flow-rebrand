@@ -5316,8 +5316,8 @@ export const languages = {
       },
       {
         id: 2,
-        title: 'Essential Questions (where,
-        level: 'beginner', when, how much)',
+        title: 'Essential Questions (where, when, how much)',
+        level: 'beginner',
         words: [
           { word: 'أين؟', translation: 'Where?', pronunciation: 'ayna? (EYE-na)' },
           { word: 'متى؟', translation: 'When?', pronunciation: 'matā? (ma-TAA)' },
@@ -5463,8 +5463,8 @@ export const languages = {
       },
       {
         id: 9,
-        title: 'Numbers,
-        level: 'beginner', Time, Dates',
+        title: 'Numbers, Time, Dates',
+        level: 'beginner',
         words: [
           { word: 'واحد', translation: 'One', pronunciation: 'wāḥid (WAA-hid)' },
           { word: 'اثنين', translation: 'Two', pronunciation: 'ithnayn (ith-NAYN)' },
@@ -5681,8 +5681,8 @@ export const languages = {
       },
       {
         id: 9,
-        title: 'Numbers,
-        level: 'beginner', Dates, Time in English',
+        title: 'Numbers, Dates, Time in English',
+        level: 'beginner',
         words: [
           { word: 'What time is it?', translation: 'Ask the time', pronunciation: 'wut time iz it' },
           { word: 'It’s 3:30.', translation: 'Tell time', pronunciation: 'its three THUR-tee' },
@@ -5732,8 +5732,8 @@ export const languages = {
     lessons: [
       {
         id: 1,
-        title: 'Common Grammar Mistakes (your/you\'re,
-        level: 'beginner', there/their/they\'re, its/it\'s)',
+        title: 'Common Grammar Mistakes (your/you\'re, there/their/they\'re, its/it\'s)',
+        level: 'beginner',
         words: [
           { word: 'Your vs you\'re', translation: 'Your = possessive (“your resume”). You\'re = “you are” (“you\'re ready”).', pronunciation: 'Tip: If you can replace with “you are”, use you\'re.' },
           { word: 'There / their / they\'re', translation: 'There = place (“over there”). Their = possessive (“their manager”). They\'re = “they are”.', pronunciation: 'Tip: “they\'re” = “they are”.' },
@@ -5745,8 +5745,8 @@ export const languages = {
       },
       {
         id: 2,
-        title: 'Professional Email Writing (subject lines,
-        level: 'beginner', greetings, tone, closings)',
+        title: 'Professional Email Writing (subject lines, greetings, tone, closings)',
+        level: 'beginner',
         words: [
           { word: 'Clear subject lines', translation: 'Use action + topic + date if needed (e.g., “Meeting Notes — Dec 14”).', pronunciation: 'Avoid vague subjects like “Hi” or “Question”.' },
           { word: 'Professional greeting', translation: 'Use “Hi [Name],” or “Hello [Name],” (safe default).', pronunciation: '“Dear” is more formal; “Hey” is casual.' },
@@ -5758,8 +5758,8 @@ export const languages = {
       },
       {
         id: 3,
-        title: 'Sentence Structure Basics (subject-verb-object,
-        level: 'beginner', avoiding run-ons, punctuation)',
+        title: 'Sentence Structure Basics (subject-verb-object, avoiding run-ons, punctuation)',
+        level: 'beginner',
         words: [
           { word: 'Subject–Verb–Object', translation: 'Core pattern: “The team (S) finished (V) the report (O).”', pronunciation: 'Use this when writing feels messy.' },
           { word: 'Avoid run-ons', translation: 'Don’t join full sentences with just a comma.', pronunciation: 'Use a period, semicolon, or conjunction.' },
@@ -5771,8 +5771,8 @@ export const languages = {
       },
       {
         id: 4,
-        title: 'Commonly Confused Words (accept/except,
-        level: 'beginner', lose/loose, affect/effect)',
+        title: 'Commonly Confused Words (accept/except, lose/loose, affect/effect)',
+        level: 'beginner',
         words: [
           { word: 'Accept vs except', translation: 'Accept = receive/agree. Except = exclude.', pronunciation: '“I accept the offer.” / “Everyone except Sam.”' },
           { word: 'Lose vs loose', translation: 'Lose = misplace/not win. Loose = not tight.', pronunciation: '“Lose the keys.” / “Loose shirt.”' },
@@ -5784,8 +5784,8 @@ export const languages = {
       },
       {
         id: 5,
-        title: 'Writing Cover Letters (opening strong,
-        level: 'beginner', highlighting skills, professional tone)',
+        title: 'Writing Cover Letters (opening strong, highlighting skills, professional tone)',
+        level: 'beginner',
         words: [
           { word: 'Strong opening', translation: 'Lead with role + value (“I’m applying for X; I bring Y.”).', pronunciation: 'Avoid generic openings.' },
           { word: 'Evidence over claims', translation: 'Show achievements with numbers and outcomes.', pronunciation: '“Improved X by 20%” beats “hardworking”.' },
@@ -5797,8 +5797,8 @@ export const languages = {
       },
       {
         id: 6,
-        title: 'Punctuation That Matters (commas,
-        level: 'beginner', semicolons, apostrophes, quotation marks)',
+        title: 'Punctuation That Matters (commas, semicolons, apostrophes, quotation marks)',
+        level: 'beginner',
         words: [
           { word: 'Commas for clarity', translation: 'Use commas to separate ideas and avoid confusion.', pronunciation: 'Avoid comma splices.' },
           { word: 'Semicolons', translation: 'Join two related complete sentences; or separate complex list items.', pronunciation: 'Use sparingly.' },
@@ -5810,8 +5810,8 @@ export const languages = {
       },
       {
         id: 7,
-        title: 'Speaking Professionally (interviews,
-        level: 'beginner', presentations, meetings, phone calls)',
+        title: 'Speaking Professionally (interviews, presentations, meetings, phone calls)',
+        level: 'beginner',
         words: [
           { word: 'Structured answers', translation: 'Use STAR (Situation, Task, Action, Result) for interview stories.', pronunciation: 'Keeps answers concise.' },
           { word: 'Professional filler control', translation: 'Reduce “um/like”; pause instead.', pronunciation: 'Silence is better than rambling.' },
@@ -5823,8 +5823,8 @@ export const languages = {
       },
       {
         id: 8,
-        title: 'Improving Vocabulary (professional alternatives,
-        level: 'beginner', context-appropriate language)',
+        title: 'Improving Vocabulary (professional alternatives, context-appropriate language)',
+        level: 'beginner',
         words: [
           { word: 'Precision', translation: 'Choose exact words (“request” vs “ask”, “purchase” vs “buy”).', pronunciation: 'Avoid vague words like “stuff”.' },
           { word: 'Professional alternatives', translation: 'Swap informal words (“kids” → “children”, “a lot” → “significantly”).', pronunciation: 'Match the context.' },
@@ -5836,8 +5836,8 @@ export const languages = {
       },
       {
         id: 9,
-        title: 'Reading Comprehension (understanding complex texts,
-        level: 'beginner', identifying main ideas)',
+        title: 'Reading Comprehension (understanding complex texts, identifying main ideas)',
+        level: 'beginner',
         words: [
           { word: 'Main idea vs details', translation: 'Main idea = the point; details = support.', pronunciation: 'Summarize in 1 sentence.' },
           { word: 'Context clues', translation: 'Use surrounding sentences to infer meaning.', pronunciation: 'Don’t stop at every unknown word.' },
@@ -5849,8 +5849,8 @@ export const languages = {
       },
       {
         id: 10,
-        title: 'Writing Resumes (action verbs,
-        level: 'beginner', quantifying achievements, formatting)',
+        title: 'Writing Resumes (action verbs, quantifying achievements, formatting)',
+        level: 'beginner',
         words: [
           { word: 'Action verbs', translation: 'Start bullets with strong verbs: “Led, Built, Improved, Reduced”.', pronunciation: 'Avoid “Responsible for…”.' },
           { word: 'Quantify impact', translation: 'Add numbers: time saved, revenue, volume, accuracy, size.', pronunciation: 'Proof beats claims.' },
