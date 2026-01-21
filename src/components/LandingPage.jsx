@@ -1,7 +1,6 @@
 import { gaEvent } from '../utils/analytics';
 
 export default function LandingPage({ onTryFree, onNavigate }) {
-
   const navigate = (path) => {
     if (typeof onNavigate === 'function') onNavigate(path);
     else window.location.href = path;
@@ -13,67 +12,71 @@ export default function LandingPage({ onTryFree, onNavigate }) {
     else navigate('/choose-languages');
   };
 
-  const handleCtaClick = () => {
+  const handleCtaClick = (buttonLocation, buttonText) => {
     gaEvent('cta_button_clicked', {
-      button_location: 'hero_section',
-      button_text: 'Start Today →',
+      button_location: buttonLocation,
+      button_text: buttonText,
     });
     goToLanguageSelector();
   };
 
   return (
-    <div className="landing-page">
-      <div className="hero-conversion-optimized">
-        <div className="hero-text">
-          <h1>Finally Speak the Language You&apos;ve Been Putting Off</h1>
-        </div>
+    <div className="landing-page landing-simplified">
+      <section className="lp-section lp-hero" aria-label="Hero">
+        <h1 className="lp-headline">
+          Language Learning Gets Hard
+          <br />
+          Let Me Make It Easier
+        </h1>
+        <p className="lp-subheadline">Real phrases you&apos;ll actually use. From Day 1.</p>
+        <button
+          className="lp-button"
+          onClick={() => handleCtaClick('hero_section', 'Try Lesson 1 Free →')}
+        >
+          Try Lesson 1 Free →
+        </button>
+        <div className="lp-microcopy">3 minutes • No signup</div>
+      </section>
 
-        <div className="hero-cta">
-          <button className="cta-primary" onClick={handleCtaClick}>
-            Start Today →
-          </button>
-
-          <div className="trust-signals" aria-label="Trust signals">
-            ✓ No credit card&nbsp;&nbsp;&nbsp;&nbsp;✓ Always free
+      <section className="lp-section lp-phrases" aria-label="Phrase preview">
+        <div className="lp-card">
+          <div className="lp-card-title">🇰🇷 Korean - Lesson 1</div>
+          <div className="lp-phrase">
+            <div className="lp-phrase-foreign">화장실이 어디에요?</div>
+            <div className="lp-phrase-english">Where is the bathroom?</div>
+          </div>
+          <div className="lp-phrase">
+            <div className="lp-phrase-foreign">얼마예요?</div>
+            <div className="lp-phrase-english">How much?</div>
+          </div>
+          <div className="lp-phrase">
+            <div className="lp-phrase-foreign">영어 할 수 있어요?</div>
+            <div className="lp-phrase-english">Do you speak English?</div>
           </div>
         </div>
-      </div>
+        <button
+          className="lp-button lp-button-secondary"
+          onClick={() => handleCtaClick('phrase_preview', 'Start Now →')}
+        >
+          Start Now →
+        </button>
+      </section>
 
-      <div className="quick-value" aria-label="Quick value preview">
-        <div className="value-item">
-          <span className="emoji" aria-hidden="true">🌍</span>
-          <div>
-            <div>Choose 2 of 11 languages</div>
-            <div>Spanish, French, German, Korean, Portuguese, Japanese, Chinese, Russian, Arabic + English</div>
-          </div>
-        </div>
-        <div className="value-item">
-          <span className="emoji" aria-hidden="true">💬</span>
-          <div>
-            <div>20 practical lessons per language</div>
-            <div>Learn phrases you&apos;ll actually use in real-life situations</div>
-          </div>
-        </div>
-        <div className="value-item">
-          <span className="emoji" aria-hidden="true">🎯</span>
-          <div>
-            <div>Learn at your own pace</div>
-            <div>Practice as much as you want. Transparent pricing. Honest approach.</div>
-          </div>
-        </div>
-      </div>
-
-      <div className="language-preview" aria-label="Language preview">
-        <p className="preview-label">Available languages:</p>
-        <div className="flags-row" aria-label="Preview languages">
-          <span>🇪🇸 Spanish</span>
-          <span>🇫🇷 French</span>
-          <span>🇩🇪 German</span>
-          <span>🇰🇷 Korean</span>
-          <span>🇧🇷 Portuguese</span>
-          <span>+6 more</span>
-        </div>
-      </div>
+      <section className="lp-section lp-why" aria-label="Why TalkFlow">
+        <h2 className="lp-heading">Why TalkFlow?</h2>
+        <ul className="lp-list">
+          <li>✓ Real phrases from Day 1</li>
+          <li>✓ 8 languages</li>
+          <li>✓ No limits</li>
+          <li>✓ Free forever</li>
+        </ul>
+        <button
+          className="lp-button"
+          onClick={() => handleCtaClick('why_section', 'Try It Now →')}
+        >
+          Try It Now →
+        </button>
+      </section>
     </div>
   );
 }
