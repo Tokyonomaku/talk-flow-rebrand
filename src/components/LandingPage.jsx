@@ -24,41 +24,41 @@ export default function LandingPage({ onTryFree, onNavigate }) {
     <div className="landing-page landing-simplified">
       <section className="lp-section lp-hero" aria-label="Hero">
         <h1 className="lp-headline">
-          Language Learning Gets Hard
+          Learn Real French Phrases
           <br />
-          Let Me Make It Easier
+          In 3 Minutes
         </h1>
-        <p className="lp-subheadline">Real phrases you&apos;ll actually use. From Day 1.</p>
+        <p className="lp-subheadline">No signup. No credit card. Free forever.</p>
         <button
           className="lp-button"
-          onClick={() => handleCtaClick('hero_section', 'Try Lesson 1 Free →')}
+          onClick={() => handleCtaClick('hero_section', 'Try Lesson 1 Now →')}
         >
-          Try Lesson 1 Free →
+          Try Lesson 1 Now →
         </button>
         <div className="lp-microcopy">3 minutes • No signup</div>
       </section>
 
       <section className="lp-section lp-phrases" aria-label="Phrase preview">
         <div className="lp-card">
-          <div className="lp-card-title">🇰🇷 Korean - Lesson 1</div>
+          <div className="lp-card-title">🇫🇷 Lesson 1 Preview</div>
           <div className="lp-phrase">
-            <div className="lp-phrase-foreign">화장실이 어디에요?</div>
+            <div className="lp-phrase-foreign">Où sont les toilettes?</div>
             <div className="lp-phrase-english">Where is the bathroom?</div>
           </div>
           <div className="lp-phrase">
-            <div className="lp-phrase-foreign">얼마예요?</div>
-            <div className="lp-phrase-english">How much?</div>
+            <div className="lp-phrase-foreign">Combien ça coûte?</div>
+            <div className="lp-phrase-english">How much does this cost?</div>
           </div>
           <div className="lp-phrase">
-            <div className="lp-phrase-foreign">영어 할 수 있어요?</div>
+            <div className="lp-phrase-foreign">Parlez-vous anglais?</div>
             <div className="lp-phrase-english">Do you speak English?</div>
           </div>
         </div>
         <button
           className="lp-button lp-button-secondary"
-          onClick={() => handleCtaClick('phrase_preview', 'Start Now →')}
+          onClick={() => handleCtaClick('phrase_preview', 'Start Learning →')}
         >
-          Start Now →
+          Start Learning →
         </button>
       </section>
 
@@ -66,15 +66,15 @@ export default function LandingPage({ onTryFree, onNavigate }) {
         <h2 className="lp-heading">Why TalkFlow?</h2>
         <ul className="lp-list">
           <li>✓ Real phrases from Day 1</li>
-          <li>✓ 8 languages</li>
-          <li>✓ No limits</li>
+          <li>✓ 8 languages to choose from</li>
+          <li>✓ Learn at your own pace</li>
           <li>✓ Free forever</li>
         </ul>
         <button
           className="lp-button"
-          onClick={() => handleCtaClick('why_section', 'Try It Now →')}
+          onClick={() => handleCtaClick('why_section', 'Try It Free →')}
         >
-          Try It Now →
+          Try It Free →
         </button>
       </section>
     </div>
