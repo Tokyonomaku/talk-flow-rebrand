@@ -444,6 +444,29 @@ export default function LessonView({ lesson, language, onBack, onUpgradeClick })
           </div>
         )}
 
+        {lessonNum === 5 && isCompleted && !showQuiz && language?.id === 'korean' && (
+          <div className="mt-8 bg-white rounded-xl shadow-md border border-gray-200 p-6">
+            <h2 className="text-2xl font-bold text-gray-900 mb-3">
+              Amazing! You completed Korean Basics.
+            </h2>
+            <p className="text-gray-700 mb-3">You can now:</p>
+            <ul className="text-gray-800 font-semibold space-y-2 mb-5">
+              <li>✓ Order food</li>
+              <li>✓ Ask directions</li>
+              <li>✓ Handle emergencies</li>
+            </ul>
+            <p className="text-gray-700 mb-3">Ready to go deeper?</p>
+            <p className="text-gray-900 font-semibold mb-2">Premium unlocks 75 more lessons:</p>
+            <ul className="text-gray-700 space-y-1 mb-4">
+              <li>- Making friends</li>
+              <li>- Business conversations</li>
+              <li>- Cultural context</li>
+              <li>- Advanced grammar</li>
+            </ul>
+            <p className="text-gray-900 font-semibold">$20/month or $150/year</p>
+          </div>
+        )}
+
         {/* If they close the celebration modal, keep a gentle, non-blocking upgrade option */}
         {lessonNum === 10 && isCompleted && !premium && !alwaysFreeEnglish && !showCelebrationModal && (
           <div className="mt-8 bg-white/70 border border-blue-200 rounded-lg p-5 shadow-sm">
