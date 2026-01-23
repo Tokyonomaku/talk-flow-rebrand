@@ -145,14 +145,6 @@ body {
   font-weight: 700;
 }
 
-.lp-heading {
-  margin: 0;
-  font-size: clamp(26px, 7vw, 32px);
-  line-height: 1.2;
-  font-weight: 900;
-  letter-spacing: -0.01em;
-}
-
 .lp-button {
   width: 100%;
   max-width: 520px;
@@ -211,12 +203,6 @@ body {
   gap: 16px;
 }
 
-.lp-card-title {
-  font-size: 18px;
-  font-weight: 800;
-  color: #0f172a;
-}
-
 .lp-phrase {
   display: flex;
   flex-direction: column;
@@ -234,18 +220,6 @@ body {
   font-size: 18px;
   font-weight: 700;
   color: #475569;
-}
-
-.lp-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 18px;
-  font-weight: 800;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  color: #0f172a;
 }
 
 @media (max-width: 420px) {
