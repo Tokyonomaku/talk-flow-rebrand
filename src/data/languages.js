@@ -4,6 +4,7 @@ export const languages = {
     name: 'Spanish',
     flag: '🇪🇸',
     code: 'es',
+    lessonCount: 27,
     lessons: [
       {
         id: 1,
@@ -644,6 +645,31 @@ export const languages = {
           { word: 'Romper la pista', translation: 'To tear up the dance floor', pronunciation: 'rohm-PEHR lah PEES-tah' }
         ]
       }
+      ,
+      {
+        id: 27,
+        title: 'Spanish Idioms and Expressions',
+        level: 'advanced',
+        premium: true,
+        words: [
+          { word: 'Estar en las nubes', translation: 'To be daydreaming / distracted (used when someone is not paying attention)', pronunciation: 'es-TAR en las NOO-behs' },
+          { word: 'Ser pan comido', translation: 'To be a piece of cake (very easy)', pronunciation: 'ser pahn koh-MEE-doh' },
+          { word: 'Costar un ojo de la cara', translation: 'To cost an arm and a leg (very expensive)', pronunciation: 'kohs-TAR oon OH-ho deh lah KAH-rah' },
+          { word: 'Meter la pata', translation: 'To mess up / put your foot in it (after a mistake)', pronunciation: 'meh-TEHR lah PAH-tah' },
+          { word: 'Tirar la toalla', translation: 'To throw in the towel (give up)', pronunciation: 'tee-RAHR lah toh-AH-yah' },
+          { word: 'Estar hecho polvo', translation: 'To be exhausted / wiped out', pronunciation: 'es-TAR EH-choh POHL-voh' },
+          { word: 'Echar una mano', translation: 'To lend a hand (help someone)', pronunciation: 'eh-CHAR OO-nah MAH-noh' },
+          { word: 'No tener pelos en la lengua', translation: 'To speak very directly (not hold back)', pronunciation: 'noh teh-NEHR PEH-lohs en lah LEN-gwah' }
+        ],
+        streetSlang: [
+          { word: '¡Qué fuerte!', translation: 'That\'s intense / no way! (reaction)', pronunciation: 'keh FWEHR-teh' },
+          { word: 'Ni loco', translation: 'No way / not a chance', pronunciation: 'nee LOH-koh' },
+          { word: 'Estar a tope', translation: 'To be at full capacity / maxed out', pronunciation: 'es-TAR ah TOH-peh' },
+          { word: 'Qué rollo', translation: 'What\'s going on? (very casual, Spain/Mexico)', pronunciation: 'keh ROH-yoh' },
+          { word: 'Me da igual', translation: 'I don\'t care / it\'s all the same to me', pronunciation: 'meh dah ee-GWAHL' },
+          { word: 'Se me fue la olla', translation: 'I lost it / I spaced out', pronunciation: 'seh meh FWEH lah OH-yah' }
+        ]
+      }
     ]
   },
   french: {
@@ -651,6 +677,7 @@ export const languages = {
     name: 'French',
     flag: '🇫🇷',
     code: 'fr',
+    lessonCount: 27,
     lessons: [
       {
         id: 1,
@@ -1284,6 +1311,31 @@ export const languages = {
           { word: 'On fait la fête!', translation: 'Let\'s party!', pronunciation: 'ohn fay lah FET' },
           { word: 'C\'est chaud', translation: 'It\'s hot/lit (party energy)', pronunciation: 'say shoh' },
           { word: 'Défoncer la piste', translation: 'To tear up the dance floor', pronunciation: 'day-fohn-SAY lah peest' }
+        ]
+      }
+      ,
+      {
+        id: 27,
+        title: 'French Idioms and Expressions',
+        level: 'advanced',
+        premium: true,
+        words: [
+          { word: 'Être dans la lune', translation: 'To be daydreaming / distracted', pronunciation: 'etr dahn lah loon' },
+          { word: 'C\'est du gâteau', translation: 'It\'s a piece of cake (very easy)', pronunciation: 'say doo gah-TOH' },
+          { word: 'Coûter les yeux de la tête', translation: 'To cost an arm and a leg (very expensive)', pronunciation: 'koo-TAY lay zyuh duh lah tet' },
+          { word: 'Mettre les pieds dans le plat', translation: 'To put your foot in it (say something awkward)', pronunciation: 'met-truh lay pyay dahn luh plah' },
+          { word: 'Jeter l\'éponge', translation: 'To throw in the towel (give up)', pronunciation: 'zhuh-TAY lay-pohnzh' },
+          { word: 'Tomber dans les pommes', translation: 'To faint (literally “fall in the apples”)', pronunciation: 'tohm-BAY dahn lay pom' },
+          { word: 'Avoir le cafard', translation: 'To feel down / depressed (literally “have the cockroach”)', pronunciation: 'ah-VWAHR luh kah-FAR' },
+          { word: 'Avoir la pêche', translation: 'To feel great / be full of energy', pronunciation: 'ah-VWAHR lah pesh' }
+        ],
+        streetSlang: [
+          { word: 'Ça roule', translation: 'All good / it\'s going fine', pronunciation: 'sah rool' },
+          { word: 'Bof', translation: 'Meh / so-so', pronunciation: 'bohf' },
+          { word: 'J\'en ai marre', translation: 'I\'m fed up / I\'ve had enough', pronunciation: 'zhahn ay mar' },
+          { word: 'Ça me saoule', translation: 'It\'s annoying / it bores me', pronunciation: 'sah muh sool' },
+          { word: 'T\'inquiète', translation: 'Don\'t worry (casual)', pronunciation: 'tan-kyet' },
+          { word: 'C\'est pas grave', translation: 'It\'s no big deal', pronunciation: 'say pah grav' }
         ]
       }
     ]
@@ -4624,6 +4676,7 @@ export const languages = {
     name: 'Arabic (العربية)',
     flag: '🇸🇦',
     code: 'ar',
+    lessonCount: 27,
     lessons: [
       {
         id: 1,
@@ -4834,6 +4887,431 @@ export const languages = {
           { word: 'خلاص', translation: 'OK, done', pronunciation: 'khalāṣ (kha-LAAS)' }
         ],
         culturalNotes: '“إن شاء الله” is extremely common and can mean “hopefully”, “we’ll see”, or simply a polite, culturally normal way to talk about future plans. Listening for tone and context helps you understand whether it’s confident or non-committal.'
+      },
+      {
+        id: 11,
+        title: 'Making Friends',
+        level: 'intermediate',
+        premium: true,
+        words: [
+          { word: 'هل يمكننا أن نتعارف؟', translation: 'Can we get to know each other?', pronunciation: 'hal yumkinunā an nataʿāraf? (hal YOOM-kee-noo-naa an na-ta-ʿAA-raf)' },
+          { word: 'ما اسمك الكامل؟', translation: 'What is your full name?', pronunciation: 'mā ismuka al-kāmil? (maa IS-moo-kal KAA-mil)' },
+          { word: 'من أي بلد أنت؟', translation: 'What country are you from?', pronunciation: 'min ayy balad anta? (min EYY BA-lad AN-ta)' },
+          { word: 'أعيش في…', translation: 'I live in…', pronunciation: 'aʿīshu fī… (a-ʿEE-shoo FEE)' },
+          { word: 'ما رأيك؟', translation: 'What do you think?', pronunciation: 'mā raʾyuk? (maa RAH-yook)' },
+          { word: 'هل لديك وقت؟', translation: 'Do you have time?', pronunciation: 'hal ladayka waqt? (hal la-DAY-ka wakht)' },
+          { word: 'هل تريد أن نخرج؟', translation: 'Do you want to hang out?', pronunciation: 'hal turīd an nakhruj? (hal too-REED an nakh-rooj)' },
+          { word: 'هذا صديقي/صديقتي', translation: 'This is my friend', pronunciation: 'hādhā ṣadīqī/ṣadīqatī (HAA-dha sa-DEE-kee / sa-DEE-qa-tee)' }
+        ],
+        streetSlang: [
+          { word: 'كيفك؟', translation: 'How are you? (Levantine)', pronunciation: 'keefak? (KEE-fak)' },
+          { word: 'عامل إيه؟', translation: 'How are you doing? (Egyptian)', pronunciation: 'ʿāmil eh? (AA-mel EH)' },
+          { word: 'تعال نتعرّف', translation: 'Come, let’s get to know each other (casual)', pronunciation: 'taʿāl netaʿarraf (ta-ʿAAL ne-ta-ʿAR-raf)' },
+          { word: 'صاحبي', translation: 'My buddy (casual, Egyptian)', pronunciation: 'ṣāḥbī (SAAHB-ee)' },
+          { word: 'يلا نتقابل', translation: 'Let’s meet up', pronunciation: 'yalla netʾābel (YAL-la net-AA-bel)' },
+          { word: 'وين ساكن؟', translation: 'Where do you live? (Levantine)', pronunciation: 'wein sāken? (WAYN SAA-ken)' }
+        ],
+        culturalNotes: 'Friendship often starts with polite introductions and small talk. In many Arab cultures, exchanging contact details and asking about family are common and friendly. Invitations for coffee or tea are a typical way to deepen connections.'
+      },
+      {
+        id: 12,
+        title: 'Talking About Yourself',
+        level: 'intermediate',
+        premium: true,
+        words: [
+          { word: 'أنا أعمل كـ…', translation: 'I work as…', pronunciation: 'anā aʿmal ka… (a-NAA Aʿ-mal ka)' },
+          { word: 'أنا طالب/طالبة', translation: 'I am a student', pronunciation: 'anā ṭālib/ṭāliba (a-NAA TAA-lib / TAA-li-ba)' },
+          { word: 'أنا متزوج/متزوجة', translation: 'I am married', pronunciation: 'anā mutazawwij/mutazawwija (a-NAA moo-ta-ZAW-wij / moo-ta-ZAW-wi-ja)' },
+          { word: 'لديّ أخ/أخت', translation: 'I have a brother/sister', pronunciation: 'ladayya akh/ukht (la-DAY-ya AKH / OOKHT)' },
+          { word: 'هواياتي هي…', translation: 'My hobbies are…', pronunciation: 'hiwāyātī hiya… (hee-WAA-yaa-tee HEE-ya)' },
+          { word: 'أحب…', translation: 'I like/love…', pronunciation: 'uḥibb… (oo-HIBB)' },
+          { word: 'لا أحب…', translation: 'I don’t like…', pronunciation: 'lā uḥibb… (laa oo-HIBB)' },
+          { word: 'عمري … سنة', translation: 'I am … years old', pronunciation: 'ʿumrī … sana (Oom-REE … SA-na)' }
+        ],
+        streetSlang: [
+          { word: 'شغلك إيه؟', translation: 'What’s your job? (Egyptian)', pronunciation: 'shughlak eh? (SHOOGH-lak EH)' },
+          { word: 'بشتغل…', translation: 'I work… (Egyptian)', pronunciation: 'bashtaghal… (bash-TA-ghal)' },
+          { word: 'أنا متخرّج', translation: 'I graduated (casual)', pronunciation: 'anā mutakharrij (a-NAA moo-ta-KHAR-rij)' },
+          { word: 'أنا ساكن في…', translation: 'I live in… (casual)', pronunciation: 'anā sāken fī… (a-NAA SAA-ken FEE)' },
+          { word: 'بحب…', translation: 'I like… (casual)', pronunciation: 'baḥibb… (ba-HIBB)' },
+          { word: 'مش بحب…', translation: 'I don’t like… (casual)', pronunciation: 'mish baḥibb… (mish ba-HIBB)' }
+        ],
+        culturalNotes: 'When talking about yourself, it’s common to keep a humble tone. People often ask about work and family early in conversation, which is usually a sign of friendly interest.'
+      },
+      {
+        id: 13,
+        title: 'Asking About Others',
+        level: 'intermediate',
+        premium: true,
+        words: [
+          { word: 'ماذا تعمل؟', translation: 'What do you do?', pronunciation: 'mādhā taʿmal? (MAA-dhaa TAʿ-mal)' },
+          { word: 'من أين أنت أصلاً؟', translation: 'Where are you originally from?', pronunciation: 'min ayna anta aṣlan? (min EYE-na AN-ta AS-lan)' },
+          { word: 'هل لديك إخوة؟', translation: 'Do you have siblings?', pronunciation: 'hal ladayka ikhwah? (hal la-DAY-ka EEKH-wah)' },
+          { word: 'هل أنت متزوج؟', translation: 'Are you married?', pronunciation: 'hal anta mutazawwij? (hal AN-ta moo-ta-ZAW-wij)' },
+          { word: 'ما هواياتك؟', translation: 'What are your hobbies?', pronunciation: 'mā hiwāyātuk? (maa hee-WAA-yaa-tuk)' },
+          { word: 'أين درست؟', translation: 'Where did you study?', pronunciation: 'ayna darasta? (EYE-na DA-ras-ta)' },
+          { word: 'هل تحب السفر؟', translation: 'Do you like traveling?', pronunciation: 'hal tuḥibb as-safar? (hal too-HIBB as-sa-FAR)' },
+          { word: 'كيف كانت عطلتك؟', translation: 'How was your vacation?', pronunciation: 'kayfa kānat ʿuṭlatuk? (KAY-fa KAA-nat OOT-la-tuk)' }
+        ],
+        streetSlang: [
+          { word: 'بتشتغل إيه؟', translation: 'What do you do? (Egyptian)', pronunciation: 'bit-shtaghal eh? (bit-SHTA-ghal EH)' },
+          { word: 'منين أصلك؟', translation: 'Where are you originally from? (casual)', pronunciation: 'min-een aṣlak? (min-EEN AS-lak)' },
+          { word: 'متجوز؟', translation: 'Married? (casual)', pronunciation: 'mutgawwez? (mut-GAW-wez)' },
+          { word: 'بتحب إيه؟', translation: 'What do you like? (casual)', pronunciation: 'bit-ḥibb eh? (bit-HIBB EH)' },
+          { word: 'درست فين؟', translation: 'Where did you study? (casual)', pronunciation: 'darast fein? (da-RAST FAYN)' },
+          { word: 'سافرت فين؟', translation: 'Where did you travel? (casual)', pronunciation: 'sāfart fein? (SAA-fart FAYN)' }
+        ],
+        culturalNotes: 'Questions about family, work, and background are common and usually polite. If a question feels too personal, it’s acceptable to answer briefly and change the topic gently.'
+      },
+      {
+        id: 14,
+        title: 'Past Tense Basics',
+        level: 'intermediate',
+        premium: true,
+        words: [
+          { word: 'ذهبتُ إلى…', translation: 'I went to…', pronunciation: 'dhahabtu ilā… (dha-HAB-too ee-LAA)' },
+          { word: 'زرتُ…', translation: 'I visited…', pronunciation: 'zurtu… (ZOOR-too)' },
+          { word: 'قابلتُ…', translation: 'I met…', pronunciation: 'qābaltu… (QAA-bal-too)' },
+          { word: 'شاهدتُ…', translation: 'I saw/watched…', pronunciation: 'shāhadtu… (SHAA-had-too)' },
+          { word: 'أكلتُ…', translation: 'I ate…', pronunciation: 'akaltu… (A-kal-too)' },
+          { word: 'شربتُ…', translation: 'I drank…', pronunciation: 'sharibtu… (SHA-rib-too)' },
+          { word: 'تعلّمتُ…', translation: 'I learned…', pronunciation: 'taʿallamtu… (ta-ʿAL-lam-too)' },
+          { word: 'اتصلتُ بـ…', translation: 'I called…', pronunciation: 'ittiṣaltu bi… (it-TI-sal-too bee)' }
+        ],
+        streetSlang: [
+          { word: 'رُحت…', translation: 'I went… (Egyptian)', pronunciation: 'ruḥt… (ROOHT)' },
+          { word: 'شُفت…', translation: 'I saw… (casual)', pronunciation: 'shuft… (SHOOFT)' },
+          { word: 'قابلت…', translation: 'I met… (casual)', pronunciation: 'ʾābalt… (AA-balt)' },
+          { word: 'أكلت', translation: 'I ate (casual)', pronunciation: 'akalt (A-kalt)' },
+          { word: 'شربت', translation: 'I drank (casual)', pronunciation: 'sharibt (SHA-ribt)' },
+          { word: 'اتعلّمت', translation: 'I learned (Egyptian)', pronunciation: 'itʿallimt (it-ʿAL-limt)' }
+        ],
+        culturalNotes: 'Past tense verbs often end in “-تُ” for “I”. In casual speech, endings are frequently shortened, and dialect forms replace textbook conjugations.'
+      },
+      {
+        id: 15,
+        title: 'Making Plans',
+        level: 'intermediate',
+        premium: true,
+        words: [
+          { word: 'هل أنت متاح غداً؟', translation: 'Are you free tomorrow?', pronunciation: 'hal anta mutāḥ ghadan? (hal AN-ta moo-TAAH GHA-dan)' },
+          { word: 'دعنا نلتقي في…', translation: 'Let’s meet at…', pronunciation: 'daʿnā naltaqī fī… (daʿ-NAA nal-ta-QEE FEE)' },
+          { word: 'ما الوقت المناسب؟', translation: 'What time works?', pronunciation: 'mā al-waqt al-munāsib? (maa al-WAKT al moo-NAA-sib)' },
+          { word: 'سأصل في…', translation: 'I’ll arrive in…', pronunciation: 'saʾaṣilu fī… (sa-AH-si-loo FEE)' },
+          { word: 'هل يمكننا تأجيله؟', translation: 'Can we postpone it?', pronunciation: 'hal yumkinunā taʾjīluhu? (hal YOOM-kee-noo-naa taʾ-JEE-loo-hoo)' },
+          { word: 'لدي موعد', translation: 'I have an appointment', pronunciation: 'ladayya mawʿid (la-DAY-ya MAWʿ-id)' },
+          { word: 'سنلتقي لاحقاً', translation: 'We’ll meet later', pronunciation: 'sanaltaqī lāḥiqan (sa-nal-ta-QEE LAA-ḥi-qan)' },
+          { word: 'أرسل لي رسالة', translation: 'Send me a message', pronunciation: 'arsil lī risāla (AR-sil lee ri-SAA-la)' }
+        ],
+        streetSlang: [
+          { word: 'بكرة فاضي؟', translation: 'Free tomorrow? (Egyptian)', pronunciation: 'bukra fāḍi? (BOOK-ra FAA-di)' },
+          { word: 'نقابل بعض', translation: 'Let’s meet up (casual)', pronunciation: 'nʾābel baʿḍ (na-AA-bel baʿd)' },
+          { word: 'على الساعة…', translation: 'At … o’clock', pronunciation: 'ʿala s-sāʿa… (A-la s-SAA-a)' },
+          { word: 'أنا جاي', translation: 'I’m coming (casual)', pronunciation: 'anā jāy (a-NAA JAY)' },
+          { word: 'مشغول', translation: 'Busy (casual)', pronunciation: 'mashghūl (mash-GHOOL)' },
+          { word: 'ابعثلي', translation: 'Send me (a text)', pronunciation: 'ibʿat-li (ib-ʿAT-lee)' }
+        ],
+        culturalNotes: 'Plans are often flexible, so it’s common to confirm on the day. Using polite phrases like “لو سمحت” keeps requests friendly.'
+      },
+      {
+        id: 16,
+        title: 'Expressing Preferences',
+        level: 'intermediate',
+        premium: true,
+        words: [
+          { word: 'أفضّل…', translation: 'I prefer…', pronunciation: 'ufaḍḍil… (oo-fad-DIL)' },
+          { word: 'أحب أن…', translation: 'I like to…', pronunciation: 'uḥibb an… (oo-HIBB an)' },
+          { word: 'لا أفضّل…', translation: 'I don’t prefer…', pronunciation: 'lā ufaḍḍil… (laa oo-fad-DIL)' },
+          { word: 'هذا أفضل من…', translation: 'This is better than…', pronunciation: 'hādhā afḍal min… (HAA-dha AF-dal min)' },
+          { word: 'بالنسبة لي…', translation: 'For me…', pronunciation: 'binisba lī… (bi-NIS-ba lee)' },
+          { word: 'يعجبني…', translation: 'I like (it)…', pronunciation: 'yuʿjibunī… (yoo-ʿJEE-boo-nee)' },
+          { word: 'لا يعجبني…', translation: 'I don’t like (it)…', pronunciation: 'lā yuʿjibunī… (laa yoo-ʿJEE-boo-nee)' },
+          { word: 'أختار…', translation: 'I choose…', pronunciation: 'akhtār… (akh-TAAR)' }
+        ],
+        streetSlang: [
+          { word: 'بحب…', translation: 'I like… (casual)', pronunciation: 'baḥibb… (ba-HIBB)' },
+          { word: 'ما بحب…', translation: 'I don’t like… (casual)', pronunciation: 'ma baḥibb… (ma ba-HIBB)' },
+          { word: 'بفضّل', translation: 'I prefer (casual)', pronunciation: 'bfaḍḍil (bfad-DIL)' },
+          { word: 'مش ذوقي', translation: 'Not my style/taste', pronunciation: 'mish dhawʾī (mish ZOʾ-ee)' },
+          { word: 'عاجبني', translation: 'I like it (casual)', pronunciation: 'ʿājibnī (AA-jib-nee)' },
+          { word: 'مش عاجبني', translation: 'I don’t like it (casual)', pronunciation: 'mish ʿājibnī (mish AA-jib-nee)' }
+        ],
+        culturalNotes: 'Saying preferences politely is valued. Softer phrasing like “بالنسبة لي” can make disagreement sound more respectful.'
+      },
+      {
+        id: 17,
+        title: 'Describing Things',
+        level: 'intermediate',
+        premium: true,
+        words: [
+          { word: 'كبير/صغير', translation: 'Big/Small', pronunciation: 'kabīr/ṣaghīr (ka-BEER / sa-GHEER)' },
+          { word: 'جميل', translation: 'Beautiful', pronunciation: 'jamīl (ja-MEEL)' },
+          { word: 'سريع/بطيء', translation: 'Fast/Slow', pronunciation: 'sarīʿ/baṭīʾ (sa-REEʿ / ba-TEEʾ)' },
+          { word: 'غالي/رخيص', translation: 'Expensive/Cheap', pronunciation: 'ghālī/rakhīṣ (GHA-lee / ra-KHEES)' },
+          { word: 'نظيف/متسخ', translation: 'Clean/Dirty', pronunciation: 'naẓīf/mutasikh (na-ZEETF / moo-TA-sekh)' },
+          { word: 'جديد/قديم', translation: 'New/Old', pronunciation: 'jadīd/qadīm (ja-DEED / qa-DEEM)' },
+          { word: 'مريح', translation: 'Comfortable', pronunciation: 'murīḥ (moo-REEH)' },
+          { word: 'مزعج', translation: 'Annoying/Loud', pronunciation: 'muzʿij (mooz-ʿIJ)' }
+        ],
+        streetSlang: [
+          { word: 'حلو', translation: 'Nice/pretty (casual)', pronunciation: 'ḥilw (HILW)' },
+          { word: 'حلو قوي', translation: 'Really nice (Egyptian)', pronunciation: 'ḥilw awi (HILW A-wee)' },
+          { word: 'على قدّه', translation: 'Just okay / average', pronunciation: 'ʿala addoh (A-la AD-doh)' },
+          { word: 'فخم', translation: 'Fancy / high-end (slang)', pronunciation: 'fakham (FA-kham)' },
+          { word: 'رخيص قوي', translation: 'Very cheap (Egyptian)', pronunciation: 'rakhīṣ awi (ra-KHEES A-wee)' },
+          { word: 'مو زين', translation: 'Not good (Gulf)', pronunciation: 'mū zayn (moo ZAYN)' }
+        ],
+        culturalNotes: 'Adjectives often follow the noun and must agree in gender. In casual speech, shortened forms are common and tone carries a lot of meaning.'
+      },
+      {
+        id: 18,
+        title: 'Weather',
+        level: 'intermediate',
+        premium: true,
+        words: [
+          { word: 'الجو حار', translation: 'The weather is hot', pronunciation: 'al-jaww ḥār (al-jaww HAAR)' },
+          { word: 'الجو بارد', translation: 'The weather is cold', pronunciation: 'al-jaww bārid (al-jaww BAA-rid)' },
+          { word: 'تمطر', translation: 'It’s raining', pronunciation: 'tumṭir (TOOM-tir)' },
+          { word: 'الجو غائم', translation: 'It’s cloudy', pronunciation: 'al-jaww ghāʾim (al-jaww GHAH-im)' },
+          { word: 'الجو عاصف', translation: 'It’s windy', pronunciation: 'al-jaww ʿāṣif (al-jaww AA-sif)' },
+          { word: 'الجو جميل اليوم', translation: 'The weather is nice today', pronunciation: 'al-jaww jamīl al-yawm (al-jaww ja-MEEL al-YAWM)' },
+          { word: 'درجة الحرارة', translation: 'Temperature', pronunciation: 'darajat al-ḥarāra (da-RA-jat al-ha-RAA-ra)' },
+          { word: 'رطوبة', translation: 'Humidity', pronunciation: 'ruṭūba (roo-TOO-ba)' }
+        ],
+        streetSlang: [
+          { word: 'الدنيا حر', translation: 'It’s really hot (Egyptian)', pronunciation: 'ed-donya ḥarr (ed-DON-ya HARR)' },
+          { word: 'برد كتير', translation: 'Very cold (Levantine)', pronunciation: 'bard ktīr (bard k-TEER)' },
+          { word: 'في شتا', translation: 'It’s winter (casual)', pronunciation: 'fī shita (fee SHE-ta)' },
+          { word: 'شوب', translation: 'Hot weather (Gulf)', pronunciation: 'shoob (SHOOB)' },
+          { word: 'غيمة', translation: 'A cloud (casual)', pronunciation: 'ghayma (GHAY-ma)' },
+          { word: 'الدنيا مطر', translation: 'It’s rainy (casual)', pronunciation: 'ed-donya maṭar (ed-DON-ya MAH-tar)' }
+        ],
+        culturalNotes: 'Weather talk is a common icebreaker. In desert climates, temperature changes can be dramatic between day and night.'
+      },
+      {
+        id: 19,
+        title: 'Health Basics',
+        level: 'intermediate',
+        premium: true,
+        words: [
+          { word: 'أشعر بألم', translation: 'I feel pain', pronunciation: 'ashʿur biʾalam (ASH-ʿoor bee-AL-am)' },
+          { word: 'عندي صداع', translation: 'I have a headache', pronunciation: 'ʿindī ṣudāʿ (IN-dee soo-DAAʿ)' },
+          { word: 'عندي حمى', translation: 'I have a fever', pronunciation: 'ʿindī ḥummā (IN-dee HOOM-ma)' },
+          { word: 'أحتاج إلى طبيب', translation: 'I need a doctor', pronunciation: 'aḥtāj ilā ṭabīb (ah-TAJ ee-LAA ta-BEEB)' },
+          { word: 'دواء', translation: 'Medicine', pronunciation: 'dawāʾ (da-WAAʾ)' },
+          { word: 'حساسية', translation: 'Allergy', pronunciation: 'ḥasāsiyya (ha-SAA-see-ya)' },
+          { word: 'نزلة برد', translation: 'Cold/flu', pronunciation: 'nazlat bard (NAZ-lat bard)' },
+          { word: 'هل يوجد صيدلية؟', translation: 'Is there a pharmacy?', pronunciation: 'hal yūjad ṣaydaliyya? (hal YOO-jad say-da-LEE-ya)' }
+        ],
+        streetSlang: [
+          { word: 'تعبان', translation: 'I’m sick/tired (casual)', pronunciation: 'taʿbān (taʿ-BAAN)' },
+          { word: 'بطني بتوجعني', translation: 'My stomach hurts (Egyptian)', pronunciation: 'baṭnī bitwajjaʿnī (BAT-nee bit-wa-JAʿ-nee)' },
+          { word: 'سخونية', translation: 'Fever (Egyptian)', pronunciation: 'sukhoona (soo-KHOO-na)' },
+          { word: 'دوا', translation: 'Medicine (casual)', pronunciation: 'dawa (DA-wa)' },
+          { word: 'عيادة', translation: 'Clinic (casual)', pronunciation: 'ʿiyāda (ee-YAA-da)' },
+          { word: 'محتاج دكتور', translation: 'I need a doctor (casual)', pronunciation: 'miḥtāj duktūr (mih-TAJ dok-TOOR)' }
+        ],
+        culturalNotes: 'Pharmacies are common and often the first stop for minor issues. When in doubt, ask for a “طبيب” or visit a clinic.'
+      },
+      {
+        id: 20,
+        title: 'Technology',
+        level: 'intermediate',
+        premium: true,
+        words: [
+          { word: 'هاتف ذكي', translation: 'Smartphone', pronunciation: 'hātif dhakī (HAA-tif dha-KEE)' },
+          { word: 'شاحن', translation: 'Charger', pronunciation: 'shāḥin (SHAA-hin)' },
+          { word: 'تطبيق', translation: 'App', pronunciation: 'taṭbīq (tat-BEEQ)' },
+          { word: 'إنترنت', translation: 'Internet', pronunciation: 'intarnet (IN-ter-net)' },
+          { word: 'كلمة مرور', translation: 'Password', pronunciation: 'kalimat murūr (KA-lee-mat moo-ROOR)' },
+          { word: 'شبكة واي فاي', translation: 'Wi‑Fi network', pronunciation: 'shabakat wāy fāy (SHA-ba-kat WHY-FY)' },
+          { word: 'تنزيل', translation: 'Download', pronunciation: 'tanzīl (tan-ZEEL)' },
+          { word: 'تحديث', translation: 'Update', pronunciation: 'taḥdīth (tah-DEETH)' }
+        ],
+        streetSlang: [
+          { word: 'نت', translation: 'Internet (slang)', pronunciation: 'net (NET)' },
+          { word: 'واي فاي', translation: 'Wi‑Fi (slang)', pronunciation: 'wāy fāy (WHY-FY)' },
+          { word: 'اشحن', translation: 'Charge it (casual)', pronunciation: 'ishḥan (ISH-han)' },
+          { word: 'نزّل التطبيق', translation: 'Download the app (casual)', pronunciation: 'nazzil et-taṭbīq (NAZ-zil et-tat-BEEQ)' },
+          { word: 'باسورد', translation: 'Password (slang)', pronunciation: 'bāsword (BASS-word)' },
+          { word: 'شبكة', translation: 'Network (casual)', pronunciation: 'shabka (SHAB-ka)' }
+        ],
+        culturalNotes: 'Many tech terms are borrowed from English and pronounced with local accents. Asking for Wi‑Fi is common and usually understood.'
+      },
+      {
+        id: 21,
+        title: 'Business Situations',
+        level: 'advanced',
+        premium: true,
+        words: [
+          { word: 'اجتماع', translation: 'Meeting', pronunciation: 'ijtimaʿ (ij-ti-MAʿ)' },
+          { word: 'عقد', translation: 'Contract', pronunciation: 'ʿaqd (ʿAQD)' },
+          { word: 'ميزانية', translation: 'Budget', pronunciation: 'mīzāniyya (mee-ZAA-nee-ya)' },
+          { word: 'موعد نهائي', translation: 'Deadline', pronunciation: 'mawʿid nihāʾī (MAWʿ-id ni-HA-ee)' },
+          { word: 'عرض', translation: 'Proposal/offer', pronunciation: 'ʿarḍ (ʿARD)' },
+          { word: 'عميل', translation: 'Client', pronunciation: 'ʿamīl (ʿa-MEEL)' },
+          { word: 'أرباح', translation: 'Profits', pronunciation: 'arbāḥ (ar-BAAH)' },
+          { word: 'تفاوض', translation: 'Negotiation', pronunciation: 'tafāwuḍ (ta-FAA-wud)' }
+        ],
+        streetSlang: [
+          { word: 'ديل', translation: 'Deal (slang)', pronunciation: 'dīl (DEEL)' },
+          { word: 'بزنس', translation: 'Business (slang)', pronunciation: 'biznis (BIZ-nes)' },
+          { word: 'نشتغل على…', translation: 'Let’s work on… (casual)', pronunciation: 'nishtighil ʿala… (nish-TE-ghil A-la)' },
+          { word: 'ديدلاين', translation: 'Deadline (slang)', pronunciation: 'dīd-lāyn (DEED-line)' },
+          { word: 'فلوس', translation: 'Money (casual)', pronunciation: 'fulūs (foo-LOOS)' },
+          { word: 'تقرير سريع', translation: 'Quick report (casual)', pronunciation: 'taqrīr sarīʿ (taq-REER sa-REEʿ)' }
+        ],
+        culturalNotes: 'Formal greetings and respectful titles are important in business settings. Meetings may begin with small talk before getting to the main agenda.'
+      },
+      {
+        id: 22,
+        title: 'Cultural Context',
+        level: 'advanced',
+        premium: true,
+        words: [
+          { word: 'تقاليد', translation: 'Traditions', pronunciation: 'taqālīd (ta-QAA-leed)' },
+          { word: 'احترام', translation: 'Respect', pronunciation: 'iḥtirām (iḥ-ti-RAAM)' },
+          { word: 'ضيافة', translation: 'Hospitality', pronunciation: 'ḍiyāfa (dee-YAA-fa)' },
+          { word: 'عادات', translation: 'Customs', pronunciation: 'ʿādāt (AA-daat)' },
+          { word: 'مجتمع', translation: 'Society', pronunciation: 'mujtamaʿ (mooj-ta-MAʿ)' },
+          { word: 'قيم', translation: 'Values', pronunciation: 'qiyam (QI-yam)' },
+          { word: 'دين', translation: 'Religion/faith', pronunciation: 'dīn (DEEN)' },
+          { word: 'تاريخ', translation: 'History', pronunciation: 'tārīkh (taa-REEKH)' }
+        ],
+        streetSlang: [
+          { word: 'أصول', translation: 'Good manners (casual)', pronunciation: 'uṣūl (oo-SOOL)' },
+          { word: 'عيب', translation: 'That’s not done / shame', pronunciation: 'ʿayb (ʿAYB)' },
+          { word: 'حلال', translation: 'Permissible (common term)', pronunciation: 'ḥalāl (ha-LAAL)' },
+          { word: 'حرام', translation: 'Forbidden / not okay', pronunciation: 'ḥarām (ha-RAAM)' },
+          { word: 'أهل', translation: 'People / family (casual)', pronunciation: 'ahl (AHL)' },
+          { word: 'عادة', translation: 'Custom/habit (casual)', pronunciation: 'ʿāda (AA-da)' }
+        ],
+        culturalNotes: 'Hospitality and respect for elders are core values in many Arabic-speaking societies. Learning a few cultural phrases shows appreciation and builds trust.'
+      },
+      {
+        id: 23,
+        title: 'Idioms & Sayings',
+        level: 'advanced',
+        premium: true,
+        words: [
+          { word: 'يد واحدة لا تصفق', translation: 'One hand doesn’t clap (teamwork matters)', pronunciation: 'yad wāḥida lā tuṣaffiq (yad WAA-ḥi-da laa too-SAF-feq)' },
+          { word: 'الصبر مفتاح الفرج', translation: 'Patience is the key to relief', pronunciation: 'aṣ-ṣabr miftāḥ al-faraj (as-SABR mif-TAAH al-FA-raj)' },
+          { word: 'على قد لحافك مد رجليك', translation: 'Live within your means (stretch your legs as far as your blanket)', pronunciation: 'ʿala add lahāfak mudd rijlayk (A-la add la-HAA-fak mudd rij-LAYK)' },
+          { word: 'اللي فات مات', translation: 'What’s done is done', pronunciation: 'illī fāt māt (il-LEE FAAT MAAT)' },
+          { word: 'بين نارين', translation: 'Between two fires (between a rock and a hard place)', pronunciation: 'bayn nārayn (bayn NAA-rayn)' },
+          { word: 'كبر دماغك', translation: 'Don’t worry about it (Egyptian)', pronunciation: 'kabbir dimāghak (kab-BIR di-MAA-ghak)' },
+          { word: 'بعد خراب مالطة', translation: 'Too late (after the damage is done)', pronunciation: 'baʿd kharāb mālṭa (baʿd kha-RAAB MAAL-ta)' },
+          { word: 'اللي اختشوا ماتوا', translation: 'Those who were shy died (no shame left)', pronunciation: 'illī ikhtashū mātu (il-LEE ikh-ta-SHOO MAA-too)' }
+        ],
+        streetSlang: [
+          { word: 'على راحتك', translation: 'Take your time / no pressure', pronunciation: 'ʿala rāḥtak (A-la RAAḥ-tak)' },
+          { word: 'ولا يهمك', translation: 'No worries', pronunciation: 'walā yihimmak (wa-LAA yi-HIM-mak)' },
+          { word: 'فوق راسي', translation: 'With pleasure / at your service', pronunciation: 'fōʾ rāsī (fōʾ RAA-see)' },
+          { word: 'خلّها على الله', translation: 'Leave it to God / it will work out', pronunciation: 'khallīhā ʿala allāh (khal-LEE-haa a-la ALL-ah)' },
+          { word: 'على عينك', translation: 'Right away / for you', pronunciation: 'ʿala ʿaynak (A-la ʿAY-nak)' },
+          { word: 'كلام كبير', translation: 'Big talk / strong words', pronunciation: 'kalām kabīr (ka-LAAM ka-BEER)' }
+        ],
+        culturalNotes: 'Sayings are widely used in conversation and often carry cultural wisdom. Even if you don’t use them, understanding them helps you follow everyday speech.'
+      },
+      {
+        id: 24,
+        title: 'Complex Grammar & Connectors',
+        level: 'advanced',
+        premium: true,
+        words: [
+          { word: 'لو كان عندي وقت، لذهبت…', translation: 'If I had time, I would go…', pronunciation: 'law kāna ʿindī waqt, la-dhahabtu… (law KAA-na IN-dee wakt la-dha-HAB-too)' },
+          { word: 'من المهم أن…', translation: 'It’s important that…', pronunciation: 'min al-muhimm an… (min al moo-HIMM an)' },
+          { word: 'بالرغم من…', translation: 'Despite…', pronunciation: 'biraghm min… (bi-RAGHM min)' },
+          { word: 'سواء… أو…', translation: 'Whether… or…', pronunciation: 'sawāʾ… aw… (sa-WAAʾ … ow)' },
+          { word: 'لكي…', translation: 'In order to…', pronunciation: 'likay… (li-KAY)' },
+          { word: 'إذا حدث ذلك، فسوف…', translation: 'If that happens, then…', pronunciation: 'idhā ḥadatha dhālik, fa-sawfa… (ee-DHAA HA-da-tha DAA-lik fa-SAW-fa)' },
+          { word: 'ليس فقط… بل أيضاً…', translation: 'Not only… but also…', pronunciation: 'laysa faqaṭ… bal ayḍan… (LAY-sa fa-QAT bal AY-dan)' },
+          { word: 'ما زلت…', translation: 'I still…', pronunciation: 'mā zilt… (maa ZILT)' }
+        ],
+        streetSlang: [
+          { word: 'لو…', translation: 'If… (casual)', pronunciation: 'law… (LAW)' },
+          { word: 'يعني', translation: 'I mean / like', pronunciation: 'yaʿnī (YAA-nee)' },
+          { word: 'بصراحة', translation: 'Honestly', pronunciation: 'biṣarāḥa (bi-sa-RAA-ḥa)' },
+          { word: 'على فكرة', translation: 'By the way', pronunciation: 'ʿala fikra (A-la FIK-ra)' },
+          { word: 'مع إنه…', translation: 'Even though… (Levantine)', pronunciation: 'maʿ inno… (maʿ IN-no)' },
+          { word: 'بس', translation: 'But (casual)', pronunciation: 'bass (BASS)' }
+        ],
+        culturalNotes: 'Formal connectors help you sound clear and educated. In daily speech, many people switch to shorter phrases like “يعني” and “بس”.'
+      },
+      {
+        id: 25,
+        title: 'Debates & Opinions',
+        level: 'advanced',
+        premium: true,
+        words: [
+          { word: 'في رأيي…', translation: 'In my opinion…', pronunciation: 'fī raʾyī… (fee RAH-yee)' },
+          { word: 'أوافق / لا أوافق', translation: 'I agree / I disagree', pronunciation: 'uwāfiq / lā uwāfiq (oo-WAA-feq / laa oo-WAA-feq)' },
+          { word: 'أعتقد أن…', translation: 'I believe that…', pronunciation: 'aʿtaqid an… (aʿ-ta-QID an)' },
+          { word: 'هذا منطقي', translation: 'This is logical', pronunciation: 'hādhā manṭiqī (HAA-dha MAN-tee-kee)' },
+          { word: 'هذا غير مقنع', translation: 'This is unconvincing', pronunciation: 'hādhā ghayr muqniʿ (HAA-dha GHAIR moo-KNEEʿ)' },
+          { word: 'من جهة… ومن جهة أخرى…', translation: 'On the one hand… on the other hand…', pronunciation: 'min jihah… wa min jihah ukhrā… (min JEE-ha wa min JEE-ha OOKH-raa)' },
+          { word: 'الدليل', translation: 'Evidence', pronunciation: 'ad-dalīl (ad-da-LEEL)' },
+          { word: 'لنفترض أن…', translation: 'Let’s suppose that…', pronunciation: 'linafṭariḍ an… (li-naf-TA-rid an)' }
+        ],
+        streetSlang: [
+          { word: 'أنا شايف', translation: 'I think (Egyptian)', pronunciation: 'anā shāyif (a-NAA SHAA-yif)' },
+          { word: 'مو مقتنع', translation: 'Not convinced (Gulf/Levantine)', pronunciation: 'mū muqtaṇiʿ (moo mook-ta-NEEʿ)' },
+          { word: 'بالعكس', translation: 'On the contrary', pronunciation: 'bil-ʿaks (bil-ʿAKS)' },
+          { word: 'يعني', translation: 'I mean (filler)', pronunciation: 'yaʿnī (YAA-nee)' },
+          { word: 'مش منطقي', translation: 'Not logical (casual)', pronunciation: 'mish manṭiqī (mish MAN-tee-kee)' },
+          { word: 'خلّينا نتفق', translation: 'Let’s agree (casual)', pronunciation: 'khallīna nittafiq (khal-LEE-na nit-ta-FIQ)' }
+        ],
+        culturalNotes: 'Disagreement is usually softened with polite language. Phrases like “في رأيي” help keep the tone respectful.'
+      },
+      {
+        id: 26,
+        title: 'Storytelling',
+        level: 'advanced',
+        premium: true,
+        words: [
+          { word: 'في البداية…', translation: 'In the beginning…', pronunciation: 'fī al-bidāya… (fee al-bi-DAA-ya)' },
+          { word: 'ثم…', translation: 'Then…', pronunciation: 'thumma… (THUM-ma)' },
+          { word: 'فجأة…', translation: 'Suddenly…', pronunciation: 'fajaʾatan… (fa-JAʾ-a-tan)' },
+          { word: 'بعدها…', translation: 'After that…', pronunciation: 'baʿdahā… (baʿ-DA-ha)' },
+          { word: 'في النهاية…', translation: 'In the end…', pronunciation: 'fī an-nihāya… (fee an-ni-HA-ya)' },
+          { word: 'قصة', translation: 'Story', pronunciation: 'qiṣṣa (QIS-sa)' },
+          { word: 'بطل', translation: 'Hero', pronunciation: 'baṭal (BA-tal)' },
+          { word: 'حدث', translation: 'Event', pronunciation: 'ḥadath (HA-dath)' }
+        ],
+        streetSlang: [
+          { word: 'وبعدين', translation: 'And then… (casual)', pronunciation: 'w baʿdein (w baʿ-DEEN)' },
+          { word: 'مرة', translation: 'Once / one time (casual)', pronunciation: 'marra (MAR-ra)' },
+          { word: 'فجأة كده', translation: 'All of a sudden (Egyptian)', pronunciation: 'fagaʾa keda (fa-GAʾ-a KE-da)' },
+          { word: 'آخر حاجة', translation: 'The last thing (casual)', pronunciation: 'ākhir ḥāga (AA-khir HAA-ga)' },
+          { word: 'المهم', translation: 'Anyway / the point is', pronunciation: 'el-muhimm (el-moo-HIMM)' },
+          { word: 'حكاية', translation: 'Story (colloquial)', pronunciation: 'ḥikāya (hi-KAA-ya)' }
+        ],
+        culturalNotes: 'Storytelling is a beloved part of conversation. Using connectors like “ثم” and “فجأة” helps make your story easy to follow.'
+      },
+      {
+        id: 27,
+        title: 'Formal vs Informal Speech',
+        level: 'advanced',
+        premium: true,
+        words: [
+          { word: 'حضرتك', translation: 'Formal “you” (Egyptian)', pronunciation: 'ḥaḍratak (ḥaḌ-ra-tak)' },
+          { word: 'سيادتك', translation: 'Your excellency / very formal “you”', pronunciation: 'siyādatak (see-YAA-da-tak)' },
+          { word: 'من فضلك', translation: 'Please (formal)', pronunciation: 'min faḍlak (min FAD-lak)' },
+          { word: 'لو سمحت', translation: 'Please / excuse me (polite)', pronunciation: 'law samaḥt (low sa-MAHT)' },
+          { word: 'حضرتكم', translation: 'Formal “you” (plural)', pronunciation: 'ḥaḍratkum (ḥaḌ-rat-koom)' },
+          { word: 'يا أستاذ/يا أستاذة', translation: 'Mr./Ms. (polite address)', pronunciation: 'yā ustādh / yā ustādha (yaa oos-TAADH / oos-TAA-dha)' },
+          { word: 'يا صديقي', translation: 'My friend (informal)', pronunciation: 'yā ṣadīqī (yaa sa-DEE-kee)' },
+          { word: 'يا جماعة', translation: 'Hey everyone (informal)', pronunciation: 'yā jamāʿa (yaa ja-MAAʿ-a)' }
+        ],
+        streetSlang: [
+          { word: 'إنت', translation: 'You (informal, singular)', pronunciation: 'inta (IN-ta)' },
+          { word: 'إنتو', translation: 'You (informal, plural)', pronunciation: 'intu (IN-too)' },
+          { word: 'يا زلمة', translation: 'Hey man (Levantine)', pronunciation: 'yā zalame (yaa ZA-la-meh)' },
+          { word: 'يا باشا', translation: 'Boss / sir (Egyptian)', pronunciation: 'yā bāsha (yaa BAA-sha)' },
+          { word: 'يا حبيبي', translation: 'My dear (informal)', pronunciation: 'yā ḥabībī (yaa ha-BEE-bee)' },
+          { word: 'يا أختي', translation: 'Sister (informal)', pronunciation: 'yā ukhtī (yaa OOKH-tee)' }
+        ],
+        culturalNotes: 'Levels of formality vary by region. Using titles like “يا أستاذ” shows respect, while casual terms like “يا حبيبي” signal warmth once you know someone.'
       }
     ]
   },
