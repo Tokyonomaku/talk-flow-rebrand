@@ -7,7 +7,7 @@ import './SpanishLanding.css';
  */
 export default function SpanishLanding() {
   // Keep a single, clear path: language selection in /select
-  const startUrl = useMemo(() => '/select?language=korean', []);
+  const startUrl = useMemo(() => '/select?language=french', []);
   const [step, setStep] = useState(1); // 1..4
 
   const handleStart = () => {
@@ -88,11 +88,6 @@ export default function SpanishLanding() {
               travel phrase.
             </div>
           )}
-
-          <div className="ml-phraseBox">
-            <div className="ml-spanish">화장실이 어디예요?</div>
-            <div className="ml-phonetic">(hwa-jang-shi-ri eo-di-ye-yo?)</div>
-          </div>
 
           {/* Step detail (also swaps) */}
           {step === 1 && (
