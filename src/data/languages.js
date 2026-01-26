@@ -1882,6 +1882,7 @@ export const languages = {
     name: 'Portuguese',
     flag: '🇵🇹',
     code: 'pt',
+    lessonCount: 27,
     lessons: [
       {
         id: 1,
@@ -2373,6 +2374,102 @@ export const languages = {
           { word: 'BTW', translation: 'By the way', pronunciation: 'bee-tee-double-u', usage: 'Anyone, casual' },
           { word: 'IDK', translation: 'I don\'t know', pronunciation: 'eye-dee-kay', usage: 'Anyone, casual' },
           { word: 'TBH', translation: 'To be honest', pronunciation: 'tee-bee-aitch', usage: 'Anyone, casual' }
+        ]
+      },
+      {
+        id: 24,
+        title: 'Business Conversations',
+        level: 'advanced',
+        premium: true,
+        words: [
+          { word: 'Prazer em conhecê-lo(a) na reunião de hoje.', translation: 'Nice to meet you at today’s meeting.', pronunciation: 'prah-ZEHR eng koh-nyay-SEE-loh/ah nah heh-oo-nee-AH-o deh OH-zhee' },
+          { word: 'Gostaria de apresentar o status do projeto.', translation: 'I’d like to present the project status.', pronunciation: 'gohs-tah-REE-ah jee ah-preh-zen-TAR oo STAH-toos doo pro-ZHEH-toh' },
+          { word: 'Estamos alinhando o cronograma e as entregas.', translation: 'We are aligning the schedule and deliverables.', pronunciation: 'ehs-TAH-moos ah-leen-YAHN-doo oo kroh-noh-GRAH-ma ee ahs en-TREH-gahs' },
+          { word: 'Tenho uma proposta para a próxima etapa.', translation: 'I have a proposal for the next phase.', pronunciation: 'TEN-yoo OO-mah pro-POHS-tah pah-rah ah PROH-see-mah eh-TAH-pah' },
+          { word: 'Você poderia confirmar por e-mail?', translation: 'Could you confirm by email?', pronunciation: 'voh-SEH poh-jee-AH kon-feer-MAR por ee-MAYL' },
+          { word: 'Segue anexo o documento.', translation: 'Attached is the document.', pronunciation: 'SEH-ghee ah-NEH-ksoo oo doh-koo-MEN-toh' },
+          { word: 'Qual horário funciona melhor para você?', translation: 'What time works best for you?', pronunciation: 'kwahl oh-RAH-ree-oh foon-SEE-oh-nah meh-LYOR pah-rah voh-SEH' },
+          { word: 'Podemos marcar uma reunião na próxima semana?', translation: 'Can we schedule a meeting next week?', pronunciation: 'poh-DEH-moos mar-KAR OO-mah heh-oo-nee-AH-o nah PROH-see-mah seh-MAH-nah' }
+        ],
+        streetSlang: [
+          { word: 'Vamos alinhar esse projeto', translation: 'Let’s align on this project', pronunciation: 'VAH-moos ah-leen-YAR EH-see pro-ZHEH-toh' },
+          { word: 'Me manda por e-mail, por favor', translation: 'Send it to me by email, please', pronunciation: 'mee MAHN-dah por ee-MAYL por fah-VOR' },
+          { word: 'A gente está no prazo', translation: 'We’re on schedule (casual)', pronunciation: 'ah ZHEN-chee es-TAH noo PRAH-zoh' },
+          { word: 'Posso te ligar rapidinho?', translation: 'Can I give you a quick call?', pronunciation: 'POH-soo chee lee-GAR hah-pee-DEEN-yoo' },
+          { word: 'Vamos marcar um call', translation: 'Let’s schedule a call', pronunciation: 'VAH-moos mar-KAR oong kohl' },
+          { word: 'Te atualizo até amanhã', translation: 'I’ll update you by tomorrow', pronunciation: 'chee ah-too-ah-LEE-zoo ah-TEH ah-mah-NYAH' }
+        ]
+      },
+      {
+        id: 25,
+        title: 'Common Portuguese Idioms',
+        level: 'advanced',
+        premium: true,
+        words: [
+          { word: 'Chutar o balde', translation: 'To lose patience / give up (lit. “kick the bucket”; BR common. PT-PT: “perder a cabeça” is more common).', pronunciation: 'shoo-TAR oo BAWL-dee' },
+          { word: 'Quebrar um galho', translation: 'To do someone a favor / help out (lit. “break a branch”; PT-PT often says “dar uma mão”).', pronunciation: 'keh-BRAHR oong GAL-yoh' },
+          { word: 'Pagar o pato', translation: 'To take the blame (lit. “pay the duck”; used when someone is unfairly blamed).', pronunciation: 'pah-GAR oo PAH-toh' },
+          { word: 'Ficar de molho', translation: 'To take time off / rest (lit. “stay in sauce”; often after being sick).', pronunciation: 'fee-KAR jee MOHL-yoh' },
+          { word: 'Encher linguiça', translation: 'To pad/fill with nonsense (lit. “stuff sausage”; used for extra text).', pronunciation: 'en-SHER leen-GWEE-sah' },
+          { word: 'Dar com os burros n\'água', translation: 'To fail / hit a dead end (lit. “meet the donkeys in water”).', pronunciation: 'dar kohm ooz BOO-hoos nah-GWAH' },
+          { word: 'Tirar o cavalo da chuva', translation: 'To give up on an expectation (lit. “take the horse out of the rain”).', pronunciation: 'chee-RAR oo kah-VAH-loh dah SHOO-vah' },
+          { word: 'Estar com a pulga atrás da orelha', translation: 'To be suspicious (lit. “a flea behind the ear”; used when something feels off).', pronunciation: 'ehs-TAR kohm ah POOL-gah ah-TRAZ dah oh-REH-lyah' }
+        ],
+        streetSlang: [
+          { word: 'De boa', translation: 'All good / no worries', pronunciation: 'jee BOH-ah' },
+          { word: 'Tô de boa', translation: 'I’m fine / relaxed', pronunciation: 'toh jee BOH-ah' },
+          { word: 'Sem estresse', translation: 'No stress', pronunciation: 'seng ees-TREH-see' },
+          { word: 'Na real', translation: 'To be honest / actually', pronunciation: 'nah heh-AWL' },
+          { word: 'Fazer um corre', translation: 'To run an errand / hustle (slang)', pronunciation: 'fah-ZER oong KOH-hee' },
+          { word: 'Que perrengue', translation: 'What a hassle', pronunciation: 'keh peh-REN-ghee' }
+        ]
+      },
+      {
+        id: 26,
+        title: 'Opinions and Debates',
+        level: 'advanced',
+        premium: true,
+        words: [
+          { word: 'Na minha opinião…', translation: 'In my opinion…', pronunciation: 'nah MEEN-yah oh-pee-nee-AW' },
+          { word: 'Concordo em parte.', translation: 'I agree in part.', pronunciation: 'kohn-KOR-doh eng PAR-chee' },
+          { word: 'Respeitosamente, discordo.', translation: 'Respectfully, I disagree.', pronunciation: 'hes-pey-toh-zah-MEN-chee jees-KOR-doh' },
+          { word: 'Não tenho certeza disso.', translation: 'I’m not sure about that.', pronunciation: 'now TEN-yoo ser-TEH-zah DEE-soo' },
+          { word: 'Qual é o seu ponto de vista?', translation: 'What is your point of view?', pronunciation: 'kwahl eh oo SEH-oo POHN-toh jee VEES-tah' },
+          { word: 'Esse argumento é forte.', translation: 'That argument is strong.', pronunciation: 'EH-see ar-goo-MEN-too eh FOR-chee' },
+          { word: 'Não vejo evidências suficientes.', translation: 'I don’t see enough evidence.', pronunciation: 'now VAY-zhoo eh-vee-DEN-see-as soo-fee-SHEN-tees' },
+          { word: 'Vamos considerar os dois lados.', translation: 'Let’s consider both sides.', pronunciation: 'VAH-moos kon-see-jeh-RAR ooz doyz LAH-doos' }
+        ],
+        streetSlang: [
+          { word: 'Concordo total', translation: 'Totally agree', pronunciation: 'kohn-KOR-doh toh-TAWL' },
+          { word: 'Tenho minhas dúvidas', translation: 'I have my doubts', pronunciation: 'TEN-yoo MEEN-yahs DOO-vee-dahs' },
+          { word: 'Pra mim, faz sentido', translation: 'For me, it makes sense', pronunciation: 'prah MEEM faz sen-TEE-doh' },
+          { word: 'Não tô convencido', translation: 'I’m not convinced', pronunciation: 'now toh kon-ven-SEE-doh' },
+          { word: 'Vamos debater isso', translation: 'Let’s debate this', pronunciation: 'VAH-moos jee-bah-TER EE-soo' },
+          { word: 'Faz sentido, mas…', translation: 'It makes sense, but…', pronunciation: 'faz sen-TEE-doh mahs' }
+        ]
+      },
+      {
+        id: 27,
+        title: 'Telling Stories in Past Tense',
+        level: 'advanced',
+        premium: true,
+        words: [
+          { word: 'Ontem acordei cedo.', translation: 'Yesterday I woke up early.', pronunciation: 'ohn-TEN ah-kor-DAY SEH-doh' },
+          { word: 'Então fui ao trabalho.', translation: 'Then I went to work.', pronunciation: 'en-TAW fwee ow trah-BAH-lyoh' },
+          { word: 'Depois encontrei um amigo.', translation: 'After that I met a friend.', pronunciation: 'deh-POYZ en-kohn-TRAY oong ah-MEE-goh' },
+          { word: 'Enquanto isso, começou a chover.', translation: 'Meanwhile, it started to rain.', pronunciation: 'en-KWAN-too EE-soh koh-meh-SOH ah shoo-VER' },
+          { word: 'De repente, algo inesperado aconteceu.', translation: 'Suddenly, something unexpected happened.', pronunciation: 'jee heh-PEN-chee AHL-goh ee-nes-peh-RAH-doh ah-kohn-teh-SEW' },
+          { word: 'Mais tarde, voltamos para casa.', translation: 'Later, we returned home.', pronunciation: 'mys TAR-jee vol-TAH-moos pah-rah KAH-zah' },
+          { word: 'No fim, tudo deu certo.', translation: 'In the end, everything worked out.', pronunciation: 'noh feeng TOO-doh deh-W SEHR-too' },
+          { word: 'Fiquei muito feliz com isso.', translation: 'I was very happy about that.', pronunciation: 'fee-KAY MOO-ee-too feh-LEEZ kohm EE-soo' }
+        ],
+        streetSlang: [
+          { word: 'E aí, depois…', translation: 'So, then… (story connector)', pronunciation: 'ee ah-EE deh-POYZ' },
+          { word: 'Do nada…', translation: 'Out of nowhere…', pronunciation: 'doo NAH-dah' },
+          { word: 'No final das contas', translation: 'At the end of the day', pronunciation: 'noh fee-NAWL das KOHN-tahs' },
+          { word: 'Foi bem doido', translation: 'It was pretty wild', pronunciation: 'foy bẽy DOY-doh' },
+          { word: 'No fim das contas, deu certo', translation: 'In the end, it worked out', pronunciation: 'noh feeng das KOHN-tahs deh-W SEHR-too' },
+          { word: 'Longa história curta', translation: 'Long story short', pronunciation: 'LOHN-gah ees-TOH-ree-ah KOOR-tah' }
         ]
       }
     ]
