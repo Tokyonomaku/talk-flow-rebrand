@@ -1289,6 +1289,7 @@ export const languages = {
     name: 'German',
     flag: '🇩🇪',
     code: 'de',
+    lessonCount: 27,
     lessons: [
       {
         id: 1,
@@ -1776,6 +1777,102 @@ export const languages = {
           { word: 'BTW', translation: 'By the way', pronunciation: 'bee-tee-double-u', usage: 'Anyone, casual' },
           { word: 'IDK', translation: 'I don\'t know', pronunciation: 'eye-dee-kay', usage: 'Anyone, casual' },
           { word: 'TBH', translation: 'To be honest', pronunciation: 'tee-bee-aitch', usage: 'Anyone, casual' }
+        ]
+      },
+      {
+        id: 24,
+        title: 'Business Conversations',
+        level: 'advanced',
+        premium: true,
+        words: [
+          { word: 'Guten Tag, ich freue mich, Sie kennenzulernen.', translation: 'Good day, I am pleased to meet you. (meeting introduction)', pronunciation: 'GOO-ten tahk, ikh FROY-eh mikh, zee KEN-en-tsoo-LEHR-nen' },
+          { word: 'Lassen Sie uns das Projekt besprechen.', translation: 'Let’s discuss the project.', pronunciation: 'LAH-sen zee oons dahs proh-YEKT beh-SHPRAY-khen' },
+          { word: 'Wir planen den Zeitplan für das Projekt.', translation: 'We are planning the timeline for the project.', pronunciation: 'veer PLAH-nen den TSYTE-plahn fyoor dahs proh-YEKT' },
+          { word: 'Ich habe einen Vorschlag für die nächste Phase.', translation: 'I have a proposal for the next phase.', pronunciation: 'ikh HAH-beh EYE-nen FOR-shlahk fyoor dee NEK-steh FAH-zeh' },
+          { word: 'Können Sie mir das per E-Mail bestätigen?', translation: 'Can you confirm that by email?', pronunciation: 'KER-nen zee meer dahs pehr EE-mile beh-SHTAY-ti-gen' },
+          { word: 'Ich schicke Ihnen die Unterlagen heute.', translation: 'I will send you the documents today.', pronunciation: 'ikh SHIK-keh EE-nen dee OON-ter-lah-gen HOY-teh' },
+          { word: 'Wann passt Ihnen ein Termin?', translation: 'When does a meeting time suit you?', pronunciation: 'vahn pahst EE-nen ine ter-MEEN' },
+          { word: 'Wir sollten die nächsten Schritte festlegen.', translation: 'We should set the next steps.', pronunciation: 'veer ZOL-ten dee NEK-sten SHRIT-teh FEST-lay-gen' }
+        ],
+        streetSlang: [
+          { word: 'Kurzes Update', translation: 'Quick update (casual business)', pronunciation: 'KOOR-tses UP-dayt' },
+          { word: 'Das passt', translation: 'That works / sounds good', pronunciation: 'dahs pahst' },
+          { word: 'Ich bin dabei', translation: 'I’m in / I’m on board', pronunciation: 'ikh bin dah-BY' },
+          { word: 'Lass uns kurz sprechen', translation: 'Let’s talk briefly', pronunciation: 'lahs oons koorts SHPREKH-en' },
+          { word: 'Schick mir kurz die Infos', translation: 'Send me the info quickly', pronunciation: 'shik meer koorts dee IN-fohs' },
+          { word: 'Wir sind im Zeitplan', translation: 'We’re on schedule', pronunciation: 'veer zint im TSYTE-plahn' }
+        ]
+      },
+      {
+        id: 25,
+        title: 'Common German Idioms',
+        level: 'advanced',
+        premium: true,
+        words: [
+          { word: 'Das ist nicht mein Bier.', translation: 'That’s not my problem (lit. “not my beer”; use when it’s not your responsibility).', pronunciation: 'dahs ist nikht mine beer' },
+          { word: 'Ich verstehe nur Bahnhof.', translation: 'I don’t understand a thing (use when you’re confused).', pronunciation: 'ikh fer-SHTAY-eh noor BAHN-hohf' },
+          { word: 'Da liegt der Hund begraben.', translation: 'That’s the real issue (use to point to the core problem).', pronunciation: 'dah leegt der hoont beh-GRAH-ben' },
+          { word: 'Alles in Butter.', translation: 'Everything is fine (reassuring, “all in butter”).', pronunciation: 'AH-les in BOO-ter' },
+          { word: 'Tomaten auf den Augen haben.', translation: 'To be oblivious (lit. “have tomatoes on your eyes”).', pronunciation: 'toh-MAH-ten owf den OW-gen HAH-ben' },
+          { word: 'Zwei Fliegen mit einer Klappe schlagen.', translation: 'To kill two birds with one stone (use when one action solves two problems).', pronunciation: 'tsvy FLEE-gen mit EYE-ner KLAH-peh SHLAH-gen' },
+          { word: 'Ins kalte Wasser springen.', translation: 'To jump in at the deep end (start without preparation).', pronunciation: 'ins KAHL-teh VAH-ser SHPRING-en' },
+          { word: 'Den Nagel auf den Kopf treffen.', translation: 'To hit the nail on the head (exactly right).', pronunciation: 'den NAH-gel owf den kopf TREF-fen' }
+        ],
+        streetSlang: [
+          { word: 'Kein Ding', translation: 'No big deal', pronunciation: 'kine ding' },
+          { word: 'Alles easy', translation: 'Everything’s easy / no stress', pronunciation: 'AH-les EE-zee' },
+          { word: 'Jetzt mal ehrlich', translation: 'Let’s be honest', pronunciation: 'yetzt mahl EHR-likh' },
+          { word: 'So ist das', translation: 'That’s how it is', pronunciation: 'zoh ist dahs' },
+          { word: 'Kopf hoch', translation: 'Chin up', pronunciation: 'kopf hoch' },
+          { word: 'Passt schon', translation: 'It’s fine / works out', pronunciation: 'pahst shohn' }
+        ]
+      },
+      {
+        id: 26,
+        title: 'Opinions and Debates',
+        level: 'advanced',
+        premium: true,
+        words: [
+          { word: 'Meiner Meinung nach…', translation: 'In my opinion…', pronunciation: 'MY-ner MY-noong nahkh' },
+          { word: 'Ich stimme dir zu.', translation: 'I agree with you.', pronunciation: 'ikh SHTIM-meh deer tsoo' },
+          { word: 'Ich sehe das anders.', translation: 'I see it differently.', pronunciation: 'ikh ZAY-eh dahs AHN-ders' },
+          { word: 'Ich bin nicht ganz überzeugt.', translation: 'I’m not fully convinced.', pronunciation: 'ikh bin nikht gahnts oer-tsOYKT' },
+          { word: 'Was hältst du davon?', translation: 'What do you think about that?', pronunciation: 'vahs HELST doo dah-FOHN' },
+          { word: 'Meiner Ansicht nach ist das wichtig.', translation: 'In my view, that is important.', pronunciation: 'MY-ner AN-zikht nahkh ist dahs VIKH-tikh' },
+          { word: 'Lass uns die Vor- und Nachteile abwägen.', translation: 'Let’s weigh the pros and cons.', pronunciation: 'lahs oons dee FOR- oont NAKH-tye-leh AHP-vay-gen' },
+          { word: 'Dafür gibt es gute Argumente.', translation: 'There are good arguments for that.', pronunciation: 'dah-FYOOR gilt es GOO-teh ar-goo-MEN-teh' }
+        ],
+        streetSlang: [
+          { word: 'Seh ich genauso', translation: 'I see it the same way', pronunciation: 'zay ikh gen-OW-zoh' },
+          { word: 'Da bin ich anderer Meinung', translation: 'I disagree', pronunciation: 'dah bin ikh AN-der-er MY-noong' },
+          { word: 'Ehrlich gesagt', translation: 'Honestly speaking', pronunciation: 'EHR-likh guh-ZAHKT' },
+          { word: 'Das überzeugt mich nicht', translation: 'That doesn’t convince me', pronunciation: 'dahs oer-TSOYKT mikh nikht' },
+          { word: 'Klingt fair', translation: 'Sounds fair', pronunciation: 'klingt fair' },
+          { word: 'Lass uns Klartext reden', translation: 'Let’s talk straight', pronunciation: 'lahs oons KLAHR-tekst RAY-den' }
+        ]
+      },
+      {
+        id: 27,
+        title: 'Telling Stories in Past Tense',
+        level: 'advanced',
+        premium: true,
+        words: [
+          { word: 'Gestern bin ich früh aufgestanden.', translation: 'Yesterday I got up early.', pronunciation: 'GES-tern bin ikh froo OWF-geh-shtan-den' },
+          { word: 'Dann bin ich zur Arbeit gefahren.', translation: 'Then I went to work.', pronunciation: 'dahn bin ikh tsoor AR-bite geh-FAH-ren' },
+          { word: 'Danach habe ich einen Freund getroffen.', translation: 'After that I met a friend.', pronunciation: 'dah-NAHKH HAH-beh ikh EYE-nen froint geh-TROF-fen' },
+          { word: 'Währenddessen hat es geregnet.', translation: 'Meanwhile it rained.', pronunciation: 'VAY-rend-dessen hat es geh-REG-net' },
+          { word: 'Plötzlich ist etwas Unerwartetes passiert.', translation: 'Suddenly something unexpected happened.', pronunciation: 'PLER-tslikh ist ET-vas OON-er-VAR-teh-tes pah-SEE-ert' },
+          { word: 'Schließlich bin ich nach Hause gegangen.', translation: 'Finally I went home.', pronunciation: 'SHLEES-likh bin ikh nahkh HOW-zeh geh-GAHN-gen' },
+          { word: 'Am Ende war alles in Ordnung.', translation: 'In the end, everything was fine.', pronunciation: 'ahm EN-deh vahr AH-les in ORT-noong' },
+          { word: 'Ich habe mich sehr gefreut.', translation: 'I was very happy about it.', pronunciation: 'ikh HAH-beh mikh zayr geh-FROYT' }
+        ],
+        streetSlang: [
+          { word: 'Und dann…', translation: 'And then… (story connector)', pronunciation: 'oont dahn' },
+          { word: 'Auf einmal…', translation: 'All of a sudden…', pronunciation: 'owf EYE-mahl' },
+          { word: 'Zum Schluss', translation: 'In the end / finally', pronunciation: 'tsum shloos' },
+          { word: 'Echt krass', translation: 'Really crazy', pronunciation: 'ekht krahs' },
+          { word: 'War richtig cool', translation: 'It was really cool', pronunciation: 'vahr RIKH-tikh kool' },
+          { word: 'Lange Rede, kurzer Sinn', translation: 'Long story short', pronunciation: 'LAHNG-eh RAY-deh, KOOR-tser zin' }
         ]
       }
     ]
