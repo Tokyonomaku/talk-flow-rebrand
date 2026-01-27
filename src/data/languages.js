@@ -3460,6 +3460,7 @@ export const languages = {
       {
         id: 24,
         title: 'Business Conversations',
+        level: 'advanced',
         premium: true,
         words: [
           { word: '很高兴在会议上认识您。', translation: 'Pleased to meet you at the meeting. (formal greeting)', pronunciation: 'Hěn gāoxìng zài huìyì shàng rènshi nín.', romanji: 'Hěn gāoxìng zài huìyì shàng rènshi nín.' },
@@ -3483,6 +3484,7 @@ export const languages = {
       {
         id: 25,
         title: 'Common Chinese Idioms (成语)',
+        level: 'advanced',
         premium: true,
         words: [
           { word: '对牛弹琴', translation: 'Literal: “play the lute to a cow”; Meaning: speak to someone who doesn’t understand; Use when your audience can’t follow.', pronunciation: 'Duìniú tánqín', romanji: 'Duìniú tánqín' },
@@ -3506,6 +3508,7 @@ export const languages = {
       {
         id: 26,
         title: 'Opinions and Debates',
+        level: 'advanced',
         premium: true,
         words: [
           { word: '我认为这个观点很合理。', translation: 'I think this viewpoint is reasonable.', pronunciation: 'Wǒ rènwéi zhège guāndiǎn hěn hélǐ.', romanji: 'Wǒ rènwéi zhège guāndiǎn hěn hélǐ.' },
@@ -3529,6 +3532,7 @@ export const languages = {
       {
         id: 27,
         title: 'Telling Stories in Past Tense',
+        level: 'advanced',
         premium: true,
         words: [
           { word: '昨天我很早就起床了。', translation: 'Yesterday I got up early.', pronunciation: 'Zuótiān wǒ hěn zǎo jiù qǐchuáng le.', romanji: 'Zuótiān wǒ hěn zǎo jiù qǐchuáng le.' },
