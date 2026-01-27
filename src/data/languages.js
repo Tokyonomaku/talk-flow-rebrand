@@ -2970,6 +2970,7 @@ export const languages = {
     name: 'Chinese',
     flag: '🇨🇳',
     code: 'zh',
+    lessonCount: 27,
     lessons: [
       {
         id: 1,
@@ -3454,6 +3455,98 @@ export const languages = {
           { word: 'BTW', translation: 'By the way', pronunciation: 'bee-tee-double-u', usage: 'Anyone, casual' },
           { word: 'IDK', translation: 'I don\'t know', pronunciation: 'eye-dee-kay', usage: 'Anyone, casual' },
           { word: 'TBH', translation: 'To be honest', pronunciation: 'tee-bee-aitch', usage: 'Anyone, casual' }
+        ]
+      },
+      {
+        id: 24,
+        title: 'Business Conversations',
+        premium: true,
+        words: [
+          { word: '很高兴在会议上认识您。', translation: 'Pleased to meet you at the meeting. (formal greeting)', pronunciation: 'Hěn gāoxìng zài huìyì shàng rènshi nín.', romanji: 'Hěn gāoxìng zài huìyì shàng rènshi nín.' },
+          { word: '我们想讨论这个项目的进展。', translation: 'We want to discuss the progress of this project.', pronunciation: 'Wǒmen xiǎng tǎolùn zhège xiàngmù de jìnzhǎn.', romanji: 'Wǒmen xiǎng tǎolùn zhège xiàngmù de jìnzhǎn.' },
+          { word: '这是我们对下一阶段的提案。', translation: 'This is our proposal for the next phase.', pronunciation: 'Zhè shì wǒmen duì xià yī jiēduàn de tí’àn.', romanji: 'Zhè shì wǒmen duì xià yī jiēduàn de tí’àn.' },
+          { word: '我会通过邮件发送详细资料。', translation: 'I will send the details by email.', pronunciation: 'Wǒ huì tōngguò yóujiàn fāsòng xiángxì zīliào.', romanji: 'Wǒ huì tōngguò yóujiàn fāsòng xiángxì zīliào.' },
+          { word: '您方便下周安排一次会议吗？', translation: 'Would it be convenient to schedule a meeting next week?', pronunciation: 'Nín fāngbiàn xià zhōu ānpái yí cì huìyì ma?', romanji: 'Nín fāngbiàn xià zhōu ānpái yí cì huìyì ma?' },
+          { word: '我们需要确认预算和时间表。', translation: 'We need to confirm the budget and timeline.', pronunciation: 'Wǒmen xūyào quèrèn yùsuàn hé shíjiānbiǎo.', romanji: 'Wǒmen xūyào quèrèn yùsuàn hé shíjiānbiǎo.' },
+          { word: '这个方案可行吗？', translation: 'Is this plan feasible?', pronunciation: 'Zhège fāng’àn kěxíng ma?', romanji: 'Zhège fāng’àn kěxíng ma?' },
+          { word: '我们期待您的反馈。', translation: 'We look forward to your feedback.', pronunciation: 'Wǒmen qīdài nín de fǎnkuì.', romanji: 'Wǒmen qīdài nín de fǎnkuì.' }
+        ],
+        streetSlang: [
+          { word: '我先发个邮件给你。', translation: 'I’ll send you an email first.', pronunciation: 'Wǒ xiān fā gè yóujiàn gěi nǐ.', romanji: 'Wǒ xiān fā gè yóujiàn gěi nǐ.' },
+          { word: '咱们对一下时间。', translation: 'Let’s sync up on the time.', pronunciation: 'Zánmen duì yíxià shíjiān.', romanji: 'Zánmen duì yíxià shíjiān.' },
+          { word: '这个项目先对齐一下。', translation: 'Let’s align on this project first.', pronunciation: 'Zhège xiàngmù xiān duìqí yíxià.', romanji: 'Zhège xiàngmù xiān duìqí yíxià.' },
+          { word: '进度有点慢。', translation: 'Progress is a bit slow.', pronunciation: 'Jìndù yǒudiǎn màn.', romanji: 'Jìndù yǒudiǎn màn.' },
+          { word: '我这边没问题。', translation: 'No issues on my end.', pronunciation: 'Wǒ zhèbiān méi wèntí.', romanji: 'Wǒ zhèbiān méi wèntí.' },
+          { word: '你看可以吗？', translation: 'Does that work for you?', pronunciation: 'Nǐ kàn kěyǐ ma?', romanji: 'Nǐ kàn kěyǐ ma?' }
+        ]
+      },
+      {
+        id: 25,
+        title: 'Common Chinese Idioms (成语)',
+        premium: true,
+        words: [
+          { word: '对牛弹琴', translation: 'Literal: “play the lute to a cow”; Meaning: speak to someone who doesn’t understand; Use when your audience can’t follow.', pronunciation: 'Duìniú tánqín', romanji: 'Duìniú tánqín' },
+          { word: '画蛇添足', translation: 'Literal: “draw a snake and add feet”; Meaning: overdo it and ruin it; Use when someone adds unnecessary details.', pronunciation: 'Huàshé tiānzú', romanji: 'Huàshé tiānzú' },
+          { word: '井底之蛙', translation: 'Literal: “frog at the bottom of a well”; Meaning: narrow-minded; Use for limited perspective.', pronunciation: 'Jǐngdǐ zhī wā', romanji: 'Jǐngdǐ zhī wā' },
+          { word: '一举两得', translation: 'Literal: “one move, two gains”; Meaning: kill two birds with one stone; Use when one action solves two things.', pronunciation: 'Yí jǔ liǎng dé', romanji: 'Yí jǔ liǎng dé' },
+          { word: '半途而废', translation: 'Literal: “quit halfway”; Meaning: give up midway; Use when someone stops before finishing.', pronunciation: 'Bàntú ér fèi', romanji: 'Bàntú ér fèi' },
+          { word: '亡羊补牢', translation: 'Literal: “mend the pen after losing sheep”; Meaning: better late than never; Use after a mistake to fix things.', pronunciation: 'Wángyáng bǔláo', romanji: 'Wángyáng bǔláo' },
+          { word: '入乡随俗', translation: 'Literal: “follow local customs”; Meaning: when in Rome, do as the Romans do.', pronunciation: 'Rùxiāng suí sú', romanji: 'Rùxiāng suí sú' },
+          { word: '刻舟求剑', translation: 'Literal: “mark a boat to find a sword”; Meaning: be rigid and not adapt; Use for stubborn methods.', pronunciation: 'Kèzhōu qiújiàn', romanji: 'Kèzhōu qiújiàn' }
+        ],
+        streetSlang: [
+          { word: '说得太对了', translation: 'That’s so right.', pronunciation: 'Shuō de tài duì le', romanji: 'Shuō de tài duì le' },
+          { word: '别想太多', translation: 'Don’t overthink it.', pronunciation: 'Bié xiǎng tài duō', romanji: 'Bié xiǎng tài duō' },
+          { word: '真有道理', translation: 'That makes a lot of sense.', pronunciation: 'Zhēn yǒu dàolǐ', romanji: 'Zhēn yǒu dàolǐ' },
+          { word: '想开点', translation: 'Think more positively.', pronunciation: 'Xiǎng kāi diǎn', romanji: 'Xiǎng kāi diǎn' },
+          { word: '走一步看一步', translation: 'Take it one step at a time.', pronunciation: 'Zǒu yí bù kàn yí bù', romanji: 'Zǒu yí bù kàn yí bù' },
+          { word: '这就尴尬了', translation: 'Well, that’s awkward.', pronunciation: 'Zhè jiù gāngà le', romanji: 'Zhè jiù gāngà le' }
+        ]
+      },
+      {
+        id: 26,
+        title: 'Opinions and Debates',
+        premium: true,
+        words: [
+          { word: '我认为这个观点很合理。', translation: 'I think this viewpoint is reasonable.', pronunciation: 'Wǒ rènwéi zhège guāndiǎn hěn hélǐ.', romanji: 'Wǒ rènwéi zhège guāndiǎn hěn hélǐ.' },
+          { word: '我同意你的看法。', translation: 'I agree with your view.', pronunciation: 'Wǒ tóngyì nǐ de kànfǎ.', romanji: 'Wǒ tóngyì nǐ de kànfǎ.' },
+          { word: '我不太同意这一点。', translation: 'I don’t quite agree with this point.', pronunciation: 'Wǒ bù tài tóngyì zhè yìdiǎn.', romanji: 'Wǒ bù tài tóngyì zhè yìdiǎn.' },
+          { word: '在我看来，这个方案更好。', translation: 'In my view, this plan is better.', pronunciation: 'Zài wǒ kànlái, zhège fāng’àn gèng hǎo.', romanji: 'Zài wǒ kànlái, zhège fāng’àn gèng hǎo.' },
+          { word: '你怎么看？', translation: 'What do you think?', pronunciation: 'Nǐ zěnme kàn?', romanji: 'Nǐ zěnme kàn?' },
+          { word: '你的观点是什么？', translation: 'What is your point of view?', pronunciation: 'Nǐ de guāndiǎn shì shénme?', romanji: 'Nǐ de guāndiǎn shì shénme?' },
+          { word: '这个论点很有说服力。', translation: 'This argument is persuasive.', pronunciation: 'Zhège lùndiǎn hěn yǒu shuōfúlì.', romanji: 'Zhège lùndiǎn hěn yǒu shuōfúlì.' },
+          { word: '我们需要更多证据。', translation: 'We need more evidence.', pronunciation: 'Wǒmen xūyào gèng duō zhèngjù.', romanji: 'Wǒmen xūyào gèng duō zhèngjù.' }
+        ],
+        streetSlang: [
+          { word: '我觉得还行。', translation: 'I think it’s okay.', pronunciation: 'Wǒ juéde hái xíng.', romanji: 'Wǒ juéde hái xíng.' },
+          { word: '我不太买账。', translation: 'I’m not convinced.', pronunciation: 'Wǒ bù tài mǎizhàng.', romanji: 'Wǒ bù tài mǎizhàng.' },
+          { word: '说实话，我不认同。', translation: 'Honestly, I don’t agree.', pronunciation: 'Shuō shíhuà, wǒ bù rèntóng.', romanji: 'Shuō shíhuà, wǒ bù rèntóng.' },
+          { word: '你说呢？', translation: 'What do you say?', pronunciation: 'Nǐ shuō ne?', romanji: 'Nǐ shuō ne?' },
+          { word: '这事不好说。', translation: 'This is hard to say.', pronunciation: 'Zhè shì bù hǎo shuō.', romanji: 'Zhè shì bù hǎo shuō.' },
+          { word: '可以再想想。', translation: 'We can think about it again.', pronunciation: 'Kěyǐ zài xiǎngxiang.', romanji: 'Kěyǐ zài xiǎngxiang.' }
+        ]
+      },
+      {
+        id: 27,
+        title: 'Telling Stories in Past Tense',
+        premium: true,
+        words: [
+          { word: '昨天我很早就起床了。', translation: 'Yesterday I got up early.', pronunciation: 'Zuótiān wǒ hěn zǎo jiù qǐchuáng le.', romanji: 'Zuótiān wǒ hěn zǎo jiù qǐchuáng le.' },
+          { word: '然后我去了公司。', translation: 'Then I went to the office.', pronunciation: 'Ránhòu wǒ qù le gōngsī.', romanji: 'Ránhòu wǒ qù le gōngsī.' },
+          { word: '后来我见到了一个老朋友。', translation: 'Later I met an old friend.', pronunciation: 'Hòulái wǒ jiàn dào le yí gè lǎo péngyou.', romanji: 'Hòulái wǒ jiàn dào le yí gè lǎo péngyou.' },
+          { word: '同时，外面开始下雨了。', translation: 'Meanwhile, it started to rain outside.', pronunciation: 'Tóngshí, wàimiàn kāishǐ xiàyǔ le.', romanji: 'Tóngshí, wàimiàn kāishǐ xiàyǔ le.' },
+          { word: '突然发生了一件意外的事。', translation: 'Suddenly, something unexpected happened.', pronunciation: 'Túrán fāshēng le yí jiàn yìwài de shì.', romanji: 'Túrán fāshēng le yí jiàn yìwài de shì.' },
+          { word: '最后我们解决了问题。', translation: 'In the end we solved the problem.', pronunciation: 'Zuìhòu wǒmen jiějué le wèntí.', romanji: 'Zuìhòu wǒmen jiějué le wèntí.' },
+          { word: '到了晚上，我回到家休息了。', translation: 'By evening, I returned home to rest.', pronunciation: 'Dào le wǎnshang, wǒ huí dào jiā xiūxi le.', romanji: 'Dào le wǎnshang, wǒ huí dào jiā xiūxi le.' },
+          { word: '那天的经历让我难忘。', translation: 'That day’s experience was unforgettable.', pronunciation: 'Nà tiān de jīnglì ràng wǒ nánwàng.', romanji: 'Nà tiān de jīnglì ràng wǒ nánwàng.' }
+        ],
+        streetSlang: [
+          { word: '后来呢？', translation: 'And then what?', pronunciation: 'Hòulái ne?', romanji: 'Hòulái ne?' },
+          { word: '就这样', translation: 'That’s how it went.', pronunciation: 'Jiù zhèyàng.', romanji: 'Jiù zhèyàng.' },
+          { word: '然后吧', translation: 'And then…', pronunciation: 'Ránhòu ba.', romanji: 'Ránhòu ba.' },
+          { word: '结果呢', translation: 'So what was the result?', pronunciation: 'Jiéguǒ ne?', romanji: 'Jiéguǒ ne?' },
+          { word: '说到这儿', translation: 'Speaking of this / at this point', pronunciation: 'Shuō dào zhèr.', romanji: 'Shuō dào zhèr.' },
+          { word: '故事大概就是这样', translation: 'That’s pretty much the story.', pronunciation: 'Gùshi dàgài jiù shì zhèyàng.', romanji: 'Gùshi dàgài jiù shì zhèyàng.' }
         ]
       }
     ]
