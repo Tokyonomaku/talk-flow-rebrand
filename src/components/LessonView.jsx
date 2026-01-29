@@ -44,10 +44,19 @@ export default function LessonView({ lesson, language, onBack, onUpgradeClick })
     const loadVoices = () => {
       const availableVoices = window.speechSynthesis.getVoices();
       setVoices(availableVoices);
+      console.log('Available voices:', availableVoices.map((voice) => ({
+        name: voice.name,
+        lang: voice.lang,
+      })));
     };
 
     // Load voices immediately if available
     loadVoices();
+
+    // Ensure voices are loaded before use
+    if (window.speechSynthesis.getVoices().length === 0) {
+      window.speechSynthesis.addEventListener('voiceschanged', loadVoices);
+    }
 
     // Also attach onvoiceschanged (some browsers rely on this)
     const prevOnVoicesChanged = window.speechSynthesis.onvoiceschanged;
@@ -110,21 +119,23 @@ export default function LessonView({ lesson, language, onBack, onUpgradeClick })
       return;
     }
 
-    // Language code mapping for speech synthesis
-    const langMap = {
-      'es': 'es-ES',
-      'fr': 'fr-FR',
-      'de': 'de-DE',
-      'ko': 'ko-KR',
-      'pt': 'pt-BR',
-      'ja': 'ja-JP',
-      'zh': 'zh-CN',
-      'ru': 'ru-RU',
-      'ar': 'ar-SA',
-      'en': 'en-US'
+    const languageVoicePreferences = {
+      es: ['es-ES', 'es-MX', 'es'],
+      fr: ['fr-FR', 'fr'],
+      de: ['de-DE', 'de'],
+      it: ['it-IT', 'it'],
+      pt: ['pt-BR', 'pt-PT', 'pt'],
+      ja: ['ja-JP', 'ja'],
+      zh: ['zh-CN', 'zh-TW', 'zh'],
+      ru: ['ru-RU', 'ru'],
+      ar: ['ar-SA', 'ar'],
+      hi: ['hi-IN', 'hi'],
+      ko: ['ko-KR', 'ko'],
+      en: ['en-US', 'en-GB', 'en'],
     };
-    
-    const targetLang = langMap[langCode] || 'en-US';
+
+    const preferredLangs = languageVoicePreferences[langCode] || ['en-US', 'en'];
+    const targetLang = preferredLangs[0];
     const langPrefix = targetLang.split('-')[0].toLowerCase();
 
     const isEnglishEducationTrack = language.id === 'esl-english' || language.id === 'english-native';
@@ -165,49 +176,47 @@ export default function LessonView({ lesson, language, onBack, onUpgradeClick })
       ) || null;
     };
 
-    // Function to find voice for language
     const findVoice = () => {
-      const availableVoices = window.speechSynthesis.getVoices();
+      const availableVoices = voices.length > 0 ? voices : window.speechSynthesis.getVoices();
       if (availableVoices.length === 0) return null;
 
-      // English education tracks: use best available high-quality English voice
       if (isEnglishEducationTrack && targetLang.toLowerCase().startsWith('en')) {
         return pickPreferredEnglishVoice(availableVoices);
       }
 
-      // Try exact match first
-      let voice = availableVoices.find(v => v.lang.toLowerCase() === targetLang.toLowerCase());
-      
-      // Try language prefix match (e.g., 'ja' for 'ja-JP')
+      const normalizedPreferred = preferredLangs.map((lang) => lang.toLowerCase());
+      let voice = availableVoices.find((v) => normalizedPreferred.includes(v.lang.toLowerCase()));
+
       if (!voice) {
-        voice = availableVoices.find(v => {
+        voice = availableVoices.find((v) => {
+          const voiceLang = v.lang.toLowerCase();
+          return normalizedPreferred.some((preferred) =>
+            voiceLang.startsWith(preferred.toLowerCase())
+          );
+        });
+      }
+
+      if (!voice) {
+        voice = availableVoices.find((v) => {
           const voiceLang = v.lang.toLowerCase();
           return voiceLang.includes(langPrefix) || voiceLang.startsWith(langPrefix);
         });
       }
-      
+
       return voice;
     };
 
     // Wait for voices to load if needed
     const attemptSpeak = () => {
       const voice = findVoice();
-      
-      // Show error if no voice available for non-English languages
-      if (!voice && targetLang !== 'en-US') {
-        setPlayingIndex(null);
-        alert(`${language.name} audio requires language support. Please install ${language.name} language pack on your device.`);
-        return;
-      }
 
       setPlayingIndex(index);
 
       setTimeout(() => {
         const utterance = new SpeechSynthesisUtterance(text);
         utterance.lang = targetLang;
-        // Improve clarity for ESL/English Essentials without affecting other languages
-        utterance.rate = 0.9;
-        utterance.pitch = isEnglishEducationTrack && targetLang.toLowerCase().startsWith('en') ? 1.1 : 1;
+        utterance.rate = 0.85;
+        utterance.pitch = 1.0;
         utterance.volume = 1;
 
         // Assign specific voice if found
@@ -228,13 +237,7 @@ export default function LessonView({ lesson, language, onBack, onUpgradeClick })
         utterance.onerror = (error) => {
           console.error('Speech synthesis error:', error);
           setPlayingIndex(null);
-          
-          // Show error instead of falling back to English
-          if (targetLang !== 'en-US') {
-            alert(`Unable to play ${language.name} audio. Please ensure ${language.name} language support is installed on your device.`);
-          } else {
-            alert('Unable to play audio. Please check your browser settings or try a different browser.');
-          }
+          alert('Unable to play audio. Please check your browser settings or try a different browser.');
         };
 
         try {
@@ -250,7 +253,6 @@ export default function LessonView({ lesson, language, onBack, onUpgradeClick })
     // Check if voices are loaded
     const currentVoices = window.speechSynthesis.getVoices();
     if (currentVoices.length === 0) {
-      // Wait for voices to load
       const waitForVoices = () => {
         const newVoices = window.speechSynthesis.getVoices();
         if (newVoices.length > 0) {
