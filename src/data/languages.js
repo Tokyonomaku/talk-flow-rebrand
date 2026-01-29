@@ -1877,6 +1877,90 @@ export const languages = {
       }
     ]
   },
+  hindi: {
+    id: 'hindi',
+    name: 'Hindi',
+    flag: '🇮🇳',
+    code: 'hi',
+    lessonCount: 5,
+    totalLessons: 5,
+    freeLessons: 5,
+    lessons: [
+      {
+        id: 1,
+        title: 'Essential Greetings',
+        level: 'beginner',
+        words: [
+          { word: 'नमस्ते', translation: 'Hello / Goodbye', pronunciation: 'nuh-muh-STAY' },
+          { word: 'आप कैसे हैं?', translation: 'How are you? (formal)', pronunciation: 'AAP kay-say HAIN' },
+          { word: 'मैं ठीक हूँ', translation: 'I\'m fine', pronunciation: 'MAIN theek HOON' },
+          { word: 'धन्यवाद', translation: 'Thank you', pronunciation: 'dhuhn-yuh-VAAD' },
+          { word: 'मेरा नाम... है', translation: 'My name is...', pronunciation: 'may-RAA NAAM... HAI' },
+          { word: 'आपका नाम क्या है?', translation: 'What is your name?', pronunciation: 'AAP-kaa NAAM kya HAI' },
+          { word: 'मिलकर खुशी हुई', translation: 'Nice to meet you', pronunciation: 'mil-kar KHU-shee HU-ee' },
+          { word: 'शुभ प्रभात', translation: 'Good morning', pronunciation: 'shubh pruh-BAAT' }
+        ]
+      },
+      {
+        id: 2,
+        title: 'Ordering Food & Drinks',
+        level: 'beginner',
+        words: [
+          { word: 'मुझे... चाहिए', translation: 'I need / I want...', pronunciation: 'muj-HAY... chaa-hee-YAY' },
+          { word: 'पानी', translation: 'Water', pronunciation: 'PAA-nee' },
+          { word: 'चाय', translation: 'Tea', pronunciation: 'CHAI' },
+          { word: 'खाना', translation: 'Food', pronunciation: 'KHAA-naa' },
+          { word: 'बहुत स्वादिष्ट है', translation: 'It\'s very delicious', pronunciation: 'buh-HUT svaa-DISHT HAI' },
+          { word: 'कितना है?', translation: 'How much is it?', pronunciation: 'kit-NAA HAI' },
+          { word: 'बिल दीजिए', translation: 'Please bring the bill', pronunciation: 'BILL dee-JEE-yay' }
+        ]
+      },
+      {
+        id: 3,
+        title: 'Essential Questions',
+        level: 'beginner',
+        words: [
+          { word: 'शौचालय कहाँ है?', translation: 'Where is the bathroom?', pronunciation: 'show-CHAA-lay kah-HAAN HAI' },
+          { word: 'क्या आप अंग्रेज़ी बोलते हैं?', translation: 'Do you speak English?', pronunciation: 'kya AAP ang-RAY-zee BOL-tay HAIN' },
+          { word: 'मुझे समझ नहीं आया', translation: 'I don\'t understand', pronunciation: 'muj-HAY suh-MAJH nuh-HEEN aa-YAA' },
+          { word: 'कृपया दोहराएँ', translation: 'Please repeat', pronunciation: 'krip-YAA doh-RAA-yen' },
+          { word: 'यह क्या है?', translation: 'What is this?', pronunciation: 'YEH kya HAI' },
+          { word: 'कहाँ है?', translation: 'Where is?', pronunciation: 'kah-HAAN HAI' },
+          { word: 'मदद कीजिए', translation: 'Please help', pronunciation: 'muh-DAHD kee-JEE-yay' }
+        ]
+      },
+      {
+        id: 4,
+        title: 'Getting Around',
+        level: 'beginner',
+        words: [
+          { word: 'बाएँ', translation: 'Left', pronunciation: 'BAA-yen' },
+          { word: 'दाएँ', translation: 'Right', pronunciation: 'DAA-yen' },
+          { word: 'सीधे', translation: 'Straight', pronunciation: 'SEE-dhay' },
+          { word: 'पास', translation: 'Near', pronunciation: 'PAAS' },
+          { word: 'दूर', translation: 'Far', pronunciation: 'DOOR' },
+          { word: 'स्टेशन', translation: 'Station', pronunciation: 'STAY-shun' },
+          { word: 'हवाई अड्डा', translation: 'Airport', pronunciation: 'huh-VAA-ee UDD-aa' },
+          { word: 'मुझे... जाना है', translation: 'I need to go to...', pronunciation: 'muj-HAY... JAA-naa HAI' }
+        ]
+      },
+      {
+        id: 5,
+        title: 'Polite Expressions',
+        level: 'beginner',
+        words: [
+          { word: 'कृपया', translation: 'Please', pronunciation: 'krip-YAA' },
+          { word: 'धन्यवाद', translation: 'Thank you', pronunciation: 'dhuhn-yuh-VAAD' },
+          { word: 'बहुत-बहुत धन्यवाद', translation: 'Thank you very much', pronunciation: 'buh-HUT buh-HUT dhuhn-yuh-VAAD' },
+          { word: 'स्वागत है', translation: 'You\'re welcome', pronunciation: 'svaa-GAHT HAI' },
+          { word: 'माफ़ कीजिए', translation: 'Sorry / Excuse me', pronunciation: 'MAAF kee-JEE-yay' },
+          { word: 'कोई बात नहीं', translation: 'No problem', pronunciation: 'KO-ee BAAT nuh-HEEN' },
+          { word: 'हाँ', translation: 'Yes', pronunciation: 'HAAN' },
+          { word: 'नहीं', translation: 'No', pronunciation: 'nuh-HEEN' }
+        ]
+      }
+    ]
+  },
   italian: {
     id: 'italian',
     name: 'Italian',
