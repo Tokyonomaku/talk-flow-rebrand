@@ -1877,6 +1877,89 @@ export const languages = {
       }
     ]
   },
+  italian: {
+    id: 'italian',
+    name: 'Italian',
+    flag: '🇮🇹',
+    code: 'it',
+    lessonCount: 5,
+    totalLessons: 5,
+    freeLessons: 5,
+    lessons: [
+      {
+        id: 1,
+        title: 'Essential Greetings',
+        level: 'beginner',
+        words: [
+          { word: 'Ciao!', translation: 'Hi! / Bye!', pronunciation: 'chow' },
+          { word: 'Buongiorno', translation: 'Good morning', pronunciation: 'bwon-JOR-no' },
+          { word: 'Buonasera', translation: 'Good evening', pronunciation: 'bwon-ah-SEH-rah' },
+          { word: 'Come stai?', translation: 'How are you? (informal)', pronunciation: 'KO-meh stai' },
+          { word: 'Come sta?', translation: 'How are you? (formal)', pronunciation: 'KO-meh stah' },
+          { word: 'Bene, grazie', translation: 'Good, thanks', pronunciation: 'BEH-neh GRAHT-see-eh' },
+          { word: 'Mi chiamo...', translation: 'My name is...', pronunciation: 'mee kee-AH-mo' },
+          { word: 'Piacere', translation: 'Nice to meet you', pronunciation: 'pee-ah-CHEH-reh' }
+        ]
+      },
+      {
+        id: 2,
+        title: 'Ordering Food & Drinks',
+        level: 'beginner',
+        words: [
+          { word: 'Vorrei...', translation: 'I would like...', pronunciation: 'vor-RAY' },
+          { word: 'Un caffè, per favore', translation: 'A coffee, please', pronunciation: 'oon kaf-FEH pehr fah-VO-reh' },
+          { word: 'Una pizza', translation: 'A pizza', pronunciation: 'OO-nah PEET-sah' },
+          { word: 'Un bicchiere d\'acqua', translation: 'A glass of water', pronunciation: 'oon bee-kee-EH-reh DAH-kwah' },
+          { word: 'Il conto, per favore', translation: 'The check, please', pronunciation: 'eel KON-to pehr fah-VO-reh' },
+          { word: 'È delizioso!', translation: 'It\'s delicious!', pronunciation: 'eh deh-lee-tsee-O-so' },
+          { word: 'Quanto costa?', translation: 'How much does it cost?', pronunciation: 'KWAN-to KO-stah' }
+        ]
+      },
+      {
+        id: 3,
+        title: 'Essential Questions',
+        level: 'beginner',
+        words: [
+          { word: 'Dov\'è il bagno?', translation: 'Where is the bathroom?', pronunciation: 'do-VEH eel BAHN-yo' },
+          { word: 'Parla inglese?', translation: 'Do you speak English?', pronunciation: 'PAR-lah een-GLEH-zeh' },
+          { word: 'Non capisco', translation: 'I don\'t understand', pronunciation: 'non kah-PEE-sko' },
+          { word: 'Può ripetere?', translation: 'Can you repeat?', pronunciation: 'pwo ree-PEH-teh-reh' },
+          { word: 'Dov\'è...?', translation: 'Where is...?', pronunciation: 'do-VEH' },
+          { word: 'Come si dice...?', translation: 'How do you say...?', pronunciation: 'KO-meh see DEE-cheh' },
+          { word: 'Mi scusi', translation: 'Excuse me', pronunciation: 'mee SKOO-zee' }
+        ]
+      },
+      {
+        id: 4,
+        title: 'Getting Around',
+        level: 'beginner',
+        words: [
+          { word: 'A sinistra', translation: 'To the left', pronunciation: 'ah see-NEE-strah' },
+          { word: 'A destra', translation: 'To the right', pronunciation: 'ah DEH-strah' },
+          { word: 'Sempre dritto', translation: 'Straight ahead', pronunciation: 'SEM-preh DREET-to' },
+          { word: 'Vicino', translation: 'Near / Close', pronunciation: 'vee-CHEE-no' },
+          { word: 'Lontano', translation: 'Far', pronunciation: 'lon-TAH-no' },
+          { word: 'La stazione', translation: 'The station', pronunciation: 'lah staht-see-O-neh' },
+          { word: 'L\'aeroporto', translation: 'The airport', pronunciation: 'lah-eh-ro-POR-to' }
+        ]
+      },
+      {
+        id: 5,
+        title: 'Polite Expressions',
+        level: 'beginner',
+        words: [
+          { word: 'Per favore', translation: 'Please', pronunciation: 'pehr fah-VO-reh' },
+          { word: 'Grazie', translation: 'Thank you', pronunciation: 'GRAHT-see-eh' },
+          { word: 'Grazie mille', translation: 'Thanks a lot', pronunciation: 'GRAHT-see-eh MEEL-leh' },
+          { word: 'Prego', translation: 'You\'re welcome', pronunciation: 'PREH-go' },
+          { word: 'Scusa', translation: 'Sorry (informal)', pronunciation: 'SKOO-zah' },
+          { word: 'Mi dispiace', translation: 'I\'m sorry', pronunciation: 'mee dee-SPEE-ah-cheh' },
+          { word: 'Va bene', translation: 'It\'s okay / That\'s fine', pronunciation: 'vah BEH-neh' },
+          { word: 'Arrivederci', translation: 'Goodbye', pronunciation: 'ah-ree-veh-DEHR-chee' }
+        ]
+      }
+    ]
+  },
   portuguese: {
     id: 'portuguese',
     name: 'Portuguese',
@@ -2479,6 +2562,7 @@ export const languages = {
     name: 'Japanese',
     flag: '🇯🇵',
     code: 'ja',
+    lessonCount: 27,
     lessons: [
       {
         id: 1,
@@ -2961,6 +3045,66 @@ export const languages = {
           { word: 'BTW', translation: 'By the way', pronunciation: 'bee-tee-double-u', usage: 'Anyone, casual' },
           { word: 'IDK', translation: 'I don\'t know', pronunciation: 'eye-dee-kay', usage: 'Anyone, casual' },
           { word: 'TBH', translation: 'To be honest', pronunciation: 'tee-bee-aitch', usage: 'Anyone, casual' }
+        ]
+      },
+      {
+        id: 24,
+        title: 'Business Conversations',
+        level: 'advanced',
+        premium: true,
+        words: [
+          { word: '会議を始めましょう', translation: 'Let\'s start the meeting', pronunciation: 'kaigi wo hajimemashou', romanji: 'Kaigi wo hajimemashou' },
+          { word: 'ご提案があります', translation: 'I have a proposal', pronunciation: 'go teian ga arimasu', romanji: 'Go teian ga arimasu' },
+          { word: 'それについて話し合いましょう', translation: 'Let\'s discuss that', pronunciation: 'sore ni tsuite hanashiaimashou', romanji: 'Sore ni tsuite hanashiaimashou' },
+          { word: 'いつご都合がよろしいですか', translation: 'When is convenient for you?', pronunciation: 'itsu go tsugou ga yoroshii desu ka', romanji: 'Itsu go tsugou ga yoroshii desu ka' },
+          { word: 'メールでご連絡します', translation: 'I\'ll contact you by email', pronunciation: 'meeru de go renraku shimasu', romanji: 'Meeru de go renraku shimasu' },
+          { word: 'よろしくお願いいたします', translation: 'Thank you for your consideration', pronunciation: 'yoroshiku onegai itashimasu', romanji: 'Yoroshiku onegai itashimasu' },
+          { word: 'お時間をいただきありがとうございます', translation: 'Thank you for your time', pronunciation: 'o jikan wo itadaki arigatou gozaimasu', romanji: 'O jikan wo itadaki arigatou gozaimasu' }
+        ]
+      },
+      {
+        id: 25,
+        title: 'Common Japanese Idioms',
+        level: 'advanced',
+        premium: true,
+        words: [
+          { word: '猿も木から落ちる', translation: 'Even monkeys fall from trees (Everyone makes mistakes)', pronunciation: 'saru mo ki kara ochiru', romanji: 'Saru mo ki kara ochiru' },
+          { word: '石の上にも三年', translation: 'Three years on a stone (Perseverance pays off)', pronunciation: 'ishi no ue ni mo san nen', romanji: 'Ishi no ue ni mo san nen' },
+          { word: '一石二鳥', translation: 'One stone, two birds (Kill two birds with one stone)', pronunciation: 'isseki nichou', romanji: 'Isseki nichou' },
+          { word: '急がば回れ', translation: 'If you hurry, take a detour (Haste makes waste)', pronunciation: 'isogaba maware', romanji: 'Isogaba maware' },
+          { word: '花より団子', translation: 'Dumplings over flowers (Practical over aesthetic)', pronunciation: 'hana yori dango', romanji: 'Hana yori dango' },
+          { word: '七転び八起き', translation: 'Fall seven times, stand up eight', pronunciation: 'nana korobi ya oki', romanji: 'Nana korobi ya oki' },
+          { word: '井の中の蛙', translation: 'A frog in a well (Narrow-minded)', pronunciation: 'i no naka no kawazu', romanji: 'I no naka no kawazu' }
+        ]
+      },
+      {
+        id: 26,
+        title: 'Opinions and Debates',
+        level: 'advanced',
+        premium: true,
+        words: [
+          { word: '私の意見では', translation: 'In my opinion', pronunciation: 'watashi no iken de wa', romanji: 'Watashi no iken de wa' },
+          { word: 'そう思います', translation: 'I think so', pronunciation: 'sou omoimasu', romanji: 'Sou omoimasu' },
+          { word: '賛成です', translation: 'I agree', pronunciation: 'sansei desu', romanji: 'Sansei desu' },
+          { word: '反対です', translation: 'I disagree', pronunciation: 'hantai desu', romanji: 'Hantai desu' },
+          { word: 'どう思いますか', translation: 'What do you think?', pronunciation: 'dou omoimasu ka', romanji: 'Dou omoimasu ka' },
+          { word: 'それは違うと思います', translation: 'I think that\'s different', pronunciation: 'sore wa chigau to omoimasu', romanji: 'Sore wa chigau to omoimasu' },
+          { word: '確かにそうですね', translation: 'That\'s certainly true', pronunciation: 'tashika ni sou desu ne', romanji: 'Tashika ni sou desu ne' }
+        ]
+      },
+      {
+        id: 27,
+        title: 'Telling Stories in Past Tense',
+        level: 'advanced',
+        premium: true,
+        words: [
+          { word: '昨日何をしましたか', translation: 'What did you do yesterday?', pronunciation: 'kinou nani wo shimashita ka', romanji: 'Kinou nani wo shimashita ka' },
+          { word: '公園に行きました', translation: 'I went to the park', pronunciation: 'kouen ni ikimashita', romanji: 'Kouen ni ikimashita' },
+          { word: '友達に会いました', translation: 'I met a friend', pronunciation: 'tomodachi ni aimashita', romanji: 'Tomodachi ni aimashita' },
+          { word: 'それから映画を見ました', translation: 'Then I watched a movie', pronunciation: 'sorekara eiga wo mimashita', romanji: 'Sorekara eiga wo mimashita' },
+          { word: 'その後レストランで食べました', translation: 'After that I ate at a restaurant', pronunciation: 'sono ato resutoran de tabemashita', romanji: 'Sono ato resutoran de tabemashita' },
+          { word: 'とても楽しかったです', translation: 'It was very fun', pronunciation: 'totemo tanoshikatta desu', romanji: 'Totemo tanoshikatta desu' },
+          { word: '次の日家に帰りました', translation: 'The next day I went home', pronunciation: 'tsugi no hi ie ni kaerimashita', romanji: 'Tsugi no hi ie ni kaerimashita' }
         ]
       }
     ]

@@ -6,6 +6,7 @@ const FOREIGN_LANGUAGE_IDS = [
   'spanish',
   'french',
   'german',
+  'italian',
   'korean',
   'portuguese',
   'japanese',

@@ -1,14 +1,14 @@
-export default function LandingPage({ onTryFree }) {
+export default function LandingPage() {
+  const handlePickLanguage = () => {
+    window.location.href = '/choose-languages';
+  };
+
   return (
     <>
-      <h1>Learn French in 3 Minutes</h1>
-      <p>"Où sont les toilettes?" - Where is the bathroom?</p>
-      <p>"Combien ça coûte?" - How much?</p>
-      <p>"Parlez-vous anglais?" - Do you speak English?</p>
-      <button type="button" onClick={onTryFree}>
-        Try Lesson 1 →
+      <h1>Learn French Fast</h1>
+      <button type="button" onClick={handlePickLanguage}>
+        Pick Your Language →
       </button>
-      <p>Free • No signup</p>
     </>
   );
 }
