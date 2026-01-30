@@ -32,16 +32,10 @@ export default function LandingPage() {
           }
         }
       `}</style>
+      <div style={{ textAlign: 'center', fontSize: '50px', marginBottom: '20px' }}>
+        🐢 👇
+      </div>
       <div className="landing-cta">
-        <div className="turtle-pointer">
-          <span role="img" aria-label="turtle" style={{
-            fontSize: '60px',
-            display: 'block',
-            animation: 'bounce 2s infinite'
-          }}>
-            🐢 👉
-          </span>
-        </div>
         <button type="button" onClick={handlePickLanguage}>
           Start Learning →
         </button>
