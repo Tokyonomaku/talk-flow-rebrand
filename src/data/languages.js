@@ -1882,9 +1882,9 @@ export const languages = {
     name: 'Hindi',
     flag: '🇮🇳',
     code: 'hi',
-    lessonCount: 5,
-    totalLessons: 5,
-    freeLessons: 5,
+    lessonCount: 10,
+    totalLessons: 10,
+    freeLessons: 10,
     lessons: [
       {
         id: 1,
@@ -1957,6 +1957,81 @@ export const languages = {
           { word: 'कोई बात नहीं', translation: 'No problem', pronunciation: 'KO-ee BAAT nuh-HEEN' },
           { word: 'हाँ', translation: 'Yes', pronunciation: 'HAAN' },
           { word: 'नहीं', translation: 'No', pronunciation: 'nuh-HEEN' }
+        ]
+      },
+      {
+        id: 6,
+        title: 'Numbers & Prices',
+        level: 'beginner',
+        words: [
+          { word: 'एक', translation: 'One', pronunciation: 'ek' },
+          { word: 'दो', translation: 'Two', pronunciation: 'doh' },
+          { word: 'तीन', translation: 'Three', pronunciation: 'TEEN' },
+          { word: 'चार', translation: 'Four', pronunciation: 'CHAAR' },
+          { word: 'पाँच', translation: 'Five', pronunciation: 'PAANCH' },
+          { word: 'सस्ता', translation: 'Cheap', pronunciation: 'SUS-taa' },
+          { word: 'महँगा', translation: 'Expensive', pronunciation: 'muh-HUN-gah' },
+          { word: 'छूट है?', translation: 'Is there a discount?', pronunciation: 'chhoot HAI' }
+        ]
+      },
+      {
+        id: 7,
+        title: 'Time & Dates',
+        level: 'beginner',
+        words: [
+          { word: 'आज', translation: 'Today', pronunciation: 'aaj' },
+          { word: 'कल', translation: 'Tomorrow / Yesterday', pronunciation: 'kal' },
+          { word: 'सुबह', translation: 'Morning', pronunciation: 'soo-BAH' },
+          { word: 'शाम', translation: 'Evening', pronunciation: 'shaam' },
+          { word: 'रात', translation: 'Night', pronunciation: 'raat' },
+          { word: 'अभी कितने बजे हैं?', translation: 'What time is it now?', pronunciation: 'uh-BHEE kit-nay BUH-jay hain' },
+          { word: 'मैं जल्दी आऊँगा', translation: 'I will come early', pronunciation: 'main JAL-dee aa-OO-n-gaa' },
+          { word: 'मुलाकात कब है?', translation: 'When is the meeting?', pronunciation: 'moo-laa-KAAT kab HAI' }
+        ]
+      },
+      {
+        id: 8,
+        title: 'Transportation',
+        level: 'beginner',
+        words: [
+          { word: 'बस', translation: 'Bus', pronunciation: 'bus' },
+          { word: 'ट्रेन', translation: 'Train', pronunciation: 'tray-n' },
+          { word: 'टैक्सी', translation: 'Taxi', pronunciation: 'TAK-see' },
+          { word: 'टिकट', translation: 'Ticket', pronunciation: 'TIK-it' },
+          { word: 'कहाँ जाना है?', translation: 'Where do you want to go?', pronunciation: 'kah-HAAN JAA-naa HAI' },
+          { word: 'कितना समय लगेगा?', translation: 'How long will it take?', pronunciation: 'kit-NAA su-MAY lay-GAA' },
+          { word: 'यहाँ रुकिए', translation: 'Stop here', pronunciation: 'yah-HAAN rook-EE-yay' },
+          { word: 'मेट्रो स्टेशन', translation: 'Metro station', pronunciation: 'MAY-troh STAY-shun' }
+        ]
+      },
+      {
+        id: 9,
+        title: 'Daily Essentials',
+        level: 'beginner',
+        words: [
+          { word: 'फोन', translation: 'Phone', pronunciation: 'fone' },
+          { word: 'पता', translation: 'Address', pronunciation: 'puh-TAA' },
+          { word: 'पासपोर्ट', translation: 'Passport', pronunciation: 'PAAS-port' },
+          { word: 'पैसे', translation: 'Money', pronunciation: 'PIE-say' },
+          { word: 'मुझे वाई-फाई चाहिए', translation: 'I need Wi‑Fi', pronunciation: 'muj-HAY wye-fye chaa-hee-YAY' },
+          { word: 'मेरी मदद कीजिए', translation: 'Please help me', pronunciation: 'MEH-ree muh-DAD kee-JEE-yay' },
+          { word: 'मैं खो गया/गई हूँ', translation: 'I am lost', pronunciation: 'main khoh GUH-yaa / GUH-yee hoon' },
+          { word: 'यह जरूरी है', translation: 'This is important', pronunciation: 'yah ज़रू-री HAI' }
+        ]
+      },
+      {
+        id: 10,
+        title: 'Basic Conversations',
+        level: 'beginner',
+        words: [
+          { word: 'आप कहाँ से हैं?', translation: 'Where are you from?', pronunciation: 'AAP kah-HAAN say hain' },
+          { word: 'मैं भारत से हूँ', translation: 'I am from India', pronunciation: 'main BHAH-rat say hoon' },
+          { word: 'मैं सीख रहा/रही हूँ', translation: 'I am learning', pronunciation: 'main seekh rah-HAH / rah-HEE hoon' },
+          { word: 'धीरे बोलिए', translation: 'Please speak slowly', pronunciation: 'DHEE-ray bo-LEE-yay' },
+          { word: 'ठीक है', translation: 'Okay', pronunciation: 'theek HAI' },
+          { word: 'कोई समस्या नहीं', translation: 'No problem', pronunciation: 'KO-ee su-MUS-yaa nuh-HEEN' },
+          { word: 'बहुत अच्छा', translation: 'Very good', pronunciation: 'buh-HUT UH-chaa' },
+          { word: 'फिर मिलते हैं', translation: 'See you again', pronunciation: 'fir mil-tay hain' }
         ]
       }
     ]
