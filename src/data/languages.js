@@ -2041,9 +2041,9 @@ export const languages = {
     name: 'Italian',
     flag: '🇮🇹',
     code: 'it',
-    lessonCount: 5,
-    totalLessons: 5,
-    freeLessons: 5,
+    lessonCount: 10,
+    totalLessons: 10,
+    freeLessons: 10,
     lessons: [
       {
         id: 1,
@@ -2115,6 +2115,76 @@ export const languages = {
           { word: 'Mi dispiace', translation: 'I\'m sorry', pronunciation: 'mee dee-SPEE-ah-cheh' },
           { word: 'Va bene', translation: 'It\'s okay / That\'s fine', pronunciation: 'vah BEH-neh' },
           { word: 'Arrivederci', translation: 'Goodbye', pronunciation: 'ah-ree-veh-DEHR-chee' }
+        ]
+      },
+      {
+        id: 6,
+        title: 'Shopping & Bargaining',
+        level: 'beginner',
+        words: [
+          { word: 'Quanto costa questo?', translation: 'How much is this?', pronunciation: 'KWAHN-toh KOH-stah KWAY-stoh' },
+          { word: 'È troppo caro', translation: 'It\'s too expensive', pronunciation: 'eh TROHP-poh KAH-roh' },
+          { word: 'Ha uno sconto?', translation: 'Do you have a discount?', pronunciation: 'ah OO-noh SKOHN-toh' },
+          { word: 'Posso provarlo?', translation: 'Can I try it on?', pronunciation: 'POHS-soh proh-VAHR-loh' },
+          { word: 'Lo prendo', translation: 'I\'ll take it', pronunciation: 'loh PREHN-doh' },
+          { word: 'Accetta carte di credito?', translation: 'Do you accept credit cards?', pronunciation: 'ah-CHET-tah KAR-teh dee KREH-dee-toh' },
+          { word: 'Dov\'è la cassa?', translation: 'Where is the cashier?', pronunciation: 'doh-VEH lah KAHS-sah' }
+        ]
+      },
+      {
+        id: 7,
+        title: 'At the Hotel',
+        level: 'beginner',
+        words: [
+          { word: 'Ho una prenotazione', translation: 'I have a reservation', pronunciation: 'oh OO-nah preh-noh-tah-tsee-OH-neh' },
+          { word: 'Per quante notti?', translation: 'For how many nights?', pronunciation: 'pehr KWAHN-teh NOHT-tee' },
+          { word: 'La chiave, per favore', translation: 'The key, please', pronunciation: 'lah kee-AH-veh pehr fah-VOH-reh' },
+          { word: 'C\'è il WiFi?', translation: 'Is there WiFi?', pronunciation: 'cheh eel WEE-fee' },
+          { word: 'A che ora è la colazione?', translation: 'What time is breakfast?', pronunciation: 'ah keh OH-rah eh lah koh-lah-tsee-OH-neh' },
+          { word: 'Può chiamarmi un taxi?', translation: 'Can you call me a taxi?', pronunciation: 'pwoh kee-ah-MAHR-mee oon TAHK-see' },
+          { word: 'Vorrei fare il check-out', translation: 'I\'d like to check out', pronunciation: 'vohr-RAY FAH-reh eel check-out' }
+        ]
+      },
+      {
+        id: 8,
+        title: 'Time & Numbers',
+        level: 'beginner',
+        words: [
+          { word: 'Che ore sono?', translation: 'What time is it?', pronunciation: 'keh OH-reh SOH-noh' },
+          { word: 'Sono le tre', translation: 'It\'s three o\'clock', pronunciation: 'SOH-noh leh TREH' },
+          { word: 'Uno, due, tre', translation: 'One, two, three', pronunciation: 'OO-noh DOO-eh TREH' },
+          { word: 'Dieci, venti, trenta', translation: 'Ten, twenty, thirty', pronunciation: 'dee-EH-chee VEHN-tee TREHN-tah' },
+          { word: 'Lunedì, martedì', translation: 'Monday, Tuesday', pronunciation: 'loo-neh-DEE mahr-teh-DEE' },
+          { word: 'Oggi, domani, ieri', translation: 'Today, tomorrow, yesterday', pronunciation: 'OHD-jee doh-MAH-nee ee-EH-ree' },
+          { word: 'Questa settimana', translation: 'This week', pronunciation: 'KWAY-stah seht-tee-MAH-nah' }
+        ]
+      },
+      {
+        id: 9,
+        title: 'Emergencies',
+        level: 'beginner',
+        words: [
+          { word: 'Aiuto!', translation: 'Help!', pronunciation: 'ah-YOO-toh' },
+          { word: 'Chiami la polizia', translation: 'Call the police', pronunciation: 'kee-AH-mee lah poh-lee-TSEE-ah' },
+          { word: 'Ho bisogno di un medico', translation: 'I need a doctor', pronunciation: 'oh bee-ZOHN-yoh dee oon MEH-dee-koh' },
+          { word: 'Dov\'è l\'ospedale?', translation: 'Where is the hospital?', pronunciation: 'doh-VEH loh-speh-DAH-leh' },
+          { word: 'Mi sono perso', translation: 'I\'m lost', pronunciation: 'mee SOH-noh PEHR-soh' },
+          { word: 'Ho perso il passaporto', translation: 'I lost my passport', pronunciation: 'oh PEHR-soh eel pahs-sah-POHR-toh' },
+          { word: 'È un\'emergenza', translation: 'It\'s an emergency', pronunciation: 'eh oon-eh-mehr-JEHN-tsah' }
+        ]
+      },
+      {
+        id: 10,
+        title: 'Making Friends',
+        level: 'beginner',
+        words: [
+          { word: 'Di dove sei?', translation: 'Where are you from?', pronunciation: 'dee DOH-veh say' },
+          { word: 'Sono di...', translation: 'I\'m from...', pronunciation: 'SOH-noh dee' },
+          { word: 'Che lavoro fai?', translation: 'What do you do for work?', pronunciation: 'keh lah-VOH-roh fai' },
+          { word: 'Mi piace molto l\'Italia', translation: 'I really like Italy', pronunciation: 'mee pee-AH-cheh MOHL-toh lee-TAH-lee-ah' },
+          { word: 'Posso avere il tuo numero?', translation: 'Can I have your number?', pronunciation: 'POHS-soh ah-VEH-reh eel TOO-oh NOO-meh-roh' },
+          { word: 'Usciamo qualche volta?', translation: 'Shall we go out sometime?', pronunciation: 'oo-SHAH-moh KWAHL-keh VOHL-tah' },
+          { word: 'È stato un piacere', translation: 'It was a pleasure', pronunciation: 'eh STAH-toh oon pee-ah-CHEH-reh' }
         ]
       }
     ]
