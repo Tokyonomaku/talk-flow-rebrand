@@ -5,40 +5,34 @@ export default function LandingPage() {
 
   return (
     <>
-      <h1>Learn French Fast</h1>
       <style>{`
-        .landing-cta {
+        .landing-min {
+          min-height: 100vh;
           display: flex;
+          flex-direction: column;
           align-items: center;
-          gap: 12px;
-          margin-top: 12px;
+          justify-content: center;
+          padding: 24px;
+          text-align: center;
+          gap: 16px;
         }
-        .turtle-pointer {
-          display: flex;
-          align-items: center;
+        .landing-min h1 {
+          font-size: clamp(36px, 8vw, 64px);
+          font-weight: 800;
+          margin: 0;
         }
-        @keyframes bounce {
-          0%, 100% { transform: translateY(0); }
-          50% { transform: translateY(-10px); }
-        }
-        @media (max-width: 640px) {
-          .landing-cta {
-            flex-direction: column;
-            align-items: center;
-          }
-          .turtle-pointer {
-            justify-content: center;
-            width: 100%;
-          }
+        .landing-min p {
+          margin: 0;
+          font-size: 14px;
+          color: #6b7280;
         }
       `}</style>
-      <div style={{ textAlign: 'center', fontSize: '50px', marginBottom: '20px' }}>
-        🐢 👇
-      </div>
-      <div className="landing-cta">
+      <div className="landing-min">
+        <h1>Learn a Language</h1>
         <button type="button" onClick={handlePickLanguage}>
-          Start Learning →
+          Start Free →
         </button>
+        <p>No signup • No credit card • Free forever</p>
       </div>
     </>
   );
