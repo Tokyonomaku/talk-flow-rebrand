@@ -130,6 +130,7 @@ export default function LessonView({ lesson, language, onBack, onUpgradeClick })
       ru: ['ru-RU', 'ru'],
       ar: ['ar-SA', 'ar'],
       hi: ['hi-IN', 'hi'],
+      nl: ['nl-NL', 'nl'],
       ko: ['ko-KR', 'ko'],
       en: ['en-US', 'en-GB', 'en'],
     };

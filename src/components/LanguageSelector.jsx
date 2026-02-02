@@ -12,6 +12,7 @@ export default function LanguageSelector({ onSelectLanguage, onLockedLanguageCli
       'spanish',
       'french',
       'german',
+      'dutch',
       'hindi',
       'italian',
       'korean',

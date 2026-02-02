@@ -644,6 +644,90 @@ export const languages = {
       }
     ]
   },
+  dutch: {
+    id: 'dutch',
+    name: 'Dutch',
+    flag: '🇳🇱',
+    code: 'nl',
+    lessonCount: 5,
+    totalLessons: 5,
+    freeLessons: 5,
+    lessons: [
+      {
+        id: 1,
+        title: 'Essential Greetings',
+        level: 'beginner',
+        words: [
+          { word: 'Hallo', translation: 'Hello', pronunciation: 'HAH-loh' },
+          { word: 'Goedemorgen', translation: 'Good morning', pronunciation: 'HOO-duh-MOR-ghun' },
+          { word: 'Goedemiddag', translation: 'Good afternoon', pronunciation: 'HOO-duh-MID-dahg' },
+          { word: 'Goedenavond', translation: 'Good evening', pronunciation: 'HOO-dun-AH-vont' },
+          { word: 'Hoe gaat het?', translation: 'How are you?', pronunciation: 'hoo GAHT het' },
+          { word: 'Goed, dank je', translation: 'Good, thank you', pronunciation: 'hoot DAHNK yuh' },
+          { word: 'Mijn naam is...', translation: 'My name is...', pronunciation: 'mine NAHM is' },
+          { word: 'Aangenaam', translation: 'Nice to meet you', pronunciation: 'AHN-guh-nahm' }
+        ]
+      },
+      {
+        id: 2,
+        title: 'Ordering Food & Drinks',
+        level: 'beginner',
+        words: [
+          { word: 'Ik wil graag...', translation: 'I would like...', pronunciation: 'ik vil HRAHG' },
+          { word: 'Een koffie, alstublieft', translation: 'A coffee, please', pronunciation: 'un KOF-fee AHL-stoo-bleeft' },
+          { word: 'Een biertje', translation: 'A beer', pronunciation: 'un BEER-tyuh' },
+          { word: 'Een glas water', translation: 'A glass of water', pronunciation: 'un glahs VAH-tur' },
+          { word: 'De rekening, alstublieft', translation: 'The bill, please', pronunciation: 'duh RAY-kuh-ning AHL-stoo-bleeft' },
+          { word: 'Lekker!', translation: 'Delicious!', pronunciation: 'LEK-kur' },
+          { word: 'Hoeveel kost het?', translation: 'How much does it cost?', pronunciation: 'HOO-vayl KOST het' }
+        ]
+      },
+      {
+        id: 3,
+        title: 'Essential Questions',
+        level: 'beginner',
+        words: [
+          { word: 'Waar is het toilet?', translation: 'Where is the bathroom?', pronunciation: 'vahr is het twah-LET' },
+          { word: 'Spreekt u Engels?', translation: 'Do you speak English?', pronunciation: 'spraykt oo ENG-uls' },
+          { word: 'Ik begrijp het niet', translation: 'I don\'t understand', pronunciation: 'ik buh-HRAYP het neet' },
+          { word: 'Kunt u dat herhalen?', translation: 'Can you repeat that?', pronunciation: 'kunt oo daht her-HAH-lun' },
+          { word: 'Wat is dit?', translation: 'What is this?', pronunciation: 'vaht is dit' },
+          { word: 'Waar is...?', translation: 'Where is...?', pronunciation: 'vahr is' },
+          { word: 'Kunt u mij helpen?', translation: 'Can you help me?', pronunciation: 'kunt oo may HEL-pun' }
+        ]
+      },
+      {
+        id: 4,
+        title: 'Getting Around',
+        level: 'beginner',
+        words: [
+          { word: 'Links', translation: 'Left', pronunciation: 'links' },
+          { word: 'Rechts', translation: 'Right', pronunciation: 'rekhts' },
+          { word: 'Rechtdoor', translation: 'Straight ahead', pronunciation: 'REKHT-door' },
+          { word: 'Dichtbij', translation: 'Near', pronunciation: 'DIKHT-bay' },
+          { word: 'Ver weg', translation: 'Far away', pronunciation: 'fer VEKH' },
+          { word: 'Het station', translation: 'The station', pronunciation: 'het STAH-shon' },
+          { word: 'De luchthaven', translation: 'The airport', pronunciation: 'duh LUKHT-hah-vun' },
+          { word: 'Ik moet naar...', translation: 'I need to go to...', pronunciation: 'ik moot nahr' }
+        ]
+      },
+      {
+        id: 5,
+        title: 'Polite Expressions',
+        level: 'beginner',
+        words: [
+          { word: 'Alstublieft', translation: 'Please (formal)', pronunciation: 'AHL-stoo-bleeft' },
+          { word: 'Dank u wel', translation: 'Thank you', pronunciation: 'dahnk oo VEL' },
+          { word: 'Heel erg bedankt', translation: 'Thank you very much', pronunciation: 'hayl erg buh-DAHNKT' },
+          { word: 'Graag gedaan', translation: 'You\'re welcome', pronunciation: 'hrahg guh-DAHN' },
+          { word: 'Sorry', translation: 'Sorry', pronunciation: 'SOR-ree' },
+          { word: 'Neem me niet kwalijk', translation: 'Excuse me', pronunciation: 'naym muh neet KVAH-luk' },
+          { word: 'Ja', translation: 'Yes', pronunciation: 'yah' },
+          { word: 'Nee', translation: 'No', pronunciation: 'nay' }
+        ]
+      }
+    ]
+  },
   french: {
     id: 'french',
     name: 'French',
@@ -5070,5 +5154,6 @@ export const languages = {
 };
 
 export const getLanguageById = (id) => languages[id];
-export const getAllLanguages = () => Object.values(languages);
+export const getAllLanguages = () =>
+  Object.values(languages).sort((a, b) => a.name.localeCompare(b.name));
 

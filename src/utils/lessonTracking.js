@@ -6,6 +6,7 @@ const FOREIGN_LANGUAGE_IDS = [
   'spanish',
   'french',
   'german',
+  'dutch',
   'hindi',
   'italian',
   'korean',
@@ -223,6 +224,9 @@ export function hasFreeLanguage() {
 export function isLanguageAccessible(languageId) {
   // English education is always free (social good positioning)
   if (isFreeEnglishTrack(languageId)) {
+    return true;
+  }
+  if (languageId === 'dutch') {
     return true;
   }
   if (isPremium()) {
