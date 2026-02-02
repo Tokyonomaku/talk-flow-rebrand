@@ -9,9 +9,9 @@ function goToChooseLanguages() {
 
 export default function HomePage() {
   return (
-    <div className="bg-white text-slate-900">
+    <div className="bg-[#FAFAF8] text-slate-900">
       <main className="mx-auto w-full px-5">
-        <section className="min-h-[100svh] w-full flex items-center justify-center py-10">
+        <section className="min-h-[100svh] w-full flex items-start justify-center pt-4 pb-10">
           <div className="w-full max-w-[720px] text-center space-y-6">
             <h1 className="text-[36px] leading-[1.1] font-extrabold sm:text-[44px] md:text-[56px]">
               Learn a Language
@@ -24,6 +24,9 @@ export default function HomePage() {
             >
               Start Free →
             </button>
+            <div style={{ fontSize: '24px', marginTop: '20px', letterSpacing: '8px' }}>
+              🇫🇷 🇪🇸 🇩🇪 🇮🇹 🇵🇹 🇯🇵 🇨🇳 🇷🇺 🇮🇳 🇸🇦
+            </div>
             <p className="text-center text-[12px] font-semibold text-slate-500">
               No signup • No credit card • Free forever
             </p>
