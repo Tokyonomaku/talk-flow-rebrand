@@ -11,11 +11,26 @@ export default function HomePage() {
   return (
     <div className="bg-[#FAFAF8] text-slate-900">
       <main className="mx-auto w-full px-5">
-        <section className="min-h-[100svh] w-full flex items-start justify-center pt-4 pb-10">
-          <div className="w-full max-w-[720px] text-center space-y-6">
+        <section className="min-h-[100svh] w-full">
+          <div
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              minHeight: '100vh',
+              textAlign: 'center',
+              padding: '20px',
+            }}
+          >
             <h1 className="text-[36px] leading-[1.1] font-extrabold sm:text-[44px] md:text-[56px]">
-              Learn a Language
+              Learn French Fast
             </h1>
+            <div style={{ margin: '30px 0', fontSize: '18px', lineHeight: '2' }}>
+              <p>"Où sont les toilettes?" → Where is the bathroom?</p>
+              <p>"Combien ça coûte?" → How much does this cost?</p>
+              <p>"Parlez-vous anglais?" → Do you speak English?</p>
+            </div>
             <button
               type="button"
               onClick={goToChooseLanguages}
@@ -24,10 +39,7 @@ export default function HomePage() {
             >
               Start Free →
             </button>
-            <div style={{ fontSize: '24px', marginTop: '20px', letterSpacing: '8px' }}>
-              🇫🇷 🇪🇸 🇩🇪 🇮🇹 🇵🇹 🇯🇵 🇨🇳 🇷🇺 🇮🇳 🇸🇦
-            </div>
-            <p className="text-center text-[12px] font-semibold text-slate-500">
+            <p style={{ marginTop: '15px', color: '#888', fontSize: '14px' }}>
               No signup • No credit card • Free forever
             </p>
           </div>

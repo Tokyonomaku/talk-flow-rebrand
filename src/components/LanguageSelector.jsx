@@ -21,6 +21,7 @@ export default function LanguageSelector({ onSelectLanguage, onLockedLanguageCli
       'chinese',
       'russian',
       'arabic',
+      'vietnamese',
     ]),
     []
   );

@@ -728,6 +728,90 @@ export const languages = {
       }
     ]
   },
+  vietnamese: {
+    id: 'vietnamese',
+    name: 'Vietnamese',
+    flag: '🇻🇳',
+    code: 'vi',
+    lessonCount: 5,
+    totalLessons: 5,
+    freeLessons: 5,
+    lessons: [
+      {
+        id: 1,
+        title: 'Essential Greetings',
+        level: 'beginner',
+        words: [
+          { word: 'Xin chào', translation: 'Hello', pronunciation: 'sin CHOW' },
+          { word: 'Tạm biệt', translation: 'Goodbye', pronunciation: 'tahm bee-ET' },
+          { word: 'Bạn khỏe không?', translation: 'How are you?', pronunciation: 'bahn KWEH kohng' },
+          { word: 'Tôi khỏe, cảm ơn', translation: 'I\'m fine, thank you', pronunciation: 'toy KWEH kahm UHN' },
+          { word: 'Tôi tên là...', translation: 'My name is...', pronunciation: 'toy ten lah' },
+          { word: 'Bạn tên gì?', translation: 'What is your name?', pronunciation: 'bahn ten ZEE' },
+          { word: 'Rất vui được gặp bạn', translation: 'Nice to meet you', pronunciation: 'ruht voo-ee duhk gahp bahn' },
+          { word: 'Chào buổi sáng', translation: 'Good morning', pronunciation: 'chow boo-OY sahng' }
+        ]
+      },
+      {
+        id: 2,
+        title: 'Ordering Food & Drinks',
+        level: 'beginner',
+        words: [
+          { word: 'Cho tôi...', translation: 'Give me... / I\'d like...', pronunciation: 'chaw toy' },
+          { word: 'Một cà phê', translation: 'A coffee', pronunciation: 'moht kah FEH' },
+          { word: 'Một ly nước', translation: 'A glass of water', pronunciation: 'moht lee NUHK' },
+          { word: 'Phở', translation: 'Pho (noodle soup)', pronunciation: 'FUH' },
+          { word: 'Ngon lắm!', translation: 'Very delicious!', pronunciation: 'ngon LAHM' },
+          { word: 'Bao nhiêu tiền?', translation: 'How much is it?', pronunciation: 'bow nyew tee-EN' },
+          { word: 'Tính tiền', translation: 'The bill please', pronunciation: 'tin tee-EN' }
+        ]
+      },
+      {
+        id: 3,
+        title: 'Essential Questions',
+        level: 'beginner',
+        words: [
+          { word: 'Nhà vệ sinh ở đâu?', translation: 'Where is the bathroom?', pronunciation: 'nyah vay sin UH DOW' },
+          { word: 'Bạn nói tiếng Anh không?', translation: 'Do you speak English?', pronunciation: 'bahn noy tee-ENG ahn kohng' },
+          { word: 'Tôi không hiểu', translation: 'I don\'t understand', pronunciation: 'toy kohng HEE-oo' },
+          { word: 'Xin nói lại', translation: 'Please repeat', pronunciation: 'sin noy LIE' },
+          { word: 'Cái này là gì?', translation: 'What is this?', pronunciation: 'kai nay lah ZEE' },
+          { word: 'Ở đâu?', translation: 'Where?', pronunciation: 'UH DOW' },
+          { word: 'Giúp tôi với', translation: 'Please help me', pronunciation: 'YOOP toy vuh-EE' }
+        ]
+      },
+      {
+        id: 4,
+        title: 'Getting Around',
+        level: 'beginner',
+        words: [
+          { word: 'Rẽ trái', translation: 'Turn left', pronunciation: 'reh CHAI' },
+          { word: 'Rẽ phải', translation: 'Turn right', pronunciation: 'reh FAI' },
+          { word: 'Đi thẳng', translation: 'Go straight', pronunciation: 'dee TAHNG' },
+          { word: 'Gần', translation: 'Near', pronunciation: 'guhn' },
+          { word: 'Xa', translation: 'Far', pronunciation: 'sah' },
+          { word: 'Sân bay', translation: 'Airport', pronunciation: 'suhn bay' },
+          { word: 'Ga xe lửa', translation: 'Train station', pronunciation: 'gah seh LUH-ah' },
+          { word: 'Tôi muốn đi...', translation: 'I want to go to...', pronunciation: 'toy moo-OHN dee' }
+        ]
+      },
+      {
+        id: 5,
+        title: 'Polite Expressions',
+        level: 'beginner',
+        words: [
+          { word: 'Làm ơn', translation: 'Please', pronunciation: 'lahm UHN' },
+          { word: 'Cảm ơn', translation: 'Thank you', pronunciation: 'kahm UHN' },
+          { word: 'Cảm ơn rất nhiều', translation: 'Thank you very much', pronunciation: 'kahm UHN ruht nyew' },
+          { word: 'Không có gì', translation: 'You\'re welcome', pronunciation: 'kohng kaw ZEE' },
+          { word: 'Xin lỗi', translation: 'Sorry', pronunciation: 'sin LOY' },
+          { word: 'Không sao', translation: 'No problem', pronunciation: 'kohng sow' },
+          { word: 'Vâng', translation: 'Yes (formal)', pronunciation: 'vuhng' },
+          { word: 'Không', translation: 'No', pronunciation: 'kohng' }
+        ]
+      }
+    ]
+  },
   french: {
     id: 'french',
     name: 'French',
