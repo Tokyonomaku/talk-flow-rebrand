@@ -1786,6 +1786,81 @@ export const languages = {
           { word: 'T\'inquiète', translation: 'Don\'t worry (casual)', pronunciation: 'tan-kyet' },
           { word: 'C\'est pas grave', translation: 'It\'s no big deal', pronunciation: 'say pah grav' }
         ]
+      },
+      {
+        id: 28,
+        title: 'At the Doctor',
+        level: 'advanced',
+        premium: true,
+        words: [
+          { word: 'J\'ai mal à la tête', translation: 'I have a headache', pronunciation: 'zhay mal ah lah TET' },
+          { word: 'J\'ai mal au ventre', translation: 'I have a stomach ache', pronunciation: 'zhay mal oh VAHN-truh' },
+          { word: 'Je suis malade', translation: 'I am sick', pronunciation: 'zhuh swee mah-LAHD' },
+          { word: 'J\'ai besoin d\'un médecin', translation: 'I need a doctor', pronunciation: 'zhay buh-ZWAN duhn mayd-SAN' },
+          { word: 'J\'ai de la fièvre', translation: 'I have a fever', pronunciation: 'zhay duh lah fee-EV-ruh' },
+          { word: 'Une ordonnance', translation: 'A prescription', pronunciation: 'oon or-doh-NAHNS' },
+          { word: 'La pharmacie', translation: 'The pharmacy', pronunciation: 'lah far-mah-SEE' }
+        ]
+      },
+      {
+        id: 29,
+        title: 'Making Plans',
+        level: 'advanced',
+        premium: true,
+        words: [
+          { word: 'On se voit quand?', translation: 'When shall we meet?', pronunciation: 'on suh vwah KAHN' },
+          { word: 'Tu es libre ce soir?', translation: 'Are you free tonight?', pronunciation: 'too ay LEE-bruh suh SWAHR' },
+          { word: 'On peut se retrouver à...', translation: 'We can meet at...', pronunciation: 'on puh suh ruh-troo-VAY ah' },
+          { word: 'Je suis occupé', translation: 'I\'m busy', pronunciation: 'zhuh swee oh-koo-PAY' },
+          { word: 'Ça te dit?', translation: 'Does that sound good?', pronunciation: 'sah tuh DEE' },
+          { word: 'Avec plaisir!', translation: 'With pleasure!', pronunciation: 'ah-VEK pleh-ZEER' },
+          { word: 'À quelle heure?', translation: 'At what time?', pronunciation: 'ah kel UHR' }
+        ]
+      },
+      {
+        id: 30,
+        title: 'Talking About Weather',
+        level: 'advanced',
+        premium: true,
+        words: [
+          { word: 'Il fait beau', translation: 'It\'s nice weather', pronunciation: 'eel fay BOH' },
+          { word: 'Il fait chaud', translation: 'It\'s hot', pronunciation: 'eel fay SHOH' },
+          { word: 'Il fait froid', translation: 'It\'s cold', pronunciation: 'eel fay FRWAH' },
+          { word: 'Il pleut', translation: 'It\'s raining', pronunciation: 'eel PLUH' },
+          { word: 'Il neige', translation: 'It\'s snowing', pronunciation: 'eel NEZH' },
+          { word: 'Quel temps fait-il?', translation: 'What\'s the weather like?', pronunciation: 'kel tahn fay-TEEL' },
+          { word: 'Il y a du soleil', translation: 'It\'s sunny', pronunciation: 'eel ee ah doo soh-LAY' }
+        ]
+      },
+      {
+        id: 31,
+        title: 'Expressing Feelings',
+        level: 'advanced',
+        premium: true,
+        words: [
+          { word: 'Je suis content(e)', translation: 'I am happy', pronunciation: 'zhuh swee kon-TAHN(T)' },
+          { word: 'Je suis triste', translation: 'I am sad', pronunciation: 'zhuh swee TREEST' },
+          { word: 'Je suis fatigué(e)', translation: 'I am tired', pronunciation: 'zhuh swee fah-tee-GAY' },
+          { word: 'J\'ai peur', translation: 'I am scared', pronunciation: 'zhay PUHR' },
+          { word: 'Je m\'ennuie', translation: 'I am bored', pronunciation: 'zhuh mahn-NWEE' },
+          { word: 'Je suis excité(e)', translation: 'I am excited', pronunciation: 'zhuh swee ek-see-TAY' },
+          { word: 'Ça va mieux', translation: 'I feel better', pronunciation: 'sah vah MYUH' }
+        ]
+      },
+      {
+        id: 32,
+        title: 'French Slang & Expressions',
+        level: 'advanced',
+        premium: true,
+        words: [
+          { word: 'C\'est chouette!', translation: 'That\'s cool!', pronunciation: 'say SHWET' },
+          { word: 'J\'en ai marre', translation: 'I\'m fed up', pronunciation: 'zhahn ay MAR' },
+          { word: 'C\'est nul', translation: 'That sucks', pronunciation: 'say NOOL' },
+          { word: 'T\'inquiète!', translation: 'Don\'t worry!', pronunciation: 'tahn-KYET' },
+          { word: 'Bof', translation: 'Meh / Whatever', pronunciation: 'BOF' },
+          { word: 'Nickel!', translation: 'Perfect!', pronunciation: 'nee-KEL' },
+          { word: 'À plus!', translation: 'See you later!', pronunciation: 'ah PLOOS' }
+        ]
       }
     ]
   },
