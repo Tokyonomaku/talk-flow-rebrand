@@ -22,6 +22,7 @@ export default function LanguageSelector({ onSelectLanguage, onLockedLanguageCli
       'russian',
       'arabic',
       'vietnamese',
+      'ancient-greek',
     ]),
     []
   );

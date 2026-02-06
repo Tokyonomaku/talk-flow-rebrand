@@ -336,6 +336,52 @@ export const languages = {
       }
     ]
   },
+  'ancient-greek': {
+    id: 'ancient-greek',
+    name: 'Ancient Greek',
+    flag: '🏛️',
+    code: 'grc',
+    lessonCount: 1,
+    totalLessons: 1,
+    freeLessons: 1,
+    lessons: [
+      {
+        id: 1,
+        title: 'The Greek Alphabet & Basic Words',
+        level: 'beginner',
+        words: [
+          { word: 'Α α', translation: 'Alpha (a)', pronunciation: 'AL-fah' },
+          { word: 'Β β', translation: 'Beta (b)', pronunciation: 'BAY-tah' },
+          { word: 'Γ γ', translation: 'Gamma (g)', pronunciation: 'GAM-ah' },
+          { word: 'Δ δ', translation: 'Delta (d)', pronunciation: 'DEL-tah' },
+          { word: 'Ε ε', translation: 'Epsilon (short e)', pronunciation: 'EP-si-lon' },
+          { word: 'Ζ ζ', translation: 'Zeta (z)', pronunciation: 'ZAY-tah' },
+          { word: 'Η η', translation: 'Eta (long e)', pronunciation: 'AY-tah' },
+          { word: 'Θ θ', translation: 'Theta (th)', pronunciation: 'THAY-tah' },
+          { word: 'Ι ι', translation: 'Iota (i)', pronunciation: 'ee-OH-tah' },
+          { word: 'Κ κ', translation: 'Kappa (k)', pronunciation: 'KAP-ah' },
+          { word: 'Λ λ', translation: 'Lambda (l)', pronunciation: 'LAM-dah' },
+          { word: 'Μ μ', translation: 'Mu (m)', pronunciation: 'MOO' },
+          { word: 'Ν ν', translation: 'Nu (n)', pronunciation: 'NOO' },
+          { word: 'Ξ ξ', translation: 'Xi (x)', pronunciation: 'KSEE' },
+          { word: 'Ο ο', translation: 'Omicron (short o)', pronunciation: 'OM-i-kron' },
+          { word: 'Π π', translation: 'Pi (p)', pronunciation: 'PEE' },
+          { word: 'Ρ ρ', translation: 'Rho (r)', pronunciation: 'ROH' },
+          { word: 'Σ σ/ς', translation: 'Sigma (s)', pronunciation: 'SIG-mah' },
+          { word: 'Τ τ', translation: 'Tau (t)', pronunciation: 'TOW' },
+          { word: 'Υ υ', translation: 'Upsilon (u/y)', pronunciation: 'OOP-si-lon' },
+          { word: 'Φ φ', translation: 'Phi (ph)', pronunciation: 'FEE' },
+          { word: 'Χ χ', translation: 'Chi (ch)', pronunciation: 'KHEE' },
+          { word: 'Ψ ψ', translation: 'Psi (ps)', pronunciation: 'PSEE' },
+          { word: 'Ω ω', translation: 'Omega (long o)', pronunciation: 'oh-MAY-gah' },
+          { word: 'λόγος', translation: 'logos (word, reason)', pronunciation: 'LOH-gos' },
+          { word: 'φιλοσοφία', translation: 'philosophia (love of wisdom)', pronunciation: 'fil-oh-soh-FEE-ah' },
+          { word: 'ἀγάπη', translation: 'agape (unconditional love)', pronunciation: 'ah-GAH-pay' },
+          { word: 'χάρις', translation: 'charis (grace)', pronunciation: 'KAH-ris' }
+        ]
+      }
+    ]
+  },
   spanish: {
     id: 'spanish',
     name: 'Spanish',

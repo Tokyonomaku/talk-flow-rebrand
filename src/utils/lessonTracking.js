@@ -16,6 +16,7 @@ const FOREIGN_LANGUAGE_IDS = [
   'russian',
   'arabic',
   'vietnamese',
+  'ancient-greek',
 ];
 
 /**
@@ -227,7 +228,7 @@ export function isLanguageAccessible(languageId) {
   if (isFreeEnglishTrack(languageId)) {
     return true;
   }
-  if (languageId === 'dutch' || languageId === 'vietnamese') {
+  if (languageId === 'dutch' || languageId === 'vietnamese' || languageId === 'ancient-greek') {
     return true;
   }
   if (isPremium()) {
