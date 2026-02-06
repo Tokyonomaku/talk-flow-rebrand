@@ -24,13 +24,8 @@ export default function HomePage() {
             }}
           >
             <h1 className="text-[36px] leading-[1.1] font-extrabold sm:text-[44px] md:text-[56px]">
-              Learn French Fast
+              Learn a Language
             </h1>
-            <div style={{ margin: '30px 0', fontSize: '18px', lineHeight: '2' }}>
-              <p>"Où sont les toilettes?" → Where is the bathroom?</p>
-              <p>"Combien ça coûte?" → How much does this cost?</p>
-              <p>"Parlez-vous anglais?" → Do you speak English?</p>
-            </div>
             <button
               type="button"
               onClick={goToChooseLanguages}
@@ -39,6 +34,9 @@ export default function HomePage() {
             >
               Start Free →
             </button>
+            <div style={{ fontSize: '24px', marginTop: '20px', letterSpacing: '8px' }}>
+              🇫🇷 🇪🇸 🇩🇪 🇮🇹 🇵🇹 🇯🇵 🇨🇳 🇷🇺 🇮🇳 🇳🇱 🇻🇳 🇸🇦
+            </div>
             <p style={{ marginTop: '15px', color: '#888', fontSize: '14px' }}>
               No signup • No credit card • Free forever
             </p>
