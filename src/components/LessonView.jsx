@@ -15,6 +15,8 @@ export default function LessonView({ lesson, language, onBack, onUpgradeClick })
   const premium = isPremium();
   const alwaysFreeEnglish = isFreeEnglishTrack(language.id);
   const lessonNum = typeof lesson.id === 'string' ? parseInt(lesson.id, 10) : Number(lesson.id);
+  const hasStreetSlang = lesson.streetSlang && lesson.streetSlang.length > 0;
+  const hasCulturalNotes = Boolean(lesson.culturalNotes);
 
   // GA4: lesson started (fires when lesson loads)
   useEffect(() => {
@@ -306,104 +308,137 @@ export default function LessonView({ lesson, language, onBack, onUpgradeClick })
           </div>
         )}
 
-        {/* Words Grid */}
         {!showQuiz && (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {lesson.words.map((wordItem, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow"
-              >
-                <div className="flex items-start justify-between mb-4">
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                      {wordItem.word}
-                    </h3>
-                    {wordItem.romanji && (
-                      <p className="text-sm text-gray-500 mb-1">{wordItem.romanji}</p>
-                    )}
-                    <p className="text-lg text-gray-700 font-semibold">
-                      {wordItem.translation}
-                    </p>
-                    {wordItem.pronunciation && (
-                      <p className="text-sm text-gray-500 mt-1">
-                        {wordItem.pronunciation}
-                      </p>
-                    )}
+          <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_340px] gap-6">
+            <div>
+              {hasStreetSlang && (
+                <div className="mb-8">
+                  <h2 className="text-2xl font-bold text-gray-900 mb-4">Street Slang 💬</h2>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {lesson.streetSlang.map((slangItem, index) => (
+                      <div
+                        key={index}
+                        className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow border-2 border-purple-200"
+                      >
+                        <div className="flex items-start justify-between mb-4">
+                          <div className="flex-1">
+                            <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                              {slangItem.word}
+                            </h3>
+                            {slangItem.romanji && (
+                              <p className="text-sm text-gray-500 mb-1">{slangItem.romanji}</p>
+                            )}
+                            <p className="text-lg text-gray-700 font-semibold">
+                              {slangItem.translation}
+                            </p>
+                            {slangItem.pronunciation && (
+                              <p className="text-sm text-gray-500 mt-1">
+                                {slangItem.pronunciation}
+                              </p>
+                            )}
+                          </div>
+                          <button
+                            onClick={() => speakText(slangItem.word, language.code, `slang-${index}`)}
+                            className={`ml-4 p-3 rounded-full transition-all ${
+                              playingIndex === `slang-${index}`
+                                ? 'bg-purple-500 text-white animate-pulse'
+                                : 'bg-purple-100 text-purple-700 hover:bg-purple-200 hover:text-purple-800'
+                            }`}
+                            aria-label={`Pronounce ${slangItem.word}`}
+                          >
+                            <Volume2 className="w-5 h-5" />
+                          </button>
+                        </div>
+                      </div>
+                    ))}
                   </div>
-                  <button
-                    onClick={() => speakText(wordItem.word, language.code, index)}
-                    className={`ml-4 p-3 rounded-full transition-all ${
-                      playingIndex === index
-                        ? 'bg-blue-500 text-white animate-pulse'
-                        : 'bg-gray-100 text-gray-700 hover:bg-blue-100 hover:text-blue-600'
-                    }`}
-                    aria-label={`Pronounce ${wordItem.word}`}
-                  >
-                    <Volume2 className="w-5 h-5" />
-                  </button>
                 </div>
-              </div>
-            ))}
-          </div>
-        )}
+              )}
 
-        {/* Street Slang Section */}
-        {!showQuiz && lesson.streetSlang && lesson.streetSlang.length > 0 && (
-          <div className="mt-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Street Slang 💬</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {lesson.streetSlang.map((slangItem, index) => (
-                <div
-                  key={index}
-                  className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow border-2 border-purple-200"
-                >
-                  <div className="flex items-start justify-between mb-4">
-                    <div className="flex-1">
-                      <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                        {slangItem.word}
-                      </h3>
-                      {slangItem.romanji && (
-                        <p className="text-sm text-gray-500 mb-1">{slangItem.romanji}</p>
-                      )}
-                      <p className="text-lg text-gray-700 font-semibold">
-                        {slangItem.translation}
-                      </p>
-                      {slangItem.pronunciation && (
-                        <p className="text-sm text-gray-500 mt-1">
-                          {slangItem.pronunciation}
-                        </p>
-                      )}
-                    </div>
-                    <button
-                      onClick={() => speakText(slangItem.word, language.code, `slang-${index}`)}
-                      className={`ml-4 p-3 rounded-full transition-all ${
-                        playingIndex === `slang-${index}`
-                          ? 'bg-purple-500 text-white animate-pulse'
-                          : 'bg-purple-100 text-purple-700 hover:bg-purple-200 hover:text-purple-800'
-                      }`}
-                      aria-label={`Pronounce ${slangItem.word}`}
-                    >
-                      <Volume2 className="w-5 h-5" />
-                    </button>
+              {hasCulturalNotes && (
+                <div className="mb-8">
+                  <div className="bg-white rounded-lg shadow-md border border-gray-200 p-5">
+                    <h2 className="text-2xl font-bold text-gray-900 mb-4">Notes & Context</h2>
+                    {Array.isArray(lesson.culturalNotes) ? (
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        {lesson.culturalNotes.map((noteItem, index) => (
+                          <details
+                            key={`${noteItem.title}-${index}`}
+                            className="group rounded-lg border border-blue-100 bg-blue-50/60 p-4 shadow-sm"
+                          >
+                            <summary className="cursor-pointer select-none text-base font-semibold text-gray-900 flex items-center justify-between gap-3">
+                              <span>{noteItem.title}</span>
+                              <span className="text-blue-600 text-sm group-open:hidden">Expand</span>
+                              <span className="text-blue-600 text-sm hidden group-open:inline">Collapse</span>
+                            </summary>
+                            <p className="mt-3 text-gray-700 leading-relaxed">
+                              {noteItem.note}
+                            </p>
+                          </details>
+                        ))}
+                      </div>
+                    ) : (
+                      <div className="text-gray-700 whitespace-pre-line leading-relaxed">
+                        {lesson.culturalNotes}
+                      </div>
+                    )}
                   </div>
                 </div>
-              ))}
+              )}
+
+              {!hasStreetSlang && !hasCulturalNotes && (
+                <div className="bg-white rounded-lg shadow-md border border-gray-200 p-5 text-gray-700">
+                  <h2 className="text-2xl font-bold text-gray-900 mb-2">Lesson Overview</h2>
+                  <p className="text-gray-700">
+                    Review the vocabulary in the sidebar, then mark the lesson complete when you feel ready.
+                  </p>
+                </div>
+              )}
             </div>
-          </div>
-        )}
 
-        {/* Notes / Context */}
-        {!showQuiz && lesson.culturalNotes && (
-          <div className="mt-8">
-            <details className="bg-white rounded-lg shadow-md border border-gray-200 p-5">
-              <summary className="cursor-pointer select-none text-lg font-semibold text-gray-900">
-                Notes & Context
-              </summary>
-              <div className="mt-3 text-gray-700 whitespace-pre-line leading-relaxed">
-                {lesson.culturalNotes}
+            <aside className="lg:sticky lg:top-6 h-fit">
+              <div className="bg-white rounded-lg shadow-md border border-gray-200 p-5">
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">Words</h2>
+                <div className="space-y-4">
+                  {lesson.words.map((wordItem, index) => (
+                    <div
+                      key={index}
+                      className="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow"
+                    >
+                      <div className="flex items-start justify-between gap-3">
+                        <div className="flex-1">
+                          <h3 className="text-xl font-bold text-gray-900 mb-1">
+                            {wordItem.word}
+                          </h3>
+                          {wordItem.romanji && (
+                            <p className="text-xs text-gray-500 mb-1">{wordItem.romanji}</p>
+                          )}
+                          <p className="text-base text-gray-700 font-semibold">
+                            {wordItem.translation}
+                          </p>
+                          {wordItem.pronunciation && (
+                            <p className="text-xs text-gray-500 mt-1">
+                              {wordItem.pronunciation}
+                            </p>
+                          )}
+                        </div>
+                        <button
+                          onClick={() => speakText(wordItem.word, language.code, index)}
+                          className={`p-2 rounded-full transition-all ${
+                            playingIndex === index
+                              ? 'bg-blue-500 text-white animate-pulse'
+                              : 'bg-gray-100 text-gray-700 hover:bg-blue-100 hover:text-blue-600'
+                          }`}
+                          aria-label={`Pronounce ${wordItem.word}`}
+                        >
+                          <Volume2 className="w-4 h-4" />
+                        </button>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
-            </details>
+            </aside>
           </div>
         )}
 

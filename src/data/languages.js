@@ -341,9 +341,9 @@ export const languages = {
     name: 'Ancient Greek',
     flag: '🏛️',
     code: 'grc',
-    lessonCount: 1,
-    totalLessons: 1,
-    freeLessons: 1,
+    lessonCount: 4,
+    totalLessons: 4,
+    freeLessons: 4,
     lessons: [
       {
         id: 1,
@@ -378,6 +378,146 @@ export const languages = {
           { word: 'φιλοσοφία', translation: 'philosophia (love of wisdom)', pronunciation: 'fil-oh-soh-FEE-ah' },
           { word: 'ἀγάπη', translation: 'agape (unconditional love)', pronunciation: 'ah-GAH-pay' },
           { word: 'χάρις', translation: 'charis (grace)', pronunciation: 'KAH-ris' }
+        ]
+      },
+      {
+        id: 2,
+        title: 'Essential Ancient Greek Words',
+        level: 'beginner',
+        words: [
+          { word: 'καλός', translation: 'beautiful / noble', pronunciation: 'kah-LOS' },
+          { word: 'ἀνήρ', translation: 'man / hero', pronunciation: 'ah-NAIR' },
+          { word: 'γυνή', translation: 'woman / wife', pronunciation: 'goo-NAY' },
+          { word: 'θεός', translation: 'god', pronunciation: 'theh-OS' },
+          { word: 'θεά', translation: 'goddess', pronunciation: 'theh-AH' },
+          { word: 'πόλεμος', translation: 'war', pronunciation: 'POH-leh-mos' },
+          { word: 'εἰρήνη', translation: 'peace', pronunciation: 'ay-RAY-nay' },
+          { word: 'ἔρως', translation: 'love / desire', pronunciation: 'EH-rohs' },
+          { word: 'κλέος', translation: 'glory / fame', pronunciation: 'KLEH-os' },
+          { word: 'ἀλήθεια', translation: 'truth', pronunciation: 'ah-LAY-thay-ah' },
+          { word: 'σοφία', translation: 'wisdom', pronunciation: 'soh-FEE-ah' },
+          { word: 'ἀρετή', translation: 'virtue / excellence', pronunciation: 'ah-reh-TAY' },
+          { word: 'ψυχή', translation: 'soul / spirit', pronunciation: 'psoo-KHAY' },
+          { word: 'βασιλεύς', translation: 'king', pronunciation: 'bah-sil-YOOS' },
+          { word: 'Ἑλένη', translation: 'Helen', pronunciation: 'heh-LEH-nay' }
+        ],
+        culturalNotes: [
+          {
+            title: 'Helen of Troy',
+            note: 'Ἑλένη (Helen) was called "the face that launched a thousand ships." Her abduction by Paris sparked the Trojan War - the most famous conflict in Greek mythology.'
+          },
+          {
+            title: 'Kleos - Glory That Outlives You',
+            note: 'κλέος (kleos) wasn\'t just fame - it was immortality through story. Greek heroes like Achilles chose short glorious lives over long forgotten ones because kleos meant being remembered forever.'
+          },
+          {
+            title: 'Arete - Be Excellent',
+            note: 'ἀρετή (arete) meant being the best version of yourself - in battle, in speech, in character. It\'s why Greeks valued both warriors AND philosophers.'
+          },
+          {
+            title: 'Eros vs Agape',
+            note: 'Greeks had multiple words for love. ἔρως (eros) is passionate desire - what Paris felt for Helen. ἀγάπη (agape) is unconditional love - deeper and selfless.'
+          },
+          {
+            title: 'The Weight of War',
+            note: 'πόλεμος (polemos) gives us "polemic." For Greeks, war wasn\'t just violence - it was where men proved their ἀρετή and earned their κλέος.'
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: 'The Iliad - Famous Lines & Basic Phrases',
+        level: 'beginner',
+        words: [
+          { word: 'μῆνιν ἄειδε, θεά', translation: 'Sing, goddess, of the rage', pronunciation: 'MAY-nin AY-deh theh-AH' },
+          { word: 'Ἀχιλλεύς', translation: 'Achilles', pronunciation: 'ah-khil-YOOS' },
+          { word: 'Ἕκτωρ', translation: 'Hector', pronunciation: 'HEK-tor' },
+          { word: 'Πάρις', translation: 'Paris', pronunciation: 'PAH-ris' },
+          { word: 'Τροία', translation: 'Troy', pronunciation: 'TROY-ah' },
+          { word: 'Ἀγαμέμνων', translation: 'Agamemnon', pronunciation: 'ah-gah-MEM-non' },
+          { word: 'πόδας ὠκὺς Ἀχιλλεύς', translation: 'swift-footed Achilles', pronunciation: 'POH-das oh-KOOS ah-khil-YOOS' },
+          { word: 'ἔπεα πτερόεντα', translation: 'winged words', pronunciation: 'EH-peh-ah pteh-ROH-en-tah' },
+          { word: 'ῥοδοδάκτυλος Ἠώς', translation: 'rosy-fingered Dawn', pronunciation: 'roh-doh-DAK-too-los ay-OHS' },
+          { word: 'χαῖρε', translation: 'Hello / Greetings / Rejoice', pronunciation: 'KHAI-reh' },
+          { word: 'ναί', translation: 'Yes', pronunciation: 'NAI' },
+          { word: 'οὐ / οὐκ', translation: 'No / Not', pronunciation: 'oo / ook' },
+          { word: 'τί ἐστι;', translation: 'What is it?', pronunciation: 'TEE es-tee' },
+          { word: 'ποῦ;', translation: 'Where?', pronunciation: 'POO' },
+          { word: 'εὖ', translation: 'Well / Good', pronunciation: 'EW' }
+        ],
+        culturalNotes: [
+          {
+            title: 'The First Line of Western Literature',
+            note: 'μῆνιν ἄειδε, θεά - "Sing, goddess, of the rage" opens the Iliad. The entire epic is about Achilles\' rage and its devastating consequences. This single word μῆνις (rage) drives 15,693 lines of poetry.'
+          },
+          {
+            title: 'Homeric Epithets',
+            note: 'Homer repeated phrases like "swift-footed Achilles" (πόδας ὠκὺς Ἀχιλλεύς) and "rosy-fingered Dawn" (ῥοδοδάκτυλος Ἠώς). These weren\'t lazy writing - they helped oral poets perform 15,000+ lines from memory and fit the rhythm of the verse.'
+          },
+          {
+            title: 'Winged Words',
+            note: 'ἔπεα πτερόεντα (winged words) describes speech that matters - words that fly from one person\'s mouth to another\'s ears. Homer uses this phrase over 100 times. Your words have wings too.'
+          },
+          {
+            title: 'Achilles\' Choice',
+            note: 'Achilles was given a choice: a long peaceful life, forgotten - or a short glorious life, remembered forever. He chose glory (κλέος). The Iliad is proof he chose correctly. We\'re still saying his name 3,000 years later.'
+          },
+          {
+            title: 'Hector - The Human Hero',
+            note: 'While Achilles is half-god, Hector (Ἕκτωρ) is fully human. He fights knowing he\'ll lose, to protect his city and family. His farewell to his wife and infant son is one of literature\'s most heartbreaking scenes.'
+          },
+          {
+            title: 'The Tragedy of Paris',
+            note: 'Πάρις started the war by taking Helen, but Homer doesn\'t portray him as evil - just weak. He\'s a lover, not a fighter. His choice of Aphrodite\'s gift (the most beautiful woman) over Athena\'s (wisdom) or Hera\'s (power) doomed Troy.'
+          },
+          {
+            title: 'Why "Rosy-Fingered Dawn"?',
+            note: 'ῥοδοδάκτυλος Ἠώς appears 20+ times in Homer. Dawn\'s fingers are the first rays of sunlight spreading across the sky. After 3,000 years, we still haven\'t found a more beautiful way to describe sunrise.'
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: 'Greek Cases & Sentence Structure',
+        level: 'beginner',
+        words: [
+          { word: 'ὀνομαστική', translation: 'Nominative (subject)', pronunciation: 'oh-noh-mas-tee-KAY' },
+          { word: 'ὁ ἀνήρ', translation: 'the man (subject)', pronunciation: 'ho ah-NAIR' },
+          { word: 'αἰτιατική', translation: 'Accusative (direct object)', pronunciation: 'ai-tee-ah-tee-KAY' },
+          { word: 'τὸν ἄνδρα', translation: 'the man (object)', pronunciation: 'ton AN-drah' },
+          { word: 'γενική', translation: 'Genitive (possession / "of")', pronunciation: 'geh-nee-KAY' },
+          { word: 'τοῦ ἀνδρός', translation: 'of the man', pronunciation: 'too an-DROS' },
+          { word: 'δοτική', translation: 'Dative (indirect object / "to/for")', pronunciation: 'doh-tee-KAY' },
+          { word: 'τῷ ἀνδρί', translation: 'to/for the man', pronunciation: 'toh an-DREE' },
+          { word: 'κλητική', translation: 'Vocative (calling someone)', pronunciation: 'klay-tee-KAY' },
+          { word: 'ὦ ἄνερ', translation: 'O man! (addressing)', pronunciation: 'oh AH-nehr' },
+          { word: 'ὁ ἀνὴρ τὴν γυναῖκα φιλεῖ', translation: 'The man loves the woman', pronunciation: 'ho ah-NAIR tain goo-NAI-kah fee-LAY' },
+          { word: 'ἡ γυνὴ τὸν ἄνδρα φιλεῖ', translation: 'The woman loves the man', pronunciation: 'hay goo-NAY ton AN-drah fee-LAY' },
+          { word: 'φιλεῖ', translation: 'he/she loves', pronunciation: 'fee-LAY' },
+          { word: 'λέγει', translation: 'he/she says/speaks', pronunciation: 'LEH-gay' },
+          { word: 'ἔχει', translation: 'he/she has', pronunciation: 'EH-khay' }
+        ],
+        culturalNotes: [
+          {
+            title: 'Why Cases Matter',
+            note: 'In English, word ORDER tells you who does what: "Man bites dog" vs "Dog bites man." In Greek, word ENDINGS tell you. ὁ ἀνήρ (nominative) is doing the action. τὸν ἄνδρα (accusative) receives it. This means Greek word order is flexible - you can rearrange for emphasis or poetry.'
+          },
+          {
+            title: 'Ancient Greek ≠ Modern Greek',
+            note: 'Ancient Greek sounded VERY different from Modern Greek. The letter β (beta) was a hard "b" sound, not the "v" of modern Greek. The letter η (eta) was a long "ay" sound, not "ee." When you hear Modern Greeks read Homer, they\'re using medieval/modern pronunciation - not how Achilles would have spoken.'
+          },
+          {
+            title: 'The Pitch Accent',
+            note: 'Ancient Greek had a PITCH accent, not a stress accent. The marks ά ὰ ᾶ told singers whether to raise or lower their voice pitch - like musical notes. This is why Greek poetry was closer to song. Modern Greek lost this entirely.'
+          },
+          {
+            title: 'Flexible Word Order',
+            note: 'Because cases mark grammar, Greek poets could arrange words for maximum impact. Homer might put the most important word first OR last for emphasis. "RAGE - sing, goddess, of Achilles" hits different than "Sing, goddess, of the rage of Achilles."'
+          },
+          {
+            title: 'Five Cases, Infinite Possibilities',
+            note: 'Latin has 6 cases, Russian has 6, Finnish has 15. Greek\'s 5 cases (Nominative, Accusative, Genitive, Dative, Vocative) hit a sweet spot - enough to free word order, not so many you drown in endings.'
+          }
         ]
       }
     ]
