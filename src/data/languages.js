@@ -341,9 +341,9 @@ export const languages = {
     name: 'Ancient Greek',
     flag: '🏛️',
     code: 'grc',
-    lessonCount: 5,
-    totalLessons: 5,
-    freeLessons: 5,
+    lessonCount: 6,
+    totalLessons: 6,
+    freeLessons: 6,
     lessons: [
       {
         id: 1,
@@ -582,6 +582,50 @@ export const languages = {
           {
             title: 'Why Learn a "Dead" Language?',
             note: 'Ancient Greek isn\'t dead - it evolved. Like how Latin became Spanish, French, and Italian, Ancient Greek became Modern Greek. But unlike Latin, we have one continuous culture. Greeks today can partially read Homer. The thread never fully broke.'
+          }
+        ]
+      },
+      {
+        id: 6,
+        title: 'Adjectives & Homeric Descriptions',
+        level: 'beginner',
+        words: [
+          { word: 'καλός, καλή, καλόν', translation: 'beautiful / noble (m, f, n)', pronunciation: 'kah-LOS, kah-LAY, kah-LON' },
+          { word: 'ἀγαθός, ἀγαθή, ἀγαθόν', translation: 'good / brave (m, f, n)', pronunciation: 'ah-gah-THOS, ah-gah-THAY, ah-gah-THON' },
+          { word: 'κακός, κακή, κακόν', translation: 'bad / evil (m, f, n)', pronunciation: 'kah-KOS, kah-KAY, kah-KON' },
+          { word: 'μέγας, μεγάλη, μέγα', translation: 'great / large (m, f, n)', pronunciation: 'MEH-gas, meh-GAH-lay, MEH-gah' },
+          { word: 'μῑκρός, μῑκρά, μῑκρόν', translation: 'small / little (m, f, n)', pronunciation: 'mee-KROS, mee-KRAH, mee-KRON' },
+          { word: 'ταχύς, ταχεῖα, ταχύ', translation: 'swift / fast (m, f, n)', pronunciation: 'tah-KHOOS, tah-KHAY-ah, tah-KHOO' },
+          { word: 'δεινός, δεινή, δεινόν', translation: 'terrible / awesome / clever (m, f, n)', pronunciation: 'day-NOS, day-NAY, day-NON' },
+          { word: 'θνητός, θνητή, θνητόν', translation: 'mortal (m, f, n)', pronunciation: 'thnay-TOS, thnay-TAY, thnay-TON' },
+          { word: 'ἀθάνατος, ἀθάνατον', translation: 'immortal / deathless', pronunciation: 'ah-THAH-nah-tos, ah-THAH-nah-ton' },
+          { word: 'φίλος, φίλη, φίλον', translation: 'dear / beloved (m, f, n)', pronunciation: 'FEE-los, FEE-lay, FEE-lon' },
+          { word: 'πολύς, πολλή, πολύ', translation: 'much / many (m, f, n)', pronunciation: 'poh-LOOS, poh-LAY, poh-LOO' },
+          { word: 'δῖος, δῖα, δῖον', translation: 'divine / god-like (m, f, n)', pronunciation: 'DEE-os, DEE-ah, DEE-on' },
+          { word: 'ἡ καλὴ Ἑλένη', translation: 'beautiful Helen', pronunciation: 'hay kah-LAY heh-LEH-nay' },
+          { word: 'ὁ μέγας Ἀχιλλεύς', translation: 'great Achilles', pronunciation: 'ho MEH-gas ah-khil-YOOS' },
+          { word: 'ὁ δῖος Ὀδυσσεύς', translation: 'divine Odysseus', pronunciation: 'ho DEE-os oh-doos-SYOOS' }
+        ],
+        culturalNotes: [
+          {
+            title: 'Adjectives Match Their Nouns',
+            note: 'Greek adjectives change their endings to match the noun they describe - in gender, number, AND case. καλός ἀνήρ (beautiful man) but καλὴ γυνή (beautiful woman). This is why you see three forms: masculine, feminine, neuter.'
+          },
+          {
+            title: 'δεινός - The Untranslatable Word',
+            note: 'δεινός is famously hard to translate. It means terrible, fearsome, powerful, awesome, strange, clever - sometimes all at once. When Sophocles wrote "πολλὰ τὰ δεινά" (many are the deinos things), he meant humanity is both wonderful AND terrifying. One word, infinite meaning.'
+          },
+          {
+            title: 'Mortal vs Immortal - The Great Divide',
+            note: 'θνητός (mortal) vs ἀθάνατος (immortal) - this divide obsessed the Greeks. Heroes were caught between: mortal enough to die, great enough to be remembered like gods. Achilles was half-immortal but chose a mortal death for immortal fame.'
+          },
+          {
+            title: 'Epithets as Identity',
+            note: 'Homer\'s heroes ARE their adjectives. Achilles isn\'t just fast - he IS "swift-footed" (πόδας ὠκύς). Odysseus IS "much-cunning" (πολύμητις). Helen IS "beautiful" (καλή). In oral poetry, these epithets helped audiences instantly recognize characters. The adjective became the person.'
+          },
+          {
+            title: 'φίλος - More Than "Friend"',
+            note: 'φίλος means dear, beloved, friend - but also "one\'s own." Your φίλος arm is your own arm. Your φίλος people are your people. When Achilles calls Patroclus φίλτατος (most beloved), the weight is immense. It\'s the superlative of everything that matters.'
           }
         ]
       }
