@@ -562,6 +562,26 @@ export const languages = {
           {
             title: 'The Weight of ἀποθνῄσκω',
             note: 'ἀποθνῄσκω (I die) appears constantly in the Iliad. Homer doesn\'t shy away from death - he names nearly every warrior who falls, giving them a brief biography before they die. Death mattered. Every death mattered.'
+          },
+          {
+            title: 'When Was Ancient Greek Spoken?',
+            note: 'Ancient Greek spans roughly 1500 BCE to 300 BCE. Homer composed the Iliad around 750 BCE. By the time of Alexander the Great (336-323 BCE), Greek had evolved into Koine - the "common" Greek of the New Testament. The Greek in these lessons is Classical/Homeric - the language of Athens\' golden age and the epic poets.'
+          },
+          {
+            title: 'The Greeks Called Themselves Hellenes',
+            note: 'οἱ Ἕλληνες (the Hellenes) is what Greeks called themselves. "Greek" comes from Latin "Graecus." The Greeks saw themselves as one people united by language, religion, and culture - even while their city-states constantly warred with each other.'
+          },
+          {
+            title: 'Greek - The Language of Thought',
+            note: 'Philosophy, democracy, tragedy, comedy, history, rhetoric - Greeks invented the words because they invented the concepts. When Socrates asked "What is justice?" he used these verbs: λέγω (I say), γιγνώσκω (I know), ὁράω (I see). Western thought was built in Greek.'
+          },
+          {
+            title: 'From Homer to Hollywood',
+            note: 'The Iliad and Odyssey were composed around 750 BCE but set 500 years earlier during the Bronze Age collapse (~1200 BCE). The Trojan War may have been real - archaeologists found Troy. Homer\'s Greek preserved words and phrases already ancient in his time, like a time capsule of a vanished world.'
+          },
+          {
+            title: 'Why Learn a "Dead" Language?',
+            note: 'Ancient Greek isn\'t dead - it evolved. Like how Latin became Spanish, French, and Italian, Ancient Greek became Modern Greek. But unlike Latin, we have one continuous culture. Greeks today can partially read Homer. The thread never fully broke.'
           }
         ]
       }
