@@ -341,9 +341,9 @@ export const languages = {
     name: 'Ancient Greek',
     flag: '🏛️',
     code: 'grc',
-    lessonCount: 4,
-    totalLessons: 4,
-    freeLessons: 4,
+    lessonCount: 5,
+    totalLessons: 5,
+    freeLessons: 5,
     lessons: [
       {
         id: 1,
@@ -517,6 +517,51 @@ export const languages = {
           {
             title: 'Five Cases, Infinite Possibilities',
             note: 'Latin has 6 cases, Russian has 6, Finnish has 15. Greek\'s 5 cases (Nominative, Accusative, Genitive, Dative, Vocative) hit a sweet spot - enough to free word order, not so many you drown in endings.'
+          }
+        ]
+      },
+      {
+        id: 5,
+        title: 'Essential Verbs & Building Sentences',
+        level: 'beginner',
+        words: [
+          { word: 'εἰμί', translation: 'I am', pronunciation: 'ay-MEE' },
+          { word: 'ἐστί(ν)', translation: 'he/she/it is', pronunciation: 'es-TIN' },
+          { word: 'εἰσί(ν)', translation: 'they are', pronunciation: 'ay-SIN' },
+          { word: 'ἔχω', translation: 'I have', pronunciation: 'EH-khoh' },
+          { word: 'λέγω', translation: 'I say / I speak', pronunciation: 'LEH-goh' },
+          { word: 'φιλέω', translation: 'I love', pronunciation: 'fee-LEH-oh' },
+          { word: 'μισέω', translation: 'I hate', pronunciation: 'mee-SEH-oh' },
+          { word: 'ὁράω', translation: 'I see', pronunciation: 'hoh-RAH-oh' },
+          { word: 'ἀκούω', translation: 'I hear', pronunciation: 'ah-KOO-oh' },
+          { word: 'γιγνώσκω', translation: 'I know / I recognize', pronunciation: 'gig-NOH-skoh' },
+          { word: 'βούλομαι', translation: 'I want / I wish', pronunciation: 'BOO-loh-mai' },
+          { word: 'ἔρχομαι', translation: 'I come / I go', pronunciation: 'EHR-khoh-mai' },
+          { word: 'μάχομαι', translation: 'I fight', pronunciation: 'MAH-khoh-mai' },
+          { word: 'ἀποθνῄσκω', translation: 'I die', pronunciation: 'ah-poh-THNAY-skoh' },
+          { word: 'ὁ θεός ἐστι καλός', translation: 'The god is beautiful', pronunciation: 'ho theh-OS es-tee kah-LOS' },
+          { word: 'οἱ Ἕλληνες μάχονται', translation: 'The Greeks are fighting', pronunciation: 'hoy HEL-lay-nes MAH-khon-tai' }
+        ],
+        culturalNotes: [
+          {
+            title: 'The "-ω" Ending',
+            note: 'Most Greek verbs in the "I" form end in -ω (omega). When you see λέγω, ἔχω, ὁράω - that omega tells you "I am doing this." It\'s your first clue to understanding any Greek sentence.'
+          },
+          {
+            title: 'Middle Voice - Doing For Yourself',
+            note: 'Greek has three voices: active, passive, and MIDDLE. βούλομαι (I want) and μάχομαι (I fight) are middle voice - the action involves yourself. You don\'t just fight, you "fight-for-yourself." English lost this. Greek kept it.'
+          },
+          {
+            title: 'γιγνώσκω → "Know"',
+            note: 'The verb γιγνώσκω (I know) gave us "agnostic" (not knowing), "diagnosis" (knowing through), "prognosis" (knowing before). You already know Greek - you just didn\'t know it.'
+          },
+          {
+            title: 'Love and Hate in Homer',
+            note: 'φιλέω (love) and μισέω (hate) drive the Iliad. Achilles\' love for Patroclus and hatred for Agamemnon. Paris\'s love for Helen. The Greeks\' hatred for Troy. Every action flows from these two verbs.'
+          },
+          {
+            title: 'The Weight of ἀποθνῄσκω',
+            note: 'ἀποθνῄσκω (I die) appears constantly in the Iliad. Homer doesn\'t shy away from death - he names nearly every warrior who falls, giving them a brief biography before they die. Death mattered. Every death mattered.'
           }
         ]
       }
