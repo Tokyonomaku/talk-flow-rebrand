@@ -327,20 +327,20 @@ export default function LanguageSelector({ onSelectLanguage, onLockedLanguageCli
           </div>
         )}
 
-        {/* Foreign languages grid (premium: all accessible; free: locked languages shown for upsell) */}
+        {/* Foreign languages grid: premium sees all; free sees all (accessible languages clickable, locked show upgrade) */}
         <div className="bg-white/60 rounded-xl p-6 border border-gray-100">
           <div className="mb-4 flex flex-col md:flex-row md:items-end md:justify-between gap-2">
             <div>
               <h3 className="text-2xl font-bold text-gray-900">
-                {premium ? 'Foreign Languages (Premium)' : 'Want More Languages?'}
+                {premium ? 'Foreign Languages (Premium)' : 'All Foreign Languages'}
               </h3>
               <p className="text-gray-700 text-sm">
                 {premium
-                  ? 'Premium unlocks all 9 foreign languages and all lessons.'
-                  : 'Upgrade to unlock 7 more foreign languages (English is always free).'}
+                  ? 'Premium unlocks all foreign languages and all lessons.'
+                  : 'Some languages (e.g. Ancient Greek, Dutch, Vietnamese) are free to access. Others require Premium.'}
               </p>
             </div>
-            {!premium && (
+            {!premium && lockedForeign.length > 0 && (
               <button
                 onClick={() => onLockedLanguageClick?.()}
                 className="bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors w-fit"
@@ -351,7 +351,9 @@ export default function LanguageSelector({ onSelectLanguage, onLockedLanguageCli
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {(premium ? foreignLanguages : lockedForeign).map((language) => {
+            {foreignLanguages
+              .filter((l) => !freeLanguages.includes(l.id))
+              .map((language) => {
               const isAccessible = isLanguageAccessible(language.id);
               const isLocked = !isAccessible;
               return (
@@ -373,8 +375,8 @@ export default function LanguageSelector({ onSelectLanguage, onLockedLanguageCli
                         Premium
                       </span>
                     ) : (
-                      <span className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-white px-2 py-1 rounded-full text-xs font-semibold">
-                        Premium
+                      <span className="bg-green-500 text-white px-2 py-1 rounded-full text-xs font-semibold">
+                        Free to try
                       </span>
                     )}
                   </div>
@@ -384,6 +386,11 @@ export default function LanguageSelector({ onSelectLanguage, onLockedLanguageCli
                   </h2>
                   <p className="text-gray-600">
                     {language.lessons.length} lessons available
+                    {language.freeLessons != null && (
+                      <span className="text-xs text-gray-500 block mt-0.5">
+                        {language.freeLessons} free lesson{language.freeLessons !== 1 ? 's' : ''}
+                      </span>
+                    )}
                   </p>
                 </button>
               );
