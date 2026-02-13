@@ -343,7 +343,7 @@ export const languages = {
     code: 'grc',
     lessonCount: 6,
     totalLessons: 6,
-    freeLessons: 1,
+    freeLessons: 0,
     lessons: [
       {
         id: 1,
@@ -1283,7 +1283,7 @@ export const languages = {
     code: 'nl',
     lessonCount: 5,
     totalLessons: 5,
-    freeLessons: 5,
+    freeLessons: 1,
     lessons: [
       {
         id: 1,
@@ -1367,7 +1367,7 @@ export const languages = {
     code: 'vi',
     lessonCount: 5,
     totalLessons: 5,
-    freeLessons: 5,
+    freeLessons: 1,
     lessons: [
       {
         id: 1,
@@ -2759,7 +2759,7 @@ export const languages = {
     code: 'hi',
     lessonCount: 10,
     totalLessons: 10,
-    freeLessons: 10,
+    freeLessons: 1,
     lessons: [
       {
         id: 1,
