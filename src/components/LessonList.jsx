@@ -5,6 +5,7 @@ import StreakCard from './StreakCard';
 export default function LessonList({ language, onBack, onSelectLesson, onLockedLessonClick, streakData, streakMeta }) {
   const completedCount = getCompletedLessonsForLanguage(language.id);
   const totalLessons = language.lessons.length;
+  const freeLessons = language.freeLessons ?? 10;
   const alwaysFreeEnglish = isFreeEnglishTrack(language.id);
   
   // Get premium status directly and log it
@@ -15,14 +16,14 @@ export default function LessonList({ language, onBack, onSelectLesson, onLockedL
   console.log('=== LESSON LIST DEBUG ===');
   console.log('Premium status:', premium);
   console.log('Premium raw value:', premiumRaw, '| Type:', typeof premiumRaw);
-  console.log('Total lessons:', totalLessons);
+  console.log('Total lessons:', totalLessons, '| Free lessons:', freeLessons);
   console.log('Language:', language.name);
   console.log('Lessons array length:', language.lessons.length);
-  console.log('Free users: lessons 1-10 unlocked, 11-26 locked');
+  console.log('Free users: lessons 1-' + freeLessons + ' unlocked, rest locked');
   console.log('Premium users: all lessons unlocked');
   
-  // Calculate unlocked vs locked lessons
-  const unlockedLessons = premium || alwaysFreeEnglish ? totalLessons : Math.min(10, totalLessons);
+  // Calculate unlocked vs locked lessons (uses language.freeLessons for per-language gating)
+  const unlockedLessons = premium || alwaysFreeEnglish ? totalLessons : Math.min(freeLessons, totalLessons);
   const lockedLessons = totalLessons - unlockedLessons;
   const progressPercentage = (completedCount / unlockedLessons) * 100;
 
@@ -57,7 +58,7 @@ export default function LessonList({ language, onBack, onSelectLesson, onLockedL
               <button
                 onClick={() => {
                   console.log('[Upgrade Banner] Clicked - opening upgrade modal');
-                  onLockedLessonClick && onLockedLessonClick(11);
+                  onLockedLessonClick && onLockedLessonClick(freeLessons + 1);
                 }}
                 className="bg-white text-blue-600 px-6 py-2 rounded-lg font-semibold hover:bg-blue-50 transition-colors whitespace-nowrap shadow-md"
               >
@@ -102,23 +103,23 @@ export default function LessonList({ language, onBack, onSelectLesson, onLockedL
         </div>
 
         <p className="text-gray-600 mb-8">
-          {premium || alwaysFreeEnglish || totalLessons <= 10
+          {premium || alwaysFreeEnglish || totalLessons <= freeLessons
             ? 'Select a lesson to begin'
-            : 'Select a lesson to begin (lessons 11-26 require Premium)'}
+            : `Select a lesson to begin (lessons ${freeLessons + 1}+ require Premium)`}
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {language.lessons.map((lesson, index) => {
             const lessonCompleted = isLessonCompleted(language.id, lesson.id);
-            const isAccessible = isLessonAccessible(language.id, lesson.id);
+            const isAccessible = isLessonAccessible(language.id, lesson.id, freeLessons);
             const isLocked = !isAccessible;
             
             // Debug log for all lessons
             console.log(`[LessonList] Lesson ${lesson.id} (index ${index}): accessible=${isAccessible}, locked=${isLocked}, premium=${premium}`);
             
-            // CRITICAL: Double-check locking logic
+            // CRITICAL: Double-check locking logic (uses freeLessons for per-language gating)
             const lessonNum = typeof lesson.id === 'string' ? parseInt(lesson.id, 10) : Number(lesson.id);
-            const shouldBeLocked = !premium && !alwaysFreeEnglish && lessonNum > 10;
+            const shouldBeLocked = !premium && !alwaysFreeEnglish && lessonNum > freeLessons;
             
             if (isLocked !== shouldBeLocked) {
               console.error(`[LessonList] MISMATCH! Lesson ${lesson.id}: isLocked=${isLocked}, shouldBeLocked=${shouldBeLocked}`);
@@ -132,7 +133,7 @@ export default function LessonList({ language, onBack, onSelectLesson, onLockedL
                   
                   // CRITICAL: Double-check locking before allowing access
                   const lessonNum = typeof lesson.id === 'string' ? parseInt(lesson.id, 10) : Number(lesson.id);
-                  const isActuallyLocked = !premium && !alwaysFreeEnglish && lessonNum > 10;
+                  const isActuallyLocked = !premium && !alwaysFreeEnglish && lessonNum > freeLessons;
                   
                   if (isLocked || isActuallyLocked) {
                     console.log(`[LessonList] BLOCKING lesson ${lesson.id} - showing upgrade modal`);
@@ -176,7 +177,7 @@ export default function LessonList({ language, onBack, onSelectLesson, onLockedL
                 </h2>
                 <p className={`text-sm ${isLocked ? 'text-gray-400' : 'text-gray-600'}`}>
                   {lesson.words?.length || 0} words
-                  {isPremiumLesson(lesson.id) && (
+                  {isPremiumLesson(lesson.id, freeLessons) && (
                     <span className="ml-2 text-gray-500">• Advanced content</span>
                   )}
                 </p>

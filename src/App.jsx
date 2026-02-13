@@ -164,7 +164,8 @@ function App() {
 
   const handleSelectLesson = (lesson) => {
     const languageId = selectedLanguage?.id;
-    const accessible = isLessonAccessible(languageId, lesson.id);
+    const freeLessons = selectedLanguage?.freeLessons ?? 10;
+    const accessible = isLessonAccessible(languageId, lesson.id, freeLessons);
 
     console.log(`[handleSelectLesson] Lesson ${lesson.id}: language=${languageId}, accessible=${accessible}`);
 

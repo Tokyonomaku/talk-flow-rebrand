@@ -343,7 +343,7 @@ export const languages = {
     code: 'grc',
     lessonCount: 6,
     totalLessons: 6,
-    freeLessons: 6,
+    freeLessons: 1,
     lessons: [
       {
         id: 1,
