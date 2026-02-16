@@ -13,7 +13,7 @@ import Terms from './components/Terms';
 import Contact from './components/Contact';
 import SpanishLanding from './pages/SpanishLanding';
 import HomePage from './pages/HomePage';
-import { getAllLanguages } from './data/languages';
+import { getAllLanguages, getLanguageById } from './data/languages';
 import { isPremium, hasFreeLanguage, setFreeLanguages, isLanguageAccessible, getFreeLanguages, isLessonAccessible } from './utils/lessonTracking';
 import { logEvent } from './utils/eventLog';
 import { gaEvent } from './utils/analytics';
@@ -244,7 +244,28 @@ function App() {
 
   // Spanish landing page (default home)
   if (currentRoute === '/') {
-    return <HomePage />;
+    return (
+      <HomePage
+        onStartLesson={() => {
+          const spanish = getLanguageById('spanish');
+          const lesson1 = spanish?.lessons?.[0];
+          if (spanish && lesson1) {
+            const freeLangs = getFreeLanguages();
+            if (!freeLangs.includes('spanish') && freeLangs.length < 2) {
+              setFreeLanguages([...freeLangs, 'spanish'].slice(0, 2));
+              setFreeLanguagesState([...freeLangs, 'spanish'].slice(0, 2));
+            } else if (!freeLangs.includes('spanish')) {
+              setFreeLanguages(['spanish', freeLangs[1]]);
+              setFreeLanguagesState(['spanish', freeLangs[1]]);
+            }
+            setSelectedLanguage(spanish);
+            setSelectedLesson(lesson1);
+            setCurrentView('lesson-view');
+            navigate('/select');
+          }
+        }}
+      />
+    );
   }
   if (currentRoute === '/spanish-landing') {
     return <SpanishLanding />;
