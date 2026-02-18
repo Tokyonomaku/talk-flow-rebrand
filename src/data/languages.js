@@ -636,7 +636,7 @@ export const languages = {
     name: 'Spanish',
     flag: '🇪🇸',
     code: 'es',
-    lessonCount: 27,
+    lessonCount: 28,
     lessons: [
       {
         id: 1,
@@ -1272,6 +1272,38 @@ export const languages = {
           { word: 'Qué rollo', translation: 'What\'s going on? (very casual, Spain/Mexico)', pronunciation: 'keh ROH-yoh' },
           { word: 'Me da igual', translation: 'I don\'t care / it\'s all the same to me', pronunciation: 'meh dah ee-GWAHL' },
           { word: 'Se me fue la olla', translation: 'I lost it / I spaced out', pronunciation: 'seh meh FWEH lah OH-yah' }
+        ]
+      },
+      {
+        id: 28,
+        title: 'Bonus: Learn Spanish Through Song - Cielito Lindo',
+        premium: true,
+        words: [
+          { word: 'Ay, ay, ay, ay, canta y no llores', translation: 'Ay, ay, ay, ay, sing and don\'t cry', pronunciation: 'ai ai ai ai KAN-tah ee noh YOH-res' },
+          { word: 'canta', translation: 'sing (command form)', pronunciation: 'KAN-tah' },
+          { word: 'y', translation: 'and', pronunciation: 'ee' },
+          { word: 'no', translation: 'don\'t', pronunciation: 'noh' },
+          { word: 'llores', translation: 'cry (command form)', pronunciation: 'YOH-res' },
+          { word: 'Porque cantando se alegran, cielito lindo, los corazones', translation: 'Because singing makes hearts happy, beautiful little sky', pronunciation: 'POR-keh kahn-TAHN-doh seh ah-LEH-grahn see-eh-LEE-toh LEEN-doh lohs koh-rah-SOH-nes' },
+          { word: 'porque', translation: 'because', pronunciation: 'POR-keh' },
+          { word: 'cantando', translation: 'singing', pronunciation: 'kahn-TAHN-doh' },
+          { word: 'se alegran', translation: 'become happy', pronunciation: 'seh ah-LEH-grahn' },
+          { word: 'cielito lindo', translation: 'beautiful little sky (term of endearment)', pronunciation: 'see-eh-LEE-toh LEEN-doh' },
+          { word: 'los corazones', translation: 'the hearts', pronunciation: 'lohs koh-rah-SOH-nes' }
+        ],
+        culturalNotes: [
+          {
+            title: 'About This Lesson',
+            note: 'Learn the most famous chorus in Mexican music - and understand every word.'
+          },
+          {
+            title: 'Grammar: The Imperative',
+            note: 'This uses the Spanish imperative (command) form. "Canta" tells someone TO sing. "No llores" tells someone NOT to cry. Notice: positive commands use one form (canta), negative commands add "no" and change the verb (no llores).'
+          },
+          {
+            title: 'Cultural Note: Cielito Lindo',
+            note: 'Cielito Lindo means "beautiful little sky" but is used like "sweetheart" or "my darling." This song is sung at Mexican celebrations, soccer games, and mariachi performances. If you\'re ever in Mexico and this starts playing - everyone will sing along!'
+          }
         ]
       }
     ]
