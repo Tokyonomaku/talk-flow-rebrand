@@ -701,6 +701,61 @@ export const languages = {
       }
     ]
   },
+  latin: {
+    id: 'latin',
+    name: 'Latin',
+    flag: '🏛️',
+    code: 'la',
+    lessonCount: 1,
+    totalLessons: 1,
+    freeLessons: 0,
+    lessons: [
+      {
+        id: 1,
+        title: 'Famous Latin Phrases You Already Know',
+        premium: true,
+        words: [
+          { word: 'Veni, vidi, vici', translation: 'I came, I saw, I conquered', pronunciation: 'WEH-nee WEE-dee WEE-kee' },
+          { word: 'Veni', translation: 'I came (from venire - to come)', pronunciation: 'WEH-nee' },
+          { word: 'Vidi', translation: 'I saw (from videre - to see)', pronunciation: 'WEE-dee' },
+          { word: 'Vici', translation: 'I conquered (from vincere - to conquer)', pronunciation: 'WEE-kee' },
+          { word: 'Carpe diem', translation: 'Seize the day', pronunciation: 'KAR-peh DEE-em' },
+          { word: 'Carpe', translation: 'Seize! Pluck! Grab! (command form)', pronunciation: 'KAR-peh' },
+          { word: 'Diem', translation: 'the day (accusative)', pronunciation: 'DEE-em' },
+          { word: 'Sic semper tyrannis', translation: 'Thus always to tyrants', pronunciation: 'sik SEM-per tee-RAH-nees' },
+          { word: 'Sic', translation: 'thus, so, in this way', pronunciation: 'sik' },
+          { word: 'Semper', translation: 'always', pronunciation: 'SEM-per' },
+          { word: 'Tyrannis', translation: 'to tyrants (dative plural)', pronunciation: 'tee-RAH-nees' },
+          { word: 'In vino veritas', translation: 'In wine, there is truth', pronunciation: 'in WEE-noh WEH-ree-tahs' },
+          { word: 'In', translation: 'in', pronunciation: 'in' },
+          { word: 'Vino', translation: 'wine (ablative)', pronunciation: 'WEE-noh' },
+          { word: 'Veritas', translation: 'truth', pronunciation: 'WEH-ree-tahs' }
+        ],
+        culturalNotes: [
+          {
+            title: 'About This Lesson',
+            note: 'You\'ve heard these phrases your whole life. Now learn what they actually mean - word by word.'
+          },
+          {
+            title: "Grammar: Caesar's Boast",
+            note: 'All three words (Veni, vidi, vici) are first person singular, past tense. Latin packs a full sentence into one word. The subject "I" is built into the verb ending "-i."'
+          },
+          {
+            title: 'Carpe Diem - The Full Line',
+            note: 'From the poet Horace, 23 BCE. The full line is "carpe diem, quam minimum credula postero" - seize the day, trusting as little as possible in tomorrow.'
+          },
+          {
+            title: 'Sic Semper Tyrannis',
+            note: 'Virginia\'s state motto. Allegedly shouted by Brutus when stabbing Caesar, and by John Wilkes Booth at Ford\'s Theatre. The implied ending: "this is what happens to tyrants."'
+          },
+          {
+            title: 'Why Latin Matters',
+            note: 'Latin isn\'t dead - it\'s hiding. 60% of English words come from Latin. Every time you say "video" (I see), "audio" (I hear), or "et cetera" (and the rest), you\'re speaking Latin.'
+          }
+        ]
+      }
+    ]
+  },
   spanish: {
     id: 'spanish',
     name: 'Spanish',

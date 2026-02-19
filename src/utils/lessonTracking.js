@@ -17,6 +17,7 @@ const FOREIGN_LANGUAGE_IDS = [
   'arabic',
   'vietnamese',
   'ancient-greek',
+  'latin',
 ];
 
 /**
