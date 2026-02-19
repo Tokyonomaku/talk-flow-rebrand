@@ -341,8 +341,8 @@ export const languages = {
     name: 'Ancient Greek',
     flag: '🏛️',
     code: 'grc',
-    lessonCount: 7,
-    totalLessons: 7,
+    lessonCount: 8,
+    totalLessons: 8,
     freeLessons: 0,
     lessons: [
       {
@@ -663,6 +663,39 @@ export const languages = {
           {
             title: 'Cultural Note: 3,000 Years of Echo',
             note: 'These words were first spoken around 750 BCE - nearly 3,000 years ago. Every ancient Greek knew them by heart. Alexander the Great slept with a copy of the Iliad under his pillow. When you read these words aloud, you\'re speaking the same syllables that echoed through Athens, Sparta, and Troy.'
+          }
+        ]
+      },
+      {
+        id: 8,
+        title: 'The Iliad: Heroes and Epithets',
+        premium: true,
+        words: [
+          { word: 'πόδας ὠκὺς Ἀχιλλεύς', translation: 'Swift-footed Achilles', pronunciation: 'POH-das oh-KOOS ah-khil-YOOS' },
+          { word: 'πόδας (podas)', translation: 'feet (accusative)', pronunciation: 'POH-das' },
+          { word: 'ὠκύς (ōkus)', translation: 'swift, fast', pronunciation: 'oh-KOOS' },
+          { word: 'Ἀχιλλεύς (Achilleus)', translation: 'Achilles', pronunciation: 'ah-khil-YOOS' },
+          { word: 'κορυθαίολος Ἕκτωρ', translation: 'Hector of the flashing helmet', pronunciation: 'koh-roo-thai-OH-los HEK-tor' },
+          { word: 'κορυθ- (koruth-)', translation: 'helmet', pronunciation: 'koh-ROOTH' },
+          { word: 'αἰόλος (aiolos)', translation: 'flashing, gleaming', pronunciation: 'ai-OH-los' },
+          { word: 'Ἕκτωρ (Hektōr)', translation: 'Hector', pronunciation: 'HEK-tor' },
+          { word: 'Ἑλένη Διὸς ἐκγεγαυῖα', translation: 'Helen, born of Zeus', pronunciation: 'heh-LEH-nay DEE-os ek-geh-gau-EE-ah' },
+          { word: 'Ἑλένη (Helenē)', translation: 'Helen', pronunciation: 'heh-LEH-nay' },
+          { word: 'Διός (Dios)', translation: 'of Zeus (genitive)', pronunciation: 'DEE-os' },
+          { word: 'ἐκγεγαυῖα (ekgegauia)', translation: 'born from, descended from', pronunciation: 'ek-geh-gau-EE-ah' },
+          { word: 'ῥοδοδάκτυλος Ἠώς', translation: 'Rosy-fingered Dawn', pronunciation: 'roh-doh-DAK-too-los ay-OHS' },
+          { word: 'ῥοδο- (rhodo-)', translation: 'rose, rosy', pronunciation: 'ROH-doh' },
+          { word: 'δάκτυλος (daktulos)', translation: 'finger', pronunciation: 'DAK-too-los' },
+          { word: 'Ἠώς (Ēōs)', translation: 'Dawn (the goddess)', pronunciation: 'ay-OHS' }
+        ],
+        culturalNotes: [
+          {
+            title: 'About This Lesson',
+            note: 'Homer never just says "Achilles." Learn the poetic titles that made these heroes immortal.'
+          },
+          {
+            title: 'Cultural Note: Epithets and Memory',
+            note: 'These epithets weren\'t just decoration - they helped bards remember the poems and fit the rhythm of the verse. After 3,000 years, we still say "rosy-fingered dawn." Homer\'s language became our language.'
           }
         ]
       }
