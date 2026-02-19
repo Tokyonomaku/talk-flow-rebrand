@@ -341,8 +341,8 @@ export const languages = {
     name: 'Ancient Greek',
     flag: '🏛️',
     code: 'grc',
-    lessonCount: 6,
-    totalLessons: 6,
+    lessonCount: 7,
+    totalLessons: 7,
     freeLessons: 0,
     lessons: [
       {
@@ -626,6 +626,43 @@ export const languages = {
           {
             title: 'φίλος - More Than "Friend"',
             note: 'φίλος means dear, beloved, friend - but also "one\'s own." Your φίλος arm is your own arm. Your φίλος people are your people. When Achilles calls Patroclus φίλτατος (most beloved), the weight is immense. It\'s the superlative of everything that matters.'
+          }
+        ]
+      },
+      {
+        id: 7,
+        title: 'Bonus: The First Line of Western Literature',
+        premium: true,
+        words: [
+          { word: 'μῆνιν ἄειδε, θεά, Πηληϊάδεω Ἀχιλῆος', translation: 'Sing, goddess, of the rage of Achilles, son of Peleus', pronunciation: 'MAY-nin AY-deh theh-AH pay-lay-ee-AH-deh-oh ah-khil-AY-os' },
+          { word: 'μῆνιν (mēnin)', translation: 'rage, wrath', pronunciation: 'MAY-nin' },
+          { word: 'ἄειδε (aeide)', translation: 'sing! (command form)', pronunciation: 'AY-deh' },
+          { word: 'θεά (thea)', translation: 'goddess', pronunciation: 'theh-AH' },
+          { word: 'Πηληϊάδεω (Pēlēiadeō)', translation: 'son of Peleus', pronunciation: 'pay-lay-ee-AH-deh-oh' },
+          { word: 'Ἀχιλῆος (Achilēos)', translation: 'of Achilles', pronunciation: 'ah-khil-AY-os' },
+          { word: 'οὐλομένην, ἣ μυρί᾽ Ἀχαιοῖς ἄλγε᾽ ἔθηκε', translation: 'The cursed rage that brought countless sorrows to the Greeks', pronunciation: 'oo-loh-MEH-nain hay moo-REE-ah ah-khai-OIS AHL-geh-ah EH-thay-keh' },
+          { word: 'οὐλομένην (oulomenēn)', translation: 'cursed, destructive', pronunciation: 'oo-loh-MEH-nain' },
+          { word: 'μυρία (myria)', translation: 'countless, ten thousand', pronunciation: 'moo-REE-ah' },
+          { word: 'Ἀχαιοῖς (Achaiois)', translation: 'to the Greeks/Achaeans', pronunciation: 'ah-khai-OIS' },
+          { word: 'ἄλγεα (algea)', translation: 'pains, sorrows', pronunciation: 'AHL-geh-ah' },
+          { word: 'ἔθηκε (ethēke)', translation: 'brought, caused', pronunciation: 'EH-thay-keh' }
+        ],
+        culturalNotes: [
+          {
+            title: 'About This Lesson',
+            note: 'Learn the most famous opening line ever written - the first words of Homer\'s Iliad.'
+          },
+          {
+            title: 'Grammar: The Imperative',
+            note: 'Just like in Spanish "canta" (sing!), Greek uses the imperative. "ἄειδε" is a command - Homer is literally ordering the Muse to sing this story through him. Ancient poets didn\'t claim to create - they channeled the divine.'
+          },
+          {
+            title: 'Why "Rage" First?',
+            note: 'The very first word is μῆνιν - rage. Not "Achilles." Not "war." Not "Troy." Homer puts RAGE first because that\'s what the whole epic is about: what happens when the greatest warrior lets his anger consume him.'
+          },
+          {
+            title: 'Cultural Note: 3,000 Years of Echo',
+            note: 'These words were first spoken around 750 BCE - nearly 3,000 years ago. Every ancient Greek knew them by heart. Alexander the Great slept with a copy of the Iliad under his pillow. When you read these words aloud, you\'re speaking the same syllables that echoed through Athens, Sparta, and Troy.'
           }
         ]
       }
