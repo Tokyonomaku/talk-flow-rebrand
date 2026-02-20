@@ -534,16 +534,22 @@ export default function LessonView({ lesson, language, onBack, onUpgradeClick })
           </div>
         )}
 
-        {/* Completion Prompt for Free English Education Tracks */}
-        {lessonNum === 10 && isCompleted && !premium && alwaysFreeEnglish && (
-          <div className="mt-8 bg-gradient-to-r from-emerald-600 to-teal-600 text-white rounded-lg p-6 shadow-xl">
+        {/* Completion Prompt for English tracks - lesson 1 is free, more require premium */}
+        {lessonNum === 1 && isCompleted && !premium && alwaysFreeEnglish && (
+          <div className="mt-8 bg-white/70 border border-blue-200 rounded-lg p-5 shadow-sm">
             <div className="text-center">
-              <h3 className="text-2xl font-bold mb-2">
-                ✅ Great work — you finished Lesson 10!
+              <h3 className="text-xl font-extrabold text-gray-900 mb-1">
+                ✅ Great work — you finished your free lesson!
               </h3>
-              <p className="text-emerald-100 mb-0 text-lg">
-                English education (ESL & Native Speakers) is 100% free, always.
+              <p className="text-gray-700 mb-4">
+                Upgrade to unlock lessons 2+ in English (ESL) and English Essentials.
               </p>
+              <button
+                onClick={() => onUpgradeClick?.()}
+                className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors shadow-md"
+              >
+                View plans
+              </button>
             </div>
           </div>
         )}

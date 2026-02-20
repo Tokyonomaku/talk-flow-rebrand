@@ -1,12 +1,11 @@
 import { ArrowLeft, Check, Lock } from 'lucide-react';
-import { getCompletedLessonsForLanguage, isLessonCompleted, isLessonAccessible, isPremium, isPremiumLesson, isFreeEnglishTrack } from '../utils/lessonTracking';
+import { getCompletedLessonsForLanguage, isLessonCompleted, isLessonAccessible, isPremium, isPremiumLesson } from '../utils/lessonTracking';
 import StreakCard from './StreakCard';
 
 export default function LessonList({ language, onBack, onSelectLesson, onLockedLessonClick, streakData, streakMeta }) {
   const completedCount = getCompletedLessonsForLanguage(language.id);
   const totalLessons = language.lessons.length;
   const freeLessons = language.freeLessons ?? 10;
-  const alwaysFreeEnglish = isFreeEnglishTrack(language.id);
   
   // Get premium status directly and log it
   const premiumRaw = localStorage.getItem('isPremium');
@@ -23,7 +22,7 @@ export default function LessonList({ language, onBack, onSelectLesson, onLockedL
   console.log('Premium users: all lessons unlocked');
   
   // Calculate unlocked vs locked lessons (uses language.freeLessons for per-language gating)
-  const unlockedLessons = premium || alwaysFreeEnglish ? totalLessons : Math.min(freeLessons, totalLessons);
+  const unlockedLessons = premium ? totalLessons : Math.min(freeLessons, totalLessons);
   const lockedLessons = totalLessons - unlockedLessons;
   const progressPercentage = (completedCount / unlockedLessons) * 100;
 
@@ -103,7 +102,7 @@ export default function LessonList({ language, onBack, onSelectLesson, onLockedL
         </div>
 
         <p className="text-gray-600 mb-8">
-          {premium || alwaysFreeEnglish || totalLessons <= freeLessons
+          {premium || totalLessons <= freeLessons
             ? 'Select a lesson to begin'
             : `Select a lesson to begin (lessons ${freeLessons + 1}+ require Premium)`}
         </p>
@@ -119,7 +118,7 @@ export default function LessonList({ language, onBack, onSelectLesson, onLockedL
             
             // CRITICAL: Double-check locking logic (uses freeLessons for per-language gating)
             const lessonNum = typeof lesson.id === 'string' ? parseInt(lesson.id, 10) : Number(lesson.id);
-            const shouldBeLocked = !premium && !alwaysFreeEnglish && lessonNum > freeLessons;
+            const shouldBeLocked = !premium && lessonNum > freeLessons;
             
             if (isLocked !== shouldBeLocked) {
               console.error(`[LessonList] MISMATCH! Lesson ${lesson.id}: isLocked=${isLocked}, shouldBeLocked=${shouldBeLocked}`);
@@ -133,7 +132,7 @@ export default function LessonList({ language, onBack, onSelectLesson, onLockedL
                   
                   // CRITICAL: Double-check locking before allowing access
                   const lessonNum = typeof lesson.id === 'string' ? parseInt(lesson.id, 10) : Number(lesson.id);
-                  const isActuallyLocked = !premium && !alwaysFreeEnglish && lessonNum > freeLessons;
+                  const isActuallyLocked = !premium && lessonNum > freeLessons;
                   
                   if (isLocked || isActuallyLocked) {
                     console.log(`[LessonList] BLOCKING lesson ${lesson.id} - showing upgrade modal`);

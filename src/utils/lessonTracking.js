@@ -266,10 +266,8 @@ export function getRemainingFreeLessons() {
  * @returns {boolean} True if lesson is accessible
  */
 export function isLessonAccessible(languageId, lessonId, freeLessons = 10) {
-  // English education tracks are always free — all lessons unlocked.
-  if (isFreeEnglishTrack(languageId)) {
-    return true;
-  }
+  // English education tracks: language is always accessible, but lessons 2+ may require premium
+  // (freeLessons is passed from language data, e.g. 1 for ESL/English Essentials)
 
   // Get premium status directly from localStorage
   const premiumStatus = localStorage.getItem('isPremium') === 'true';

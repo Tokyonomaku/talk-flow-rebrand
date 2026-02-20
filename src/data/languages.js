@@ -4,6 +4,7 @@ export const languages = {
     name: 'English (ESL)',
     flag: '🇺🇸',
     code: 'en',
+    freeLessons: 1,
     lessons: [
       {
         id: 1,
@@ -213,6 +214,7 @@ export const languages = {
     flag: '🇺🇸',
     code: 'en',
     badge: 'For Native Speakers',
+    freeLessons: 1,
     lessons: [
       {
         id: 1,
