@@ -42,6 +42,7 @@ function App() {
   useEffect(() => {
     const knownRoutes = new Set([
       '/',
+      '/welcome',
       '/spanish-landing',
       '/app',
       '/select',
@@ -83,7 +84,7 @@ function App() {
   // Check if user needs to select free language on mount
   useEffect(() => {
     // Don't show modals on non-app routes
-    const nonAppRoutes = new Set(['/', '/spanish-landing', '/activate', '/stats', '/privacy', '/terms', '/contact']);
+    const nonAppRoutes = new Set(['/welcome', '/spanish-landing', '/activate', '/stats', '/privacy', '/terms', '/contact']);
     if (nonAppRoutes.has(currentRoute)) return;
 
     const checkInitialState = () => {
@@ -211,7 +212,7 @@ function App() {
   const handlePremiumActivate = () => {
     setPremiumStatus(true);
     // After activation, take user to language picker
-    navigate('/select');
+    navigate('/');
     setCurrentView('language-selector');
   };
 
@@ -230,20 +231,8 @@ function App() {
     return <Contact onBackHome={() => navigate('/')} />;
   }
 
-  // Simple stats page
-  if (currentRoute === '/stats') {
-    return (
-      <Stats
-        onBack={() => {
-          navigate('/select');
-          setCurrentView('language-selector');
-        }}
-      />
-    );
-  }
-
-  // Spanish landing page (default home)
-  if (currentRoute === '/') {
+  // Spanish landing / welcome page (moved from / for possible future use)
+  if (currentRoute === '/welcome') {
     return (
       <HomePage
         onStartLesson={() => {
@@ -261,18 +250,31 @@ function App() {
             setSelectedLanguage(spanish);
             setSelectedLesson(lesson1);
             setCurrentView('lesson-view');
-            navigate('/select');
+            navigate('/');
           }
         }}
       />
     );
   }
+
+  // Simple stats page
+  if (currentRoute === '/stats') {
+    return (
+      <Stats
+        onBack={() => {
+          navigate('/');
+          setCurrentView('language-selector');
+        }}
+      />
+    );
+  }
+
   if (currentRoute === '/spanish-landing') {
     return <SpanishLanding />;
   }
 
-  // Language selector (app entry)
-  const isSelectRoute = currentRoute === '/app' || currentRoute === '/select' || currentRoute === '/choose-languages';
+  // Language selector (app entry) - / is now the main entry point
+  const isSelectRoute = currentRoute === '/' || currentRoute === '/app' || currentRoute === '/select' || currentRoute === '/choose-languages';
   const showTopBar = !isSelectRoute;
 
   // Get free language names for display
@@ -312,8 +314,8 @@ function App() {
               <StreakCard variant="badge" streakData={streakData} streakMeta={streakMeta} />
               <button
                 onClick={() => {
-                  // Go to language selector route
-                  navigate('/select');
+                  // Go to language selector (root)
+                  navigate('/');
                   setSelectedLanguage(null);
                   setSelectedLesson(null);
                   setCurrentView('language-selector');

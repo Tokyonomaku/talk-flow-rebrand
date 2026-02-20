@@ -78,7 +78,7 @@ export default function Activate({ onActivate }) {
             You already have premium access to all 9 foreign languages and all lessons (English is always free).
           </p>
           <a
-            href="/select"
+            href="/"
             className="inline-block bg-blue-600 text-white py-2 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
           >
             Go to Languages
@@ -151,7 +151,7 @@ export default function Activate({ onActivate }) {
 
         <div className="mt-6 text-center">
           <a
-            href="/select"
+            href="/"
             className="text-blue-600 hover:text-blue-700 text-sm"
           >
             ← Back to Languages
