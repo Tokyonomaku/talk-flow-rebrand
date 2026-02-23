@@ -343,8 +343,8 @@ export const languages = {
     name: 'Ancient Greek',
     flag: '🏛️',
     code: 'grc',
-    lessonCount: 8,
-    totalLessons: 8,
+    lessonCount: 9,
+    totalLessons: 9,
     freeLessons: 0,
     lessons: [
       {
@@ -698,6 +698,46 @@ export const languages = {
           {
             title: 'Cultural Note: Epithets and Memory',
             note: 'These epithets weren\'t just decoration - they helped bards remember the poems and fit the rhythm of the verse. After 3,000 years, we still say "rosy-fingered dawn." Homer\'s language became our language.'
+          }
+        ]
+      },
+      {
+        id: 9,
+        title: 'Ancient Greek vs Modern Greek',
+        premium: true,
+        words: [
+          { word: 'οἶνος (Ancient) / οίνος (Modern)', translation: 'wine', pronunciation: 'OY-nos / EE-nos' },
+          { word: 'αἷμα (Ancient) / αίμα (Modern)', translation: 'blood', pronunciation: 'HI-ma / EH-ma' },
+          { word: 'ϝ (digamma)', translation: '"w" sound - gone in Modern Greek', pronunciation: 'DIG-am-mah' },
+          { word: 'ϙ (koppa)', translation: '"k" sound - gone in Modern Greek', pronunciation: 'KOP-pah' },
+          { word: 'ͱ (heta)', translation: '"h" sound - gone in Modern Greek', pronunciation: 'HAY-tah' },
+          { word: 'ὕδωρ (Ancient) / νερό (Modern)', translation: 'water', pronunciation: 'HOO-dor / neh-RO' },
+          { word: 'οἶνος (Ancient) / κρασί (Modern)', translation: 'wine', pronunciation: 'OY-nos / kra-SEE' },
+          { word: 'θάλασσα', translation: 'sea (survived almost unchanged)', pronunciation: 'tha-LAHS-sah' },
+          { word: 'ἥλιος', translation: 'sun (survived almost unchanged)', pronunciation: 'HAY-lee-os' },
+          { word: 'μήτηρ', translation: 'mother (survived almost unchanged)', pronunciation: 'MAY-tair' },
+          { word: 'πατήρ', translation: 'father (survived almost unchanged)', pronunciation: 'pah-TAIR' }
+        ],
+        culturalNotes: [
+          {
+            title: 'About This Lesson',
+            note: 'Greek has been spoken for 3,400 years. Here\'s how the language of Homer differs from the Greek spoken in Athens today.'
+          },
+          {
+            title: 'Alphabet and Sound Shift',
+            note: 'Good news: The alphabet is almost the same. Ancient and Modern Greek both use the 24-letter Greek alphabet. But pronunciation shifted over time: diphthongs like αι, οι, ει changed from two sounds to one.'
+          },
+          {
+            title: 'Grammar Note: Pitch vs Stress Accent',
+            note: 'Ancient Greek had PITCH accent - syllables moved up or down in tone, like Chinese. Modern Greek has STRESS accent - syllables are louder, like English.'
+          },
+          {
+            title: 'Verb System and Cases',
+            note: 'Ancient Greek had more verb tenses (including aorist, perfect, pluperfect) while Modern Greek commonly uses a reduced set. Ancient Greek used 5 cases (Nominative, Accusative, Genitive, Dative, Vocative); Modern Greek dropped the dative and uses 4.'
+          },
+          {
+            title: 'Cultural Note',
+            note: 'Modern Greeks can partially read Ancient Greek - like English speakers reading Shakespeare, but harder. Grammar is more complex, vocabulary shifted, and pronunciation changed. But the DNA of the language survives: when someone says "θάλασσα" (sea), they echo Odysseus.'
           }
         ]
       }
