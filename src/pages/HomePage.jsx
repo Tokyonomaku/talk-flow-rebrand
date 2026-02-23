@@ -15,6 +15,8 @@ export default function HomePage({ onStartLesson }) {
         🇪🇸 🇲🇽 🇨🇺 🇦🇷 🇨🇴
       </div>
 
+      <img src="/images/mascot.png" alt="TalkFlow mascot" style={{ width: '150px' }} />
+
       <h1>Learn Spanish</h1>
 
       <div
