@@ -241,6 +241,9 @@ export default function LanguageSelector({ onSelectLanguage, onLockedLanguageCli
         <div className="flex justify-center mb-6">
           <StreakCard variant="badge" streakData={streakData} streakMeta={streakMeta} />
         </div>
+        <div className="flex justify-center mb-4">
+          <img src="/images/mascot.png" alt="TalkFlow mascot" style={{ width: '150px' }} />
+        </div>
         <h1 className="text-4xl font-bold text-center text-gray-900 mb-2">
           Language Learning App
         </h1>
