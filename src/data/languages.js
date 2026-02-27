@@ -1648,7 +1648,7 @@ export const languages = {
     name: 'French',
     flag: '🇫🇷',
     code: 'fr',
-    lessonCount: 27,
+    lessonCount: 33,
     lessons: [
       {
         id: 1,
@@ -2354,6 +2354,44 @@ export const languages = {
           { word: 'Bof', translation: 'Meh / Whatever', pronunciation: 'BOF' },
           { word: 'Nickel!', translation: 'Perfect!', pronunciation: 'nee-KEL' },
           { word: 'À plus!', translation: 'See you later!', pronunciation: 'ah PLOOS' }
+        ]
+      },
+      {
+        id: 33,
+        title: 'Bonus: Order Like a Parisian',
+        premium: true,
+        words: [
+          { word: 'Bonjour!', translation: 'Hello!', pronunciation: 'bohn-ZHOOR' },
+          { word: 'Un café, s\'il vous plaît', translation: 'A coffee, please', pronunciation: 'uhn kah-FAY seel voo PLEH' },
+          { word: 'Un café allongé', translation: 'American-style coffee (elongated espresso)', pronunciation: 'uhn kah-FAY ah-lohn-ZHAY' },
+          { word: 'Un crème, s\'il vous plaît', translation: 'Espresso with steamed milk (not café au lait)', pronunciation: 'uhn KREM seel voo PLEH' },
+          { word: 'Je voudrais une baguette, s\'il vous plaît', translation: 'I would like a baguette, please', pronunciation: 'zhuh voo-DRAY oon bah-GET seel voo PLEH' },
+          { word: 'S\'il vous plaît', translation: 'Please (formal)', pronunciation: 'seel voo PLEH' },
+          { word: 'Merci', translation: 'Thank you', pronunciation: 'mehr-SEE' },
+          { word: 'Au revoir', translation: 'Goodbye', pronunciation: 'oh ruh-VWAHR' },
+          { word: 'L\'addition, s\'il vous plaît', translation: 'The check, please', pronunciation: 'lah-dee-SYOHN seel voo PLEH' }
+        ],
+        culturalNotes: [
+          {
+            title: 'About This Lesson',
+            note: 'Parisians can spot a tourist in seconds. Here\'s how to order coffee and food without giving yourself away.'
+          },
+          {
+            title: 'The Greeting',
+            note: 'ALWAYS say Bonjour first. Walking into a shop without greeting is considered extremely rude in France.'
+          },
+          {
+            title: 'Coffee in France',
+            note: 'In France, "un café" means espresso. Café au lait is for home; in a café you order "un crème" (espresso with steamed milk).'
+          },
+          {
+            title: 'The Magic Words',
+            note: 'Always say Au revoir when leaving. Leaving silently is rude. In France the waiter won\'t bring the check until you ask - it\'s considered rude to rush you.'
+          },
+          {
+            title: 'Cultural Note',
+            note: 'French service isn\'t slow - it\'s respectful. They assume you want to enjoy your meal, not be rushed out. When you\'re ready to leave, catch their eye and ask for l\'addition.'
+          }
         ]
       }
     ]
