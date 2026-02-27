@@ -107,6 +107,12 @@ export default function LessonList({ language, onBack, onSelectLesson, onLockedL
             : `Select a lesson to begin (lessons ${freeLessons + 1}+ require Premium)`}
         </p>
 
+        {language.id === 'ancient-greek' && (
+          <div className="flex justify-center mb-6">
+            <img src="/images/helen.png" alt="Helen of Troy" style={{ width: '120px' }} />
+          </div>
+        )}
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {language.lessons.map((lesson, index) => {
             const lessonCompleted = isLessonCompleted(language.id, lesson.id);
