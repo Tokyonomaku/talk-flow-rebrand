@@ -821,6 +821,50 @@ export const languages = {
       }
     ]
   },
+  'modern-greek': {
+    id: 'modern-greek',
+    name: 'Modern Greek',
+    flag: '🇬🇷',
+    code: 'el',
+    lessonCount: 1,
+    totalLessons: 1,
+    freeLessons: 1,
+    lessons: [
+      {
+        id: 1,
+        title: 'Greek Basics: Greetings & Essentials',
+        level: 'beginner',
+        isFree: true,
+        words: [
+          { word: 'Γεια σου', translation: 'Hello / Hi (informal)', pronunciation: 'YAH-soo' },
+          { word: 'Γεια σας', translation: 'Hello (formal/plural)', pronunciation: 'YAH-sahs' },
+          { word: 'Καλημέρα', translation: 'Good morning', pronunciation: 'kah-lee-MEH-rah' },
+          { word: 'Καλησπέρα', translation: 'Good evening', pronunciation: 'kah-lee-SPEH-rah' },
+          { word: 'Καληνύχτα', translation: 'Good night', pronunciation: 'kah-lee-NEEKH-tah' },
+          { word: 'Ευχαριστώ', translation: 'Thank you', pronunciation: 'ef-khah-ree-STOH' },
+          { word: 'Παρακαλώ', translation: 'Please / You\'re welcome', pronunciation: 'pah-rah-kah-LOH' },
+          { word: 'Ναι', translation: 'Yes', pronunciation: 'NEH' },
+          { word: 'Όχι', translation: 'No', pronunciation: 'OH-khee' },
+          { word: 'Συγγνώμη', translation: 'Sorry / Excuse me', pronunciation: 'see-GHNO-mee' },
+          { word: 'Πόσο κάνει;', translation: 'How much does it cost?', pronunciation: 'POH-soh KAH-nee' },
+          { word: 'Πού είναι...;', translation: 'Where is...?', pronunciation: 'POO EE-neh' },
+          { word: 'Μιλάτε αγγλικά;', translation: 'Do you speak English?', pronunciation: 'mee-LAH-teh ahng-lee-KAH' },
+          { word: 'Δεν καταλαβαίνω', translation: 'I don\'t understand', pronunciation: 'then kah-tah-lah-VEH-no' },
+          { word: 'Με λένε...', translation: 'My name is...', pronunciation: 'meh LEH-neh' }
+        ],
+        culturalNotes: [
+          {
+            title: 'Formal vs Informal',
+            note: 'Greeks use \'Γεια σου\' (YAH-soo) with friends and \'Γεια σας\' (YAH-sahs) with strangers or elders. When in doubt, use the formal version.'
+          },
+          {
+            title: 'The Greek Yes',
+            note: 'Greek \'Ναι\' (yes) sounds like \'neh\' - which sounds like \'no\' to English ears. And \'Όχι\' (no) sounds like \'oh-hee\'. Don\'t get them confused!'
+          }
+        ]
+      }
+    ]
+  },
   spanish: {
     id: 'spanish',
     name: 'Spanish',
