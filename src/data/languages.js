@@ -343,8 +343,8 @@ export const languages = {
     name: 'Ancient Greek',
     flag: '🏛️',
     code: 'grc',
-    lessonCount: 9,
-    totalLessons: 9,
+    lessonCount: 10,
+    totalLessons: 10,
     freeLessons: 0,
     lessons: [
       {
@@ -738,6 +738,29 @@ export const languages = {
           {
             title: 'Cultural Note',
             note: 'Modern Greeks can partially read Ancient Greek - like English speakers reading Shakespeare, but harder. Grammar is more complex, vocabulary shifted, and pronunciation changed. But the DNA of the language survives: when someone says "θάλασσα" (sea), they echo Odysseus.'
+          }
+        ]
+      },
+      {
+        id: 10,
+        title: 'Words of the Philosophers',
+        premium: true,
+        words: [
+          { word: 'ἓν οἶδα ὅτι οὐδὲν οἶδα', translation: 'I know that I know nothing (Socrates)', pronunciation: 'hen oida hoti ouden oida' },
+          { word: 'μηδεὶς ἀγεωμέτρητος εἰσίτω', translation: 'Let no one ignorant of geometry enter (Plato\'s Academy)', pronunciation: 'medeis ageometretos eisito' },
+          { word: 'ἄνθρωπος φύσει πολιτικὸν ζῷον', translation: 'Man is by nature a political animal (Aristotle)', pronunciation: 'anthropos physei politikon zoon' },
+          { word: 'πάντα ῥεῖ', translation: 'Everything flows (Heraclitus)', pronunciation: 'panta rhei' },
+          { word: 'γνῶθι σεαυτόν', translation: 'Know thyself (inscribed at Delphi)', pronunciation: 'gnothi seauton' },
+          { word: 'λάθε βιώσας', translation: 'Live hidden / Live unnoticed (Epicurus)', pronunciation: 'lathe biosas' }
+        ],
+        culturalNotes: [
+          {
+            title: 'About This Lesson',
+            note: 'The ancient Greeks invented Western philosophy. Here are their most famous words - in the original Greek.'
+          },
+          {
+            title: 'Cultural Note',
+            note: 'These phrases shaped Western thought for 2,500 years. "Know thyself" was carved into the Temple of Apollo at Delphi. Plato\'s Academy ran for 900 years. When you speak these words, you\'re quoting the people who invented logic, ethics, and metaphysics.'
           }
         ]
       }
