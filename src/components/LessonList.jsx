@@ -1,11 +1,11 @@
 import { ArrowLeft, Check, Lock } from 'lucide-react';
-import { getCompletedLessonsForLanguage, isLessonCompleted, isLessonAccessible, isPremium, isPremiumLesson } from '../utils/lessonTracking';
+import { getCompletedLessonsForLanguage, isLessonCompleted, isLessonAccessible, isPremium, isPremiumLesson, isFreeEnglishTrack } from '../utils/lessonTracking';
 import StreakCard from './StreakCard';
 
 export default function LessonList({ language, onBack, onSelectLesson, onLockedLessonClick, streakData, streakMeta }) {
   const completedCount = getCompletedLessonsForLanguage(language.id);
   const totalLessons = language.lessons.length;
-  const freeLessons = language.freeLessons ?? 10;
+  const freeLessons = isFreeEnglishTrack(language.id) ? totalLessons : 1;
   
   // Get premium status directly and log it
   const premiumRaw = localStorage.getItem('isPremium');

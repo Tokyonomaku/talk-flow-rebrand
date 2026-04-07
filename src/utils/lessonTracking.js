@@ -284,13 +284,17 @@ export function isLessonAccessible(languageId, lessonId, freeLessons = 10) {
     console.log(`[isLessonAccessible] Language ${languageId} not accessible - lesson ${lessonId} locked`);
     return false;
   }
-  
-  // Free users get lessons 1 to freeLessons; beyond that requires premium
+
+  // English tracks: all lessons free for everyone (non-premium included)
+  if (isFreeEnglishTrack(languageId)) {
+    console.log(`[isLessonAccessible] English track - lesson ${lessonId} accessible`);
+    return true;
+  }
+
+  // Non-English: only lesson 1 is free; lessons 2+ require premium
   const lessonNum = typeof lessonId === 'string' ? parseInt(lessonId, 10) : Number(lessonId);
-  const isAccessible = lessonNum <= freeLessons;
-  
-  console.log(`[isLessonAccessible] Free user - lesson ${lessonNum} accessible: ${isAccessible} (must be <= ${freeLessons})`);
-  
+  const isAccessible = lessonNum <= 1;
+  console.log(`[isLessonAccessible] Free user foreign - lesson ${lessonNum} accessible: ${isAccessible} (must be <= 1)`);
   return isAccessible;
 }
 
