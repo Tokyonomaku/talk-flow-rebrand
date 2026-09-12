@@ -771,8 +771,8 @@ export const languages = {
     name: 'Latin',
     flag: '🏛️',
     code: 'la',
-    lessonCount: 1,
-    totalLessons: 1,
+    lessonCount: 10,
+    totalLessons: 10,
     freeLessons: 0,
     lessons: [
       {
@@ -818,9 +818,318 @@ export const languages = {
             note: 'Latin isn\'t dead - it\'s hiding. 60% of English words come from Latin. Every time you say "video" (I see), "audio" (I hear), or "et cetera" (and the rest), you\'re speaking Latin.'
           }
         ]
+      },
+      {
+        id: 2,
+        title: 'Greetings & Everyday Essentials',
+        premium: true,
+        words: [
+          { word: 'Salvē', translation: 'Hello (to one person)', pronunciation: 'SAL-way' },
+          { word: 'Salvēte', translation: 'Hello (to more than one)', pronunciation: 'sal-WAY-teh' },
+          { word: 'Valē', translation: 'Goodbye / farewell (to one)', pronunciation: 'WAH-lay' },
+          { word: 'Valēte', translation: 'Goodbye (to more than one)', pronunciation: 'wah-LAY-teh' },
+          { word: 'Quid agis?', translation: 'How are you? / What are you doing?', pronunciation: 'kwid AH-gis' },
+          { word: 'Bene', translation: 'Well / fine', pronunciation: 'BEH-neh' },
+          { word: 'Male', translation: 'Badly / not well', pronunciation: 'MAH-leh' },
+          { word: 'Grātiās tibi agō', translation: 'Thank you (I give thanks to you)', pronunciation: 'GRAH-tee-ahs TIH-bee AH-goh' },
+          { word: 'Grātiās', translation: 'thanks', pronunciation: 'GRAH-tee-ahs' },
+          { word: 'Amābō tē', translation: 'Please (literally: I will love you)', pronunciation: 'ah-MAH-boh tay' },
+          { word: 'Ita / Ita vērō', translation: 'Yes / Yes indeed', pronunciation: 'EE-tah / EE-tah WAY-roh' },
+          { word: 'Minimē', translation: 'No / not at all', pronunciation: 'MIH-nih-may' },
+          { word: 'Ignōsce mihi', translation: 'Excuse me / forgive me', pronunciation: 'ig-NOHS-keh MIH-hee' },
+          { word: 'Quaesō', translation: 'Please / I ask', pronunciation: 'KWY-soh' },
+          { word: 'Benevenī', translation: 'Welcome', pronunciation: 'beh-neh-weh-NEE' }
+        ],
+        culturalNotes: [
+          {
+            title: 'Salvē vs Valē',
+            note: 'Salvē comes from salūs (health/safety) — wishing someone well. Valē comes from valēre (to be strong). Romans literally said "be strong" when parting.'
+          },
+          {
+            title: 'One Person vs Many',
+            note: 'Latin changes the ending for singular vs plural: salvē/valē for one person, salvēte/valēte for a group. English lost this distinction.'
+          },
+          {
+            title: 'Please Is Love?',
+            note: 'Amābō tē ("I will love you") was a common polite softener — roughly "please." Romans also used quaesō ("I ask").'
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: 'Numbers 1–20',
+        premium: true,
+        words: [
+          { word: 'ūnus / ūna / ūnum', translation: 'one (m/f/n)', pronunciation: 'OO-nus / OO-nah / OO-num' },
+          { word: 'duo / duae / duo', translation: 'two (m/f/n)', pronunciation: 'DOO-oh / DOO-eye / DOO-oh' },
+          { word: 'trēs / tria', translation: 'three (m-f / n)', pronunciation: 'trays / TREE-ah' },
+          { word: 'quattuor', translation: 'four', pronunciation: 'KWAT-too-or' },
+          { word: 'quīnque', translation: 'five', pronunciation: 'KWEEN-kweh' },
+          { word: 'sex', translation: 'six', pronunciation: 'seks' },
+          { word: 'septem', translation: 'seven', pronunciation: 'SEP-tem' },
+          { word: 'octō', translation: 'eight', pronunciation: 'OK-toh' },
+          { word: 'novem', translation: 'nine', pronunciation: 'NOH-wem' },
+          { word: 'decem', translation: 'ten', pronunciation: 'DEH-kem' },
+          { word: 'ūndecim', translation: 'eleven', pronunciation: 'OON-deh-kim' },
+          { word: 'duodecim', translation: 'twelve', pronunciation: 'doo-OH-deh-kim' },
+          { word: 'trēdecim', translation: 'thirteen', pronunciation: 'TRAY-deh-kim' },
+          { word: 'quīndecim', translation: 'fifteen', pronunciation: 'KWEEN-deh-kim' },
+          { word: 'vīgintī', translation: 'twenty', pronunciation: 'wee-GIN-tee' },
+          { word: 'centum', translation: 'one hundred', pronunciation: 'KEN-tum' },
+          { word: 'mīlle', translation: 'one thousand', pronunciation: 'MEEL-leh' }
+        ],
+        culturalNotes: [
+          {
+            title: 'Roman Numerals Live On',
+            note: 'I, V, X, L, C, D, M still appear on clocks, Super Bowls, and movie credits. Centum gives us "century" and "percent"; mīlle gives us "millennium" and "mile."'
+          },
+          {
+            title: 'Gendered Numbers',
+            note: 'Only 1–3 fully decline for gender and case. After that, numbers are usually fixed. Quattuor and beyond are simpler than beginners fear.'
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: 'Family, People & Daily Life',
+        premium: true,
+        words: [
+          { word: 'pater', translation: 'father', pronunciation: 'PAH-ter' },
+          { word: 'māter', translation: 'mother', pronunciation: 'MAH-ter' },
+          { word: 'fīlius', translation: 'son', pronunciation: 'FEE-lee-us' },
+          { word: 'fīlia', translation: 'daughter', pronunciation: 'FEE-lee-ah' },
+          { word: 'frāter', translation: 'brother', pronunciation: 'FRAH-ter' },
+          { word: 'soror', translation: 'sister', pronunciation: 'SOH-ror' },
+          { word: 'vir', translation: 'man / husband', pronunciation: 'weer' },
+          { word: 'fēmina', translation: 'woman', pronunciation: 'FAY-mih-nah' },
+          { word: 'puer', translation: 'boy', pronunciation: 'POO-er' },
+          { word: 'puella', translation: 'girl', pronunciation: 'poo-EL-lah' },
+          { word: 'amīcus', translation: 'friend (male)', pronunciation: 'ah-MEE-kus' },
+          { word: 'amīca', translation: 'friend (female)', pronunciation: 'ah-MEE-kah' },
+          { word: 'domus', translation: 'house / home', pronunciation: 'DOH-mus' },
+          { word: 'familia', translation: 'household / family', pronunciation: 'fah-MIH-lee-ah' },
+          { word: 'rēx / rēgīna', translation: 'king / queen', pronunciation: 'rayks / ray-GEE-nah' }
+        ],
+        culturalNotes: [
+          {
+            title: 'Familia Meant Household',
+            note: 'Familia included blood relatives, enslaved people, and dependents under the paterfamiliās. It was a legal and economic unit, not just "nuclear family."'
+          },
+          {
+            title: 'English Cognates Everywhere',
+            note: 'Pater → paternal; māter → maternal; frāter → fraternity; soror → sorority; fīlius → filial. Latin is still inside English kinship words.'
+          }
+        ]
+      },
+      {
+        id: 5,
+        title: 'Essential Verbs: To Be, Have, Go, Love',
+        premium: true,
+        words: [
+          { word: 'sum', translation: 'I am', pronunciation: 'soom' },
+          { word: 'es', translation: 'you are (singular)', pronunciation: 'es' },
+          { word: 'est', translation: 'he/she/it is', pronunciation: 'est' },
+          { word: 'sumus', translation: 'we are', pronunciation: 'SOO-mus' },
+          { word: 'estis', translation: 'you are (plural)', pronunciation: 'ES-tis' },
+          { word: 'sunt', translation: 'they are', pronunciation: 'soont' },
+          { word: 'habeō', translation: 'I have', pronunciation: 'hah-BEH-oh' },
+          { word: 'habēs', translation: 'you have', pronunciation: 'hah-BAYS' },
+          { word: 'habet', translation: 'he/she has', pronunciation: 'HAH-bet' },
+          { word: 'eō', translation: 'I go', pronunciation: 'EH-oh' },
+          { word: 'īs', translation: 'you go', pronunciation: 'ees' },
+          { word: 'it', translation: 'he/she goes', pronunciation: 'it' },
+          { word: 'amō', translation: 'I love / I like', pronunciation: 'AH-moh' },
+          { word: 'amās', translation: 'you love', pronunciation: 'AH-mahs' },
+          { word: 'amat', translation: 'he/she loves', pronunciation: 'AH-mat' },
+          { word: 'videō', translation: 'I see', pronunciation: 'wih-DEH-oh' },
+          { word: 'dīcō', translation: 'I say / I speak', pronunciation: 'DEE-koh' },
+          { word: 'faciō', translation: 'I do / I make', pronunciation: 'FAH-kee-oh' }
+        ],
+        culturalNotes: [
+          {
+            title: 'Sum Is Irregular — and Everywhere',
+            note: 'Sum/es/est is the most common Latin verb. English still echoes it in words like "essential" (esse = to be) and "present" (prae + esse).'
+          },
+          {
+            title: 'Person Is in the Ending',
+            note: 'Amō / amās / amat means I love / you love / he loves. Latin often drops the pronoun because the verb ending already shows who does the action.'
+          }
+        ]
+      },
+      {
+        id: 6,
+        title: 'Time, Days & the Calendar',
+        premium: true,
+        words: [
+          { word: 'diēs', translation: 'day', pronunciation: 'DEE-ays' },
+          { word: 'nox', translation: 'night', pronunciation: 'noks' },
+          { word: 'hōra', translation: 'hour', pronunciation: 'HOH-rah' },
+          { word: 'tempus', translation: 'time', pronunciation: 'TEM-pus' },
+          { word: 'hodiē', translation: 'today', pronunciation: 'hoh-DEE-ay' },
+          { word: 'heri', translation: 'yesterday', pronunciation: 'HEH-ree' },
+          { word: 'crās', translation: 'tomorrow', pronunciation: 'krahs' },
+          { word: 'nunc', translation: 'now', pronunciation: 'noonk' },
+          { word: 'semper', translation: 'always', pronunciation: 'SEM-per' },
+          { word: 'numquam', translation: 'never', pronunciation: 'NUM-kwam' },
+          { word: 'Diēs Sōlis', translation: 'Sunday (Day of the Sun)', pronunciation: 'DEE-ays SOH-lis' },
+          { word: 'Diēs Lūnae', translation: 'Monday (Day of the Moon)', pronunciation: 'DEE-ays LOO-nye' },
+          { word: 'Diēs Mārtis', translation: 'Tuesday (Day of Mars)', pronunciation: 'DEE-ays MAR-tis' },
+          { word: 'Diēs Mercuriī', translation: 'Wednesday (Day of Mercury)', pronunciation: 'DEE-ays mer-KOO-ree-ee' },
+          { word: 'Diēs Iovis', translation: 'Thursday (Day of Jupiter)', pronunciation: 'DEE-ays YOH-wis' },
+          { word: 'Diēs Veneris', translation: 'Friday (Day of Venus)', pronunciation: 'DEE-ays WEH-neh-ris' },
+          { word: 'Diēs Saturnī', translation: 'Saturday (Day of Saturn)', pronunciation: 'DEE-ays sah-TUR-nee' },
+          { word: 'annus', translation: 'year', pronunciation: 'AN-nus' }
+        ],
+        culturalNotes: [
+          {
+            title: 'Our Weekdays Are Roman',
+            note: 'Sunday–Saturday still mirror Roman planetary names in Romance languages (Spanish lunes, martes, miércoles…). English kept Sunday, Monday, Saturday and swapped others for Norse gods.'
+          },
+          {
+            title: 'Hora & Tempus',
+            note: 'Hōra gives us "hour" and "horoscope." Tempus gives us "temporary," "tense," and "contemporary."'
+          }
+        ]
+      },
+      {
+        id: 7,
+        title: 'Food, Nature & the Body',
+        premium: true,
+        words: [
+          { word: 'aqua', translation: 'water', pronunciation: 'AH-kwah' },
+          { word: 'pānis', translation: 'bread', pronunciation: 'PAH-nis' },
+          { word: 'vīnum', translation: 'wine', pronunciation: 'WEE-num' },
+          { word: 'cibus', translation: 'food', pronunciation: 'KIH-bus' },
+          { word: 'mensa', translation: 'table', pronunciation: 'MEN-sah' },
+          { word: 'ager', translation: 'field', pronunciation: 'AH-ger' },
+          { word: 'silva', translation: 'forest', pronunciation: 'SIL-wah' },
+          { word: 'mare', translation: 'sea', pronunciation: 'MAH-reh' },
+          { word: 'caelum', translation: 'sky / heaven', pronunciation: 'KYE-lum' },
+          { word: 'terra', translation: 'earth / land', pronunciation: 'TER-rah' },
+          { word: 'sōl', translation: 'sun', pronunciation: 'sohl' },
+          { word: 'lūna', translation: 'moon', pronunciation: 'LOO-nah' },
+          { word: 'caput', translation: 'head', pronunciation: 'KAH-put' },
+          { word: 'manus', translation: 'hand', pronunciation: 'MAH-nus' },
+          { word: 'pes / pedis', translation: 'foot', pronunciation: 'pays / PEH-dis' },
+          { word: 'oculus', translation: 'eye', pronunciation: 'OH-koo-lus' },
+          { word: 'cor', translation: 'heart', pronunciation: 'kor' }
+        ],
+        culturalNotes: [
+          {
+            title: 'Aqua, Terra, Caelum',
+            note: 'These three feed English science words: aquatic, terrestrial, celestial. Latin was the language of European science for centuries.'
+          },
+          {
+            title: 'Bread and Wine',
+            note: 'Pānis and vīnum were staples of Roman daily life and later Christian ritual Latin — still heard in liturgy worldwide.'
+          }
+        ]
+      },
+      {
+        id: 8,
+        title: 'Mottos, Wisdom & Power Phrases',
+        premium: true,
+        words: [
+          { word: 'Per aspera ad astra', translation: 'Through hardships to the stars', pronunciation: 'per AS-peh-rah ad AS-trah' },
+          { word: 'Alma māter', translation: 'Nourishing mother (one\'s school)', pronunciation: 'AL-mah MAH-ter' },
+          { word: 'Mementō morī', translation: 'Remember that you will die', pronunciation: 'meh-MEN-toh moh-REE' },
+          { word: 'Ars longa, vīta brevis', translation: 'Art is long, life is short', pronunciation: 'ars LON-gah WEE-tah BREH-wis' },
+          { word: 'Fortēs fortūna adiuvat', translation: 'Fortune favors the brave', pronunciation: 'FOR-tays for-TOO-nah ad-YOO-wat' },
+          { word: 'Errāre hūmānum est', translation: 'To err is human', pronunciation: 'eh-RAH-reh hoo-MAH-num est' },
+          { word: 'Audēre est facere', translation: 'To dare is to do', pronunciation: 'ow-DAY-reh est FAH-keh-reh' },
+          { word: 'Nōn scholae sed vītae discimus', translation: 'We learn not for school but for life', pronunciation: 'nohn SKOH-lye sed WEE-tye DIS-kih-mus' },
+          { word: 'Dulce et decōrum est', translation: 'It is sweet and fitting…', pronunciation: 'DOOL-keh et deh-KOH-rum est' },
+          { word: 'Si vīs pācem, parā bellum', translation: 'If you want peace, prepare for war', pronunciation: 'see wees PAH-kem pah-RAH BEL-lum' },
+          { word: 'Tempus fugit', translation: 'Time flies', pronunciation: 'TEM-pus FOO-git' },
+          { word: 'Vōx populī', translation: 'The voice of the people', pronunciation: 'wohks POH-poo-lee' },
+          { word: 'Alea iacta est', translation: 'The die is cast', pronunciation: 'AH-leh-ah YAK-tah est' },
+          { word: 'Et tū, Brūte?', translation: 'And you, Brutus?', pronunciation: 'et too BROO-teh' }
+        ],
+        culturalNotes: [
+          {
+            title: 'Still Spoken at Graduations',
+            note: 'Alma māter, per aspera ad astra, and vōx populī appear on seals, diplomas, and mottos. Latin remains the language of institutional identity.'
+          },
+          {
+            title: "Caesar's Rubicon",
+            note: 'Alea iacta est — said when Caesar crossed the Rubicon in 49 BCE, committing to civil war. "The die is cast" still means a decision you can\'t take back.'
+          }
+        ]
+      },
+      {
+        id: 9,
+        title: 'Latin You Still Use (Law, School, Everyday)',
+        premium: true,
+        words: [
+          { word: 'et cetera (etc.)', translation: 'and the rest', pronunciation: 'et KET-eh-rah' },
+          { word: 'exemplī grātiā (e.g.)', translation: 'for the sake of example', pronunciation: 'ek-SEM-plee GRAH-tee-ah' },
+          { word: 'id est (i.e.)', translation: 'that is', pronunciation: 'id est' },
+          { word: 'nota bene (N.B.)', translation: 'note well', pronunciation: 'NOH-tah BEH-neh' },
+          { word: 'versus (vs.)', translation: 'against / toward', pronunciation: 'WER-sus' },
+          { word: 'curriculum vītae (CV)', translation: 'course of life (résumé)', pronunciation: 'kur-RIH-koo-lum WEE-tye' },
+          { word: 'ad hoc', translation: 'for this (specific purpose)', pronunciation: 'ad hok' },
+          { word: 'status quō', translation: 'the existing state', pronunciation: 'STAH-tus kwoh' },
+          { word: 'pro bōnō', translation: 'for the public good (free legal work)', pronunciation: 'proh BOH-noh' },
+          { word: 'habeās corpus', translation: 'you shall have the body (legal right)', pronunciation: 'HAH-beh-ahs KOR-pus' },
+          { word: 'sub poenā', translation: 'under penalty (subpoena)', pronunciation: 'sub POY-nah' },
+          { word: 'per sē', translation: 'by itself', pronunciation: 'per say' },
+          { word: 'de factō', translation: 'in fact / in practice', pronunciation: 'day FAK-toh' },
+          { word: 'de iūre', translation: 'by law / legally', pronunciation: 'day YOO-reh' },
+          { word: 'quid prō quō', translation: 'something for something', pronunciation: 'kwid proh kwoh' },
+          { word: 'vice versā', translation: 'the other way around', pronunciation: 'WEE-keh WER-sah' },
+          { word: 'bona fidē', translation: 'in good faith', pronunciation: 'BOH-nah FEE-day' }
+        ],
+        culturalNotes: [
+          {
+            title: 'You Already Speak Latin',
+            note: 'Etc., e.g., i.e., vs., CV, ad hoc, status quo — English formal writing is full of Latin abbreviations. This lesson makes them visible.'
+          },
+          {
+            title: 'Law Still Speaks Latin',
+            note: 'Habeās corpus, subpoena, pro bōnō, and bona fidē are living legal terms. Courts never fully abandoned Latin.'
+          }
+        ]
+      },
+      {
+        id: 10,
+        title: 'Cases in Action: Who Does What to Whom',
+        premium: true,
+        words: [
+          { word: 'Nominative (subject)', translation: 'Who/what does the action', pronunciation: 'NOM-ih-nah-tiv' },
+          { word: 'Puella cantat', translation: 'The girl sings', pronunciation: 'poo-EL-lah KAN-tat' },
+          { word: 'Accusative (direct object)', translation: 'Who/what receives the action', pronunciation: 'ak-KOO-zah-tiv' },
+          { word: 'Puella librum legit', translation: 'The girl reads a book', pronunciation: 'poo-EL-lah LEE-brum LEH-git' },
+          { word: 'Genitive (of / possession)', translation: 'Whose / of what', pronunciation: 'JEH-nih-tiv' },
+          { word: 'Liber puellae', translation: 'The girl\'s book / book of the girl', pronunciation: 'LEE-ber poo-EL-lye' },
+          { word: 'Dative (to / for)', translation: 'Indirect object', pronunciation: 'DAY-tiv' },
+          { word: 'Puellae librum dō', translation: 'I give a book to the girl', pronunciation: 'poo-EL-lye LEE-brum doh' },
+          { word: 'Ablative (by / with / from)', translation: 'Means, manner, separation', pronunciation: 'AB-lah-tiv' },
+          { word: 'Cum amīcō ambulat', translation: 'He walks with a friend', pronunciation: 'koom ah-MEE-koh am-boo-lat' },
+          { word: 'Vocative (calling out)', translation: 'Addressing someone', pronunciation: 'WOH-kah-tiv' },
+          { word: 'Salvē, amīce!', translation: 'Hello, friend!', pronunciation: 'SAL-way ah-MEE-keh' },
+          { word: 'lupus', translation: 'wolf (nominative)', pronunciation: 'LOO-pus' },
+          { word: 'lupum', translation: 'wolf (accusative — as object)', pronunciation: 'LOO-pum' },
+          { word: 'lupī', translation: 'of the wolf (genitive)', pronunciation: 'LOO-pee' },
+          { word: 'Roma / Rōmae', translation: 'Rome / at Rome / of Rome', pronunciation: 'ROH-mah / ROH-mye' }
+        ],
+        culturalNotes: [
+          {
+            title: 'Why Cases Feel Hard at First',
+            note: 'English mostly uses word order (The girl reads the book). Latin uses endings, so word order can flex for emphasis. Same idea as "he/him" in English — just applied to almost every noun.'
+          },
+          {
+            title: 'Start With Patterns, Not Charts',
+            note: 'Learn a few mini-sentences (puella cantat / librum legit / cum amīcō) before memorizing full declension tables. Patterns stick; charts alone rarely do.'
+          },
+          {
+            title: 'You Finished the Starter Track',
+            note: 'These 10 lessons give you mottos, daily words, core verbs, and the case system in miniature — enough to read short inscriptions and recognize Latin hiding in English.'
+          }
+        ]
       }
     ]
   },
+
   'modern-greek': {
     id: 'modern-greek',
     name: 'Modern Greek',
